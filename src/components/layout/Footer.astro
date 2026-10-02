@@ -1,0 +1,74 @@
+---
+import Photo from '../brand/Photo.astro';
+---
+
+<footer class="footer">
+  <div class="section-inner">
+    <div class="footer-top">
+      <p class="footer-title">
+        Hay historias que
+        <br />
+        merecen <em>caminarse.</em>
+      </p>
+      <nav aria-label="Navegación del pie" class="footer-nav">
+        <a href="/#explorar">Descubrir lugares</a>
+        <a href="/#historia">La Tierra cuenta</a>
+        <a href="/#territorio">Explorar el territorio</a>
+        <a href="/#cultura">Cultura y sabores</a>
+        <a href="/#circuitos">Ideas para tu escapada</a>
+        <a href="/#aprender">Aprender en el Geoparque</a>
+        <button data-action="privacy">Tu privacidad</button>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo-card">
+        <Photo
+          alt="Manantiales Serranos Geoparque Mundial de la UNESCO"
+          assetKey="brand-c66ec6c0da68"
+        />
+        <Photo alt="UNESCO Geoparque mundial" assetKey="unesco" />
+      </div>
+      <p class="footer-small">
+        Lavalleja, Uruguay.
+        <br />
+        Geología, naturaleza y cultura en un mismo territorio.
+        <br />
+      </p>
+      <button aria-pressed="false" class="motion-btn" id="motion-toggle">
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-pause"></use>
+        </svg>
+        <span>Reducir movimiento</span>
+      </button>
+    </div>
+    <svg aria-hidden="true" class="footer-ridges" preserveAspectRatio="none" viewBox="0 0 1400 120">
+      <path
+        d="M0 107Q150 47 275 98T550 74Q690 -20 820 75T1050 62Q1200 0 1400 61V120H0Z"
+        fill="#41623b"
+      ></path>
+      <path
+        d="M0 120Q145 76 255 111T520 88Q710 5 850 94T1140 70Q1230 53 1400 92V120Z"
+        fill="#7e9752"
+      ></path>
+      <path
+        d="M0 120Q200 102 350 117T680 101T1050 110T1400 112"
+        fill="none"
+        stroke="#d4e885"
+        stroke-width="1.5"
+      ></path>
+    </svg>
+    <div class="footer-tail">
+      <span>MANANTIALES SERRANOS · 2026</span>
+      <span>
+        Vení con curiosidad.
+        <br />
+        Volvé con otra mirada.
+      </span>
+    </div>
+  </div>
+  <a class="round back-top" id="back-top" href="/#inicio" aria-label="Volver al inicio">
+    <svg class="icon" aria-hidden="true">
+      <use href="#i-up" />
+    </svg>
+  </a>
+</footer>

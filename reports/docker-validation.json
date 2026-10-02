@@ -1,0 +1,82 @@
+{
+  "identity": "uid=101(nginx) gid=101(nginx) groups=101(nginx)",
+  "checks": [
+    {
+      "path": "/health",
+      "status": 200
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/lugares/cerro-arequita/",
+      "status": 200
+    },
+    {
+      "path": "/historias/agua/",
+      "status": 200
+    },
+    {
+      "path": "/circuitos/arequita/",
+      "status": 200
+    },
+    {
+      "path": "/planifica/",
+      "status": 200
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200
+    },
+    {
+      "path": "/guia.md",
+      "status": 200
+    },
+    {
+      "path": "/lugares.md",
+      "status": 200
+    },
+    {
+      "path": "/sitemap-index.xml",
+      "status": 200
+    },
+    {
+      "path": "/ruta-inexistente/",
+      "status": 404
+    },
+    {
+      "path": "/Manantiales_Serranos_v2.html",
+      "status": 404
+    },
+    {
+      "path": "/docs/architecture.md",
+      "status": 404
+    },
+    {
+      "path": "/tests/unit/content.test.ts",
+      "status": 404
+    },
+    {
+      "path": "/.env",
+      "status": 403
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/_astro/BaseLayout.tQmSrKK6.css",
+      "status": 200
+    },
+    {
+      "path": "/guia.md",
+      "status": 200
+    }
+  ],
+  "seoDocuments": 78
+}

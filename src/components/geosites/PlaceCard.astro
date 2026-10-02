@@ -1,0 +1,41 @@
+---
+import type { GeoparkPlace } from '../../types/geopark';
+import Photo from '../brand/Photo.astro';
+import { FavoritesButton } from '../islands/FavoritesButton';
+interface Props {
+  place: GeoparkPlace;
+}
+const { place } = Astro.props;
+const href = `/lugares/${place.slug}/`;
+---
+
+<article class="place-card reveal" data-id={place.id}>
+  <div class="place-visual">
+    <a href={href} aria-label={`Conocer ${place.name}`}>
+      <Photo
+        assetKey={place.image}
+        alt={place.images[0]?.alt || place.name}
+        transition:name={`place-${place.slug}`}
+        sizes="(max-width: 620px) 90vw, (max-width: 1000px) 45vw, 30vw"
+      />
+    </a>
+    <span class:list={['place-tag', { international: place.international }]}>
+      {place.international ? 'Valor internacional' : place.category}
+    </span>
+    {place.imageContext && <span class="context-badge">Paisaje de Lavalleja</span>}
+    <FavoritesButton id={place.id} name={place.name} client:visible />
+  </div>
+  <div class="place-meta">
+    <span>{place.region}</span>
+    <span class="place-id">GMS-{String(place.id).padStart(2, '0')}</span>
+  </div>
+  <h3>
+    <a href={href}>
+      {place.name}
+      <svg class="icon" aria-hidden="true">
+        <use href="#i-arrow" />
+      </svg>
+    </a>
+  </h3>
+  <p class="place-summary">{place.summary}</p>
+</article>

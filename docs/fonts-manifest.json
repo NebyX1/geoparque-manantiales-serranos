@@ -1,0 +1,37 @@
+[
+  {
+    "path": "src/assets/fonts/barlow-500.woff2",
+    "source": "@fontsource/barlow-condensed/files/barlow-condensed-latin-500-normal.woff2",
+    "originalBytes": 21424,
+    "bytes": 14696,
+    "sha256": "d79e0a89455e561952901e17e103de54b047798bf2885132d4f8540418f18f56"
+  },
+  {
+    "path": "src/assets/fonts/barlow-600.woff2",
+    "source": "@fontsource/barlow-condensed/files/barlow-condensed-latin-600-normal.woff2",
+    "originalBytes": 22308,
+    "bytes": 15388,
+    "sha256": "4c81a01e3f3aff357b186a921bc7b395343b1d35d5fa16671a0b424884244770"
+  },
+  {
+    "path": "src/assets/fonts/barlow-700.woff2",
+    "source": "@fontsource/barlow-condensed/files/barlow-condensed-latin-700-normal.woff2",
+    "originalBytes": 22444,
+    "bytes": 15576,
+    "sha256": "83b33e583e274181b4466d3b88cf5c4a477a36799ad92cd80330065675df22dc"
+  },
+  {
+    "path": "src/assets/fonts/barlow-800.woff2",
+    "source": "@fontsource/barlow-condensed/files/barlow-condensed-latin-800-normal.woff2",
+    "originalBytes": 22464,
+    "bytes": 15452,
+    "sha256": "ecb05022fce302c0c57a891f4ffc4a4f309cfeee92baa89a4b9377c774888943"
+  },
+  {
+    "path": "src/assets/fonts/montserrat-variable.woff2",
+    "source": "@fontsource-variable/montserrat/files/montserrat-latin-wght-normal.woff2",
+    "originalBytes": 37956,
+    "bytes": 25420,
+    "sha256": "06f67f93e155f4a4576838d92aa1e3b8bacc22238e52437379665f989ce91bbc"
+  }
+]

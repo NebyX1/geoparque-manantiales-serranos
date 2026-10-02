@@ -1,0 +1,360 @@
+---
+import Photo from '../brand/Photo.astro';
+---
+
+<section aria-label="Un viaje por cuatro geositios" class="geo-story" id="historia">
+  <div class="geo-stage">
+    <div class="geo-toolbar">
+      <span class="geo-toolbar-label">
+        <span class="dot"></span>CUATRO CAPÍTULOS DEL PAISAJE
+      </span>
+      <nav aria-label="Elegir un capítulo" class="geo-tabs">
+        <button
+          aria-controls="geo-scene-0"
+          aria-pressed="true"
+          class="geo-tab"
+          data-chapter="0"
+          type="button"
+        >
+          <b>01</b>
+          <span>Fuego</span>
+        </button>
+        <button
+          aria-controls="geo-scene-1"
+          aria-pressed="false"
+          class="geo-tab"
+          data-chapter="1"
+          type="button"
+        >
+          <b>02</b>
+          <span>Tierra</span>
+        </button>
+        <button
+          aria-controls="geo-scene-2"
+          aria-pressed="false"
+          class="geo-tab"
+          data-chapter="2"
+          type="button"
+        >
+          <b>03</b>
+          <span>Océanos</span>
+        </button>
+        <button
+          aria-controls="geo-scene-3"
+          aria-pressed="false"
+          class="geo-tab"
+          data-chapter="3"
+          type="button"
+        >
+          <b>04</b>
+          <span>Vida</span>
+        </button>
+      </nav>
+      <a class="geo-skip" href="/#explorar">
+        Ir a todos los lugares ↗
+      </a>
+    </div>
+    <div class="geo-scenes">
+      <article aria-labelledby="geo-title-0" class="geo-scene is-active" id="geo-scene-0">
+        <div aria-hidden="true" class="geo-halo"></div>
+        <svg
+          aria-hidden="true"
+          class="geo-strata"
+          preserveAspectRatio="none"
+          viewBox="0 0 1400 380"
+        >
+          <path d="M0 230Q190 140 350 240T690 155T1050 210T1400 80V380H0Z"></path>
+          <path
+            d="M0 300Q200 225 350 280T680 250T1040 310T1400 220"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          ></path>
+        </svg>
+        <div class="geo-scene-inner">
+          <div class="geo-identity">
+            <div class="geo-eyebrow">Cerro Arequita</div>
+            <div class="geo-number">
+              <span class="geo-digit">01</span>
+              <span class="geo-time">
+                130 millones de años
+                <br />
+                Volcanismo cretácico
+              </span>
+            </div>
+            <h3 class="geo-title" id="geo-title-0">
+              <span>LA MEMORIA</span>
+              <span>DEL FUEGO.</span>
+            </h3>
+            <p class="geo-description">
+              Paredones de riolita, monte nativo y un río al pie del cerro. En Arequita, las rocas
+              guardan la historia del volcanismo vinculado a la apertura del Atlántico.
+            </p>
+            <a class="text-link" href="/lugares/cerro-arequita/">
+              Conocé su historia
+              <svg aria-hidden="true" class="icon">
+                <use href="#i-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <figure class="geo-polaroid">
+            <div class="geo-photo">
+              <a aria-label="Conocer Cerro Arequita" href="/lugares/cerro-arequita/">
+                <Photo alt="Cerro Arequita" assetKey="arequita-rio" loading="lazy" />
+              </a>
+              <span class="geo-photo-stamp">Un paisaje nacido del volcanismo</span>
+            </div>
+            <figcaption class="geo-photo-caption">
+              <div>
+                <small>Geositio de valor internacional</small>
+                <strong>Cerro Arequita</strong>
+              </div>
+              <button
+                aria-label="Guardar Cerro Arequita en mi viaje"
+                aria-pressed="false"
+                class="save-btn"
+                data-save="1"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use href="#i-save"></use>
+                </svg>
+              </button>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+      <article aria-labelledby="geo-title-1" class="geo-scene" id="geo-scene-1">
+        <div aria-hidden="true" class="geo-halo"></div>
+        <svg
+          aria-hidden="true"
+          class="geo-strata"
+          preserveAspectRatio="none"
+          viewBox="0 0 1400 380"
+        >
+          <path d="M0 230Q190 140 350 240T690 155T1050 210T1400 80V380H0Z"></path>
+          <path
+            d="M0 300Q200 225 350 280T680 250T1040 310T1400 220"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          ></path>
+        </svg>
+        <div class="geo-scene-inner">
+          <div class="geo-identity">
+            <div class="geo-eyebrow">Aguas Blancas</div>
+            <div class="geo-number">
+              <span class="geo-digit">02</span>
+              <span class="geo-time">
+                Grandes movimientos
+                <br />
+                La corteza se transforma
+              </span>
+            </div>
+            <h3 class="geo-title" id="geo-title-1">
+              <span>CICATRICES</span>
+              <span>DE LA TIERRA.</span>
+            </h3>
+            <p class="geo-description">
+              Bajo este paisaje de agua y sierras, una zona de cizalla cuenta la historia de enormes
+              fuerzas. Aguas Blancas permite descubrir las transformaciones que unieron antiguos
+              bloques continentales.
+            </p>
+            <a class="text-link" href="/lugares/campamento-aguas-blancas/">
+              Conocé su historia
+              <svg aria-hidden="true" class="icon">
+                <use href="#i-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <figure class="geo-polaroid">
+            <div class="geo-photo">
+              <a aria-label="Conocer Aguas Blancas" href="/lugares/campamento-aguas-blancas/">
+                <Photo alt="Aguas Blancas" assetKey="aguas" loading="lazy" />
+              </a>
+              <span class="geo-photo-stamp">Zona de Cizalla Sarandí del Yi–Piriápolis</span>
+            </div>
+            <figcaption class="geo-photo-caption">
+              <div>
+                <small>Geositio de valor internacional</small>
+                <strong>Aguas Blancas</strong>
+              </div>
+              <button
+                aria-label="Guardar Aguas Blancas en mi viaje"
+                aria-pressed="false"
+                class="save-btn"
+                data-save="23"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use href="#i-save"></use>
+                </svg>
+              </button>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+      <article aria-labelledby="geo-title-2" class="geo-scene" id="geo-scene-2">
+        <div aria-hidden="true" class="geo-halo"></div>
+        <svg
+          aria-hidden="true"
+          class="geo-strata"
+          preserveAspectRatio="none"
+          viewBox="0 0 1400 380"
+        >
+          <path d="M0 230Q190 140 350 240T690 155T1050 210T1400 80V380H0Z"></path>
+          <path
+            d="M0 300Q200 225 350 280T680 250T1040 310T1400 220"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          ></path>
+        </svg>
+        <div class="geo-scene-inner">
+          <div class="geo-identity">
+            <div class="geo-eyebrow">Parque de Minas</div>
+            <div class="geo-number">
+              <span class="geo-digit">03</span>
+              <span class="geo-time">
+                1.400 millones de años
+                <br />
+                Secuencia volcanosedimentaria
+              </span>
+            </div>
+            <h3 class="geo-title" id="geo-title-2">
+              <span>LAS HUELLAS DE</span>
+              <span>UN MAR ANTIGUO.</span>
+            </h3>
+            <p class="geo-description">
+              Sedimentos, lavas y carbonatos conservan la memoria de otros ambientes. Caminar por
+              Parque de Minas es acercarse a las rocas del terreno Nico Pérez y a la historia de los
+              continentes.
+            </p>
+            <a class="text-link" href="/lugares/parque-de-minas/">
+              Conocé su historia
+              <svg aria-hidden="true" class="icon">
+                <use href="#i-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <figure class="geo-polaroid">
+            <div class="geo-photo">
+              <a aria-label="Conocer Parque de Minas" href="/lugares/parque-de-minas/">
+                <Photo alt="Parque de Minas" assetKey="parque" loading="lazy" />
+              </a>
+              <span class="geo-photo-stamp">Grupo Parque Minas · Complejo Zanja del Tigre</span>
+            </div>
+            <figcaption class="geo-photo-caption">
+              <div>
+                <small>Geositio de valor internacional</small>
+                <strong>Parque de Minas</strong>
+              </div>
+              <button
+                aria-label="Guardar Parque de Minas en mi viaje"
+                aria-pressed="false"
+                class="save-btn"
+                data-save="17"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use href="#i-save"></use>
+                </svg>
+              </button>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+      <article aria-labelledby="geo-title-3" class="geo-scene" id="geo-scene-3">
+        <div aria-hidden="true" class="geo-halo"></div>
+        <svg
+          aria-hidden="true"
+          class="geo-strata"
+          preserveAspectRatio="none"
+          viewBox="0 0 1400 380"
+        >
+          <path d="M0 230Q190 140 350 240T690 155T1050 210T1400 80V380H0Z"></path>
+          <path
+            d="M0 300Q200 225 350 280T680 250T1040 310T1400 220"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          ></path>
+        </svg>
+        <div class="geo-scene-inner">
+          <div class="geo-identity">
+            <div class="geo-eyebrow">Reserva Salus</div>
+            <div class="geo-number">
+              <span class="geo-digit">04</span>
+              <span class="geo-time">
+                Del Ediacárico al presente
+                <br />
+                Roca, agua y biodiversidad
+              </span>
+            </div>
+            <h3 class="geo-title" id="geo-title-3">
+              <span>DONDE LA ROCA</span>
+              <span>GUARDA VIDA.</span>
+            </h3>
+            <p class="geo-description">
+              Antiguos mares, registros fósiles y agua que encuentra su camino. En Salus, la
+              geología se vuelve manantial, bosque y una invitación a mirar con otra atención.
+            </p>
+            <a class="text-link" href="/lugares/reserva-natural-parque-salus/">
+              Conocé su historia
+              <svg aria-hidden="true" class="icon">
+                <use href="#i-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <figure class="geo-polaroid">
+            <div class="geo-photo">
+              <a aria-label="Conocer Reserva Salus" href="/lugares/reserva-natural-parque-salus/">
+                <Photo alt="Reserva Salus" assetKey="salus" loading="lazy" />
+              </a>
+              <span class="geo-photo-stamp">Grupo Arroyo del Soldado</span>
+            </div>
+            <figcaption class="geo-photo-caption">
+              <div>
+                <small>Geositio de valor internacional</small>
+                <strong>Reserva Salus</strong>
+              </div>
+              <button
+                aria-label="Guardar Reserva Salus en mi viaje"
+                aria-pressed="false"
+                class="save-btn"
+                data-save="31"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use href="#i-save"></use>
+                </svg>
+              </button>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+    </div>
+    <div class="geo-footer">
+      <span>
+        CAPÍTULO
+        <b id="geo-current" style="margin:0 6px">
+          01
+        </b>
+        / 04
+      </span>
+      <span class="geo-scroll-hint">SEGUÍ DESLIZANDO. CAMBIÁ DE MUNDO.</span>
+      <div class="geo-footer-control">
+        <span class="geo-control-label">EXPLORÁ A TU RITMO</span>
+        <button aria-label="Capítulo anterior" class="round" data-chapter-step="-1">
+          <svg aria-hidden="true" class="icon">
+            <use href="#i-left"></use>
+          </svg>
+        </button>
+        <button aria-label="Capítulo siguiente" class="round" data-chapter-step="1">
+          <svg aria-hidden="true" class="icon">
+            <use href="#i-right"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="geo-progress">
+        <span id="geo-progress"></span>
+      </div>
+    </div>
+  </div>
+</section>

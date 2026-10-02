@@ -1,0 +1,102 @@
+---
+import PlaceCard from '../geosites/PlaceCard.astro';
+import { places } from '../../data/geosites';
+---
+
+<section aria-labelledby="explore-title" class="section explore" id="explorar">
+  <div class="section-inner">
+    <div class="eyebrow">
+      <span class="chapter">02 /</span>Encontrá tu próxima historia
+    </div>
+    <div class="section-heading">
+      <h2 class="display" id="explore-title">
+        Hay un lugar
+        <br />
+        <em>para tu curiosidad.</em>
+      </h2>
+      <p class="section-lead">
+        Elegí un paisaje, seguí un interés o dejate sorprender. Cada lugar abre una forma distinta
+        de conocer el territorio.
+      </p>
+    </div>
+    <div class="filterbar">
+      <div aria-label="Filtrar lugares por interés" class="pills" role="group">
+        <button aria-pressed="true" class="pill" data-filter="Destacados">
+          Para empezar
+        </button>
+        <button aria-pressed="false" class="pill" data-filter="Geología">
+          Piedra y tiempo
+        </button>
+        <button aria-pressed="false" class="pill" data-filter="Agua">
+          Agua y naturaleza
+        </button>
+        <button aria-pressed="false" class="pill" data-filter="Cultura">
+          Cultura
+        </button>
+        <button aria-pressed="false" class="pill" data-filter="Sabores">
+          Sabores
+        </button>
+        <button aria-pressed="false" class="pill" data-filter="Todos">
+          Todo el atlas
+        </button>
+      </div>
+      <p aria-live="polite" class="result-count" id="results-count">
+        6 lugares para empezar
+      </p>
+    </div>
+    <div class="atlas-toolbar" hidden="" id="atlas-toolbar">
+      <label class="search-field">
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-search"></use>
+        </svg>
+        <input
+          aria-label="Buscar en el atlas"
+          id="atlas-search"
+          placeholder="Buscá por nombre, zona o historia"
+          type="search"
+        />
+      </label>
+      <label>
+        <span class="sr-only">Zona del Geoparque</span>
+        <select class="select" id="atlas-region">
+          <option value="">Todas las zonas</option>
+          <option>Minas y entorno</option>
+          <option>Arequita y Santa Lucía</option>
+          <option>Villa Serrana</option>
+          <option>Solís y Aguas Blancas</option>
+          <option>Sierras y campo</option>
+          <option>Penitente</option>
+        </select>
+      </label>
+      <label>
+        <span class="sr-only">Modalidad de visita</span>
+        <select class="select" id="atlas-status">
+          <option value="">Todas las modalidades</option>
+          <option>Coordinación previa</option>
+          <option>Paseo por el entorno</option>
+          <option>Consultar acceso</option>
+          <option>Visita no confirmada</option>
+        </select>
+      </label>
+    </div>
+    <div class="places-grid" id="places-grid">
+      {places.map((place) => (
+        <PlaceCard {place} />
+      ))}
+    </div>
+    <p class="search-empty" hidden="" id="atlas-empty">
+      No encontramos coincidencias. Probá otro nombre o quitá un filtro.
+    </p>
+    <div class="explore-bottom">
+      <p class="visit-note">
+        61 lugares para descubrir a tu manera. Filtrá por paisaje, zona o experiencia.
+      </p>
+      <button class="btn outline" id="explore-more">
+        Explorar los 61 lugares
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

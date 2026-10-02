@@ -1,0 +1,100 @@
+@import './fonts.css';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+@import './geopark.css';
+@import './pages.css';
+@plugin 'daisyui' {
+  themes: false;
+  include: loading;
+  logs: false;
+}
+:root {
+  --sans: 'Montserrat Variable', Arial, Helvetica, sans-serif;
+  --forest-deep: var(--deep);
+  --moss: var(--green);
+  --water: #24535b;
+  --stone: #c39353;
+  --cream: var(--paper);
+  --sun: var(--lime);
+  --body: var(--sans);
+  --header-h: var(--nav);
+}
+.hero-image picture {
+  display: contents;
+}
+astro-island {
+  display: contents;
+}
+.place-visual astro-island {
+  display: contents;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html:not(.js) .place-card {
+  display: block !important;
+  opacity: 1;
+  transform: none;
+}
+html:not(.js) .atlas-toolbar {
+  display: flex !important;
+}
+html:not(.js) [data-action],
+html:not(.js) [data-favorite],
+html:not(.js) #planner-form button {
+  visibility: hidden;
+}
+html:not(.js) .reveal {
+  opacity: 1;
+  transform: none;
+}
+html.reduce-motion {
+  scroll-behavior: auto;
+}
+html.reduce-motion *,
+html.reduce-motion *::before,
+html.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  transition-duration: 0.01ms !important;
+}
+.route-page .site-header {
+  border-bottom: 1px solid var(--line);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Small text keeps the original palette with sufficient contrast. */
+:root {
+  --muted: #56624e;
+}
+.desktop-nav a .nav-number,
+.map-list .map-index,
+.culture-story > small {
+  color: #56624e;
+}
+.planner-intro .eyebrow,
+.planner-intro h2 em,
+.planner-intro > p,
+.planner-privacy {
+  color: var(--deep);
+}
+.map-preview a {
+  font-size: 10px;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 6px;
+}
+.geo-scene:nth-child(4) {
+  --scene-bg: #5c6b40;
+}

@@ -1,0 +1,4 @@
+* text=auto eol=lf
+Manantiales_Serranos_v2.html -text -whitespace
+docs/reference/** -whitespace
+reports/*.log -whitespace

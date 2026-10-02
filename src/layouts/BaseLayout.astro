@@ -1,0 +1,130 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Navbar from '../components/layout/Navbar.astro';
+import MobileNavigation from '../components/layout/MobileNavigation.astro';
+import Footer from '../components/layout/Footer.astro';
+import Dialogs from '../components/layout/Dialogs.astro';
+import IconSprite from '../components/decorative/IconSprite.astro';
+import SeoHead from '../components/seo/SeoHead.astro';
+import StructuredData from '../components/seo/StructuredData.astro';
+import { canonicalPlaces } from '../data/geosites';
+import { geopark } from '../data/geopark';
+import { clientImages } from '../lib/images';
+import { heroImages } from '../lib/hero-images';
+import { absoluteUrl } from '../lib/urls';
+import '../styles/global.css';
+import displayFont from '../assets/fonts/barlow-800.woff2?url';
+import bodyFont from '../assets/fonts/montserrat-variable.woff2?url';
+interface Props {
+  title?: string;
+  description?: string;
+  structuredData?: Record<string, unknown>[];
+}
+const { title, description, structuredData = [] } = Astro.props;
+const images = await clientImages();
+const json = (value: unknown) => JSON.stringify(value).replace(/</g, '\\u003c');
+const home = Astro.url.pathname === '/';
+const heroSources = home ? await heroImages('arequita-rio') : null;
+const common = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Manantiales Serranos',
+    url: absoluteUrl('/'),
+  },
+  ...(home
+    ? [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'TouristDestination',
+          name: 'Geoparque Mundial UNESCO Manantiales Serranos',
+          description: '2.010 km² de geología, naturaleza y cultura en Lavalleja, Uruguay.',
+          url: absoluteUrl('/'),
+          sameAs: 'https://www.unesco.org/en/iggp/manantiales-serranos-unesco-global-geopark',
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          itemListElement: geopark.places
+            .filter((place) => place.featured)
+            .map((place, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              name: place.name,
+              url: absoluteUrl(`/lugares/${place.slug}/`),
+            })),
+        },
+      ]
+    : []),
+];
+---
+
+<!doctype html>
+<html lang="es-UY">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#214b37" />
+    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href={displayFont} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={bodyFont} as="font" type="font/woff2" crossorigin />
+    {heroSources && (
+      <link
+        rel="preload"
+        as="image"
+        type="image/avif"
+        media="(min-width: 621px)"
+        imagesrcset={heroSources.desktop}
+        imagesizes={heroSources.desktopSizes}
+        fetchpriority="high"
+      />
+    )}
+    {heroSources && (
+      <link
+        rel="preload"
+        as="image"
+        type="image/avif"
+        media="(max-width: 620px)"
+        imagesrcset={heroSources.mobile}
+        imagesizes={heroSources.mobileSizes}
+        fetchpriority="high"
+      />
+    )}
+    <SeoHead {title} {description} />
+    <ClientRouter />
+    <StructuredData data={[...common, ...structuredData]} />
+    <slot name="head" />
+  </head>
+  <body class:list={{ 'route-page': !home }}>
+    <a class="skip" href="#contenido">
+      Saltar al contenido
+    </a>
+    <IconSprite />
+    <Navbar />
+    <MobileNavigation />
+    <main id="contenido">
+      <slot />
+    </main>
+    <Footer />
+    <div class="toast" id="toast" popover="manual" role="status" aria-live="polite"></div>
+    <Dialogs />
+    <script
+      id="page-data"
+      type="application/json"
+      set:html={json({ ...geopark, places: canonicalPlaces })}
+    />
+    <script id="client-assets" type="application/json" set:html={json(images)} />
+    <noscript>
+      <p class="planner-fallback">
+        Explorá los <a href="/lugares/">61 lugares</a>, las <a href="/historias/">historias</a> y
+        los <a href="/circuitos/">circuitos</a>.{' '}
+        <a href="/guia.md" download>
+          Llevá la guía de bolsillo.
+        </a>
+      </p>
+    </noscript>
+    <script>
+      import '../features/site/lifecycle.js';
+    </script>
+  </body>
+</html>

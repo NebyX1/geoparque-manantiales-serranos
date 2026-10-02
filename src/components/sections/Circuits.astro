@@ -1,0 +1,33 @@
+---
+import CircuitCard from '../trip/CircuitCard.astro';
+import { circuits } from '../../data/circuits';
+---
+
+<section aria-labelledby="routes-title" class="section" id="circuitos">
+  <div class="section-inner">
+    <div class="eyebrow">
+      <span class="chapter">06 /</span>Menos apuro. Más descubrimientos.
+    </div>
+    <div class="section-heading">
+      <h2 class="display" id="routes-title">
+        Dale tiempo
+        <br />
+        <em>a tu próxima escapada.</em>
+      </h2>
+      <p class="section-lead">
+        Ideas para empezar a organizarte. Elegí un recorrido y adaptalo a tu tiempo, tus intereses y
+        los accesos disponibles.
+      </p>
+    </div>
+    <div class="routes-grid">
+      {circuits.map((circuit) => (
+        <CircuitCard {circuit} />
+      ))}
+    </div>
+    <p class="route-note">
+      Ideas para tu viaje, no paquetes comerciales. Los tiempos no son mediciones de traslado y las
+      actividades no se reservan desde esta web. Confirmá cada servicio y acceso con sus
+      responsables.
+    </p>
+  </div>
+</section>

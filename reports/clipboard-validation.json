@@ -1,0 +1,14 @@
+[
+  {
+    "profile": "chromium",
+    "copy": "native",
+    "fallback": "focused and selected",
+    "result": "passed"
+  },
+  {
+    "profile": "webkit",
+    "copy": "write contract stub",
+    "fallback": "focused and selected",
+    "result": "passed"
+  }
+]

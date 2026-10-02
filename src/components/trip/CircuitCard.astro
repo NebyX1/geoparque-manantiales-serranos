@@ -1,0 +1,46 @@
+---
+import type { Circuit } from '../../types/geopark';
+import Photo from '../brand/Photo.astro';
+interface Props {
+  circuit: Circuit;
+}
+const { circuit } = Astro.props;
+const href = `/circuitos/${circuit.id}/`;
+---
+
+<article class="route-card reveal">
+  <a
+    aria-label={`Ver escapada ${circuit.name}`}
+    class="route-image"
+    href={href}
+    style="display:block"
+  >
+    <Photo
+      alt={
+        circuit.imageContext ? 'Imagen del paisaje serrano, utilizada como contexto' : circuit.name
+      }
+      assetKey={circuit.image}
+    />
+    <span class="route-days">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-clock" />
+      </svg>
+      {circuit.days} {circuit.days === 1 ? 'día' : 'días'}
+    </span>
+    {circuit.imageContext && <span class="context-badge">Paisaje de Lavalleja</span>}
+  </a>
+  <div class="route-content">
+    <div class="eyebrow">{circuit.kicker}</div>
+    <h3>
+      <a href={href}>{circuit.name}</a>
+    </h3>
+    <p>{circuit.text}</p>
+    <div class="route-path">{circuit.path}</div>
+    <a class="text-link" href={href}>
+      Descubrí la escapada
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-arrow" />
+      </svg>
+    </a>
+  </div>
+</article>

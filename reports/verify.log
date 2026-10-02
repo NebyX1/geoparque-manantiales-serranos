@@ -1,0 +1,403 @@
+
+> manantiales-serranos@1.0.0 verify
+> npm run check && npm run lint && npm run format:check && npm run test && npm run build && npm run test:seo && npm run test:e2e
+
+
+> manantiales-serranos@1.0.0 check
+> astro check
+
+03:39:56 [types] Generated 50ms
+03:39:56 [check] Getting diagnostics for Astro files in D:\Web-Projects\geoparque...
+Result (99 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> manantiales-serranos@1.0.0 lint
+> eslint .
+
+
+> manantiales-serranos@1.0.0 format:check
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> manantiales-serranos@1.0.0 test
+> vitest run tests/unit
+
+
+ RUN  v5.0.1 D:/Web-Projects/geoparque
+
+
+ Test Files  3 passed (3)
+      Tests  17 passed (17)
+   Start at  03:40:09
+   Duration  844ms (tests 43%, transform 30%, import 25%, worker 2%)
+
+
+> manantiales-serranos@1.0.0 build
+> astro build
+
+03:40:12 [types] Generated 42ms
+03:40:12 [build] output: "static"
+03:40:12 [build] mode: "static"
+03:40:12 [build] directory: D:\Web-Projects\geoparque\dist\
+03:40:12 [build] Collecting build info...
+03:40:12 [build] ✓ Completed in 119ms.
+03:40:12 [build] Building static entrypoints...
+03:40:13 [vite] ✓ built in 990ms
+03:40:13 [vite] ✓ built in 150ms
+03:40:13 [build] Rearranging server assets...
+
+ generating static routes 
+03:40:14   ├─ /404.html (+53ms) 
+03:40:14   ├─ /circuitos/agua-bosque/index.html (+13ms) 
+03:40:14   ├─ /circuitos/arequita/index.html (+13ms) 
+03:40:14   ├─ /circuitos/villa-serrana/index.html (+14ms) 
+03:40:14   ├─ /circuitos/index.html (+66ms) 
+03:40:14   ├─ /explorar/index.html (+109ms) 
+03:40:14   ├─ /guia.md (+4ms) 
+03:40:14   ├─ /historias/geoparque/index.html (+9ms) 
+03:40:14   ├─ /historias/agua/index.html (+8ms) 
+03:40:14   ├─ /historias/biodiversidad/index.html (+9ms) 
+03:40:14   ├─ /historias/memoria/index.html (+7ms) 
+03:40:14   ├─ /historias/sabores/index.html (+7ms) 
+03:40:14   ├─ /historias/arqueologia/index.html (+16ms) 
+03:40:14   ├─ /historias/educacion/index.html (+11ms) 
+03:40:14   ├─ /historias/conservacion/index.html (+15ms) 
+03:40:14   ├─ /historias/index.html (+39ms) 
+03:40:14   ├─ /llms.txt (+6ms) 
+03:40:14   ├─ /lugares/cerro-arequita.md (+3ms) 
+03:40:14   ├─ /lugares/cerro-del-cura.md (+2ms) 
+03:40:14   ├─ /lugares/cerro-del-ombu.md (+1ms) 
+03:40:14   ├─ /lugares/nacientes-del-rio-santa-lucia.md (+2ms) 
+03:40:14   ├─ /lugares/el-destacamento.md (+2ms) 
+03:40:14   ├─ /lugares/reserva-artistica-kyky-o.md (+2ms) 
+03:40:14   ├─ /lugares/paso-de-la-arena.md (+2ms) 
+03:40:14   ├─ /lugares/cerro-marmaraja.md (+2ms) 
+03:40:14   ├─ /lugares/represa-stewart-vargas.md (+2ms) 
+03:40:14   ├─ /lugares/meson-de-las-canas.md (+2ms) 
+03:40:14   ├─ /lugares/ventorrillo-de-la-buena-vista.md (+4ms) 
+03:40:14   ├─ /lugares/granito-villa-serrana.md (+3ms) 
+03:40:14   ├─ /lugares/cantera-del-portugues.md (+2ms) 
+03:40:14   ├─ /lugares/salto-del-penitente.md (+2ms) 
+03:40:14   ├─ /lugares/cerro-campanero.md (+3ms) 
+03:40:14   ├─ /lugares/parque-represa-de-ose.md (+3ms) 
+03:40:14   ├─ /lugares/parque-de-minas.md (+3ms) 
+03:40:14   ├─ /lugares/cueva-amarilla.md (+3ms) 
+03:40:14   ├─ /lugares/mirador-ramallo.md (+3ms) 
+03:40:14   ├─ /lugares/cantera-libro-gigante.md (+2ms) 
+03:40:14   ├─ /lugares/abra-de-zabaleta.md (+3ms) 
+03:40:14   ├─ /lugares/templo-budista-chagdud-gonpa-sengue-dzong.md (+2ms) 
+03:40:14   ├─ /lugares/campamento-aguas-blancas.md (+2ms) 
+03:40:14   ├─ /lugares/camping-aguas-blancas.md (+3ms) 
+03:40:14   ├─ /lugares/cerro-la-caperuza.md (+2ms) 
+03:40:14   ├─ /lugares/parque-mataojo.md (+2ms) 
+03:40:14   ├─ /lugares/casa-de-la-cultura-solis.md (+2ms) 
+03:40:14   ├─ /lugares/edificio-cuna-de-fabini.md (+2ms) 
+03:40:14   ├─ /lugares/plaza-lazaro-cortes.md (+3ms) 
+03:40:14   ├─ /lugares/plaza-de-deportes.md (+2ms) 
+03:40:14   ├─ /lugares/reserva-natural-parque-salus.md (+4ms) 
+03:40:14   ├─ /lugares/mina-ancap.md (+3ms) 
+03:40:14   ├─ /lugares/cerro-del-verdun.md (+3ms) 
+03:40:14   ├─ /lugares/mina-verdun.md (+4ms) 
+03:40:14   ├─ /lugares/centro-cultural-angel-ugarte-ex-estacion-de-afe.md (+2ms) 
+03:40:14   ├─ /lugares/museo-stelio-belloni.md (+2ms) 
+03:40:14   ├─ /lugares/edificio-escuela-1-de-practicas-artigas.md (+2ms) 
+03:40:14   ├─ /lugares/edificio-escuela-8-guillermo-cuadri.md (+3ms) 
+03:40:14   ├─ /lugares/plaza-libertad.md (+3ms) 
+03:40:14   ├─ /lugares/confiteria-irisarri.md (+3ms) 
+03:40:14   ├─ /lugares/catedral-de-la-inmaculada-concepcion-de-minas.md (+2ms) 
+03:40:14   ├─ /lugares/casa-de-la-cultura.md (+2ms) 
+03:40:14   ├─ /lugares/cementerio-central.md (+2ms) 
+03:40:14   ├─ /lugares/museo-alfajores-de-las-sierras-de-minas.md (+2ms) 
+03:40:14   ├─ /lugares/teatro-lavalleja.md (+2ms) 
+03:40:14   ├─ /lugares/cerro-artigas.md (+2ms) 
+03:40:14   ├─ /lugares/casa-curbelo-baez.md (+2ms) 
+03:40:14   ├─ /lugares/iglesia-santa-teresita.md (+2ms) 
+03:40:14   ├─ /lugares/parque-rodo.md (+2ms) 
+03:40:14   ├─ /lugares/gruta-colon-y-conservacion-de-murcielagos.md (+2ms) 
+03:40:14   ├─ /lugares/monte-de-ombues-del-entorno-de-arequita.md (+2ms) 
+03:40:14   ├─ /lugares/laguna-de-los-cuervos-y-entorno.md (+2ms) 
+03:40:14   ├─ /lugares/camping-arequita.md (+2ms) 
+03:40:14   ├─ /lugares/villa-serrana-el-conjunto-urbano-y-paisajistico.md (+3ms) 
+03:40:14   ├─ /lugares/la-guarida.md (+2ms) 
+03:40:14   ├─ /lugares/mangas-de-piedra-y-cerro-de-la-leona.md (+3ms) 
+03:40:14   ├─ /lugares/reserva-el-abra.md (+3ms) 
+03:40:14   ├─ /lugares/valle-del-hilo-de-la-vida.md (+3ms) 
+03:40:14   ├─ /lugares/cerro-mistico.md (+2ms) 
+03:40:14   ├─ /lugares/museo-de-replicas-en-miniaturas.md (+2ms) 
+03:40:14   ├─ /lugares/molino-viejo-de-minas.md (+2ms) 
+03:40:14   ├─ /lugares/cerro-arequita/index.html (+9ms) 
+03:40:14   ├─ /lugares/cerro-del-cura/index.html (+9ms) 
+03:40:14   ├─ /lugares/cerro-del-ombu/index.html (+9ms) 
+03:40:14   ├─ /lugares/nacientes-del-rio-santa-lucia/index.html (+12ms) 
+03:40:14   ├─ /lugares/el-destacamento/index.html (+8ms) 
+03:40:14   ├─ /lugares/reserva-artistica-kyky-o/index.html (+9ms) 
+03:40:14   ├─ /lugares/paso-de-la-arena/index.html (+9ms) 
+03:40:14   ├─ /lugares/cerro-marmaraja/index.html (+9ms) 
+03:40:14   ├─ /lugares/represa-stewart-vargas/index.html (+18ms) 
+03:40:14   ├─ /lugares/meson-de-las-canas/index.html (+40ms) 
+03:40:14   ├─ /lugares/ventorrillo-de-la-buena-vista/index.html (+13ms) 
+03:40:14   ├─ /lugares/granito-villa-serrana/index.html (+9ms) 
+03:40:14   ├─ /lugares/cantera-del-portugues/index.html (+7ms) 
+03:40:14   ├─ /lugares/salto-del-penitente/index.html (+8ms) 
+03:40:14   ├─ /lugares/cerro-campanero/index.html (+8ms) 
+03:40:14   ├─ /lugares/parque-represa-de-ose/index.html (+10ms) 
+03:40:14   ├─ /lugares/parque-de-minas/index.html (+25ms) 
+03:40:14   ├─ /lugares/cueva-amarilla/index.html (+19ms) 
+03:40:14   ├─ /lugares/mirador-ramallo/index.html (+15ms) 
+03:40:14   ├─ /lugares/cantera-libro-gigante/index.html (+21ms) 
+03:40:14   ├─ /lugares/abra-de-zabaleta/index.html (+11ms) 
+03:40:14   ├─ /lugares/templo-budista-chagdud-gonpa-sengue-dzong/index.html (+12ms) 
+03:40:14   ├─ /lugares/campamento-aguas-blancas/index.html (+14ms) 
+03:40:14   ├─ /lugares/camping-aguas-blancas/index.html (+13ms) 
+03:40:14   ├─ /lugares/cerro-la-caperuza/index.html (+13ms) 
+03:40:14   ├─ /lugares/parque-mataojo/index.html (+14ms) 
+03:40:14   ├─ /lugares/casa-de-la-cultura-solis/index.html (+14ms) 
+03:40:14   ├─ /lugares/edificio-cuna-de-fabini/index.html (+22ms) 
+03:40:14   ├─ /lugares/plaza-lazaro-cortes/index.html (+14ms) 
+03:40:14   ├─ /lugares/plaza-de-deportes/index.html (+15ms) 
+03:40:14   ├─ /lugares/reserva-natural-parque-salus/index.html (+10ms) 
+03:40:14   ├─ /lugares/mina-ancap/index.html (+13ms) 
+03:40:15   ├─ /lugares/cerro-del-verdun/index.html (+16ms) 
+03:40:15   ├─ /lugares/mina-verdun/index.html (+14ms) 
+03:40:15   ├─ /lugares/centro-cultural-angel-ugarte-ex-estacion-de-afe/index.html (+14ms) 
+03:40:15   ├─ /lugares/museo-stelio-belloni/index.html (+8ms) 
+03:40:15   ├─ /lugares/edificio-escuela-1-de-practicas-artigas/index.html (+15ms) 
+03:40:15   ├─ /lugares/edificio-escuela-8-guillermo-cuadri/index.html (+17ms) 
+03:40:15   ├─ /lugares/plaza-libertad/index.html (+13ms) 
+03:40:15   ├─ /lugares/confiteria-irisarri/index.html (+16ms) 
+03:40:15   ├─ /lugares/catedral-de-la-inmaculada-concepcion-de-minas/index.html (+16ms) 
+03:40:15   ├─ /lugares/casa-de-la-cultura/index.html (+10ms) 
+03:40:15   ├─ /lugares/cementerio-central/index.html (+7ms) 
+03:40:15   ├─ /lugares/museo-alfajores-de-las-sierras-de-minas/index.html (+13ms) 
+03:40:15   ├─ /lugares/teatro-lavalleja/index.html (+13ms) 
+03:40:15   ├─ /lugares/cerro-artigas/index.html (+20ms) 
+03:40:15   ├─ /lugares/casa-curbelo-baez/index.html (+16ms) 
+03:40:15   ├─ /lugares/iglesia-santa-teresita/index.html (+16ms) 
+03:40:15   ├─ /lugares/parque-rodo/index.html (+20ms) 
+03:40:15   ├─ /lugares/gruta-colon-y-conservacion-de-murcielagos/index.html (+13ms) 
+03:40:15   ├─ /lugares/monte-de-ombues-del-entorno-de-arequita/index.html (+15ms) 
+03:40:15   ├─ /lugares/laguna-de-los-cuervos-y-entorno/index.html (+18ms) 
+03:40:15   ├─ /lugares/camping-arequita/index.html (+16ms) 
+03:40:15   ├─ /lugares/villa-serrana-el-conjunto-urbano-y-paisajistico/index.html (+11ms) 
+03:40:15   ├─ /lugares/la-guarida/index.html (+9ms) 
+03:40:15   ├─ /lugares/mangas-de-piedra-y-cerro-de-la-leona/index.html (+11ms) 
+03:40:15   ├─ /lugares/reserva-el-abra/index.html (+11ms) 
+03:40:15   ├─ /lugares/valle-del-hilo-de-la-vida/index.html (+10ms) 
+03:40:15   ├─ /lugares/cerro-mistico/index.html (+24ms) 
+03:40:15   ├─ /lugares/museo-de-replicas-en-miniaturas/index.html (+24ms) 
+03:40:15   ├─ /lugares/molino-viejo-de-minas/index.html (+12ms) 
+03:40:15   ├─ /lugares/index.html (+85ms) 
+03:40:15   ├─ /lugares.md (+5ms) 
+03:40:15   ├─ /planifica/index.html (+29ms) 
+03:40:15   ├─ /robots.txt (+2ms) 
+03:40:15   ├─ /index.html (+79ms) 
+03:40:15 ✓ Completed in 1.70s.
+
+ generating optimized images 
+03:40:15   ▶ /_astro/aguas.LeldrFtu_ZPkuAP.webp (reused cache entry) (+3ms) (1/131)
+03:40:15   ▶ /_astro/aprendiendo.C3NhzHiJ_ZWVIPb.webp (reused cache entry) (+3ms) (2/131)
+03:40:15   ▶ /_astro/arequita.D857c1BE_Zqqihp.webp (reused cache entry) (+3ms) (3/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_ZswqCX.webp (reused cache entry) (+3ms) (4/131)
+03:40:15   ▶ /_astro/artesania.BKcRgWk2_ZTWLkw.webp (reused cache entry) (+3ms) (5/131)
+03:40:15   ▶ /_astro/aves.Bdyp7F0D_Z1ilmNB.webp (reused cache entry) (+6ms) (6/131)
+03:40:15   ▶ /_astro/bosque.DWW_ki7G_Z5zgd0.webp (reused cache entry) (+6ms) (7/131)
+03:40:15   ▶ /_astro/artigas.C0NQx-Nn_ZBKI80.webp (reused cache entry) (+7ms) (8/131)
+03:40:15   ▶ /_astro/arroyo.roje8Sty_1uFWfE.webp (reused cache entry) (+7ms) (9/131)
+03:40:15   ▶ /_astro/campo.DBz3Pz8k_1eGUp9.webp (reused cache entry) (+7ms) (10/131)
+03:40:15   ▶ /_astro/carpincho.BZNdSTQO_ZiciDo.webp (reused cache entry) (+7ms) (11/131)
+03:40:15   ▶ /_astro/cantera.udt-JEj0_1cDE84.webp (reused cache entry) (+8ms) (12/131)
+03:40:15   ▶ /_astro/aprendiendo.C3NhzHiJ_ZT7Dww.webp (reused cache entry) (+7ms) (13/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_Z2lljHV.webp (reused cache entry) (+8ms) (14/131)
+03:40:15   ▶ /_astro/arequita.D857c1BE_Z1Ml5gB.webp (reused cache entry) (+8ms) (15/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_Z2oXuCq.webp (reused cache entry) (+9ms) (16/131)
+03:40:15   ▶ /_astro/cielo.BmyzW0Sa_ZwMXHe.webp (reused cache entry) (+9ms) (17/131)
+03:40:15   ▶ /_astro/bosque.DWW_ki7G_1fF9Tc.webp (reused cache entry) (+6ms) (18/131)
+03:40:15   ▶ /_astro/arroyo.roje8Sty_ZnoMUx.webp (reused cache entry) (+6ms) (19/131)
+03:40:15   ▶ /_astro/escuela.CoDXFYNz_2srQfQ.webp (reused cache entry) (+8ms) (20/131)
+03:40:15   ▶ /_astro/artigas.C0NQx-Nn_pUfc4.webp (reused cache entry) (+8ms) (21/131)
+03:40:15   ▶ /_astro/campo.DBz3Pz8k_1Tmfub.webp (reused cache entry) (+8ms) (22/131)
+03:40:15   ▶ /_astro/gastronomia.CYoJeuOk_ZDwTkm.webp (reused cache entry) (+8ms) (23/131)
+03:40:15   ▶ /_astro/cantera.udt-JEj0_Z1D9MBg.webp (reused cache entry) (+8ms) (24/131)
+03:40:15   ▶ /_astro/gauchos.D-EbHMLl_Z1zB62B.webp (reused cache entry) (+7ms) (25/131)
+03:40:15   ▶ /_astro/arequita.D857c1BE_jhGj5.webp (reused cache entry) (+7ms) (26/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_10hFtV.webp (reused cache entry) (+7ms) (27/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_Z2qqbJ0.webp (reused cache entry) (+6ms) (28/131)
+03:40:15   ▶ /_astro/martin.CLDbhghN_Z1u1NUD.webp (reused cache entry) (+6ms) (29/131)
+03:40:15   ▶ /_astro/arroyo.roje8Sty_Ywd3g.webp (reused cache entry) (+5ms) (30/131)
+03:40:15   ▶ /_astro/ombues.BrnFvA0D_ZutByV.webp (reused cache entry) (+4ms) (31/131)
+03:40:15   ▶ /_astro/gruta.BgDXYn_y_KXrfr.webp (reused cache entry) (+6ms) (32/131)
+03:40:15   ▶ /_astro/artigas.C0NQx-Nn_IgKh1.webp (reused cache entry) (+4ms) (33/131)
+03:40:15   ▶ /_astro/cantera.udt-JEj0_1mX44s.webp (reused cache entry) (+4ms) (34/131)
+03:40:15   ▶ /_astro/campo.DBz3Pz8k_ZOpDCL.webp (reused cache entry) (+5ms) (35/131)
+03:40:15   ▶ /_astro/paisaje.4q-VEa-4_Z1xhEeW.webp (reused cache entry) (+6ms) (36/131)
+03:40:15   ▶ /_astro/arequita.D857c1BE_ZzcwO4.webp (reused cache entry) (+4ms) (37/131)
+03:40:15   ▶ /_astro/gauchos.D-EbHMLl_uwf2J.webp (reused cache entry) (+4ms) (38/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_Z1q8acB.webp (reused cache entry) (+5ms) (39/131)
+03:40:15   ▶ /_astro/panorama.BNdE7gdd_Z2gq4xM.webp (reused cache entry) (+6ms) (40/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_Z2rRRPz.webp (reused cache entry) (+6ms) (41/131)
+03:40:15   ▶ /_astro/arroyo.roje8Sty_24lYVc.webp (reused cache entry) (+7ms) (42/131)
+03:40:15   ▶ /_astro/parque-puente.Cnq5yX-5_ZT1gRq.webp (reused cache entry) (+7ms) (43/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_Zh6Ecd.webp (reused cache entry) (+7ms) (44/131)
+03:40:15   ▶ /_astro/artigas.C0NQx-Nn_24KDXn.webp (reused cache entry) (+7ms) (45/131)
+03:40:15   ▶ /_astro/cantera.udt-JEj0_m2axE.webp (reused cache entry) (+8ms) (46/131)
+03:40:15   ▶ /_astro/penitente-poza.DZy6fPL4_Z1FwKrY.webp (reused cache entry) (+8ms) (47/131)
+03:40:15   ▶ /_astro/pelado.BATy6Ebq_Zvra7r.webp (reused cache entry) (+9ms) (48/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_thkxy.webp (reused cache entry) (+7ms) (49/131)
+03:40:15   ▶ /_astro/arequita.D857c1BE_2tUXLE.webp (reused cache entry) (+9ms) (50/131)
+03:40:15   ▶ /_astro/penitente.Cb3qCBCP_Z1Ae9EI.webp (reused cache entry) (+9ms) (51/131)
+03:40:15   ▶ /_astro/panorama.BNdE7gdd_1376cp.webp (reused cache entry) (+7ms) (52/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_19wxX5.webp (reused cache entry) (+6ms) (53/131)
+03:40:15   ▶ /_astro/arroyo.roje8Sty_1QXzv1.webp (reused cache entry) (+6ms) (54/131)
+03:40:15   ▶ /_astro/artigas.C0NQx-Nn_ZJkTld.webp (reused cache entry) (+6ms) (55/131)
+03:40:15   ▶ /_astro/parque-puente.Cnq5yX-5_aTe00.webp (reused cache entry) (+7ms) (56/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_Z1UaMfB.webp (reused cache entry) (+7ms) (57/131)
+03:40:15   ▶ /_astro/puma.r2w__dP9_1g1oaE.webp (reused cache entry) (+4ms) (58/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_17JaEH.webp (reused cache entry) (+3ms) (59/131)
+03:40:15   ▶ /_astro/arequita.D857c1BE_Z22x2r2.webp (reused cache entry) (+3ms) (60/131)
+03:40:15   ▶ /_astro/rio.Cg0FXBEK_lBqhv.webp (reused cache entry) (+4ms) (61/131)
+03:40:15   ▶ /_astro/cantera.udt-JEj0_1qXoPa.webp (reused cache entry) (+6ms) (62/131)
+03:40:15   ▶ /_astro/penitente.Cb3qCBCP_1r4yaw.webp (reused cache entry) (+5ms) (63/131)
+03:40:15   ▶ /_astro/panorama.BNdE7gdd_1rrMeN.webp (reused cache entry) (+5ms) (64/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_1gw2i2.avif (reused cache entry) (+6ms) (65/131)
+03:40:15   ▶ /_astro/parque-puente.Cnq5yX-5_Z2aLYhb.webp (reused cache entry) (+5ms) (66/131)
+03:40:15   ▶ /_astro/artigas.C0NQx-Nn_Z1lm5UY.webp (reused cache entry) (+6ms) (67/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_ZxLLl8.webp (reused cache entry) (+6ms) (68/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_21pYvB.webp (reused cache entry) (+5ms) (69/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_Z1SUkO8.avif (reused cache entry) (+5ms) (70/131)
+03:40:15   ▶ /_astro/arequita-rio.DAcyxPsg_2gWNUg.avif (reused cache entry) (+5ms) (71/131)
+03:40:15   ▶ /_astro/rio.Cg0FXBEK_ZOx7Q4.webp (reused cache entry) (+5ms) (72/131)
+03:40:15   ▶ /_astro/aguas.BH0gEsBb_ZoJdCH.avif (reused cache entry) (+5ms) (73/131)
+03:40:15   ▶ /_astro/cantera.udt-JEj0_Z1XA4MK.webp (reused cache entry) (+6ms) (74/131)
+03:40:15   ▶ /_astro/penitente.Cb3qCBCP_Z1M4ESD.webp (reused cache entry) (+4ms) (75/131)
+03:40:15   ▶ /_astro/salus.DdzWe3sN_1omJcw.avif (reused cache entry) (+4ms) (76/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_1f4lbs.avif (reused cache entry) (+4ms) (77/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_ZoSN02.webp (reused cache entry) (+3ms) (78/131)
+03:40:15   ▶ /_astro/parque.C_30pM6A_Z1QwqtU.avif (reused cache entry) (+4ms) (79/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_WuHk9.webp (reused cache entry) (+3ms) (80/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_1rHEnJ.avif (reused cache entry) (+3ms) (81/131)
+03:40:15   ▶ /_astro/arequita-rio.DAcyxPsg_2jW68n.avif (reused cache entry) (+4ms) (82/131)
+03:40:15   ▶ /_astro/aguas.BH0gEsBb_HIHtM.avif (reused cache entry) (+4ms) (83/131)
+03:40:15   ▶ /_astro/rio.Cg0FXBEK_Z8KuuX.webp (reused cache entry) (+5ms) (84/131)
+03:40:15   ▶ /_astro/salus.DdzWe3sN_2vPFk1.avif (reused cache entry) (+4ms) (85/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_Z27iB9s.webp (reused cache entry) (+5ms) (86/131)
+03:40:15   ▶ /_astro/parque.C_30pM6A_ZJ3umq.avif (reused cache entry) (+6ms) (87/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_1ek6TM.webp (reused cache entry) (+6ms) (88/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_1dBE4S.avif (reused cache entry) (+6ms) (89/131)
+03:40:15   ▶ /_astro/arequita-rio.DAcyxPsg_Z1Oiojr.avif (reused cache entry) (+5ms) (90/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_ZXHbiN.avif (reused cache entry) (+6ms) (91/131)
+03:40:15   ▶ /_astro/salus.DdzWe3sN_M7tAA.avif (reused cache entry) (+5ms) (92/131)
+03:40:15   ▶ /_astro/rio.Cg0FXBEK_Z228cHe.webp (reused cache entry) (+5ms) (93/131)
+03:40:15   ▶ /_astro/aguas.BH0gEsBb_Z10YteD.avif (reused cache entry) (+6ms) (94/131)
+03:40:15   ▶ /_astro/parque.C_30pM6A_Z1zS9hK.avif (reused cache entry) (+3ms) (95/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_1wvaPg.webp (reused cache entry) (+4ms) (96/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_1PClWq.avif (reused cache entry) (+6ms) (97/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_Z1Hw2ab.avif (reused cache entry) (+6ms) (98/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_ZP6E3l.avif (reused cache entry) (+5ms) (99/131)
+03:40:15   ▶ /_astro/arequita-rio.DAcyxPsg_Z2qrTvY.webp (reused cache entry) (+6ms) (100/131)
+03:40:15   ▶ /_astro/salus.DdzWe3sN_1U49EB.avif (reused cache entry) (+6ms) (101/131)
+03:40:15   ▶ /_astro/aguas.BH0gEsBb_Z19CA1W.avif (reused cache entry) (+6ms) (102/131)
+03:40:15   ▶ /_astro/parque.C_30pM6A_Z2iWpnI.webp (reused cache entry) (+6ms) (103/131)
+03:40:15   ▶ /_astro/rio.Cg0FXBEK_Zlq5yw.webp (reused cache entry) (+7ms) (104/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_1kqOju.webp (reused cache entry) (+6ms) (105/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_H1YTH.avif (reused cache entry) (+4ms) (106/131)
+03:40:15   ▶ /_astro/arequita-rio.DAcyxPsg_Z2nsCiR.webp (reused cache entry) (+4ms) (107/131)
+03:40:15   ▶ /_astro/salus.DdzWe3sN_VVKiI.webp (reused cache entry) (+3ms) (108/131)
+03:40:15   ▶ /_astro/arequita-rio.DynIDuSG_1JB72H.avif (reused cache entry) (+6ms) (109/131)
+03:40:15   ▶ /_astro/aguas.LeldrFtu_Z10V8Nj.avif (reused cache entry) (+5ms) (110/131)
+03:40:15   ▶ /_astro/aguas.BH0gEsBb_ZQacwv.webp (reused cache entry) (+3ms) (111/131)
+03:40:15   ▶ /_astro/parque.C_30pM6A_Z1bttge.webp (reused cache entry) (+3ms) (112/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_1fV4hi.webp (reused cache entry) (+3ms) (113/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_ZlShgK.avif (reused cache entry) (+3ms) (114/131)
+03:40:15   ▶ /_astro/arequita-rio.DAcyxPsg_Z1rvXVK.webp (reused cache entry) (+2ms) (115/131)
+03:40:15   ▶ /_astro/rio.Cg0FXBEK_1yo2Hl.webp (reused cache entry) (+4ms) (116/131)
+03:40:15   ▶ /_astro/salus.DdzWe3sN_24pGqd.webp (reused cache entry) (+2ms) (117/131)
+03:40:15   ▶ /_astro/parque.C_30pM6A_Zgu9FQ.webp (reused cache entry) (+3ms) (118/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_2waSL.avif (reused cache entry) (+3ms) (119/131)
+03:40:15   ▶ /_astro/aguas.BH0gEsBb_giIzY.webp (reused cache entry) (+4ms) (120/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_13IsHj.avif (reused cache entry) (+5ms) (121/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_Z1ERCfE.avif (reused cache entry) (+2ms) (122/131)
+03:40:15   ▶ /_astro/salus.DdzWe3sN_26vtcu.webp (reused cache entry) (+5ms) (123/131)
+03:40:15   ▶ /_astro/aguas.BH0gEsBb_iovmg.webp (reused cache entry) (+3ms) (124/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_1XV9J4.avif (reused cache entry) (+4ms) (125/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_ZrHioG.avif (reused cache entry) (+4ms) (126/131)
+03:40:15   ▶ /_astro/salus.DdzWe3sN_25EMR5.webp (reused cache entry) (+4ms) (127/131)
+03:40:15   ▶ /_astro/aguas.BH0gEsBb_ZY1VOt.webp (reused cache entry) (+4ms) (128/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_12OHA.avif (reused cache entry) (+2ms) (129/131)
+03:40:15   ▶ /_astro/parque.CLdmQKYJ_2qOcgw.webp (reused cache entry) (+2ms) (130/131)
+03:40:15   ▶ /_astro/salus.Bn-ea1vg_ZInpxB.avif (reused cache entry) (+2ms) (131/131)
+03:40:15 ✓ Completed in 76ms.
+
+03:40:15 [build] ✓ Completed in 3.22s.
+03:40:15 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+03:40:15 [build] 79 page(s) built in 3.44s
+03:40:15 [build] Complete!
+
+> manantiales-serranos@1.0.0 test:seo
+> vitest run tests/seo
+
+
+ RUN  v5.0.1 D:/Web-Projects/geoparque
+
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  03:40:16
+   Duration  597ms (tests 47%, transform 31%, import 21%, worker 1%)
+
+
+> manantiales-serranos@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:4184) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:2200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 30 tests using 4 workers
+
+(node:14052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -   2 [webkit] › tests\e2e\visual.spec.ts:3:1 › capturas del prototipo y migración en todos los tamaños y pantallas bajas
+  ok  4 [chromium] › tests\e2e\site.spec.ts:7:1 › home, fotografías, controles del hero y capítulos por teclado (2.7s)
+  ok  3 [webkit] › tests\e2e\site.spec.ts:7:1 › home, fotografías, controles del hero y capítulos por teclado (6.0s)
+  ok  5 [chromium] › tests\e2e\site.spec.ts:19:1 › hero responsive: resolución suficiente para el recorte vertical (3.8s)
+  ok  7 [chromium] › tests\e2e\site.spec.ts:38:1 › atlas, categorías, búsqueda sin acentos, zonas, modalidades y fichas reales (5.7s)
+  ok  6 [webkit] › tests\e2e\site.spec.ts:19:1 › hero responsive: resolución suficiente para el recorte vertical (7.3s)
+  ok  8 [chromium] › tests\e2e\site.spec.ts:59:1 › mapa: teclado, selección, preview, zoom, reset y mapa original (1.7s)
+  ok 10 [chromium] › tests\e2e\site.spec.ts:78:1 › favoritos entre islas, rutas, recarga, otra pestaña y organización por días (2.8s)
+  ok 11 [chromium] › tests\e2e\site.spec.ts:103:1 › planner, circuitos, fecha, exportaciones Markdown/ICS e impresión (2.4s)
+  ok 12 [chromium] › tests\e2e\site.spec.ts:130:1 › buscador global, shortcut, resultados, Escape y retorno de foco (1.5s)
+  ok  9 [webkit] › tests\e2e\site.spec.ts:38:1 › atlas, categorías, búsqueda sin acentos, zonas, modalidades y fichas reales (8.6s)
+  ok 13 [chromium] › tests\e2e\site.spec.ts:140:1 › galería, captions, flechas, quiz y privacidad (3.0s)
+  ok 15 [chromium] › tests\e2e\site.spec.ts:158:1 › menú mobile, foco y Escape (1.3s)
+  ok 16 [chromium] › tests\e2e\site.spec.ts:167:1 › movimiento reducido muestra todas las escenas en flujo y pausa el hero (1.3s)
+  ok 14 [webkit] › tests\e2e\site.spec.ts:59:1 › mapa: teclado, selección, preview, zoom, reset y mapa original (8.8s)
+  ok 17 [chromium] › tests\e2e\site.spec.ts:176:1 › navegación repetida ClientRouter: sin listeners acumulados ni errores de consola (6.4s)
+  ok 19 [chromium] › tests\e2e\site.spec.ts:195:1 › accesibilidad automática sin serious/critical en home, atlas y ficha (19.9s)
+  ok 18 [webkit] › tests\e2e\site.spec.ts:78:1 › favoritos entre islas, rutas, recarga, otra pestaña y organización por días (24.1s)
+  ok 20 [chromium] › tests\e2e\site.spec.ts:209:1 › recursos sin 404, rutas directas y 404 real (2.7s)
+  ok 22 [chromium] › tests\e2e\site.spec.ts:236:1 › sin JavaScript: 61 enlaces rastreables, capítulos y ficha íntegra (3.2s)
+  ok 21 [webkit] › tests\e2e\site.spec.ts:103:1 › planner, circuitos, fecha, exportaciones Markdown/ICS e impresión (6.7s)
+  ok 23 [webkit] › tests\e2e\site.spec.ts:130:1 › buscador global, shortcut, resultados, Escape y retorno de foco (3.7s)
+  ok  1 [chromium] › tests\e2e\visual.spec.ts:3:1 › capturas del prototipo y migración en todos los tamaños y pantallas bajas (1.2m)
+  ok 24 [webkit] › tests\e2e\site.spec.ts:140:1 › galería, captions, flechas, quiz y privacidad (10.3s)
+  ok 25 [webkit] › tests\e2e\site.spec.ts:158:1 › menú mobile, foco y Escape (1.7s)
+  ok 26 [webkit] › tests\e2e\site.spec.ts:167:1 › movimiento reducido muestra todas las escenas en flujo y pausa el hero (2.3s)
+  ok 27 [webkit] › tests\e2e\site.spec.ts:176:1 › navegación repetida ClientRouter: sin listeners acumulados ni errores de consola (9.9s)
+  ok 28 [webkit] › tests\e2e\site.spec.ts:195:1 › accesibilidad automática sin serious/critical en home, atlas y ficha (8.4s)
+  ok 29 [webkit] › tests\e2e\site.spec.ts:209:1 › recursos sin 404, rutas directas y 404 real (2.7s)
+  ok 30 [webkit] › tests\e2e\site.spec.ts:236:1 › sin JavaScript: 61 enlaces rastreables, capítulos y ficha íntegra (3.8s)
+
+  1 skipped
+  29 passed (1.8m)

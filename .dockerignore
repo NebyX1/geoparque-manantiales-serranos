@@ -1,0 +1,16 @@
+node_modules
+dist
+.astro
+.git
+.gitignore
+.env
+reference
+tests
+test-results
+playwright-report
+coverage
+Manantiales_Serranos_v2.html
+reports
+scripts/reference-runtime.txt
+docs
+*.log

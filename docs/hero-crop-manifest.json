@@ -1,0 +1,54 @@
+[
+  {
+    "original": "src/assets/images/hero/arequita-rio.webp",
+    "path": "src/assets/images/hero/mobile/arequita-rio.webp",
+    "crop": {
+      "left": 564,
+      "top": 0,
+      "width": 671,
+      "height": 844
+    },
+    "bytes": 596904,
+    "sha256": "1568c9fd4f82695dcbdd8e8e2584c3913a487245a8badd340e6285ffcf3a4ff9",
+    "pixelsPreserved": true
+  },
+  {
+    "original": "src/assets/images/hero/aguas.webp",
+    "path": "src/assets/images/hero/mobile/aguas.webp",
+    "crop": {
+      "left": 798,
+      "top": 0,
+      "width": 1027,
+      "height": 1291
+    },
+    "bytes": 581986,
+    "sha256": "76434cf5f9f1dba3fa7686a10dcd3b7243cdf26e7bd0aba95a49bb3b199978b7",
+    "pixelsPreserved": true
+  },
+  {
+    "original": "src/assets/images/hero/salus.webp",
+    "path": "src/assets/images/hero/mobile/salus.webp",
+    "crop": {
+      "left": 577,
+      "top": 0,
+      "width": 1193,
+      "height": 1500
+    },
+    "bytes": 1777278,
+    "sha256": "c60fd03ce00a83cea4263a1f639e7924ab8780ce735b18cd374ccee71a45e0c2",
+    "pixelsPreserved": true
+  },
+  {
+    "original": "src/assets/images/hero/parque.webp",
+    "path": "src/assets/images/hero/mobile/parque.webp",
+    "crop": {
+      "left": 888,
+      "top": 0,
+      "width": 894,
+      "height": 1124
+    },
+    "bytes": 946212,
+    "sha256": "9cffb6b4d69295175daac54a6f4a2cbda34bad1dde97c82c8c799861948f5002",
+    "pixelsPreserved": true
+  }
+]

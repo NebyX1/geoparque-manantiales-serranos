@@ -1,0 +1,176 @@
+---
+import Photo from '../brand/Photo.astro';
+import HeroPhoto from '../brand/HeroPhoto.astro';
+---
+
+<section aria-label="Manantiales Serranos, un viaje por el paisaje" class="hero" id="inicio">
+  <div aria-hidden="true" class="hero-images">
+    <div class="hero-image active" data-slide="0">
+      <HeroPhoto assetKey="arequita-rio" decoding="sync" fetchpriority="high" loading="eager" />
+    </div>
+    <div class="hero-image" data-slide="1" hidden>
+      <HeroPhoto assetKey="aguas" loading="lazy" />
+    </div>
+    <div class="hero-image" data-slide="2" hidden>
+      <HeroPhoto assetKey="salus" loading="lazy" />
+    </div>
+    <div class="hero-image" data-slide="3" hidden>
+      <HeroPhoto assetKey="parque" loading="lazy" />
+    </div>
+  </div>
+  <div class="hero-shade"></div>
+  <div class="hero-copy">
+    <div class="eyebrow hero-kicker">
+      <span>
+        <span class="dot"></span>GEOPARQUE MUNDIAL UNESCO
+      </span>
+      <span class="hero-country">LAVALLEJA, URUGUAY</span>
+    </div>
+    <h1 id="hero-title">
+      <span class="hero-word">
+        <span>LA TIERRA</span>
+      </span>
+      <span class="hero-word">
+        <span>TIENE</span>
+      </span>
+      <span class="hero-word">
+        <span class="outline-word">MEMORIA.</span>
+      </span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-description">
+        Vení por el paisaje.
+        <br />
+        <strong>Quedate por sus historias.</strong>
+        <br />
+        Sierras, manantiales y pueblos por descubrir.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn lime" href="/#explorar">
+          Explorá el Geoparque
+          <svg aria-hidden="true" class="icon">
+            <use href="#i-arrow"></use>
+          </svg>
+        </a>
+        <a class="hero-secondary" href="/#historia">
+          <svg aria-hidden="true" class="icon">
+            <use href="#i-compass"></use>
+          </svg>
+          Empezá el viaje en el tiempo
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-caption">
+    <svg aria-hidden="true" class="icon">
+      <use href="#i-pin"></use>
+    </svg>
+    <span id="hero-caption">Cerro Arequita y río Santa Lucía</span>
+  </div>
+  <div class="hero-footer">
+    <div class="hero-footer-top">
+      <span class="eyebrow">Cuatro lugares. Una historia extraordinaria.</span>
+      <div class="slide-counter">
+        <span id="hero-counter">01 / 04</span>
+        <button
+          aria-label="Pausar cambio de paisaje"
+          aria-pressed="false"
+          class="round"
+          id="hero-pause"
+        >
+          <svg aria-hidden="true" class="icon">
+            <use href="#i-pause"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div aria-label="Elegir paisaje de portada" class="hero-tabs" role="tablist">
+      <button aria-selected="true" class="hero-tab" data-hero="0" role="tab" tabindex="0">
+        <span aria-hidden="true" class="hero-tab-number">
+          01
+        </span>
+        <Photo
+          alt=""
+          assetKey="arequita-rio"
+          loading="lazy"
+          sizes="(max-width: 900px) 100vw, 75vw"
+        />
+        <span>
+          <small data-number="01">01 · La memoria del fuego</small>
+          <strong>Cerro Arequita</strong>
+        </span>
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-arrow"></use>
+        </svg>
+      </button>
+      <button aria-selected="false" class="hero-tab" data-hero="1" role="tab" tabindex="-1">
+        <span aria-hidden="true" class="hero-tab-number">
+          02
+        </span>
+        <Photo alt="" assetKey="aguas" loading="lazy" sizes="(max-width: 900px) 100vw, 75vw" />
+        <span>
+          <small data-number="02">02 · Cicatrices de la Tierra</small>
+          <strong>Aguas Blancas</strong>
+        </span>
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-arrow"></use>
+        </svg>
+      </button>
+      <button aria-selected="false" class="hero-tab" data-hero="2" role="tab" tabindex="-1">
+        <span aria-hidden="true" class="hero-tab-number">
+          03
+        </span>
+        <Photo alt="" assetKey="salus" loading="lazy" sizes="(max-width: 900px) 100vw, 75vw" />
+        <span>
+          <small data-number="03">03 · Donde la roca guarda vida</small>
+          <strong>Reserva Salus</strong>
+        </span>
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-arrow"></use>
+        </svg>
+      </button>
+      <button aria-selected="false" class="hero-tab" data-hero="3" role="tab" tabindex="-1">
+        <span aria-hidden="true" class="hero-tab-number">
+          04
+        </span>
+        <Photo alt="" assetKey="parque" loading="lazy" sizes="(max-width: 900px) 100vw, 75vw" />
+        <span>
+          <small data-number="04">04 · Las huellas de un mar</small>
+          <strong>Parque de Minas</strong>
+        </span>
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div aria-hidden="true" class="hero-seal">
+    <svg viewBox="0 0 150 150">
+      <defs>
+        <path d="M75 75m-59 0a59 59 0 1 1 118 0a59 59 0 1 1-118 0" id="geo-seal-path"></path>
+      </defs>
+      <g class="seal-spin">
+        <text>
+          <textpath href="#geo-seal-path" textLength="366">
+            LAVALLEJA · URUGUAY · UN VIAJE EN EL TIEMPO ·
+          </textpath>
+        </text>
+      </g>
+      <g class="seal-center">
+        <circle cx="75" cy="75" r="30"></circle>
+        <path d="M75 31v13m0 62v13M31 75h13m62 0h13M44 44l10 10m42 42l10 10M44 106l10-10m42-42l10-10M56 88l14-23 11 16 8-12 12 19Z"></path>
+      </g>
+    </svg>
+  </div>
+  <div aria-hidden="true" class="hero-hills">
+    <svg class="hero-hill back" preserveAspectRatio="none" viewBox="0 0 1600 250">
+      <path d="M0 63C115 93 208 25 346 61S587 129 731 84 967 23 1123 77 1400 21 1600 49V250H0Z"></path>
+    </svg>
+    <svg class="hero-hill mid" preserveAspectRatio="none" viewBox="0 0 1600 250">
+      <path d="M0 69C170 18 270 37 442 81S710 81 915 46 1245 110 1400 58 1535 29 1600 42V250H0Z"></path>
+    </svg>
+    <svg class="hero-hill front" preserveAspectRatio="none" viewBox="0 0 1600 250">
+      <path d="M0 60C185 94 288 59 474 68S686 29 879 61 1091 92 1246 49 1440 43 1600 69V250H0Z"></path>
+    </svg>
+  </div>
+</section>

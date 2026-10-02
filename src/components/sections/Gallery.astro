@@ -1,0 +1,52 @@
+---
+import Photo from '../brand/Photo.astro';
+---
+
+<section aria-labelledby="gallery-title" class="section gallery">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Una pausa para mirar</div>
+        <h2 class="display" id="gallery-title" style="margin-top:19px">
+          El paisaje,<em>de cerca.</em>
+        </h2>
+      </div>
+      <button class="text-link" data-action="gallery">
+        Abrir la galería
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-expand"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="gallery-grid">
+      <button aria-label="Ampliar paisaje de Aguas Blancas" class="gallery-shot" data-gallery="0">
+        <Photo alt="Espejo de agua y sierras de Aguas Blancas" assetKey="aguas" loading="lazy" />
+        <span>Aguas Blancas</span>
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-expand"></use>
+        </svg>
+      </button>
+      <button aria-label="Ampliar Reserva Salus" class="gallery-shot" data-gallery="1">
+        <Photo alt="Luz natural entre árboles de Salus" assetKey="salus" loading="lazy" />
+        <span>Reserva Salus</span>
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-expand"></use>
+        </svg>
+      </button>
+      <button aria-label="Ampliar Cerro Arequita" class="gallery-shot" data-gallery="2">
+        <Photo alt="Cerro Arequita y el paisaje que lo rodea" assetKey="arequita" loading="lazy" />
+        <span>Cerro Arequita</span>
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-expand"></use>
+        </svg>
+      </button>
+      <button aria-label="Ampliar Salto del Penitente" class="gallery-shot" data-gallery="3">
+        <Photo alt="Rocas y agua del Salto del Penitente" assetKey="penitente" loading="lazy" />
+        <span>Salto del Penitente</span>
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-expand"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

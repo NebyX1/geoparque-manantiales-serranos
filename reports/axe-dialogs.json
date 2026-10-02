@@ -1,0 +1,22 @@
+[
+  {
+    "action": "search",
+    "failures": []
+  },
+  {
+    "action": "trip",
+    "failures": []
+  },
+  {
+    "action": "gallery",
+    "failures": []
+  },
+  {
+    "action": "quiz",
+    "failures": []
+  },
+  {
+    "action": "privacy",
+    "failures": []
+  }
+]

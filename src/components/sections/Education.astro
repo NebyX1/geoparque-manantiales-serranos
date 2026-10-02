@@ -1,0 +1,51 @@
+---
+import Photo from '../brand/Photo.astro';
+---
+
+<section aria-labelledby="education-title" class="section education" id="aprender">
+  <div class="section-inner education-box">
+    <div class="education-text">
+      <div class="eyebrow">
+        <span class="chapter">07 /</span>Aprender cambia la mirada
+      </div>
+      <h2 class="display" id="education-title">
+        Un aula.
+        <br />
+        <em>A cielo abierto.</em>
+      </h2>
+      <p>
+        El Geoparque conecta escuelas, comunidades y conocimiento. Una roca, un curso de agua o una
+        historia local pueden ser el comienzo de una gran pregunta.
+      </p>
+      <div class="education-buttons">
+        <a class="btn" href="/historias/educacion/">
+          Explorá para aprender
+          <svg aria-hidden="true" class="icon">
+            <use href="#i-arrow"></use>
+          </svg>
+        </a>
+        <button class="text-link" data-action="quiz">
+          Poné a prueba tu curiosidad
+          <svg aria-hidden="true" class="icon">
+            <use href="#i-plus"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="education-image reveal">
+      <Photo
+        alt="Actividad educativa en un entorno natural del Geoparque, fotografía del material institucional"
+        assetKey="aprendiendo"
+        loading="lazy"
+      />
+      <div class="education-sticker">
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-book"></use>
+        </svg>
+        <span>
+          Una escuela, un geositio.<small>Un vínculo entre territorio y comunidad.</small>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

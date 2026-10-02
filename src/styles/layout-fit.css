@@ -1,0 +1,50 @@
+.section-inner,
+.nature-layout,
+.nature-words,
+.nature-photo,
+.map-sidebar,
+.map-list,
+.map-canvas,
+.education-text,
+.education-image {
+  min-width: 0;
+}
+@media (max-width: 1000px) {
+  .map-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .map-sidebar {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .map-list {
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 900px) {
+  .nature-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .nature-words,
+  .nature-photo {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 359px) {
+  .nature-words .display {
+    font-size: 47px;
+  }
+  .nature-topic summary {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 620px) {
+  .nature-words .display {
+    font-size: clamp(39px, 11.3vw, 54px);
+  }
+}

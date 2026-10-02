@@ -1,0 +1,114 @@
+---
+import Photo from '../brand/Photo.astro';
+---
+
+<section aria-labelledby="nature-title" class="section nature" id="naturaleza">
+  <div class="section-inner">
+    <div class="nature-layout">
+      <div class="nature-photo reveal">
+        <Photo
+          alt="Luz entre los árboles de la Reserva Natural Salus"
+          assetKey="salus"
+          loading="lazy"
+        />
+        <span class="photo-label">
+          <svg aria-hidden="true" class="icon">
+            <use href="#i-pin"></use>
+          </svg>
+          Reserva Natural Salus
+        </span>
+      </div>
+      <div class="nature-words">
+        <div class="eyebrow">
+          <span class="chapter">04 /</span>El paisaje respira
+        </div>
+        <h2 class="display" id="nature-title">
+          No sólo mirás
+          <br />
+          la naturaleza.
+          <br />
+          <em>Formás parte.</em>
+        </h2>
+        <p>
+          Entre pastizales, bosques serranos, humedales y montes de ombúes, la geología se encuentra
+          con la vida. Acercate con atención: lo extraordinario también está en lo pequeño.
+        </p>
+        <div class="nature-topics">
+          <details class="nature-topic" open="">
+            <summary>
+              El agua, por dentro y por fuera
+              <svg aria-hidden="true" class="icon">
+                <use href="#i-plus"></use>
+              </svg>
+            </summary>
+            <p>
+              Manantiales, cursos de agua y acuíferos conectan las sierras con la vida cotidiana.
+              Una cuenca se comprende mirando también el territorio que la alimenta.
+              <a class="text-link" href="/historias/agua/" style="font-size:11px">
+                Seguí el viaje del agua
+                <svg aria-hidden="true" class="icon">
+                  <use href="#i-arrow"></use>
+                </svg>
+              </a>
+            </p>
+          </details>
+          <details class="nature-topic">
+            <summary>
+              Una sierra, muchos ambientes
+              <svg aria-hidden="true" class="icon">
+                <use href="#i-plus"></use>
+              </svg>
+            </summary>
+            <p>
+              El bosque serrano, el bosque ribereño, los pastizales y el monte de ombúes proponen
+              distintas formas de observar. No hay avistamientos garantizados: el encuentro empieza
+              por conocer sus ambientes.
+              <a class="text-link" href="/historias/biodiversidad/" style="font-size:11px">
+                Conocer la biodiversidad
+                <svg aria-hidden="true" class="icon">
+                  <use href="#i-arrow"></use>
+                </svg>
+              </a>
+            </p>
+          </details>
+          <details class="nature-topic">
+            <summary>
+              El privilegio de no dejar huella
+              <svg aria-hidden="true" class="icon">
+                <use href="#i-plus"></use>
+              </svg>
+            </summary>
+            <p>
+              Respetá senderos, no retires piedras ni plantas y no alimentes animales. Grutas y
+              sitios de investigación requieren autorización. Consultá restricciones de fuego,
+              mascotas y drones por sector.
+            </p>
+          </details>
+        </div>
+        <div class="nature-bottom">
+          <span class="eco-pill">
+            <svg aria-hidden="true" class="icon">
+              <use href="#i-leaf"></use>
+            </svg>
+            Observar sin intervenir
+          </span>
+          <a class="text-link" href="/historias/conservacion/" style="font-size:11px">
+            Visitá con cuidado
+            <svg aria-hidden="true" class="icon">
+              <use href="#i-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="care-strip">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-drop"></use>
+      </svg>
+      <p>
+        <strong>Antes de entrar al agua, consultá las condiciones del lugar.</strong> Usá las zonas
+        habilitadas para baño, pesca o navegación y seguí las indicaciones locales.
+      </p>
+    </div>
+  </div>
+</section>

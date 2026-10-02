@@ -1,0 +1,11 @@
+node_modules
+dist
+.astro
+Manantiales_Serranos_v2.html
+docs/reference
+scripts/reference-runtime.txt
+test-results
+playwright-report
+reports
+package-lock.json
+*.py

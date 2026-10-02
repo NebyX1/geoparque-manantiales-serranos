@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.astro/
+test-results/
+playwright-report/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+!reports/*.log
+reports/visual-comparison/
+reports/map-preview-check.png

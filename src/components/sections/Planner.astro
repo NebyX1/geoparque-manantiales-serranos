@@ -1,0 +1,26 @@
+---
+import { TripPlanner } from '../islands/TripPlanner';
+---
+
+<section aria-labelledby="planner-title" class="planner" id="planificador">
+  <div class="section-inner planner-box">
+    <div class="planner-intro">
+      <div class="eyebrow">
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-route"></use>
+        </svg>
+        Tu viaje empieza acá
+      </div>
+      <h2 id="planner-title">
+        No hay dos viajes
+        <br />
+        <em>iguales.</em>
+      </h2>
+      <p>
+        Contanos qué te mueve. Te proponemos una selección para guardar, ordenar y llevar con vos.
+        Sin cuenta y sin enviar tus preferencias a un servidor.
+      </p>
+    </div>
+    <TripPlanner client:visible />
+  </div>
+</section>

@@ -1,0 +1,50 @@
+---
+import Photo from '../brand/Photo.astro';
+import TripTrigger from '../trip/TripTrigger.astro';
+---
+
+<header class="site-header" id="site-header">
+  <a aria-label="Manantiales Serranos, inicio" class="brand" href="/#inicio">
+    <Photo
+      alt="Geoparque Mundial de la UNESCO Manantiales Serranos"
+      assetKey="brand-c66ec6c0da68"
+    />
+  </a>
+  <nav aria-label="Navegación principal" class="desktop-nav">
+    <a href="/#explorar">
+      <span class="nav-number">01</span>Descubrir
+    </a>
+    <a href="/#historia">
+      <span class="nav-number">02</span>La Tierra cuenta
+    </a>
+    <a href="/#territorio">
+      <span class="nav-number">03</span>El territorio
+    </a>
+    <a href="/#naturaleza">
+      <span class="nav-number">04</span>Naturaleza y cultura
+    </a>
+    <a href="/#visita">
+      <span class="nav-number">05</span>Planificá tu visita
+    </a>
+  </nav>
+  <div class="header-actions">
+    <button aria-label="Buscar lugares e historias" class="round" data-action="search">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-search"></use>
+      </svg>
+    </button>
+    <TripTrigger />
+    <button
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      aria-label="Abrir menú"
+      class="round mobile-toggle"
+      id="mobile-toggle"
+    >
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-menu"></use>
+      </svg>
+    </button>
+  </div>
+  <div aria-hidden="true" class="progress" id="page-progress"></div>
+</header>

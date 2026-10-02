@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Photo from '../../components/brand/Photo.astro';
+import { articles } from '../../data/stories';
+---
+
+<BaseLayout
+  title="Historias de la Tierra y sus comunidades · Manantiales Serranos"
+  description="Descubrí las historias del agua, las rocas, la biodiversidad, los oficios y las comunidades del Geoparque."
+>
+  <section class="editorial-page">
+    <p class="eyebrow">El territorio cuenta</p>
+    <h1>La Tierra tiene memoria.</h1>
+    <p class="lead">Ocho historias para mirar el paisaje con curiosidad.</p>
+    <div class="stories-grid">
+      {Object.entries(articles).map(([slug, story]) => (
+        <article class="story-card">
+          <a href={`/historias/${slug}/`}>
+            <Photo assetKey={story.image} alt={story.title} />
+            <h2>{story.title}</h2>
+          </a>
+          <p>{story.lead}</p>
+          <a class="text-link" href={`/historias/${slug}/`}>
+            Conocé su historia ↗
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

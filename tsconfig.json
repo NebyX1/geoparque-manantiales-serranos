@@ -1,0 +1,21 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": [
+    "dist",
+    "docs/reference",
+    "scripts",
+    "node_modules",
+    "reports",
+    "test-results",
+    "playwright-report"
+  ]
+}

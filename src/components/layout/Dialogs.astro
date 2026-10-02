@@ -1,0 +1,131 @@
+<dialog aria-labelledby="place-dialog-title" id="place-dialog">
+  <div class="dialog-head">
+    <div>
+      <div class="dialog-eyebrow" id="place-dialog-kicker">
+        Atlas del Geoparque
+      </div>
+      <h2 id="place-dialog-title">Un lugar para descubrir</h2>
+    </div>
+    <button aria-label="Cerrar ficha" class="round" data-close="">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div id="place-dialog-content"></div>
+</dialog>
+<dialog aria-labelledby="search-dialog-title" class="search-dialog" id="search-dialog">
+  <div class="dialog-head">
+    <h2 id="search-dialog-title">¿Qué te da curiosidad?</h2>
+    <button aria-label="Cerrar búsqueda" class="round" data-close="">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="dialog-body">
+    <label class="search-field">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-search"></use>
+      </svg>
+      <input
+        aria-label="Buscar en lugares e historias"
+        autocomplete="off"
+        id="global-search"
+        placeholder="Arequita, museos, agua, Villa Serrana…"
+        type="search"
+      />
+    </label>
+    <p
+      aria-live="polite"
+      class="visit-note"
+      id="search-counter"
+      role="status"
+      style="margin:16px 0"
+    ></p>
+    <ul class="search-results" id="search-results"></ul>
+  </div>
+</dialog>
+<dialog aria-labelledby="trip-dialog-title" class="trip-dialog" id="trip-dialog">
+  <div class="dialog-head">
+    <div>
+      <div class="dialog-eyebrow">Un viaje a tu manera</div>
+      <h2 id="trip-dialog-title">Tus lugares, tus tiempos.</h2>
+    </div>
+    <button aria-label="Cerrar mi viaje" class="round" data-close="">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="dialog-body" id="trip-content"></div>
+</dialog>
+<dialog aria-labelledby="route-dialog-title" id="route-dialog">
+  <div class="dialog-head">
+    <div>
+      <div class="dialog-eyebrow">Propuesta de visita · no es una reserva</div>
+      <h2 id="route-dialog-title">Tu próxima escapada</h2>
+    </div>
+    <button aria-label="Cerrar circuito" class="round" data-close="">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="dialog-body" id="route-content"></div>
+</dialog>
+<dialog aria-labelledby="article-dialog-title" id="article-dialog">
+  <div class="dialog-head">
+    <h2 id="article-dialog-title">Historias del Geoparque</h2>
+    <button aria-label="Cerrar historia" class="round" data-close="">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="dialog-body article-reading" id="article-content"></div>
+</dialog>
+<dialog aria-labelledby="quiz-title" class="search-dialog" id="quiz-dialog">
+  <div class="dialog-head">
+    <div>
+      <div class="dialog-eyebrow">Una pausa para aprender</div>
+      <h2 id="quiz-title">Cinco preguntas, otra mirada.</h2>
+    </div>
+    <button aria-label="Cerrar preguntas" class="round" data-close="">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="dialog-body" id="quiz-content"></div>
+</dialog>
+<dialog aria-labelledby="gallery-dialog-title" class="lightbox" id="gallery-dialog">
+  <div class="dialog-head">
+    <h2 id="gallery-dialog-title">El paisaje, de cerca.</h2>
+    <button aria-label="Cerrar imagen" class="round" data-close="">
+      <svg aria-hidden="true" class="icon">
+        <use href="#i-close"></use>
+      </svg>
+    </button>
+  </div>
+  <img alt="" class="lightbox-image" id="lightbox-image" />
+  <div class="lightbox-caption">
+    <div>
+      <span id="lightbox-title"></span>
+      <small id="lightbox-credit"></small>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button aria-label="Imagen anterior" class="round" id="gallery-prev">
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-left"></use>
+        </svg>
+      </button>
+      <button aria-label="Imagen siguiente" class="round" id="gallery-next">
+        <svg aria-hidden="true" class="icon">
+          <use href="#i-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</dialog>
+<div id="print-content" class="print-only"></div>

@@ -1,0 +1,1030 @@
+@media (min-width: 1800px) {
+  .hero-copy {
+    padding-top: 52px;
+  }
+  .hero h1 {
+    margin-top: 65px;
+  }
+  .hero-bottom {
+    margin-top: 42px;
+  }
+  .hero-caption {
+    bottom: 205px;
+  }
+  .geo-scene {
+    padding-block: 42px;
+  }
+}
+@media (max-height: 850px) and (min-width: 1000px) {
+  .geo-number {
+    font-size: 104px;
+    margin-block: 10px;
+  }
+  .geo-title {
+    font-size: clamp(48px, 4.5vw, 73px);
+  }
+  .geo-description {
+    font-size: 11px;
+    margin-top: 14px;
+    line-height: 1.85;
+  }
+  .geo-scene {
+    padding-block: 24px;
+  }
+  .geo-photo {
+    aspect-ratio: 1.65;
+  }
+  .geo-photo-caption {
+    padding-block: 13px 8px;
+  }
+  .geo-photo-caption strong {
+    font-size: 32px;
+  }
+  .geo-polaroid {
+    max-width: 580px;
+  }
+  .geo-toolbar {
+    min-height: 66px;
+    padding-block: 12px;
+  }
+  .geo-footer {
+    min-height: 50px;
+    padding-block: 9px;
+  }
+}
+@media (max-width: 1100px) {
+  .desktop-nav {
+    gap: 16px;
+  }
+  .desktop-nav a {
+    font-size: 10px;
+  }
+  .desktop-nav a .nav-number {
+    display: none;
+  }
+  .site-header {
+    gap: 20px;
+  }
+  .hero {
+    min-height: 770px;
+  }
+  .hero h1 {
+    font-size: clamp(105px, 12.8vw, 153px);
+    width: 72%;
+    margin-top: 43px;
+  }
+  .hero-bottom {
+    width: 82%;
+    gap: 27px;
+  }
+  .hero-caption {
+    max-width: 42%;
+    font-size: 9px;
+  }
+  .hero-seal {
+    right: var(--gutter);
+    top: 165px;
+    width: 108px;
+    height: 108px;
+  }
+  .hero-tab strong {
+    font-size: 21px;
+  }
+  .hero-tab .hero-tab-number {
+    font-size: 33px;
+  }
+  .geo-toolbar-label {
+    display: none;
+  }
+  .geo-tabs {
+    gap: 9px;
+  }
+  .geo-scene-inner {
+    gap: 35px;
+    grid-template-columns: 1fr 1.1fr;
+  }
+  .geo-title {
+    font-size: 55px;
+  }
+  .geo-description {
+    font-size: 12px;
+  }
+  .geo-number {
+    font-size: 115px;
+  }
+  .geo-photo {
+    aspect-ratio: 1.1;
+  }
+  .geo-photo-caption strong {
+    font-size: 30px;
+  }
+  .section-heading {
+    gap: 36px;
+  }
+  .display {
+    font-size: clamp(58px, 8vw, 84px);
+  }
+  .planner-box {
+    padding: 40px;
+  }
+  .detail-grid {
+    grid-template-columns: minmax(0, 1fr) 215px;
+    gap: 25px;
+  }
+}
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: grid;
+  }
+  .hero {
+    min-height: 810px;
+    max-height: 1050px;
+  }
+  .hero-copy {
+    padding-top: 35px;
+  }
+  .hero h1 {
+    font-size: clamp(110px, 15vw, 142px);
+    width: 80%;
+  }
+  .hero-description {
+    font-size: 12px;
+    max-width: 260px;
+  }
+  .hero-bottom {
+    width: 100%;
+  }
+  .hero-seal {
+    top: 142px;
+    width: 96px;
+    height: 96px;
+    right: 30px;
+  }
+  .hero-caption {
+    bottom: 184px;
+  }
+  .hero-tabs {
+    gap: 17px;
+  }
+  .hero-tab strong {
+    font-size: 21px;
+  }
+  .hero-tab small {
+    font-size: 7px;
+  }
+  .hero-tab .icon {
+    display: none;
+  }
+  .hero-hills {
+    height: 195px;
+  }
+  .hero-footer {
+    bottom: 17px;
+  }
+  .geo-intro .section-heading {
+    display: block;
+  }
+  .geo-intro .section-lead {
+    margin-top: 25px;
+    max-width: 550px;
+  }
+  .geo-intro .display {
+    font-size: clamp(66px, 9.2vw, 96px);
+  }
+  .geo-scene {
+    padding-block: 38px;
+  }
+  .geo-scene-inner {
+    grid-template-columns: 0.95fr 1fr;
+    gap: 34px;
+  }
+  .geo-title {
+    font-size: 54px;
+  }
+  .geo-number {
+    font-size: 115px;
+  }
+  .geo-description {
+    font-size: 12px;
+  }
+  .geo-photo-caption strong {
+    font-size: 27px;
+  }
+  .geo-photo {
+    aspect-ratio: 0.85;
+  }
+  .geo-number .geo-time {
+    font-size: 9px;
+  }
+  .geo-toolbar {
+    padding-block: 17px;
+  }
+  .geo-footer {
+    font-size: 8px;
+  }
+  .intro-grid {
+    gap: 35px;
+    grid-template-columns: 0.5fr 1.5fr;
+  }
+  .intro-copy .display {
+    font-size: 59px;
+  }
+  .territory-mark {
+    width: 145px;
+  }
+  .nature-words .display {
+    font-size: 62px;
+  }
+  .detail-grid {
+    display: block;
+  }
+  .detail-side {
+    position: static;
+    margin-top: 28px;
+  }
+  .detail-side .btn {
+    width: auto;
+    margin-right: 7px;
+  }
+  .detail-side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  .detail-side h3 {
+    width: 100%;
+  }
+  .detail-side > p {
+    width: 100%;
+  }
+  .place-visual {
+    aspect-ratio: 0.95;
+  }
+  .place-card h3 {
+    font-size: 31px;
+  }
+  .education-text .display {
+    font-size: 65px;
+  }
+  .footer-title {
+    font-size: 85px;
+  }
+}
+@media (max-width: 620px) {
+  :root {
+    --nav: 84px;
+    --gutter: 22px;
+  }
+  .site-header {
+    height: 84px;
+    padding-inline: 21px;
+    gap: 10px;
+  }
+  .brand {
+    height: 72px;
+    width: 84px;
+  }
+  .header-actions {
+    gap: 8px;
+  }
+  .header-actions .round {
+    width: 39px;
+    height: 39px;
+    min-width: 39px;
+    min-height: 39px;
+  }
+  .trip-button {
+    font-size: 10px;
+    padding: 0 12px;
+    gap: 7px;
+    min-height: 42px;
+  }
+  .trip-button .icon {
+    width: 17px;
+    height: 17px;
+  }
+  .hero {
+    min-height: 780px;
+    height: calc(100svh - var(--nav));
+    max-height: 960px;
+  }
+  .hero-copy {
+    padding: 29px 22px 210px;
+  }
+  .hero-kicker {
+    padding-bottom: 16px;
+    font-size: 7px;
+    letter-spacing: 0.11em;
+    gap: 12px;
+  }
+  .hero-kicker .hero-country {
+    display: none;
+  }
+  .hero h1 {
+    font-size: clamp(90px, 18.9vw, 118px);
+    width: 100%;
+    margin-top: 44px;
+    line-height: 0.85;
+    letter-spacing: -0.015em;
+  }
+  .hero h1 .outline-word {
+    -webkit-text-stroke: 1.1px var(--lime);
+  }
+  .hero-bottom {
+    display: block;
+    margin-top: 25px;
+  }
+  .hero-description {
+    font-size: 12px;
+    line-height: 1.85;
+    max-width: 260px;
+  }
+  .hero-ctas {
+    margin-top: 21px;
+  }
+  .hero-ctas .btn {
+    font-size: 10px;
+    min-height: 48px;
+    gap: 20px;
+    padding: 15px 23px;
+  }
+  .hero-seal {
+    width: 78px;
+    height: 78px;
+    right: 22px;
+    top: auto;
+    bottom: 233px;
+    color: #fff8df;
+  }
+  .hero-image img {
+    object-position: 68% 50%;
+  }
+  .hero-shade {
+    background:
+      linear-gradient(90deg, #123725d9, #17392868),
+      linear-gradient(0deg, #152d2500 0%, #122d2300 50%, #12372554 100%);
+  }
+  .hero-hills {
+    height: 167px;
+  }
+  .hero-caption {
+    bottom: 184px;
+    left: 22px;
+    right: auto;
+    max-width: 82%;
+    font-size: 8px;
+  }
+  .hero-caption .icon {
+    width: 14px;
+    height: 14px;
+  }
+  .hero-footer {
+    bottom: 15px;
+    inset-inline: 22px;
+  }
+  .hero-tabs {
+    gap: 8px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .hero-tab {
+    display: block;
+    min-height: 76px;
+    padding: 3px 0;
+  }
+  .hero-tab .hero-tab-number {
+    font-size: 29px;
+    line-height: 1;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .hero-tab > span:not(.hero-tab-number) {
+    display: block;
+  }
+  .hero-tab small {
+    display: none !important;
+  }
+  .hero-tab strong {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+    max-width: 75px;
+  }
+  .hero-tab .icon {
+    display: none;
+  }
+  .hero-footer-top {
+    padding-bottom: 8px;
+    margin-bottom: 7px;
+  }
+  .hero-footer-top .eyebrow {
+    font-size: 7px;
+    letter-spacing: 0.1em;
+    max-width: 205px;
+  }
+  .slide-counter {
+    font-size: 15px;
+    gap: 9px;
+  }
+  .hero-footer .round {
+    min-width: 33px;
+    min-height: 33px;
+    width: 33px;
+    height: 33px;
+  }
+  .geopark-ticker {
+    padding: 16px 0;
+  }
+  .ticker-unit {
+    gap: 26px;
+    padding-right: 26px;
+  }
+  .ticker-unit span {
+    font-size: 23px;
+  }
+  .ticker-unit svg {
+    width: 19px;
+    height: 19px;
+  }
+  .trust-strip {
+    padding: 24px 22px;
+    gap: 16px;
+  }
+  .trust-strip .unesco-lock {
+    width: 63px;
+    height: 48px;
+  }
+  .trust-item strong {
+    font-size: 33px;
+  }
+  .trust-item span {
+    font-size: 8px;
+  }
+  .section {
+    padding-block: 65px;
+  }
+  .intro {
+    padding-block: 55px;
+  }
+  .intro-grid {
+    display: block;
+  }
+  .intro-grid > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+  .territory-mark {
+    width: 58px;
+    height: 45px;
+    margin: 0;
+  }
+  .intro-copy .display {
+    font-size: clamp(43px, 8.7vw, 57px);
+    line-height: 1;
+  }
+  .intro-bottom {
+    margin-top: 22px;
+  }
+  .intro-bottom p {
+    font-size: 12px;
+    line-height: 1.95;
+  }
+  .intro-bottom .round-link {
+    font-size: 11px;
+  }
+  .display {
+    font-size: clamp(48px, 10.3vw, 65px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+  }
+  .section-heading {
+    margin: 24px 0 30px;
+    display: block;
+  }
+  .section-heading .section-lead {
+    font-size: 12px;
+    line-height: 1.85;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .geo-intro {
+    padding: 49px 22px 39px;
+  }
+  .geo-intro .display {
+    font-size: clamp(55px, 12.2vw, 77px);
+    line-height: 0.92;
+  }
+  .geo-intro .section-lead {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .geo-intro .eyebrow {
+    font-size: 8px;
+  }
+  .geo-toolbar {
+    padding: 16px 17px;
+    display: block;
+    min-height: 74px;
+  }
+  .geo-tabs {
+    gap: 6px;
+    justify-content: space-between;
+  }
+  .geo-tab {
+    flex: 1;
+    justify-content: center;
+    gap: 7px;
+    min-height: 42px;
+    padding: 6px 8px;
+    font-size: 7px;
+  }
+  .geo-tab b {
+    font-size: 25px;
+  }
+  .geo-skip {
+    display: none;
+  }
+  .geo-scene {
+    padding: 26px 23px 34px;
+  }
+  .geo-scene-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+  }
+  .geo-identity {
+    width: 100%;
+  }
+  .geo-eyebrow {
+    font-size: 8px;
+  }
+  .geo-number {
+    font-size: 80px;
+    margin: 17px 0 10px;
+    gap: 20px;
+  }
+  .geo-number .geo-time {
+    font-size: 9px;
+    max-width: 170px;
+  }
+  .geo-title {
+    font-size: clamp(45px, 10.5vw, 64px);
+    line-height: 0.9;
+    max-width: 100%;
+  }
+  .geo-description {
+    font-size: 12px;
+    line-height: 1.85;
+    margin-top: 16px;
+    max-width: 100%;
+  }
+  .geo-identity .text-link {
+    font-size: 10px;
+    margin-top: 12px;
+  }
+  .geo-polaroid {
+    max-width: 100%;
+    width: 100%;
+    padding: 8px;
+    box-shadow: 8px 10px 0 #071b1920;
+  }
+  .geo-photo {
+    aspect-ratio: 1.48;
+  }
+  .geo-photo-caption {
+    padding: 13px 8px 7px;
+    gap: 10px;
+  }
+  .geo-photo-caption strong {
+    font-size: 29px;
+  }
+  .geo-photo-caption small {
+    font-size: 7px;
+  }
+  .geo-photo-stamp {
+    font-size: 7px;
+    left: 11px;
+    bottom: 12px;
+    padding: 6px 8px;
+  }
+  .geo-photo-caption .save-btn {
+    width: 37px;
+    height: 37px;
+    min-width: 37px;
+  }
+  .geo-halo {
+    width: 300px;
+    height: 300px;
+    left: -190px;
+    top: 26%;
+  }
+  .geo-footer {
+    padding: 13px 22px;
+    font-size: 7px;
+    gap: 9px;
+    min-height: 54px;
+  }
+  .geo-footer b {
+    font-size: 22px;
+  }
+  .geo-footer-control {
+    gap: 7px;
+  }
+  .geo-footer-control .geo-control-label {
+    display: none;
+  }
+  .geo-footer .round {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+  }
+  .geo-story.is-static .geo-scene {
+    padding-block: 30px;
+  }
+  .places-grid {
+    gap: 29px 14px;
+  }
+  .place-visual {
+    aspect-ratio: 0.85;
+    border-radius: 2px;
+  }
+  .place-card h3 {
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .place-card h3 .icon {
+    width: 14px;
+    height: 14px;
+  }
+  .place-meta {
+    font-size: 8px;
+    margin-top: 13px;
+  }
+  .place-summary {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  .place-tag {
+    top: 10px;
+    left: 9px;
+    right: 9px;
+    font-size: 7px;
+    letter-spacing: 0.015em;
+    padding: 6px 7px;
+    max-width: calc(100% - 18px);
+  }
+  .save-btn {
+    top: auto;
+    bottom: 11px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+  }
+  .context-badge {
+    font-size: 7px;
+    left: 9px;
+    max-width: calc(100% - 58px);
+    padding: 3px 5px;
+  }
+  .pill {
+    font-size: 10px;
+    padding: 9px 12px;
+    min-height: 40px;
+  }
+  .filterbar {
+    margin-bottom: 23px;
+  }
+  .map-grid {
+    box-shadow: 6px 8px 0 #e4e4d5;
+    border-radius: 2px;
+  }
+  .map-sidebar h3 {
+    font-size: 27px;
+  }
+  .map-sidebar > p {
+    font-size: 11px;
+  }
+  .map-preview strong {
+    font-size: 23px;
+  }
+  .map-caption {
+    font-size: 8px;
+  }
+  .nature {
+    padding-block: 60px;
+  }
+  .nature-photo {
+    aspect-ratio: 1.1;
+    box-shadow: 8px 10px 0 #c9cfb3;
+  }
+  .nature-words .display {
+    font-size: 54px;
+  }
+  .nature-words > p {
+    font-size: 12px;
+  }
+  .nature-topic summary {
+    font-size: 25px;
+  }
+  .nature-topic p {
+    font-size: 12px;
+  }
+  .care-strip {
+    margin-top: 30px;
+    padding: 17px;
+  }
+  .care-strip p {
+    font-size: 11px;
+  }
+  .culture-feature {
+    aspect-ratio: 1;
+  }
+  .culture-feature-copy {
+    inset: auto 22px 25px;
+  }
+  .culture-feature-copy h3 {
+    font-size: 46px;
+    line-height: 0.95;
+  }
+  .culture-story h3 {
+    font-size: 29px;
+  }
+  .culture-story p {
+    font-size: 12px;
+  }
+  .route-content h3 {
+    font-size: 34px;
+  }
+  .route-content p {
+    font-size: 12px;
+  }
+  .route-card:hover {
+    transform: none;
+  }
+  .planner {
+    padding-bottom: 60px;
+  }
+  .planner-box {
+    padding: 31px 23px;
+    gap: 30px;
+    border-radius: 3px;
+  }
+  .planner-intro h2 {
+    font-size: 55px;
+  }
+  .planner-intro p {
+    font-size: 12px;
+  }
+  .plan-choice span {
+    font-size: 10px;
+  }
+  .planner-privacy {
+    font-size: 9px;
+  }
+  .education-text .display {
+    font-size: 55px;
+  }
+  .education-text > p {
+    font-size: 12px;
+  }
+  .education-image {
+    box-shadow: 7px 9px 0 #cbd2b8;
+    aspect-ratio: 1.1;
+  }
+  .education-sticker {
+    padding: 16px;
+  }
+  .education-sticker strong {
+    font-size: 27px;
+  }
+  .gallery-grid {
+    gap: 10px;
+  }
+  .visit-copy .display {
+    font-size: 57px;
+  }
+  .visit-copy > p {
+    font-size: 12px;
+  }
+  .visit-faq summary {
+    font-size: 27px;
+    line-height: 1.1;
+  }
+  .footer {
+    padding-block: 58px 24px;
+  }
+  .footer-title {
+    font-size: 61px;
+    line-height: 0.93;
+  }
+  .footer-nav a,
+  .footer-nav button {
+    font-size: 11px;
+  }
+  .footer-tail {
+    font-size: 8px;
+  }
+  .footer-small {
+    font-size: 10px;
+  }
+  .footer-ridges {
+    height: 63px;
+  }
+  .footer-logo-card {
+    border-radius: 0;
+  }
+  .dialog-head {
+    padding: 19px 20px;
+  }
+  .dialog-head h2 {
+    font-size: 28px;
+  }
+  .dialog-head .round {
+    min-width: 36px;
+    min-height: 36px;
+    width: 36px;
+    height: 36px;
+  }
+  .detail-main {
+    padding: 23px 20px;
+  }
+  .detail-hero {
+    height: 230px;
+  }
+  .detail-title {
+    font-size: 40px;
+    line-height: 0.98;
+  }
+  .detail-tagline {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .detail-description {
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+  }
+  .detail-body p {
+    font-size: 12px;
+    line-height: 1.95;
+  }
+  .detail-body h3 {
+    font-size: 28px;
+  }
+  .detail-side {
+    margin-top: 26px;
+    padding: 22px;
+    display: block;
+  }
+  .detail-side h3 {
+    font-size: 27px;
+  }
+  .detail-side .btn {
+    font-size: 10px;
+    width: auto;
+  }
+  .article-reading .article-title {
+    font-size: 42px;
+  }
+  .article-reading .lead {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .article-reading h3:not(.article-title) {
+    font-size: 29px;
+  }
+  .article-reading p {
+    font-size: 12px;
+    line-height: 1.95;
+  }
+  .reading-image {
+    height: 220px;
+  }
+  .saved-item h3 {
+    font-size: 22px;
+  }
+  .trip-empty h3 {
+    font-size: 38px;
+  }
+  .quiz-card h3 {
+    font-size: 34px;
+  }
+  .quiz-feedback {
+    font-size: 12px;
+  }
+  .lightbox-caption small {
+    font-size: 9px;
+  }
+}
+@media (max-width: 359px) {
+  .hero {
+    min-height: 745px;
+  }
+  .hero h1 {
+    font-size: 83px;
+    margin-top: 38px;
+  }
+  .hero-description {
+    font-size: 11px;
+    max-width: 235px;
+  }
+  .hero-seal {
+    width: 61px;
+    height: 61px;
+    bottom: 229px;
+    right: 20px;
+  }
+  .hero-tab strong {
+    font-size: 15px;
+  }
+  .hero-tab .hero-tab-number {
+    font-size: 26px;
+  }
+  .hero-footer-top .eyebrow {
+    max-width: 170px;
+    font-size: 6px;
+  }
+  .hero-kicker {
+    font-size: 6px;
+  }
+  .hero-caption {
+    font-size: 7px;
+  }
+  .header-actions {
+    gap: 7px;
+  }
+  .site-header {
+    padding-inline: 18px;
+  }
+  .trip-button {
+    font-size: 9px;
+    padding: 0 10px;
+  }
+  .geo-tab {
+    padding: 6px;
+    gap: 5px;
+    font-size: 6px;
+  }
+  .geo-tab b {
+    font-size: 22px;
+  }
+  .geo-title {
+    font-size: 43px;
+  }
+  .geo-number {
+    font-size: 75px;
+  }
+  .geo-intro .display {
+    font-size: 52px;
+  }
+  .display {
+    font-size: 45px;
+  }
+  .place-card h3 {
+    font-size: 23px;
+  }
+  .footer-title {
+    font-size: 54px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-word > span,
+  .hero-seal .seal-spin,
+  .ticker-rail {
+    animation: none !important;
+  }
+  .hero-copy,
+  .hero-hill {
+    transform: none !important;
+  }
+}
+
+.geo-title > span {
+  white-space: nowrap;
+}
+.geo-control-label {
+  padding-right: 6px;
+}
+.geo-current {
+  padding-inline: 4px;
+}
+@media (max-width: 359px) {
+  .nature-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .intro-bottom .round-link {
+    font-size: 10px;
+  }
+  .visit-contact .btn {
+    font-size: 10px;
+    padding-inline: 18px;
+  }
+}

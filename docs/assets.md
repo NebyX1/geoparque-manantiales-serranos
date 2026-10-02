@@ -1,0 +1,19 @@
+# Assets
+
+Se extrajeron 33 assets nombrados y el SVG de marca del HTML, sin volver a comprimir los originales. `asset-manifest.json` registra path, dimensiones, bytes y SHA-256 de cada extracción. Los originales permanecen en `src/assets/images/` y `public/partners/`, `public/brand/` y `public/downloads/` según su uso.
+
+Las fotografías se agrupan por hero, geositios, paisajes, naturaleza, cultura y educación. `src/data/assets.ts` vincula sus claves originales a imports locales. `Photo.astro` usa `astro:assets`: variantes WebP de 320, 640, 960, 1280 y 1920 px, limitadas por las dimensiones originales, incluyendo también su ancho nativo cuando es menor de 1920 px. Tienen `srcset`, `sizes`, ancho y alto explícitos. El hero calcula `sizes` según el mayor entre ancho visible y altura multiplicada por la proporción original: así el recorte vertical de `object-fit: cover` conserva nitidez en móviles. Su preload usa exactamente las mismas variantes y tamaños. No se amplían fuentes pequeñas ni se sustituyen fotografías por placeholders.
+
+`clientImages()` genera URLs locales para mapa, galería y diálogos. El mapa descargable conserva su resolución original. Los logos institucionales y la marca conservan sus archivos extraídos. `/brand/social.webp` es un recorte 1200×630 de una fotografía original para Open Graph. `/icons/favicon.svg` es un recurso vectorial local.
+
+Los captions, imágenes de contexto y relaciones de las fichas conservan la información original. Cuando una foto representa el paisaje de Lavalleja y no el sitio específico, se mantiene la indicación contextual. No se añadieron autorías o créditos que el prototipo no incluía. La publicación final debe conservar los derechos y permisos de las fotografías aportadas por el proyecto.
+
+Montserrat usa su archivo variable para conservar los pesos con menos descargas; Barlow Condensed conserva los cuatro pesos estáticos originales. Ambos proceden de paquetes Fontsource fijados, con subconjuntos que incluyen todos los caracteres usados por el sitio. Se precargan las dos fuentes principales y se sirven desde el mismo origen con `font-display: swap`; la producción no depende de Google Fonts ni de CDN.
+
+El prototipo histórico permanece en la raíz, fuera de dist y excluido del contexto Docker. La página de producción no contiene fotografías base64. Los scripts históricos de extracción están en `docs/reference/migration-tools/` y no deben ejecutarse para editar la fuente actual.
+
+La marca se sirve con la derivada `public/brand/logo.svg`, optimizada con SVGO 4.1.0: 58.952 bytes frente a 136.752 del SVG extraído. Se conserva el original y el manifest de extracción. Reproducir con `npx svgo -i public/brand/brand-c66ec6c0da68.svg -o public/brand/logo.svg`. La foto principal usa AVIF y fallback WebP, con preload responsive y prioridad alta.
+
+`HeroPhoto.astro` usa además cuatro derivados para pantallas de hasta 620 px. `npm run assets:hero` recorta únicamente las columnas que quedan fuera del encuadre original de `object-position: 68% 50%`, conserva toda la altura y guarda WebP lossless como fuente de build. El script y el test comparan sus píxeles decodificados con la región correspondiente del original. `hero-crop-manifest.json` registra coordenadas y hashes. Las variantes AVIF/WebP se generan con `astro:assets`; el navegador elige mediante `<picture>` y media queries, sin esperar JavaScript. Los originales y la posición visible se conservan.
+
+Los cinco WOFF2 usados en producción son subconjuntos de los originales Fontsource: 86.532 bytes frente a 126.596. Incluyen ASCII, caracteres españoles, símbolos habituales y todo carácter presente en fuentes del sitio; conservan contornos, hinting, pesos, eje variable y licencias OFL. `fonts-manifest.json` registra origen, bytes y hashes. Para regenerar tras agregar texto: `python -m pip install fonttools==4.66.1 brotli==1.2.0`, luego `python scripts/subset-fonts.py`. El build npm normal no requiere Python.

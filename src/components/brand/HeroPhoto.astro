@@ -1,0 +1,30 @@
+---
+import Photo from './Photo.astro';
+import { heroImages } from '../../lib/hero-images';
+import type { HeroAssetKey } from '../../data/hero-assets';
+interface Props {
+  assetKey: HeroAssetKey;
+  loading?: 'eager' | 'lazy';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  decoding?: 'async' | 'sync' | 'auto';
+}
+const { assetKey, ...attributes } = Astro.props;
+const images = await heroImages(assetKey);
+---
+
+<picture>
+  <source
+    media="(max-width: 620px)"
+    type="image/avif"
+    srcset={images.mobile}
+    sizes={images.mobileSizes}
+  />
+  <source
+    media="(max-width: 620px)"
+    type="image/webp"
+    srcset={images.mobileFallback}
+    sizes={images.mobileSizes}
+  />
+  <source type="image/avif" srcset={images.desktop} sizes={images.desktopSizes} />
+  <Photo {assetKey} alt="" sizes={images.desktopSizes} {...attributes} />
+</picture>
