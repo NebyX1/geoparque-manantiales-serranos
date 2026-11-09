@@ -6,6 +6,7 @@ import { FavoritesButton } from '../../components/islands/FavoritesButton';
 import { places } from '../../data/geosites';
 import { placeSchema, breadcrumbs } from '../../lib/seo';
 import type { GeoparkPlace } from '../../types/geopark';
+import { learningLens } from '../../lib/learning';
 export function getStaticPaths() {
   return places.map((place) => ({ params: { slug: place.slug }, props: { place } }));
 }
@@ -13,6 +14,7 @@ interface Props {
   place: GeoparkPlace;
 }
 const { place } = Astro.props;
+const learning = learningLens(place);
 const nearby = places
   .filter((item) => item.region === place.region && item.id !== place.id)
   .slice(0, 4);
@@ -20,7 +22,7 @@ const structuredData = [
   placeSchema(place),
   breadcrumbs([
     { name: 'Inicio', path: '/inicio/' },
-    { name: 'Lugares', path: '/lugares/' },
+    { name: 'Atlas del patrimonio', path: '/lugares/' },
     { name: place.name, path: `/lugares/${place.slug}/` },
   ]),
 ];
@@ -44,7 +46,7 @@ const structuredData = [
       <nav class="breadcrumbs" aria-label="Ubicación">
         <a href="/inicio/">Inicio</a>
         <span>/</span>
-        <a href="/lugares/">Lugares</a>
+        <a href="/lugares/">Atlas del patrimonio</a>
         <span>/</span>
         <span>{place.name}</span>
       </nav>
@@ -56,8 +58,18 @@ const structuredData = [
       <p class="detail-tagline">{place.tagline}</p>
       <div class="detail-grid">
         <div class="detail-body">
-          <p class="detail-description">{place.summary}</p>
-          <p>{place.intro}</p>
+          <p class="detail-description">{place.intro}</p>
+          <section class="learning-note" aria-label="Claves para aprender">
+            <span class="eyebrow">{learning.topic}</span>
+            <h2>{learning.question}</h2>
+            <p>{learning.observe}</p>
+            <h3>Registrar y cuidar</h3>
+            <p>{learning.care}</p>
+            <a class="text-link" href={`/historias/${learning.article}/`}>
+              Profundizar en este tema ↗
+            </a>
+          </section>
+          <h2>Información del lugar</h2>
           {place.blocks.map((block) =>
             block.heading ? <h2>{block.text}</h2> : <p>{block.text}</p>,
           )}
@@ -67,7 +79,7 @@ const structuredData = [
               <p>{place.relationsRaw}</p>
             </>
           )}
-          <h2>Más cerca de acá</h2>
+          <h2>Otras fichas de la misma zona</h2>
           <div class="related-items">
             {nearby.map((item) => (
               <a href={`/lugares/${item.slug}/`}>{item.name} ↗</a>
@@ -75,10 +87,14 @@ const structuredData = [
           </div>
         </div>
         <aside class="detail-side">
-          <h2>Planeá tu visita.</h2>
+          <h2>Antes de observar en el lugar</h2>
           <span class="status">{place.status}</span>
           <p>{place.zone}</p>
           <p>{place.statusRaw}</p>
+          <p>
+            Estudiar esta ficha no requiere una visita. Para una salida de campo, confirmá acceso,
+            acompañamiento y condiciones adecuadas para el grupo.
+          </p>
           <FavoritesButton id={place.id} name={place.name} compact={false} client:load />
           {place.channel && (
             <a
@@ -95,6 +111,9 @@ const structuredData = [
           </a>
           <a class="text-link" href="/explorar/">
             Volver al atlas ↗
+          </a>
+          <a class="text-link" href="/inicio/#documentacion">
+            Consultar los documentos fuente ↗
           </a>
         </aside>
       </div>

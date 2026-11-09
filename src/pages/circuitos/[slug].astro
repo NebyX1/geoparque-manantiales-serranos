@@ -17,7 +17,7 @@ const { circuit } = Astro.props;
 const structuredData = [
   breadcrumbs([
     { name: 'Inicio', path: '/inicio/' },
-    { name: 'Circuitos', path: '/circuitos/' },
+    { name: 'Itinerarios de aprendizaje', path: '/circuitos/' },
     { name: circuit.name, path: `/circuitos/${circuit.id}/` },
   ]),
   {
@@ -31,6 +31,16 @@ const structuredData = [
       url: absoluteUrl(`/lugares/${placeById.get(id)!.slug}/`),
     })),
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: circuit.name,
+    description: circuit.text,
+    url: absoluteUrl(`/circuitos/${circuit.id}/`),
+    inLanguage: 'es-UY',
+    learningResourceType: 'Itinerario de aprendizaje',
+    educationalUse: 'Observación ambiental y preparación de actividades educativas',
+  },
 ];
 ---
 
@@ -40,8 +50,12 @@ const structuredData = [
   {structuredData}
 >
   <article class="editorial-page story-page">
+    <nav class="breadcrumbs" aria-label="Ubicación">
+      <a href="/inicio/">Inicio</a> / <a href="/circuitos/">Itinerarios de aprendizaje</a>
+    </nav>
     <p class="eyebrow">
-      {circuit.days} días · {circuit.kicker}
+      Secuencia orientativa · {circuit.days} {circuit.days === 1 ? 'jornada' : 'jornadas'} ·{' '}
+      {circuit.kicker}
     </p>
     <h1>{circuit.name}</h1>
     <p class="lead">{circuit.text}</p>
@@ -58,7 +72,7 @@ const structuredData = [
       {circuit.blocks.map((block) => (
         <section>
           <h2>
-            Día {block.day} · {block.title}
+            Jornada {block.day} · {block.title}
           </h2>
           <p>{block.text}</p>
           <div class="related-items">
@@ -69,11 +83,20 @@ const structuredData = [
         </section>
       ))}
       <button class="btn" data-add-route={circuit.id}>
-        Guardar esta escapada ↗
+        Guardar itinerario de aprendizaje ↗
       </button>
-      <p class="visit-note">Coordiná reservas y accesos con los lugares que elijas visitar.</p>
+      <p class="visit-note">
+        Las jornadas organizan una propuesta didáctica que se adapta al grupo. Las lecturas y fichas
+        pueden trabajarse desde el aula. Cualquier salida requiere acordar accesos, acompañamiento y
+        condiciones con los responsables de cada sitio.
+      </p>
+      <p class="visit-note">
+        Consultá las <a href="/inicio/#documentacion">fuentes documentales</a> y las
+        <a href="/historias/conservacion/">orientaciones para conservar el patrimonio</a> antes de
+        preparar una actividad.
+      </p>
       <a class="text-link" href="/circuitos/">
-        Más escapadas ↗
+        Más itinerarios de aprendizaje ↗
       </a>
     </div>
   </article>

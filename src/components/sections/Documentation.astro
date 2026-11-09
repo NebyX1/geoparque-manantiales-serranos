@@ -1,0 +1,78 @@
+---
+import { environmentalSources } from '../../data/environment';
+const documents = [
+  {
+    ...environmentalSources.expo,
+    href: '/documentos/expo-sostenible.pdf',
+    detail: 'Español · 28 páginas · PDF, 14,6 MB',
+    pages: 'Geoeducación: pp. 15–16. Conocer y conservar: pp. 20–21.',
+  },
+  {
+    ...environmentalSources.presentation,
+    href: '/documentos/presentacion-unesco.pdf',
+    detail: 'Inglés · 15 páginas · PDF, 8,5 MB',
+    pages: 'Agua y cuencas: pp. 3 y 10. Biodiversidad: pp. 11–12. Educación: p. 15.',
+  },
+  {
+    ...environmentalSources.geopark,
+    href: '/documentos/geoparque.pdf',
+    detail: 'Español · 16 páginas · PDF, 8,3 MB',
+    pages: 'Patrimonio del territorio y vínculo entre escuelas y geositios.',
+  },
+];
+---
+
+<section class="section documentation" id="documentacion" aria-labelledby="documentation-title">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">Biblioteca documental</div>
+        <h2 class="display" id="documentation-title">
+          Conocimiento
+          <br />
+          <em>para compartir.</em>
+        </h2>
+      </div>
+      <p class="section-lead">
+        Leé las presentaciones que sustentan los temas de esta web. Cada documento permite ampliar
+        una pregunta y reconocer de dónde proviene la información.
+      </p>
+    </div>
+    <div class="document-list">
+      {documents.map((document, index) => (
+        <article class="document-item">
+          <span class="document-index" aria-hidden="true">
+            0{index + 1}
+          </span>
+          <div>
+            <p class="eyebrow">{document.detail}</p>
+            <h3>
+              <a href={document.href}>{document.title}</a>
+            </h3>
+            <p>{document.note}</p>
+            <p class="document-pages">{document.pages}</p>
+          </div>
+          <a
+            class="document-download"
+            href={document.href}
+            download
+            aria-label={`Descargar ${document.title}`}
+          >
+            Descargar PDF ↓
+          </a>
+        </article>
+      ))}
+    </div>
+    <p class="environment-source">
+      La{' '}
+      <a
+        href="https://www.unesco.org/en/iggp/manantiales-serranos-unesco-global-geopark"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ficha oficial de UNESCO ↗
+      </a>{' '}
+      permite consultar el reconocimiento de Manantiales Serranos como Geoparque Mundial en 2026.
+    </p>
+  </div>
+</section>

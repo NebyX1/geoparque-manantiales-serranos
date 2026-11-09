@@ -14,6 +14,8 @@ import { clientImages, clientPhotoSources } from '../lib/images';
 import { heroImages } from '../lib/hero-images';
 import { absoluteUrl } from '../lib/urls';
 import '../styles/global.css';
+import '../styles/cards-art.css';
+import '../styles/environment.css';
 import displayFont from '../assets/fonts/barlow-800.woff2?url';
 import bodyFont from '../assets/fonts/montserrat-variable.woff2?url';
 interface Props {
@@ -48,9 +50,10 @@ const common = [
     ? [
         {
           '@context': 'https://schema.org',
-          '@type': 'TouristDestination',
+          '@type': 'Place',
           name: 'Geoparque Mundial UNESCO Manantiales Serranos',
-          description: '2.010 km² de geología, naturaleza y cultura en Lavalleja, Uruguay.',
+          description:
+            'Un territorio de 2.010 km² en Lavalleja para la conservación, la educación ambiental y el desarrollo sostenible de sus comunidades.',
           url: absoluteUrl('/'),
           sameAs: 'https://www.unesco.org/en/iggp/manantiales-serranos-unesco-global-geopark',
         },

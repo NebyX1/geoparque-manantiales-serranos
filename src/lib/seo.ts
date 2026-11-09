@@ -15,7 +15,7 @@ export function breadcrumbs(items: { name: string; path: string }[]): Record<str
 export function placeSchema(place: GeoparkPlace): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
-    '@type': place.international ? 'TouristAttraction' : 'Place',
+    '@type': 'Place',
     '@id': absoluteUrl(`/lugares/${place.slug}/`),
     name: place.name,
     description: place.summary,

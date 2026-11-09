@@ -1,6 +1,7 @@
 import type { GeoparkPlace, TripState } from '../../types/geopark';
 import { isCivilDate } from './migrations';
 import { visitNote } from '../../lib/markdown';
+import { learningLens } from '../../lib/learning';
 export const icsEscape = (value: string): string =>
   value.replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/;/g, '\\;').replace(/,/g, '\\,');
 export function foldIcs(line: string): string {
@@ -30,13 +31,14 @@ export function tripCalendar(trip: TripState, places: GeoparkPlace[], now = new 
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Manantiales Serranos//Mi viaje//ES',
+    'PRODID:-//Manantiales Serranos//Cuaderno de campo//ES',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
   ];
   for (const item of trip.items) {
     const place = byId.get(item.id);
     if (!place) continue;
+    const learning = learningLens(place);
     const date = shiftDate(trip.startDate, item.day - 1);
     lines.push(
       'BEGIN:VEVENT',
@@ -44,8 +46,8 @@ export function tripCalendar(trip: TripState, places: GeoparkPlace[], now = new 
       `DTSTAMP:${stamp}`,
       `DTSTART;VALUE=DATE:${date.replace(/-/g, '')}`,
       `DTEND;VALUE=DATE:${shiftDate(date, 1).replace(/-/g, '')}`,
-      `SUMMARY:${icsEscape(`Propuesta de visita: ${place.name}`)}`,
-      `DESCRIPTION:${icsEscape(`${place.summary}\n${place.status}. ${visitNote}\nNo es una reserva; confirmar acceso.`)}`,
+      `SUMMARY:${icsEscape(`Observación propuesta: ${place.name}`)}`,
+      `DESCRIPTION:${icsEscape(`${place.summary}\nPregunta de trabajo: ${learning.question}\nCuidar: ${learning.care}\n${place.status}. ${visitNote}\nSelección personal de estudio; actividad presencial por coordinar.`)}`,
       'STATUS:TENTATIVE',
       'TRANSP:TRANSPARENT',
       'END:VEVENT',

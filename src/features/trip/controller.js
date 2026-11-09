@@ -23,14 +23,14 @@ export function initTripState(c) {
       button.setAttribute('aria-pressed', String(saved));
       button.setAttribute(
         'aria-label',
-        `${saved ? 'Quitar' : 'Guardar'} ${p.name} ${saved ? 'de' : 'en'} mi viaje`,
+        `${saved ? 'Quitar' : 'Guardar'} ${p.name} ${saved ? 'de' : 'en'} mi cuaderno`,
       );
       button.classList.toggle('saved', saved);
       button.innerHTML =
         c.icon(saved ? 'check' : 'save') +
         (button.classList.contains('save-btn')
           ? ''
-          : `<span>${saved ? 'Guardado en mi viaje' : 'Guardar en mi viaje'}</span>`);
+          : `<span>${saved ? 'Guardado en mi cuaderno' : 'Guardar en mi cuaderno'}</span>`);
     });
   }
   function toggleSaved(id) {
@@ -39,7 +39,7 @@ export function initTripState(c) {
     if (index >= 0) trip.items.splice(index, 1);
     else trip.items.push({ id, day: 1 });
     persistTrip();
-    c.toast(index >= 0 ? 'Lugar quitado de tu viaje.' : `Guardaste ${c.byId.get(id).name}.`);
+    c.toast(index >= 0 ? 'Ficha quitada de tu cuaderno.' : `Guardaste ${c.byId.get(id).name}.`);
     if (c.$('#trip-dialog').open) c.renderTrip();
   }
   function addItems(items) {

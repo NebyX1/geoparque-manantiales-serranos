@@ -2,8 +2,10 @@
 
 El prototipo `Manantiales_Serranos_v2.html` define diseño, textos y comportamiento. El repositorio Semana de Lavalleja define la referencia de arquitectura e infraestructura. No reemplazar la identidad por un template o tema DaisyUI.
 
+El giro editorial solicitado el 4 de noviembre de 2026 prioriza información y educación ambiental, conservación y comunidad. Los textos promocionales del prototipo quedan sustituidos por este enfoque; se conservan identidad visual, rutas, datos documentales y comportamiento. Las fuentes y criterios están en `docs/editorial-environment.md`.
+
 - Astro renderiza contenido editorial y todas las rutas SEO. React se limita a favoritos y formulario del planificador. Conservar SSR; no crear raíz React global ni SPA.
-- `src/data/geosites.ts` contiene una sola colección canónica. Los campos complementarios se derivan. IDs, slugs, textos, estados y enlaces deben coincidir con el prototipo. No inventar coordenadas, horarios, contactos, precios o permisos de acceso.
+- `src/data/geosites.ts` contiene una sola colección canónica. Los campos complementarios se derivan. IDs, slugs, estados y enlaces conservan la continuidad con el prototipo; los textos siguen el enfoque ambiental documentado y las fuentes de `data`. No inventar coordenadas, horarios, contactos, precios o permisos de acceso.
 - Relatos y circuitos viven en `src/data/stories.ts` y `circuits.ts`. Markdown, JSON-LD y exportaciones se derivan de estos datos.
 - `$trip` y `$favorites` son compartidos por las islas y los controladores. Mantener versión de storage, sanitización, migración única y sincronización entre pestañas. No usar `localStorage.clear()`.
 - Toda interacción nativa se inicializa en `astro:page-load`. `src/features/site/lifecycle.js` cancela listeners, observers, RAF, timers, suscripciones y URLs Blob al cambiar de página. Registrar nuevas liberaciones en ese contexto. No editar DOM dentro de una isla React.

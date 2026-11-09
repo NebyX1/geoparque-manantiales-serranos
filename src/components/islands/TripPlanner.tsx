@@ -15,14 +15,14 @@ export function TripPlanner() {
         window.dispatchEvent(new CustomEvent('geopark:open-trip'));
         window.dispatchEvent(
           new CustomEvent('geopark:toast', {
-            detail: `${count} lugares nuevos en tu viaje. Conservamos lo que ya habías guardado.`,
+            detail: `${count} fichas nuevas en tu cuaderno. Conservamos lo que ya habías guardado.`,
           }),
         );
       }}
     >
       <div>
         <span className="field-label" id="days-label">
-          ¿Cuánto tiempo tenés?
+          ¿En cuántos días querés organizarlo?
         </span>
         <div className="plan-options" role="radiogroup" aria-labelledby="days-label">
           {['Un día', 'Dos días', 'Tres días'].map((label, index) => (
@@ -34,21 +34,22 @@ export function TripPlanner() {
         </div>
       </div>
       <label>
-        <span className="field-label">¿Qué te gustaría descubrir?</span>
+        <span className="field-label">¿Qué tema querés estudiar?</span>
         <select id="plan-interest" name="interest">
-          <option value="nature">Agua, bosque y naturaleza</option>
-          <option value="geology">Piedra y tiempo geológico</option>
-          <option value="culture">Cultura, arquitectura y sabores</option>
-          <option value="family">Una salida para compartir en familia</option>
-          <option value="adventure">Caminatas y aventura acompañada</option>
+          <option value="nature">Agua, ambientes y biodiversidad</option>
+          <option value="geology">Rocas e historia de la Tierra</option>
+          <option value="culture">Patrimonio y formas de habitar</option>
+          <option value="family">Observación y aprendizaje compartido</option>
+          <option value="adventure">Relieve y lectura del paisaje</option>
         </select>
       </label>
       <button className="btn lime" type="submit">
-        Armá mi escapada
+        Preparar mi cuaderno
         <Icon name="arrow" />
       </button>
       <p className="planner-privacy">
-        Tu escapada, a tu ritmo. Después podés ordenar los lugares y elegir los días.
+        La selección es una propuesta de estudio. Confirmá los accesos si organizás trabajo de
+        campo.
       </p>
     </form>
   );

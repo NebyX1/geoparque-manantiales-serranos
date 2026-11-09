@@ -9,8 +9,14 @@ import { placeMarkdown, placesMarkdown, guideMarkdown } from '../../src/lib/mark
 import { getBuildSite, absoluteUrl } from '../../src/lib/urls';
 import sharp from 'sharp';
 import { heroCrop } from '../../src/lib/hero-crop.mjs';
+import {
+  environmentalAxes,
+  environmentalSources,
+  learningActivities,
+} from '../../src/data/environment';
+import { existsSync } from 'node:fs';
 describe('contenido canónico', () => {
-  it('mantiene íntegramente las 61 fichas, sus identificadores y sus bloques', () => {
+  it('conserva las 61 fichas y los datos documentales al renovar el enfoque editorial', () => {
     const source = readFileSync('Manantiales_Serranos_v2.html', 'utf8');
     const data = JSON.parse(
       source.match(/<script id="site-data" type="application\/json">([\s\S]*?)<\/script>/)![1]!,
@@ -18,16 +24,42 @@ describe('contenido canónico', () => {
     expect(validatePlaces(places)).toEqual([]);
     for (const original of data.places)
       for (const [key, value] of Object.entries(original)) {
+        if (['intro', 'summary', 'blocks'].includes(key)) continue;
         expect(canonicalPlaces.find((place) => place.id === original.id)).toHaveProperty(
           key,
           value,
         );
-        // The photo audit deliberately replaces the prototype's generic image associations.
+        // Audited photographs replace the prototype's generic image associations.
         if (key !== 'image' && key !== 'imageContext')
           expect(places.find((place) => place.id === original.id)).toHaveProperty(key, value);
       }
-    expect(circuits).toEqual(data.routes);
-    expect(articles).toEqual(data.articles);
+    const routeStructure = (routes: typeof circuits) =>
+      routes.map((route) => ({
+        id: route.id,
+        days: route.days,
+        places: route.places,
+        blocks: route.blocks.map((block) => ({ day: block.day, ids: block.ids })),
+      }));
+    expect(routeStructure(circuits)).toEqual(routeStructure(data.routes));
+    expect(Object.keys(articles)).toEqual(Object.keys(data.articles));
+    for (const article of Object.values(articles)) {
+      expect(article.lead.length).toBeGreaterThan(40);
+      expect(article.sections.length).toBeGreaterThanOrEqual(4);
+    }
+    for (const place of places) {
+      expect(place.blocks.length).toBeGreaterThan(0);
+      expect(place.blocks.every((block) => block.text.trim().length > 0)).toBe(true);
+    }
+  });
+  it('resuelve los recursos educativos y conserva la trazabilidad documental', () => {
+    for (const resource of [...environmentalAxes, ...learningActivities]) {
+      expect(Object.keys(articles)).toContain(resource.href.split('/').filter(Boolean).at(-1));
+      expect(resource.sources.length).toBeGreaterThan(0);
+      for (const reference of resource.sources) {
+        expect(existsSync(`data/${environmentalSources[reference.source].file}`)).toBe(true);
+        expect(reference.pages.every((page) => Number.isInteger(page) && page > 0)).toBe(true);
+      }
+    }
   });
   it('resuelve circuitos y relaciones únicamente hacia lugares existentes', () => {
     const ids = new Set(places.map((place) => place.id));

@@ -38,7 +38,7 @@ export function initActions(c) {
       const n = c.addItems(route.blocks.flatMap((b) => b.ids.map((id) => ({ id, day: b.day }))));
       c.renderTrip();
       c.openDialog('trip-dialog');
-      c.toast(`${n} lugares nuevos guardados. Tus selecciones anteriores se conservan.`);
+      c.toast(`${n} fichas nuevas guardadas. Tus selecciones anteriores se conservan.`);
       return;
     }
     if (trigger.hasAttribute('data-gallery')) {
@@ -64,18 +64,18 @@ export function initActions(c) {
     else if (action === 'trip-download') {
       c.downloadBlob(
         c.tripMarkdown(),
-        'mi-viaje-manantiales-serranos.md',
+        'mi-cuaderno-manantiales-serranos.md',
         'text/markdown;charset=utf-8',
       );
-      c.toast('Tu viaje se descargó.');
+      c.toast('Tu cuaderno se descargó.');
     } else if (action === 'trip-print') c.printTrip();
     else if (action === 'trip-copy') void c.copyTrip();
     else if (action === 'trip-clear') {
-      if (confirm('¿Quitar todos los lugares de tu viaje?')) {
+      if (confirm('¿Quitar todas las fichas de tu cuaderno?')) {
         c.trip = c.emptyTrip();
         c.persistTrip();
         c.renderTrip();
-        c.toast('Tu viaje quedó vacío.');
+        c.toast('Tu cuaderno quedó vacío.');
       }
     } else if (action === 'quiz' || action === 'quiz-restart') {
       c.quizIndex = 0;

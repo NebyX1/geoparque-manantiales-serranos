@@ -5,6 +5,7 @@ import PhotoCredit from '../../components/brand/PhotoCredit.astro';
 import { articles } from '../../data/stories';
 import type { GeologicalStory } from '../../types/geopark';
 import { breadcrumbs } from '../../lib/seo';
+import { absoluteUrl } from '../../lib/urls';
 export function getStaticPaths() {
   return Object.entries(articles).map(([slug, story]) => ({
     params: { slug },
@@ -24,14 +25,25 @@ const { story, slug } = Astro.props;
   structuredData={[
     breadcrumbs([
       { name: 'Inicio', path: '/inicio/' },
-      { name: 'Historias', path: '/historias/' },
+      { name: 'Lecturas ambientales', path: '/historias/' },
       { name: story.title, path: `/historias/${slug}/` },
     ]),
+    {
+      '@context': 'https://schema.org',
+      '@type': ['Article', 'LearningResource'],
+      name: story.title,
+      headline: story.title,
+      description: story.lead,
+      url: absoluteUrl(`/historias/${slug}/`),
+      inLanguage: 'es-UY',
+      learningResourceType: 'Lectura temática',
+      educationalUse: 'Educación ambiental e interpretación del patrimonio',
+    },
   ]}
 >
   <article class="editorial-page story-page">
     <nav class="breadcrumbs" aria-label="Ubicación">
-      <a href="/inicio/">Inicio</a> / <a href="/historias/">Historias</a>
+      <a href="/inicio/">Inicio</a> / <a href="/historias/">Lecturas ambientales</a>
     </nav>
     <p class="eyebrow">{story.eyebrow}</p>
     <h1>{story.title}</h1>
@@ -52,9 +64,11 @@ const { story, slug } = Astro.props;
           <p>{text}</p>
         </section>
       ))}
-      <a class="text-link" href="/historias/">
-        Más historias ↗
-      </a>
+      <nav class="related-items" aria-label="Continuar aprendiendo">
+        <a href="/historias/">Más lecturas ambientales ↗</a>
+        <a href="/inicio/#documentacion">Materiales de referencia ↗</a>
+        <a href="/circuitos/">Itinerarios de aprendizaje ↗</a>
+      </nav>
     </div>
   </article>
 </BaseLayout>

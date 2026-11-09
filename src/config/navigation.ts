@@ -1,8 +1,8 @@
 export const navigation = [
-  { href: '/explorar/', label: 'Explorar' },
-  { href: '/historias/', label: 'Historias' },
-  { href: '/inicio/#territorio', label: 'El territorio' },
-  { href: '/inicio/#naturaleza', label: 'Naturaleza' },
-  { href: '/circuitos/', label: 'Circuitos' },
-  { href: '/planifica/', label: 'Planificá tu viaje' },
+  { href: '/historias/', label: 'Comprender el territorio' },
+  { href: '/inicio/#naturaleza', label: 'Agua y biodiversidad' },
+  { href: '/inicio/#aprender', label: 'Educación ambiental' },
+  { href: '/explorar/', label: 'Atlas del Geoparque' },
+  { href: '/circuitos/', label: 'Itinerarios de aprendizaje' },
+  { href: '/planifica/', label: 'Cuaderno de campo' },
 ] as const;

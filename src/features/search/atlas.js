@@ -55,13 +55,13 @@ export function initAtlas(c) {
     c.$('#atlas-empty').hidden = matches.length !== 0;
     c.$('#results-count').textContent =
       filter === 'Destacados'
-        ? '6 lugares para empezar'
+        ? '6 fichas para empezar'
         : `${shown.length} de ${matches.length} fichas`;
     const more = c.$('#explore-more');
     more.hidden = filter !== 'Destacados' && shown.length >= matches.length;
     more.innerHTML =
       filter === 'Destacados'
-        ? `Explorar los 61 lugares ${c.icon('right')}`
+        ? `Consultar las 61 fichas ${c.icon('right')}`
         : `Mostrar ${Math.min(12, matches.length - shown.length)} más ${c.icon('plus')}`;
     c.$$('[data-filter]').forEach((button) =>
       button.setAttribute('aria-pressed', String(button.dataset.filter === filter)),

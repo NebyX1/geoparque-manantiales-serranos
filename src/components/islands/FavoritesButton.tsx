@@ -20,19 +20,19 @@ export function FavoritesButton({
       type="button"
       className={`${compact ? 'save-btn' : 'btn'}${saved ? ' saved' : ''}`}
       aria-pressed={saved}
-      aria-label={`${saved ? 'Quitar' : 'Guardar'} ${name} ${saved ? 'de' : 'en'} mi viaje`}
+      aria-label={`${saved ? 'Quitar' : 'Guardar'} ${name} ${saved ? 'de' : 'en'} mi cuaderno`}
       data-favorite={id}
       onClick={() => {
         toggleFavorite(id);
         window.dispatchEvent(
           new CustomEvent('geopark:toast', {
-            detail: saved ? 'Lugar quitado de tu viaje.' : `Guardaste ${name}.`,
+            detail: saved ? 'Ficha quitada de tu cuaderno.' : `Guardaste ${name}.`,
           }),
         );
       }}
     >
       <Icon name={saved ? 'check' : 'save'} />
-      {!compact && <span>{saved ? 'Guardado en mi viaje' : 'Guardar en mi viaje'}</span>}
+      {!compact && <span>{saved ? 'Guardado en mi cuaderno' : 'Guardar en mi cuaderno'}</span>}
     </button>
   );
 }

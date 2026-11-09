@@ -1,12 +1,13 @@
 ---
 import Photo from '../brand/Photo.astro';
+import { learningActivities } from '../../data/environment';
 ---
 
 <section aria-labelledby="education-title" class="section education" id="aprender">
   <div class="section-inner education-box">
     <div class="education-text">
       <div class="eyebrow">
-        <span class="chapter">07 /</span>Aprender cambia la mirada
+        <span class="chapter">02 /</span>Geoeducación y comunidad
       </div>
       <h2 class="display" id="education-title">
         Un aula.
@@ -14,18 +15,20 @@ import Photo from '../brand/Photo.astro';
         <em>A cielo abierto.</em>
       </h2>
       <p>
-        El Geoparque conecta escuelas, comunidades y conocimiento. Una roca, un curso de agua o una
-        historia local pueden ser el comienzo de una gran pregunta.
+        La documentación del Geoparque presenta «Un geositio, una escuela»: una línea de
+        geoeducación que vincula escuelas rurales y comunidades con su patrimonio. La interpretación
+        geoambiental, el agua y los acuíferos, la tectónica y la identidad local convierten el
+        territorio en un espacio de aprendizaje.
       </p>
       <div class="education-buttons">
         <a class="btn" href="/historias/educacion/">
-          Explorá para aprender
+          Conocé la propuesta educativa
           <svg aria-hidden="true" class="icon">
             <use href="#i-arrow"></use>
           </svg>
         </a>
         <button class="text-link" data-action="quiz">
-          Poné a prueba tu curiosidad
+          Revisá lo aprendido
           <svg aria-hidden="true" class="icon">
             <use href="#i-plus"></use>
           </svg>
@@ -48,5 +51,47 @@ import Photo from '../brand/Photo.astro';
         </span>
       </div>
     </div>
+  </div>
+  <div class="section-inner learning-sequence">
+    <h3>Preguntar. Observar. Compartir.</h3>
+    <p>
+      Tres propuestas para trabajar con las fichas y las imágenes del territorio. Se pueden
+      desarrollar en el aula; una salida de campo requiere coordinación específica y condiciones
+      adecuadas para el grupo.
+    </p>
+    {learningActivities.map((activity) => (
+      <details class="learning-activity">
+        <summary>
+          <strong>{activity.title}</strong>
+          <span>{activity.setting} +</span>
+        </summary>
+        <div class="activity-body">
+          <p>
+            <strong>Objetivo:</strong> {activity.objective}
+          </p>
+          <p>
+            <strong>Pregunta inicial:</strong> {activity.question}
+          </p>
+          <ol>
+            {activity.steps.map((step) => (
+              <li>{step}</li>
+            ))}
+          </ol>
+          <p>
+            <strong>Qué registrar:</strong> {activity.record}
+          </p>
+          <p>
+            <strong>Cuidado:</strong> {activity.care}
+          </p>
+          <a class="text-link" href={activity.href}>
+            Leer el tema de apoyo ↗
+          </a>
+        </div>
+      </details>
+    ))}
+    <p class="environment-source">
+      Propuestas didácticas elaboradas para esta web a partir de los temas de la documentación
+      institucional. <a href="/inicio/#documentacion">Consultar las fuentes ↗</a>
+    </p>
   </div>
 </section>

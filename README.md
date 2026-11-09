@@ -1,6 +1,8 @@
 # Manantiales Serranos
 
-Sitio del Geoparque Mundial UNESCO Manantiales Serranos, Lavalleja, Uruguay. Migración del prototipo canónico `Manantiales_Serranos_v2.html`, con las 61 fichas completas, sus fotografías y sus interacciones.
+Sitio de información y educación ambiental del Geoparque Mundial UNESCO Manantiales Serranos, Lavalleja, Uruguay. Conserva la identidad visual y las interacciones del prototipo `Manantiales_Serranos_v2.html`, con una orientación editorial hacia el conocimiento, la conservación y la comunidad.
+
+La portada presenta cuatro ejes ambientales, propuestas didácticas, el atlas de 61 fichas, itinerarios de aprendizaje y un cuaderno de campo. `src/data/environment.ts` organiza los recursos educativos y sus fuentes; `src/lib/learning.ts` deriva preguntas y cuidados para las fichas. Las presentaciones institucionales se sirven desde `public/documentos/`. Los criterios y la trazabilidad de los materiales de `data/` están en [el enfoque editorial](docs/editorial-environment.md).
 
 ## Desarrollo
 

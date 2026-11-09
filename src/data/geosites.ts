@@ -29,11 +29,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'El interés del paseo aumenta al mirar el conjunto desde cierta distancia y después acercarse al pie del cerro. Desde lejos se reconoce la forma; cerca aparecen fracturas, vegetación adherida a la pared y ambientes de sombra. Esa alternancia permite entender por qué este sitio combina valor paisajístico, geológico y biológico.',
+        text: 'La observación del conjunto a distintas escalas permite reconocer formas del relieve, fracturas, vegetación adherida a la pared y ambientes de sombra. Estas relaciones ayudan a comprender el valor geológico y biológico del sitio.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -47,7 +47,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Salus · Gruta Colón · Monte de Ombúes · Camping Arequita.',
     tagline: 'La memoria del fuego',
     intro:
-      'El viaje puede empezar con una silueta. Acercate sin apuro, dejá que cambie la escala y mirá de nuevo. En Arequita, la primera impresión abre una conversación entre piedra, vegetación y tiempo. La fotografía es apenas el comienzo del recuerdo.',
+      'La riolita y los paredones del Cerro Arequita registran una historia de volcanismo y erosión. Su relación con el monte nativo, el río y los ambientes de sombra permite estudiar conexiones entre geología y biodiversidad.',
     slug: 'cerro-arequita',
     category: 'Geología',
     international: true,
@@ -55,7 +55,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'arequita-rio',
     imageContext: false,
     summary:
-      'Paredones de riolita, monte nativo y un río que acompaña un paisaje nacido del volcanismo.',
+      'Riolita y paredones que registran volcanismo y erosión, en relación con el monte nativo y el río Santa Lucía.',
     region: 'Arequita y Santa Lucía',
     themes: ['Agua', 'Geología'],
   },
@@ -78,7 +78,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cerro del Ombú · geología del geoparque.',
     tagline: 'Aprender a mirar más allá de los nombres conocidos',
     intro:
-      'Hay lugares que no se entregan en una postal rápida. Cerro del Cura propone otra forma de descubrir el territorio: acercarse con preguntas, acompañamiento y ganas de comprender. Su historia debe abrirse con quienes conocen el sitio, no con una entrada improvisada.',
+      'Cerro del Cura integra el patrimonio geológico del Geoparque. Es un sitio diferente del Cerro de los Cuervos y del Cerro del Ombú. Su interpretación requiere coordinación y acompañamiento especializado.',
     slug: 'cerro-del-cura',
     category: 'Geología',
     international: false,
@@ -86,7 +86,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Hay lugares que no se entregan en una postal rápida. Cerro del Cura propone otra forma de descubrir el territorio: acercarse con preguntas, acompañamiento y ganas de comprender. Su historia debe abrirse con quienes conocen el sitio, no con una entrada improvisada.',
+      'Registro del patrimonio geológico que requiere interpretación especializada; es distinto del Cerro de los Cuervos y del Cerro del Ombú.',
     region: 'Sierras y campo',
     themes: ['Geología'],
   },
@@ -109,7 +109,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Mina Verdún · interpretación geológica.',
     tagline: 'Cuando la vida escribía sobre la piedra',
     intro:
-      'Antes de los caminos y de las ciudades, otras formas de vida dejaban señales. Conocerlas invita a cambiar la escala del viaje: lo pequeño puede guardar una historia inmensa. Cerro del Ombú merece una mirada atenta y una interpretación que haga visible lo que suele pasar inadvertido.',
+      'Los estromatolitos del Cerro del Ombú son registros de la actividad de antiguas comunidades microbianas. Su estudio relaciona la historia de la vida con la formación de las rocas y debe distinguirse del monte de ombúes de Arequita.',
     slug: 'cerro-del-ombu',
     category: 'Geología',
     international: false,
@@ -117,7 +117,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'cantera',
     imageContext: true,
     summary:
-      'Antes de los caminos y de las ciudades, otras formas de vida dejaban señales. Conocerlas invita a cambiar la escala del viaje: lo pequeño puede guardar una historia inmensa. Cerro del Ombú merece una mirada atenta y una interpretación que haga visible lo que suele pasar inadvertido.',
+      'Estromatolitos que permiten estudiar la actividad de antiguas comunidades microbianas y sus registros en las rocas.',
     region: 'Sierras y campo',
     themes: ['Geología'],
   },
@@ -144,7 +144,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Arequita · Salus · Parque Represa de OSE.',
     tagline: 'El comienzo de una historia que sigue corriente abajo',
     intro:
-      'Un río no empieza siendo el río que conocemos. Su historia se reúne poco a poco, entre suelo, lluvia y pequeños cursos de agua. Pensar en sus nacientes es mirar hacia el origen de muchas vidas conectadas por una misma corriente.',
+      'Las nacientes del Santa Lucía forman el inicio de una red que vincula ambientes, abastecimiento humano y actividades productivas. Cabecera, cauce y cuenca ayudan a explicar la relación entre lluvia, infiltración, escurrimiento y territorio.',
     slug: 'nacientes-del-rio-santa-lucia',
     category: 'Geología',
     international: false,
@@ -152,7 +152,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'arroyo',
     imageContext: true,
     summary:
-      'Un río no empieza siendo el río que conocemos. Su historia se reúne poco a poco, entre suelo, lluvia y pequeños cursos de agua. Pensar en sus nacientes es mirar hacia el origen de muchas vidas conectadas por una misma corriente.',
+      'Nacientes de una red hídrica que relaciona ambientes, abastecimiento humano, actividades productivas y territorio.',
     region: 'Sierras y campo',
     themes: ['Agua', 'Geología'],
   },
@@ -161,23 +161,23 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'El Destacamento',
     blocks: [
       {
-        text: 'Conocer el trabajo y la conversación de una familia rural',
+        text: 'Ganadería, memoria y formas de vida rural',
         heading: true,
       },
       {
-        text: 'El Destacamento funciona en un establecimiento familiar de ganadería sobre campo natural. La casa conserva rasgos de un antiguo puesto de policía rural, que dio nombre al emprendimiento. Las visitas de día permiten acercarse a tareas del establecimiento, caminar o cabalgar con los anfitriones y compartir gastronomía de campo. Las jornadas pueden incorporar fogón, relatos, música y observación del cielo.',
+        text: 'El Destacamento funciona en un establecimiento familiar de ganadería sobre campo natural. La casa conserva rasgos de un antiguo puesto de policía rural que dio nombre al emprendimiento. Las actividades documentadas incluyen conocimiento de tareas del predio, recorridos acompañados, gastronomía de campo, relatos, música y observación del cielo.',
         heading: false,
       },
       {
-        text: 'Su mayor interés está en el encuentro: ver una tarea, preguntar cómo se realiza y comprender por qué se organiza de cierta manera. Una opción para una familia que quiere una experiencia rural acompañada o para visitantes que buscan conversar con quienes viven en las sierras. Se ubica en Cerro Pelado, a unos 35 km de Minas por camino rural y a 17 km del desvío de Ruta 8 km 162. La jornada se acuerda con los anfitriones para organizar comidas y actividades.',
+        text: 'La explicación de las tareas permite comprender cómo se organiza el trabajo rural y cómo se relaciona con la vida de sus habitantes. El establecimiento se ubica en Cerro Pelado, a unos 35 km de Minas por camino rural y a 17 km del desvío de Ruta 8 km 162. El contenido de las actividades se acuerda con sus responsables.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
-        text: 'Se encuentra en Cerro Pelado, aproximadamente a 35 km de Minas por camino rural y a 17 km de Ruta 8, km 162. Reservá la actividad y recibí el punto de llegada del anfitrión. Fogón, música y observación del cielo forman parte de programas acordados.',
+        text: 'Se encuentra en Cerro Pelado, aproximadamente a 35 km de Minas por camino rural y a 17 km de Ruta 8, km 162. La actividad y el punto de llegada se acuerdan con el anfitrión. Fogón, música y observación del cielo corresponden a programas específicos.',
         heading: false,
       },
       {
@@ -199,7 +199,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Kykyo · Villa Serrana · Museo de Miniaturas.',
     tagline: 'El campo contado por quienes lo viven',
     intro:
-      'Una jornada rural vale por las conversaciones que aparecen entre una tarea y otra. Preguntar, mirar, compartir la mesa y reconocer un ritmo diferente: El Destacamento invita a conocer el campo desde sus anfitriones, no solamente desde la ventanilla.',
+      'El Destacamento es un establecimiento familiar de ganadería sobre campo natural en Cerro Pelado. La casa vinculada a un antiguo puesto de policía rural y las tareas del predio permiten conocer relaciones entre trabajo, memoria y formas de habitar el campo.',
     slug: 'el-destacamento',
     category: 'Naturaleza',
     international: false,
@@ -211,7 +211,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: '+598 91 490 630',
     },
     summary:
-      'Turismo rural con anfitriones, gastronomía de campo y la vida cotidiana de un establecimiento familiar.',
+      'Establecimiento familiar sobre campo natural que relaciona ganadería, memoria de un puesto policial y formas de vida rural.',
     region: 'Sierras y campo',
     themes: ['Sabores', 'Naturaleza'],
   },
@@ -224,19 +224,19 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: true,
       },
       {
-        text: 'Kykyo se presenta como reserva y campo cultural entre Marmarajá y Cerro Pelado. Su propuesta combina conservación del paisaje, caminatas acompañadas y procesos artísticos. Las residencias relatadas en diciembre de 2025, coordinadas por Nicolás Spinosa y Óscar Álvarez, trabajaron con materiales y condiciones del propio territorio. La experiencia interesa por lo que ocurre entre artistas, anfitriones y ambiente, además de las obras que puedan producirse.',
+        text: 'Kykyo se presenta como reserva y campo cultural entre Marmarajá y Cerro Pelado. Combina conservación del paisaje, recorridos acompañados y procesos artísticos. Las residencias relatadas en diciembre de 2025, coordinadas por Nicolás Spinosa y Óscar Álvarez, trabajaron con materiales y condiciones del propio territorio. Esa documentación relaciona creación, habitantes y ambiente.',
         heading: false,
       },
       {
-        text: 'Kykyo es una propuesta para quien disfruta del arte contemporáneo, los procesos de creación y las conversaciones sobre cómo se habita el campo. El acceso se organiza por reserva o invitación. Una forma comercial de conocerlo es la jornada en bicicleta ofrecida por Experiencias Villa Serrana, con equipo y picnic. Para incluirla en el viaje conviene reservar un día, de modo que traslado, recorrido y encuentro tengan tiempo propio.',
+        text: 'El acceso se organiza por reserva o invitación. La documentación también registra una salida en bicicleta gestionada por Experiencias Villa Serrana; esa actividad comercial y las residencias artísticas tienen formas de coordinación diferentes. La participación requiere acordar el contenido con sus responsables.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
-        text: 'Ingreso por reserva o invitación. La salida en bicicleta está publicada por Experiencias Villa Serrana. Las residencias artísticas tienen convocatoria propia; acordá el contenido de la visita y no sólo el acceso al predio.',
+        text: 'Ingreso por reserva o invitación. La salida en bicicleta está publicada por Experiencias Villa Serrana. Las residencias artísticas tienen convocatoria propia; la autorización de ingreso y la participación en cada actividad se confirman por separado.',
         heading: false,
       },
       {
@@ -258,7 +258,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cerro Marmarajá · El Destacamento · Villa Serrana.',
     tagline: 'El paisaje también puede ser un taller',
     intro:
-      '¿Qué sucede cuando la creación se toma tiempo para escuchar el lugar? En Kykyo, el encuentro entre naturaleza y arte invita a explorar esa pregunta. Llegá con curiosidad por los procesos, las conversaciones y las maneras de habitar un mismo paisaje.',
+      'La reserva artística KyKy-Ó relaciona procesos de creación, conservación del paisaje y vida rural entre Marmarajá y Cerro Pelado. Las experiencias documentadas trabajan con materiales y condiciones del territorio y se organizan con sus responsables.',
     slug: 'reserva-artistica-kyky-o',
     category: 'Cultura',
     international: false,
@@ -270,7 +270,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Excursiones: +598 99 024 434',
     },
     summary:
-      'Arte contemporáneo y paisaje rural en una reserva que se conoce por invitación o actividad acordada.',
+      'Campo cultural que vincula creación artística, conservación del paisaje y vida rural entre Marmarajá y Cerro Pelado.',
     region: 'Sierras y campo',
     themes: ['Cultura', 'Aventura', 'Cultura'],
   },
@@ -293,14 +293,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Patrimonio natural del geoparque.',
     tagline: 'Las pausas también merecen un lugar en el mapa',
     intro:
-      'Hay paisajes que se conocen mejor al escuchar a quienes viven cerca. Paso de la Arena es una invitación a completar esa mirada con conocimiento local.',
+      'Paso de la Arena figura entre los registros de patrimonio natural del Geoparque. Su ubicación y condiciones de acceso necesitan confirmación antes de desarrollar una actividad de observación en el lugar.',
     slug: 'paso-de-la-arena',
     category: 'Naturaleza',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'Un lugar del patrimonio natural para conocer con orientación local.',
+    summary:
+      'Registro del patrimonio natural con ubicación y condiciones de acceso que necesitan confirmación.',
     region: 'Minas y entorno',
     themes: ['Naturaleza'],
   },
@@ -309,7 +310,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Cerro Marmarajá',
     blocks: [
       {
-        text: 'Cerro Marmarajá forma parte del patrimonio geológico del Geoparque. Las excursiones a su entorno y a la reserva Kykyo combinan paisaje, caminatas y acompañamiento local.',
+        text: 'Cerro Marmarajá forma parte del patrimonio geológico del Geoparque. La interpretación de su entorno se vincula al paisaje rural y al acompañamiento local en recorridos coordinados.',
         heading: false,
       },
       {
@@ -323,7 +324,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Kykyo · Villa Serrana.',
     tagline: 'Una sierra para hacer preguntas',
     intro:
-      'Cambiar de perspectiva puede transformar una salida. El nombre Marmarajá abre la puerta a conocer el paisaje con atención: qué vemos, cómo lo interpretamos y quién nos ayuda a descubrirlo. La experiencia se construye con una actividad acordada, no solamente con un punto en el mapa.',
+      'Cerro Marmarajá forma parte del patrimonio geológico del Geoparque. La interpretación de su entorno se vincula con el paisaje rural y el conocimiento local; los recorridos por campos privados requieren autorización.',
     slug: 'cerro-marmaraja',
     category: 'Geología',
     international: false,
@@ -331,7 +332,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Cambiar de perspectiva puede transformar una salida. El nombre Marmarajá abre la puerta a conocer el paisaje con atención: qué vemos, cómo lo interpretamos y quién nos ayuda a descubrirlo. La experiencia se construye con una actividad acordada, no solamente con un punto en el mapa.',
+      'Patrimonio geológico del paisaje rural de Marmarajá, con interpretación local y accesos a campos sujetos a autorización.',
     region: 'Villa Serrana',
     themes: ['Aventura', 'Geología'],
   },
@@ -344,11 +345,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Para quien quiere fotografiar, podés volver al mismo punto del lago en dos momentos del día y comparar reflejos y sombras. Para una caminata con contenido, se puede buscar la relación entre los cursos de agua y la forma del valle. La cabalgata al Cerro de la Leona incluye sectores de Baño de la India dentro de un recorrido acompañado. El lago y esos recorridos ofrecen experiencias diferentes: el primero funciona como centro paisajístico de la localidad; los segundos permiten internarse en el entorno con un guía.',
+        text: 'La observación del lago permite relacionar los cursos de agua con la forma del valle, las laderas y la vegetación. El Baño de la India también aparece en recorridos acompañados hacia el Cerro de la Leona; esos accesos a sectores del entorno tienen condiciones propias.',
         heading: false,
       },
       {
-        text: 'La represa y el Baño de la India invitan a disfrutar del paisaje. Consultá las condiciones locales antes de entrar al agua.',
+        text: 'La represa y el Baño de la India son paisajes de agua. La presencia del embalse no confirma condiciones de baño; deben consultarse las habilitaciones y las condiciones locales.',
         heading: false,
       },
     ],
@@ -358,7 +359,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Villa Serrana · Ventorrillo · Mesón de las Cañas.',
     tagline: 'Un lugar para volver a mirar la misma vista',
     intro:
-      'El paseo puede ser tan sencillo como detenerse y regresar más tarde al mismo punto. El agua, las laderas y la luz ofrecen otra escena sin que haya cambiado el lugar. La represa invita a una forma de viaje que no necesita estar siempre avanzando.',
+      'La represa Stewart Vargas transformó el arroyo Miraflores y pasó a integrar el paisaje de Villa Serrana. El lago, las laderas y la vegetación permiten observar relaciones entre agua, relieve e intervención humana.',
     slug: 'represa-stewart-vargas',
     category: 'Cultura',
     international: false,
@@ -366,7 +367,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'El espejo de agua de Villa Serrana y su relación con las laderas, la luz y la arquitectura.',
+      'Represa sobre el arroyo Miraflores que permite estudiar relaciones entre agua, relieve, vegetación e intervención humana.',
     region: 'Villa Serrana',
     themes: ['Agua', 'Cultura', 'Cultura'],
   },
@@ -391,23 +392,23 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'El proyecto posterior de recuperación del Mesón, documentado por Gualano + Gualano, trabaja la continuidad de las vistas y la relación entre edificio, suelo y horizonte. Las galerías y balcones funcionan como espacios intermedios entre habitación y paisaje. Durante una visita interesa reconocer cómo cambia la percepción de la sierra al pasar de un espacio interior a una galería. Es una obra para recorrer y habitar, además de fotografiar desde afuera.',
+        text: 'El proyecto posterior de recuperación del Mesón, documentado por Gualano + Gualano, trabaja la continuidad de las vistas y la relación entre edificio, suelo y horizonte. Las galerías y balcones funcionan como espacios intermedios entre habitación y paisaje y permiten analizar cambios de percepción entre interior y exterior.',
         heading: false,
       },
       {
-        text: 'Las Cañas Inn, nombre comercial que también utiliza el Mesón, publica cinco modalidades. La habitación estándar tiene 20 m², baño privado, aire acondicionado y calefacción. El apartamento familiar, de 30 m², dispone de dos dormitorios. El dúplex familiar tiene 40 m² y entrepiso; otro dúplex de 25 m² incorpora un entrepiso para dos niños. La habitación familiar, también de 25 m², ofrece baño privado y televisión con streaming.',
+        text: 'Las Cañas Inn es otro nombre comercial utilizado por el Mesón. La documentación distingue habitaciones, apartamentos familiares y dúplex con entrepiso. Estas modalidades tienen distribuciones y superficies diferentes, por lo que su uso y accesibilidad deben consultarse con el establecimiento.',
         heading: false,
       },
       {
-        text: 'Para una pareja, la estándar es la elección más sencilla. Para cuatro personas, conviene distinguir un apartamento de dos dormitorios de un ambiente con entrepiso: la separación y el uso de escaleras cambian la comodidad cotidiana. Al reservar, consultá la accesibilidad de la habitación y de su recorrido de ingreso.',
+        text: 'Las escaleras, los entrepisos y la separación de ambientes condicionan el uso de las unidades de alojamiento. La accesibilidad debe comprobarse para la habitación concreta y para su recorrido de ingreso.',
         heading: false,
       },
       {
-        text: 'El Mesón tiene piscina exterior con vista a las sierras, sin climatización. El restaurante sirve almuerzo, merienda y cena; se ofrecen media pensión y pensión completa como opciones. El establecimiento dispone de wifi y cargador para vehículos eléctricos con costo. También organiza senderismo autoguiado y cabalgatas con contratación y coordinación propias.',
+        text: 'El establecimiento documenta restaurante, piscina exterior sin climatización, wifi y cargador para vehículos eléctricos con costo. Los recorridos autoguiados y las cabalgatas tienen contratación y coordinación propias. La disponibilidad de estos servicios se consulta con sus responsables.',
         heading: false,
       },
       {
-        text: 'Una estadía de fin de semana puede combinar llegada y almuerzo, paseo por el lago y regreso para la merienda; al día siguiente, una cabalgata o caminata contratada. Quien prefiera descansar puede concentrarse en la piscina, las vistas y las comidas. La opción de pensión ayuda a planificar ese segundo tipo de viaje, mientras una reserva con desayuno deja más libertad para conocer otros restaurantes de la villa. El contacto comercial es +598 96 602 263; el acceso se identifica sobre avenida Vilamajó.',
+        text: 'El uso de alojamiento y gastronomía forma parte del funcionamiento del edificio. Para estudiar o conocer sus espacios deben acordarse los sectores y las condiciones de acceso. El contacto documentado es +598 96 602 263 y la entrada se identifica sobre avenida Vilamajó.',
         heading: false,
       },
       {
@@ -421,7 +422,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Ventorrillo · Villa Serrana · Represa Stewart Vargas.',
     tagline: 'Quedarse también es una forma de conocer',
     intro:
-      'Algunos edificios no se entienden de pasada. Una comida, una conversación o una noche pueden revelar la relación entre sus espacios y el paisaje. En el Mesón, la propuesta es dejar que la arquitectura forme parte del tiempo del viaje.',
+      'El Mesón de las Cañas pertenece al proyecto de Villa Serrana ligado a Julio Vilamajó. Su implantación, sus materiales y sus espacios intermedios permiten estudiar la relación entre arquitectura, suelo y paisaje.',
     slug: 'meson-de-las-canas',
     category: 'Cultura',
     international: false,
@@ -433,7 +434,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Mesón de las Cañas',
     },
     summary:
-      'La arquitectura de Julio Vilamajó se vuelve estadía, gastronomía y horizonte serrano.',
+      'Obra del proyecto de Villa Serrana ligado a Julio Vilamajó: materiales e implantación que relacionan arquitectura y paisaje.',
     region: 'Villa Serrana',
     themes: ['Cultura', 'Dormir', 'Sabores', 'Cultura'],
   },
@@ -454,23 +455,23 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'En 2019 se inauguró el Espacio Vilamajó, una sala museo dedicada al arquitecto que también presenta exposiciones de artistas nacionales. La visita puede reunir tres intereses en una misma parada: conocer la obra, entrar al espacio cultural y sentarse a comer. Desde el salón se entiende por qué la ubicación y los apoyos del edificio son parte esencial de la experiencia.',
+        text: 'En 2019 se inauguró el Espacio Vilamajó, una sala museo dedicada al arquitecto que también presenta exposiciones de artistas nacionales. La ubicación y los apoyos del edificio permiten estudiar la relación entre arquitectura y terreno, junto a sus usos culturales y gastronómicos.',
         heading: false,
       },
       {
-        text: 'La propuesta gastronómica incorpora carnes de la zona, frutos nativos y elaboración artesanal. Entre los platos anunciados figuran empanaditas y bocatas de entrada, pastas, carnes y volcanes de chocolate o dulce de leche. En desayuno y merienda se destaca el pan casero cocido en horno a leña, junto con pastelería y cafetería. El salón tiene unas 60 plazas.',
+        text: 'La documentación gastronómica menciona carnes de la zona, frutos nativos y elaboración artesanal, además de pan cocido en horno a leña. Estas prácticas forman parte de la actividad productiva del establecimiento. El salón registra unas 60 plazas.',
         heading: false,
       },
       {
-        text: 'Para almorzar, la experiencia más completa es dejar tiempo para el edificio y la sala cultural, además de la mesa. Para una visita corta, una merienda permite conocer el lugar sin organizar toda la jornada alrededor del restaurante. Los horarios son de lunes a viernes, 11:00-18:30; sábados y domingos, 8:30-18:30. Los huéspedes pueden encargar la cena antes del cierre y consumirla en su apartamento.',
+        text: 'El material consultado publica atención del restaurante de lunes a viernes, 11:00–18:30, y sábados y domingos, 8:30–18:30. Estos datos requieren confirmación con el establecimiento. El acceso al espacio cultural, el restaurante y el alojamiento corresponde a funciones diferentes del edificio.',
         heading: false,
       },
       {
-        text: 'El alojamiento se distribuye en seis pequeños apartamentos para entre tres y seis personas. Cada unidad reúne estar, dormitorio y baño; el equipamiento incluye ventilador, estufa a leña o de alto rendimiento, frigobar y jarra eléctrica. La estadía incorpora desayuno y acceso a la piscina, y hay reposeras para utilizar los espacios verdes.',
+        text: 'El alojamiento documentado comprende seis apartamentos para entre tres y seis personas, con estar, dormitorio y baño. La información del establecimiento detalla equipamiento y servicios incluidos; las condiciones de uso se consultan para cada unidad.',
         heading: false,
       },
       {
-        text: 'El ingreso se anuncia desde las 13:00 y la salida a las 11:00. La llegada debe organizarse dentro del horario de atención, porque el establecimiento cierra al caer la tarde. Es una elección atractiva para quien quiere permanecer en una obra histórica después del movimiento de los visitantes del restaurante. La combinación más coherente es alojarse, cenar con encargo previo y dedicar la mañana siguiente al lago y al entorno de Villa Serrana.',
+        text: 'El ingreso al alojamiento se anuncia desde las 13:00 y la salida a las 11:00. La llegada debe coordinarse dentro del horario de atención, porque el establecimiento cierra al caer la tarde. La observación del patrimonio arquitectónico debe ajustarse al funcionamiento y a los sectores autorizados.',
         heading: false,
       },
       {
@@ -484,7 +485,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Mesón de las Cañas · Villa Serrana · Represa Stewart Vargas.',
     tagline: 'Sentarse frente al paisaje',
     intro:
-      'Una mesa puede ser el mejor comienzo de una visita. El Ventorrillo invita a reunir comida, arquitectura y contemplación en un mismo momento. No se trata de consumir la vista a toda velocidad, sino de quedarse el tiempo suficiente para que el lugar encuentre su ritmo.',
+      'El Ventorrillo reúne una obra arquitectónica de Villa Serrana y el Espacio Vilamajó, dedicado al arquitecto. El edificio y sus usos culturales y gastronómicos permiten conocer vínculos entre construcción, paisaje y vida local.',
     slug: 'ventorrillo-de-la-buena-vista',
     category: 'Cultura',
     international: false,
@@ -495,7 +496,8 @@ export const canonicalPlaces: CanonicalPlace[] = [
       url: 'https://ventorrillodelabuenavista.com.uy/es/',
       label: 'Ventorrillo de la Buena Vista',
     },
-    summary: 'Una obra de 1946 concebida para sentarse a la mesa sin dejar de mirar la sierra.',
+    summary:
+      'Arquitectura de Villa Serrana y Espacio Vilamajó, con usos culturales y gastronómicos vinculados al edificio y al paisaje.',
     region: 'Villa Serrana',
     themes: ['Cultura', 'Dormir', 'Sabores', 'Cultura'],
   },
@@ -522,7 +524,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Villa Serrana · Ventorrillo · Mesón de las Cañas.',
     tagline: 'La piedra también organiza el viaje',
     intro:
-      'Antes de mirar una construcción, mirá dónde se apoya. El granito de Villa Serrana permite cambiar el foco y descubrir el paisaje desde su materia. Después, volvés a las calles y edificios con otra pregunta: cómo aprendieron a convivir con ese suelo.',
+      'El granito de Villa Serrana relaciona la geología con el relieve y la arquitectura del conjunto. Los materiales y las decisiones de implantación permiten estudiar cómo el proyecto urbano respondió al terreno y a la vegetación.',
     slug: 'granito-villa-serrana',
     category: 'Geología',
     international: false,
@@ -530,7 +532,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Antes de mirar una construcción, mirá dónde se apoya. El granito de Villa Serrana permite cambiar el foco y descubrir el paisaje desde su materia. Después, volvés a las calles y edificios con otra pregunta: cómo aprendieron a convivir con ese suelo.',
+      'Granito, relieve y materiales de construcción que permiten comprender la relación entre geología y arquitectura en Villa Serrana.',
     region: 'Villa Serrana',
     themes: ['Geología'],
   },
@@ -553,14 +555,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Libro Gigante · patrimonio geológico.',
     tagline: 'Una página de la memoria mineral',
     intro:
-      'Las canteras permiten formular preguntas sobre el vínculo entre materiales y territorio. La del Portugués tiene un lugar en ese relato, todavía por desarrollar con sus responsables.',
+      'La Cantera del Portugués integra el patrimonio geológico del Geoparque. Su documentación permite situar preguntas sobre materiales, trabajo y transformación del territorio, con ingreso sujeto a autorización.',
     slug: 'cantera-del-portugues',
     category: 'Geología',
     international: false,
     status: 'Consultar acceso',
     image: 'cantera',
     imageContext: true,
-    summary: 'Patrimonio mineral y memoria del trabajo en las sierras.',
+    summary:
+      'Patrimonio geológico que vincula materiales, trabajo y transformación del territorio; ingreso sujeto a autorización.',
     region: 'Minas y entorno',
     themes: ['Geología'],
   },
@@ -573,27 +576,27 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: true,
       },
       {
-        text: 'El Salto del Penitente permite acercarse a un paisaje de roca expuesta, agua que desciende entre las sierras y vegetación que se concentra en las zonas húmedas. La llegada al parador introduce una particularidad: el edificio se aborda desde su parte superior y acompaña el desnivel del terreno. La cubierta se convierte en un primer lugar para leer el paisaje antes de bajar hacia los sectores de visita.',
+        text: 'El Salto del Penitente reúne roca expuesta, agua que desciende entre las sierras y vegetación concentrada en zonas húmedas. El parador se aborda desde su parte superior y acompaña el desnivel del terreno; su cubierta permite observar la relación entre arquitectura y paisaje.',
         heading: false,
       },
       {
-        text: 'El parque surgió de la donación de un predio de Francisco Ferber a la Intendencia. El parador fue resultado de un concurso de 2003 y se inauguró en agosto de 2004. Para apreciar la intervención, podés observar primero cómo se apoya el edificio en la pendiente y luego mirar hacia atrás desde un nivel inferior. El paseo tiene así dos protagonistas: el salto de agua y la forma en que la arquitectura permite acercarse a él.',
+        text: 'El parque surgió de la donación de un predio de Francisco Ferber a la Intendencia. El parador fue resultado de un concurso de 2003 y se inauguró en agosto de 2004. La posición del edificio en la pendiente permite analizar cómo una intervención arquitectónica organiza el acceso y las vistas hacia el salto.',
         heading: false,
       },
       {
-        text: 'Caminar, trepar o hacer una primera cabalgata',
+        text: 'Interpretación del paisaje y modalidades de actividad',
         heading: true,
       },
       {
-        text: 'La visita puede ser contemplativa, deportiva o una combinación de ambas. El operador ofrece caminatas y actividades de aventura: pared natural de escalada de unos diez metros con tres vías, rappel y dos tramos de tirolesa de 195 y 189 metros. También anuncia cabalgatas guiadas de alrededor de media hora. Las propuestas de aventura y cabalgata se concentran en fines de semana y feriados.',
+        text: 'El operador documenta caminatas, escalada, rappel, tirolesa y cabalgatas guiadas. Las actividades de aventura y cabalgata se anuncian para fines de semana y feriados; sus condiciones de realización y seguridad se confirman con el operador.',
         heading: false,
       },
       {
-        text: 'Para una primera visita, podés empezar por el paisaje y elegir después una sola actividad. La cabalgata breve puede encajar en una jornada que también incluya almuerzo y observación del salto; una persona interesada en escalada preferirá reservar más tiempo a esa experiencia. Quienes viajan juntos pueden compartir comida y miradores aunque tengan intereses deportivos diferentes.',
+        text: 'La lectura ambiental del sitio relaciona pendiente, roca expuesta, circulación del agua y vegetación de sectores húmedos. Los distintos usos del parque requieren identificar recorridos autorizados y condiciones específicas de cada actividad.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -627,7 +630,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Villa Serrana · Minas · alojamiento del Penitente.',
     tagline: 'Donde el agua se abre camino',
     intro:
-      'Primero mirá. Después elegí cómo querés vivir el lugar: una caminata, una actividad de aventura o una pausa larga frente a la sierra. El Penitente permite que un mismo día tenga ritmos distintos y que cada visitante encuentre su propia manera de recordar el paisaje.',
+      'El Salto del Penitente relaciona roca expuesta, agua y vegetación de zonas húmedas. La implantación del parador en la pendiente también permite analizar cómo la arquitectura se adapta al relieve.',
     slug: 'salto-del-penitente',
     category: 'Geología',
     international: false,
@@ -639,7 +642,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Parque Salto del Penitente',
     },
     summary:
-      'Agua entre rocas, un parador integrado a la ladera y actividades de aventura con operador.',
+      'Roca expuesta, agua y vegetación de zonas húmedas, junto a un parador adaptado a la pendiente serrana.',
     region: 'Penitente',
     themes: ['Agua', 'Aventura', 'Sabores', 'Geología'],
   },
@@ -662,7 +665,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Paisaje del Campanero · Minas · Penitente.',
     tagline: 'Otra manera de encontrarse con la sierra',
     intro:
-      'Caminar no es solamente llegar más lejos. También puede ser detenerse a reconocer cómo cambia el terreno. El paisaje de Campanero propone ese encuentro, con una diferencia importante: cerro, arroyo y parque no son una misma entrada ni una experiencia intercambiable.',
+      'Campanero reúne referencias a un cerro, un arroyo y una zona rural del entorno de Minas. Distinguir estos lugares permite interpretar el territorio y reconocer que sus puntos de llegada y condiciones de acceso son diferentes.',
     slug: 'cerro-campanero',
     category: 'Geología',
     international: false,
@@ -670,7 +673,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Caminar no es solamente llegar más lejos. También puede ser detenerse a reconocer cómo cambia el terreno. El paisaje de Campanero propone ese encuentro, con una diferencia importante: cerro, arroyo y parque no son una misma entrada ni una experiencia intercambiable.',
+      'Referencias a un cerro, un arroyo y una zona rural de Minas que requieren distinguir sus ubicaciones y condiciones de acceso.',
     region: 'Minas y entorno',
     themes: ['Geología'],
   },
@@ -679,23 +682,23 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Parque Represa de OSE',
     blocks: [
       {
-        text: 'Una obra hidráulica que también forma parte del paseo',
+        text: 'Infraestructura hidráulica y relación entre ciudad y agua',
         heading: true,
       },
       {
-        text: 'La Represa y Parque OSE de Minas permite conocer otra relación entre ciudad y agua. La obra data de en 1934 y describe un muro de unos 250 metros y un embalse con capacidad de un millón de metros cúbicos. Las mesas del entorno permiten detenerse a comer en un paisaje de vegetación y agua.',
+        text: 'La Represa y Parque OSE de Minas documentan una relación entre ciudad y agua. La obra data de 1934 y describe un muro de unos 250 metros y un embalse con capacidad de un millón de metros cúbicos. El entorno público reúne vegetación y equipamiento de uso recreativo.',
         heading: false,
       },
       {
-        text: 'Es una propuesta adecuada para una pausa de picnic y para observar una infraestructura histórica desde su entorno público. La visita puede acompañar una mañana urbana, sin exigir un día entero de excursión. El interés está en la obra, el espejo de agua y el parque; para una jornada centrada en parrilleros, piscinas o camping, Arequita ofrece una organización recreativa más completa.',
+        text: 'El interés documental se centra en la obra hidráulica, el embalse y su relación con la ciudad. El espacio recreativo y las instalaciones operativas de abastecimiento tienen funciones y condiciones de acceso diferentes.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
-        text: 'Pedí la ubicación del acceso recreativo de Parque OSE al organizar el traslado. Esta propuesta es de paisaje y observación; las instalaciones operativas de abastecimiento no forman parte del paseo. No confundir con la represa de Aguas Blancas.',
+        text: 'La ubicación del acceso recreativo de Parque OSE debe confirmarse al organizar un traslado. Las instalaciones operativas de abastecimiento no forman parte del acceso público. Este registro es distinto de la represa de Aguas Blancas.',
         heading: false,
       },
     ],
@@ -705,7 +708,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Minas · Salus · Aguas Blancas.',
     tagline: 'El agua y la ciudad, en una misma escena',
     intro:
-      'Una represa también cuenta una historia urbana. Acercarse a su paisaje permite pensar en las obras que sostienen la vida cotidiana y que pocas veces entran en el relato de un viaje. Aquí la pausa puede convertirse en una pregunta sobre la relación entre ciudad y agua.',
+      'La Represa y Parque OSE documentan una relación histórica entre infraestructura, agua y ciudad. El muro, el embalse y la vegetación del entorno permiten reconocer una obra vinculada a la vida cotidiana de Minas.',
     slug: 'parque-represa-de-ose',
     category: 'Naturaleza',
     international: false,
@@ -713,7 +716,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Una represa también cuenta una historia urbana. Acercarse a su paisaje permite pensar en las obras que sostienen la vida cotidiana y que pocas veces entran en el relato de un viaje. Aquí la pausa puede convertirse en una pregunta sobre la relación entre ciudad y agua.',
+      'Infraestructura histórica de agua y parque que permite relacionar el embalse con la vida urbana de Minas.',
     region: 'Minas y entorno',
     themes: ['Agua', 'Naturaleza'],
   },
@@ -722,19 +725,27 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Parque de Minas',
     blocks: [
       {
-        text: 'Un parque para organizar la estadía alrededor de sus actividades',
+        text: 'Una secuencia para estudiar la historia de Rodinia',
         heading: true,
       },
       {
-        text: 'El Parque de Minas es un complejo vacacional serrano sobre Ruta 12, km 347,5. Nació del proyecto de crear un lugar de descanso colectivo en la década de 1940 y conserva esa vocación de vacaciones en familia. Su extensión, cercana a 500 hectáreas, permite alternar sectores de bosque, caminos serranos, instalaciones deportivas y espacios productivos. Hay balneario de arroyo, piscinas y un miniparque acuático: son ambientes diferentes para disfrutar del agua dentro de una misma estadía.',
+        text: 'La presentación institucional del Geoparque describe el Grupo Parque de Minas / Complejo Zanja del Tigre como una secuencia volcanosedimentaria del Terreno Nico Pérez, relevante para comprender la unión de los bloques que formaron Rodinia. Esta evidencia geológica permite relacionar el sitio con procesos continentales de una escala muy anterior al paisaje actual. Fuente: presentación institucional del Geoparque, página 7.',
         heading: false,
       },
       {
-        text: 'El tambo es una de las experiencias que más lo distingue de un hotel convencional. La propuesta del establecimiento incluye observar el ordeñe y alimentar terneros; se suman huerta, producción avícola y otros sectores de granja. Una visita con niños puede partir de una pregunta concreta, «de dónde viene lo que comemos», y continuar después en la mesa del restaurante, que utiliza parte de esa producción.',
+        text: 'Usos colectivos, paisaje y actividades productivas',
+        heading: true,
+      },
+      {
+        text: 'Parque de Minas es un complejo serrano sobre Ruta 12, km 347,5, desarrollado para el descanso colectivo desde la década de 1940. En una extensión cercana a 500 hectáreas reúne sectores de bosque, caminos, instalaciones deportivas y espacios productivos. El arroyo, las piscinas y el miniparque acuático corresponden a espacios y usos diferentes del agua.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'La documentación del establecimiento incluye tambo, huerta, producción avícola y otros sectores de granja. El ordeñe y la relación entre producción y alimentación permiten explicar tareas rurales y procesos de obtención de alimentos. El acceso a estos sectores y la participación en actividades se acuerdan con sus responsables.',
+        heading: false,
+      },
+      {
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -768,7 +779,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Minas · Mirador Ramallo · geología del geoparque.',
     tagline: 'Las huellas de un mar antiguo',
     intro:
-      'Hay estadías que se organizan alrededor de una sola pregunta: ¿qué nos gustaría hacer hoy? Un paseo, un encuentro con la vida productiva del predio o una tarde de descanso pueden convivir sin convertir las vacaciones en una carrera. Parque de Minas invita a esa continuidad.',
+      'El geositio Parque de Minas permite estudiar una secuencia volcanosedimentaria vinculada a la historia de Rodinia. Su entorno también relaciona bosque, actividades productivas y usos del territorio.',
     slug: 'parque-de-minas',
     category: 'Geología',
     international: true,
@@ -780,7 +791,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Parque de Minas',
     },
     summary:
-      'Una secuencia volcanosedimentaria abre una historia de océanos antiguos. El parque suma naturaleza y estadías.',
+      'Una secuencia volcanosedimentaria vinculada a Rodinia, en un entorno de bosque y actividades productivas.',
     region: 'Minas y entorno',
     themes: ['Dormir', 'Sabores', 'Geología'],
   },
@@ -801,7 +812,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -815,7 +826,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Museo Lítico · Casa de la Cultura · Salus como contexto regional.',
     tagline: 'El pasado necesita que sepamos escucharlo',
     intro:
-      'Una herramienta, un carbón, la posición de una piedra: los indicios más pequeños pueden abrir preguntas enormes. Cueva Amarilla invita a conocer cómo se investiga nuestra historia. Su valor se comparte también mediante relatos, museos y educación, sin convertir un sitio frágil en tránsito indiscriminado.',
+      'Cueva Amarilla es un sitio de investigación arqueológica donde la posición de instrumentos, restos de talla y carbones ayuda a reconstruir actividades humanas del pasado. Su valor depende de conservar el contexto de los hallazgos y de desarrollar únicamente actividades autorizadas.',
     slug: 'cueva-amarilla',
     category: 'Cultura',
     international: false,
@@ -823,7 +834,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'cantera',
     imageContext: true,
     summary:
-      'Un sitio arqueológico para comprender cómo se investiga el pasado. No es un destino de acceso espontáneo.',
+      'Sitio arqueológico donde instrumentos, restos de talla y carbones se estudian en su contexto, mediante actividades autorizadas.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -846,14 +857,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Minas · lectura del paisaje serrano.',
     tagline: 'Una pausa con horizonte',
     intro:
-      'El viaje también necesita un lugar donde dejar de avanzar. Un mirador puede dar ese permiso: detenerse, respirar y volver a mirar. Ramallo tiene su lugar en la lectura cultural del paisaje serrano y en la invitación a viajar con menos apuro.',
+      'El Mirador Ramallo integra el patrimonio cultural del paisaje serrano. Su registro permite incorporar la observación del paisaje a la lectura del territorio, con condiciones de acceso que deben confirmarse.',
     slug: 'mirador-ramallo',
     category: 'Cultura',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'Una pausa para descubrir el horizonte serrano.',
+    summary:
+      'Registro del patrimonio cultural del paisaje serrano, con condiciones de acceso que deben confirmarse.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -876,7 +888,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Mina Verdún · Villa Serrana · patrimonio productivo.',
     tagline: 'La piedra como archivo y como oficio',
     intro:
-      'Un material puede contar dos historias a la vez: cómo se formó y cómo aprendimos a utilizarlo. Libro Gigante invita a reunir esas miradas. Con interpretación y acceso autorizado, la memoria mineral puede convertirse en una experiencia de descubrimiento, no en una búsqueda de recuerdos para extraer.',
+      'La Cantera Libro Gigante vincula la piedra pizarra con la memoria del trabajo minero. Su interpretación reúne la formación de los materiales y sus usos productivos, con recorridos sujetos a autorización.',
     slug: 'cantera-libro-gigante',
     category: 'Geología',
     international: false,
@@ -884,7 +896,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'cantera',
     imageContext: true,
     summary:
-      'Un material puede contar dos historias a la vez: cómo se formó y cómo aprendimos a utilizarlo. Libro Gigante invita a reunir esas miradas. Con interpretación y acceso autorizado, la memoria mineral puede convertirse en una experiencia de descubrimiento, no en una búsqueda de recuerdos para extraer.',
+      'Cantera vinculada a la piedra pizarra y a la memoria del trabajo minero; su interpretación reúne geología y producción.',
     region: 'Minas y entorno',
     themes: ['Geología'],
   },
@@ -907,7 +919,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Aguas Blancas · Reserva El Abra · Solís de Mataojo.',
     tagline: 'El camino también forma parte del destino',
     intro:
-      'No todos los paisajes se descubren al llegar. Algunos empiezan a contarse durante el trayecto, cuando el relieve cambia y obliga a mirar de otra manera. Abra de Zabaleta invita a darle valor a ese recorrido, con paradas seguras y tiempo para observar.',
+      'El Abra de Zabaleta permite observar relaciones entre relieve y agua en el paisaje serrano de Ruta 81. La lectura del entorno requiere distinguir el corredor vial de los sectores con acceso habilitado.',
     slug: 'abra-de-zabaleta',
     category: 'Geología',
     international: false,
@@ -915,7 +927,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'aguas',
     imageContext: true,
     summary:
-      'No todos los paisajes se descubren al llegar. Algunos empiezan a contarse durante el trayecto, cuando el relieve cambia y obliga a mirar de otra manera. Abra de Zabaleta invita a darle valor a ese recorrido, con paradas seguras y tiempo para observar.',
+      'Paisaje serrano de Ruta 81 que permite observar relaciones entre relieve y agua, utilizando sectores habilitados.',
     region: 'Solís y Aguas Blancas',
     themes: ['Agua', 'Geología'],
   },
@@ -942,7 +954,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Aguas Blancas · Reserva El Abra · patrimonio religioso.',
     tagline: 'Conocer también significa respetar otros ritmos',
     intro:
-      'Un lugar de práctica espiritual no necesita convertirse en una atracción de paso para tener valor cultural. Acercarse a su historia implica comprender su propósito, sus tiempos y sus condiciones. La curiosidad encuentra aquí una forma de visita que comienza por el respeto.',
+      'Chagdud Sengue Dzong es un centro de budismo tibetano en el paisaje de Aguas Blancas. Su valor cultural se relaciona con la práctica espiritual y con el uso del lugar por su comunidad.',
     slug: 'templo-budista-chagdud-gonpa-sengue-dzong',
     category: 'Cultura',
     international: false,
@@ -954,7 +966,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Consultar aviso de visitas',
     },
     summary:
-      'Un lugar de práctica espiritual no necesita convertirse en una atracción de paso para tener valor cultural. Acercarse a su historia implica comprender su propósito, sus tiempos y sus condiciones. La curiosidad encuentra aquí una forma de visita que comienza por el respeto.',
+      'Centro de budismo tibetano cuyo valor cultural se relaciona con la práctica espiritual y la vida de su comunidad.',
     region: 'Solís y Aguas Blancas',
     themes: ['Cultura', 'Cultura'],
   },
@@ -967,7 +979,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'La geología se encuentra aquí con un paisaje de embalse y sierras. El camping y el geositio tienen accesos y actividades diferentes: elegí la experiencia y consultá cómo llegar.',
+        text: 'La geología se relaciona con un paisaje de embalse y sierras. El registro científico y las actividades del camping tienen finalidades y accesos diferentes que deben identificarse al organizar una observación.',
         heading: false,
       },
     ],
@@ -977,7 +989,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Abra de Zabaleta · Camping Aguas Blancas.',
     tagline: 'Cicatrices de la Tierra',
     intro:
-      'Mirar un embalse puede abrir una pregunta que va más allá de su superficie: qué relación tiene el agua con el territorio que la recibe. El registro geológico de Aguas Blancas invita a desarrollar esa interpretación con información técnica y acompañamiento local.',
+      'El registro de Aguas Blancas vincula el paisaje de embalse y sierras con la Zona de Cizalla Sarandí del Yi–Piriápolis, una gran frontera tectónica. La interpretación del geositio y las actividades del camping corresponden a ámbitos y accesos diferentes.',
     slug: 'campamento-aguas-blancas',
     category: 'Geología',
     international: true,
@@ -985,7 +997,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'aguas',
     imageContext: false,
     summary:
-      'Una gran zona de cizalla permite leer fuerzas profundas que transformaron las rocas del territorio.',
+      'Geositio de valor científico internacional vinculado a la Zona de Cizalla Sarandí del Yi–Piriápolis y al paisaje de embalse y sierras.',
     region: 'Solís y Aguas Blancas',
     themes: ['Agua', 'Geología'],
   },
@@ -998,19 +1010,19 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: true,
       },
       {
-        text: 'Aguas Blancas permite conocer la sierra desde el agua represada y el paisaje del Abra de Zabaleta. El camping municipal reúne espacios para acampar y hacer asado, baños y servicios de apoyo a una jornada prolongada. El embalse y sus orillas dan identidad al paseo; el trayecto por Ruta 81 forma parte de la experiencia paisajística.',
+        text: 'El camping municipal se sitúa junto al agua represada y al paisaje del Abra de Zabaleta. Reúne áreas de acampe, parrilleros, baños y servicios de apoyo. El embalse y sus orillas permiten relacionar el relieve serrano con los usos recreativos del territorio.',
         heading: false,
       },
       {
-        text: 'Para un día completo, podés llegar por la mañana, instalar la base de picnic o camping, dedicar un paseo al entorno del agua y reservar una pausa larga para comer. Una segunda parte del recorrido',
+        text: 'La infraestructura de camping, cabañas y recreación tiene condiciones de funcionamiento propias. Una actividad de observación del entorno debe identificar los sectores autorizados y distinguir sus usos de los del geositio de Aguas Blancas.',
         heading: false,
       },
       {
-        text: 'puede orientarse a la memoria rural del área o a una visita acordada con Reserva El Abra. Quien busque combinar naturaleza y pueblo puede dedicar otra media jornada a Solís de Mataojo.',
+        text: 'La memoria rural de la zona, la interpretación de biodiversidad documentada en Reserva El Abra y el patrimonio de Solís de Mataojo aportan referencias complementarias para estudiar el territorio. Cada lugar tiene responsables y condiciones de acceso propios.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -1024,14 +1036,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Abra de Zabaleta · Solís de Mataojo · Reserva El Abra.',
     tagline: 'Quedarse junto al paisaje',
     intro:
-      'Preparar el almuerzo, dejar pasar la tarde y despertar sin un nuevo traslado: acampar cambia la duración del encuentro con un lugar. Aguas Blancas invita a pensar una salida que incluya descanso, conversación y tiempo compartido, además del recorrido.',
+      'El Camping Aguas Blancas es un espacio municipal de uso recreativo junto al embalse y al paisaje del Abra de Zabaleta. Su ficha distingue la organización del camping y los servicios del entorno de la interpretación geológica de Aguas Blancas.',
     slug: 'camping-aguas-blancas',
     category: 'Cultura',
     international: false,
     status: 'Coordinación previa',
     image: 'aguas',
     imageContext: false,
-    summary: 'Una base municipal junto al embalse para organizar una salida de camping y paisaje.',
+    summary:
+      'Espacio municipal de uso recreativo junto al embalse de Aguas Blancas, con organización y servicios propios.',
     region: 'Solís y Aguas Blancas',
     themes: ['Agua', 'Cultura', 'Dormir', 'Cultura'],
   },
@@ -1054,7 +1067,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Abra de Zabaleta · Aguas Blancas · geología del geoparque.',
     tagline: 'Una historia profunda, sin apuro',
     intro:
-      'La escala de una vida parece pequeña cuando se mira la historia de las rocas. La Caperuza invita a esa conversación sobre el tiempo: no para memorizar cifras, sino para comprender que el paisaje reúne procesos que no podríamos observar en una sola visita.',
+      'Cerro La Caperuza permite estudiar una intrusión granítica y procesos geológicos de larga duración. La interpretación especializada ayuda a relacionar la edad de la roca con la historia del paisaje serrano.',
     slug: 'cerro-la-caperuza',
     category: 'Geología',
     international: false,
@@ -1062,7 +1075,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'cantera',
     imageContext: true,
     summary:
-      'La escala de una vida parece pequeña cuando se mira la historia de las rocas. La Caperuza invita a esa conversación sobre el tiempo: no para memorizar cifras, sino para comprender que el paisaje reúne procesos que no podríamos observar en una sola visita.',
+      'Intrusión granítica que permite estudiar procesos geológicos de larga duración en el paisaje serrano.',
     region: 'Solís y Aguas Blancas',
     themes: ['Geología'],
   },
@@ -1071,23 +1084,23 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Parque Mataojo',
     blocks: [
       {
-        text: 'Asado y paseo junto al Mataojo',
+        text: 'Agua y espacio público en Solís de Mataojo',
         heading: true,
       },
       {
-        text: 'Los parques Figari y Mataojo acompañan el arroyo que da nombre a Solís de Mataojo. El entorno cuenta con mesas, bancos y parrilleros, y registra sanitarios en Parque Mataojo. Son espacios apropiados para organizar una salida en la que el agua, la sombra y una comida al aire libre sean los protagonistas.',
+        text: 'Los parques Figari y Mataojo acompañan el arroyo que da nombre a Solís de Mataojo. El entorno cuenta con mesas, bancos y parrilleros, y registra sanitarios en Parque Mataojo. Estos equipamientos permiten reconocer usos comunitarios del espacio junto al agua.',
         heading: false,
       },
       {
-        text: 'Podés recorrer primero la plaza y los lugares vinculados a Fabini y luego instalarse para almorzar junto al parque. De ese modo, la salida combina una breve historia del pueblo con una tarde tranquila. Para quien viene desde el sur del departamento, esta opción tiene sentido propio y permite disfrutar Solís sin convertirlo únicamente en una parada de ruta.',
+        text: 'Los parques, la plaza y los lugares relacionados con Fabini permiten estudiar dimensiones distintas de Solís de Mataojo: el arroyo, el espacio público y la memoria cultural. La relación entre estos registros ayuda a comprender la organización de la localidad.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
-        text: 'La presencia de agua es un atractivo de paisaje; no equivale por sí sola a una zona habilitada de baño. El parque cuenta con parrilleros, mesas y bancos, y sanitarios en Mataojo. Para una salida ordinaria, utilizá las áreas de recreación y las indicaciones del lugar.',
+        text: 'La presencia de agua no equivale por sí sola a una zona habilitada de baño. El parque cuenta con parrilleros, mesas y bancos, y sanitarios en Mataojo. Deben utilizarse las áreas de recreación habilitadas y seguirse las indicaciones del lugar.',
         heading: false,
       },
     ],
@@ -1097,7 +1110,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Solís de Mataojo · Plaza Lázaro Cortés · Aguas Blancas.',
     tagline: 'Un almuerzo que también es parte del viaje',
     intro:
-      'A veces alcanza una mesa al aire libre y tiempo para compartirla. El paseo por Mataojo invita a disfrutar el pueblo con otro ritmo: acercarse a sus historias, hacer una pausa y quedarse junto al paisaje sin que todo tenga que ser una gran excursión.',
+      'Los parques Figari y Mataojo acompañan el arroyo de Solís de Mataojo. Estos espacios relacionan agua, vegetación y usos comunitarios, y permiten reconocer cómo se organiza el espacio público de la localidad.',
     slug: 'parque-mataojo',
     category: 'Naturaleza',
     international: false,
@@ -1105,7 +1118,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'A veces alcanza una mesa al aire libre y tiempo para compartirla. El paseo por Mataojo invita a disfrutar el pueblo con otro ritmo: acercarse a sus historias, hacer una pausa y quedarse junto al paisaje sin que todo tenga que ser una gran excursión.',
+      'Parques junto al arroyo de Solís de Mataojo que relacionan agua, vegetación y usos comunitarios del espacio público.',
     region: 'Solís y Aguas Blancas',
     themes: ['Agua', 'Naturaleza'],
   },
@@ -1128,14 +1141,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cuna de Fabini · plaza · recorrido cultural de Solís.',
     tagline: 'La cultura se construye en el encuentro',
     intro:
-      'Las historias de un pueblo también viven en los espacios donde se comparten. Una Casa de la Cultura invita a conocer voces, prácticas y memorias que no siempre aparecen en los grandes monumentos. El recorrido empieza por saber qué está sucediendo allí y quién puede contarlo.',
+      'La Casa de la Cultura de Solís de Mataojo integra el patrimonio cultural de la localidad. Sus actividades y formas de uso se conocen mediante la institución y la comunidad que participa en ella.',
     slug: 'casa-de-la-cultura-solis',
     category: 'Cultura',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'Cultura, actividades y memoria compartida en Solís de Mataojo.',
+    summary:
+      'Institución del patrimonio cultural de Solís de Mataojo, vinculada a la actividad y la memoria de su comunidad.',
     region: 'Solís y Aguas Blancas',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1158,14 +1172,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Solís de Mataojo · Museo Fabini de Minas · Salus.',
     tagline: 'Un nombre, una localidad y muchas formas de crear',
     intro:
-      'A veces conocemos primero la música y después el lugar donde empieza su historia. La referencia a Fabini invita a recorrer ese camino al revés: del paisaje y la memoria local hacia la obra. La experiencia gana profundidad cuando distingue cada inmueble y cada etapa de esa vida.',
+      'El edificio conocido como Cuna de Fabini forma parte del patrimonio cultural de Solís de Mataojo. Su identificación permite relacionar memoria local, paisaje y creación artística sin confundir los distintos inmuebles asociados al compositor.',
     slug: 'edificio-cuna-de-fabini',
     category: 'Cultura',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'Un encuentro con la memoria cultural de Solís de Mataojo.',
+    summary:
+      'Edificio del patrimonio cultural de Solís de Mataojo que relaciona memoria local, paisaje y creación artística.',
     region: 'Solís y Aguas Blancas',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1178,7 +1193,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'La localidad conmemora su fundación el 12 de agosto de 1874. El paseo puede combinarse con los parques del arroyo y con los lugares relacionados con la memoria cultural del pueblo.',
+        text: 'La localidad conmemora su fundación el 12 de agosto de 1874. La plaza, los parques del arroyo y los lugares relacionados con la memoria cultural del pueblo permiten comprender distintas formas de uso del espacio comunitario.',
         heading: false,
       },
     ],
@@ -1188,7 +1203,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Casa de la Cultura de Solís · Parque Mataojo.',
     tagline: 'Conocer un pueblo desde su lugar de encuentro',
     intro:
-      'Una plaza permite mirar lo que pasa sin tener que intervenir. Las conversaciones, los recorridos cotidianos y las pausas construyen una forma de conocer el lugar. Lázaro Cortés merece contarse desde esa escala cercana, con la historia local como guía.',
+      'La Plaza Lázaro Cortés es un espacio de encuentro y patrimonio cultural de Solís de Mataojo. Su relación con las calles, los parques del arroyo y la memoria de la localidad permite estudiar la vida cotidiana del pueblo.',
     slug: 'plaza-lazaro-cortes',
     category: 'Cultura',
     international: false,
@@ -1196,7 +1211,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Una plaza permite mirar lo que pasa sin tener que intervenir. Las conversaciones, los recorridos cotidianos y las pausas construyen una forma de conocer el lugar. Lázaro Cortés merece contarse desde esa escala cercana, con la historia local como guía.',
+      'Plaza de Solís de Mataojo donde patrimonio cultural, espacio público y vida comunitaria se relacionan.',
     region: 'Solís y Aguas Blancas',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1219,14 +1234,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Espacios públicos de Solís de Mataojo.',
     tagline: 'La vida compartida también es patrimonio',
     intro:
-      'Un territorio no se explica solamente mediante edificios antiguos. También se reconoce en sus espacios para jugar, moverse y reunirse. La Plaza de Deportes invita a incorporar esa dimensión cotidiana del lugar, sin confundir una instalación comunitaria con un servicio turístico de uso libre.',
+      'La Plaza de Deportes de Solís de Mataojo forma parte de la vida comunitaria y del patrimonio cultural local. Sus usos deportivos y colectivos dependen de las actividades y condiciones de funcionamiento de la instalación.',
     slug: 'plaza-de-deportes',
     category: 'Cultura',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'Deporte y encuentro en la vida cotidiana de Solís de Mataojo.',
+    summary:
+      'Instalación deportiva de Solís de Mataojo que integra la vida comunitaria y el patrimonio cultural local.',
     region: 'Solís y Aguas Blancas',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1235,31 +1251,39 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Reserva Natural Parque Salus',
     blocks: [
       {
-        text: 'Dos sectores para dos ritmos de visita',
+        text: 'Antiguos ambientes marinos y registro fósil',
         heading: true,
       },
       {
-        text: 'En Salus conviene elegir primero entre los Jardines del Puma y el Parque Familiar. Los jardines permiten una visita breve a la fuente, al centro de interpretación, a la galería al aire libre y al Sendero de la Diversidad. El Parque Familiar, ubicado a 3,5 kilómetros de la fuente sobre el acceso, propone una permanencia mayor: recepción con microcine, juegos, senderos y espacio de picnic.',
+        text: 'La presentación institucional identifica en el geositio Salus al Grupo Arroyo del Soldado, una secuencia de plataforma marina cuyo registro fósil permite correlacionar unidades geológicas y reconstruir procesos asociados a la formación de Gondwana. Ese patrimonio se estudia en relación con el agua y los ambientes actuales. Fuente: presentación institucional del Geoparque, página 8.',
         heading: false,
       },
       {
-        text: 'Para una primera visita, podés comenzar en los jardines y entender el vínculo entre manantial, bosque e historia de Salus. Si el grupo quiere seguir caminando, se puede continuar al Parque Familiar. La separación entre sectores importa al organizar el transporte y el tiempo; no conviene tratarlos como dos rincones contiguos a pie.',
-        heading: false,
-      },
-      {
-        text: 'Elegir el sendero según la jornada',
+        text: 'Sectores, manantial y recursos de interpretación',
         heading: true,
       },
       {
-        text: 'La oferta de senderos permite adaptar la visita: Pequeño Explorador tiene menos de un kilómetro; Agua, menos de dos; Puma, alrededor de siete. El recorrido al Cerro del Águila se realiza con guardaparques. Para una familia que además quiere jugar y almorzar, una opción corta deja tiempo para todo. Para quienes buscan caminar como actividad principal, el itinerario largo exige reservar una parte mayor del día.',
+        text: 'Salus distingue los Jardines del Puma y el Parque Familiar. Los jardines reúnen la fuente, el centro de interpretación, la galería al aire libre y el Sendero de la Diversidad. El Parque Familiar se ubica a 3,5 kilómetros de la fuente sobre el acceso y cuenta con recepción, microcine, senderos y espacios recreativos.',
         heading: false,
       },
       {
-        text: 'El interés del bosque no se limita a llegar a un mirador. El agua, la vegetación y el manejo de la reserva son temas de interpretación. Una forma de aprovechar la visita es empezar por el centro, elegir el sendero y volver con las observaciones del camino: cambios de sombra, ambientes húmedos, plantas y sonidos de aves.',
+        text: 'El manantial, el bosque y la historia de Salus permiten abordar relaciones entre agua, ambientes y usos del territorio. La separación entre Jardines del Puma y Parque Familiar debe considerarse al organizar transporte y acompañamiento de un grupo.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Senderos e interpretación ambiental',
+        heading: true,
+      },
+      {
+        text: 'Los senderos documentados tienen longitudes diferentes: Pequeño Explorador, menos de un kilómetro; Agua, menos de dos; Puma, alrededor de siete. El recorrido al Cerro del Águila se realiza con guardaparques. La elección de un recorrido requiere confirmar las condiciones reales y las necesidades del grupo.',
+        heading: false,
+      },
+      {
+        text: 'El agua, la vegetación y el manejo de la reserva son temas de interpretación. El registro de cambios de sombra, ambientes húmedos, plantas y sonidos de aves permite relacionar observaciones de campo con la información del centro de interpretación.',
+        heading: false,
+      },
+      {
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -1285,7 +1309,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Minas · Arequita · interpretación del agua.',
     tagline: 'Donde la roca guarda agua y vida',
     intro:
-      'Ver surgir el agua invita a imaginar el recorrido que no vemos. En Salus, la fuente, los senderos y la interpretación permiten conectar esa pregunta con el paisaje. Elegí el ritmo de tu visita y dejá tiempo para mirar aquello que suele quedar entre una parada y otra.',
+      'En Salus, las rocas y los fósiles del Grupo Arroyo del Soldado permiten estudiar antiguos ambientes marinos. El manantial, el bosque y los recursos de interpretación conectan ese patrimonio con el agua y la biodiversidad actuales.',
     slug: 'reserva-natural-parque-salus',
     category: 'Geología',
     international: true,
@@ -1297,7 +1321,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Reserva Natural Salus',
     },
     summary:
-      'Manantiales, bosque e interpretación: geología antigua y agua cotidiana en una misma visita.',
+      'Rocas y fósiles de antiguos ambientes marinos, en relación con el manantial, el bosque y la biodiversidad actuales.',
     region: 'Minas y entorno',
     themes: ['Agua', 'Geología'],
   },
@@ -1320,7 +1344,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Mina Verdún · Libro Gigante · patrimonio minero.',
     tagline: 'La memoria productiva también se puede interpretar',
     intro:
-      'Un paisaje de trabajo abre preguntas sobre materiales, usos y transformaciones. Conocerlo exige algo distinto a una visita espontánea: contexto y coordinación. Mina ANCAP tiene lugar en ese relato, siempre desde la información técnica y las condiciones que definan sus responsables.',
+      'Mina ANCAP reúne patrimonio geológico y memoria productiva del entorno de Minas. El estudio de materiales y transformaciones del territorio requiere información técnica y las condiciones de seguridad que definan sus responsables.',
     slug: 'mina-ancap',
     category: 'Geología',
     international: false,
@@ -1328,7 +1352,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'cantera',
     imageContext: true,
     summary:
-      'Un paisaje de trabajo abre preguntas sobre materiales, usos y transformaciones. Conocerlo exige algo distinto a una visita espontánea: contexto y coordinación. Mina ANCAP tiene lugar en ese relato, siempre desde la información técnica y las condiciones que definan sus responsables.',
+      'Patrimonio geológico y memoria productiva del entorno de Minas, con ingreso sujeto a autorización y condiciones de seguridad.',
     region: 'Minas y entorno',
     themes: ['Geología'],
   },
@@ -1345,11 +1369,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Para quien llega por devoción, las estaciones ordenan un camino de oración. Para quien se interesa por paisaje e historia, ayudan a comprender cómo un cerro se transformó en lugar de encuentro colectivo. La capilla de la base y la Casa del Peregrino permiten conocer el santuario con distintos ritmos de visita; la cumbre puede ser una parte del recorrido, según la capacidad de cada persona.',
+        text: 'Las estaciones del Vía Crucis organizan el recorrido religioso y permiten comprender cómo el cerro se convirtió en un lugar de encuentro colectivo. La capilla de la base, la Casa del Peregrino y la cumbre corresponden a sectores distintos del santuario; sus recorridos requieren considerar las capacidades de cada persona.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -1387,7 +1411,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Catedral de Minas · Casa de la Cultura.',
     tagline: 'Un ascenso que cada persona vive de una manera',
     intro:
-      'La devoción, la historia o el deseo de mirar desde otra altura pueden llevar al mismo lugar. En el Verdún, cada visitante encuentra su propio ritmo. La experiencia no exige llegar a la cumbre para reconocer el significado de un espacio de encuentro y peregrinación.',
+      'El Cerro del Verdún permite estudiar cómo un relieve se transforma en un lugar de devoción y encuentro colectivo. El santuario, las estaciones del Vía Crucis y la historia de la imagen articulan paisaje, práctica religiosa y memoria social.',
     slug: 'cerro-del-verdun',
     category: 'Cultura',
     international: false,
@@ -1398,7 +1422,8 @@ export const canonicalPlaces: CanonicalPlace[] = [
       url: 'https://www.virgendelverdun.com/',
       label: 'Santuario del Verdún',
     },
-    summary: 'Peregrinación y paisaje en un cerro cuya historia de encuentro se remonta a 1901.',
+    summary:
+      'Relieve transformado en santuario y lugar de peregrinación, donde paisaje, práctica religiosa y memoria social se relacionan.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1415,7 +1440,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Para explicarlo a un visitante, conviene imaginar una superficie que incorpora capa tras capa durante mucho tiempo. La forma preservada ayuda a reconstruir el ambiente, pero por sí sola no fija una edad exacta. Este contenido permite entender por qué una cantera puede tener valor científico internacional además de productivo. La visita geológica se organiza con responsables del sitio; el santuario de la Virgen del Verdún constituye otra experiencia, aunque comparta el nombre territorial.',
+        text: 'La acumulación de capas durante largos períodos ayuda a interpretar estas estructuras. La forma preservada aporta información sobre el ambiente, pero por sí sola no fija una edad exacta. El interés científico de la cantera se suma a su uso productivo. La observación geológica se organiza con los responsables del sitio; el santuario de la Virgen del Verdún tiene otro acceso.',
         heading: false,
       },
       {
@@ -1429,7 +1454,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cerro del Ombú · geología del geoparque.',
     tagline: 'Cuando el paisaje era otro mundo',
     intro:
-      'Hay huellas de vida que no tienen huesos ni una silueta familiar. Su lectura necesita atención y conocimiento. Mina Verdún invita a descubrir esa historia remota: aprender a reconocerla puede cambiar para siempre la manera de mirar una piedra.',
+      'Mina Verdún conserva rocas sedimentarias y estructuras asignadas a Conophyton que permiten interpretar antiguos ambientes marinos. Su valor científico se comprende a partir de la relación entre la forma preservada, el contexto geológico y la investigación.',
     slug: 'mina-verdun',
     category: 'Geología',
     international: false,
@@ -1437,7 +1462,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'cantera',
     imageContext: true,
     summary:
-      'Hay huellas de vida que no tienen huesos ni una silueta familiar. Su lectura necesita atención y conocimiento. Mina Verdún invita a descubrir esa historia remota: aprender a reconocerla puede cambiar para siempre la manera de mirar una piedra.',
+      'Rocas sedimentarias y estructuras asignadas a Conophyton que permiten interpretar antiguos ambientes marinos.',
     region: 'Minas y entorno',
     themes: ['Geología'],
   },
@@ -1446,7 +1471,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Centro Cultural Ángel Ugarte ( Ex Estación de AFE)',
     blocks: [
       {
-        text: 'Qué significa visitar un museo de grabado',
+        text: 'Patrimonio gráfico, técnicas y reutilización de un edificio',
         heading: true,
       },
       {
@@ -1454,11 +1479,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Estos ejemplos sirven para entrar a la sala con una pregunta concreta: cómo cambia una imagen según la técnica con que se produce. El acervo y el catálogo son más amplios que cualquier exposición temporal. La sede expositiva en el Centro Ángel Ugarte permite integrar el museo a un paseo por el antiguo entorno ferroviario de Minas.',
+        text: 'La comparación de técnicas permite estudiar cómo cambia una imagen según su proceso de producción. El acervo y el catálogo del museo son más amplios que una exposición temporal. Su sede en el Centro Ángel Ugarte relaciona actividad cultural y recuperación del antiguo entorno ferroviario de Minas.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -1472,7 +1497,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Museo del Grabado · centro de Minas · Teatro Lavalleja.',
     tagline: 'Los edificios también pueden empezar otra vida',
     intro:
-      'Un lugar de partidas y llegadas puede convertirse en un espacio para crear y encontrarse. Ángel Ugarte invita a observar esa transformación: qué permanece, qué cambia y cómo una comunidad vuelve a usar un edificio que forma parte de su memoria.',
+      'El Centro Cultural Ángel Ugarte relaciona la recuperación del antiguo entorno ferroviario con nuevos usos culturales. La sede del Museo Nacional del Grabado permite conocer técnicas de producción gráfica y formas de conservar y compartir ese patrimonio.',
     slug: 'centro-cultural-angel-ugarte-ex-estacion-de-afe',
     category: 'Cultura',
     international: false,
@@ -1480,7 +1505,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Un lugar de partidas y llegadas puede convertirse en un espacio para crear y encontrarse. Ángel Ugarte invita a observar esa transformación: qué permanece, qué cambia y cómo una comunidad vuelve a usar un edificio que forma parte de su memoria.',
+      'Recuperación del entorno ferroviario para usos culturales, con patrimonio gráfico y técnicas del Museo Nacional del Grabado.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1493,7 +1518,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'La visita al Museo Stelio Belloni y la observación del monumento del Cerro Artigas son experiencias relacionadas, pero con accesos y condiciones propias. Confirmar apertura de la colección.',
+        text: 'El Museo Stelio Belloni y el monumento del Cerro Artigas aportan referencias complementarias sobre el proceso escultórico. Cada colección y espacio tiene acceso y condiciones propios; la apertura del museo debe confirmarse.',
         heading: false,
       },
     ],
@@ -1503,7 +1528,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cerro Artigas · Plaza Libertad · Ruta Belloni.',
     tagline: 'Antes del monumento hubo una idea',
     intro:
-      'Una gran escultura empieza con decisiones pequeñas: una línea, una forma, una prueba. Conocer materiales de taller permite acercarse a ese proceso y volver a mirar la obra pública con otros ojos. Belloni invita a recorrer la distancia entre imaginar y construir.',
+      'El Museo Stelio Belloni reúne bocetos, modelos, yesos y bronces vinculados al proceso de creación escultórica. Estos materiales permiten estudiar decisiones de forma y escala y relacionarlas con obras presentes en el espacio público.',
     slug: 'museo-stelio-belloni',
     category: 'Cultura',
     international: false,
@@ -1511,7 +1536,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'artesania',
     imageContext: true,
     summary:
-      'Una gran escultura empieza con decisiones pequeñas: una línea, una forma, una prueba. Conocer materiales de taller permite acercarse a ese proceso y volver a mirar la obra pública con otros ojos. Belloni invita a recorrer la distancia entre imaginar y construir.',
+      'Bocetos, modelos, yesos y bronces que documentan el proceso de creación escultórica y los cambios de escala.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1534,14 +1559,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Escuela 8 · memoria educativa de Minas.',
     tagline: 'Las aulas también guardan memoria',
     intro:
-      'La historia de una ciudad se aprende y se transmite. Sus edificios educativos permiten preguntar por las generaciones que pasaron por ellos y por las formas de enseñar. Conocer ese patrimonio requiere cuidar la vida escolar y acordar una visita que tenga sentido para la institución.',
+      'El edificio de la Escuela n.º 1 de Prácticas Artigas integra el patrimonio cultural de Minas. Su conocimiento se vincula a la memoria educativa de la ciudad y debe respetar la actividad cotidiana de la institución.',
     slug: 'edificio-escuela-1-de-practicas-artigas',
     category: 'Cultura',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'Memoria educativa y patrimonio de la ciudad de Minas.',
+    summary:
+      'Edificio escolar del patrimonio cultural de Minas, vinculado a la memoria educativa y a una institución en funcionamiento.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1564,7 +1590,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Escuela 1 · patrimonio de Minas.',
     tagline: 'Una historia de aprendizajes compartidos',
     intro:
-      'Una escuela puede conservar más que una fachada: también preguntas, recuerdos y maneras de aprender. Su patrimonio invita a conocer la ciudad desde las experiencias de quienes la habitaron. Ese encuentro se prepara con la institución y respeta sus tiempos cotidianos.',
+      'La Escuela n.º 8 Guillermo Cuadri es Monumento Histórico Nacional y forma parte de la memoria educativa de Minas. El valor patrimonial del edificio se relaciona con su historia escolar y con una institución en funcionamiento.',
     slug: 'edificio-escuela-8-guillermo-cuadri',
     category: 'Cultura',
     international: false,
@@ -1572,7 +1598,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Una escuela puede conservar más que una fachada: también preguntas, recuerdos y maneras de aprender. Su patrimonio invita a conocer la ciudad desde las experiencias de quienes la habitaron. Ese encuentro se prepara con la institución y respeta sus tiempos cotidianos.',
+      'Monumento Histórico Nacional que relaciona patrimonio arquitectónico, memoria escolar y actividad educativa.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1581,7 +1607,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Plaza Libertad',
     blocks: [
       {
-        text: 'Plaza Libertad: comenzar por el corazón de la ciudad',
+        text: 'Trazado urbano y memoria pública de Minas',
         heading: true,
       },
       {
@@ -1589,7 +1615,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Podés empezar el recorrido dando una vuelta completa a la plaza. Desde cada lado cambian las relaciones entre monumento, calles y fachadas. Una pausa en un banco permite observar también la vida cotidiana: el centro funciona como lugar de encuentro, compras y circulación. La intervención de 2018 incorporó iluminación y juegos de agua, sumando otra lectura del espacio al caer la tarde.',
+        text: 'La disposición de calles, fachadas y monumentos permite analizar la organización del centro de Minas. La plaza funciona como espacio de encuentro, comercio y circulación. La intervención de 2018 incorporó iluminación y juegos de agua, modificando algunos usos y formas de percepción del lugar.',
         heading: false,
       },
     ],
@@ -1599,14 +1625,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Catedral · Casa de la Cultura · Irisarri.',
     tagline: 'Empezá por el lugar donde la ciudad se encuentra',
     intro:
-      'Antes de salir hacia las sierras, regalate una vuelta por la plaza. Mirá las fachadas, detenete frente al monumento y observá cómo transcurre la vida alrededor. Un viaje también se construye con esas escenas que nadie organizó especialmente para el visitante.',
+      'La Plaza Libertad reúne trazado urbano, edificios cívicos y representaciones de la memoria de Minas. El monumento a Lavalleja y las fachadas del entorno permiten estudiar cómo se construyen la identidad pública y el espacio de encuentro de una ciudad.',
     slug: 'plaza-libertad',
     category: 'Cultura',
     international: false,
     status: 'Paseo por el entorno',
     image: 'gauchos',
     imageContext: true,
-    summary: 'El centro de Minas se descubre entre fachadas, vida cotidiana y memoria urbana.',
+    summary:
+      'Espacio cívico donde trazado urbano, edificios y monumentos permiten estudiar la memoria pública de Minas.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1627,7 +1654,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'La confitería creció hasta convertirse en un lugar de encuentro, salón de té y compra de especialidades. La entrevista familiar publicada por sus 125 años muestra una continuidad de oficios y recetas que acompaña varias generaciones de visitantes. Por eso la parada tiene interés patrimonial además de gastronómico: permite conocer una tradición comercial que sigue formando parte de la vida minuana.',
+        text: 'La confitería se desarrolló como lugar de encuentro, salón de té y comercio de especialidades. La entrevista familiar publicada por sus 125 años documenta continuidad de oficios y recetas a lo largo de varias generaciones. Esa trayectoria forma parte de la memoria productiva y comercial de Minas.',
         heading: false,
       },
       {
@@ -1635,15 +1662,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'La cuarta generación está incorporando equipamiento y ampliando la distribución. Esa historia reciente evita una imagen congelada de la confitería: sigue siendo una empresa de producción y comercio. La visita al centro puede terminar con una pequeña selección para comparar las especialidades en la merienda y llevar otras como recuerdo del departamento.',
+        text: 'La cuarta generación está incorporando equipamiento y ampliando la distribución. Estos cambios permiten estudiar la continuidad de una empresa familiar y la transformación de sus formas de producción y comercialización.',
         heading: false,
       },
       {
-        text: 'La casa central se encuentra frente a Plaza Libertad, en la cuadra del Club Minas. Reúne venta de productos, cafetería y sandwichería; es una parada natural después de Casa de la Cultura o del paseo por la plaza. En el lugar se encuentra en el subsuelo una bodega museo con documentos, objetos de la empresa y una representación de la mesa de los apóstoles. Ese espacio patrimonial se organiza con el establecimiento; la compra y la cafetería son la base del paseo habitual.',
+        text: 'La casa central está frente a Plaza Libertad, en la cuadra del Club Minas, y reúne venta, cafetería y sandwichería. En el subsuelo se documenta una bodega museo con documentos, objetos de la empresa y una representación de la mesa de los apóstoles. El acceso a ese espacio patrimonial se coordina con el establecimiento.',
         heading: false,
       },
       {
-        text: 'También se documenta un local sobre el acceso de Ruta 8, avenida Baltasar Brum y calle 144. Para quien recorre la ciudad, la casa de la plaza ofrece más contexto histórico; para llevar productos al continuar viaje, el acceso puede resultar práctico. El perfil comercial publica para Minas el teléfono 4442 4008.',
+        text: 'También se documenta un local en el acceso de Ruta 8, sobre avenida Baltasar Brum y calle 144. Los distintos locales tienen funciones comerciales propias. El perfil consultado publica para Minas el teléfono 4442 4008.',
         heading: false,
       },
       {
@@ -1657,7 +1684,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Plaza Libertad · Museo del Alfajor · paseo urbano.',
     tagline: 'El recuerdo también puede tener sabor',
     intro:
-      'Algunas paradas se recuerdan por una conversación; otras, por lo que probamos. Una confitería permite reunir ambas cosas. Irisarri invita a conocer una tradición local sin separar el sabor del trabajo y de las historias que lo hicieron posible.',
+      'La historia de Irisarri relaciona trabajo familiar, comercio y vida urbana desde fines del siglo XIX. Su trayectoria permite conocer vínculos entre la campaña, la producción gastronómica y la memoria de Minas.',
     slug: 'confiteria-irisarri',
     category: 'Cultura',
     international: false,
@@ -1669,7 +1696,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: '+598 4442 4008',
     },
     summary:
-      'Una tradición familiar iniciada en 1898, con yemas, serranitos y recuerdos que se llevan a la mesa.',
+      'Historia de trabajo familiar y comercio que relaciona producción gastronómica, campaña y memoria urbana de Minas.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Sabores', 'Cultura'],
   },
@@ -1686,11 +1713,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Para una visita breve, recomiendo detenerse primero frente a la fachada, identificar el eje central y observar las proporciones de puertas, ventanas y torres. En el interior se puede seguir ese eje y comparar la escala del espacio con la percepción desde la plaza. El templo es parte del recorrido histórico y, a la vez, un lugar de culto activo, por lo que la visita se adapta a las celebraciones.',
+        text: 'El eje central y las proporciones de puertas, ventanas y torres permiten analizar la composición de la fachada. Las bóvedas y la secuencia interior relacionan escala, luz y uso religioso. El templo es un lugar de culto activo; cualquier observación de su interior se adapta a las celebraciones.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -1720,7 +1747,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Plaza Libertad · Verdún · Casa de la Cultura.',
     tagline: 'Mirar la ciudad desde otro silencio',
     intro:
-      'La puerta de un templo cambia el ritmo del recorrido. La luz, las proporciones y las imágenes invitan a observar con otra atención. En la catedral, el interés por la arquitectura puede convivir con la vida religiosa del lugar, sin que una visita interrumpa a la otra.',
+      'La Catedral de la Inmaculada Concepción de Minas reúne patrimonio arquitectónico y vida religiosa. Su composición neoclásica, las torres y la organización interior permiten estudiar proporciones, luz y usos del espacio.',
     slug: 'catedral-de-la-inmaculada-concepcion-de-minas',
     category: 'Cultura',
     international: false,
@@ -1732,7 +1759,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Catedral de Minas',
     },
     summary:
-      'La puerta de un templo cambia el ritmo del recorrido. La luz, las proporciones y las imágenes invitan a observar con otra atención. En la catedral, el interés por la arquitectura puede convivir con la vida religiosa del lugar, sin que una visita interrumpa a la otra.',
+      'Patrimonio arquitectónico y religioso que permite estudiar composición neoclásica, proporciones, luz y usos del espacio.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1749,7 +1776,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Una visita con sentido puede comenzar por la casa y continuar luego hacia la plaza. Así se relacionan la memoria biográfica y la representación pública del prócer. La diferencia entre una vivienda conservada y un monumento ecuestre ayuda a contar cómo una ciudad construye su identidad alrededor de una figura histórica.',
+        text: 'La casa natal y el monumento de Plaza Libertad permiten comparar memoria biográfica y representación pública. Los objetos personales, la vivienda conservada y la escultura ecuestre muestran maneras diferentes de construir una memoria histórica compartida.',
         heading: false,
       },
       {
@@ -1757,15 +1784,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: true,
       },
       {
-        text: 'El Museo Eduardo Fabini nació el 12 de octubre de 1955 a partir del legado de Emma Suárez, viuda del compositor. El encargo fue confiado a Santiago Dossetti, primer director de Casa de la Cultura. Conserva el archivo de la obra del músico y objetos vinculados a su trayectoria. Es una visita que permite pasar de conocer un nombre en una calle o en una sala de conciertos a comprender el trabajo de un creador.',
+        text: 'El Museo Eduardo Fabini nació el 12 de octubre de 1955 a partir del legado de Emma Suárez, viuda del compositor. El encargo fue confiado a Santiago Dossetti, primer director de Casa de la Cultura. Conserva el archivo de la obra del músico y objetos que permiten estudiar su trayectoria y su proceso de creación.',
         heading: false,
       },
       {
-        text: 'Para disfrutarlo, conviene relacionar las partituras y objetos biográficos con el paisaje de Solís de Mataojo y Salus, lugares asociados a Fabini. El recorrido musical por Lavalleja puede comenzar aquí y continuar otro día en esas zonas. La conexión entre archivo, paisaje y memoria es el tema del paseo; no depende de que haya una actuación musical durante la visita.',
+        text: 'Las partituras y los objetos biográficos permiten relacionar el archivo con paisajes de Solís de Mataojo y Salus asociados a Fabini. El vínculo entre documentación, música y memoria local puede estudiarse independientemente de una programación de actuaciones.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -1795,7 +1822,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Plaza Libertad · Teatro · Solís de Mataojo.',
     tagline: 'Elegí una historia y dejá que te lleve',
     intro:
-      'No hace falta recorrer todas las salas para salir con algo nuevo. Una casa, un documento, una partitura o un objeto pueden abrir una historia completa. Casa de la Cultura invita a elegir ese hilo y seguirlo con tiempo, antes de volver a caminar la ciudad.',
+      'La Casa de la Cultura conserva la vivienda natal de Juan Antonio Lavalleja y reúne museos, biblioteca y espacios de exposición. Sus documentos, objetos y colecciones permiten relacionar memoria biográfica, historia de la ciudad y representación pública.',
     slug: 'casa-de-la-cultura',
     category: 'Cultura',
     international: false,
@@ -1807,7 +1834,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: '+598 4442 2010',
     },
     summary:
-      'La casa natal de Lavalleja, el archivo de Fabini y las historias que una ciudad conserva.',
+      'Vivienda natal de Lavalleja, museos, biblioteca y colecciones que relacionan historia personal y memoria pública.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1830,14 +1857,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Historia urbana de Minas.',
     tagline: 'La memoria también habita los lugares de despedida',
     intro:
-      'Un cementerio merece una mirada que combine interés histórico y respeto. Puede ayudar a conversar sobre memoria, nombres y formas de recordar, sin transformar el duelo ajeno en espectáculo. La visita patrimonial necesita contexto, cuidado y acuerdos claros.',
+      'El Cementerio Central forma parte del patrimonio cultural de Minas y de sus formas de recordar. La lectura histórica de este espacio requiere contexto y respeto por las familias y por su función cotidiana.',
     slug: 'cementerio-central',
     category: 'Cultura',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'Memoria urbana y patrimonio cultural en un espacio de recogimiento.',
+    summary:
+      'Patrimonio cultural de Minas y espacio de memoria que requiere contexto histórico y respeto por su función cotidiana.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1850,27 +1878,27 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: true,
       },
       {
-        text: 'El Museo del Alfajor reúne objetos y documentos vinculados a tres generaciones de la familia Cedrés, creadora de Alfajores de las Sierras de Minas. La empresa sitúa su origen en 1953. La visita permite acercarse a la historia de un producto que se transformó en un recuerdo gastronómico de Minas y a la continuidad de una actividad familiar a lo largo del tiempo.',
+        text: 'El Museo del Alfajor reúne objetos y documentos de tres generaciones de la familia Cedrés, creadora de Alfajores de las Sierras de Minas. La empresa sitúa su origen en 1953. La colección documenta la continuidad de una actividad familiar y sus vínculos con la producción local.',
         heading: false,
       },
       {
-        text: 'Para recorrerlo, podés mirar los objetos como huellas de trabajo: qué tarea resolvían, qué materiales utilizaban y qué cuentan de la forma de producir y vender. Con niños, se puede partir del alfajor que conocen y reconstruir hacia atrás el oficio que lo hizo posible. La compra posterior permite comparar presentaciones de merengue, chocolate y otras variedades.',
+        text: 'Los objetos pueden estudiarse como huellas de trabajo: qué tarea resolvían, qué materiales utilizaban y cómo se organizaban la producción y la venta. Relacionar el producto con sus herramientas y procesos permite abordar conocimientos técnicos y memoria de los oficios.',
         heading: false,
       },
       {
-        text: 'Cómo incorporarlo al paseo por Minas',
+        text: 'Trabajo, documentación y memoria productiva',
         heading: true,
       },
       {
-        text: 'El museo está en Carabajal 405, esquina Colón, junto a la referencia comercial de la fábrica. Su horario publicado abarca mañana y tarde, con una pausa al mediodía. La entrada gratuita facilita incorporarlo a un circuito familiar de cultura y sabores. Para una visita centrada en oficios, lo combinaría con el Museo de Miniaturas de Carabajal 322; para un recorrido gastronómico, con Irisarri y una vuelta por Plaza Libertad.',
+        text: 'El museo se encuentra en Carabajal 405, esquina Colón, junto a la referencia comercial de la fábrica. La documentación publica entrada gratuita y apertura de mañana y tarde con pausa al mediodía; estos datos se confirman con sus responsables. Las colecciones sobre oficios de Minas permiten comparar distintas formas de conservar la memoria productiva.',
         heading: false,
       },
       {
-        text: 'La empresa también publica un punto de venta en Plaza Treinta y Tres, sobre 25 de Mayo. Elegir la fábrica y museo aporta historia además de compra; el local de plaza permite resolver una parada breve durante el paseo urbano.',
+        text: 'La empresa también publica un punto de venta en Plaza Treinta y Tres, sobre 25 de Mayo. El local comercial y el museo de la fábrica tienen funciones distintas; una actividad de estudio de la colección debe coordinarse con el museo.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -1892,7 +1920,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Irisarri · Museo de Miniaturas · centro de Minas.',
     tagline: 'Una historia familiar detrás de cada recuerdo dulce',
     intro:
-      'Conocer un producto desde su historia cambia la manera de llevarlo de regalo. El Museo del Alfajor invita a mirar objetos, trabajo y continuidad familiar. Después, la elección de una caja deja de ser solamente una compra: se convierte en una parte del viaje que podés compartir.',
+      'El Museo del Alfajor reúne objetos y documentos de tres generaciones de la familia Cedrés. Su colección permite conocer técnicas de trabajo, continuidad familiar y transformaciones de una actividad productiva vinculada a Minas.',
     slug: 'museo-alfajores-de-las-sierras-de-minas',
     category: 'Cultura',
     international: false,
@@ -1903,7 +1931,8 @@ export const canonicalPlaces: CanonicalPlace[] = [
       url: 'tel:+59844423056',
       label: '+598 4442 3056',
     },
-    summary: 'Objetos, documentos y tres generaciones de una tradición gastronómica minuana.',
+    summary:
+      'Objetos y documentos de tres generaciones de la familia Cedrés que explican técnicas de trabajo y continuidad productiva.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Sabores', 'Cultura'],
   },
@@ -1920,11 +1949,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'El Museo del Humor y la Historieta ofrece otra forma de aproximarse al edificio: caricaturas, dibujo y narración gráfica. Un paseo cultural puede vincular el escenario, la colección de humor y las salas de Casa de la Cultura. Si el viaje coincide con una función, verla permite conocer el teatro en uso; la visita patrimonial y la asistencia a un espectáculo son experiencias complementarias.',
+        text: 'El Museo del Humor y la Historieta incorpora caricaturas, dibujo y narración gráfica al conjunto cultural. La sala teatral, la colección y las funciones tienen modalidades propias y permiten estudiar usos diferentes de un mismo edificio.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -1954,7 +1983,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Casa de la Cultura · Museo del Grabado · Plaza Libertad.',
     tagline: 'Una ciudad también se cuenta desde su escenario',
     intro:
-      'Hay una diferencia entre mirar un teatro vacío y vivirlo durante una función. Ambas experiencias revelan algo del lugar: su arquitectura y su capacidad de reunir. El Teatro Lavalleja invita a acercarse por la historia y, cuando la agenda acompaña, quedarse por lo que sucede en escena.',
+      'El Teatro Lavalleja articula historia arquitectónica y actividad cultural colectiva. El edificio, los Premios Morosoli y el Museo del Humor y la Historieta permiten relacionar distintas expresiones de la cultura local y nacional.',
     slug: 'teatro-lavalleja',
     category: 'Cultura',
     international: false,
@@ -1966,7 +1995,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: '+598 4442 4254',
     },
     summary:
-      'Arquitectura, espectáculos y patrimonio del humor en un escenario inaugurado en 1909.',
+      'Edificio que articula historia arquitectónica y actividad cultural, vinculado a los Premios Morosoli y al humor gráfico.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -1983,11 +2012,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Podés observar el monumento desde cierta distancia antes de acercarse. La escala, la silueta y la relación con el cielo se perciben de otra manera que los detalles vistos desde la base. Después, mirar hacia Minas ayuda a reconocer la trama urbana y ubicar algunos de los lugares recorridos durante el día. Es una buena culminación de un circuito que haya empezado en Plaza Libertad.',
+        text: 'La observación a distintas distancias permite comparar la escala, la silueta y los detalles del monumento. La vista hacia Minas ayuda a reconocer la trama urbana y su relación con las sierras. Estas relaciones aportan una lectura conjunta de arte público, ciudad y relieve.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2001,7 +2030,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Museo Stelio Belloni · Plaza Libertad · Minas.',
     tagline: 'Volver a mirar la ciudad que acabás de recorrer',
     intro:
-      'Después de caminar las calles, cambiar de altura permite ordenar los recuerdos. El Cerro Artigas invita a reconocer el conjunto y la relación entre la ciudad y su paisaje. La escultura añade otra escala: mirarla de lejos y de cerca son dos formas distintas de descubrirla.',
+      'El Cerro Artigas relaciona la lectura panorámica de Minas con una obra escultórica de gran escala. El monumento de Stelio Belloni y su posición en el relieve permiten estudiar vínculos entre arte público, ciudad y paisaje.',
     slug: 'cerro-artigas',
     category: 'Geología',
     international: false,
@@ -2009,7 +2038,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'artigas',
     imageContext: false,
     summary:
-      'Una mirada panorámica sobre Minas y un monumento que forma parte de la memoria del paisaje.',
+      'Monumento de Stelio Belloni que permite relacionar arte público, escala escultórica, ciudad y relieve.',
     region: 'Minas y entorno',
     themes: ['Geología'],
   },
@@ -2032,14 +2061,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Patrimonio doméstico de Minas.',
     tagline: 'Una casa puede abrir preguntas sobre toda una ciudad',
     intro:
-      'El patrimonio doméstico acerca la historia a otra escala. Una vivienda invita a preguntar por los usos, las familias y los cambios de un barrio. Casa Curbelo Báez merece una investigación que permita contar su singularidad sin confundirla con otros inmuebles de nombres parecidos.',
+      'Casa Curbelo Báez integra el patrimonio cultural y la memoria doméstica de Minas. Su identificación y documentación permiten formular preguntas sobre los usos de la vivienda y las transformaciones de la ciudad.',
     slug: 'casa-curbelo-baez',
     category: 'Cultura',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'Una casa para acercarse a la historia doméstica de Minas.',
+    summary:
+      'Vivienda del patrimonio cultural de Minas que abre preguntas documentales sobre usos domésticos y cambios urbanos.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -2062,14 +2092,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Catedral · Verdún · patrimonio religioso de Minas.',
     tagline: 'Otra escala del patrimonio religioso',
     intro:
-      'Un recorrido de templos también puede acercarse a la vida de los barrios. Santa Teresita invita a incorporar esa mirada, sin exigir monumentalidad para reconocer un lugar significativo. La historia se completa con la comunidad que lo habita y conserva.',
+      'La Iglesia Santa Teresita integra el patrimonio cultural y religioso de Minas. Su significado se relaciona con la comunidad que utiliza y conserva el templo y con las prácticas que allí se desarrollan.',
     slug: 'iglesia-santa-teresita',
     category: 'Cultura',
     international: false,
     status: 'Consultar acceso',
     image: 'panorama',
     imageContext: true,
-    summary: 'La vida de la comunidad y el patrimonio religioso de Minas.',
+    summary:
+      'Patrimonio cultural y religioso relacionado con la comunidad que utiliza y conserva el templo.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -2078,19 +2109,19 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Parque Rodó',
     blocks: [
       {
-        text: 'Una salida de parque con tiempo para comer y jugar',
+        text: 'Recreación urbana y encuentro comunitario',
         heading: true,
       },
       {
-        text: 'Parque Rodó se encuentra al norte de Minas, sobre avenida San Martín. El parque reúne mesas, bancos, parrilleros, juegos, rosal y un lago artificial. Esa combinación permite una salida familiar que reúna comida, paseo y juego en un mismo espacio urbano. El lago aporta paisaje y observación; los parrilleros permiten que el almuerzo sea parte del encuentro.',
+        text: 'Parque Rodó se encuentra al norte de Minas, sobre avenida San Martín. Reúne mesas, bancos, parrilleros, juegos, rosal y un lago artificial. Ese equipamiento permite reconocer distintos usos recreativos del espacio público y la incorporación de vegetación y agua al paisaje urbano.',
         heading: false,
       },
       {
-        text: 'Una opción para quien quiere hacer asado cerca de la ciudad y alternar la mesa con actividades sencillas. Puede ocupar una tarde completa o combinarse con un museo durante la mañana. El parque también recibe acontecimientos como Minas y Abril y actividades de la Semana de Lavalleja, por lo que una visita durante un festival tiene un ritmo y una organización distintos de un día ordinario.',
+        text: 'El parque recibe acontecimientos como Minas y Abril y actividades de la Semana de Lavalleja. Estos usos culturales colectivos requieren una organización diferente de la del funcionamiento cotidiano; su programación y condiciones dependen de cada acontecimiento.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2104,7 +2135,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Centro de Minas · paseo del San Francisco.',
     tagline: 'Un día que no necesita correr',
     intro:
-      'Jugar, compartir una comida y caminar un rato también pueden ser un buen plan de viaje. Parque Rodó invita a dedicar tiempo a lo sencillo. En fechas de encuentro cultural, el lugar cambia de ritmo; fuera de ellas, la experiencia puede ser una tarde tranquila.',
+      'Parque Rodó reúne espacios de recreación, un lago artificial y usos culturales al norte de Minas. Su organización permite estudiar la relación entre equipamiento urbano, encuentro comunitario y actividades colectivas.',
     slug: 'parque-rodo',
     category: 'Cultura',
     international: false,
@@ -2112,7 +2143,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Jugar, compartir una comida y caminar un rato también pueden ser un buen plan de viaje. Parque Rodó invita a dedicar tiempo a lo sencillo. En fechas de encuentro cultural, el lugar cambia de ritmo; fuera de ellas, la experiencia puede ser una tarde tranquila.',
+      'Parque urbano con lago artificial y espacios de recreación y encuentro cultural al norte de Minas.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Cultura'],
   },
@@ -2125,7 +2156,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'La visita acompañada tiene sentido precisamente por ese carácter de refugio de fauna. Permite conocer una cavidad habitada sin convertirla en un espacio de tránsito indiscriminado. La gruta y el monte de ombúes son dos experiencias distintas: una acerca al ambiente subterráneo y la otra a un bosque singular. Para un día de naturaleza, ambas pueden formar el núcleo del paseo por Arequita.',
+        text: 'La cavidad debe interpretarse como un refugio de fauna cuyo manejo protege la vida que alberga. La gruta y el monte de ombúes corresponden a ambientes diferentes, con accesos y condiciones propios. La observación del ambiente subterráneo requiere acompañamiento y coordinación específicos.',
         heading: false,
       },
       {
@@ -2139,7 +2170,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cerro Arequita · Monte de Ombúes.',
     tagline: 'La aventura también puede ser aprender a no interrumpir',
     intro:
-      'Una cavidad habitada nos recuerda que no somos los únicos visitantes del paisaje. Conocer la gruta tiene sentido cuando la curiosidad se acompaña de cuidado. La mejor experiencia es la que permite comprender el refugio sin alterar la vida que lo hace especial.',
+      'La Gruta Colón es un refugio de murciélagos con registros de interés científico. Su interpretación relaciona el ambiente subterráneo con la conservación de fauna y requiere proteger las condiciones de la cavidad habitada.',
     slug: 'gruta-colon-y-conservacion-de-murcielagos',
     category: 'Experiencias',
     international: false,
@@ -2147,7 +2178,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'gruta',
     imageContext: false,
     summary:
-      'Una cavidad de importancia para los murciélagos. Su conocimiento requiere acompañamiento y autorización.',
+      'Refugio de murciélagos de interés científico que relaciona ambiente subterráneo y conservación de fauna.',
     region: 'Arequita y Santa Lucía',
     themes: ['Agua', 'Experiencias'],
   },
@@ -2160,7 +2191,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'El río explica parte de la continuidad entre ambientes: une el valle, la vegetación de ribera y los espacios de recreación cercanos. Para observar fauna conviene caminar despacio por los recorridos habilitados, detenerse y escuchar. Los carpinchos, guazubirás y aves forman parte de la biodiversidad del área; el atractivo está en conocer sus ambientes, sin organizar el paseo alrededor de un avistamiento garantizado.',
+        text: 'El río explica parte de la continuidad entre ambientes: conecta el valle, la vegetación de ribera y los espacios cercanos. El registro de fauna requiere observación a distancia desde recorridos habilitados. Carpinchos, guazubirás y aves forman parte de la biodiversidad documentada del área; su presencia no garantiza avistamientos durante una actividad.',
         heading: false,
       },
     ],
@@ -2170,14 +2201,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cerro Arequita · Gruta Colón · Santa Lucía.',
     tagline: 'Descubrir un paisaje a la altura de sus troncos',
     intro:
-      'Hay paseos en los que mirar hacia abajo y alrededor vale tanto como mirar al horizonte. Formas, sombras y vegetación invitan a caminar con otra atención. El monte de ombúes propone un encuentro botánico y paisajístico que no necesita convertirse en una carrera hacia la cima.',
+      'El entorno de Arequita reúne ombúes, helechos, pastizales, humedales y bosque asociado al agua. La continuidad entre río, valle y paredones permite comprender relaciones entre geología, vegetación y hábitats de fauna.',
     slug: 'monte-de-ombues-del-entorno-de-arequita',
     category: 'Experiencias',
     international: false,
     status: 'Consultar acceso',
     image: 'ombues',
     imageContext: false,
-    summary: 'Troncos, sombras y formas de un bosque singular en el entorno de Arequita.',
+    summary:
+      'Ombúes, pastizales, humedales y bosque ribereño que permiten comprender conexiones entre río, relieve y hábitats.',
     region: 'Arequita y Santa Lucía',
     themes: ['Agua', 'Experiencias'],
   },
@@ -2186,19 +2218,19 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Laguna de los Cuervos y entorno',
     blocks: [
       {
-        text: 'El Santa Lucía, el bosque ribereño y una estadía en cabaña',
+        text: 'Valle, bosque ribereño e historia del agua',
         heading: true,
       },
       {
-        text: 'Laguna de los Cuervos permite disfrutar de un entorno de río y bosque nativo próximo al macizo de Arequita. La documentación ambiental describe un paisaje de valle, laguna y cerro, con vistas hacia el Santa Lucía; también registra las ruinas de un antiguo molino harinero. Esa presencia recuerda que el agua del lugar tiene una historia productiva además de paisajística.',
+        text: 'La documentación ambiental de Laguna de los Cuervos describe un entorno de río y bosque nativo próximo al macizo de Arequita. El paisaje de valle, laguna y cerro se relaciona con el Santa Lucía y con las ruinas de un antiguo molino harinero. El agua reúne aquí dimensiones ambientales y productivas.',
         heading: false,
       },
       {
-        text: 'El establecimiento comercial se alcanza por camino Valeriano Magri, a unos trece kilómetros de Minas. Ofrece visita por el día y cabañas; el aviso consultado mantiene temporalmente cerrado su camping. Para una jornada de agua y asado, el establecimiento cuenta con un sector de parrilleros. Elegiría una cabaña si se busca permanecer junto al paisaje al final del día y comenzar la mañana siguiente sin traslado. Para reservar: 099 912 596, 4440 3962 e info@lagunadeloscuervos.com.uy.',
+        text: 'El establecimiento se alcanza por camino Valeriano Magri, a unos trece kilómetros de Minas. La documentación comercial publica acceso por el día y cabañas, con área de camping temporalmente cerrada. También registra parrilleros y los contactos 099 912 596, 4440 3962 e info@lagunadeloscuervos.com.uy. La disponibilidad y el acceso deben confirmarse con el operador.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2229,7 +2261,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cerro Arequita · Monte de Ombúes · Minas.',
     tagline: 'Quedarse un poco más junto al río',
     intro:
-      'Una tarde puede cambiar cuando no hace falta salir enseguida hacia el próximo destino. El entorno de los Cuervos invita a quedarse junto al paisaje, compartir una pausa y descubrir cómo la luz transforma el mismo lugar. Elegí la modalidad de visita antes de llegar.',
+      'Laguna de los Cuervos relaciona el valle, el bosque nativo y el macizo de Arequita con el río Santa Lucía. Las ruinas de un antiguo molino añaden una dimensión productiva a la historia del agua en el entorno.',
     slug: 'laguna-de-los-cuervos-y-entorno',
     category: 'Experiencias',
     international: false,
@@ -2241,7 +2273,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Laguna de los Cuervos',
     },
     summary:
-      'Una tarde puede cambiar cuando no hace falta salir enseguida hacia el próximo destino. El entorno de los Cuervos invita a quedarse junto al paisaje, compartir una pausa y descubrir cómo la luz transforma el mismo lugar. Elegí la modalidad de visita antes de llegar.',
+      'Entorno de valle, laguna y bosque nativo donde las ruinas de un molino relacionan agua, paisaje e historia productiva.',
     region: 'Arequita y Santa Lucía',
     themes: ['Agua', 'Dormir', 'Experiencias'],
   },
@@ -2250,19 +2282,19 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Camping Arequita',
     blocks: [
       {
-        text: 'Una base para pasar más tiempo junto al río',
+        text: 'Usos recreativos y condiciones de acceso junto al Santa Lucía',
         heading: true,
       },
       {
-        text: 'El Camping Arequita combina parcelas, cabañas y servicios para permanecer en el entorno del Santa Lucía. Su oferta incluye electricidad en las parcelas, parrilleros individuales, estacionamiento junto al alojamiento, juegos infantiles y wifi en áreas comunes. La piscina exterior y la piscina cubierta climatizada ofrecen alternativas al río dentro del complejo.',
+        text: 'La documentación del Camping Arequita distingue parcelas, cabañas y servicios recreativos en el entorno del Santa Lucía. Registra electricidad, parrilleros individuales, estacionamiento, juegos infantiles, wifi en áreas comunes y piscinas exterior y cubierta climatizada. Estos servicios corresponden al funcionamiento del complejo.',
         heading: false,
       },
       {
-        text: 'Para una salida de asado, la ventaja es reunir comida, espacio de descanso y servicios en una misma base. Para dos días, propongo instalarse y disfrutar del camping el primero; dedicar el segundo al cerro, el monte de ombúes o una visita guiada a la gruta. Quien llega con una familia puede elegir cabaña para conservar esa base sin montar carpa.',
+        text: 'El camping, el cerro, el monte de ombúes y la Gruta Colón tienen funciones y condiciones de acceso propias. La reserva de un servicio del camping no sustituye la coordinación de otras actividades del entorno. Para una observación educativa deben identificarse previamente los sectores autorizados.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2292,7 +2324,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Cerro Arequita · Gruta Colón · Minas.',
     tagline: 'Una base para compartir más tiempo afuera',
     intro:
-      'Acampar o elegir una cabaña cambia la forma de organizar el viaje. El paisaje deja de ser una parada y se vuelve el lugar donde transcurre el día. Camping Arequita invita a combinar descanso y paseos, con una base propia para volver a encontrarse.',
+      'Camping Arequita es un complejo recreativo y de alojamiento en el entorno del Santa Lucía. Su organización y servicios permiten distinguir los usos del camping de las condiciones de acceso a los otros sectores del paisaje de Arequita.',
     slug: 'camping-arequita',
     category: 'Experiencias',
     international: false,
@@ -2304,7 +2336,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: 'Camping Arequita',
     },
     summary:
-      'Acampar o elegir una cabaña cambia la forma de organizar el viaje. El paisaje deja de ser una parada y se vuelve el lugar donde transcurre el día. Camping Arequita invita a combinar descanso y paseos, con una base propia para volver a encontrarse.',
+      'Complejo recreativo y de alojamiento junto al Santa Lucía, con organización y condiciones propias respecto de otros sectores de Arequita.',
     region: 'Arequita y Santa Lucía',
     themes: ['Agua', 'Dormir', 'Experiencias'],
   },
@@ -2321,11 +2353,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Al recorrer la villa, interesa observar cómo aparecen y desaparecen las vistas entre curvas, árboles y diferencias de altura. Las calles internas sin pavimentar contribuyen a una experiencia de desplazamiento pausado. Recomiendo dedicarle al menos una jornada completa: un paso rápido por el lago muestra apenas una parte del proyecto. Una noche permite conocer los cambios de luz y disfrutar una comida sin estar pendiente del regreso a Minas.',
+        text: 'Las curvas, los árboles y las diferencias de altura modifican la aparición de las vistas dentro de la villa. El trazado y las calles internas sin pavimentar permiten estudiar decisiones de implantación, circulación y relación con el relieve. La lectura del conjunto vincula espacios públicos, construcciones y paisaje.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2339,7 +2371,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Ventorrillo · Mesón · Represa Stewart Vargas · La Guarida.',
     tagline: 'Venir para quedarse un rato',
     intro:
-      'No todos los viajes necesitan una agenda llena. Algunos necesitan una ventana, una caminata y tiempo para volver a sentarse. Villa Serrana invita a reconocer la relación entre arquitectura y paisaje, y a descubrir cuánto cambia la visita cuando no está pendiente del regreso inmediato.',
+      'El proyecto de Villa Serrana, ligado a Julio Vilamajó, relaciona topografía, vegetación, materiales y formas de habitar. Las calles, los espacios comunes y las construcciones permiten analizar cómo el conjunto urbano responde al paisaje.',
     slug: 'villa-serrana-el-conjunto-urbano-y-paisajistico',
     category: 'Experiencias',
     international: false,
@@ -2347,7 +2379,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Un conjunto pensado desde el relieve, los materiales locales y el tiempo del descanso.',
+      'Conjunto urbano de Julio Vilamajó que relaciona topografía, vegetación, materiales y formas de habitar el paisaje.',
     region: 'Villa Serrana',
     themes: ['Cultura', 'Experiencias'],
   },
@@ -2356,7 +2388,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'La Guarida',
     blocks: [
       {
-        text: 'Elegir entre el sendero interpretativo y el circuito aéreo',
+        text: 'Senderos interpretativos y modalidades de actividad',
         heading: true,
       },
       {
@@ -2364,11 +2396,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'El circuito aéreo propone vía ferrata, aerocarril, puentes colgantes y tirolesa. Elegiría el sendero para una salida centrada en plantas, roca y observación; el circuito aéreo para quien busca una experiencia física en altura. La reserva es previa, la actividad requiere caminar sin ayuda y se suspende con lluvia. El acceso publicado es por la primera entrada a Villa Serrana, Ruta 8 km 139,5. El contacto es 091 346 342.',
+        text: 'El circuito aéreo reúne vía ferrata, aerocarril, puentes colgantes y tirolesa. Los senderos y el circuito tienen funciones y exigencias diferentes. La reserva es previa, el operador exige caminar sin ayuda y las actividades se suspenden con lluvia. El acceso publicado es por la primera entrada a Villa Serrana, Ruta 8 km 139,5; contacto: 091 346 342.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2394,7 +2426,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Villa Serrana · Penitente como experiencia alternativa.',
     tagline: 'Elegí cómo querés encontrarte con el paisaje',
     intro:
-      'La misma sierra puede recorrerse con preguntas o con una dosis de aventura. La Guarida invita a elegir entre observar e interpretar o vivir una experiencia física en altura. Reservar la actividad adecuada permite que el desafío sea parte del disfrute y no una sorpresa al llegar.',
+      'La Guarida reúne monte nativo y rocas al pie del Cerro Guazubirá. Sus senderos y recursos de interpretación permiten relacionar naturaleza y geología; las actividades físicas del predio tienen modalidades y condiciones propias.',
     slug: 'la-guarida',
     category: 'Experiencias',
     international: false,
@@ -2405,7 +2437,8 @@ export const canonicalPlaces: CanonicalPlace[] = [
       url: 'https://laguarida.com.uy/',
       label: 'Parque La Guarida',
     },
-    summary: 'Senderos interpretativos y aventura en altura al pie del Cerro Guazubirá.',
+    summary:
+      'Monte nativo y rocas al pie del Cerro Guazubirá, con senderos y recursos de interpretación de naturaleza y geología.',
     region: 'Villa Serrana',
     themes: ['Aventura', 'Experiencias'],
   },
@@ -2422,19 +2455,19 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Elegiría esta propuesta para quien siente que un mirador por sí solo se queda corto y quiere comprender qué está viendo. Caminar con alguien del lugar permite preguntar por las construcciones de piedra, los usos del campo y los cambios de vegetación. Es una actividad apropiada para dedicarle la mañana y regresar a Villa Serrana a almorzar. El catálogo consultado presenta una referencia desde 30 USD por persona.',
+        text: 'La interpretación local permite formular preguntas sobre construcciones de piedra, usos del campo y cambios de vegetación. Esos elementos relacionan patrimonio construido, biodiversidad y formas de utilizar el territorio; el ingreso se realiza con autorización y acompañamiento.',
         heading: false,
       },
       {
-        text: 'Cabalgata a La Leona: un recorrido más largo sobre el caballo',
+        text: 'Cabalgata a La Leona: recorrido y condiciones',
         heading: true,
       },
       {
-        text: 'La cabalgata dura unas tres horas y une sectores de Atalaya, Sierra Alta y Baño de la India, con vistas del Cerro de la Leona y regreso hacia el lago. Incluye guía local bilingüe, caballo equipado y alforjas. La actividad establece un límite de 90 kg por jinete y muestra una tarifa desde 65 USD.',
+        text: 'La cabalgata documentada dura unas tres horas y une sectores de Atalaya, Sierra Alta y Baño de la India, con vistas del Cerro de la Leona y regreso hacia el lago. Incluye guía local bilingüe, caballo equipado y alforjas. El operador establece un límite de 90 kg por jinete.',
         heading: false,
       },
       {
-        text: 'Frente a la cabalgata breve del Penitente, esta salida dedica una parte sustancial del día a montar. La elegiría para una persona que quiere conocer el paisaje a caballo y que puede sostener esa duración.',
+        text: 'La duración y las características del terreno requieren confirmar la adecuación de la actividad al grupo. La observación e interpretación del paisaje debe ajustarse a las condiciones del recorrido y a las indicaciones del guía.',
         heading: false,
       },
       {
@@ -2442,7 +2475,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2464,7 +2497,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Villa Serrana · lago · gastronomía local.',
     tagline: 'Los caminos se entienden mejor con alguien del lugar',
     intro:
-      'Una excursión cambia cuando se puede preguntar por lo que aparece al costado. Piedra, usos del campo y paisaje encuentran un hilo conductor en el relato local. Caminando o a caballo, la invitación es dejar que el recorrido tenga tiempo para la conversación.',
+      'Mangas de Piedra y el entorno del Cerro de la Leona relacionan pastizales, cañadas, construcciones de piedra y usos rurales. La interpretación local permite reconocer cambios de vegetación y formular preguntas sobre las formas de utilizar el territorio.',
     slug: 'mangas-de-piedra-y-cerro-de-la-leona',
     category: 'Experiencias',
     international: false,
@@ -2476,7 +2509,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: '+598 99 024 434',
     },
     summary:
-      'Caminatas y cabalgatas con guía local, interpretación y permisos para atravesar campos privados.',
+      'Pastizales, cañadas y construcciones de piedra que permiten estudiar biodiversidad, usos rurales y formas de habitar el territorio.',
     region: 'Villa Serrana',
     themes: ['Aventura', 'Experiencias'],
   },
@@ -2489,15 +2522,15 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: true,
       },
       {
-        text: 'Reserva El Abra aparece en la programación patrimonial con caminatas guiadas, identificación de flora y fauna nativas y conversaciones sobre conservación. El recorrido ofrece una forma de mirar que suele perderse cuando se atraviesa la sierra en automóvil: distinguir especies, observar ambientes y relacionar la vegetación con el relieve.',
+        text: 'Reserva El Abra aparece en la programación patrimonial con caminatas guiadas, identificación de flora y fauna nativas y conversaciones sobre conservación. La interpretación relaciona reconocimiento de especies, características de los ambientes, vegetación y relieve.',
         heading: false,
       },
       {
-        text: 'La referencia de llegada es Ruta 81, km 124, a once kilómetros de Ruta 8. Pedro Telmo Moreira y Julia Odera figuran como responsables de la actividad documentada. Para organizar una visita, recomiendo dedicarle un bloque propio y combinarla después con Aguas Blancas o con la memoria cultural de Solís. Su interés está en el acompañamiento interpretativo, por lo que la experiencia se organiza con sus responsables.',
+        text: 'La referencia de llegada es Ruta 81, km 124, a once kilómetros de Ruta 8. Pedro Telmo Moreira y Julia Odera figuran como responsables de la actividad documentada. El contenido y las condiciones de una actividad interpretativa se acuerdan con sus responsables; una programación histórica no acredita disponibilidad permanente.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2523,7 +2556,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Aguas Blancas · Abra de Zabaleta · Solís.',
     tagline: 'Aprender el nombre de lo que antes era solamente verde',
     intro:
-      'Reconocer una planta o distinguir un ambiente transforma un paseo. La Reserva El Abra invita a conocer el territorio desde esa atención: mirar, preguntar y relacionar. Una caminata acompañada puede dejar herramientas para disfrutar también de todos los paisajes que vendrán después.',
+      'La documentación de Reserva El Abra describe identificación de flora y fauna nativas y conversaciones sobre conservación. Ese enfoque relaciona la observación de especies con los ambientes, la vegetación y el relieve de Aguas Blancas.',
     slug: 'reserva-el-abra',
     category: 'Experiencias',
     international: false,
@@ -2535,7 +2568,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: '+598 98 413 265',
     },
     summary:
-      'Caminatas acordadas para aprender a reconocer flora, fauna y ambientes de Aguas Blancas.',
+      'Interpretación documentada de flora y fauna nativas, ambientes y conservación en el entorno de Aguas Blancas.',
     region: 'Solís y Aguas Blancas',
     themes: ['Agua', 'Experiencias'],
   },
@@ -2552,7 +2585,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'La visita gana profundidad cuando se aprende a observar la forma, la disposición de la piedra y la relación con el paisaje. Propongo escuchar los relatos locales como parte de la experiencia cultural y distinguirlos de las conclusiones arqueológicas. Se puede disfrutar de una historia y, al mismo tiempo, formular preguntas sobre cómo se sabe lo que se afirma. El interés del lugar está también en esa búsqueda.',
+        text: 'La forma de las estructuras, la disposición de la piedra y su relación con el paisaje aportan elementos para la investigación. Los relatos locales forman parte de la memoria cultural y deben distinguirse de las conclusiones arqueológicas. Toda interpretación necesita precisar las evidencias que la sustentan.',
         heading: false,
       },
       {
@@ -2564,11 +2597,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Para un viaje fotográfico, propongo separar dos objetivos: recorrer e interpretar el terreno de día y trabajar la composición nocturna en un programa acordado. Conocer primero el lugar ayuda a elegir un encuadre y a comprender qué se está fotografiando. Las salidas nocturnas se coordinan con los responsables del predio.',
+        text: 'El reconocimiento del terreno de día y la observación nocturna del cielo requieren condiciones diferentes de registro y permanencia. Las actividades de fotografía o interpretación se coordinan con los responsables del predio, con autorización específica para los sectores y horarios previstos.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2582,7 +2615,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Casa de la Cultura · Museo Lítico · paisaje nocturno.',
     tagline: 'Un paisaje de preguntas',
     intro:
-      'Las piedras pueden despertar relatos y también preguntas sobre cómo conocemos el pasado. El Valle del Hilo de la Vida invita a escuchar y observar, distinguiendo memoria, interpretación e investigación. No hace falta resolver todos los enigmas para disfrutar una visita atenta y cuidadosa.',
+      'Las estructuras de piedra del Valle del Hilo de la Vida son objeto de relatos e investigación arqueológica. Estudiar formas, disposición y contexto permite distinguir memorias locales, interpretaciones y conclusiones respaldadas por evidencias.',
     slug: 'valle-del-hilo-de-la-vida',
     category: 'Experiencias',
     international: false,
@@ -2590,7 +2623,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'campo',
     imageContext: true,
     summary:
-      'Estructuras de piedra, paisaje y relatos locales: una invitación a distinguir interpretación y evidencia.',
+      'Estructuras de piedra cuyo estudio permite distinguir memoria local, interpretaciones y evidencias arqueológicas.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Experiencias'],
   },
@@ -2611,31 +2644,31 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'Cerro Místico se encuentra sobre Ruta 12, km 346, en las sierras cercanas a Minas. Su modalidad de apart hotel incluye cuatro habitaciones panorámicas con baño privado, fogón y acceso a una cocina',
+        text: 'Cerro Místico se encuentra sobre Ruta 12, km 346, en las sierras cercanas a Minas. La modalidad de apart hotel documentada comprende cuatro habitaciones con baño privado, fogón y acceso a una cocina compartida equipada.',
         heading: false,
       },
       {
-        text: 'compartida equipada. Las piscinas exteriores y las terrazas aprovechan las vistas desde la parte alta del establecimiento. Las habitaciones no incluyen comidas; el operador ofrece viandas para almuerzo y cena.',
+        text: 'El establecimiento también registra piscinas exteriores, terrazas y servicios de alimentación. Estos servicios corresponden a la operación del alojamiento y sus condiciones deben confirmarse directamente con sus responsables.',
         heading: false,
       },
       {
-        text: 'La propuesta se orienta al descanso y a grupos pequeños. La política admite huéspedes desde los 12 años y no admite mascotas. Estos dos datos son determinantes al elegirlo: para viajar con niños menores o con perro conviene seleccionar otra base. El ingreso figura a las 15:00 y la salida a las 12:00.',
+        text: 'La política documentada admite huéspedes desde los 12 años y no admite mascotas. El ingreso figura a las 15:00 y la salida a las 12:00. Las condiciones de edad, acompañamiento y uso de instalaciones se confirman con el operador.',
         heading: false,
       },
       {
-        text: 'La Casa de la Luna y la Casa del Bosque tienen un dormitorio en suite, sofá cama en el estar, cocina con horno, vajilla y parrillero. Sus decks privados permiten permanecer al aire libre junto al fogón. La Casa de Piedra ofrece dos dormitorios con baños en suite, estar comedor, cocina integrada, baño social, parrillero y horno de pan; se alquila para un mínimo de cuatro personas y aloja hasta siete.',
+        text: 'La documentación distingue la Casa de la Luna, la Casa del Bosque y la Casa de Piedra, con distribuciones y capacidades diferentes. Las dos primeras tienen un dormitorio y la última dos dormitorios con baños en suite. El uso de cada unidad depende de las condiciones de alojamiento y accesibilidad informadas por el establecimiento.',
         heading: false,
       },
       {
-        text: 'Las casas están a unos 500 metros del hotel. Incluyen ropa blanca, leña, agua mineral natural y uso de las piscinas del complejo. Para quienes prefieren cocinar y organizar sus comidas, esta modalidad tiene más autonomía que una habitación con cocina compartida. La ubicación separada también invita a pensar la estadía como una casa en el paisaje, con paseos dentro del predio.',
+        text: 'Las casas se encuentran a unos 500 metros del hotel y cuentan con servicios propios. La separación entre sectores debe considerarse al acordar llegada, desplazamientos y actividades dentro del predio.',
         heading: false,
       },
       {
-        text: 'El circuito histórico del ecoparque reúne corrales de piedra y taperas centenarias. El operador organiza caminatas guiadas, fotografía de naturaleza, avistamiento de aves y travesías en Land Rover Defender al atardecer. En su programación también aparecen fogones y senderismo nocturno con luna llena. Los talleres opcionales incluyen meditación, yoga y propuestas simbólicas o de autoconocimiento.',
+        text: 'El circuito histórico del establecimiento registra corrales de piedra y taperas centenarias. El operador también documenta recorridos guiados, fotografía de naturaleza, observación de aves y actividades nocturnas, además de otras propuestas recreativas y talleres. La oferta comercial y la interpretación patrimonial tienen contenidos que deben acordarse específicamente.',
         heading: false,
       },
       {
-        text: 'La visita por el día tiene un programa propio: comida de cuatro pasos, bebidas, un taller elegido y té antes del atardecer, junto con tiempo para caminar y descansar. Es una alternativa concreta para quien duerme en Minas y quiere dedicar una jornada a este entorno. Para una escapada tranquila, recomiendo elegir una caminata y un solo taller, dejando el resto de la tarde libre para las terrazas y el paisaje.',
+        text: 'El establecimiento diferencia acceso por el día, alojamiento y actividades organizadas. Cada modalidad tiene condiciones propias de coordinación, permanencia y uso de instalaciones; su existencia no acredita una oferta educativa específica.',
         heading: false,
       },
       {
@@ -2649,7 +2682,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Minas · paisaje de Ruta 12 · estadía serrana.',
     tagline: 'Hacerle lugar a una pausa',
     intro:
-      'El descanso puede ser el motivo del viaje, no solamente lo que ocurre entre dos actividades. Cerro Místico invita a elegir una estadía o una experiencia que deje espacio al silencio y al paisaje. La propuesta se disfruta mejor cuando sus condiciones coinciden con las necesidades del grupo.',
+      'Cerro Místico es un establecimiento de alojamiento en las sierras al sur de Minas. La documentación describe modalidades de estadía y actividades dentro del predio, incluido un circuito de corrales de piedra y taperas, con condiciones definidas por el operador.',
     slug: 'cerro-mistico',
     category: 'Experiencias',
     international: false,
@@ -2660,7 +2693,8 @@ export const canonicalPlaces: CanonicalPlace[] = [
       url: 'https://www.cerromistico.com/',
       label: 'Cerro Místico',
     },
-    summary: 'Estadías, caminatas y espacios de descanso en el paisaje de la Ruta 12.',
+    summary:
+      'Establecimiento de alojamiento con actividades dentro del predio y un circuito de corrales de piedra y taperas.',
     region: 'Minas y entorno',
     themes: ['Dormir', 'Sabores', 'Experiencias'],
   },
@@ -2669,7 +2703,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     name: 'Museo de Réplicas en Miniaturas',
     blocks: [
       {
-        text: 'Una visita que explica cómo trabajaban las máquinas',
+        text: 'Mecanismos, oficios y memoria del trabajo',
         heading: true,
       },
       {
@@ -2677,11 +2711,11 @@ export const canonicalPlaces: CanonicalPlace[] = [
         heading: false,
       },
       {
-        text: 'La visita tiene especial interés cuando se sigue una cadena de trabajo, por ejemplo las tareas del trigo hasta llegar a la panadería. La explicación de su creador conecta el mecanismo con el uso que tenía. Es una recomendación sólida para familias, personas interesadas en tecnología y visitantes que buscan una experiencia de conversación con un artesano local. Conviene dedicarle alrededor de dos horas para disfrutar las demostraciones.',
+        text: 'Las réplicas permiten seguir cadenas de trabajo, como las tareas del trigo hasta la panadería. La explicación de los mecanismos relaciona movimiento, función y conocimientos técnicos de distintos oficios. Las demostraciones se coordinan con el museo.',
         heading: false,
       },
       {
-        text: 'Llegada y datos de visita',
+        text: 'Acceso y cuidado del lugar',
         heading: true,
       },
       {
@@ -2707,7 +2741,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Museo del Alfajor · Casa de la Cultura · El Destacamento.',
     tagline: 'Lo pequeño puede mostrar cómo funcionaba un mundo',
     intro:
-      'Una pieza en movimiento permite descubrir lo que una máquina grande a veces oculta. Las miniaturas invitan a mirar el trabajo con curiosidad: cómo se hacía, qué problema resolvía y quién conservó esa memoria. La escala cambia; la capacidad de asombro permanece.',
+      'El Museo de Réplicas en Miniaturas reúne modelos de maquinaria, vehículos y escenas de oficios creados por Horacio Chocho. Los mecanismos en funcionamiento permiten explicar procesos técnicos y conservar memoria del trabajo agrícola e industrial.',
     slug: 'museo-de-replicas-en-miniaturas',
     category: 'Experiencias',
     international: false,
@@ -2719,7 +2753,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
       label: '+598 99 432 405',
     },
     summary:
-      'Máquinas y oficios reconstruidos en miniatura, nacidos del trabajo de Horacio Chocho.',
+      'Réplicas de maquinaria, vehículos y oficios que permiten explicar procesos técnicos y conservar memoria del trabajo.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Experiencias'],
   },
@@ -2742,7 +2776,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     relationsRaw: 'Arroyo San Francisco · memoria productiva de Minas.',
     tagline: 'Una ciudad también se recuerda por sus transformaciones',
     intro:
-      'Un edificio puede atravesar usos y generaciones sin perder su capacidad de contar. El Molino Viejo invita a reconstruir esa historia y a mirar la ciudad desde sus cambios. Conocerlo también puede empezar por una investigación y una imagen histórica, mientras se confirma cómo acercarse al lugar.',
+      'El Molino Viejo forma parte de la memoria productiva y educativa de Minas. Sus sucesivos usos como molino, sede de un liceo y museo permiten estudiar transformaciones del edificio y de la ciudad.',
     slug: 'molino-viejo-de-minas',
     category: 'Experiencias',
     international: false,
@@ -2750,7 +2784,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
     image: 'panorama',
     imageContext: true,
     summary:
-      'Memoria productiva y educativa de Minas. El ingreso necesita confirmación actualizada.',
+      'Edificio de la memoria productiva y educativa de Minas, con sucesivos usos como molino, liceo y museo.',
     region: 'Minas y entorno',
     themes: ['Cultura', 'Experiencias'],
   },

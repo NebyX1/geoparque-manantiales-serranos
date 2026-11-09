@@ -84,5 +84,5 @@ export const geopark = {
   gallery,
   mapPoints,
   version: 1,
-  date: '2026-10-01',
+  date: '2026-11-04',
 };

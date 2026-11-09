@@ -12,32 +12,39 @@ const label = photoLabel(photoForPlace(place.id));
 ---
 
 <article class="place-card reveal" data-id={place.id}>
-  <div class="place-visual">
-    <a href={href} aria-label={`Conocer ${place.name}`}>
-      <Photo
-        assetKey={place.image}
-        alt={place.images[0]?.alt || place.name}
-        transition:name={`place-${place.slug}`}
-        sizes="(max-width: 620px) 90vw, (max-width: 1000px) 45vw, 30vw"
-      />
-    </a>
-    <span class:list={['place-tag', { international: place.international }]}>
-      {place.international ? 'Valor internacional' : place.category}
-    </span>
-    {label && <span class="photo-label">{label}</span>}
-    <FavoritesButton id={place.id} name={place.name} client:visible />
-  </div>
-  <div class="place-meta">
-    <span>{place.region}</span>
-    <span class="place-id">GMS-{String(place.id).padStart(2, '0')}</span>
-  </div>
-  <h3>
-    <a href={href}>
-      {place.name}
+  <a class="place-visual" href={href} aria-label={`Conocer ${place.name}`}>
+    <Photo
+      assetKey={place.image}
+      alt={place.images[0]?.alt || place.name}
+      transition:name={`place-${place.slug}`}
+      sizes="(max-width: 620px) 90vw, (max-width: 1000px) 45vw, 30vw"
+    />
+  </a>
+  <FavoritesButton id={place.id} name={place.name} client:visible />
+  <div class="place-content">
+    <h3>
+      <a href={href}>
+        {place.name}
+        <svg class="icon" aria-hidden="true">
+          <use href="#i-arrow" />
+        </svg>
+      </a>
+    </h3>
+    <p class="place-summary">{place.summary}</p>
+    <div class="place-meta">
+      <span class:list={['place-tag', { international: place.international }]}>
+        {place.international ? 'Valor internacional' : place.category}
+      </span>
+      <span class="place-id">
+        {place.region} · GMS-{String(place.id).padStart(2, '0')}
+      </span>
+      {label && <span class="photo-label">{label}</span>}
+    </div>
+    <a class="place-cta" href={href}>
+      Leer la ficha
       <svg class="icon" aria-hidden="true">
         <use href="#i-arrow" />
       </svg>
     </a>
-  </h3>
-  <p class="place-summary">{place.summary}</p>
+  </div>
 </article>

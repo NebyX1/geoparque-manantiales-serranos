@@ -1,0 +1,1404 @@
+/* Photo-led cards, with the landscape and its story held in one surface. */
+.place-card,
+.route-card,
+.story-card {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  min-height: clamp(430px, 42vw, 530px);
+  overflow: hidden;
+  border-radius: 30px;
+  /* A colored underlay bleeds through the antialiased photo corners. */
+  background: transparent;
+  color: #fff;
+  box-shadow: 0 24px 54px -34px rgb(7 28 19 / 58%);
+  transition: box-shadow 420ms var(--ease);
+}
+
+.place-visual,
+.route-image,
+.story-image {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* The card clips the photo; its underlay must also be transparent. */
+  border-radius: 0;
+  background: transparent;
+}
+
+.place-visual img,
+.route-image img,
+.story-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 900ms var(--ease),
+    filter 900ms var(--ease);
+}
+
+.place-visual::after,
+.route-image::after,
+.story-image::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  content: '';
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgb(7 24 17 / 12%) 0%,
+    rgb(7 24 17 / 3%) 28%,
+    rgb(7 24 17 / 40%) 49%,
+    rgb(7 24 17 / 94%) 100%
+  );
+}
+
+.place-card:hover,
+.route-card:hover,
+.story-card:hover {
+  box-shadow: 0 28px 64px -31px rgb(7 28 19 / 66%);
+}
+
+.place-card:hover .place-visual img,
+.route-card:hover .route-image img,
+.story-card:hover .story-image img {
+  transform: scale(1.045);
+  filter: saturate(1.08);
+}
+
+.place-visual:focus-visible,
+.route-image:focus-visible,
+.story-image:focus-visible,
+.place-card h3 a:focus-visible,
+.route-content h3 a:focus-visible,
+.story-card h2 a:focus-visible,
+.place-cta:focus-visible,
+.route-card .text-link:focus-visible,
+.story-cta:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: -6px;
+  border-radius: inherit;
+}
+
+/* Geosite cards */
+.place-card {
+  display: block;
+}
+
+.place-tag {
+  position: absolute;
+  z-index: 3;
+  top: 17px;
+  left: 17px;
+  right: auto;
+  max-width: calc(100% - 86px);
+  overflow: hidden;
+  padding: 8px 12px;
+  border: 1px solid rgb(255 255 255 / 36%);
+  border-radius: 999px;
+  background: rgb(14 39 29 / 58%);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  backdrop-filter: blur(12px);
+}
+
+.place-tag.international {
+  border-color: rgb(212 232 133 / 62%);
+  background: rgb(212 232 133 / 88%);
+  color: #172d20;
+}
+
+.place-card .save-btn {
+  position: absolute;
+  z-index: 4;
+  top: 13px;
+  right: 13px;
+  bottom: auto;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 50%;
+  background: rgb(14 39 29 / 48%);
+  color: white;
+  backdrop-filter: blur(12px);
+}
+
+.place-card .save-btn:hover {
+  background: rgb(255 255 255 / 24%);
+}
+
+.place-card .save-btn[aria-pressed='true'],
+.place-card .save-btn.saved {
+  border-color: var(--lime);
+  background: var(--lime);
+  color: var(--deep);
+}
+
+.place-content,
+.route-content,
+.story-card-content {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  padding: 24px;
+  color: #fff;
+}
+
+.place-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  margin: 0;
+  color: #f5f7ef;
+  font-size: 9px;
+  line-height: 1.25;
+}
+
+.place-meta > span {
+  display: inline-flex;
+  min-height: 27px;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid rgb(255 255 255 / 26%);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 13%);
+  backdrop-filter: blur(10px);
+}
+
+.place-meta .place-id {
+  font-family: var(--display);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+}
+
+.place-meta .context-badge {
+  position: static;
+  max-width: none;
+  padding: 5px 10px;
+  border: 1px solid rgb(255 255 255 / 26%);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 13%);
+  color: #f5f7ef;
+  font-size: 9px;
+  line-height: 1.25;
+  backdrop-filter: blur(10px);
+}
+
+.place-card h3,
+.route-content h3,
+.story-card h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(23px, 2vw, 31px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+  text-transform: none;
+}
+
+.place-card h3 a,
+.route-content h3 a,
+.story-card h2 a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 9px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.place-card h3 .icon {
+  flex: 0 0 19px;
+  width: 19px;
+  height: 19px;
+  margin-top: 3px;
+  color: var(--lime);
+}
+
+.place-summary,
+.route-content > p,
+.story-card-content > p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: #e2e9df;
+  font-size: 11px;
+  line-height: 1.65;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.place-cta,
+.route-card .text-link,
+.story-cta {
+  display: flex;
+  min-height: 47px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 9px 18px;
+  border: 1px solid rgb(255 255 255 / 76%);
+  border-radius: 999px;
+  background: #fff;
+  color: #17251d;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 220ms ease,
+    color 220ms ease,
+    transform 220ms ease;
+}
+
+.place-cta .icon,
+.route-card .text-link .icon,
+.story-cta .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.place-cta:hover,
+.route-card .text-link:hover,
+.story-cta:hover {
+  transform: translateY(-2px);
+  background: var(--lime);
+  color: var(--deep);
+}
+
+.route-image {
+  height: 100%;
+}
+
+.route-days {
+  position: absolute;
+  z-index: 3;
+  top: 17px;
+  left: 17px;
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 13px;
+  border: 1px solid rgb(255 255 255 / 40%);
+  border-radius: 999px;
+  background: rgb(15 42 31 / 56%);
+  color: white;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  backdrop-filter: blur(12px);
+}
+
+.route-days .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.route-image .context-badge {
+  top: 21px;
+  right: 17px;
+  bottom: auto;
+  left: auto;
+  max-width: 45%;
+  padding: 7px 10px;
+  border: 1px solid rgb(255 255 255 / 30%);
+  border-radius: 999px;
+  background: rgb(15 42 31 / 52%);
+  font-size: 8px;
+  line-height: 1.2;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.route-content {
+  gap: 10px;
+  padding: 24px;
+}
+
+.route-content .eyebrow {
+  color: var(--lime);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.route-content h3 {
+  font-size: clamp(23px, 2vw, 30px);
+}
+
+.route-content > p {
+  -webkit-line-clamp: 2;
+}
+
+.route-path {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #c7d5c5;
+  font-size: 10px;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.route-card .text-link {
+  margin-top: 3px;
+}
+
+/* Story cards */
+.story-index {
+  display: inline-flex;
+  min-height: 26px;
+  align-items: center;
+  align-self: flex-start;
+  padding: 5px 10px;
+  border: 1px solid rgb(255 255 255 / 31%);
+  border-radius: 999px;
+  background: rgb(15 42 31 / 42%);
+  color: #f5f8ed;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(10px);
+}
+
+.story-card-content {
+  gap: 13px;
+}
+
+.story-card h2 {
+  font-family: var(--display);
+  font-size: clamp(22px, 1.9vw, 29px);
+  line-height: 1.1;
+}
+
+.story-card-content > p {
+  -webkit-line-clamp: 3;
+}
+
+/* The culture feature and its three companion stories use the same photo-led treatment. */
+.culture-feature {
+  border-radius: 30px;
+  box-shadow: 0 24px 54px -34px rgb(7 28 19 / 58%);
+}
+
+.culture-feature:after {
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(7 24 17 / 4%) 15%,
+    rgb(7 24 17 / 30%) 44%,
+    rgb(7 24 17 / 96%) 100%
+  );
+}
+
+.culture-feature-copy .eyebrow {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 6px 11px;
+  border: 1px solid rgb(255 255 255 / 32%);
+  border-radius: 999px;
+  background: rgb(15 42 31 / 45%);
+  color: #fff;
+  font-size: 9px;
+  letter-spacing: 0.07em;
+  backdrop-filter: blur(10px);
+}
+
+.culture-feature-copy h3 {
+  max-width: 12ch;
+  font-size: clamp(34px, 3.3vw, 53px);
+}
+
+.culture-feature-copy p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.culture-feature-copy .text-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 17px;
+  border-radius: 999px;
+  background: #fff;
+  color: #17251d;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.culture-feature-copy .text-link:hover {
+  background: var(--lime);
+}
+
+.culture-stories {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  justify-content: stretch;
+}
+
+.culture-story {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 23px;
+  background: transparent;
+  color: #fff;
+  box-shadow: 0 16px 36px -25px rgb(7 28 19 / 55%);
+}
+
+.culture-story > img {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms var(--ease);
+}
+
+.culture-story::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: '';
+  background:
+    linear-gradient(90deg, rgb(7 24 17 / 74%), rgb(7 24 17 / 30%)),
+    linear-gradient(0deg, rgb(7 24 17 / 58%), transparent 75%);
+}
+
+.culture-story:hover > img {
+  transform: scale(1.05);
+}
+
+.culture-story > small {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  z-index: 2;
+  display: inline-flex;
+  min-width: 31px;
+  min-height: 27px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 9px;
+  border: 1px solid rgb(255 255 255 / 34%);
+  border-radius: 999px;
+  background: rgb(15 42 31 / 45%);
+  color: #fff;
+  font: 600 9px/1 var(--sans);
+  backdrop-filter: blur(10px);
+}
+
+.culture-story > div {
+  position: absolute;
+  z-index: 1;
+  right: 16px;
+  bottom: 14px;
+  left: 16px;
+}
+
+.culture-story h3 {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(18px, 1.5vw, 23px);
+  line-height: 1.1;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.culture-story p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 7px 0 8px;
+  color: #e2e9df;
+  font-size: 9px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.culture-story .text-link {
+  display: inline-flex;
+  min-height: 31px;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #fff;
+  color: #17251d;
+  font-size: 9px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.culture-story .text-link:hover {
+  background: var(--lime);
+}
+
+/* Small picture cards keep their jobs and become part of the same family. */
+.gallery-shot {
+  border-radius: 26px;
+  background: transparent;
+  box-shadow: 0 18px 42px -28px rgb(7 28 19 / 52%);
+}
+
+.gallery-shot:after {
+  inset: 30% 0 0;
+  background: linear-gradient(180deg, transparent, rgb(7 24 17 / 82%));
+}
+
+.gallery-shot span {
+  bottom: 13px;
+  left: 13px;
+  padding: 7px 11px;
+  border: 1px solid rgb(255 255 255 / 30%);
+  border-radius: 999px;
+  background: rgb(15 42 31 / 48%);
+  font-size: 9px;
+  backdrop-filter: blur(10px);
+}
+
+.gallery-shot .icon {
+  top: 12px;
+  right: 12px;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 50%;
+  background: rgb(15 42 31 / 48%);
+  filter: none;
+  backdrop-filter: blur(10px);
+}
+
+.map-preview {
+  border-radius: 22px;
+  background: rgb(16 43 33 / 94%);
+  color: white;
+  box-shadow: 0 18px 38px -25px rgb(7 28 19 / 72%);
+}
+
+.map-preview img {
+  border-radius: 15px;
+}
+
+.map-preview small {
+  color: #c6d4c2;
+}
+
+.map-preview strong {
+  color: #fff;
+}
+
+.map-preview a {
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: white;
+  color: var(--deep);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.education-image {
+  border-radius: 30px;
+  background: transparent;
+  box-shadow: 0 23px 54px -32px rgb(7 28 19 / 48%);
+  transform: none;
+}
+
+.education-image::after {
+  position: absolute;
+  inset: 35% 0 0;
+  content: '';
+  pointer-events: none;
+  background: linear-gradient(transparent, rgb(7 24 17 / 44%));
+}
+
+.education-sticker {
+  z-index: 1;
+  border: 1px solid rgb(255 255 255 / 26%);
+  border-radius: 22px;
+  background: rgb(16 43 33 / 86%);
+  color: white;
+  transform: none;
+  backdrop-filter: blur(14px);
+}
+
+.education-sticker .icon {
+  color: var(--lime);
+}
+
+.education-sticker small {
+  color: #d1ddcd;
+}
+
+.nature-photo {
+  border-radius: 30px;
+  background: transparent;
+  box-shadow: 0 24px 56px -34px rgb(7 28 19 / 48%);
+  transform: none;
+}
+
+@media (max-width: 1000px) {
+  .places-grid,
+  .routes-grid,
+  .stories-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .place-card,
+  .route-card,
+  .story-card {
+    min-height: clamp(430px, 54vw, 510px);
+  }
+
+  .culture-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .culture-feature {
+    aspect-ratio: 1.35;
+  }
+
+  .culture-stories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+  }
+
+  .culture-story {
+    min-height: 205px;
+  }
+
+  .culture-story:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 620px) {
+  .places-grid,
+  .routes-grid,
+  .stories-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .place-card,
+  .route-card,
+  .story-card {
+    min-height: clamp(430px, 128vw, 510px);
+    border-radius: 27px;
+  }
+
+  .place-content,
+  .route-content,
+  .story-card-content {
+    gap: 11px;
+    padding: 19px;
+  }
+
+  .place-tag {
+    top: 13px;
+    left: 13px;
+    max-width: calc(100% - 72px);
+    padding: 7px 10px;
+    font-size: 8px;
+  }
+
+  .place-card .save-btn {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .place-meta {
+    gap: 6px;
+    font-size: 8px;
+  }
+
+  .place-meta > span,
+  .place-meta .context-badge {
+    min-height: 24px;
+    padding: 4px 8px;
+    font-size: 8px;
+  }
+
+  .place-card h3,
+  .route-content h3,
+  .story-card h2 {
+    font-size: clamp(24px, 7.4vw, 31px);
+  }
+
+  .place-summary,
+  .route-content > p,
+  .story-card-content > p {
+    font-size: 11px;
+  }
+
+  .route-days {
+    top: 13px;
+    left: 13px;
+    min-height: 34px;
+  }
+
+  .route-image .context-badge {
+    top: 16px;
+    right: 13px;
+  }
+
+  .route-card .text-link,
+  .place-cta,
+  .story-cta {
+    min-height: 45px;
+  }
+
+  .culture-feature {
+    aspect-ratio: 0.92;
+    border-radius: 26px;
+  }
+
+  .culture-feature-copy {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+  }
+
+  .culture-feature-copy h3 {
+    font-size: clamp(34px, 10vw, 46px);
+  }
+
+  .culture-feature-copy p {
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .culture-stories {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 11px;
+  }
+
+  .culture-story,
+  .culture-story:last-child {
+    min-height: 200px;
+    grid-column: auto;
+    border-radius: 21px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, clamp(140px, 44vw, 190px));
+  }
+
+  .gallery-shot {
+    border-radius: 20px;
+  }
+
+  .education-image {
+    border-radius: 25px;
+  }
+
+  .education-sticker {
+    right: 13px;
+    bottom: 13px;
+    left: 13px;
+    padding: 14px;
+    border-radius: 19px;
+  }
+
+  .nature-photo {
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 359px) {
+  .place-card,
+  .route-card,
+  .story-card {
+    min-height: 430px;
+  }
+
+  .place-content,
+  .route-content,
+  .story-card-content {
+    padding: 17px;
+  }
+
+  .culture-story > div {
+    right: 13px;
+    left: 13px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  .place-card,
+  .route-card,
+  .story-card {
+    min-height: 390px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .place-card,
+  .route-card,
+  .story-card,
+  .place-visual img,
+  .route-image img,
+  .story-image img,
+  .culture-story > img,
+  .place-cta,
+  .route-card .text-link,
+  .story-cta {
+    transition: none;
+  }
+
+  .place-card:hover .place-visual img,
+  .route-card:hover .route-image img,
+  .story-card:hover .story-image img,
+  .culture-story:hover > img {
+    transform: none;
+  }
+}
+
+/* Match the reference: portrait photo, dark lower half, then title, copy, chips and action. */
+.place-card,
+.route-card,
+.story-card {
+  width: 100%;
+  aspect-ratio: 7 / 10;
+  min-height: 490px;
+  border: 0;
+  border-radius: 34px;
+  background: transparent;
+}
+
+.place-visual::after,
+.route-image::after,
+.story-image::after,
+.culture-feature::after,
+.culture-story::after {
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(7 20 12 / 0%) 0%,
+    rgb(7 20 12 / 3%) 37%,
+    rgb(7 20 12 / 73%) 55%,
+    rgb(7 20 12 / 97%) 72%,
+    #0b190f 100%
+  );
+}
+
+.place-content,
+.route-content,
+.story-card-content {
+  gap: 13px;
+  padding: 25px;
+}
+
+.place-card h3,
+.route-content h3,
+.story-card h2 {
+  font: 600 clamp(21px, 1.8vw, 25px) / 1.14 var(--sans);
+  letter-spacing: -0.04em;
+  text-transform: none;
+}
+
+.place-card h3 .icon,
+.place-cta .icon,
+.route-card .text-link .icon,
+.story-cta .icon {
+  display: none;
+}
+
+.place-summary,
+.route-content > p,
+.story-card-content > p {
+  color: #e3e9e2;
+  font: 400 13px / 1.4 var(--sans);
+  -webkit-line-clamp: 4;
+}
+
+.place-meta,
+.route-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+}
+
+.place-meta > span,
+.place-meta .place-tag,
+.place-meta .place-tag.international,
+.place-meta .context-badge,
+.route-meta > span,
+.route-meta .route-days,
+.story-index {
+  position: static;
+  display: inline-flex;
+  width: auto;
+  min-height: 30px;
+  max-width: 100%;
+  align-items: center;
+  gap: 6px;
+  overflow: visible;
+  padding: 6px 11px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(235 241 232 / 22%);
+  color: #edf2eb;
+  font: 500 10px / 1.25 var(--sans);
+  letter-spacing: 0;
+  text-overflow: clip;
+  text-transform: none;
+  white-space: normal;
+  backdrop-filter: blur(10px);
+}
+
+.route-meta .route-days .icon {
+  width: 14px;
+  height: 14px;
+}
+
+.place-meta .place-id {
+  display: inline-flex;
+  font: 500 10px / 1.25 var(--sans);
+  letter-spacing: 0;
+}
+
+.place-meta .context-badge {
+  display: inline-flex;
+}
+
+.route-path {
+  color: #d2ded1;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.place-cta,
+.route-card .text-link,
+.story-cta {
+  min-height: 44px;
+  margin-top: 2px;
+  background: #fff;
+  color: #171b18;
+  font: 600 14px / 1.2 var(--sans);
+}
+
+.place-cta:hover,
+.route-card .text-link:hover,
+.story-cta:hover {
+  background: #f0f2ef;
+  color: #171b18;
+}
+
+.culture-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.culture-stories {
+  display: contents;
+}
+
+.culture-feature,
+.culture-story {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 7 / 10;
+  min-height: 490px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 34px;
+  background: transparent;
+}
+
+.culture-feature-copy,
+.culture-story > div {
+  position: absolute;
+  z-index: 2;
+  right: 25px;
+  bottom: 25px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.culture-feature-copy h3,
+.culture-story h3 {
+  display: block;
+  max-width: none;
+  overflow: visible;
+  margin: 0;
+  color: #fff;
+  font: 600 clamp(21px, 1.8vw, 25px) / 1.14 var(--sans);
+  letter-spacing: -0.04em;
+  text-transform: none;
+}
+
+.culture-feature-copy p,
+.culture-story p {
+  display: block;
+  overflow: visible;
+  margin: 0;
+  color: #e3e9e2;
+  font: 400 13px / 1.4 var(--sans);
+}
+
+.culture-feature-copy .eyebrow,
+.culture-story > div > small {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  padding: 6px 11px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(235 241 232 / 22%);
+  color: #edf2eb;
+  font: 500 10px / 1.25 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  backdrop-filter: blur(10px);
+}
+
+.culture-feature-copy .text-link,
+.culture-story .text-link {
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  justify-content: center;
+  margin: 2px 0 0;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: #fff;
+  color: #171b18;
+  font: 600 14px / 1.2 var(--sans);
+  text-align: center;
+}
+
+.culture-feature-copy .text-link .icon,
+.culture-story .text-link .icon {
+  display: none;
+}
+
+.culture-feature-copy .text-link:hover,
+.culture-story .text-link:hover {
+  background: #f0f2ef;
+}
+
+@media (max-width: 620px) {
+  .place-card,
+  .route-card,
+  .story-card,
+  .culture-feature,
+  .culture-story {
+    min-height: 490px;
+    border-radius: 30px;
+  }
+
+  .place-content,
+  .route-content,
+  .story-card-content {
+    padding: 22px;
+  }
+
+  .culture-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .culture-story:last-child {
+    grid-column: auto;
+  }
+
+  .culture-feature-copy,
+  .culture-story > div {
+    right: 22px;
+    bottom: 22px;
+    left: 22px;
+  }
+}
+
+/* Long descriptions may extend the card instead of hiding editorial content. */
+.place-card,
+.route-card,
+.story-card,
+.culture-feature,
+.culture-story {
+  display: grid;
+  width: 100%;
+  min-height: clamp(490px, 47vw, 620px);
+  aspect-ratio: auto;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(190px, 1fr) auto;
+}
+
+html:not(.js) .place-card {
+  display: grid !important;
+}
+
+.place-content,
+.route-content,
+.story-card-content {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.place-summary,
+.route-content > p,
+.story-card-content > p {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+
+.culture-feature > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.culture-feature-copy,
+.culture-story > div {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  grid-column: 1;
+  grid-row: 2;
+  padding: 25px;
+}
+
+@media (max-width: 620px) {
+  .culture-feature-copy,
+  .culture-story > div {
+    padding: 22px;
+  }
+}
+
+/* Elevation and breathing room for every photographic card. */
+.place-card,
+.route-card,
+.story-card,
+.culture-feature,
+.culture-story,
+.gallery-shot,
+.map-preview,
+.education-image,
+.nature-photo {
+  border: 0;
+  box-shadow:
+    0 54px 70px -34px rgb(15 32 22 / 24%),
+    0 96px 128px -54px rgb(15 32 22 / 18%);
+  transition: box-shadow 350ms var(--ease);
+}
+
+.place-card:hover,
+.route-card:hover,
+.story-card:hover,
+.culture-feature:hover,
+.culture-story:hover,
+.gallery-shot:hover,
+.map-preview:hover,
+.education-image:hover,
+.nature-photo:hover {
+  box-shadow:
+    0 62px 82px -34px rgb(15 32 22 / 27%),
+    0 110px 140px -54px rgb(15 32 22 / 21%);
+}
+
+.route-card:hover {
+  transform: none;
+}
+
+.places-grid,
+.routes-grid,
+.stories-grid,
+.culture-grid {
+  gap: clamp(28px, 2.8vw, 42px);
+}
+
+.place-content,
+.route-content,
+.story-card-content,
+.culture-feature-copy,
+.culture-story > div {
+  min-width: 0;
+  gap: 16px;
+  padding: clamp(24px, 2.3vw, 32px);
+}
+
+.place-card h3,
+.route-content h3,
+.story-card h2,
+.culture-feature-copy h3,
+.culture-story h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: clamp(22px, 1.9vw, 27px);
+  line-height: 1.16;
+}
+
+.place-summary,
+.route-content > p,
+.story-card-content > p,
+.culture-feature-copy p,
+.culture-story p {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.route-path {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.place-meta,
+.route-meta {
+  min-width: 0;
+  gap: 8px;
+}
+
+.place-meta > span,
+.place-meta .place-tag,
+.place-meta .place-tag.international,
+.place-meta .place-id,
+.place-meta .context-badge,
+.route-meta > span,
+.route-meta .route-days,
+.story-index,
+.culture-feature-copy .eyebrow,
+.culture-story > div > small {
+  min-width: 0;
+  max-width: 100%;
+  padding: 7px 12px;
+  border: 0;
+  overflow-wrap: anywhere;
+  font: 500 11px / 1.35 var(--sans);
+}
+
+.place-cta,
+.route-card .text-link,
+.story-cta,
+.culture-feature-copy .text-link,
+.culture-story .text-link {
+  min-width: 0;
+  min-height: 50px;
+  margin-top: 4px;
+  padding: 12px 18px;
+  border: 0;
+  font-size: 14px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.place-card .save-btn {
+  top: 16px;
+  right: 16px;
+  border: 0;
+  background: rgb(15 40 29 / 62%);
+  box-shadow: 0 6px 18px rgb(0 0 0 / 18%);
+}
+
+.place-card .save-btn[aria-pressed='true'],
+.place-card .save-btn.saved {
+  background: var(--lime);
+}
+
+.place-card .save-btn:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 3px;
+}
+
+.gallery-shot,
+.map-preview,
+.education-image,
+.nature-photo {
+  border: 0;
+  box-shadow:
+    0 4px 12px rgb(15 32 22 / 9%),
+    0 22px 45px -12px rgb(15 32 22 / 24%);
+}
+
+@media (max-width: 620px) {
+  .places-grid,
+  .routes-grid,
+  .stories-grid,
+  .culture-grid {
+    gap: 32px;
+  }
+
+  .place-content,
+  .route-content,
+  .story-card-content,
+  .culture-feature-copy,
+  .culture-story > div {
+    gap: 14px;
+    padding: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .place-card,
+  .route-card,
+  .story-card,
+  .culture-feature,
+  .culture-story {
+    transition: none;
+  }
+}

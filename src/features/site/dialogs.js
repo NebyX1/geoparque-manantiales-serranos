@@ -1,3 +1,5 @@
+import { learningLens } from '../../lib/learning';
+
 export function initDialogs(c) {
   const routePattern = /^#(lugar|historia|circuito)\//;
   let baseHash = routePattern.test(location.hash) ? '#explorar' : location.hash || '#inicio';
@@ -53,6 +55,7 @@ export function initDialogs(c) {
   });
   function openPlace(p) {
     if (!p) return;
+    const learning = learningLens(p);
     c.$('#place-dialog-title').textContent = p.name;
     c.$('#place-dialog-kicker').textContent = `${p.category} · ${p.region}`;
     let practical = false;
@@ -75,11 +78,11 @@ export function initDialogs(c) {
       : '';
     c.$('#place-dialog-content').innerHTML =
       `<div class="detail-hero"><img src="${c.photo(p.image)}" alt="${c.esc(c.imageCaption(p))}" ${c.photoAttributes(p.image)}><span class="detail-photo-caption">${c.esc(c.imageCaption(p))}</span></div>
-      <div class="detail-main">${c.photoCredit(p.image)}<div class="eyebrow">${c.esc(p.categoryRaw)}${p.international ? ' · Valor científico internacional' : ''}</div><h3 class="detail-title">${c.esc(p.name)}</h3><p class="detail-tagline">${c.esc(p.tagline)}</p>
-      <div class="detail-grid"><div class="detail-body"><p class="detail-description">${c.esc(p.summary)}</p><h3>Una historia para descubrir</h3>${bodyHTML}
-      ${moreHTML ? `<details class="detail-more"><summary>Seguí conociendo este lugar ↓</summary>${moreHTML}</details>` : ''}
-      ${surrounding.length ? `<h3>Más cerca de acá</h3><div class="related-items">${surrounding.map((q) => `<a href="${c.placeURL(q.id)}">${c.esc(q.name)} ↗</a>`).join('')}</div>` : ''}</div>
-      <aside class="detail-side"><h3>Planeá tu visita.</h3><span class="status">${c.esc(p.status)}</span><p>${c.esc(p.zone)}</p><p>${c.esc(p.statusRaw)}</p><button class="btn" data-save="${p.id}" aria-pressed="false">${c.icon('save')} Guardar en mi viaje</button>${contact}</aside></div></div>`;
+      <div class="detail-main">${c.photoCredit(p.image)}<div class="eyebrow">${c.esc(learning.topic)}${p.international ? ' · Valor científico internacional' : ''}</div><h3 class="detail-title">${c.esc(p.name)}</h3><p class="detail-tagline">${c.esc(learning.question)}</p>
+      <div class="detail-grid"><div class="detail-body"><p class="detail-description">${c.esc(p.summary)}</p><h3>Observar y relacionar</h3><p>${c.esc(learning.observe)}</p><h3>Cuidar el patrimonio</h3><p>${c.esc(learning.care)}</p><h3>Información del sitio</h3>${bodyHTML}
+      ${moreHTML ? `<details class="detail-more"><summary>Consultar la información de la ficha ↓</summary>${moreHTML}</details>` : ''}
+      ${surrounding.length ? `<h3>Otros sitios de la zona</h3><div class="related-items">${surrounding.map((q) => `<a href="${c.placeURL(q.id)}">${c.esc(q.name)} ↗</a>`).join('')}</div>` : ''}</div>
+      <aside class="detail-side"><h3>Acceso y trabajo de campo.</h3><span class="status">${c.esc(p.status)}</span><p>${c.esc(p.zone)}</p><p>${c.esc(p.statusRaw)}</p><button class="btn" data-save="${p.id}" aria-pressed="false">${c.icon('save')} Guardar en mi cuaderno</button>${contact}</aside></div></div>`;
     c.updateSaveControls();
     openDialog('place-dialog');
   }
@@ -88,7 +91,7 @@ export function initDialogs(c) {
     if (!a) return;
     c.$('#article-dialog-title').textContent = a.eyebrow;
     c.$('#article-content').innerHTML =
-      `<img class="reading-image" src="${c.photo(a.image)}" alt="${c.esc(c.photoInfo(a.image).alt)}" ${c.photoAttributes(a.image)}>${c.photoCredit(a.image)}<h3 class="article-title">${c.esc(a.title)}</h3><p class="lead">${c.esc(a.lead)}</p>${a.sections.map(([heading, text]) => `<h3>${c.esc(heading)}</h3><p>${c.esc(text)}</p>`).join('')}<a class="text-link" href="#explorar">Seguí descubriendo el Geoparque ${c.icon('arrow')}</a>`;
+      `<img class="reading-image" src="${c.photo(a.image)}" alt="${c.esc(c.photoInfo(a.image).alt)}" ${c.photoAttributes(a.image)}>${c.photoCredit(a.image)}<h3 class="article-title">${c.esc(a.title)}</h3><p class="lead">${c.esc(a.lead)}</p>${a.sections.map(([heading, text]) => `<h3>${c.esc(heading)}</h3><p>${c.esc(text)}</p>`).join('')}<a class="text-link" href="#explorar">Consultar el atlas del territorio ${c.icon('arrow')}</a>`;
     openDialog('article-dialog');
   }
   function openRoute(id) {
@@ -96,7 +99,7 @@ export function initDialogs(c) {
     if (!r) return;
     c.$('#route-dialog-title').textContent = r.name;
     c.$('#route-content').innerHTML =
-      `<img class="reading-image" src="${c.photo(r.image)}" alt="${c.esc(c.photoInfo(r.image).alt)}" ${c.photoAttributes(r.image)}>${c.photoCredit(r.image)}<p class="eyebrow">${r.days} ${r.days === 1 ? 'día' : 'días'} · ${c.esc(r.kicker)}</p><p class="dialog-subtitle" style="margin-top:18px">${c.esc(r.text)}</p><div class="article-reading">${r.blocks.map((b) => `<h3>Día ${b.day} · ${c.esc(b.title)}</h3><p>${c.esc(b.text)}</p><div class="related-items" style="margin:15px 0 25px">${b.ids.map((id) => `<a href="${c.placeURL(id)}">${c.esc(c.byId.get(id).name)} ↗</a>`).join('')}</div>`).join('')}</div><button class="btn" data-add-route="${r.id}">Guardar esta escapada ${c.icon('save')}</button><p class="visit-note" style="margin-top:20px">Coordiná reservas y accesos con los lugares que elijas visitar.</p>`;
+      `<img class="reading-image" src="${c.photo(r.image)}" alt="${c.esc(c.photoInfo(r.image).alt)}" ${c.photoAttributes(r.image)}>${c.photoCredit(r.image)}<p class="eyebrow">${r.days} ${r.days === 1 ? 'día' : 'días'} · ${c.esc(r.kicker)}</p><p class="dialog-subtitle" style="margin-top:18px">${c.esc(r.text)}</p><div class="article-reading">${r.blocks.map((b) => `<h3>Día ${b.day} · ${c.esc(b.title)}</h3><p>${c.esc(b.text)}</p><div class="related-items" style="margin:15px 0 25px">${b.ids.map((id) => `<a href="${c.placeURL(id)}">${c.esc(c.byId.get(id).name)} ↗</a>`).join('')}</div>`).join('')}</div><button class="btn" data-add-route="${r.id}">Agregar itinerario al cuaderno ${c.icon('save')}</button><p class="visit-note" style="margin-top:20px">Usá las fichas para preparar preguntas y confirmá con cada responsable las condiciones de cualquier actividad presencial.</p>`;
     openDialog('route-dialog');
   }
   function handleHash() {

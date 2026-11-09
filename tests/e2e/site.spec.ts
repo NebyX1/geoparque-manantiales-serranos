@@ -6,6 +6,26 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/inicio/');
   await expect(page.locator('html')).toHaveClass(/js/);
 });
+test('aprendizaje ambiental, propuestas didácticas y documentos fuente', async ({
+  page,
+  request,
+}) => {
+  await expect(page.locator('.knowledge-card')).toHaveCount(4);
+  const inquiry = page.locator('.knowledge-card details').first();
+  await inquiry.locator('summary').click();
+  await expect(inquiry).toHaveAttribute('open', '');
+  const activity = page.locator('.learning-activity').first();
+  await activity.locator('summary').click();
+  await expect(activity.locator('ol li')).toHaveCount(3);
+  await expect(activity).toContainText('observación, interpretación y fuente');
+  const documents = page.locator('.document-download');
+  await expect(documents).toHaveCount(3);
+  for (const link of await documents.all()) {
+    const response = await request.head((await link.getAttribute('href'))!);
+    expect(response.status()).toBe(200);
+    expect(response.headers()['content-type']).toContain('application/pdf');
+  }
+});
 
 test('el logo del navbar vuelve al selector desde la web y las fichas', async ({ page }) => {
   for (const [route, width] of [
@@ -180,7 +200,7 @@ test('galería, captions, flechas, quiz y privacidad', async ({ page }) => {
   await expect(page.locator('#quiz-content')).toContainText('5 de 5');
   await page.keyboard.press('Escape');
   await page.locator('[data-action="privacy"]').click();
-  await expect(page.locator('#article-content')).toContainText('Tu viaje se queda con vos.');
+  await expect(page.locator('#article-content')).toContainText('Tu cuaderno se queda con vos.');
 });
 test('menú mobile, foco y Escape', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });

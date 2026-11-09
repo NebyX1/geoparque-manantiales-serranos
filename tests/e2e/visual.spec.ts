@@ -35,6 +35,13 @@ test('capturas del prototipo y migración en todos los tamaños y pantallas baja
         ['cultura', '#cultura'],
         ['planner', '#planificador'],
         ['footer', 'footer'],
+        ...(label === 'astro'
+          ? [
+              ['ambiente', '#ambiente'],
+              ['educacion', '#aprender'],
+              ['documentos', '#documentacion'],
+            ]
+          : []),
       ]) {
         const section = page.locator(selector!);
         await section.scrollIntoViewIfNeeded();
@@ -58,7 +65,14 @@ test('capturas del prototipo y migración en todos los tamaños y pantallas baja
     await page.goto('/lugares/cerro-arequita/');
     await page.evaluate(async () => {
       await document.fonts.ready;
-      await Promise.allSettled([...document.images].map((image) => image.decode()));
+      await Promise.allSettled(
+        [...document.images]
+          .filter((image) => {
+            const box = image.getBoundingClientRect();
+            return box.bottom > 0 && box.top < innerHeight && box.width > 0;
+          })
+          .map((image) => image.decode()),
+      );
     });
     await page.screenshot({
       path: `${directory}/astro-${width}-ficha.png`,

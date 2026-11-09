@@ -23,7 +23,8 @@ export function initCore(c) {
     if (!ASSETS[key]) throw new Error(`Fotografía desconocida: ${key}`);
     return ASSETS[key];
   };
-  const documented = 'Consultá accesos, horarios y reservas con cada lugar antes de viajar.';
+  const documented =
+    'El estudio de una ficha no habilita el acceso al sitio. Confirmá autorización y condiciones con sus responsables antes de una salida de campo.';
   const refText = (text) => esc(text);
   const imageCaption = (p) => p.photoCaption || p.name;
   const photoInfo = (key) => DATA.photos[key];

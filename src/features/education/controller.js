@@ -82,7 +82,7 @@ export function initEducation(c) {
   function privacy() {
     c.$('#article-dialog-title').textContent = 'Tu privacidad';
     c.$('#article-content').innerHTML =
-      '<h3 class="article-title">Tu viaje se queda con vos.</h3><p class="lead">Guardá tus lugares favoritos sin crear una cuenta.</p><h3>Tu selección</h3><p>Los lugares guardados, sus días de visita y tu preferencia de movimiento se conservan en este navegador. Podés descargar tu viaje para llevarlo a otro dispositivo.</p><h3>Cómo borrar tus datos</h3><p>Abrí «Mi viaje» y elegí «Vaciar mi viaje». También podés eliminar los datos del sitio desde la configuración del navegador.</p><h3>Enlaces externos</h3><p>Al abrir el sitio de un establecimiento, consultá sus condiciones de privacidad y reserva.</p>';
+      '<h3 class="article-title">Tu cuaderno se queda con vos.</h3><p class="lead">Reuní fichas para aprender sin crear una cuenta.</p><h3>Tu selección</h3><p>Las fichas guardadas, sus días de estudio y tu preferencia de movimiento se conservan en este navegador. Podés descargar el cuaderno para llevarlo a otro dispositivo.</p><h3>Cómo borrar tus datos</h3><p>Abrí «Mi cuaderno» y elegí «Vaciar mi cuaderno». También podés eliminar los datos del sitio desde la configuración del navegador.</p><h3>Enlaces externos</h3><p>Al abrir una página externa, consultá las condiciones de privacidad de su responsable.</p>';
     c.openDialog('article-dialog');
   }
 

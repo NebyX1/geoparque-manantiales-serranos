@@ -1,9 +1,9 @@
 import type { TripItem } from '../../types/geopark';
 export const planOptions = {
   nature: [
-    [31, 39, 44],
-    [1, 51, 53],
-    [24, 26],
+    [31, 26, 5],
+    [1, 51, 50],
+    [4, 15],
   ],
   geology: [[1], [17, 31], [23]],
   culture: [
@@ -11,8 +11,8 @@ export const planOptions = {
     [54, 11],
     [60, 44, 45],
   ],
-  family: [[31, 60], [17], [53, 1]],
-  adventure: [[14], [55, 54], [56]],
+  family: [[31, 60], [17], [1, 51]],
+  adventure: [[1], [54, 14], [23]],
 } as const;
 export function planTrip(interest: string, days: number): TripItem[] {
   const selection = planOptions[interest as keyof typeof planOptions] || planOptions.nature;
