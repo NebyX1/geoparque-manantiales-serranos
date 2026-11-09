@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
-import { places } from '../../src/data/geosites';
+import { places, canonicalPlaces } from '../../src/data/geosites';
 import { circuits } from '../../src/data/circuits';
 import { articles } from '../../src/data/stories';
 import { validatePlaces } from '../../src/lib/validation';
@@ -17,8 +17,15 @@ describe('contenido canónico', () => {
     );
     expect(validatePlaces(places)).toEqual([]);
     for (const original of data.places)
-      for (const [key, value] of Object.entries(original))
-        expect(places.find((place) => place.id === original.id)).toHaveProperty(key, value);
+      for (const [key, value] of Object.entries(original)) {
+        expect(canonicalPlaces.find((place) => place.id === original.id)).toHaveProperty(
+          key,
+          value,
+        );
+        // The photo audit deliberately replaces the prototype's generic image associations.
+        if (key !== 'image' && key !== 'imageContext')
+          expect(places.find((place) => place.id === original.id)).toHaveProperty(key, value);
+      }
     expect(circuits).toEqual(data.routes);
     expect(articles).toEqual(data.articles);
   });

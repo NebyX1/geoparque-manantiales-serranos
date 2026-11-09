@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-08T22:19:09.940075+00:00",
+  "reviewer": "Independent visual quality gate",
+  "status": "APROBADO",
+  "scope": "48 current rebuilt GLB assets: 45 retain their original numeric geometry approval; GMS-08, GMS-52 and GMS-61 have subsequent user-requested, independently approved qualitative revisions with their previous approvals archived. GMS-41 was retired and is now one of 13 inherited models. Revisions to GMS-01, 09, 41 and 52 are covered by landmark-reuse-review.json; the subsequent GMS-61 reconstruction is covered by molino-viejo-review.json. Other inherited models retain their earlier regression review.",
+  "audit": "docs/landmark-quality-audit.md",
+  "geometryMinimumScore": 80,
+  "assets": [
+    {
+      "id": 2,
+      "name": "Cerro del Cura",
+      "file": "public/models/geosites/rebuilt/gms-02.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "4289a632de946ec298aefefe383ccbe3c653c96213c1f399568c2c89b8c5900a",
+      "bytes": 1097936
+    },
+    {
+      "id": 3,
+      "name": "Cerro del Ombú",
+      "file": "public/models/geosites/rebuilt/gms-03.glb",
+      "status": "APROBADO",
+      "geometryScore": 80,
+      "sha256": "5705a4b230702f5cd2f82565b0bb33702ade93f42a4044cea6e6e4be2759e3d5",
+      "bytes": 728816
+    },
+    {
+      "id": 4,
+      "name": "Nacientes del Río Santa Lucía",
+      "file": "public/models/geosites/rebuilt/gms-04.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "e90fd089561d077323750d206a258db07d2fd926673e4d6691533ca029e0b2c0",
+      "bytes": 767804
+    },
+    {
+      "id": 5,
+      "name": "El Destacamento",
+      "file": "public/models/geosites/rebuilt/gms-05.glb",
+      "status": "APROBADO",
+      "geometryScore": 84,
+      "sha256": "314fc99a8be91fc19b3fbc640b3434150b5f9f0adc00cf325982e88e3b2d033d",
+      "bytes": 296612
+    },
+    {
+      "id": 6,
+      "name": "Reserva Artística KyKy-Ó",
+      "file": "public/models/geosites/rebuilt/gms-06.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "952db3bcdd7ca33707c899b15ded45f109d01d6f95f137cc1abc1ef6d697dee7",
+      "bytes": 874460
+    },
+    {
+      "id": 7,
+      "name": "Paso de la Arena",
+      "file": "public/models/geosites/rebuilt/gms-07.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "5a16586a70f6223b4b4208c8fc108a13c4258bd93eefee742dd31b791869c9a9",
+      "bytes": 1540276
+    },
+    {
+      "id": 8,
+      "name": "Cerro Marmarajá",
+      "file": "public/models/geosites/rebuilt/gms-08.glb",
+      "status": "APROBADO",
+      "sha256": "5380c89d60bca34ae5d2833d311c72fd480893bc6e48126a4517b19fa910b4ca",
+      "bytes": 3361740,
+      "previousApproval": {
+        "id": 8,
+        "name": "Cerro Marmarajá",
+        "file": "public/models/geosites/rebuilt/gms-08.glb",
+        "status": "APROBADO",
+        "geometryScore": 80,
+        "sha256": "ce33cf034429fb3f01f6bd4f9016dc5ddea30f416e615dcc01849c906aea649f",
+        "bytes": 3187332
+      },
+      "reviewMode": "user-requested subtle lizard-like landform; qualitative independent visual review",
+      "reviewedAt": "2026-11-09T00:53:39.087626+00:00",
+      "review": "docs/marmaraja-visual-review.json",
+      "triangles": 57278,
+      "drawCalls": 7
+    },
+    {
+      "id": 12,
+      "name": "Granito Villa Serrana",
+      "file": "public/models/geosites/rebuilt/gms-12.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "df3a364cf78fa56e9a5fc68e393b845830b129620bc20eaf3430956a4688c8cd",
+      "bytes": 4802548
+    },
+    {
+      "id": 13,
+      "name": "Cantera del Portugués",
+      "file": "public/models/geosites/rebuilt/gms-13.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "7c48a52157458a22644278ad11043fe00acecd202a284c9104e8287f562275bc",
+      "bytes": 2788344
+    },
+    {
+      "id": 15,
+      "name": "Cerro Campanero",
+      "file": "public/models/geosites/rebuilt/gms-15.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "4def46d7422c36d79ba53dfcede40e06f15301c05fcf25b4d947e9ea7ab19ea5",
+      "bytes": 3769352
+    },
+    {
+      "id": 16,
+      "name": "Parque Represa de OSE",
+      "file": "public/models/geosites/rebuilt/gms-16.glb",
+      "status": "APROBADO",
+      "geometryScore": 85,
+      "sha256": "1d016d015a81160495aa733fdd6885e445ddd000bbea1d1e1dca5bcb36fa1a2e",
+      "bytes": 156128
+    },
+    {
+      "id": 17,
+      "name": "Parque de Minas",
+      "file": "public/models/geosites/rebuilt/gms-17.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "ce2e4659cc96976cfbf22f0cfda12be6f62f6b723e765fa55a9480816ead8da3",
+      "bytes": 191444
+    },
+    {
+      "id": 18,
+      "name": "Cueva Amarilla",
+      "file": "public/models/geosites/rebuilt/gms-18.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "4c03b16363d97c497a3fa4a9545a7cc6515407ba93ec7faf49a90b9b4184518e",
+      "bytes": 855320
+    },
+    {
+      "id": 19,
+      "name": "Mirador Ramallo",
+      "file": "public/models/geosites/rebuilt/gms-19.glb",
+      "status": "APROBADO",
+      "geometryScore": 84,
+      "sha256": "2b3a00fb529bde6326d30eaabb99e33fb02613dc5fe6219decb7c65e2ea1204a",
+      "bytes": 66736
+    },
+    {
+      "id": 20,
+      "name": "Cantera Libro Gigante",
+      "file": "public/models/geosites/rebuilt/gms-20.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "d658e32979953894a67488d1806f6f7113bce85a6b5ba7bb0773ee7bc0b1bd15",
+      "bytes": 316936
+    },
+    {
+      "id": 21,
+      "name": "Abra de Zabaleta",
+      "file": "public/models/geosites/rebuilt/gms-21.glb",
+      "status": "APROBADO",
+      "geometryScore": 80,
+      "sha256": "8738cbd7adb009d1782e7fda94a67fb053cb203e3516abde315152b9e0bad53a",
+      "bytes": 1290196
+    },
+    {
+      "id": 23,
+      "name": "Campamento Aguas Blancas",
+      "file": "public/models/geosites/rebuilt/gms-23.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "6a36758eecfa10eebcc3e34d8bd69592a01074b468a772faf61116dc1a93e868",
+      "bytes": 1105552
+    },
+    {
+      "id": 24,
+      "name": "Camping Aguas Blancas",
+      "file": "public/models/geosites/rebuilt/gms-24.glb",
+      "status": "APROBADO",
+      "geometryScore": 84,
+      "sha256": "23f3b695a54222afc087080acb8a4baebb85c9344defc817b5fac0a15cc66989",
+      "bytes": 172756
+    },
+    {
+      "id": 25,
+      "name": "Cerro La Caperuza",
+      "file": "public/models/geosites/rebuilt/gms-25.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "b3fbaba86daa63d900657eda06545852c359df363ccb262b003b1c0d1b7ed84b",
+      "bytes": 513388
+    },
+    {
+      "id": 26,
+      "name": "Parque Mataojo",
+      "file": "public/models/geosites/rebuilt/gms-26.glb",
+      "status": "APROBADO",
+      "geometryScore": 80,
+      "sha256": "9c7a4ab2cd86d982cfac9ec9e075abb504fe72aa356e02ef12ef7530bb244538",
+      "bytes": 184800
+    },
+    {
+      "id": 27,
+      "name": "Casa de la Cultura - Solís",
+      "file": "public/models/geosites/rebuilt/gms-27.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "80df124790c7c9515de1d74dc5c75a51b36b8f211af5270fb5afbd4d975f923e",
+      "bytes": 321128
+    },
+    {
+      "id": 28,
+      "name": "Edificio \"Cuna de Fabini\"",
+      "file": "public/models/geosites/rebuilt/gms-28.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "25a19b6f6176ec803910faf1fd7e3f86d545db5ef701a2212717ca078f9ead3b",
+      "bytes": 209312
+    },
+    {
+      "id": 29,
+      "name": "Plaza Lázaro Cortés",
+      "file": "public/models/geosites/rebuilt/gms-29.glb",
+      "status": "APROBADO",
+      "geometryScore": 83,
+      "sha256": "f0e2f82eefe3b415b16e1f24c1e264d7965c1b38520ea6100ccffb1103ee027b",
+      "bytes": 219480
+    },
+    {
+      "id": 30,
+      "name": "Plaza de Deportes",
+      "file": "public/models/geosites/rebuilt/gms-30.glb",
+      "status": "APROBADO",
+      "geometryScore": 84,
+      "sha256": "065324a40db952ced0014b7029bc053ba53429b48890eb74f3fc19740d42e0f2",
+      "bytes": 428976
+    },
+    {
+      "id": 32,
+      "name": "Mina ANCAP",
+      "file": "public/models/geosites/rebuilt/gms-32.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "39b8691975f1f0692e97fcd7207a2d6cfc84ab519675829fe14c605dea116fca",
+      "bytes": 3144924
+    },
+    {
+      "id": 34,
+      "name": "Mina Verdún",
+      "file": "public/models/geosites/rebuilt/gms-34.glb",
+      "status": "APROBADO",
+      "geometryScore": 83,
+      "sha256": "567f4cb16731b8f57445e351c2cc0a255d890a45414943796d0d1df116b1dcc4",
+      "bytes": 892368
+    },
+    {
+      "id": 35,
+      "name": "Centro Cultural Ángel Ugarte ( Ex Estación de AFE)",
+      "file": "public/models/geosites/rebuilt/gms-35.glb",
+      "status": "APROBADO",
+      "geometryScore": 84,
+      "sha256": "27a6253756fdbbe0e3adfc1856eabb69eeb9f2a654ad876d100fef4c6bcf6618",
+      "bytes": 144400
+    },
+    {
+      "id": 36,
+      "name": "Museo Stelio Belloni",
+      "file": "public/models/geosites/rebuilt/gms-36.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "c2cdbc55fb2082be7cb8a295c805ccacfab4141d544b220d7df8f2b6bfada3fa",
+      "bytes": 349280
+    },
+    {
+      "id": 37,
+      "name": "Edificio Escuela 1 de Prácticas \"Artigas\"",
+      "file": "public/models/geosites/rebuilt/gms-37.glb",
+      "status": "APROBADO",
+      "geometryScore": 83,
+      "sha256": "ff80dbac6ba41c9adfa26d3a64e025efb902c9f447aa11d1b982a223a665c719",
+      "bytes": 332336
+    },
+    {
+      "id": 38,
+      "name": "Edificio Escuela 8 \"Guillermo Cuadri\"",
+      "file": "public/models/geosites/rebuilt/gms-38.glb",
+      "status": "APROBADO",
+      "geometryScore": 83,
+      "sha256": "70d0d77da4d829673812596023a918c01a672621cf042006cf0651e66913ac3b",
+      "bytes": 1265648
+    },
+    {
+      "id": 40,
+      "name": "Confitería Irisarri",
+      "file": "public/models/geosites/rebuilt/gms-40.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "436a72f5e6b4af752d20ac509789dd2765ceadf7e1b2f2dcdc37e0e95a233b14",
+      "bytes": 536796
+    },
+    {
+      "id": 42,
+      "name": "Casa de la Cultura",
+      "file": "public/models/geosites/rebuilt/gms-42.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "dd98bf47b8132a67932d4627a65d3937338b910fcb029e0ef0c23c771e24f123",
+      "bytes": 323120
+    },
+    {
+      "id": 43,
+      "name": "Cementerio Central",
+      "file": "public/models/geosites/rebuilt/gms-43.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "5254363d2bff4b93e216978460113cf4ca6a63a184ce6fdf19a82cda6ba7a752",
+      "bytes": 73492
+    },
+    {
+      "id": 44,
+      "name": "Museo Alfajores de las Sierras de Minas",
+      "file": "public/models/geosites/rebuilt/gms-44.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "123034dd50f630641f57ff1b21f28d407c84b6fc9650fa79b241c7e7dcb64169",
+      "bytes": 293964
+    },
+    {
+      "id": 45,
+      "name": "Teatro Lavalleja",
+      "file": "public/models/geosites/rebuilt/gms-45.glb",
+      "status": "APROBADO",
+      "geometryScore": 84,
+      "sha256": "0f540190acf0a3fa977b8a986a80450c610862c908a59260264b2c98033a5e3f",
+      "bytes": 1868280
+    },
+    {
+      "id": 47,
+      "name": "Casa Curbelo Báez",
+      "file": "public/models/geosites/rebuilt/gms-47.glb",
+      "status": "APROBADO",
+      "geometryScore": 83,
+      "sha256": "200e598b32b85f0b5794897e983dfd8044d7fd462bbbff63ae297bedf76929ae",
+      "bytes": 175936
+    },
+    {
+      "id": 48,
+      "name": "Iglesia Santa Teresita",
+      "file": "public/models/geosites/rebuilt/gms-48.glb",
+      "status": "APROBADO",
+      "geometryScore": 83,
+      "sha256": "15a80eb050f784f3fe6703035e392404457726bff0f754073b10b2b95f52ee28",
+      "bytes": 119500
+    },
+    {
+      "id": 50,
+      "name": "Gruta Colón y conservación de murciélagos",
+      "file": "public/models/geosites/rebuilt/gms-50.glb",
+      "status": "APROBADO",
+      "geometryScore": 80,
+      "sha256": "bc00f1d1042b90cf22aaa95f6cdfb6a5e3d495fa14ea3fbfcdb7a553cba3ee1d",
+      "bytes": 1043156
+    },
+    {
+      "id": 51,
+      "name": "Monte de Ombúes del entorno de Arequita",
+      "file": "public/models/geosites/rebuilt/gms-51.glb",
+      "status": "APROBADO",
+      "geometryScore": 83,
+      "sha256": "4201cb4d480c3ddd7d5ab3a6a316a40bc76a820a4befb4984d8ae21dc1d32a33",
+      "bytes": 254940
+    },
+    {
+      "id": 52,
+      "name": "Laguna de los Cuervos y entorno",
+      "file": "public/models/geosites/rebuilt/gms-52.glb",
+      "status": "APROBADO",
+      "sha256": "d9b3f414e460c33ae9639f40272c6ee3592239be20715396b956b65903f705c8",
+      "bytes": 2541056,
+      "previousApproval": {
+        "id": 52,
+        "name": "Laguna de los Cuervos y entorno",
+        "file": "public/models/geosites/rebuilt/gms-52.glb",
+        "status": "APROBADO",
+        "geometryScore": 82,
+        "sha256": "87064a225e69b7d89bfdf422c8bdfce01fb826d29565a4b2a747c6be94ccb3fc",
+        "bytes": 1937052
+      },
+      "revision": {
+        "reason": "User-requested Cerro de los Cuervos escarpment behind the water, sharing the Arequita rock construction. Water and base map footprints unchanged.",
+        "qualitativeApproval": true,
+        "review": "docs/landmark-reuse-review.json",
+        "triangles": 103382,
+        "drawCalls": 12
+      }
+    },
+    {
+      "id": 53,
+      "name": "Camping Arequita",
+      "file": "public/models/geosites/rebuilt/gms-53.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "f95a95b28d7df00fcba7fa25ebe48fbaf708f12a7951b28811b358a91498a6fa",
+      "bytes": 240180
+    },
+    {
+      "id": 55,
+      "name": "La Guarida",
+      "file": "public/models/geosites/rebuilt/gms-55.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "d75a85289a5ccccac075800759f09446d3ecd1e81c042177c271b48897bdbeef",
+      "bytes": 192644
+    },
+    {
+      "id": 56,
+      "name": "Mangas de Piedra y Cerro de la Leona",
+      "file": "public/models/geosites/rebuilt/gms-56.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "719eb68e74d6bf599840fa5c45023a10b846ea0a864714286858a50af5cafa7d",
+      "bytes": 4242364
+    },
+    {
+      "id": 57,
+      "name": "Reserva El Abra",
+      "file": "public/models/geosites/rebuilt/gms-57.glb",
+      "status": "APROBADO",
+      "geometryScore": 82,
+      "sha256": "5cc416974767463c7402db2b2046eac48325c026fc958b56cdfe9c8970396026",
+      "bytes": 1299680
+    },
+    {
+      "id": 58,
+      "name": "Valle del Hilo de la Vida",
+      "file": "public/models/geosites/rebuilt/gms-58.glb",
+      "status": "APROBADO",
+      "geometryScore": 84,
+      "sha256": "c26b8fb73ea5819b5796039d85e829cb840293cbc49a1fea03c266b4d2cd1fef",
+      "bytes": 1641264
+    },
+    {
+      "id": 59,
+      "name": "Cerro Místico",
+      "file": "public/models/geosites/rebuilt/gms-59.glb",
+      "status": "APROBADO",
+      "geometryScore": 81,
+      "sha256": "64447ceb59428dffb71d95e801d837b1616be748031823f03db2ab6dbdea6868",
+      "bytes": 746888
+    },
+    {
+      "id": 60,
+      "name": "Museo de Réplicas en Miniaturas",
+      "file": "public/models/geosites/rebuilt/gms-60.glb",
+      "status": "APROBADO",
+      "geometryScore": 83,
+      "sha256": "3bcf39484c6d834ba7d981f2b3b0cf316aee275d627053055704f7c78b6f1b21",
+      "bytes": 380332
+    },
+    {
+      "id": 61,
+      "name": "Molino Viejo de Minas",
+      "file": "public/models/geosites/rebuilt/gms-61.glb",
+      "status": "APROBADO",
+      "sha256": "ce22c6c990794ef04ab85fa827ce5ac364d01a9e9223ed22fe47e30bca55d752",
+      "bytes": 3041576,
+      "previousApproval": {
+        "id": 61,
+        "name": "Molino Viejo de Minas",
+        "file": "public/models/geosites/rebuilt/gms-61.glb",
+        "status": "APROBADO",
+        "geometryScore": 84,
+        "sha256": "d5e79b8e67edbcf0accf14710a5e79da26de0a5fc99c7289f8afaff8bba28d38",
+        "bytes": 576696
+      },
+      "revision": {
+        "reason": "User-requested reconstruction of Molino Viejo from the July 2026 multi-angle photo gallery: curved cap, grouped glazing, plaster nave, real recesses and original baked PBR materials.",
+        "qualitativeApproval": true,
+        "review": "docs/molino-viejo-review.json",
+        "triangles": 45260,
+        "drawCalls": 16
+      }
+    }
+  ],
+  "limitations": [
+    "Eight landscapes(3,6,7,8,12,15,21,57) use approximate DEM/IDE orthophoto coverage; individual trees, species and surface detail are not surveyed.",
+    "ID8 lacks an unambiguous full ground profile photograph; ID3 does not certify stromatolite surface detail. These limits are published in modelNote.",
+    "Unpublished rear faces and dimensions are simplified; approval is a presentable representative miniature, not photogrammetry.",
+    "ID29 preserves canonical name despite published Cabrera/Cortés discrepancy. ID36 preserves legacy institutional pin with a visible current-building note. ID42 selects the birthplace motif within Casa de la Cultura; ID23 selects the old dam motif."
+  ],
+  "geometryScoreScope": "The minimum of 80 applies to the original geometry audit; GMS-08 current style revision uses the qualitative criteria in docs/marmaraja-visual-review.json.",
+  "updatedAt": "2026-11-09T00:53:39.087626+00:00",
+  "retiredAssets": [
+    {
+      "id": 41,
+      "reason": "Replaced with the exact cathedral component of the inherited Plaza Libertad constructor. The former reconstructed GLB is no longer loaded or exported.",
+      "replacement": "src/features/experience/miniatures/reference/plazaLibertad.ts#createMinasCathedral",
+      "previousApproval": {
+        "id": 41,
+        "name": "Catedral de la Inmaculada Concepción de Minas",
+        "file": "public/models/geosites/rebuilt/gms-41.glb",
+        "status": "APROBADO",
+        "geometryScore": 88,
+        "sha256": "34cb74417eb6a58013e9fe86a021b60f6903b58aa01c30a2cb1b70c765bad4c4",
+        "bytes": 1051156
+      }
+    }
+  ],
+  "latestRevisionReview": "docs/molino-viejo-review.json",
+  "revisionReviews": ["docs/landmark-reuse-review.json", "docs/molino-viejo-review.json"]
+}

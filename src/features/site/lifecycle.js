@@ -12,6 +12,7 @@ import { initActions } from '../site/actions.js';
 import { initPreferences } from '../motion/preferences.js';
 import { initHero } from '../motion/hero.js';
 import { initMotion } from '../motion/controller.js';
+import { initPhotoResolution } from './photo-resolution.js';
 let cleanupPage;
 function reset() {
   cleanupPage?.();
@@ -73,6 +74,37 @@ function init() {
       return id;
     },
   };
+  cleanupPage = () => {
+    controller.abort();
+    observers.forEach((observer) => observer.disconnect());
+    frames.forEach(cancelAnimationFrame);
+    timers.forEach(clearTimeout);
+    intervals.forEach(clearInterval);
+    c.cleanups.forEach((fn) => fn());
+    document.querySelectorAll('dialog[open]').forEach((dialog) => dialog.close());
+  };
+  initPhotoResolution(c);
+  if (document.querySelector('[data-experience]')) {
+    import('../experience/controller')
+      .then(({ initExperience }) => {
+        if (!controller.signal.aborted) return initExperience(c);
+      })
+      .catch((error) => {
+        if (controller.signal.aborted) return;
+        console.warn('[Geoparque/experiencia] No se pudo iniciar el controlador', error);
+        document.querySelector('[data-experience]').dataset.state = 'fallback';
+        document.getElementById('experience-loading').hidden = true;
+        document.getElementById('experience-fallback').hidden = false;
+        document.getElementById('experience-directory').hidden = false;
+        document.getElementById('experience-place-search').disabled = true;
+        document
+          .querySelectorAll('.exp-tools button, #experience-directory button')
+          .forEach((button) => (button.hidden = true));
+      });
+    return;
+  }
+  // ClientRouter retains this module when returning to the two-choice entrance.
+  if (!document.getElementById('page-data')) return;
   initCore(c);
   initTripState(c);
   initDialogs(c);
@@ -105,22 +137,41 @@ function init() {
     }
   });
   if (c.routePattern.test(location.hash)) c.handleHash();
-  cleanupPage = () => {
-    controller.abort();
-    observers.forEach((observer) => observer.disconnect());
-    frames.forEach(cancelAnimationFrame);
-    timers.forEach(clearTimeout);
-    intervals.forEach(clearInterval);
-    c.cleanups.forEach((fn) => fn());
-    document.querySelectorAll('dialog[open]').forEach((dialog) => dialog.close());
-  };
 }
 document.addEventListener('astro:before-swap', reset);
 document.addEventListener('astro:page-load', init);
+function restorePage(event) {
+  if (!event.persisted) return;
+  const canvas = document.getElementById('experience-canvas');
+  // A disposed WebGL context belongs to its canvas; a restored scene needs a fresh surface.
+  if (canvas) {
+    canvas.closest('[data-experience]')?.setAttribute('data-state', 'loading');
+    canvas.replaceWith(canvas.cloneNode(false));
+  }
+  document.dispatchEvent(new Event('astro:page-load'));
+}
+function startNativePage() {
+  if (
+    !cleanupPage &&
+    document.querySelector('[data-experience]') &&
+    !document.querySelector('[name="astro-view-transitions-enabled"]')
+  ) {
+    document.dispatchEvent(new Event('astro:page-load'));
+  }
+}
+// The WebGL document uses native navigation and starts through the same page lifecycle.
+if (document.readyState === 'complete') startNativePage();
+else window.addEventListener('load', startNativePage, { once: true });
+// Native navigation may retain this document in the browser's back/forward cache.
+window.addEventListener('pagehide', reset);
+window.addEventListener('pageshow', restorePage);
 if (import.meta.hot) {
   import.meta.hot.dispose(() => {
     reset();
     document.removeEventListener('astro:before-swap', reset);
     document.removeEventListener('astro:page-load', init);
+    window.removeEventListener('pagehide', reset);
+    window.removeEventListener('pageshow', restorePage);
+    window.removeEventListener('load', startNativePage);
   });
 }

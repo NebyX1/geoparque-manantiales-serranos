@@ -1,3 +1,5 @@
+import { applyPhotoMetadata } from '../site/photo-resolution.js';
+
 export function initGallery(c) {
   let galleryIndex = 0,
     originalMap = false;
@@ -13,10 +15,13 @@ export function initGallery(c) {
       : c.DATA.gallery[galleryIndex];
     c.$('#lightbox-image').src = c.photo(item.key);
     c.$('#lightbox-image').alt = item.title;
+    applyPhotoMetadata(c.$('#lightbox-image'), map ? undefined : c.photoInfo(item.key));
     c.$('#lightbox-title').textContent = item.title;
     c.$('#lightbox-credit').textContent = map
       ? 'Mapa del Geoparque · Lugares de interés'
-      : item.caption;
+      : `${item.caption} · ${c.photoInfo(item.key).credit}`;
+    c.$('#lightbox-source').hidden = map;
+    if (!map) c.$('#lightbox-source').href = c.photoInfo(item.key).auditUrl;
     c.$('#gallery-prev').hidden = map;
     c.$('#gallery-next').hidden = map;
     c.openDialog('gallery-dialog');

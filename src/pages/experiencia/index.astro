@@ -1,0 +1,644 @@
+---
+import PortalLayout from '../../layouts/PortalLayout.astro';
+import Photo from '../../components/brand/Photo.astro';
+import PhotoCredit from '../../components/brand/PhotoCredit.astro';
+import GeographicMap from '../../components/experience/GeographicMap.astro';
+import { boundaryPath, getPlaceLocation, geographyCoverage } from '../../data/geography';
+import { places } from '../../data/geosites';
+import { experiencePoints, locatedExperiencePoints } from '../../features/experience/scene-data';
+import { experienceClusters } from '../../features/experience/cluster-data';
+import { modelNote } from '../../data/model-credits';
+import '../../styles/experience.css';
+
+const json = JSON.stringify({ points: experiencePoints, clusters: experienceClusters }).replace(
+  /</g,
+  '\\u003c',
+);
+---
+
+<PortalLayout
+  title="Experiencia inmersiva · Manantiales Serranos"
+  description="Recorré una interpretación artística de las sierras de Lavalleja y descubrí los 61 lugares de Manantiales Serranos en una experiencia 3D."
+  bodyClass="experience-body"
+  clientNavigation={false}
+>
+  <main class="experience" data-experience data-state="loading" id="experiencia">
+    <canvas
+      id="experience-canvas"
+      tabindex="0"
+      aria-label="Paisaje 3D del Geoparque. Usá WASD o las flechas para caminar y E para accionar."
+      aria-describedby="experience-instructions"
+    ></canvas>
+    <div class="experience-vignette" aria-hidden="true"></div>
+
+    <header class="exp-header">
+      <a
+        class="exp-brand"
+        href="/"
+        data-astro-reload
+        aria-label="Manantiales Serranos: elegir experiencia"
+      >
+        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" aria-hidden="true">
+          <path
+            d="M2 33 13 10l7 13L28 4l11 29M5 38h31M16 33l5-10 5 10"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linejoin="round"
+          ></path>
+          <circle cx="7" cy="7" r="3" fill="currentColor"></circle>
+        </svg>
+        <span>
+          MANANTIALES<strong>SERRANOS</strong>
+          <small>GEOPARQUE · LAVALLEJA, URUGUAY</small>
+        </span>
+      </a>
+      <nav class="exp-top-nav" aria-label="Navegación de la experiencia">
+        <a href="/inicio/" data-astro-reload>
+          Ir al sitio web <span aria-hidden="true">↗</span>
+        </a>
+        <a href="/" class="exp-exit" data-astro-reload aria-label="Salir y elegir experiencia">
+          Salir <span aria-hidden="true">×</span>
+        </a>
+      </nav>
+    </header>
+
+    <section class="exp-intro" aria-labelledby="experience-title">
+      <p class="exp-kicker">
+        <span></span> EXPLORACIÓN INMERSIVA <b>01 / MS</b>
+      </p>
+      <h1 id="experience-title">
+        EL TERRITORIO,
+        <br />
+        <em>A TU PASO.</em>
+      </h1>
+      <p>
+        Entre sierras, agua e historias.
+        <br />
+        Acercate a una baliza y descubrí un lugar.
+      </p>
+    </section>
+
+    <div class="exp-tools" role="toolbar" aria-label="Herramientas del recorrido">
+      <button id="experience-overview" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"></path>
+        </svg>
+        <span>Ver territorio</span>
+      </button>
+      <button
+        id="experience-places-toggle"
+        aria-controls="experience-directory"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2V5Zm6-2v16M15 5v16"></path>
+        </svg>
+        <span>Lugares</span>
+      </button>
+      <button id="experience-pause" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 5v14M16 5v14"></path>
+        </svg>
+        <span>Pausar</span>
+      </button>
+      <button id="experience-sound" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m11 5-5 4H3v6h3l5 4V5Zm5 3c3 2 3 6 0 8m3-11c5 4 5 10 0 14"></path>
+        </svg>
+        <span>Sonido</span>
+      </button>
+      <button id="experience-help-toggle" aria-controls="experience-help" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .7-1.5 1-1.5 3m0 2v1"></path>
+        </svg>
+        <span>Controles</span>
+      </button>
+    </div>
+
+    <aside
+      id="experience-directory"
+      class="exp-directory exp-glass"
+      aria-labelledby="experience-directory-title"
+      hidden
+    >
+      <div class="exp-drawer-heading">
+        <div>
+          <p class="exp-kicker">ARCHIVO TERRITORIAL</p>
+          <h2 id="experience-directory-title">Elegí tu próximo lugar.</h2>
+        </div>
+        <button class="exp-icon-button" data-close-directory aria-label="Cerrar lugares">
+          ×
+        </button>
+      </div>
+      <GeographicMap />
+      <section class="exp-house-directory" aria-label="Casas de exploración">
+        <h3>Ocho casas, más espacio para explorar.</h3>
+        <p>
+          Agrupamos los lugares próximos en salas virtuales. Sus posiciones reales se conservan en
+          el mapa.
+        </p>
+        {experienceClusters.map((cluster) => (
+          <button data-cluster-travel={cluster.id}>
+            <strong>{cluster.name}</strong>
+            <span>{cluster.memberIds.length} lugares · Entrar ↗</span>
+          </button>
+        ))}
+      </section>
+    </aside>
+
+    <div class="exp-area-bar">
+      <span id="experience-area">Geoparque · territorio real</span>
+      <button
+        id="experience-area-info"
+        aria-controls="experience-cluster-info"
+        aria-expanded="false"
+        hidden
+      >
+        Sobre esta zona
+      </button>
+      <button id="experience-area-exit" hidden>
+        Salir de la casa ↗
+      </button>
+    </div>
+    <aside
+      id="experience-cluster-info"
+      class="exp-cluster-info exp-glass"
+      aria-label="Información de la casa"
+      hidden
+    >
+      <div class="exp-drawer-heading">
+        <p class="exp-kicker">CASAS DEL TERRITORIO</p>
+        <button
+          class="exp-icon-button"
+          data-close-cluster
+          aria-label="Cerrar información de la casa"
+        >
+          ×
+        </button>
+      </div>
+      {experienceClusters.map((cluster) => (
+        <section data-cluster-content={cluster.id} hidden>
+          <p class="exp-kicker">{cluster.region}</p>
+          <h2>{cluster.name}</h2>
+          <p>{cluster.description}</p>
+          <p class="exp-house-note">
+            Esta casa es un espacio virtual de exploración. Los lugares están separados para que
+            puedas caminar entre sus miniaturas; las distancias interiores no representan la
+            geografía real.
+          </p>
+          <h3>{cluster.memberIds.length} lugares para descubrir</h3>
+          <ol>
+            {cluster.memberIds.map((id) => {
+              const place = places.find((item) => item.id === id)!;
+              return (
+                <li>
+                  <button data-cluster-point={id}>
+                    <b>
+                      {String(id).padStart(2, '0')} / {place.name}
+                    </b>
+                    <span>{place.summary}</span>
+                  </button>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ))}
+      <button class="exp-house-continue" data-close-cluster>
+        Recorrer la sala →
+      </button>
+    </aside>
+
+    <aside
+      id="experience-help"
+      class="exp-help exp-glass"
+      aria-labelledby="experience-help-title"
+      hidden
+    >
+      <div class="exp-drawer-heading">
+        <h2 id="experience-help-title">A tu ritmo.</h2>
+        <button class="exp-icon-button" data-close-help aria-label="Cerrar controles">
+          ×
+        </button>
+      </div>
+      <dl id="experience-instructions">
+        <div>
+          <dt>
+            <kbd>W A S D</kbd> / <kbd>↑ ← ↓ →</kbd>
+          </dt>
+          <dd>Caminar por el paisaje</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>Shift</kbd> / <kbd>Espacio</kbd>
+          </dt>
+          <dd>Correr / saltar</dd>
+        </div>
+        <div>
+          <dt>
+            Arrastrar / <kbd>Q</kbd> <kbd>R</kbd>
+          </dt>
+          <dd>Girar la cámara</dd>
+        </div>
+        <div>
+          <dt>
+            <kbd>E</kbd> / Accionar
+          </dt>
+          <dd>Entrar o salir de una casa, o abrir la ficha del punto cercano</dd>
+        </div>
+        <div>
+          <dt>Clic en una baliza</dt>
+          <dd>Abrir su ventana de información</dd>
+        </div>
+      </dl>
+      <p>
+        Mové las ventanas desde su encabezado. También podés enfocarlo y usar las flechas.
+        Minimizalas para seguir caminando y recuperalas desde la barra inferior.
+      </p>
+      <p>En pantalla táctil usá las flechas y arrastrá sobre el paisaje para mirar alrededor.</p>
+      <p>
+        En una miniatura, Shift + clic enfoca el detalle señalado. Acercate con la rueda y usá
+        «Vista completa» para recuperar el conjunto.
+      </p>
+      <p class="exp-help-note">
+        El suelo sigue el límite oficial y elevaciones Mapzen/Tilezen con relieve ampliado seis
+        veces. Cauces y rutas: IDE Uruguay. Las casas y sus interiores son espacios virtuales; las
+        miniaturas tienen escala ampliada. No representan recorridos autorizados ni entradas. Usá M
+        o «Ver territorio» para ver el contorno completo.
+      </p>
+      <p>
+        <a href="/experiencia/modelos/" data-astro-reload>
+          Fuentes del territorio y de las miniaturas ↗
+        </a>
+      </p>
+    </aside>
+
+    <div
+      id="experience-panels"
+      class="exp-panels"
+      role="group"
+      aria-label="Fichas virtuales abiertas"
+    ></div>
+    <div
+      id="experience-dock"
+      class="exp-dock"
+      role="group"
+      aria-label="Fichas minimizadas"
+      hidden
+    ></div>
+
+    <footer class="exp-bottom">
+      <div class="exp-cartography">
+        <button
+          id="experience-map-toggle"
+          class="exp-mini-map"
+          aria-label="Abrir mapa geográfico de los lugares"
+          aria-controls="experience-directory"
+        >
+          <svg
+            viewBox="-105 -88 210 176"
+            role="img"
+            aria-label="Posiciones documentadas de los lugares y límite oficial del geoparque"
+          >
+            <defs>
+              <pattern id="exp-map-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path
+                  d="M20 0H0v20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="0.5"
+                  opacity="0.15"
+                ></path>
+              </pattern>
+            </defs>
+            <rect x="-100" y="-86" width="200" height="172" fill="url(#exp-map-grid)"></rect>
+            <path
+              d={boundaryPath}
+              fill="#81b5a4"
+              fill-opacity=".1"
+              stroke="#81b5a4"
+              stroke-width=".65"
+            />
+            {locatedExperiencePoints.map((point) => (
+              <circle
+                cx={point.x}
+                cy={point.z}
+                r="1.4"
+                fill={point.location.accuracy === 'approximate' ? '#efc17a' : 'currentColor'}
+                opacity=".75"
+              />
+            ))}
+            <g id="experience-map-player">
+              <circle r="5" fill="#b9efdb" opacity=".25"></circle>
+              <path d="m0-4 3 7-3-1-3 1Z" fill="#d5ffea"></path>
+            </g>
+          </svg>
+          <span class="exp-map-north" aria-hidden="true">
+            N
+          </span>
+        </button>
+        <div>
+          <p class="exp-kicker">BITÁCORA DE EXPLORACIÓN</p>
+          <p class="exp-discovered">
+            <strong id="experience-discovered">00</strong>
+            <span>/ 61 lugares descubiertos</span>
+          </p>
+          <small>{geographyCoverage.located} referencias · contorno oficial · relieve 6×</small>
+        </div>
+      </div>
+      <div class="exp-nearby exp-glass">
+        <div>
+          <span class="exp-kicker" id="experience-nearby-category">
+            SEGUÍ LAS BALIZAS
+          </span>
+          <strong id="experience-nearby-name">Preparando el paisaje…</strong>
+        </div>
+        <button id="experience-action" disabled>
+          <kbd>E</kbd>
+          <span>Accionar</span>
+          <b aria-hidden="true">↗</b>
+        </button>
+      </div>
+      <div class="exp-key-guide" aria-hidden="true">
+        <span>
+          <kbd>W</kbd>
+          <kbd>A</kbd>
+          <kbd>S</kbd>
+          <kbd>D</kbd> CAMINAR
+        </span>
+        <span>ARRASTRAR PARA MIRAR</span>
+      </div>
+    </footer>
+
+    <div class="exp-touch-controls" role="group" aria-label="Controles táctiles de movimiento">
+      <button data-move="forward" aria-label="Caminar hacia adelante">
+        ↑
+      </button>
+      <button data-move="left" aria-label="Caminar hacia la izquierda">
+        ←
+      </button>
+      <button data-move="back" aria-label="Caminar hacia atrás">
+        ↓
+      </button>
+      <button data-move="right" aria-label="Caminar hacia la derecha">
+        →
+      </button>
+    </div>
+
+    <div class="exp-model-status" id="experience-miniature-status" role="status" aria-live="polite">
+      <span>MINIATURAS DEL TERRITORIO</span>
+      <strong id="experience-miniature-name">Cerro Arequita</strong>
+      <small id="experience-miniature-detail">Preparando la miniatura…</small>
+      <button id="experience-miniature-reset" hidden>
+        Vista completa
+      </button>
+      <button id="experience-miniature-exit" hidden>
+        Volver a caminar <kbd>Esc</kbd>
+      </button>
+    </div>
+
+    <div id="experience-loading" class="exp-loading" role="status">
+      <div class="exp-loading-symbol" aria-hidden="true">
+        ◇
+      </div>
+      <p class="exp-kicker">MANANTIALES SERRANOS</p>
+      <h2>Un paisaje por descubrir.</h2>
+      <p>Preparando tu recorrido…</p>
+    </div>
+    <section
+      id="experience-fallback"
+      class="exp-fallback exp-glass"
+      aria-labelledby="experience-fallback-title"
+      hidden
+    >
+      <p class="exp-kicker">OTRA FORMA DE EXPLORAR</p>
+      <h2 id="experience-fallback-title">El territorio sigue abierto.</h2>
+      <p id="experience-fallback-message">
+        No pudimos iniciar el paisaje 3D en este navegador. Podés descubrir los 61 lugares desde sus
+        fichas o continuar en el sitio web.
+      </p>
+      <a id="experience-retry" href="/experiencia/" data-astro-reload>
+        Volver a intentar
+      </a>
+      <a href="/inicio/" data-astro-reload>
+        Explorar el sitio web ↗
+      </a>
+    </section>
+    <p id="experience-announcement" class="exp-sr-only" role="status" aria-live="polite"></p>
+    <noscript>
+      <style>
+        .exp-loading {
+          display: none !important;
+        }
+        .exp-directory[hidden] {
+          display: flex !important;
+        }
+        .exp-tools,
+        .exp-nearby,
+        .exp-touch-controls,
+        .exp-house-directory,
+        .exp-area-bar {
+          display: none !important;
+        }
+      </style>
+      <p class="exp-no-script">
+        El recorrido 3D requiere JavaScript. Podés abrir las fichas de los 61 lugares o{' '}
+        <a href="/inicio/">visitar el sitio web</a>.
+      </p>
+    </noscript>
+    <script id="experience-data" type="application/json" set:html={json} />
+    {places.map((place) => (
+      <template data-place-template={place.id}>
+        <div
+          class="holo-panel"
+          data-holo-panel={place.id}
+          role="dialog"
+          aria-labelledby={`holo-title-${place.id}`}
+        >
+          <svg
+            class="holo-frame"
+            viewBox="0 0 420 640"
+            preserveAspectRatio="none"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              class="holo-frame-outline"
+              d="M1 29V15L15 1h123l8 7h154l8-7h96l15 15v145l-6 6v294l6 6v157l-15 15H277l-8-7H92l-8 7H15L1 625V470l6-6V177l-6-6V48"
+            />
+            <path
+              class="holo-frame-inner"
+              d="M12 64V28l14-14h92M322 14h71l14 14v90M408 510v104l-13 13h-77M104 626H27l-14-14v-64"
+            />
+            <path
+              class="holo-frame-bright"
+              d="M1 65V15L15 1h66M349 1h55l15 15v47M419 571v53l-15 15h-58M71 639H15L1 625v-46"
+            />
+            <path
+              class="holo-frame-ticks"
+              d="M1 206h5m-5 9h5m-5 9h5m-5 9h5m-5 9h5m-5 9h8m-8 9h5m-5 9h5m-5 9h5m-5 9h5m-5 9h5M414 348h5m-5 9h5m-5 9h5m-5 9h5m-5 9h5m-8 9h8m-5 9h5m-5 9h5m-5 9h5m-5 9h5m-5 9h5"
+            />
+          </svg>
+          <header class="holo-header">
+            <button
+              class="holo-drag"
+              data-panel-drag
+              aria-label={`Mover ficha de ${place.name}`}
+              title="Arrastrá para mover. Con teclado: flechas; Shift para pasos más grandes."
+            >
+              <span class="holo-signal" aria-hidden="true"></span>
+              <span>
+                GMS / {String(place.id).padStart(2, '0')} <small>{place.category}</small>
+              </span>
+              <span class="holo-grip" aria-hidden="true">
+                ⠿
+              </span>
+            </button>
+            <button
+              class="holo-control"
+              data-panel-minimize
+              aria-label={`Minimizar ficha de ${place.name}`}
+            >
+              −
+            </button>
+            <button
+              class="holo-control"
+              data-panel-close
+              aria-label={`Cerrar ficha de ${place.name}`}
+            >
+              ×
+            </button>
+          </header>
+          <div class="holo-content">
+            <div class="holo-photo">
+              <Photo assetKey={place.image} alt={place.photoCaption || place.name} sizes="420px" />
+              <div class="holo-visor" aria-hidden="true">
+                <span class="holo-visor-label">VISOR TERRITORIAL</span>
+                <svg class="holo-reticle" viewBox="0 0 120 120" fill="none">
+                  <circle cx="60" cy="60" r="53" stroke-dasharray="100 8 2 8 52 6" />
+                  <circle cx="60" cy="60" r="46" stroke-dasharray="1 5" />
+                  <path d="M60 21a39 39 0 0 1 39 39M60 99a39 39 0 0 1-39-39M35 60a25 25 0 0 1 25-25M85 60a25 25 0 0 1-25 25" />
+                  <path d="M60 1v13m0 92v13M1 60h13m92 0h13M60 48v5m0 14v5M48 60h5m14 0h5" />
+                  <circle cx="60" cy="60" r="2" />
+                </svg>
+                <svg
+                  class="holo-photo-grid"
+                  viewBox="0 0 360 160"
+                  preserveAspectRatio="none"
+                  fill="none"
+                >
+                  <path d="M0 40h360M0 80h360M0 120h360M60 0v160M120 0v160M180 0v160M240 0v160M300 0v160" />
+                  <path
+                    class="holo-photo-brackets"
+                    d="M12 32V12h26M322 12h26v20M348 128v20h-26M38 148H12v-20"
+                  />
+                </svg>
+                <span class="holo-visor-id">
+                  GMS <b>{String(place.id).padStart(2, '0')}</b>
+                </span>
+              </div>
+              <span class="holo-photo-label">{place.photoCaption}</span>
+            </div>
+            <PhotoCredit assetKey={place.image} compact newWindow />
+            <p class="holo-eyebrow">ARCHIVO TERRITORIAL / {place.category.toUpperCase()}</p>
+            <h2 id={`holo-title-${place.id}`}>{place.name}</h2>
+            <div class="holo-separator" aria-hidden="true">
+              <span></span>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+            <button class="holo-model-button" data-view-miniature={place.id}>
+              Ver miniatura 3D ↗
+            </button>
+            <details class="holo-model-note" open={[29, 36, 42].includes(place.id)}>
+              <summary>Acerca de esta miniatura</summary>
+              <p>{modelNote(place.id)}</p>
+              <a
+                href={`/experiencia/modelos/#gms-${place.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver referencias ↗
+              </a>
+            </details>
+            <div class="holo-location">
+              <span>
+                UBICACIÓN /{' '}
+                {getPlaceLocation(place.id)?.accuracy === 'approximate'
+                  ? 'APROXIMADA'
+                  : getPlaceLocation(place.id)
+                    ? 'DOCUMENTADA'
+                    : 'PENDIENTE'}
+              </span>
+              {getPlaceLocation(place.id) ? (
+                <>
+                  <p>
+                    {getPlaceLocation(place.id)!.latitude.toFixed(6)},{' '}
+                    {getPlaceLocation(place.id)!.longitude.toFixed(6)}
+                  </p>
+                  {getPlaceLocation(place.id)!.referenceLabel && (
+                    <p>{getPlaceLocation(place.id)!.referenceLabel}</p>
+                  )}
+                  <a
+                    href={getPlaceLocation(place.id)!.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {getPlaceLocation(place.id)!.sourceLabel} ↗
+                  </a>
+                  <p>
+                    <a
+                      href={`https://www.openstreetmap.org/?mlat=${getPlaceLocation(place.id)!.latitude}&mlon=${getPlaceLocation(place.id)!.longitude}#map=16/${getPlaceLocation(place.id)!.latitude}/${getPlaceLocation(place.id)!.longitude}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver en mapa real ↗
+                    </a>
+                  </p>
+                  <details>
+                    <summary>Precisión y referencia</summary>
+                    <p>{getPlaceLocation(place.id)!.notes}</p>
+                  </details>
+                </>
+              ) : (
+                <p>
+                  Sin coordenadas verificables. Su miniatura se presenta como estudio, sin baliza en
+                  el mapa.
+                </p>
+              )}
+            </div>
+            <p class="holo-summary">{place.summary}</p>
+            <p class="holo-intro">{place.intro}</p>
+            <div class="holo-access">
+              <span>ANTES DE IR</span>
+              <strong>{place.status}</strong>
+              <p>{place.statusRaw}</p>
+            </div>
+            {place.channel && (
+              <a
+                class="holo-contact"
+                href={place.channel.url}
+                target={place.channel.url.startsWith('http') ? '_blank' : undefined}
+                rel={place.channel.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+              >
+                {place.channel.label} ↗
+              </a>
+            )}
+            <a class="holo-full" href={`/lugares/${place.slug}/`} data-astro-reload>
+              Abrir ficha completa <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <footer class="holo-footer">
+            <span>MANANTIALES SERRANOS</span>
+            <button data-panel-resume>Volver al recorrido ↗</button>
+          </footer>
+        </div>
+      </template>
+    ))}
+  </main>
+  <script>
+    import '../../features/site/lifecycle.js';
+  </script>
+</PortalLayout>

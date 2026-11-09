@@ -1,0 +1,240 @@
+{
+  "aguas": {
+    "path": "src/assets/images/hero/aguas.webp",
+    "width": 2200,
+    "height": 1291,
+    "bytes": 206174,
+    "sha256": "b9acfd1b7e925af900d77656e06c4b0025c0a272ee73a98f97e05662030a45e4"
+  },
+  "aprendiendo": {
+    "path": "src/assets/images/education/aprendiendo.webp",
+    "width": 505,
+    "height": 360,
+    "bytes": 88636,
+    "sha256": "65aa5f6120fc99386095b77a1182c0218aee2e30ea839425b819eceb7b70f749"
+  },
+  "arequita-rio": {
+    "path": "src/assets/images/hero/arequita-rio.webp",
+    "width": 1500,
+    "height": 844,
+    "bytes": 300064,
+    "sha256": "02152bb27f74b1bb23749aac9db79cccc7b2176090818d7314cd6cb2fec3856a"
+  },
+  "arequita": {
+    "path": "src/assets/images/geosites/arequita.webp",
+    "width": 2200,
+    "height": 1165,
+    "bytes": 453760,
+    "sha256": "0f37204991599a2f0895be998faab2726805b2e06f71d690868bbb347c6cf1d6"
+  },
+  "arroyo": {
+    "path": "src/assets/images/landscapes/arroyo.webp",
+    "width": 1815,
+    "height": 1368,
+    "bytes": 750292,
+    "sha256": "cee403ddaaa2f14ca7772de9be1b1148cafbad11c4173d6a5298a408c033da4d"
+  },
+  "artesania": {
+    "path": "src/assets/images/culture/artesania.webp",
+    "width": 206,
+    "height": 181,
+    "bytes": 8720,
+    "sha256": "62c78048007694099987d3eba031072a1a6070213363aa6d9076fa3b659bb2df"
+  },
+  "artigas": {
+    "path": "src/assets/images/culture/artigas.webp",
+    "width": 2200,
+    "height": 1291,
+    "bytes": 426290,
+    "sha256": "c2bc8139f555955bc0491a795ab57ff8e2f7d2efac39dac3cc996fe21f145ddf"
+  },
+  "aves": {
+    "path": "src/assets/images/nature/aves.webp",
+    "width": 223,
+    "height": 335,
+    "bytes": 21178,
+    "sha256": "bd0dfba49081d19fbb54c61302b97bddb96ebdcd61bbfb43e92738f03c3693ce"
+  },
+  "bosque": {
+    "path": "src/assets/images/nature/bosque.webp",
+    "width": 332,
+    "height": 323,
+    "bytes": 49454,
+    "sha256": "3f1a4f221e8c68a6b660e7edd544e8e6be998493183c460cf81a176624870ca7"
+  },
+  "campo": {
+    "path": "src/assets/images/landscapes/campo.webp",
+    "width": 816,
+    "height": 240,
+    "bytes": 84490,
+    "sha256": "7a05d62972b10d0a321d4fd6c03b83ab823d4f5037eb7d0d773596aa21ad5452"
+  },
+  "cantera": {
+    "path": "src/assets/images/geosites/cantera.webp",
+    "width": 2049,
+    "height": 1484,
+    "bytes": 811798,
+    "sha256": "2268f4313ad271cf9202608f7e6b81bd3c72508897a5338adefcb9a3c3cc2cea"
+  },
+  "carpincho": {
+    "path": "src/assets/images/nature/carpincho.webp",
+    "width": 267,
+    "height": 173,
+    "bytes": 6266,
+    "sha256": "4e6ee7eb12981ba874e5cbb928597a9de8285e90b247a6c8d68973601762ff8e"
+  },
+  "cielo": {
+    "path": "src/assets/images/landscapes/cielo.webp",
+    "width": 2200,
+    "height": 1291,
+    "bytes": 125180,
+    "sha256": "160c5610dbfab743f8b833e5ff0958cf8380c2536d829f4ccc3233dd9f0f759e"
+  },
+  "escuela": {
+    "path": "src/assets/images/education/escuela.webp",
+    "width": 404,
+    "height": 360,
+    "bytes": 76194,
+    "sha256": "b1e275b0d20a5f66f3574e4b181ef3f4dd251dfc1943837a740775901b1012fa"
+  },
+  "gastronomia": {
+    "path": "src/assets/images/culture/gastronomia.webp",
+    "width": 248,
+    "height": 195,
+    "bytes": 6826,
+    "sha256": "2b49284c57c5b9e27a746ddcc6f3dc52c16c50012d5c6c973470624778a48411"
+  },
+  "gauchos": {
+    "path": "src/assets/images/culture/gauchos.webp",
+    "width": 400,
+    "height": 371,
+    "bytes": 53924,
+    "sha256": "6be7fd89bea8c347734f00bd1fc66ba10be4a9445944be99cb57576a71cd7e41"
+  },
+  "gruta": {
+    "path": "src/assets/images/geosites/gruta.webp",
+    "width": 243,
+    "height": 386,
+    "bytes": 30458,
+    "sha256": "361c1229a797ade6fd87ba0cfca5df8d545b1fcb345b7cd387479a5c94e5cfbf"
+  },
+  "map-original": {
+    "path": "public/downloads/map-original.webp",
+    "width": 1224,
+    "height": 1584,
+    "bytes": 190176,
+    "sha256": "3130669606d57632c3d9ada382c6e51748c040bdce9ec018726213eae30df90b"
+  },
+  "martin": {
+    "path": "src/assets/images/culture/martin.webp",
+    "width": 267,
+    "height": 181,
+    "bytes": 10110,
+    "sha256": "43e4d739894c03915cedff24833193f8e5b4c35da0f4d3cab88ba52cce7dd88e"
+  },
+  "ombues": {
+    "path": "src/assets/images/nature/ombues.webp",
+    "width": 246,
+    "height": 192,
+    "bytes": 25410,
+    "sha256": "f855d914209c79596643fcc00b196ada9a9843693135b3aa8a6e1d157030513b"
+  },
+  "paisaje": {
+    "path": "src/assets/images/landscapes/paisaje.webp",
+    "width": 555,
+    "height": 323,
+    "bytes": 43862,
+    "sha256": "df3fabe2f9c853b68ed121c47017757ee602a2b7eafeceb7234d9f29829079c3"
+  },
+  "panorama": {
+    "path": "src/assets/images/landscapes/panorama.webp",
+    "width": 816,
+    "height": 467,
+    "bytes": 112216,
+    "sha256": "e7bb4540ccfdb9ec448de2a6abd824f3d85e563cdde2bfb7dfec3e3d1e243f27"
+  },
+  "parque-puente": {
+    "path": "src/assets/images/landscapes/parque-puente.webp",
+    "width": 817,
+    "height": 812,
+    "bytes": 152676,
+    "sha256": "41c2b610571dfd1cc89d1867c5946b87b931a0785a8e918aa4a3beaf7ff246c4"
+  },
+  "parque": {
+    "path": "src/assets/images/hero/parque.webp",
+    "width": 2200,
+    "height": 1124,
+    "bytes": 363546,
+    "sha256": "e5e3aa37b6dd81f8c9009d9cd4349b10cafdb559d4fd0ad76ba16c2ae424518c"
+  },
+  "pelado": {
+    "path": "src/assets/images/geosites/pelado.webp",
+    "width": 817,
+    "height": 904,
+    "bytes": 248446,
+    "sha256": "ce1b0542e9405fcbd35cc52401c2f9b2f5cc60b1591b5d28f44241ff445ea654"
+  },
+  "penitente-poza": {
+    "path": "src/assets/images/landscapes/penitente-poza.webp",
+    "width": 484,
+    "height": 195,
+    "bytes": 51286,
+    "sha256": "ad0ed1a1e4fe4eda83214df046abe3643c92b1283aaeb561c3ba4ea0f6011b2c"
+  },
+  "penitente": {
+    "path": "src/assets/images/landscapes/penitente.webp",
+    "width": 803,
+    "height": 741,
+    "bytes": 201098,
+    "sha256": "90272824919b4d9e1794aceffc7b38e7d61c18334ab9fa5629e0e8e7a9e1d9ac"
+  },
+  "puma": {
+    "path": "src/assets/images/nature/puma.webp",
+    "width": 245,
+    "height": 196,
+    "bytes": 17610,
+    "sha256": "7f47a7e897ac0e8c17c986e914c37c22b48f85ee90b7ceb39ed660298de3132f"
+  },
+  "rio": {
+    "path": "src/assets/images/landscapes/rio.webp",
+    "width": 2200,
+    "height": 1287,
+    "bytes": 248918,
+    "sha256": "63fa3209a07a3972a2ae0de89e42be70b4d1c87b6a90c969088feaf34061927e"
+  },
+  "salus": {
+    "path": "src/assets/images/hero/salus.webp",
+    "width": 2042,
+    "height": 1500,
+    "bytes": 473938,
+    "sha256": "602e6c6ff79c843b645423e43e9bc7885f270c664c32770aca4c8c311a2a9bb6"
+  },
+  "unesco": {
+    "path": "public/partners/unesco.png",
+    "width": 77,
+    "height": 59,
+    "bytes": 7536,
+    "sha256": "f420fb2c24002e1a4684a3a4d9ebc54b700790aeceb5c47daa80479177c2da56"
+  },
+  "instituciones": {
+    "path": "public/partners/instituciones.png",
+    "width": 270,
+    "height": 79,
+    "bytes": 24194,
+    "sha256": "dcfd329152aeff3aaa909a49dc1955b3a67bde8a443c8e4f659a60b130df04cc"
+  },
+  "lavalleja": {
+    "path": "public/partners/lavalleja.png",
+    "width": 124,
+    "height": 60,
+    "bytes": 12536,
+    "sha256": "d980fcedb0a13f8f2133eef67df7c4921b4f293dfb8a0522f4eebd174314883e"
+  },
+  "brand-c66ec6c0da68": {
+    "path": "public/brand/brand-c66ec6c0da68.svg",
+    "width": 225,
+    "height": 191,
+    "bytes": 136752,
+    "sha256": "c66ec6c0da68fcdb961b988926c2bf66bdde75b9a074ef0f1fe843c951e22551"
+  }
+}

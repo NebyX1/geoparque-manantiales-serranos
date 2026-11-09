@@ -8,6 +8,7 @@ export interface ContentBlock {
 export interface PlaceImage {
   key: string;
   alt: string;
+  caption?: string;
 }
 export interface PlaceContact {
   url: string;
@@ -37,6 +38,11 @@ export interface GeoparkPlace {
   tags: string[];
   image: string;
   imageContext: boolean;
+  photoCaption?: string;
+  photoKind?: string;
+  photoCredit?: string;
+  photoSource?: string;
+  photoFit?: string;
   images: PlaceImage[];
   channel?: PlaceContact;
   contacts: PlaceContact[];

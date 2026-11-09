@@ -1,0 +1,25 @@
+---
+import { photoForAsset, photoLabel, photoAuditUrl } from '../../data/place-photos';
+interface Props {
+  assetKey: string;
+  compact?: boolean;
+  newWindow?: boolean;
+}
+const { assetKey, compact = false, newWindow = false } = Astro.props;
+const photo = photoForAsset(assetKey);
+const label = photo && photoLabel(photo);
+---
+
+{photo && (
+  <p class:list={['photo-credit', { 'photo-credit--compact': compact }]}>
+    {label && <strong class="photo-credit-label">{label}.</strong>}
+    <span>{photo.credit}. </span>
+    <a
+      href={photoAuditUrl(photo)}
+      target={newWindow ? '_blank' : undefined}
+      rel={newWindow ? 'noopener noreferrer' : undefined}
+    >
+      Ver fuente{photo.kind === 'restored' ? ' y foto original' : ''} ↗
+    </a>
+  </p>
+)}

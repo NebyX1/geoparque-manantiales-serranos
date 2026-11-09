@@ -1,0 +1,156 @@
+{
+  "gms-28": {
+    "prompt": "Use case: precise-object-edit. Asset type: tourism website photograph restoration. Edit target: the attached original photograph. Primary request: create a high-resolution, extremely photorealistic faithful restoration of this SAME photograph, reducing JPEG/pixel artifacts and optical softness conservatively. Historic 2008 photograph of the Cuna de Fabini building in Solís de Mataojo, Uruguay. Preserve the whole street facade, its exact one-storey silhouette, number/shape/placement of windows and doors, dark stone on the left frontage, cream and terracotta-red paint, cornice, flag, tree trunk/branches, wires, adjacent buildings and road. Keep readable lettering verbatim; leave genuinely illegible tiny text indistinct. Composition: preserve original camera, crop, aspect ratio and perspective exactly. Constraints: this is documentary restoration, not creative reinterpretation. No new architecture, terrain, vegetation objects, people, labels, weather, sky or pathways. Preserve all physical site features and natural colors; no HDR, cinematic grading, artificial saturation or invented micro-details. Target long edge around 2000 pixels and retain fine but credible photographic texture. No watermark, no overlay or added text. The website will identify this as AI-assisted restoration and retain the source.",
+    "source": "reports/experience-review/next-quality/references/28-ces-2008-0-Im112.jpg",
+    "mode": "builtin-imagegen",
+    "status": "rejected",
+    "reason": "Añadió números/rótulos legibles no verificables en el original.",
+    "output": "reports/experience-review/photo-audit/ai-sources/gms-28-restored-v1.png"
+  },
+  "gms-50": {
+    "prompt": "Use case: precise-object-edit. Asset type: tourism website photograph restoration. Edit target: the attached original photograph. Primary request: create a high-resolution, extremely photorealistic faithful restoration of this SAME photograph, reducing JPEG/pixel artifacts and optical softness conservatively. Photograph inside Gruta Colón/Arequita, Uruguay, looking up the exact tall narrow rock fissure and irregular stone steps towards daylight. Preserve every large rock outline, the narrow opening, the exact staircase, moss distribution, thin safety ropes and distant person. Keep the same natural light direction and very bright exit; recover only plausible tonal information, without inventing visible detail inside clipped highlights. Composition: preserve original camera, crop, aspect ratio and perspective exactly. Constraints: this is documentary restoration, not creative reinterpretation. No new architecture, terrain, vegetation objects, people, labels, weather, sky or pathways. Preserve all physical site features and natural colors; no HDR, cinematic grading, artificial saturation or invented micro-details. Target long edge around 2000 pixels and retain fine but credible photographic texture. No watermark, no overlay or added text. The website will identify this as AI-assisted restoration and retain the source.",
+    "source": "public/photo-originals/gms-50.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-50-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "705b0d5a3279c1f3d41e2bfb8b7aa279d897bcc41c1b9a05454a2016b869982e",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-55": {
+    "prompt": "Use case: precise-object-edit. Asset type: tourism website photograph restoration. Edit target: the attached original photograph. Primary request: create a high-resolution, extremely photorealistic faithful restoration of this SAME photograph, reducing JPEG/pixel artifacts and optical softness conservatively. Photograph of the actual suspended plank course at La Guarida, Uruguay. Preserve this exact bridge, separate plank positions, cable and rope structure, forest composition and the exact adult visitor's pose, clothing, helmet, body proportions, harness and safety attachments. Her face is hidden and must remain hidden. Do not add planks, change safety equipment, move the visitor, remove cables or redesign the attraction. Composition: preserve original camera, crop, aspect ratio and perspective exactly. Constraints: this is documentary restoration, not creative reinterpretation. No new architecture, terrain, vegetation objects, people, labels, weather, sky or pathways. Preserve all physical site features and natural colors; no HDR, cinematic grading, artificial saturation or invented micro-details. Target long edge around 2000 pixels and retain fine but credible photographic texture. No watermark, no overlay or added text. The website will identify this as AI-assisted restoration and retain the source.",
+    "source": "public/photo-originals/gms-55.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-55-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "e32044f72c0f651177c4d3f3548f444a330dd04258a64aca95aedf8be6934123",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-28-v2": {
+    "prompt": "Use case: precise-object-edit. Edit target: this original low-resolution photograph. Task: conservative high-resolution photographic restoration, improving sharpness and JPEG compression at roughly2000px long edge. Cuna de Fabini, the historic school facade in Solís de Mataojo. Preserve every building volume, opening, cornice, exact visible cream/red/stone finishes, tree, flag, cables, road and crop from this photograph. Only the main plaque CUNA DE FABINI and recognizable Coca-Cola lettering can be readable. All tiny uncertain signs, notices and street-number details MUST remain naturally indistinct like the reference: do not invent numbers such as139 or239, prices, words or heraldic symbols. Avoid adding a new entrance, new window or new sign. Ultra realistic documentary photography, retaining natural colors and actual physical forms. Preserve the same framing and aspect ratio. No new objects, people, sky, planting, paths, text, facade decorations or imagined fine detail. This is a restored historical/source photograph, not a newly taken picture. No text overlays or watermarks added.",
+    "source": "public/photo-originals/gms-28.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-28-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "52003bac5ff55550e21b0fbec54bb873fb6887475eb04ef7b2bff02c71ed5c78",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-42": {
+    "prompt": "Use case: precise-object-edit. Edit target: this original low-resolution photograph. Task: conservative high-resolution photographic restoration, improving sharpness and JPEG compression at roughly2000px long edge. The actual Casa Natal de Lavalleja preserved within the courtyard of Casa de la Cultura, Minas, Uruguay. Preserve the exact corner building with cream walls and gray lower base, the exposed brick fragment at its corner, doorway, barred windows, all wall lamps, potted plants, terracotta pots, roof tiles, paving stones, steps, tree trunk and flowers. Exact camera, crop, perspective and midday light. Do not invent legible inscriptions on the plaques; their small text must remain indistinct. Do not change the architecture or number of openings. Ultra realistic documentary photography, retaining natural colors and actual physical forms. Preserve the same framing and aspect ratio. No new objects, people, sky, planting, paths, text, facade decorations or imagined fine detail. This is a restored historical/source photograph, not a newly taken picture. No text overlays or watermarks added.",
+    "source": "public/photo-originals/gms-42.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-42-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "345a0538172b2e7b4cd019ec9cd2535b6873566b6c2beb6ec49a4f4d46a937d0",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-61": {
+    "prompt": "Use case: precise-object-edit. Edit target: this original low-resolution photograph. Task: conservative high-resolution photographic restoration, improving sharpness and JPEG compression at roughly2000px long edge. This exact historical museum interior photograph from the Museo del Molino Viejo in Minas, Uruguay, showing a black and brass steam traction engine with its red-spoked wheels, the timber posts, original windows, dark timber ceiling, stone floor and exhibits. Preserve machine geometry, number/location of wheel spokes, brass parts, all structural beams, doors, windows and objects. Preserve daylight direction. Retain white clipped reflections rather than inventing window scenery or text. Do not modernize the museum or redesign its machinery. Ultra realistic documentary photography, retaining natural colors and actual physical forms. Preserve the same framing and aspect ratio. No new objects, people, sky, planting, paths, text, facade decorations or imagined fine detail. This is a restored historical/source photograph, not a newly taken picture. No text overlays or watermarks added.",
+    "source": "public/photo-originals/gms-61.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-61-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "b1aba893364bcdca52ca8586329f97f695c436225a6e22588166daf163c5553b",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-43": {
+    "prompt": "Use case: precise-object-edit. Asset: tourism website faithful restoration of a low-resolution archival photograph. Edit the supplied photo for high resolution and ultra realistic DSLR-quality photographic detail, reducing pixelation, noise and compression conservatively. Entrance of Cementerio Central in Minas, Uruguay. Keep the exact grey stepped Art Deco portal, stepped stone cross, narrow round arch, iron gate, low white side walls, small plants, lamp poles and overcast sky. Preserve the same frontal perspective and ALL architecture. Crop off only the bottom strip containing the car dashboard/hood; keep the entire entrance and cross. Do not invent facade writing, opening hours, grave names or inscriptions. Retain the distant visitor and background inside the entrance as small indistinct forms. This is restoration from evidence, not a redesign or newly taken photo. Preserve macro contours exactly, use realistic materials and keep ordinary natural light; no stylization, excessive saturation, cinematic or HDR look. Target around2000px long edge. No added overlays or watermarks. Unknown fine details must stay indistinct.",
+    "source": "public/photo-originals/gms-43.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-43-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "556c6584fd9373d6e1734fc00c24fbdc890fae7e28cf28c00422e6a357e821e5",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-51": {
+    "prompt": "Use case: precise-object-edit. Asset: tourism website faithful restoration of a low-resolution archival photograph. Edit the supplied photo for high resolution and ultra realistic DSLR-quality photographic detail, reducing pixelation, noise and compression conservatively. This exact ombú tree in the documented Arequita woodland. Keep the complete swollen base, multiple trunks and branching topology, all large foreground stones, roots, other trees and their positions. Recover natural bark and leaf texture conservatively from the original; no new trunks, caves, oversized roots, animals, plants or paths. Keep the forest dappled light and original composition; reduce the old yellow-green cast mildly while retaining natural colors. This is restoration from evidence, not a redesign or newly taken photo. Preserve macro contours exactly, use realistic materials and keep ordinary natural light; no stylization, excessive saturation, cinematic or HDR look. Target around2000px long edge. No added overlays or watermarks. Unknown fine details must stay indistinct.",
+    "source": "public/photo-originals/gms-51.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-51-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "1e7f849675f491277c0073022c3e495b95a243cf0ecc39d13ec0be52f2df3ae1",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-59": {
+    "prompt": "Use case: precise-object-edit. Asset: tourism website faithful restoration of a low-resolution archival photograph. Edit the supplied photo for high resolution and ultra realistic DSLR-quality photographic detail, reducing pixelation, noise and compression conservatively. The actual photographed two-level Cerro Místico cabin in Lavalleja, Uruguay, viewed from below the grassy slope. Keep exact white walls, stone supports, slim black poles and rails, balcony geometry, windows, stair/side volumes, all trees and the dominant leaning tree, rocks, grass and sky. Preserve the exact original crop and perspective. Do not add architecture, a pool, paths, furniture or people. Do not turn the roof into a different shape. This is restoration from evidence, not a redesign or newly taken photo. Preserve macro contours exactly, use realistic materials and keep ordinary natural light; no stylization, excessive saturation, cinematic or HDR look. Target around2000px long edge. No added overlays or watermarks. Unknown fine details must stay indistinct.",
+    "source": "public/photo-originals/gms-59.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-59-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "2e949c06671686340211b7188dfbf57f67927747bd5570f2a570c3d2ac975e3d",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-60": {
+    "prompt": "Use case: precise-object-edit. Asset: tourism website faithful restoration of a low-resolution archival photograph. Edit the supplied photo for high resolution and ultra realistic DSLR-quality photographic detail, reducing pixelation, noise and compression conservatively. Exact archival photograph of the entrance robot at Museo de Réplicas en Miniaturas, Minas, Uruguay. Keep this handmade red iron robot's gear face, bent raised arms, torso and legs, the original base, green building, fence, pole, neighboring street and wires. Preserve the same framing and photo-era condition. Keep the sign lettering verbatim as in the source: MAQUINAS, VEHICULOS / HERRAMIENTAS; EXPONE; REPLICAS / EN / MINIATURA; Horacio Chocho; FUNCIONAN; vertical MUSEO. Preserve existing wording/spelling and line breaks. No new numbers, ads, logos, machinery, people or claims. Leave illegible small wall/address writing indistinct. This is restoration from evidence, not a redesign or newly taken photo. Preserve macro contours exactly, use realistic materials and keep ordinary natural light; no stylization, excessive saturation, cinematic or HDR look. Target around2000px long edge. No added overlays or watermarks. Unknown fine details must stay indistinct.",
+    "source": "public/photo-originals/gms-60.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/places/gms-60-restored.webp",
+    "status": "accepted",
+    "referenceSha256": "14c090cc5e0a373b29ff9952c876528c4475a3a5cc35365feb0c200b53213b07",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "hero-aguas": {
+    "prompt": "Use case: precise-object-edit. Task: faithfully restore this exact low-resolution source photograph for a tourism website at high resolution, with natural ultra realistic photographic texture. Documented Aguas Blancas landscape, Lavalleja, Uruguay. Keep this exact lake, ripples, foreground rock, reeds on the right, far shore, pasture parcels, individual major tree clusters, distant hill profiles and cloud masses. Preserve the original low shoreline viewpoint and framing. No invented mountains, buildings, boats, people, pools, roads or signage. Target roughly2400px long edge, preserving original aspect ratio, perspective and composition. Reduce compression/optical softness conservatively. Documentary restoration rather than creative reconstruction: no added objects or invented features, no HDR or exaggerated saturation, no text overlays or watermarks. Small uncertain details stay indistinct. All site contours and structural proportions must agree with the reference.",
+    "source": "public/photo-originals/hero-aguas.jpg",
+    "mode": "builtin-imagegen",
+    "output": "src/assets/images/hero/aguas.webp",
+    "status": "accepted",
+    "referenceSha256": "852e717a60e875ff5a86093060d8fe65c12b5d6f08bb99bee445ded85d3e6be9",
+    "review": "Comparación visual con la referencia: identidad, geometría principal, encuadre y rótulos identificativos conservados. Interpretación de textura fina señalada en la interfaz."
+  },
+  "gms-49": {
+    "prompt": "Use case: precise-object-edit. Task: faithfully restore this exact low-resolution source photograph for a tourism website at high resolution, with natural ultra realistic photographic texture. 2017 municipal press photograph of the entrance to Parque Rodó in MINAS, Lavalleja, Uruguay. Preserve exact geometry of the two stone pillars and flanking walls, pale canopy, rectangular columns, semicircular metal name arc, circular canopy holes, street, palms, gate and all vegetation. The metal lettering must remain PARQUE RODÓ. Keep the little yellow notice indistinct; do not invent wording, schedules or prices. Keep existing weathering; do not modernize or reconstruct the park. Target roughly2400px long edge, preserving original aspect ratio, perspective and composition. Reduce compression/optical softness conservatively. Documentary restoration rather than creative reconstruction: no added objects or invented features, no HDR or exaggerated saturation, no text overlays or watermarks. Small uncertain details stay indistinct. All site contours and structural proportions must agree with the reference.",
+    "source": "reports/experience-review/photo-audit/source-49.jpg",
+    "mode": "builtin-imagegen",
+    "status": "rejected",
+    "reason": "Añadió una placa y marcas viales no verificables en el original.",
+    "output": "reports/experience-review/photo-audit/gms-49-restored.png"
+  },
+  "definition-arequita": {
+    "prompt": "Use case: identity-preserve photographic restoration. Edit target: the supplied real photograph of Cerro Arequita and the Santa Lucía river in Lavalleja, Uruguay. Restore and enhance ONLY its photographic image quality into a crisp, extremely natural high-resolution editorial landscape photograph. Preserve exactly the same camera viewpoint, horizon, cliff silhouette, geology, river bends, vegetation masses, framing, season and light. Preserve the full 16:9 composition. Improve authentic fine texture and remove compression softness, without changing any actual landscape feature. No added objects, no invented peaks or water, no buildings, no oversharpening halos, no stylization, no text. Request maximum supported native resolution, ideally 3840 by 2160 pixels, with clear distant vegetation, nuanced leaves and rocks, true photographic detail and restrained natural color. The goal is faithful restoration of THIS photo, never a reimagined travel scene.",
+    "source": "public/photo-originals/gms-01.webp",
+    "output": "src/assets/images/places/gms-01-restored.webp",
+    "generatedArchive": "reports/experience-review/photo-definition/generated/arequita.png",
+    "sourceSha256": "02152bb27f74b1bb23749aac9db79cccc7b2176090818d7314cd6cb2fec3856a",
+    "outputSha256": "8c92ab18a5f45479d1b8b61344116f11ea7ac9903186047a005667c8a5b375c0",
+    "tool": "native image_gen",
+    "status": "accepted",
+    "reviewedAt": "2026-11-09",
+    "acceptance": "Identifiable cliff/river or resort building, pool and path layout retained on visual comparison; fine texture is interpreted and explicitly labelled as restoration."
+  },
+  "definition-parque": {
+    "prompt": "Use case: precise-object-edit, faithful photographic restoration. Edit target: the supplied original aerial photograph of the real Parque de Minas resort, Lavalleja, Uruguay. Restore ONLY the photographic detail and resolution to a very sharp, natural high-resolution camera photograph. Preserve the exact aerial viewpoint, full wide panorama aspect ratio about 2.38:1, horizon and landscape, EVERY building footprint, roof shape, roof colour, courtyard, pool shape, road, path, palm location, forest mass and antenna. Do not crop or reframe, do not redesign architecture, do not add buildings, windows or facilities. Improve existing edge definition and authentic texture while removing softness and compression. Natural restrained colour, no HDR, no halos, no painterly or CGI appearance, no text or logos. Highest supported native resolution, ideally 3840 by 1616 pixels. This will be used as a restored version of a verified real photograph; factual layout fidelity is essential, not creative embellishment.",
+    "source": "public/photo-originals/gms-17.jpg",
+    "output": "src/assets/images/places/gms-17-restored.webp",
+    "generatedArchive": "reports/experience-review/photo-definition/generated/parque.png",
+    "sourceSha256": "c78deb2b7897482cef9df61ab342ca9b45fbf93cbd2962c47cf87123d219d97f",
+    "outputSha256": "061ba266ce8759d89a53cc47f381783e8234cda9fe0c95ce119355619c473227",
+    "tool": "native image_gen",
+    "status": "accepted",
+    "reviewedAt": "2026-11-09",
+    "acceptance": "Identifiable cliff/river or resort building, pool and path layout retained on visual comparison; fine texture is interpreted and explicitly labelled as restoration."
+  },
+  "definition-parque-story": {
+    "prompt": "Use case: precise-object-edit photographic restoration. Edit target: the provided exact center crop of a real aerial photograph of Parque de Minas, Uruguay. Restore ONLY resolution and photographic clarity, keeping the EXACT same 1.351:1 framing and ALL existing content. This is for a large photographic card on a retina screen. Preserve every hotel building, ALL roof contours and reddish roofs, courtyard paths, palm positions, tree masses, swimming pools at the lower right, and distant terrain without relocating anything. Do not expand the view, do not crop again, do not add windows or buildings or amenities. Resolve subtle realistic foliage, roof tiles and existing surfaces, with crisp optical detail and fine natural texture rather than artificial sharpening or CGI. Keep lighting and natural photographic colour. No text, no logos, no borders. Request the highest supported native resolution. Factual layout is invariant; it must remain an enhanced version of this exact photograph, not a regenerated resort scene.",
+    "source": "public/photo-originals/parque-story.png",
+    "output": "src/assets/images/hero/parque-story.webp",
+    "generatedArchive": "reports/experience-review/photo-definition/generated/parque-story.png",
+    "sourceSha256": "d79015a13806905e4035099c39d5e4667729f734662c7fba378b03f1c066c835",
+    "outputSha256": "fceaacee7e42164c1aef2a84f58a065357522033282d5af7ee0584f8dba701c5",
+    "tool": "native image_gen",
+    "status": "accepted",
+    "reviewedAt": "2026-11-09",
+    "acceptance": "Identifiable cliff/river or resort building, pool and path layout retained on visual comparison; fine texture is interpreted and explicitly labelled as restoration."
+  },
+  "resolution-mangas-education": {
+    "prompt": "Use case: identity-preserve / photographic restoration. Edit target: the attached crop of the operator's authentic photograph of Mangas de Piedra, Cerro de la Leona, Lavalleja, Uruguay, used in an educational section. Restore this exact photograph to a clean high-definition, photorealistic editorial image, 4:3 landscape. Recover natural rock edges, stone-wall structure, grass and scrub texture and distant hill silhouettes without changing their positions or shapes. Preserve the exact camera angle, framing, skyline height, daylight, sky/cloud placement, rock arrangements, path and all six visitors: their positions, body proportions, clothing colors, hats, backpacks, poses and distance from camera. Keep faces small and distant; do not invent facial identity or add people. Reduce JPEG blocks and muddy blur without plastic smoothing, oversharpening halos, fake bokeh, HDR or invented foliage. Keep the real place unmistakably identical to the reference. No new objects, no architecture, no signs, no text, no watermark. Use the largest available native output resolution, aiming for at least 1448x1086; do not merely enlarge the low-resolution bitmap.",
+    "source": "public/photo-originals/gms-56.png",
+    "output": "src/assets/images/places/gms-56-restored.webp",
+    "generatedArchive": "reports/experience-review/photo-resolution/generated/mangas-education.png",
+    "tool": "native image_gen",
+    "status": "accepted",
+    "reviewedAt": "2026-11-09",
+    "sourceSha256": "71d6db8be1b32ef2c93966a15577ca6bf76f714717c2eff71ff72225a83cbedd",
+    "outputSha256": "63f91c04f50285dd460d365d37e909a50dcfa9cbb06419dc6d726389bcf89d60",
+    "acceptance": "Six people, wall layout and skyline retained on comparison; fine textures and faces are interpreted and labelled as AI restoration."
+  }
+}

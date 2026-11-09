@@ -1,12 +1,14 @@
 ---
 import type { GeoparkPlace } from '../../types/geopark';
 import Photo from '../brand/Photo.astro';
+import { photoForPlace, photoLabel } from '../../data/place-photos';
 import { FavoritesButton } from '../islands/FavoritesButton';
 interface Props {
   place: GeoparkPlace;
 }
 const { place } = Astro.props;
 const href = `/lugares/${place.slug}/`;
+const label = photoLabel(photoForPlace(place.id));
 ---
 
 <article class="place-card reveal" data-id={place.id}>
@@ -22,7 +24,7 @@ const href = `/lugares/${place.slug}/`;
     <span class:list={['place-tag', { international: place.international }]}>
       {place.international ? 'Valor internacional' : place.category}
     </span>
-    {place.imageContext && <span class="context-badge">Paisaje de Lavalleja</span>}
+    {label && <span class="photo-label">{label}</span>}
     <FavoritesButton id={place.id} name={place.name} client:visible />
   </div>
   <div class="place-meta">

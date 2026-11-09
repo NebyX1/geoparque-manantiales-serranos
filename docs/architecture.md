@@ -4,9 +4,11 @@ La referencia de ingeniería fue [Semana de Lavalleja](https://github.com/NebyX1
 
 ## Render y rutas
 
-Astro genera el contenido completo en build. Hay 79 documentos HTML: home, explorar, índice de lugares, 61 lugares, índice de historias y ocho relatos, índice de circuitos y tres circuitos, planifica y 404. `/health` es un recurso estático de texto y una respuesta explícita Nginx. Hay 63 documentos Markdown: guía, colección y 61 fichas individuales.
+Astro genera el contenido completo en build. Hay 81 documentos HTML: entrada de dos opciones, sitio editorial en `/inicio/`, experiencia en `/experiencia/`, explorar, índice de lugares, 61 lugares, índice de historias y ocho relatos, índice de circuitos y tres circuitos, planifica y 404. `/health` es un recurso estático de texto y una respuesta explícita Nginx. Hay 63 documentos Markdown: guía, colección y 61 fichas individuales.
 
 `BaseLayout` centraliza head, SEO, ClientRouter, sprite SVG, navegación, footer y diálogos. Las quince secciones editoriales se mantienen en componentes Astro. Todas las fichas y bloques están presentes sin JavaScript. En ese caso, el atlas expone los 61 lugares y las cuatro escenas geológicas aparecen en flujo.
+
+`PortalLayout` sirve la entrada y el recorrido inmersivo con su propia composición y SEO. El portal ofrece enlaces HTML sin necesitar JavaScript. El motor Three.js se importa sólo desde la experiencia; su interfaz usa controladores nativos, sin ampliar el alcance de React. Ver [experiencia inmersiva](experience.md).
 
 `ClientRouter` conserva navegación por secciones y rutas reales. Las URLs editoriales usan barra final y canonical explícito; `trailingSlash: ignore` también permite `/health` sin barra en la vista previa. Nginx resuelve directorios estáticos y nunca convierte una URL desconocida en home.
 

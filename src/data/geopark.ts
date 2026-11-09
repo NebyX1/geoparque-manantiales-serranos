@@ -1,68 +1,24 @@
 import { places } from './geosites';
 import { articles } from './stories';
 import { circuits } from './circuits';
+import { photoForAsset } from './place-photos';
 export const gallery = [
-  {
-    key: 'aguas',
-    title: 'Aguas Blancas · agua y sierras',
-    caption: 'Aguas Blancas · agua y sierras',
-  },
-  {
-    key: 'salus',
-    title: 'La luz del bosque · Reserva Salus',
-    caption: 'La luz del bosque · Reserva Salus',
-  },
-  {
-    key: 'arequita',
-    title: 'Cerro Arequita · memoria volcánica',
-    caption: 'Cerro Arequita · memoria volcánica',
-  },
-  {
-    key: 'penitente',
-    title: 'Salto del Penitente · agua entre rocas',
-    caption: 'Salto del Penitente · agua entre rocas',
-  },
-  {
-    key: 'arequita-rio',
-    title: 'Arequita y río Santa Lucía',
-    caption: 'Arequita y río Santa Lucía',
-  },
-  {
-    key: 'rio',
-    title: 'Río Santa Lucía en el entorno de Arequita',
-    caption: 'Río Santa Lucía en el entorno de Arequita',
-  },
-  {
-    key: 'artigas',
-    title: 'Cerro Artigas · el horizonte de Minas',
-    caption: 'Cerro Artigas · el horizonte de Minas',
-  },
-  {
-    key: 'parque',
-    title: 'Parque de Minas · observar juntos',
-    caption: 'Parque de Minas · observar juntos',
-  },
-  {
-    key: 'cantera',
-    title: 'Rocas y paisajes de Manantiales Serranos',
-    caption: 'Rocas y paisajes de Manantiales Serranos',
-  },
-  {
-    key: 'cielo',
-    title: 'El cielo sobre las sierras',
-    caption: 'El cielo sobre las sierras',
-  },
-  {
-    key: 'parque-puente',
-    title: 'Parque de Minas · paisaje y paseo',
-    caption: 'Parque de Minas · paisaje y paseo',
-  },
-  {
-    key: 'aprendiendo',
-    title: 'Una experiencia educativa en el Geoparque',
-    caption: 'Una experiencia educativa en el Geoparque',
-  },
-];
+  'aguas',
+  'salus',
+  'arequita',
+  'penitente',
+  'arequita-rio',
+  'rio',
+  'artigas',
+  'parque',
+  'cantera',
+  'cielo',
+  'parque-puente',
+  'aprendiendo',
+].map((key) => {
+  const photo = photoForAsset(key)!;
+  return { key, title: photo.caption, caption: photo.caption };
+});
 export const mapPoints = [
   {
     n: 1,

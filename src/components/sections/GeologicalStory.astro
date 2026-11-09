@@ -1,5 +1,7 @@
 ---
 import Photo from '../brand/Photo.astro';
+import { assets } from '../../data/assets';
+import { storyPhotoSizes } from '../../lib/image-sizing';
 ---
 
 <section aria-label="Un viaje por cuatro geositios" class="geo-story" id="historia">
@@ -50,7 +52,7 @@ import Photo from '../brand/Photo.astro';
           <span>Vida</span>
         </button>
       </nav>
-      <a class="geo-skip" href="/#explorar">
+      <a class="geo-skip" href="/inicio/#explorar">
         Ir a todos los lugares ↗
       </a>
     </div>
@@ -100,9 +102,14 @@ import Photo from '../brand/Photo.astro';
           <figure class="geo-polaroid">
             <div class="geo-photo">
               <a aria-label="Conocer Cerro Arequita" href="/lugares/cerro-arequita/">
-                <Photo alt="Cerro Arequita" assetKey="arequita-rio" loading="lazy" />
+                <Photo
+                  alt="Cerro Arequita"
+                  assetKey="arequita-rio"
+                  loading="lazy"
+                  sizes={storyPhotoSizes(assets['arequita-rio']!)}
+                />
               </a>
-              <span class="geo-photo-stamp">Un paisaje nacido del volcanismo</span>
+              <span class="geo-photo-stamp">Cerro Arequita · Bienflorencia · archivo 2012</span>
             </div>
             <figcaption class="geo-photo-caption">
               <div>
@@ -169,7 +176,12 @@ import Photo from '../brand/Photo.astro';
           <figure class="geo-polaroid">
             <div class="geo-photo">
               <a aria-label="Conocer Aguas Blancas" href="/lugares/campamento-aguas-blancas/">
-                <Photo alt="Aguas Blancas" assetKey="aguas" loading="lazy" />
+                <Photo
+                  alt="Aguas Blancas"
+                  assetKey="aguas"
+                  loading="lazy"
+                  sizes={storyPhotoSizes(assets.aguas!)}
+                />
               </a>
               <span class="geo-photo-stamp">Zona de Cizalla Sarandí del Yi–Piriápolis</span>
             </div>
@@ -177,6 +189,7 @@ import Photo from '../brand/Photo.astro';
               <div>
                 <small>Geositio de valor internacional</small>
                 <strong>Aguas Blancas</strong>
+                <small>Restauración con IA · foto de archivo</small>
               </div>
               <button
                 aria-label="Guardar Aguas Blancas en mi viaje"
@@ -238,9 +251,14 @@ import Photo from '../brand/Photo.astro';
           <figure class="geo-polaroid">
             <div class="geo-photo">
               <a aria-label="Conocer Parque de Minas" href="/lugares/parque-de-minas/">
-                <Photo alt="Parque de Minas" assetKey="parque" loading="lazy" />
+                <Photo
+                  alt="Parque de Minas"
+                  assetKey="parque-story"
+                  loading="lazy"
+                  sizes={storyPhotoSizes(assets['parque-story']!)}
+                />
               </a>
-              <span class="geo-photo-stamp">Grupo Parque Minas · Complejo Zanja del Tigre</span>
+              <span class="geo-photo-stamp">Parque de Minas · restauración con IA</span>
             </div>
             <figcaption class="geo-photo-caption">
               <div>
@@ -306,7 +324,12 @@ import Photo from '../brand/Photo.astro';
           <figure class="geo-polaroid">
             <div class="geo-photo">
               <a aria-label="Conocer Reserva Salus" href="/lugares/reserva-natural-parque-salus/">
-                <Photo alt="Reserva Salus" assetKey="salus" loading="lazy" />
+                <Photo
+                  alt="Reserva Salus"
+                  assetKey="salus"
+                  loading="lazy"
+                  sizes={storyPhotoSizes(assets.salus!)}
+                />
               </a>
               <span class="geo-photo-stamp">Grupo Arroyo del Soldado</span>
             </div>

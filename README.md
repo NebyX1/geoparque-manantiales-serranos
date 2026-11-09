@@ -14,12 +14,13 @@ npm run dev
 
 Abrir http://localhost:4321/. El servidor escucha en `0.0.0.0:4321`.
 
-En el equipo Windows usado para validar, el npm del sistema estaba roto y Node era 22.15.1. Se utilizó una distribución portátil 22.22.3. Para usarla desde esta sesión:
+La entrada ofrece dos recorridos: el sitio editorial en `/inicio/` y la experiencia 3D en `/experiencia/`. Las fichas, historias, circuitos y el planificador conservan sus rutas. Consultar [la experiencia inmersiva](docs/experience.md) para controles, datos y mantenimiento. La [geografía y su precisión](docs/geography.md) y la [procedencia de las miniaturas](docs/model-provenance.md) documentan las fuentes utilizadas.
 
-```powershell
-$env:PATH="$env:TEMP\node-v22.22.3-win-x64;$env:PATH"
-npm run dev
-```
+La experiencia incluye los 61 puntos del Geoparque, ocho casas para recorrer zonas con lugares próximos y miniaturas con procedencia documentada. El Penitente, Stewart Vargas y el río junto a Arequita conservan sus efectos animados; el entorno de Marmarajá incorpora un lagarto animado. Los accesos de las casas comparten la posición de sus puertas y sus rampas.
+
+Las fotografías se comparten entre ambas experiencias, con créditos, originales de las restauraciones y límites de ampliación según la resolución disponible. Consultar [calidad de las fotos](docs/photo-resolution.md), [accesos a las casas](docs/house-entrances.md) y [reutilización del Penitente](docs/penitente-reuse.md).
+
+En Windows, si la versión del sistema es anterior a 22.22.3, usar una instalación compatible de Node 22 y agregar su carpeta al `PATH` antes de ejecutar estos comandos.
 
 ## Verificación y build
 
@@ -35,14 +36,16 @@ npm run test:lighthouse
 
 La vista previa de Astro 7 es un proceso independiente. Después de cambiar la configuración, detenerla con `npx astro preview stop` antes de iniciarla nuevamente. Para pruebas se usan los puertos 4321 y 4323; ejecutar una sola suite Playwright a la vez.
 
+La revisión del 9 de noviembre de 2026 pasó `npm run verify` con Node 22.22.3: 68 pruebas unitarias, 3 de SEO y 89 de navegador aprobadas, con 3 omisiones previstas. La auditoría fotográfica comprobó además 618 posiciones sin insuficiencia de resolución ni errores de carga.
+
 ## Arquitectura
 
 Astro 7, React 19 para favoritos y planificador, Nano Stores, Tailwind 4 y DaisyUI 5 limitada a la primitiva `loading`, sin tema ni estilos genéricos. Las fuentes Montserrat y Barlow Condensed se sirven localmente. Las imágenes pasan por `astro:assets`.
 
 - `src/data/`: lugares, relatos, circuitos, categorías y assets canónicos.
 - `src/components/`: secciones editoriales Astro, marca, navegación, fichas, SEO e islas.
-- `src/features/`: viaje, búsqueda, mapa, galería, educación, movimiento y lifecycle.
-- `src/pages/`: 79 documentos HTML, incluidas 61 fichas y la página 404; también Markdown, robots, llms y sitemap.
+- `src/features/`: viaje, búsqueda, mapa, galería, educación, movimiento, experiencia Three.js y lifecycle.
+- `src/pages/`: 83 documentos HTML, incluidas las dos entradas, 61 fichas y la página 404; también Markdown, robots, llms y sitemap.
 - `src/styles/`: cascada del prototipo separada por responsabilidad y ajustes de accesibilidad.
 - `tests/`: unidades, SEO del build y E2E Chromium/WebKit.
 

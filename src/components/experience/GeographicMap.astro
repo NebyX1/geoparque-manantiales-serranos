@@ -1,0 +1,754 @@
+---
+import { geographicPlaces, boundaryPath, geographyCoverage } from '../../data/geography';
+
+const accuracyLabel = {
+  verified_documented: 'Ubicación documentada',
+  approximate: 'Referencia aproximada',
+};
+const mappedPlaces = geographicPlaces.filter((place) => place.position && place.location);
+const minasCenter = geographicPlaces.find((place) => place.id === 39)!.position!;
+const minasView = `${minasCenter.x - 15} ${minasCenter.z - 12.5714} 30 25.1428`;
+---
+
+<section class="geographic-map" aria-labelledby="geographic-map-title" data-geography>
+  <details class="geo-map-disclosure" data-geography-disclosure>
+    <summary>
+      <span>Ver mapa real del geoparque</span>
+      <span class="geo-disclosure-plus" aria-hidden="true">
+        +
+      </span>
+    </summary>
+    <div class="geo-heading">
+      <div>
+        <p class="geo-eyebrow">CARTOGRAFÍA DEL GEOPARQUE</p>
+        <h3 id="geographic-map-title">Cada lugar, en su territorio.</h3>
+      </div>
+      <span class="geo-compass" aria-label="Norte hacia arriba">
+        N <span aria-hidden="true">↑</span>
+      </span>
+    </div>
+
+    <div class="geo-view-controls" role="group" aria-label="Escala del mapa">
+      <button type="button" data-geography-view="all" aria-pressed="true">
+        Todo el geoparque
+      </button>
+      <button type="button" data-geography-view="minas" aria-pressed="false">
+        Acercar a Minas
+      </button>
+    </div>
+
+    <div class="geo-map-frame">
+      <svg
+        class="geo-map-svg"
+        data-geographic-map
+        data-view-all="-105 -88 210 176"
+        data-view-minas={minasView}
+        data-view="all"
+        viewBox="-105 -88 210 176"
+        role="group"
+        aria-labelledby="geo-svg-title geo-svg-description"
+      >
+        <title id="geo-svg-title">Referencias geográficas de los lugares de Manantiales Serranos</title>
+        <desc id="geo-svg-description">
+          Contorno territorial del geoparque y puntos con fuente geográfica. Usá el directorio para
+          consultar su precisión, fuente y condiciones de visita.
+        </desc>
+        <defs>
+          <pattern id="geographic-map-grid" width="25" height="25" patternUnits="userSpaceOnUse">
+            <path d="M25 0H0V25" fill="none" stroke="currentColor" stroke-width="0.25"></path>
+          </pattern>
+        </defs>
+        <rect
+          class="geo-grid"
+          x="-105"
+          y="-88"
+          width="210"
+          height="176"
+          fill="url(#geographic-map-grid)"
+        ></rect>
+        <path class="geo-boundary-halo" d={boundaryPath}></path>
+        <path class="geo-boundary" d={boundaryPath}></path>
+        <g class="geo-points">
+          {mappedPlaces.map((place) => (
+            <a
+              href={`/lugares/${place.slug}/`}
+              data-astro-reload
+              data-geographic-place={place.id}
+              data-accuracy={place.location!.accuracy}
+              aria-label={`${place.name}. ${accuracyLabel[place.location!.accuracy]}. Abrir información.`}
+            >
+              <title>{`${place.id}. ${place.name} · ${accuracyLabel[place.location!.accuracy]}`}</title>
+              <circle
+                class="geo-point-target"
+                cx={place.position!.x}
+                cy={place.position!.z}
+                r="3.5"
+              ></circle>
+              <circle
+                class="geo-point"
+                cx={place.position!.x}
+                cy={place.position!.z}
+                r="1.35"
+              ></circle>
+              <text class="geo-point-id" x={place.position!.x + 2.1} y={place.position!.z + 0.8}>
+                {place.id}
+              </text>
+            </a>
+          ))}
+        </g>
+        <g class="geo-scale geo-scale-territory" aria-label="Barra de escala de diez kilómetros">
+          <path d="M-91 73v3h25v-3M-78.5 74v2"></path>
+          <text x="-91" y="82">
+            0
+          </text>
+          <text x="-66" y="82" text-anchor="end">
+            10 km
+          </text>
+        </g>
+        <g
+          class="geo-scale geo-scale-minas"
+          transform={`translate(${minasCenter.x - 12.8}, ${minasCenter.z + 9.5})`}
+          aria-label="Barra de escala de un kilómetro"
+        >
+          <path d="M0 0v.4h2.5V0"></path>
+          <text x="0" y="1.3">
+            0
+          </text>
+          <text x="2.5" y="1.3" text-anchor="end">
+            1 km
+          </text>
+        </g>
+      </svg>
+      <span class="geo-map-corner geo-map-corner-start" aria-hidden="true"></span>
+      <span class="geo-map-corner geo-map-corner-end" aria-hidden="true"></span>
+    </div>
+
+    <p class="geo-current-view" data-geography-caption aria-live="polite">
+      Todo el geoparque
+    </p>
+
+    <ul class="geo-legend" aria-label="Precisión de las ubicaciones">
+      <li>
+        <span class="geo-legend-dot"></span>
+        {geographyCoverage.verified} documentadas
+      </li>
+      <li>
+        <span class="geo-legend-dot geo-legend-approximate"></span>
+        {geographyCoverage.approximate} aproximadas
+      </li>
+      <li>
+        <span class="geo-legend-unresolved">—</span>
+        {geographyCoverage.unresolved} por ubicar
+      </li>
+    </ul>
+    <p class="geo-map-note">
+      El mapa muestra referencias geográficas. Confirmá el acceso con cada lugar: un punto no indica
+      una entrada habilitada ni un sendero.
+    </p>
+    <a
+      class="geo-basemap-link"
+      href="https://www.openstreetmap.org/#map=10/-34.3592/-55.1327"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Contrastar con el mapa real <span aria-hidden="true">↗</span>
+    </a>
+    <p class="geo-attribution">
+      Geositios y límite:{' '}
+      <a
+        href="https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Intendencia de Lavalleja / IDE Uruguay
+      </a>{' '}
+      · Licencia de Datos Abiertos Uruguay. Referencias comunitarias:{' '}
+      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">
+        © OpenStreetMap contributors
+      </a>{' '}
+      (ODbL). Consultado 08/11/2026.
+    </p>
+  </details>
+
+  <div class="geo-directory-heading">
+    <label for="experience-place-search">Buscar entre los {geographicPlaces.length} lugares</label>
+    <span>{geographyCoverage.located} ubicados</span>
+  </div>
+  <input
+    class="geo-search"
+    id="experience-place-search"
+    type="search"
+    placeholder="Nombre, zona o paisaje…"
+    autocomplete="off"
+  />
+  <p class="geo-directory-count" id="experience-directory-count" role="status">
+    {geographicPlaces.length} lugares para descubrir
+  </p>
+  <ol class="geo-place-list">
+    {geographicPlaces.map((place) => (
+      <li
+        data-experience-place
+        data-search={`${place.name} ${place.region} ${place.category}`}
+        data-geography-row={place.id}
+      >
+        <div class="geo-place-main">
+          <span class="geo-place-number">{String(place.id).padStart(2, '0')}</span>
+          <div class="geo-place-copy">
+            <a href={`/lugares/${place.slug}/`} data-astro-reload>
+              {place.name}
+            </a>
+            <small>
+              {place.category} · {place.region}
+            </small>
+            {place.location?.referenceLabel && <small>{place.location.referenceLabel}</small>}
+          </div>
+          <button
+            class="geo-place-open"
+            type="button"
+            data-place-travel={place.id}
+            aria-label={`Explorar ${place.name}`}
+            title={`Abrir la ficha de ${place.name}`}
+          >
+            ↗
+          </button>
+        </div>
+        <details class="geo-source">
+          <summary>
+            <span
+              class:list={[
+                'geo-precision',
+                {
+                  'geo-precision-approximate': place.location?.accuracy === 'approximate',
+                  'geo-precision-unresolved': !place.location,
+                },
+              ]}
+            ></span>
+            {place.location
+              ? accuracyLabel[place.location.accuracy]
+              : 'Ubicación pendiente de confirmar'}
+            <span class="geo-source-plus" aria-hidden="true">
+              +
+            </span>
+          </summary>
+          {place.location ? (
+            <div class="geo-source-content">
+              <p class="geo-coordinates">
+                <span>WGS84</span> {place.location.latitude.toFixed(6)},{' '}
+                {place.location.longitude.toFixed(6)}
+              </p>
+              <a href={place.location.sourceUrl} target="_blank" rel="noopener noreferrer">
+                {place.location.sourceLabel} <span aria-hidden="true">↗</span>
+              </a>
+              <p>{place.location.notes}</p>
+              <a
+                class="geo-real-map-link"
+                href={`https://www.openstreetmap.org/?mlat=${place.location.latitude}&mlon=${place.location.longitude}#map=16/${place.location.latitude}/${place.location.longitude}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver en mapa real <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          ) : (
+            <div class="geo-source-content">
+              <p>
+                El lugar conserva su ficha. La ubicación se incorporará cuando exista una referencia
+                geográfica documentada.
+              </p>
+            </div>
+          )}
+        </details>
+      </li>
+    ))}
+  </ol>
+  <p class="geo-empty" id="experience-directory-empty" hidden>
+    No encontramos ese lugar. Probá con otro nombre o zona.
+  </p>
+</section>
+
+<style>
+  .geographic-map {
+    --geo-cyan: #9bf3dd;
+    --geo-amber: #f0ca83;
+    --geo-muted: #9fbab3;
+    color: #e1f6ee;
+  }
+  .geo-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 24px 0 16px;
+  }
+  .geo-map-disclosure {
+    margin: 18px 0 20px;
+    border-top: 1px solid #8dbfa329;
+    border-bottom: 1px solid #8dbfa329;
+  }
+  .geo-map-disclosure > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 44px;
+    color: #c3f6dd;
+    font-size: 11px;
+    font-weight: 550;
+    line-height: 1.5;
+    list-style: none;
+    cursor: pointer;
+  }
+  .geo-map-disclosure > summary::-webkit-details-marker {
+    display: none;
+  }
+  .geo-disclosure-plus {
+    color: var(--geo-cyan);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .geo-map-disclosure[open] > summary .geo-disclosure-plus {
+    transform: rotate(45deg);
+  }
+  .geo-eyebrow {
+    margin: 0 0 6px;
+    color: var(--geo-cyan);
+    font-size: 8px;
+    letter-spacing: 0.17em;
+    font-weight: 650;
+  }
+  .geo-heading h3 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 550;
+    letter-spacing: -0.025em;
+  }
+  .geo-compass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    color: var(--geo-cyan);
+    font-size: 9px;
+    font-weight: 700;
+  }
+  .geo-compass span {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .geo-view-controls {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .geo-view-controls button {
+    flex: 1;
+    min-height: 36px;
+    padding: 7px 10px;
+    border: 1px solid #77c3b434;
+    background: #0e302c;
+    color: #bad6cd;
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  .geo-view-controls button[aria-pressed='true'] {
+    border-color: #a7f2d78c;
+    background: #9bf3dd15;
+    color: #dbfff0;
+    box-shadow: inset 0 -2px #9bf3dd;
+  }
+  .geo-view-controls button:hover {
+    border-color: var(--geo-cyan);
+  }
+  .geo-map-frame {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 55% 44%, #173f382e, transparent 65%), #061c1c;
+    border: 1px solid #76bea532;
+    border-radius: 3px;
+  }
+  .geo-map-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    aspect-ratio: 210 / 176;
+    color: #8ebcaf;
+  }
+  .geo-grid {
+    opacity: 0.18;
+  }
+  .geo-boundary-halo {
+    fill: none;
+    stroke: #8bf4ce;
+    stroke-width: 3;
+    opacity: 0.05;
+  }
+  .geo-boundary {
+    fill: #78c79a0e;
+    stroke: #99e5bd;
+    stroke-width: 0.6;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+  .geo-point-target {
+    fill: transparent;
+  }
+  .geo-point {
+    fill: var(--geo-cyan);
+    stroke: #071e1c;
+    stroke-width: 0.5;
+    transition: stroke-width 0.15s;
+  }
+  .geo-points a[data-accuracy='approximate'] .geo-point {
+    fill: #102b24;
+    stroke: var(--geo-amber);
+    stroke-width: 0.7;
+  }
+  .geo-points a:hover .geo-point,
+  .geo-points a:focus .geo-point {
+    fill: #f3ffba;
+    stroke: #f3ffba;
+    stroke-width: 1.5;
+  }
+  .geo-point-id {
+    fill: #d9fff0;
+    font-size: 3.4px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    paint-order: stroke;
+    stroke: #061c1c;
+    stroke-width: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .geo-points a:hover .geo-point-id,
+  .geo-points a:focus .geo-point-id,
+  .geo-map-svg[data-view='minas'] .geo-point-id {
+    opacity: 1;
+  }
+  .geo-map-svg[data-view='minas'] .geo-point {
+    r: 0.22px;
+    stroke-width: 0.08;
+  }
+  .geo-map-svg[data-view='minas'] a[data-accuracy='approximate'] .geo-point {
+    stroke-width: 0.1;
+  }
+  .geo-map-svg[data-view='minas'] .geo-point-target {
+    r: 0.9px;
+  }
+  .geo-map-svg[data-view='minas'] .geo-point-id {
+    font-size: 0.62px;
+    stroke-width: 0.15px;
+    transform: translate(-1.65px, -0.65px);
+  }
+  .geo-map-svg[data-view='minas'] a:hover .geo-point,
+  .geo-map-svg[data-view='minas'] a:focus .geo-point {
+    stroke-width: 0.2;
+  }
+  .geo-scale {
+    color: #a9c9bc;
+  }
+  .geo-scale path {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 0.5;
+  }
+  .geo-scale text {
+    fill: currentColor;
+    font-size: 3.5px;
+    font-family: inherit;
+  }
+  .geo-scale-minas {
+    display: none;
+  }
+  .geo-map-svg[data-view='minas'] .geo-scale-territory {
+    display: none;
+  }
+  .geo-map-svg[data-view='minas'] .geo-scale-minas {
+    display: block;
+  }
+  .geo-scale-minas path {
+    stroke-width: 0.07;
+  }
+  .geo-scale-minas text {
+    font-size: 0.6px;
+  }
+  .geo-map-corner {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    border-color: #a1e6d1;
+    border-style: solid;
+  }
+  .geo-map-corner-start {
+    left: -1px;
+    top: -1px;
+    border-width: 2px 0 0 2px;
+  }
+  .geo-map-corner-end {
+    right: -1px;
+    bottom: -1px;
+    border-width: 0 2px 2px 0;
+  }
+  .geo-current-view {
+    margin: 8px 0 10px;
+    color: var(--geo-cyan);
+    font-size: 9px;
+    letter-spacing: 0.04em;
+  }
+  .geo-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px 14px;
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 9px;
+    color: #c0d8cc;
+    font-size: 9px;
+  }
+  .geo-legend li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .geo-legend-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--geo-cyan);
+  }
+  .geo-legend-approximate {
+    background: transparent;
+    border: 1px solid var(--geo-amber);
+  }
+  .geo-legend-unresolved {
+    color: #b3bab5;
+    line-height: 0.4;
+  }
+  .geo-map-note {
+    color: var(--geo-muted);
+    font-size: 10px;
+    line-height: 1.7;
+    margin: 0 0 9px;
+  }
+  .geo-attribution {
+    color: #9bbbae;
+    font-size: 8px;
+    line-height: 1.8;
+    margin: 0 0 22px;
+  }
+  .geo-basemap-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 36px;
+    margin-bottom: 7px;
+    color: #b6f5d5;
+    font-size: 10px;
+    text-underline-offset: 3px;
+  }
+  .geo-real-map-link {
+    display: inline-block;
+    padding: 4px 0 5px;
+  }
+  .geo-attribution a {
+    color: #b6d4c7;
+    text-underline-offset: 2px;
+  }
+  .geo-directory-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 9px;
+  }
+  .geo-directory-heading label {
+    color: #e4fff0;
+    font-size: 11px;
+    font-weight: 550;
+  }
+  .geo-directory-heading > span {
+    color: var(--geo-cyan);
+    font-size: 9px;
+  }
+  .geographic-map .geo-search {
+    width: 100%;
+    min-height: 42px;
+    border: 1px solid #96c8b735;
+    border-radius: 3px;
+    background: #041d1bc2;
+    padding: 10px 12px;
+    color: #ecfff3;
+    font-size: 12px;
+  }
+  .geo-search::placeholder {
+    color: #8eada4;
+  }
+  .geo-directory-count {
+    margin: 10px 0;
+    color: var(--geo-muted);
+    font-size: 10px;
+  }
+  .geo-place-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .geo-place-list > li {
+    padding: 13px 0 10px;
+    border-top: 1px solid #8dbfa329;
+  }
+  .geo-place-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .geo-place-number {
+    align-self: flex-start;
+    padding-top: 3px;
+    min-width: 24px;
+    color: #8ad3b5;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .geo-place-copy {
+    min-width: 0;
+    flex: 1;
+  }
+  .geo-place-copy a {
+    color: #ecfff4;
+    font-size: 11px;
+    line-height: 1.5;
+    font-weight: 550;
+    text-decoration: none;
+  }
+  .geo-place-copy a:hover {
+    color: var(--geo-cyan);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .geo-place-copy small {
+    display: block;
+    margin-top: 3px;
+    color: var(--geo-muted);
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .geo-place-open {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #94cbb244;
+    border-radius: 3px;
+    background: #81cba20b;
+    color: #cfffe4;
+    font-size: 17px;
+  }
+  .geo-place-open:hover {
+    border-color: var(--geo-cyan);
+    background: #81cba21a;
+  }
+  .geo-source {
+    margin: 7px 0 0 34px;
+  }
+  .geo-source summary {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    min-height: 28px;
+    color: #b9d2c6;
+    font-size: 9px;
+    line-height: 1.4;
+    cursor: pointer;
+    list-style: none;
+  }
+  .geo-source summary::-webkit-details-marker {
+    display: none;
+  }
+  .geo-precision {
+    width: 4px;
+    height: 4px;
+    flex: 0 0 4px;
+    border-radius: 50%;
+    background: var(--geo-cyan);
+  }
+  .geo-precision-approximate {
+    background: transparent;
+    border: 1px solid var(--geo-amber);
+  }
+  .geo-precision-unresolved {
+    width: 5px;
+    height: 1px;
+    background: #c2b795;
+    border-radius: 0;
+  }
+  .geo-source-plus {
+    margin-left: 4px;
+    color: var(--geo-cyan);
+    font-size: 13px;
+  }
+  .geo-source[open] .geo-source-plus {
+    transform: rotate(45deg);
+  }
+  .geo-source-content {
+    padding: 6px 10px 5px;
+    border-left: 1px solid #8ae8bd40;
+    background: #0217153d;
+    color: #a9c7bb;
+    font-size: 9px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+  .geo-source-content p {
+    margin: 0 0 8px;
+  }
+  .geo-source-content a {
+    color: #b6f5d5;
+    text-underline-offset: 3px;
+  }
+  .geo-source-content .geo-coordinates {
+    color: #d1e8dd;
+    font-variant-numeric: tabular-nums;
+  }
+  .geo-coordinates > span {
+    margin-right: 5px;
+    color: #88b8a5;
+    font-size: 8px;
+    letter-spacing: 0.07em;
+  }
+  .geo-empty {
+    padding: 20px 0;
+    color: #d9eddf;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  @media (max-width: 380px) {
+    .geo-heading h3 {
+      font-size: 15px;
+    }
+    .geo-legend {
+      gap: 8px 10px;
+      font-size: 8px;
+    }
+    .geo-place-main {
+      gap: 7px;
+    }
+    .geo-source {
+      margin-left: 31px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .geo-point {
+      transition: none;
+    }
+  }
+</style>

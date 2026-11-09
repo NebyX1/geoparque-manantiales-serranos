@@ -1,0 +1,185 @@
+{
+  "7": {
+    "polygons": [
+      {
+        "outer": [
+          [-3.64253, 0.40404],
+          [-1.91732, -0.24041],
+          [-1.89246, -0.25577],
+          [0.0134, -2.03009],
+          [0.02593, -2.0453],
+          [0.03407, -2.06325],
+          [0.03726, -2.0827],
+          [0.0391, -2.14301],
+          [-0.11083, -2.14759],
+          [-0.11172, -2.11856],
+          [-1.98377, -0.37571],
+          [-3.66845, 0.2536],
+          [-5.11391, -0.29971],
+          [-5.13807, -0.30462],
+          [-5.16253, -0.30142],
+          [-5.18462, -0.29047],
+          [-6.0, 0.29825],
+          [-6.0, 0.39075],
+          [-5.9561, 0.45156],
+          [-5.12968, -0.14513],
+          [-3.69559, 0.40382],
+          [-3.66908, 0.40878],
+          [-3.64253, 0.40404]
+        ],
+        "holes": []
+      },
+      {
+        "outer": [
+          [2.24899, 1.17739],
+          [2.30003, 0.12978],
+          [2.15021, 0.12248],
+          [2.09916, 1.17009],
+          [2.24899, 1.17739]
+        ],
+        "holes": []
+      },
+      {
+        "outer": [
+          [0.0143, 4.66285],
+          [0.00114, 4.51342],
+          [-0.09005, 4.52145],
+          [-0.11245, 4.52699],
+          [-0.13211, 4.53908],
+          [-0.14717, 4.55657],
+          [-0.31024, 4.81891],
+          [-0.31874, 4.83819],
+          [-0.32154, 4.85907],
+          [-0.31348, 5.92753],
+          [-0.31042, 5.94818],
+          [-0.30179, 5.96719],
+          [-0.28094, 6.0],
+          [-0.19208, 6.0],
+          [-0.12878, 5.95978],
+          [-0.16365, 5.9049],
+          [-0.17139, 4.87966],
+          [-0.03956, 4.66759],
+          [0.0143, 4.66285]
+        ],
+        "holes": []
+      },
+      {
+        "outer": [
+          [1.36553, 5.80284],
+          [1.21615, 5.8164],
+          [1.23282, 6.0],
+          [1.30813, 6.0],
+          [1.38282, 5.99322],
+          [1.36553, 5.80284]
+        ],
+        "holes": []
+      },
+      {
+        "outer": [
+          [0.62246, 5.98179],
+          [0.69522, 6.0],
+          [0.77253, 6.0],
+          [0.81061, 5.8479],
+          [0.6651, 5.81147],
+          [0.62246, 5.98179]
+        ],
+        "holes": []
+      }
+    ],
+    "sources": [
+      { "name": "ARROYO MARMARAJÁ", "sourceId": "hidro_cnsolidada_l.94793" },
+      { "name": "ARROYO DEL AIGUÁ", "sourceId": "hidro_cnsolidada_l.98933" },
+      { "name": "ARROYO DEL AIGUÁ", "sourceId": "hidro_cnsolidada_l.98933" },
+      { "name": "ARROYO DEL AIGUÁ", "sourceId": "hidro_cnsolidada_l.98933" }
+    ],
+    "source": {
+      "provider": "IDE Uruguay / AGESIC; ejes viales nacionales y cartografía de hidrografía",
+      "license": "Licencia de Datos Abiertos Uruguay",
+      "retrievedAt": "2026-11-08",
+      "horizontalMetersPerUnit": 400,
+      "simplificationMeters": 20,
+      "boundarySourceSha256": "729386259a316187f980fbd7d3663c6b3754c839c7112e74aa52ab5fd65e8d1d",
+      "layers": [
+        {
+          "kind": "waterways",
+          "url": "https://mapas.ide.uy/geoserver-vectorial/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy%3Ahidro_cnsolidada_l&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=BBOX%28wkb_geometry%2C-55.551%2C-34.636%2C-54.714%2C-34.082%2C%27EPSG%3A4326%27%29+AND+%28nombre+ILIKE+%27%25Santa+Luc%25%27+OR+nombre+ILIKE+%27%25Sol%25%27+OR+nombre+ILIKE+%27%25Campanero%25%27+OR+nombre+ILIKE+%27%25San+Francisco%25%27+OR+nombre+ILIKE+%27%25Penitente%25%27+OR+nombre+ILIKE+%27%25Mataojo%25%27+OR+nombre+ILIKE+%27%25Marmaraj%25%27+OR+nombre+ILIKE+%27%25Aigu%25%27%29&maxFeatures=5000",
+          "sha256": "79492351c2c468a4c84231ce3779a803b461cd0c87ed7817f0ea7049f5a1adb1",
+          "featuresDownloaded": 15,
+          "metadataUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/74408873-0bb7-4fde-8146-512493f0a11b"
+        },
+        {
+          "kind": "roads",
+          "url": "https://mapas.ide.uy/geoserver-vectorial/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy%3Aejes_viales_ide&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=BBOX%28wkb_geometry%2C-55.551%2C-34.636%2C-54.714%2C-34.082%2C%27EPSG%3A4326%27%29+AND+%28ruta_num+IS+NOT+NULL+OR+via_nombre+ILIKE+%27%25RUTA+81%25%27%29&maxFeatures=5000",
+          "sha256": "fdeb8a0f07a11f2f27f1c1921b5f1a43caf0eb55cd82f44992a87752b25eb581",
+          "featuresDownloaded": 294,
+          "metadataUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/529ae824-1b11-434d-92fd-7a6205a573c6"
+        }
+      ],
+      "note": "Centerline positions are geographic. Displayed widths and vertical offsets are scenic; not navigation or permission to travel."
+    },
+    "widthNote": "15 to 17 m display width interpreted as small-channel landscape detail, not a water-edge survey.",
+    "plane": [0.004158, -0.0032929, 0.2598833],
+    "planeNote": "Linear display grade fitted to coarse DEM along documented centerline footprint; not surveyed water level or hydraulic model."
+  },
+  "57": {
+    "polygons": [
+      {
+        "outer": [
+          [0.20255, -1.81527],
+          [0.18069, -1.81375],
+          [-2.66754, -1.18854],
+          [-2.69605, -1.17559],
+          [-4.74137, 0.33656],
+          [-5.93747, -1.46935],
+          [-6.0, -1.42794],
+          [-6.0, -1.29212],
+          [-4.82281, 0.48523],
+          [-4.80635, 0.50301],
+          [-4.78507, 0.5146],
+          [-4.76121, 0.51881],
+          [-4.73725, 0.51519],
+          [-4.7157, 0.50413],
+          [-2.61975, -1.04546],
+          [0.20204, -1.66487],
+          [3.81275, -1.38603],
+          [3.8256, -1.38614],
+          [6.0, -1.59224],
+          [6.0, -1.66758],
+          [5.99292, -1.74224],
+          [3.81787, -1.53608],
+          [0.20255, -1.81527]
+        ],
+        "holes": []
+      }
+    ],
+    "sources": [{ "name": "ARROYO MATAOJO", "sourceId": "hidro_cnsolidada_l.94772" }],
+    "source": {
+      "provider": "IDE Uruguay / AGESIC; ejes viales nacionales y cartografía de hidrografía",
+      "license": "Licencia de Datos Abiertos Uruguay",
+      "retrievedAt": "2026-11-08",
+      "horizontalMetersPerUnit": 400,
+      "simplificationMeters": 20,
+      "boundarySourceSha256": "729386259a316187f980fbd7d3663c6b3754c839c7112e74aa52ab5fd65e8d1d",
+      "layers": [
+        {
+          "kind": "waterways",
+          "url": "https://mapas.ide.uy/geoserver-vectorial/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy%3Ahidro_cnsolidada_l&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=BBOX%28wkb_geometry%2C-55.551%2C-34.636%2C-54.714%2C-34.082%2C%27EPSG%3A4326%27%29+AND+%28nombre+ILIKE+%27%25Santa+Luc%25%27+OR+nombre+ILIKE+%27%25Sol%25%27+OR+nombre+ILIKE+%27%25Campanero%25%27+OR+nombre+ILIKE+%27%25San+Francisco%25%27+OR+nombre+ILIKE+%27%25Penitente%25%27+OR+nombre+ILIKE+%27%25Mataojo%25%27+OR+nombre+ILIKE+%27%25Marmaraj%25%27+OR+nombre+ILIKE+%27%25Aigu%25%27%29&maxFeatures=5000",
+          "sha256": "79492351c2c468a4c84231ce3779a803b461cd0c87ed7817f0ea7049f5a1adb1",
+          "featuresDownloaded": 15,
+          "metadataUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/74408873-0bb7-4fde-8146-512493f0a11b"
+        },
+        {
+          "kind": "roads",
+          "url": "https://mapas.ide.uy/geoserver-vectorial/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy%3Aejes_viales_ide&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=BBOX%28wkb_geometry%2C-55.551%2C-34.636%2C-54.714%2C-34.082%2C%27EPSG%3A4326%27%29+AND+%28ruta_num+IS+NOT+NULL+OR+via_nombre+ILIKE+%27%25RUTA+81%25%27%29&maxFeatures=5000",
+          "sha256": "fdeb8a0f07a11f2f27f1c1921b5f1a43caf0eb55cd82f44992a87752b25eb581",
+          "featuresDownloaded": 294,
+          "metadataUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/529ae824-1b11-434d-92fd-7a6205a573c6"
+        }
+      ],
+      "note": "Centerline positions are geographic. Displayed widths and vertical offsets are scenic; not navigation or permission to travel."
+    },
+    "widthNote": "15 to 17 m display width interpreted as small-channel landscape detail, not a water-edge survey.",
+    "plane": [0.0056655, 0.0140897, 0.260301],
+    "planeNote": "Linear display grade fitted to coarse DEM along documented centerline footprint; not surveyed water level or hydraulic model."
+  }
+}

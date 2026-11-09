@@ -1,3 +1,5 @@
+import { applyPhotoMetadata } from './photo-resolution.js';
+
 export function initCore(c) {
   const DATA = JSON.parse(document.getElementById('page-data').textContent);
   const ASSETS = JSON.parse(document.getElementById('client-assets').textContent);
@@ -17,13 +19,31 @@ export function initCore(c) {
       .toLowerCase();
   const icon = (name) => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
   const placeURL = (id) => `/lugares/${byId.get(Number(id)).slug}/`;
-  const photo = (key) => ASSETS[key] || ASSETS.panorama;
+  const photo = (key) => {
+    if (!ASSETS[key]) throw new Error(`Fotografía desconocida: ${key}`);
+    return ASSETS[key];
+  };
   const documented = 'Consultá accesos, horarios y reservas con cada lugar antes de viajar.';
   const refText = (text) => esc(text);
-  const imageCaption = (p) => (p.imageContext ? 'Paisaje de las sierras de Lavalleja' : p.name);
+  const imageCaption = (p) => p.photoCaption || p.name;
+  const photoInfo = (key) => DATA.photos[key];
+  const photoAttributes = (key) => {
+    const info = photoInfo(key);
+    return info
+      ? `data-photo-fit="${esc(info.fit)}" data-photo-kind="${esc(info.kind)}" data-photo-key="${esc(info.key)}" data-photo-width="${info.width}" data-photo-height="${info.height}" style="--photo-width:${info.width}px;--photo-height:${info.height}px" ${info.srcset ? `srcset="${esc(info.srcset)}" sizes="320px"` : ''}`
+      : '';
+  };
+  const photoCredit = (key) => {
+    const info = photoInfo(key);
+    return info
+      ? `<p class="photo-credit">${info.label ? `<strong>${esc(info.label)}.</strong> ` : ''}${esc(info.credit)}. <a href="${esc(info.auditUrl)}">Ver fuente${info.kind === 'restored' ? ' y foto original' : ''} ↗</a></p>`
+      : '';
+  };
   function hydratePhotos(root = document) {
     $$('img[data-photo]', root).forEach((img) => {
       img.src = photo(img.dataset.photo);
+      const info = photoInfo(img.dataset.photo);
+      applyPhotoMetadata(img, info);
       img.removeAttribute('data-photo');
       img.decoding = 'async';
     });
@@ -66,6 +86,9 @@ export function initCore(c) {
     documented: { configurable: true, get: () => documented },
     refText: { configurable: true, get: () => refText },
     imageCaption: { configurable: true, get: () => imageCaption },
+    photoInfo: { configurable: true, get: () => photoInfo },
+    photoAttributes: { configurable: true, get: () => photoAttributes },
+    photoCredit: { configurable: true, get: () => photoCredit },
     hydratePhotos: { configurable: true, get: () => hydratePhotos },
     toastTimer: {
       configurable: true,

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Photo from '../../components/brand/Photo.astro';
+import PhotoCredit from '../../components/brand/PhotoCredit.astro';
 import { articles } from '../../data/stories';
 import type { GeologicalStory } from '../../types/geopark';
 import { breadcrumbs } from '../../lib/seo';
@@ -22,7 +23,7 @@ const { story, slug } = Astro.props;
   description={story.lead}
   structuredData={[
     breadcrumbs([
-      { name: 'Inicio', path: '/' },
+      { name: 'Inicio', path: '/inicio/' },
       { name: 'Historias', path: '/historias/' },
       { name: story.title, path: `/historias/${slug}/` },
     ]),
@@ -30,7 +31,7 @@ const { story, slug } = Astro.props;
 >
   <article class="editorial-page story-page">
     <nav class="breadcrumbs" aria-label="Ubicación">
-      <a href="/">Inicio</a> / <a href="/historias/">Historias</a>
+      <a href="/inicio/">Inicio</a> / <a href="/historias/">Historias</a>
     </nav>
     <p class="eyebrow">{story.eyebrow}</p>
     <h1>{story.title}</h1>
@@ -43,6 +44,7 @@ const { story, slug } = Astro.props;
       loading="eager"
       fetchpriority="high"
     />
+    <PhotoCredit assetKey={story.image} />
     <div class="article-reading">
       {story.sections.map(([heading, text]) => (
         <section>

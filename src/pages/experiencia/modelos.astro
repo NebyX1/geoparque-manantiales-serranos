@@ -1,0 +1,127 @@
+---
+import PortalLayout from '../../layouts/PortalLayout.astro';
+import { places } from '../../data/geosites';
+import { modelNote, modelSources } from '../../data/model-credits';
+---
+
+<PortalLayout
+  title="Fuentes del territorio y las miniaturas · Manantiales Serranos"
+  description="Referencias y créditos de la cartografía, el relieve y las miniaturas de la experiencia inmersiva."
+  clientNavigation={false}
+>
+  <main>
+    <a href="/experiencia/" data-astro-reload>
+      ← Volver a la experiencia
+    </a>
+    <p class="eyebrow">MANANTIALES SERRANOS</p>
+    <h1>El territorio y sus referencias.</h1>
+    <p>
+      El suelo sigue el límite oficial del geoparque. El relieve utiliza elevaciones globales con
+      una exageración vertical de seis veces para hacerlo legible. Las casas y sus salas son
+      espacios virtuales de exploración.
+    </p>
+    <h2>Cartografía y materiales</h2>
+    <ul>
+      <li>
+        Límite, geositios, cauces y rutas: <a href="https://visualizador.ide.uy/">IDE Uruguay</a>,
+        información de la Intendencia de Lavalleja y organismos participantes. Las coordenadas y su
+        precisión se detallan en cada ficha.
+      </li>
+      <li>
+        Elevaciones:{' '}
+        <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md">
+          Mapzen / Tilezen Terrain Tiles y sus fuentes
+        </a>
+        ; GMTED2010/SRTM cortesía de USGS y ETOPO1 de NOAA. Datos globales que no resuelven todos
+        los detalles locales.
+      </li>
+      <li>
+        Cauce de referencia de Laguna de los Cuervos: ©{' '}
+        <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors, ODbL 1.0</a>.
+      </li>
+    </ul>
+    <p>
+      Las fotografías externas se consultaron como referencias de forma y materiales. No se
+      incorporan como texturas ni se redistribuyen. Las caras no documentadas se simplifican sin
+      inventar elementos característicos.
+    </p>
+    <h2>Miniaturas, lugar por lugar</h2>
+    <div class="sources">
+      {places.map((place) => (
+        <section id={`gms-${place.id}`}>
+          <p class="eyebrow">GMS / {String(place.id).padStart(2, '0')}</p>
+          <h3>{place.name}</h3>
+          <p>{modelNote(place.id)}</p>
+          <ul>
+            {modelSources(place.id).map((url, index) => (
+              <li>
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  Referencia {index + 1} · {new URL(url).hostname} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a href={`/lugares/${place.slug}/`}>Leer la ficha del lugar ↗</a>
+        </section>
+      ))}
+    </div>
+  </main>
+</PortalLayout>
+<style>
+  :global(body) {
+    background: #102b27;
+    color: #d8e7dd;
+  }
+  main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 24px 100px;
+  }
+  a {
+    color: #b9e8cb;
+    text-underline-offset: 4px;
+  }
+  h1 {
+    font:
+      800 clamp(40px, 7vw, 75px)/1.05 'Barlow Condensed',
+      sans-serif;
+    max-width: 780px;
+  }
+  h2 {
+    margin-top: 45px;
+    font-size: 24px;
+  }
+  p,
+  li {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  li {
+    margin: 10px 0;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #a6c7a4;
+    margin-top: 35px;
+  }
+  .sources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 20px;
+  }
+  section {
+    border: 1px solid #89ab9244;
+    padding: 20px;
+    background: #729b7b0b;
+  }
+  section .eyebrow {
+    margin-top: 0;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  section > a {
+    font-size: 12px;
+  }
+</style>

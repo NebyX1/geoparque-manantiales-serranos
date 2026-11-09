@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Photo from '../../components/brand/Photo.astro';
+import { placeById } from '../../data/geosites';
+import { placePhotoInventory, editorialPhotoInventory, photoLabel } from '../../data/place-photos';
+const photos = [...placePhotoInventory, ...editorialPhotoInventory];
+---
+
+<BaseLayout
+  title="Fotografías y fuentes · Manantiales Serranos"
+  description="Procedencia de las imágenes del Geoparque, fotografías aéreas y comparación de las restauraciones con sus originales."
+>
+  <article class="editorial-page">
+    <p class="eyebrow">El territorio, con referencias</p>
+    <h1>Fotografías y fuentes.</h1>
+    <p class="lead">
+      Las imágenes del sitio web y del recorrido inmersivo comparten esta selección de los 61
+      lugares.
+    </p>
+    <p>
+      Cuando no contamos con una fotografía terrestre identificada, mostramos una fotografía aérea
+      de IDE de 2017–2018. Las restauraciones con IA están señaladas y conservan la imagen de
+      referencia para compararlas: interpretan textura fina y no documentan cambios actuales del
+      lugar.
+    </p>
+    <ul class="photo-audit-list">
+      {photos.map((photo) => {
+        const place = placeById.get(photo.id)!;
+        return (
+          <li id={photo.key} class="photo-audit-item">
+            <div>
+              <Photo
+                assetKey={photo.key}
+                alt={photo.alt}
+                class="photo-audit-image"
+                sizes="(max-width: 620px) 90vw, 460px"
+              />
+              {'originalPhotoUrl' in photo && photo.originalPhotoUrl && (
+                <details class="photo-audit-original">
+                  <summary>Comparar con la fotografía original</summary>
+                  <a href={photo.originalPhotoUrl} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={photo.originalPhotoUrl}
+                      alt={`Fotografía original de referencia: ${place.name}`}
+                      loading="lazy"
+                    />
+                  </a>
+                </details>
+              )}
+            </div>
+            <div>
+              <p class="eyebrow">
+                GMS-{String(photo.id).padStart(2, '0')}
+                {photo.key === 'aguas' ? ' · portada' : ''}
+              </p>
+              <h2>
+                <a href={`/lugares/${place.slug}/`}>{place.name}</a>
+              </h2>
+              {photoLabel(photo) && <strong class="photo-label">{photoLabel(photo)}</strong>}
+              <p>{photo.caption}</p>
+              <p>
+                <strong>Crédito:</strong> {photo.credit}.
+              </p>
+              <p>{photo.evidence}</p>
+              {photo.limitations && <p>{photo.limitations}</p>}
+              <p>
+                <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer">
+                  Consultar la fuente ↗
+                </a>
+                {photo.licenseUrl && (
+                  <>
+                    {' '}
+                    ·{' '}
+                    <a href={photo.licenseUrl} target="_blank" rel="noopener noreferrer">
+                      {photo.license}
+                    </a>
+                  </>
+                )}
+              </p>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  </article>
+</BaseLayout>

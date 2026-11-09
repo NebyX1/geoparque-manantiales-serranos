@@ -74,8 +74,8 @@ export function initDialogs(c) {
       ? `<a class="btn outline" href="${c.esc(p.channel.url)}" target="_blank" rel="noopener noreferrer">${c.esc(p.channel.label)} ${c.icon('arrow')}</a>`
       : '';
     c.$('#place-dialog-content').innerHTML =
-      `<div class="detail-hero"><img src="${c.photo(p.image)}" alt="${c.esc(c.imageCaption(p))}"><span class="detail-photo-caption">${c.esc(c.imageCaption(p))}</span></div>
-      <div class="detail-main"><div class="eyebrow">${c.esc(p.categoryRaw)}${p.international ? ' · Valor científico internacional' : ''}</div><h3 class="detail-title">${c.esc(p.name)}</h3><p class="detail-tagline">${c.esc(p.tagline)}</p>
+      `<div class="detail-hero"><img src="${c.photo(p.image)}" alt="${c.esc(c.imageCaption(p))}" ${c.photoAttributes(p.image)}><span class="detail-photo-caption">${c.esc(c.imageCaption(p))}</span></div>
+      <div class="detail-main">${c.photoCredit(p.image)}<div class="eyebrow">${c.esc(p.categoryRaw)}${p.international ? ' · Valor científico internacional' : ''}</div><h3 class="detail-title">${c.esc(p.name)}</h3><p class="detail-tagline">${c.esc(p.tagline)}</p>
       <div class="detail-grid"><div class="detail-body"><p class="detail-description">${c.esc(p.summary)}</p><h3>Una historia para descubrir</h3>${bodyHTML}
       ${moreHTML ? `<details class="detail-more"><summary>Seguí conociendo este lugar ↓</summary>${moreHTML}</details>` : ''}
       ${surrounding.length ? `<h3>Más cerca de acá</h3><div class="related-items">${surrounding.map((q) => `<a href="${c.placeURL(q.id)}">${c.esc(q.name)} ↗</a>`).join('')}</div>` : ''}</div>
@@ -88,7 +88,7 @@ export function initDialogs(c) {
     if (!a) return;
     c.$('#article-dialog-title').textContent = a.eyebrow;
     c.$('#article-content').innerHTML =
-      `<img class="reading-image" src="${c.photo(a.image)}" alt="Paisaje y vida de Manantiales Serranos"><h3 class="article-title">${c.esc(a.title)}</h3><p class="lead">${c.esc(a.lead)}</p>${a.sections.map(([heading, text]) => `<h3>${c.esc(heading)}</h3><p>${c.esc(text)}</p>`).join('')}<a class="text-link" href="#explorar">Seguí descubriendo el Geoparque ${c.icon('arrow')}</a>`;
+      `<img class="reading-image" src="${c.photo(a.image)}" alt="${c.esc(c.photoInfo(a.image).alt)}" ${c.photoAttributes(a.image)}>${c.photoCredit(a.image)}<h3 class="article-title">${c.esc(a.title)}</h3><p class="lead">${c.esc(a.lead)}</p>${a.sections.map(([heading, text]) => `<h3>${c.esc(heading)}</h3><p>${c.esc(text)}</p>`).join('')}<a class="text-link" href="#explorar">Seguí descubriendo el Geoparque ${c.icon('arrow')}</a>`;
     openDialog('article-dialog');
   }
   function openRoute(id) {
@@ -96,7 +96,7 @@ export function initDialogs(c) {
     if (!r) return;
     c.$('#route-dialog-title').textContent = r.name;
     c.$('#route-content').innerHTML =
-      `<img class="reading-image" src="${c.photo(r.image)}" alt="${c.esc(r.imageContext ? 'Paisaje serrano de Lavalleja' : r.name)}"><p class="eyebrow">${r.days} ${r.days === 1 ? 'día' : 'días'} · ${c.esc(r.kicker)}</p><p class="dialog-subtitle" style="margin-top:18px">${c.esc(r.text)}</p><div class="article-reading">${r.blocks.map((b) => `<h3>Día ${b.day} · ${c.esc(b.title)}</h3><p>${c.esc(b.text)}</p><div class="related-items" style="margin:15px 0 25px">${b.ids.map((id) => `<a href="${c.placeURL(id)}">${c.esc(c.byId.get(id).name)} ↗</a>`).join('')}</div>`).join('')}</div><button class="btn" data-add-route="${r.id}">Guardar esta escapada ${c.icon('save')}</button><p class="visit-note" style="margin-top:20px">Coordiná reservas y accesos con los lugares que elijas visitar.</p>`;
+      `<img class="reading-image" src="${c.photo(r.image)}" alt="${c.esc(c.photoInfo(r.image).alt)}" ${c.photoAttributes(r.image)}>${c.photoCredit(r.image)}<p class="eyebrow">${r.days} ${r.days === 1 ? 'día' : 'días'} · ${c.esc(r.kicker)}</p><p class="dialog-subtitle" style="margin-top:18px">${c.esc(r.text)}</p><div class="article-reading">${r.blocks.map((b) => `<h3>Día ${b.day} · ${c.esc(b.title)}</h3><p>${c.esc(b.text)}</p><div class="related-items" style="margin:15px 0 25px">${b.ids.map((id) => `<a href="${c.placeURL(id)}">${c.esc(c.byId.get(id).name)} ↗</a>`).join('')}</div>`).join('')}</div><button class="btn" data-add-route="${r.id}">Guardar esta escapada ${c.icon('save')}</button><p class="visit-note" style="margin-top:20px">Coordiná reservas y accesos con los lugares que elijas visitar.</p>`;
     openDialog('route-dialog');
   }
   function handleHash() {

@@ -3,52 +3,52 @@
     "original": "src/assets/images/hero/arequita-rio.webp",
     "path": "src/assets/images/hero/mobile/arequita-rio.webp",
     "crop": {
-      "left": 564,
+      "left": 1442,
       "top": 0,
-      "width": 671,
-      "height": 844
+      "width": 1719,
+      "height": 2162
     },
-    "bytes": 596904,
-    "sha256": "1568c9fd4f82695dcbdd8e8e2584c3913a487245a8badd340e6285ffcf3a4ff9",
+    "bytes": 3417556,
+    "sha256": "9a7aac214c8c8217c4381f55240776a1c12c695ed5cc45131fe64fb9d4bdf846",
     "pixelsPreserved": true
   },
   {
     "original": "src/assets/images/hero/aguas.webp",
     "path": "src/assets/images/hero/mobile/aguas.webp",
     "crop": {
-      "left": 798,
+      "left": 628,
       "top": 0,
-      "width": 1027,
-      "height": 1291
+      "width": 748,
+      "height": 941
     },
-    "bytes": 581986,
-    "sha256": "76434cf5f9f1dba3fa7686a10dcd3b7243cdf26e7bd0aba95a49bb3b199978b7",
+    "bytes": 798986,
+    "sha256": "c49d2bfe8ac7b2e3f81ac19a2a654efea6aaa8598f068a1ab55fd5a91a1d05af",
     "pixelsPreserved": true
   },
   {
     "original": "src/assets/images/hero/salus.webp",
     "path": "src/assets/images/hero/mobile/salus.webp",
     "crop": {
-      "left": 577,
+      "left": 1227,
       "top": 0,
-      "width": 1193,
-      "height": 1500
+      "width": 2035,
+      "height": 2560
     },
-    "bytes": 1777278,
-    "sha256": "c60fd03ce00a83cea4263a1f639e7924ab8780ce735b18cd374ccee71a45e0c2",
+    "bytes": 3980076,
+    "sha256": "177ca4d2ccbe4a09fc6c5853607c5b92fa279640c295a533ab0b201901f004bd",
     "pixelsPreserved": true
   },
   {
     "original": "src/assets/images/hero/parque.webp",
     "path": "src/assets/images/hero/mobile/parque.webp",
     "crop": {
-      "left": 888,
+      "left": 876,
       "top": 0,
-      "width": 894,
-      "height": 1124
+      "width": 647,
+      "height": 813
     },
-    "bytes": 946212,
-    "sha256": "9cffb6b4d69295175daac54a6f4a2cbda34bad1dde97c82c8c799861948f5002",
+    "bytes": 865166,
+    "sha256": "15795d6041f1c134844f4f8e26a1f603388e7bdf2886cf317f66f8a8b3739995",
     "pixelsPreserved": true
   }
 ]

@@ -18,7 +18,7 @@ test('capturas del prototipo y migración en todos los tamaños y pantallas baja
     await page.setViewportSize({ width, height: 900 });
     for (const [label, origin] of [
       ['reference', 'http://127.0.0.1:4323/'],
-      ['astro', 'http://127.0.0.1:4321/'],
+      ['astro', 'http://127.0.0.1:4321/inicio/'],
     ]) {
       await page.goto(origin!);
       await page.evaluate(() => document.fonts.ready);
@@ -73,7 +73,7 @@ test('capturas del prototipo y migración en todos los tamaños y pantallas baja
     { width: 844, height: 390 },
   ]) {
     await page.setViewportSize(viewport);
-    await page.goto('/');
+    await page.goto('/inicio/');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(
       true,
     );
@@ -88,7 +88,7 @@ test('capturas del prototipo y migración en todos los tamaños y pantallas baja
     reducedMotion: 'reduce',
   });
   const zoomPage = await zoomContext.newPage();
-  await zoomPage.goto('http://127.0.0.1:4321/');
+  await zoomPage.goto('http://127.0.0.1:4321/inicio/');
   await zoomPage.evaluate(async () => {
     await document.fonts.ready;
     await document.querySelector<HTMLImageElement>('img[fetchpriority="high"]')?.decode();
@@ -97,5 +97,89 @@ test('capturas del prototipo y migración en todos los tamaños y pantallas baja
     true,
   );
   await zoomPage.screenshot({ path: `${directory}/astro-zoom-200.png` });
+  await zoomContext.close();
+});
+
+test('entrada y experiencia: 320–1920, landscape, pantalla baja y zoom 200%', async ({
+  page,
+  browser,
+  browserName,
+}) => {
+  test.skip(browserName !== 'chromium', 'Las capturas visuales se generan una vez en Chromium.');
+  test.setTimeout(240_000);
+  const directory = 'test-results/experience-visual';
+  mkdirSync(directory, { recursive: true });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  const viewports = [
+    ...[320, 360, 390, 430, 768, 1024, 1280, 1440, 1920].map((width) => ({
+      width,
+      height: 900,
+    })),
+    { width: 390, height: 540 },
+    { width: 844, height: 390 },
+  ];
+  for (const viewport of viewports) {
+    await page.setViewportSize(viewport);
+    await page.goto('/');
+    await page.evaluate(async () => {
+      await document.fonts.ready;
+      await Promise.allSettled([...document.images].map((image) => image.decode()));
+    });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(
+      true,
+    );
+    await expect(page.locator('a[href="/inicio/"]').first()).toBeVisible();
+    await expect(page.locator('a[href="/experiencia/"]').first()).toBeVisible();
+    await page.screenshot({
+      path: `${directory}/entrada-${viewport.width}x${viewport.height}.png`,
+      animations: 'disabled',
+      fullPage: true,
+    });
+    await page.locator('a[href="/experiencia/"]').first().click();
+    await expect(page.locator('[data-experience]')).toHaveAttribute('data-state', 'ready');
+    await page.locator('#experience-places-toggle').click();
+    await page.locator('[data-place-travel="1"]').click();
+    const panel = page.locator('[data-holo-panel="1"]');
+    await expect(panel).toBeVisible();
+    const box = await panel.boundingBox();
+    expect(box).not.toBeNull();
+    expect(box!.x).toBeGreaterThanOrEqual(0);
+    expect(box!.y).toBeGreaterThanOrEqual(0);
+    expect(box!.x + box!.width).toBeLessThanOrEqual(viewport.width + 1);
+    expect(box!.y + box!.height).toBeLessThanOrEqual(viewport.height + 1);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(
+      true,
+    );
+    await page.screenshot({
+      path: `${directory}/experiencia-${viewport.width}x${viewport.height}.png`,
+      animations: 'disabled',
+    });
+  }
+
+  const zoomContext = await browser.newContext({
+    viewport: { width: 640, height: 450 },
+    deviceScaleFactor: 2,
+    reducedMotion: 'reduce',
+  });
+  const zoomPage = await zoomContext.newPage();
+  for (const [name, route] of [
+    ['entrada', '/'],
+    ['experiencia', '/experiencia/'],
+  ]) {
+    await zoomPage.goto(`http://127.0.0.1:4321${route}`);
+    if (route === '/experiencia/') {
+      await expect(zoomPage.locator('[data-experience]')).toHaveAttribute('data-state', 'ready');
+      await zoomPage.locator('#experience-places-toggle').click();
+      await zoomPage.locator('[data-place-travel="1"]').click();
+      await expect(zoomPage.locator('[data-holo-panel="1"]')).toBeVisible();
+    }
+    expect(await zoomPage.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(
+      true,
+    );
+    await zoomPage.screenshot({
+      path: `${directory}/${name}-zoom-200.png`,
+      fullPage: route === '/',
+    });
+  }
   await zoomContext.close();
 });

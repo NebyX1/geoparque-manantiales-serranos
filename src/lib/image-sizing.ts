@@ -1,9 +1,26 @@
 import type { ImageMetadata } from 'astro';
 
 export function responsiveWidths(width: number): number[] {
-  return [...new Set([320, 640, 960, 1280, 1920, Math.min(1920, width)])]
-    .filter((candidate) => candidate <= width)
+  const maximum = Math.min(3840, width);
+  return [...new Set([320, 640, 960, 1280, 1600, 1920, 2560, 3200, maximum])]
+    .filter((candidate) => candidate <= maximum)
     .sort((a, b) => a - b);
+}
+
+/** Cover consumes the entire scaled image, including the pixels cropped off-screen. */
+export function storyPhotoSizes(asset: Pick<ImageMetadata, 'width' | 'height'>): string {
+  const ratio = asset.width / asset.height;
+  const scale = (frameRatio: number) => Math.max(1, ratio / frameRatio) * 1.04;
+  const mobile = scale(1.48),
+    narrow = scale(0.85),
+    tablet = scale(1.1),
+    desktop = scale(1.35);
+  return [
+    `(max-width: 620px) ${(100 * mobile).toFixed(3)}vw`,
+    `(max-width: 900px) ${(50 * narrow).toFixed(3)}vw`,
+    `(max-width: 1100px) ${(50 * tablet).toFixed(3)}vw`,
+    `min(${(50 * desktop).toFixed(3)}vw, ${(698 * desktop).toFixed(3)}px)`,
+  ].join(', ');
 }
 
 // object-fit: cover scales a landscape by height on a tall viewport. Its

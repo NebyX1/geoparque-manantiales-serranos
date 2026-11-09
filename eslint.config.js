@@ -12,6 +12,7 @@ export default [
       'playwright-report/**',
       'test-results/**',
       'docs/reference/**',
+      'reports/experience-review/**',
     ],
   },
   eslint.configs.recommended,

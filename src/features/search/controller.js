@@ -17,14 +17,14 @@ export function initSearch(c) {
       subset
         .map(
           (p) =>
-            `<li><a href="${c.placeURL(p.id)}"><img src="${c.photo(p.image)}" alt=""><span><strong>${c.esc(p.name)}</strong><small>${c.esc(p.region)} · ${c.esc(p.status)}</small></span>${c.icon('arrow')}</a></li>`,
+            `<li><a href="${c.placeURL(p.id)}"><img src="${c.photo(p.image)}" alt="" ${c.photoAttributes(p.image)}><span><strong>${c.esc(p.name)}</strong><small>${c.esc(p.region)} · ${c.esc(p.status)}</small></span>${c.icon('arrow')}</a></li>`,
         )
         .join('') +
       articles
         .slice(0, 3)
         .map(
           ([key, a]) =>
-            `<li><a href="/historias/${key}/"><img src="${c.photo(a.image)}" alt=""><span><strong>${c.esc(a.title)}</strong><small>Historia · ${c.esc(a.eyebrow)}</small></span>${c.icon('arrow')}</a></li>`,
+            `<li><a href="/historias/${key}/"><img src="${c.photo(a.image)}" alt="" ${c.photoAttributes(a.image)}><span><strong>${c.esc(a.title)}</strong><small>Historia · ${c.esc(a.eyebrow)}</small></span>${c.icon('arrow')}</a></li>`,
         )
         .join('');
     if (!subset.length && !articles.length)

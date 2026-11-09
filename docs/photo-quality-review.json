@@ -1,0 +1,846 @@
+{
+  "reviewedAt": "2026-11-08",
+  "scope": "normal website and immersive experience",
+  "reviewer": "Codex visual/source review; no independent reviewer asserted",
+  "counts": {
+    "photograph": 36,
+    "aerial": 13,
+    "restored": 11,
+    "video-frame": 1
+  },
+  "editorialRestorations": 2,
+  "photos": [
+    {
+      "id": 1,
+      "key": "gms-01",
+      "file": "src/assets/images/places/gms-01.webp",
+      "sha256": "8cc45367905b4d3a684ec7c0421d84a154731e97f7d9a5820b23d2c85a63c72d",
+      "kind": "photograph",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cerro_arequita.jpg",
+      "decision": "accepted",
+      "basis": "Fotografía Cerro_arequita.jpg de Bienflorencia: descripción, fecha 15/11/2012, original 4320 × 2432 y licencia publicados en Wikimedia Commons. Se usa su derivado nativo de 3840 × 2162, sin ampliación.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 1,
+        "key": "gms-01-restored",
+        "file": "src/assets/images/places/gms-01-restored.webp",
+        "sha256": "8c92ab18a5f45479d1b8b61344116f11ea7ac9903186047a005667c8a5b375c0",
+        "kind": "restored",
+        "sourcePage": "https://www.gub.uy/ministerio-ambiente/politicas-y-gestion/parque-nacional-arequita",
+        "decision": "accepted",
+        "basis": "Perfil tabular de riolita, paredón y río del original aportado, contrastados con la fotografía del Parque Nacional en Ministerio de Ambiente; la autoría del original aportado no se atribuye al Ministerio. Restauración revisada a partir de la misma referencia identificada; se conserva la identidad y composición general.",
+        "review": "docs/photo-definition.md",
+        "previousAcceptance": {
+          "id": 1,
+          "key": "gms-01",
+          "file": "src/assets/images/places/gms-01.webp",
+          "sha256": "88f375475659d4f62516845f81244db0fa67ea26db05acb14a631cf73e3c7587",
+          "kind": "photograph",
+          "sourcePage": "https://www.gub.uy/ministerio-ambiente/politicas-y-gestion/parque-nacional-arequita",
+          "decision": "accepted",
+          "basis": "Perfil tabular de riolita, paredón y río del original aportado, contrastados con la fotografía del Parque Nacional en Ministerio de Ambiente; la autoría del original aportado no se atribuye al Ministerio."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "key": "gms-02",
+      "file": "src/assets/images/places/gms-02.webp",
+      "sha256": "4d416bb02dfafd1c55e85025fdca70ba862c3877fb24e7d0f821abcc36f45df7",
+      "kind": "photograph",
+      "sourcePage": "https://www.uruguaypordentro.uy/post/cerro-del-cura",
+      "decision": "accepted",
+      "basis": "La publicación identifica Cerro del Cura y su fortín en la cima; misma loma y edificio de la fotografía original 4000×3000. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 2,
+        "key": "gms-02",
+        "file": "src/assets/images/places/gms-02.webp",
+        "sha256": "06f8f20af92efc0311664d331f3e705a891b86b99963f3109c343865a279bb3d",
+        "kind": "photograph",
+        "sourcePage": "https://www.uruguaypordentro.uy/post/cerro-del-cura",
+        "decision": "accepted",
+        "basis": "La publicación identifica Cerro del Cura y su fortín en la cima; misma loma y edificio de la fotografía original 4000×3000."
+      }
+    },
+    {
+      "id": 3,
+      "key": "gms-03",
+      "file": "src/assets/images/places/gms-03.webp",
+      "sha256": "fe5c73296792b22ee8dc7a631cec53a4268704938d6e543256d54267b1ba1274",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.33642186, -55.17216365; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 4,
+      "key": "gms-04",
+      "file": "src/assets/images/places/gms-04.webp",
+      "sha256": "b31853ab1afebe07e6fd4989a0c3630019b77217bfe13f0072b3d29b2f106f06",
+      "kind": "photograph",
+      "sourcePage": "https://ppduruguay.undp.org.uy/portfolio-items/gestion-ambiental-en-las-nacientes-del-santa-lucia-un-desafio-en-pro-del-desarrollo-rural-sustentable/",
+      "decision": "accepted",
+      "basis": "El reportaje identifica expresamente las nacientes: depresión herbácea con hilo de agua. No se reutiliza la antigua foto de un arroyo ancho."
+    },
+    {
+      "id": 5,
+      "key": "gms-05",
+      "file": "src/assets/images/places/gms-05.webp",
+      "sha256": "2972a7f2600791f28334c7973715cffc14c576081127142c878cac2a9d5abd22",
+      "kind": "photograph",
+      "sourcePage": "https://www.eldestacamento.com/casa-de-campo/",
+      "decision": "accepted",
+      "basis": "Fachada de la casa de campo publicada por el propio establecimiento El Destacamento."
+    },
+    {
+      "id": 6,
+      "key": "gms-06",
+      "file": "src/assets/images/places/gms-06.webp",
+      "sha256": "7480b4b8db841f5e9fa3e3cf0208155c09a8b6b04fcaa7bf5c4e5ce4f708114b",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.15803445, -54.95444236; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 7,
+      "key": "gms-07",
+      "file": "src/assets/images/places/gms-07.webp",
+      "sha256": "b3051d54a45699259e47a458620c20fc1b59ba135affb093940f83284e94aa77",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.08607833, -54.71728336; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 8,
+      "key": "gms-08",
+      "file": "src/assets/images/places/gms-08.webp",
+      "sha256": "167af02912f02c0854ae31b5d8e89045033803c76843b5c02934a30c57eedc5e",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.24748528, -54.97210666; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 9,
+      "key": "gms-09",
+      "file": "src/assets/images/places/gms-09.webp",
+      "sha256": "e17f8250e45e31593bc42baa7894d5555d36b38d22f9ab5a354e6d4d4fcc41be",
+      "kind": "photograph",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_Serrana_(218241731).jpeg",
+      "decision": "accepted",
+      "basis": "Archivo Commons clasificado en Represa Stewart Vargas; se reconocen el vertedero curvo, pilares y embalse de Villa Serrana. Se conserva la marca de agua."
+    },
+    {
+      "id": 10,
+      "key": "gms-10",
+      "file": "src/assets/images/places/gms-10.webp",
+      "sha256": "7ee3612659ece969cdf91b7ba83c1583fcfffdd7fa94d2dcbbe231d2cbf2c681",
+      "kind": "photograph",
+      "sourcePage": "https://www.elpais.com.uy/el-empresario/villa-serrana-un-destino-de-paseo-que-se-disfruta-tambien-en-verano",
+      "decision": "accepted",
+      "basis": "Foto de Mesón de las Cañas identificada en el reportaje; cubierta, ventanales y terraza coinciden con las fotografías patrimoniales del edificio. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 10,
+        "key": "gms-10",
+        "file": "src/assets/images/places/gms-10.webp",
+        "sha256": "907b6c354f6f3ce84cd9e73b9417ab46ff47ecc73963ec41b3441f770a482804",
+        "kind": "photograph",
+        "sourcePage": "https://www.elpais.com.uy/el-empresario/villa-serrana-un-destino-de-paseo-que-se-disfruta-tambien-en-verano",
+        "decision": "accepted",
+        "basis": "Foto de Mesón de las Cañas identificada en el reportaje; cubierta, ventanales y terraza coinciden con las fotografías patrimoniales del edificio."
+      }
+    },
+    {
+      "id": 11,
+      "key": "gms-11",
+      "file": "src/assets/images/places/gms-11.webp",
+      "sha256": "6ab9c8171e0ac9545563571bbb1f96b03ccc63521d742bf74637b9ffb32d3781",
+      "kind": "photograph",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ventorrillo_de_la_Buena_Vista_1.jpg",
+      "decision": "accepted",
+      "basis": "Archivo Commons identificado y geolocalizado como Ventorrillo de la Buena Vista."
+    },
+    {
+      "id": 12,
+      "key": "gms-12",
+      "file": "src/assets/images/places/gms-12.webp",
+      "sha256": "95358d4bbf5c4da6fab368b72880553a8532d4f9028f277d4210289f568c0344",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.32590061, -54.99025689; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 13,
+      "key": "gms-13",
+      "file": "src/assets/images/places/gms-13.webp",
+      "sha256": "fe471f8874ef08931da088ee606bcf8aa3a9013cb0b1a9b64fef3c5e3b5ec4f3",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.43206364, -54.98299066; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 14,
+      "key": "gms-14",
+      "file": "src/assets/images/places/gms-14.webp",
+      "sha256": "c3d0a11ecb5f63c4a4f45c2e970bb42eccc739169b4c12905f52e964024f5115",
+      "kind": "photograph",
+      "sourcePage": "https://www.elpais.com.uy/bienestar/descanso/viajes-y-paseos/mucho-mas-que-salto-del-penitente-una-guia-de-increibles-cascadas-y-saltos-de-agua-en-uruguay",
+      "decision": "accepted",
+      "basis": "La fotografía y su pie nombran Salto del Penitente en Uruguay y acreditan a Tatiana Scherz Brener. Se obtuvo el original 3024×2201. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 14,
+        "key": "gms-14",
+        "file": "src/assets/images/places/gms-14.webp",
+        "sha256": "92ded9ba03e15d0382471f9f4d6fd9662634075e5aa4b4e0393872dcb2553e29",
+        "kind": "photograph",
+        "sourcePage": "https://www.elpais.com.uy/bienestar/descanso/viajes-y-paseos/mucho-mas-que-salto-del-penitente-una-guia-de-increibles-cascadas-y-saltos-de-agua-en-uruguay",
+        "decision": "accepted",
+        "basis": "La fotografía y su pie nombran Salto del Penitente en Uruguay y acreditan a Tatiana Scherz Brener. Se obtuvo el original 3024×2201."
+      }
+    },
+    {
+      "id": 15,
+      "key": "gms-15",
+      "file": "src/assets/images/places/gms-15.webp",
+      "sha256": "6028815ca23e7eb0749364f0db0eee71ce3a5f2289e5f14e58a32fc28173c344",
+      "kind": "photograph",
+      "sourcePage": "https://fefobouvier.com/en/blogs/look-at-the-stars/parque-salto-del-penitente?page=2",
+      "decision": "accepted",
+      "basis": "Fotografía original con pie que identifica Campanero en el relato de acceso al Parque Salto del Penitente; no se infiere un acceso al cerro ni una cota del catálogo."
+    },
+    {
+      "id": 16,
+      "key": "gms-16",
+      "file": "src/assets/images/places/gms-16.webp",
+      "sha256": "7f893982ed6273163fa4fad7ade14cfe3ef6ce1031fbcfa4c6d4909cb0af680b",
+      "kind": "photograph",
+      "sourcePage": "https://www.gub.uy/unidad-reguladora-servicios-energia-agua/comunicacion/noticias/ursea-realizo-auditorias-planes-seguridad-del-agua",
+      "decision": "accepted",
+      "basis": "Foto de la represa de OSE publicada por URSEA con motivo de las auditorías de seguridad del agua: pasarela y baranda amarilla coincidentes."
+    },
+    {
+      "id": 17,
+      "key": "gms-17-restored",
+      "file": "src/assets/images/places/gms-17-restored.webp",
+      "sha256": "061ba266ce8759d89a53cc47f381783e8234cda9fe0c95ce119355619c473227",
+      "kind": "restored",
+      "sourcePage": "https://parquedeminas.uy/",
+      "decision": "accepted",
+      "basis": "Galería del operador Parque de Minas; vista general de los edificios, piscinas y bosque del establecimiento. Restauración revisada a partir de la misma referencia identificada; se conserva la identidad y composición general.",
+      "review": "docs/photo-definition.md",
+      "previousAcceptance": {
+        "id": 17,
+        "key": "gms-17",
+        "file": "src/assets/images/places/gms-17.webp",
+        "sha256": "81c6cd892692fba03b5499405a7ae8cac9a3939620a35bc4ec33887254397925",
+        "kind": "photograph",
+        "sourcePage": "https://parquedeminas.uy/",
+        "decision": "accepted",
+        "basis": "Galería del operador Parque de Minas; vista general de los edificios, piscinas y bosque del establecimiento."
+      }
+    },
+    {
+      "id": 18,
+      "key": "gms-18",
+      "file": "src/assets/images/places/gms-18.webp",
+      "sha256": "37c20530d0a8e536783f2f32dfffc83bbaef117cd51aa7497a8989027c0564ea",
+      "kind": "photograph",
+      "sourcePage": "https://www.elpais.com.uy/domingo/cueva-amarilla-en-lavalleja-estudios-confirman-que-fue-refugio-de-los-primeros-pobladores-hace-12-400-anos",
+      "decision": "accepted",
+      "basis": "Reportaje de Cueva Amarilla: imagen exterior del alero y sus bloques, no una cueva genérica. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 18,
+        "key": "gms-18",
+        "file": "src/assets/images/places/gms-18.webp",
+        "sha256": "bb96e03ad3d2962e6bf3eca711413de64c35a8b635970119073d332d37d75647",
+        "kind": "photograph",
+        "sourcePage": "https://www.elpais.com.uy/domingo/cueva-amarilla-en-lavalleja-estudios-confirman-que-fue-refugio-de-los-primeros-pobladores-hace-12-400-anos",
+        "decision": "accepted",
+        "basis": "Reportaje de Cueva Amarilla: imagen exterior del alero y sus bloques, no una cueva genérica."
+      }
+    },
+    {
+      "id": 19,
+      "key": "gms-19",
+      "file": "src/assets/images/places/gms-19.webp",
+      "sha256": "da997fe525baca5777476a0d6db25198b9a94934c8e3b4c0c0a7816998b1e356",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.47126321, -55.20503071; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 20,
+      "key": "gms-20",
+      "file": "src/assets/images/places/gms-20.webp",
+      "sha256": "4f97d906f33ea9260115da97f9410bd1dbd261c4699ae5932332c6a0ea1a5b21",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.50823849, -55.23647327; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 21,
+      "key": "gms-21",
+      "file": "src/assets/images/places/gms-21.webp",
+      "sha256": "166aa4da749b61189e8b3f4702687a7b60188c995bd23be90708ceff22af461d",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.51877897, -55.32593709; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 22,
+      "key": "gms-22",
+      "file": "src/assets/images/places/gms-22.webp",
+      "sha256": "e64c48c93d07f15f578f87ee7fcbce41f96244c633d89424fbf560e231a2a303",
+      "kind": "photograph",
+      "sourcePage": "https://budismo.com.uy/galeria/",
+      "decision": "accepted",
+      "basis": "Detalle del altar de Sengue Dzong publicado en la galería oficial, serie 2008–2009; no es una imagen de otro templo budista."
+    },
+    {
+      "id": 23,
+      "key": "gms-23",
+      "file": "src/assets/images/places/gms-23.webp",
+      "sha256": "d60ca878721da4d13f89fa0ea522901517b9007f371f2ef85bc06ae8756c3b9c",
+      "kind": "photograph",
+      "sourcePage": "https://es.wikiloc.com/rutas-senderismo/represa-vieja-aguas-blancas-176055821",
+      "decision": "accepted",
+      "basis": "Ruta documentada Represa Vieja Aguas Blancas con fotografías del cauce de la represa antigua junto al entorno del campamento."
+    },
+    {
+      "id": 24,
+      "key": "gms-24",
+      "file": "src/assets/images/places/gms-24.webp",
+      "sha256": "1812be0380c64403a424631e58ac3a7c5dd7049ad84d768df637609c02311b49",
+      "kind": "photograph",
+      "sourcePage": "https://www.diariolaunion.com/2025/02/08/08-02-2025-la-intendencia-de-lavalleja-inauguro-las-cabanas-del-camping-aguas-blancas/",
+      "decision": "accepted",
+      "basis": "Fotografía original 1600×1067 de la entrada de una cabaña, publicada en el reportaje de inauguración del Camping Aguas Blancas en 2025. Se usa el original, no su miniatura."
+    },
+    {
+      "id": 25,
+      "key": "gms-25",
+      "file": "src/assets/images/places/gms-25.webp",
+      "sha256": "d940e1dd0f69458f9e74a31a5689d27bcba4d7dda9861f28e0d9977c81693f41",
+      "kind": "photograph",
+      "sourcePage": "https://www.flickr.com/photos/al_cantarilla/7873157200",
+      "decision": "accepted",
+      "basis": "Fotografía identificada Cerro La Caperuza por el autor: roca grande de coronación y bloques inferiores. Se conserva su firma."
+    },
+    {
+      "id": 26,
+      "key": "gms-26",
+      "file": "src/assets/images/places/gms-26.webp",
+      "sha256": "cfd9c60f5b04000989d15e1ef07d8fc9bcece7a714501f6755439247adfa3c66",
+      "kind": "photograph",
+      "sourcePage": "https://gl.wikiloc.com/rutas-sendeirismo/solis-de-mataojo-111687588",
+      "decision": "accepted",
+      "basis": "Fotografía del puente y cauce del recorrido de Parque Mataojo en Solís; referencia del itinerario publicado, no un parque de Montevideo."
+    },
+    {
+      "id": 27,
+      "key": "gms-27",
+      "file": "src/assets/images/places/gms-27.webp",
+      "sha256": "af6cef5e3ed64e0386810f8ba08fe336f6d3718563b9b214672f4087834c114a",
+      "kind": "photograph",
+      "sourcePage": "https://diarioprimerapagina.blogspot.com/2016/08/solis-festejo-lo-grande.html",
+      "decision": "accepted",
+      "basis": "Reportaje de Solís que identifica Casa de la Cultura, fachada y acto en el establecimiento."
+    },
+    {
+      "id": 28,
+      "key": "gms-28-restored",
+      "file": "src/assets/images/places/gms-28-restored.webp",
+      "sha256": "34be523cc45c59089aeb32816714f13cf2d87b05c75bd89f5f956c177402f393",
+      "kind": "restored",
+      "sourcePage": "https://anaforas.fic.edu.uy/jspui/bitstream/123456789/71435/1/Liceos%20del%20Uruguay.pdf",
+      "decision": "accepted",
+      "basis": "Foto de la sede Cuna de Fabini en el catálogo de liceos de CES; se preserva la época de la fuente y se indica restauración generativa."
+    },
+    {
+      "id": 29,
+      "key": "gms-29",
+      "file": "src/assets/images/places/gms-29.webp",
+      "sha256": "2b2ada605813e272f4aa70eba2d864945ac9857f302e3c7dd8ef3a67d6b38036",
+      "kind": "photograph",
+      "sourcePage": "https://serrano.uy/tristeza-y-esperanza-el-corte-de-palmeras-en-la-plaza-lazaro-cabrera-de-solis-de-mataojo/",
+      "decision": "accepted",
+      "basis": "La publicación de 2026 identifica la plaza como Lázaro Cabrera y documenta la retirada de palmeras. Se conserva el nombre canónico Cortés con la discrepancia explicada."
+    },
+    {
+      "id": 30,
+      "key": "gms-30",
+      "file": "src/assets/images/places/gms-30.webp",
+      "sha256": "6f79230f7eb7b47137367f7a4b03c50a4ff71a6e9c28ed334993cdb0d771f365",
+      "kind": "photograph",
+      "sourcePage": "https://www.gub.uy/intendencia-lavalleja/comunicacion/noticias/se-inauguro-nueva-cancha-cesped-sintetico-solis-mataojo",
+      "decision": "accepted",
+      "basis": "Galería IDL de la inauguración de cancha sintética en la Plaza de Deportes de Solís de Mataojo."
+    },
+    {
+      "id": 31,
+      "key": "gms-31",
+      "file": "src/assets/images/places/gms-31.webp",
+      "sha256": "8c45e14319752873c346fae38e530fad9ab7e4e8d425ce1133d870b47837bc10",
+      "kind": "photograph",
+      "sourcePage": "https://www.gub.uy/presidencia/comunicacion/noticias/orsi-visito-reserva-natural-salus-su-planta-produccion-aguas-minas",
+      "decision": "accepted",
+      "basis": "Imagen original 5472×3648 de Fuente del Puma publicada por Presidencia en la visita a la reserva Salus, 2025. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 31,
+        "key": "gms-31",
+        "file": "src/assets/images/places/gms-31.webp",
+        "sha256": "e8de7f92030079d7b9af09240666787031691675e2d7cfd74a223a423d944e33",
+        "kind": "photograph",
+        "sourcePage": "https://www.gub.uy/presidencia/comunicacion/noticias/orsi-visito-reserva-natural-salus-su-planta-produccion-aguas-minas",
+        "decision": "accepted",
+        "basis": "Imagen original 5472×3648 de Fuente del Puma publicada por Presidencia en la visita a la reserva Salus, 2025."
+      }
+    },
+    {
+      "id": 32,
+      "key": "gms-32",
+      "file": "src/assets/images/places/gms-32.webp",
+      "sha256": "f08f9a80c15d40a89d69251f7b911a4525ee663fc8bc1038693954886e991e1e",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.40025661, -55.28836597; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 33,
+      "key": "gms-33",
+      "file": "src/assets/images/places/gms-33.webp",
+      "sha256": "ba4982a8963d90640137337834c2b7e9cb0d8b8af36cace0f08ee3b089c52347",
+      "kind": "photograph",
+      "sourcePage": "https://catedraldeminas.com/verdun",
+      "decision": "accepted",
+      "basis": "El sitio del propio Santuario identifica su vista general, globo azul, monumento blanco y senderos."
+    },
+    {
+      "id": 34,
+      "key": "gms-34",
+      "file": "src/assets/images/places/gms-34.webp",
+      "sha256": "04122fabb0c1db433720fbf3b34f724d17283921af0fe821126630b6ecd75934",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.37318523, -55.27755362; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 35,
+      "key": "gms-35",
+      "file": "src/assets/images/places/gms-35.webp",
+      "sha256": "b0b9d79f80645177272f1300c00298510222ac928209c87e959e6be03ff95ece",
+      "kind": "photograph",
+      "sourcePage": "https://www.opp.gub.uy/sites/default/files/noticias/2024-05/fgr01.jpg",
+      "decision": "accepted",
+      "basis": "Fotografía OPP del edificio recuperado de la ex estación AFE y Centro Cultural Ángel Ugarte."
+    },
+    {
+      "id": 36,
+      "key": "gms-36",
+      "file": "src/assets/images/places/gms-36.webp",
+      "sha256": "9b1333eb38220a909f686fab5c1a6339f5c6c52a737a95f9e321d71235b363b2",
+      "kind": "photograph",
+      "sourcePage": "https://www.diariolaunion.com/2024/10/21/21-10-2023-en-la-falda-del-cerro-artigas-fue-inaugurado-el-museo-stellio-belloni/",
+      "decision": "accepted",
+      "basis": "Fotos de inauguración del Museo Belloni al pie del Cerro Artigas en 2024. No se mantiene la foto anterior de artesanía genérica. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 36,
+        "key": "gms-36",
+        "file": "src/assets/images/places/gms-36.webp",
+        "sha256": "40d819129eae7bc918038a4e1e142194382cfb1ef583fa23de9e86826b93ec23",
+        "kind": "photograph",
+        "sourcePage": "https://www.diariolaunion.com/2024/10/21/21-10-2023-en-la-falda-del-cerro-artigas-fue-inaugurado-el-museo-stellio-belloni/",
+        "decision": "accepted",
+        "basis": "Fotos de inauguración del Museo Belloni al pie del Cerro Artigas en 2024. No se mantiene la foto anterior de artesanía genérica."
+      }
+    },
+    {
+      "id": 37,
+      "key": "gms-37",
+      "file": "src/assets/images/places/gms-37.webp",
+      "sha256": "5763c259d532076c96e6b1edd3b51ada8a1dfc74344c2ca5f024005308c25997",
+      "kind": "photograph",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Escuela_N%C2%B0_1_Artigas_(2).jpg",
+      "decision": "accepted",
+      "basis": "Archivo Commons Escuela N°1 Artigas (2), nombre y fachada de Minas documentados; autor Spazolot."
+    },
+    {
+      "id": 38,
+      "key": "gms-38",
+      "file": "src/assets/images/places/gms-38.webp",
+      "sha256": "d52235c3f32a1ceca9865d8dfd149982879b29bc40a7db7653cfb306f5736f57",
+      "kind": "photograph",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:School_N%C2%B08_Guillermo_Cuadri.jpg",
+      "decision": "accepted",
+      "basis": "Archivo Commons School N°8 Guillermo Cuadri, con autoría Spazolot y localización en Minas. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 38,
+        "key": "gms-38",
+        "file": "src/assets/images/places/gms-38.webp",
+        "sha256": "8ca508bc6f83feff611faa1cc210f9000ea8f169efe58658072017501fe2d561",
+        "kind": "photograph",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:School_N%C2%B08_Guillermo_Cuadri.jpg",
+        "decision": "accepted",
+        "basis": "Archivo Commons School N°8 Guillermo Cuadri, con autoría Spazolot y localización en Minas."
+      }
+    },
+    {
+      "id": 39,
+      "key": "gms-39",
+      "file": "src/assets/images/places/gms-39.webp",
+      "sha256": "b0805aeacf35e58844f281490aacc072fa7a97881416795b2ad507f995c6fd3d",
+      "kind": "photograph",
+      "sourcePage": "https://github.com/NebyX1/nueva-web-turismo-idl/blob/08a03e8060cce0e90e4c3662feed377f4b9c4622/public/media/eb7a5d7ba6a26aa0.webp",
+      "decision": "accepted",
+      "basis": "La fotografía aportada con el proyecto de Turismo muestra el monumento de Lavalleja y su pedestal rosado en Plaza Libertad; contrastado con Commons Monumento a Lavalleja en la Plaza Principal de Minas. No se atribuye esta foto a Galizbet."
+    },
+    {
+      "id": 40,
+      "key": "gms-40",
+      "file": "src/assets/images/places/gms-40.webp",
+      "sha256": "8cb99361ecb6758ce77dd142111717d86fb445fe4a374a38538e6b802b81b8da",
+      "kind": "photograph",
+      "sourcePage": "https://www.elpais.com.uy/negocios/125-anos-de-una-historia-enlazada-con-la-de-uruguay",
+      "decision": "accepted",
+      "basis": "Foto del local de Confitería Irisarri en el reportaje de sus 125 años; cartel y fachada identificables."
+    },
+    {
+      "id": 41,
+      "key": "gms-41",
+      "file": "src/assets/images/places/gms-41.webp",
+      "sha256": "0fed597afaaaff599f17176070bf707133bf43c1be23229bcaf21726fba592e4",
+      "kind": "photograph",
+      "sourcePage": "https://colletlacoste.com/projects/catedral-inmaculada-concepcion-minas/",
+      "decision": "accepted",
+      "basis": "Fotografía del estudio que intervino la Catedral de la Inmaculada Concepción de Minas; torre con reloj y cúpula reconocibles."
+    },
+    {
+      "id": 42,
+      "key": "gms-42-restored",
+      "file": "src/assets/images/places/gms-42-restored.webp",
+      "sha256": "451c829d5ead2c8e3d281a09b16a01a19cb24fbf38def47b9985690d050e707b",
+      "kind": "restored",
+      "sourcePage": "https://www.elpais.com.uy/vida-actual/un-recorrido-por-minas-a-traves-de-su-cultura-y-sus-riquezas-literarias",
+      "decision": "accepted",
+      "basis": "Patio de Casa de la Cultura con casa natal de Lavalleja conservada: esquina de ladrillo visto, faroles y macetas de la foto original."
+    },
+    {
+      "id": 43,
+      "key": "gms-43-restored",
+      "file": "src/assets/images/places/gms-43-restored.webp",
+      "sha256": "2431e7fd48d12a42f75e8f838530be45f3aaa47ca0148688523d99f9129c1775",
+      "kind": "restored",
+      "sourcePage": "https://www.waze.com/es/live-map/directions/cementerio-central-minas?to=place.w.199755184.1997355234.12034398",
+      "decision": "accepted",
+      "basis": "La ficha de Waze identifica el Cementerio Central Minas; se contrastó el pórtico Art Déco escalonado con arco estrecho y cruz, sin sustituirlo por el Cementerio del Este."
+    },
+    {
+      "id": 44,
+      "key": "gms-44",
+      "file": "src/assets/images/places/gms-44.webp",
+      "sha256": "121fe93d9cff040ba50bd67c6571484bb942dec3e1c07eb42574ff4157cc18c5",
+      "kind": "video-frame",
+      "sourcePage": "https://sierrasdeminas.com.uy/museo/",
+      "decision": "accepted",
+      "basis": "Fotograma del vídeo alojado por el propio Museo del Alfajor, con el nombre del establecimiento visible; no es una foto de alfajores genéricos."
+    },
+    {
+      "id": 45,
+      "key": "gms-45",
+      "file": "src/assets/images/places/gms-45.webp",
+      "sha256": "7555a0ccaec6073a8db6ffee158ba502943e5f9b34a1e9f823bf9e97d2a8f9a6",
+      "kind": "photograph",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Teatro_Lavalleja.JPG",
+      "decision": "accepted",
+      "basis": "Archivo Commons Teatro Lavalleja.JPG, fachada del teatro de Minas y autor Mevrob. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 45,
+        "key": "gms-45",
+        "file": "src/assets/images/places/gms-45.webp",
+        "sha256": "acdecd2c444f92483888d31ae581192841b5472d696d47fb89db22b0e1e3e4c5",
+        "kind": "photograph",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Teatro_Lavalleja.JPG",
+        "decision": "accepted",
+        "basis": "Archivo Commons Teatro Lavalleja.JPG, fachada del teatro de Minas y autor Mevrob."
+      }
+    },
+    {
+      "id": 46,
+      "key": "gms-46",
+      "file": "src/assets/images/places/gms-46.webp",
+      "sha256": "f639cc7aac83e1bea8c65b6021728da73095b33511e49f21bfa1bfb7c24b9343",
+      "kind": "photograph",
+      "sourcePage": "https://commons.wikimedia.org/wiki/Category:Cerro_Artigas,_Lavalleja",
+      "decision": "accepted",
+      "basis": "Monumento ecuestre de Cerro Artigas del archivo aportado, con la silueta y el pedestal contrastados con la galería fotográfica del monumento."
+    },
+    {
+      "id": 47,
+      "key": "gms-47",
+      "file": "src/assets/images/places/gms-47.webp",
+      "sha256": "378cbf4f925da398cfc7740b1e85c861f014be446809c087d91676c5c0d3a6e3",
+      "kind": "photograph",
+      "sourcePage": "https://www.diariolaunion.com/wp-content/uploads/2022/12/casa_curbelo_Baez2-1024x576.jpg",
+      "decision": "accepted",
+      "basis": "Reportaje local de Casa Curbelo Báez, dos vistas del edificio de esquina y su torre octogonal. Se recuperó el archivo de mayor resolución disponible de la misma fotografía; entrega sin ampliación del bitmap.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 47,
+        "key": "gms-47",
+        "file": "src/assets/images/places/gms-47.webp",
+        "sha256": "125a65d9fcc2cd98b4fd4c16f80aa9bf3ed693e22a6f07bb8b6080d6d1af95b3",
+        "kind": "photograph",
+        "sourcePage": "https://www.diariolaunion.com/wp-content/uploads/2022/12/casa_curbelo_Baez2-1024x576.jpg",
+        "decision": "accepted",
+        "basis": "Reportaje local de Casa Curbelo Báez, dos vistas del edificio de esquina y su torre octogonal."
+      }
+    },
+    {
+      "id": 48,
+      "key": "gms-48",
+      "file": "src/assets/images/places/gms-48.webp",
+      "sha256": "be2e602bc01a5df7e560582c7266bc313c7005796449e81a23264c743615e571",
+      "kind": "photograph",
+      "sourcePage": "https://colletlacoste.com/projects/parroquia-santa-teresita-minas/",
+      "decision": "accepted",
+      "basis": "Fotografía de Parroquia Santa Teresita de Minas publicada por el estudio interviniente, sin confundirla con la Catedral."
+    },
+    {
+      "id": 49,
+      "key": "gms-49",
+      "file": "src/assets/images/places/gms-49.webp",
+      "sha256": "eba6deb453c3ab82decd976ae036ab0eaf6debd4818010f6c5261bf0c9483aa1",
+      "kind": "photograph",
+      "sourcePage": "https://turismominaslavalleja.blogspot.com/2017/05/parque-rodo.html",
+      "decision": "accepted",
+      "basis": "La nota municipal Parque Rodó de Minas identifica expresamente su acceso. No corresponde al parque homónimo de Montevideo."
+    },
+    {
+      "id": 50,
+      "key": "gms-50-restored",
+      "file": "src/assets/images/places/gms-50-restored.webp",
+      "sha256": "43e0f3e2d1e975080dde8092a5d678780b4b3ef785427e29129913641091aaba",
+      "kind": "restored",
+      "sourcePage": "https://relcomlatinoamerica.net/sicoms/gruta-arequita/",
+      "decision": "accepted",
+      "basis": "RELCOM identifica Gruta de Arequita/Colón: fisura alta estrecha y escalones de la fotografía; se preserva la persona distante."
+    },
+    {
+      "id": 51,
+      "key": "gms-51-restored",
+      "file": "src/assets/images/places/gms-51-restored.webp",
+      "sha256": "23b230cdf631b65a0c074c879be5ad2a9e4dbe3f115756e610017cc177461ae2",
+      "kind": "restored",
+      "sourcePage": "https://www.welt-erleben.ch/2016/11/05/cerro-arequitas-fauna-flora/",
+      "decision": "accepted",
+      "basis": "Crónica del bosque de Arequita con foto de la base de ombú y piedras; conserva exactamente la masa de raíces y la composición de la imagen base."
+    },
+    {
+      "id": 52,
+      "key": "gms-52",
+      "file": "src/assets/images/places/gms-52.webp",
+      "sha256": "d9a7d2050a56b7547ca262126bd34db16b48be9269ce8487ffa48523e9220f31",
+      "kind": "photograph",
+      "sourcePage": "https://www.lagunadeloscuervos.com.uy/entorno/",
+      "decision": "accepted",
+      "basis": "Fotografía ENTORNO-7 publicada en la galería del operador Laguna de los Cuervos; muestra el río y su borde arbolado."
+    },
+    {
+      "id": 53,
+      "key": "gms-53",
+      "file": "src/assets/images/places/gms-53.webp",
+      "sha256": "5a06769aed14536c0394c3d705a9c65d2a374f60af6e9cff6405e55db12e2f1d",
+      "kind": "photograph",
+      "sourcePage": "https://campingarequita.uy/",
+      "decision": "accepted",
+      "basis": "Reportaje específico de Camping Arequita; piscina curva y rotonda central coinciden con el establecimiento, no con Laguna de los Cuervos."
+    },
+    {
+      "id": 54,
+      "key": "gms-54",
+      "file": "src/assets/images/places/gms-54.webp",
+      "sha256": "2091d9b16ebbb617e5601811c55017cacd3311c5436aaf585b85c4ac4f160ff2",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.3223672, -54.9893614; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 55,
+      "key": "gms-55-restored",
+      "file": "src/assets/images/places/gms-55-restored.webp",
+      "sha256": "6bc1057adc4223b9fe83ddf0858632346f24c63cbd3604f028ae6293131a448c",
+      "kind": "restored",
+      "sourcePage": "https://laguarida.com.uy/",
+      "decision": "accepted",
+      "basis": "Fotografía del operador La Guarida con el circuito de tablas suspendidas, cables y visitante; no se presenta como otro puente del geoparque."
+    },
+    {
+      "id": 56,
+      "key": "gms-56-restored",
+      "file": "src/assets/images/places/gms-56-restored.webp",
+      "sha256": "63f91c04f50285dd460d365d37e909a50dcfa9cbb06419dc6d726389bcf89d60",
+      "kind": "restored",
+      "sourcePage": "https://experienciasvillaserrana.com.uy/st_tour/mangas-de-piedra/",
+      "decision": "accepted",
+      "basis": "Restauración del recorte 4:3 de la fotografía del operador. Se conservan seis visitantes, muros, senda y horizonte; se interpreta textura fina y no constituye una nueva toma.",
+      "review": "docs/photo-resolution.md",
+      "previousAcceptance": {
+        "id": 56,
+        "key": "gms-56",
+        "file": "src/assets/images/places/gms-56.webp",
+        "sha256": "29418384274c5733a570345fc6f205b625089600a4785c0b1d9866906f03e9be",
+        "kind": "photograph",
+        "sourcePage": "https://experienciasvillaserrana.com.uy/st_tour/mangas-de-piedra/",
+        "decision": "accepted",
+        "basis": "Fotografía de las estructuras de piedra en la galería de la excursión Mangas de Piedra del operador Experiencias Villa Serrana."
+      }
+    },
+    {
+      "id": 57,
+      "key": "gms-57",
+      "file": "src/assets/images/places/gms-57.webp",
+      "sha256": "f3ae081add53613cad9a70dc51b559f2693ebffb0958bfc72d6e866f04b8f69e",
+      "kind": "aerial",
+      "sourcePage": "https://catalogodatos.gub.uy/dataset/ide-ortoimagen-mdt-de-cobertura-nacional",
+      "decision": "accepted",
+      "basis": "Fotografía aérea nacional 2017–2018, recorte WMS centrado en la referencia publicada -34.514587, -55.340159; bounds y URL exactos conservados. Contraste con la capa oficial de geositios y la ortofoto sin rótulos ni perspectiva generada."
+    },
+    {
+      "id": 58,
+      "key": "gms-58",
+      "file": "src/assets/images/places/gms-58.webp",
+      "sha256": "bdff0fb7e50a99d5797eaab7687b5d45aec305d6ab3d6524199b1732b9fde431",
+      "kind": "photograph",
+      "sourcePage": "https://www.chungara.cl/Vols/2026/58/58202601_48_Saccone_y_Sotelo_Vol_58_e04826.pdf",
+      "decision": "accepted",
+      "basis": "Archivo Commons Cono truncado de piedra en Uruguay, clasificado en Valle del Hilo de la Vida; autor Mevrob, sin validar interpretaciones energéticas o arqueológicas."
+    },
+    {
+      "id": 59,
+      "key": "gms-59-restored",
+      "file": "src/assets/images/places/gms-59-restored.webp",
+      "sha256": "0a0105551e555ea312eeb4ec6165cb30be3618c61498299a33848bde024b54e6",
+      "kind": "restored",
+      "sourcePage": "https://www.cerromistico.com/",
+      "decision": "accepted",
+      "basis": "Foto identificada del alojamiento Cerro Místico: casa blanca de dos plantas, apoyos de piedra, balcón y ladera, idénticos a la base."
+    },
+    {
+      "id": 60,
+      "key": "gms-60-restored",
+      "file": "src/assets/images/places/gms-60-restored.webp",
+      "sha256": "c4870e2532abf7fb2734809b7fe75654d12cd041e2b43cac3dff9bb8f2429c86",
+      "kind": "restored",
+      "sourcePage": "https://www.museos.gub.uy/index.php/museos/museos-por-localidad/lavalleja/item/585-museo-de-replicas-en-miniaturas",
+      "decision": "accepted",
+      "basis": "Ficha institucional MEC Museo de Réplicas en Miniaturas de Horacio Chocho; robot rojo y cartelería del museo de Minas."
+    },
+    {
+      "id": 61,
+      "key": "gms-61-restored",
+      "file": "src/assets/images/places/gms-61-restored.webp",
+      "sha256": "8245804087ffb0b7dadfc5fcd251537a094b86d1d2425b78760af79fccad1e0d",
+      "kind": "restored",
+      "sourcePage": "https://www.museos.gub.uy/index.php/museos/museos-por-localidad/lavalleja/item/253-museo-del-molino-viejo",
+      "decision": "accepted",
+      "basis": "Ficha institucional MEC Museo del Molino Viejo; fotografía histórica del interior museístico con locomóvil. No se afirma que sea su estado actual."
+    },
+    {
+      "id": 23,
+      "key": "aguas",
+      "file": "src/assets/images/hero/aguas.webp",
+      "sha256": "43b29627ba85e71cfc09985f6816f8a247cc5f227b7351d62aca84674bb86e76",
+      "kind": "restored",
+      "sourcePage": "https://manantialesserranos.uy/aguas-blancas/",
+      "decision": "accepted",
+      "basis": "El archivo original del Geoparque identifica el embalse de Aguas Blancas. Se conserva el encuadre y la línea del horizonte; no es una fotografía nueva del lugar."
+    },
+    {
+      "id": 17,
+      "key": "parque-story",
+      "file": "src/assets/images/hero/parque-story.webp",
+      "sha256": "fceaacee7e42164c1aef2a84f58a065357522033282d5af7ee0584f8dba701c5",
+      "kind": "restored",
+      "sourcePage": "https://parquedeminas.uy/",
+      "decision": "accepted",
+      "basis": "Galería del operador Parque de Minas; vista general de los edificios, piscinas y bosque del establecimiento. Restauración revisada a partir de la misma referencia identificada; se conserva la identidad y composición general.",
+      "review": "docs/photo-definition.md",
+      "previousAcceptance": {
+        "id": 17,
+        "key": "gms-17-restored",
+        "file": "src/assets/images/places/gms-17-restored.webp",
+        "sha256": "061ba266ce8759d89a53cc47f381783e8234cda9fe0c95ce119355619c473227",
+        "kind": "restored",
+        "sourcePage": "https://parquedeminas.uy/",
+        "decision": "accepted",
+        "basis": "Galería del operador Parque de Minas; vista general de los edificios, piscinas y bosque del establecimiento. Restauración revisada a partir de la misma referencia identificada; se conserva la identidad y composición general.",
+        "review": "docs/photo-definition.md",
+        "previousAcceptance": {
+          "id": 17,
+          "key": "gms-17",
+          "file": "src/assets/images/places/gms-17.webp",
+          "sha256": "81c6cd892692fba03b5499405a7ae8cac9a3939620a35bc4ec33887254397925",
+          "kind": "photograph",
+          "sourcePage": "https://parquedeminas.uy/",
+          "decision": "accepted",
+          "basis": "Galería del operador Parque de Minas; vista general de los edificios, piscinas y bosque del establecimiento."
+        }
+      }
+    }
+  ],
+  "rejectedRestorations": ["gms-28 (first variant)", "gms-49"],
+  "validation": {
+    "status": "passed",
+    "command": "npm run verify",
+    "node": "22.22.3",
+    "astroFiles": 154,
+    "astroErrors": 0,
+    "astroWarnings": 0,
+    "unitTests": 50,
+    "seoTests": 3,
+    "browserTestsPassed": 67,
+    "browserTestsSkipped": 3,
+    "skips": "WebKit: cruceta táctil y dos suites visuales reservadas a Chromium",
+    "htmlPages": 83,
+    "photoResponsiveCaptures": 19,
+    "viewports": "320–1920 px, landscape, pantalla baja y equivalente de zoom 200%",
+    "sharedPhotoMismatches": 0,
+    "browserPageErrors": 0,
+    "photographicPortraitFit": "contain",
+    "immersivePhotoFilter": "none",
+    "approvedModelsUnchanged": 49,
+    "log": "reports/experience-review/photo-audit/verify-final.log",
+    "captures": "reports/experience-review/photo-audit/browser/"
+  },
+  "subsequentModelRevisions": [
+    {
+      "id": 8,
+      "scope": "Later user-requested stylization of the 3D miniature; photographic assets unchanged",
+      "review": "docs/marmaraja-visual-review.json",
+      "sha256": "5380c89d60bca34ae5d2833d311c72fd480893bc6e48126a4517b19fa910b4ca"
+    }
+  ],
+  "latestRevision": {
+    "date": "2026-11-09",
+    "scope": "Full-site resolution audit, recovered native originals, Mangas restoration and density-aware rendering",
+    "review": "docs/photo-resolution.md"
+  }
+}

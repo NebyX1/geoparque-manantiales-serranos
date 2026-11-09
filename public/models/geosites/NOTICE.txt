@@ -1,0 +1,28 @@
+Geoparque Manantiales Serranos — miniaturas
+
+Los cuatro GLB proceden del proyecto del usuario:
+https://github.com/NebyX1/nueva-web-turismo-idl
+Revisión: 08a03e8060cce0e90e4c3662feed377f4b9c4622
+
+Originales:
+assets/artigas/artigas-rebuilt.glb
+assets/penitente/penitente.glb
+assets/stewart-vargas/stewart-vargas.glb
+assets/parque-rodo/parque-rodo.glb
+
+Son reconstrucciones visuales estilizadas, no levantamientos métricos.
+Los GLB públicos conservan los bytes originales. La agrupación por material,
+la escala de miniatura y la animación de normales del agua se aplican en memoria.
+
+Artigas incorpora bases geométricas CC0:
+- Caballo: Lyndon Daniels, Realtime Rancher's 3D Model Pack.
+  https://opengameart.org/content/realtime-ranchers-3d-model-pack
+  Aviso original: HORSE-CC0.txt
+- Base humana: MakeHuman Community, hm08 y objetivos oficiales.
+  https://github.com/makehumancommunity/makehuman/blob/master/LICENSE.ASSETS.md
+  Aviso original: MAKEHUMAN-CC0.txt
+
+Las fotos de estudio y las texturas fotográficas del paquete del caballo
+no se distribuyen como parte de estas miniaturas.
+
+Procedencia, modificaciones y huellas: docs/model-provenance.md del repositorio.

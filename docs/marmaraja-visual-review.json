@@ -1,0 +1,167 @@
+{
+  "id": 8,
+  "reviewer": "/root/visual_quality_gate",
+  "reviewedAt": "2026-11-09T00:53:39.087626+00:00",
+  "verdict": "APROBADO",
+  "scope": "Nueva revisión visual de GMS-08 para la estilización lúdica solicitada: sugerir ligeramente un lagarto conservando lectura de cerro. No modifica ni extiende automáticamente el antiguo dictamen global o su hash.",
+  "authorizationBasis": "Instrucción explícita más reciente del usuario, transmitida por raíz: se permite la alusión sutil a lagarto sin exigir copia topográfica literal.",
+  "newAsset": {
+    "file": "public/models/geosites/rebuilt/gms-08.glb",
+    "bytes": 3361740,
+    "sha256": "5380c89d60bca34ae5d2833d311c72fd480893bc6e48126a4517b19fa910b4ca"
+  },
+  "previousAssetForComparison": {
+    "file": "reports/experience-review/marmaraja-lagarto/before-gms-08.glb",
+    "bytes": 3187332,
+    "sha256": "ce33cf034429fb3f01f6bd4f9016dc5ddea30f416e615dcc01849c906aea649f"
+  },
+  "previousHashApprovalNotReused": true,
+  "criteria": {
+    "subtleSuggestion": {
+      "status": "APROBADO",
+      "strength": "Muy tenue y contextual; más perceptible en plano y oblicua que al caminar o en móvil.",
+      "evidence": "Respecto del antes, se aprecia un extremo de cresta más alto/ensanchado que puede leerse como cabeza y una prolongación curva afinada que permite asociar una cola. Los salientes bajos apoyan esa pareidolia sin dibujar patas anatómicas. No debe describirse como un lagarto inequívoco a primera vista."
+    },
+    "naturalLandscape": {
+      "status": "APROBADO",
+      "evidence": "Predominan laderas continuas, cobertura vegetal y afloramientos; la nueva elevación se integra en la masa del cerro. No se observan ojos, boca, piel animal, extremidades articuladas ni una cabeza separada del terreno. La referencia aérea sigue siendo reconocible en las masas generales de cobertura, con estilización deliberada del relieve."
+    },
+    "geometryPresentation": {
+      "status": "APROBADO",
+      "evidence": "Frente, planta y perfil muestran volumen continuo, base íntegra y ausencia de grietas abiertas, elementos flotantes o intersecciones accidentales visibles. Los afloramientos escalonados se leen como roca estilizada en esta escala."
+    },
+    "desktopViewer": {
+      "status": "APROBADO",
+      "evidence": "after-inspect y after-detail conservan cuerpo/base completos y motivo libre del panel de título y herramientas. El cambio aumenta la legibilidad del relieve respecto de before-inspect. after-detail muestra una perspectiva oblicua, no un primerísimo plano de la cabeza; no se atribuye más evidencia de detalle de la que ofrece."
+    },
+    "mobileViewer": {
+      "status": "APROBADO",
+      "evidence": "after-mobile-inspect contiene miniatura y base completas a320px de ancho, sin oclusión por HUD. En ese tamaño domina la lectura de cerro; la alusión animal es débil. after-mobile-walk mantiene avatar y controles legibles; el escenario permite que parte de la miniatura quede fuera de pantalla al caminar, distinto de la Vista completa del inspector."
+    }
+  },
+  "requiredChanges": [],
+  "recommendation": "Presentable para entregar como alusión discreta al Cerro del Lagarto, con el énfasis en cerro natural. No afirmar reconocimiento animal evidente en móvil ni fidelidad de levantamiento topográfico de los rasgos añadidos.",
+  "views": [
+    {
+      "role": "reference",
+      "file": "src/assets/images/places/gms-08.webp",
+      "width": 1920,
+      "height": 1920,
+      "sha256": "167af02912f02c0854ae31b5d8e89045033803c76843b5c02934a30c57eedc5e",
+      "visuallyInspected": true
+    },
+    {
+      "role": "before-walk",
+      "file": "reports/experience-review/marmaraja-lagarto/before-walk.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f0cada50a89811da6f5195d1aa71a69aa7c618e6f19d9fd6d75de108a1187d2e",
+      "visuallyInspected": true
+    },
+    {
+      "role": "after-walk",
+      "file": "reports/experience-review/marmaraja-lagarto/after-walk.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "65508462d69e4485ac05b083c750608c4df7415128fe1981a2053b5773c1fef7",
+      "visuallyInspected": true
+    },
+    {
+      "role": "before-inspect",
+      "file": "reports/experience-review/marmaraja-lagarto/before-inspect.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "a09ce50a33f613434bdbbebdc3e1a9953dbb789047c6367044097ad607d45767",
+      "visuallyInspected": true
+    },
+    {
+      "role": "after-inspect",
+      "file": "reports/experience-review/marmaraja-lagarto/after-inspect.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "d24a998689c83400b0c5665dbe1812aac3dae6efa5e9ad4ec2b074882f51c2d7",
+      "visuallyInspected": true
+    },
+    {
+      "role": "before-detail",
+      "file": "reports/experience-review/marmaraja-lagarto/before-detail.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "fbc3f9fd11116e377ea220a9da13363244a500ff1cf06d766eec1f5926284f4c",
+      "visuallyInspected": true
+    },
+    {
+      "role": "after-detail",
+      "file": "reports/experience-review/marmaraja-lagarto/after-detail.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "c23d07219aedd9742486fe0a412371feaea01820636e70c0dc0905b521486818",
+      "visuallyInspected": true
+    },
+    {
+      "role": "after-mobile-inspect",
+      "file": "reports/experience-review/marmaraja-lagarto/after-mobile-inspect.png",
+      "width": 320,
+      "height": 900,
+      "sha256": "bb2eadff0fa5c2d79ec3d763d42b77fc02d6aff4092b4a8bbb6e682ae16ef04c",
+      "visuallyInspected": true
+    },
+    {
+      "role": "after-mobile-walk",
+      "file": "reports/experience-review/marmaraja-lagarto/after-mobile-walk.png",
+      "width": 320,
+      "height": 900,
+      "sha256": "743a200bc8d9cd3a0d6047e9c8972efa07d80b12485dad5482e97a604c3c6537",
+      "visuallyInspected": true
+    },
+    {
+      "role": "new-geometry-front",
+      "file": "reports/experience-review/rebuild-natural/gms-08-front.png",
+      "width": 720,
+      "height": 600,
+      "sha256": "1e0c5f1e371fbae736dae494be1eee6c9ee74d214f25ba3dc987ba8c866e2dbb",
+      "visuallyInspected": true
+    },
+    {
+      "role": "new-geometry-plan",
+      "file": "reports/experience-review/rebuild-natural/gms-08-plan.png",
+      "width": 720,
+      "height": 600,
+      "sha256": "04bea42ffa50f29fdd78a8b0109599e6936ae42154f89ea2412b9cb0e4c79251",
+      "visuallyInspected": true
+    },
+    {
+      "role": "new-geometry-profile",
+      "file": "reports/experience-review/rebuild-natural/gms-08-profile.png",
+      "width": 720,
+      "height": 600,
+      "sha256": "c9bef3e69b0afa24afa6bba54fabe6791ecb2568cc5bd07dacf462021026057c",
+      "visuallyInspected": true
+    }
+  ],
+  "verificationScope": "No se lanzaron navegadores ni suites; se inspeccionaron las12 imágenes listadas. Las pruebas funcionales y de build quedan a cargo de raíz, que ejecuta verify. Sólo se escribe este archivo, sin alterar modelos, código o ledgers.",
+  "budget": {
+    "triangles": 57278,
+    "drawCalls": 7,
+    "bytes": 3361740,
+    "previousTriangles": 55038,
+    "previousDrawCalls": 5,
+    "previousBytes": 3187332
+  },
+  "validation": {
+    "command": "npm run verify",
+    "status": "passed",
+    "node": "22.22.3",
+    "astroFiles": 155,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "unitTests": 50,
+    "seoTests": 3,
+    "browserTestsPassed": 67,
+    "browserTestsSkipped": 3,
+    "log": "reports/experience-review/marmaraja-lagarto/verify.log",
+    "postReviewMetadataCheck": "155 files; 0 errors, warnings and hints",
+    "builtAssetSha256": "5380c89d60bca34ae5d2833d311c72fd480893bc6e48126a4517b19fa910b4ca"
+  }
+}

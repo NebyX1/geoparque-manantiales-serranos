@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "id": 61,
+  "name": "Molino Viejo de Minas",
+  "reviewer": "visual_quality_gate",
+  "reviewedAtUtc": "2026-11-09T03:57:02.318716+00:00",
+  "status": "APROBADO",
+  "numericScoreAssigned": false,
+  "scope": "Revisión visual independiente del nuevo GMS-61 en seis renders offline y siete capturas reales de la experiencia. Cubre identidad, forma, materiales, integración y encuadres entregados; no certifica de nuevo los otros geositios ni reemplaza verify del proyecto.",
+  "blockingIssues": [],
+  "asset": {
+    "file": "public/models/geosites/rebuilt/gms-61.glb",
+    "sha256": "ce22c6c990794ef04ab85fa827ce5ac364d01a9e9223ed22fe47e30bca55d752",
+    "bytes": 3041576,
+    "trianglesReadFromGlb": 45260,
+    "primitiveCountReadFromGlb": 16,
+    "materialCountReadFromGlb": 16,
+    "embeddedImages": [
+      {
+        "name": "Molino - mottled grey beige tower original fine mineral normal",
+        "dimensions": [512, 512],
+        "embedded": true,
+        "mimeType": "image/png",
+        "sha256": "b999895c80bcf20f8d33a3fa057130765d9324be402032023d6f9fc2cf9d3694"
+      },
+      {
+        "name": "Molino - mottled grey beige tower original procedural albedo",
+        "dimensions": [512, 512],
+        "embedded": true,
+        "mimeType": "image/png",
+        "sha256": "5ba6a97cee6097046fa434d56f6de71e386a7b3cc2f692924a530db7c0871987"
+      },
+      {
+        "name": "Molino - curved aged mineral cap original fine mineral normal",
+        "dimensions": [512, 512],
+        "embedded": true,
+        "mimeType": "image/png",
+        "sha256": "b999895c80bcf20f8d33a3fa057130765d9324be402032023d6f9fc2cf9d3694"
+      },
+      {
+        "name": "Molino - curved aged mineral cap original procedural albedo",
+        "dimensions": [512, 512],
+        "embedded": true,
+        "mimeType": "image/png",
+        "sha256": "7ba281f3190f08ae09ec0704095604f34dda2add1c4aed55bb8a59dc9b51471a"
+      }
+    ],
+    "capturedAssetHashMatchesCurrentFile": true,
+    "previousAssetSha256": "d5e79b8e67edbcf0accf14710a5e79da26de0a5fc99c7289f8afaff8bba28d38",
+    "approvalNotInheritedFromPreviousAsset": true
+  },
+  "criteriaAndFindings": [
+    {
+      "criterion": "Silueta y proporciones",
+      "status": "CUMPLE",
+      "finding": "Torre gruesa ligeramente troncocónica, hombro hacia cuello corto, casquete redondeado sin aspas y nave rectangular de una planta. Conserva la relación torre/cuerpo bajo observable en las fotos de suelo y aéreas; las dimensiones son una interpretación visual.",
+      "references": [
+        "union-2026-02.jpg",
+        "union-2026-03.jpg",
+        "union-2026-06.jpg",
+        "union-2026-08.jpg",
+        "union-2026-09.jpg"
+      ]
+    },
+    {
+      "criterion": "Coronación",
+      "status": "CUMPLE",
+      "finding": "Grupos cortos de ventanas con marcos claros y paños minerales entre ellos, debajo de la cúpula curva. Se corrigió el anillo completamente acristalado de la primera ronda; no presenta almenas, cono ni tambor alto añadido.",
+      "references": ["union-2026-05.jpg", "union-2026-07.jpg"],
+      "limitation": "La distribución de cuatro grupos de tres paños es una simplificación escénica, no una cuenta métrica del edificio."
+    },
+    {
+      "criterion": "Vanos y carpinterías",
+      "status": "CUMPLE",
+      "finding": "Tres vanos alineados y recesados en la torre. Cuerpo bajo con frente de puerta y cuatro ventanas, lateral con ritmo de siete ventanas, jambas taupe anchas, carpintería rojiza, rejas oscuras y puerta de tablas. Los elementos se leen como piezas con espesor.",
+      "references": ["union-2026-02.jpg", "union-2026-03.jpg", "union-2026-08.jpg"]
+    },
+    {
+      "criterion": "Acabados y azotea",
+      "status": "CUMPLE",
+      "finding": "Fuste y casquete de tono mineral gris-beige rugoso, marcas horizontales amplias, cuerpo marfil, zócalo taupe y cubierta ocre con borde bajo claro. Evita las hiladas pequeñas y repetidas de piedra de la maqueta anterior. La iluminación de la experiencia vuelve los tonos algo más cálidos que el render de estudio.",
+      "references": [
+        "union-2026-02.jpg",
+        "union-2026-03.jpg",
+        "union-2026-07.jpg",
+        "union-2026-08.jpg"
+      ]
+    },
+    {
+      "criterion": "Integridad visible",
+      "status": "CUMPLE",
+      "finding": "Los seis renders corregidos y las vistas reales revisadas no muestran los parches negros de solapes anteriores en esquinas/jambas/zócalo, ni piezas flotantes o deformaciones graves evidentes. Cornisas y paños se unen de forma continua en las vistas inspeccionadas."
+    },
+    {
+      "criterion": "Integración en la experiencia",
+      "status": "CUMPLE",
+      "finding": "Desktop, oblique y low presentan el edificio y base completos. Walking permite reconocer torre, cubierta, acceso y volumen junto al personaje y al pedestal, sin añadir obra temporal a la maqueta."
+    },
+    {
+      "criterion": "Pantallas pequeñas",
+      "status": "CUMPLE",
+      "finding": "En 320x900, 844x390 y 640x450 el cuerpo y la base están completos, sin oclusión por HUD ni recorte visible. En 320 px es una miniatura completa pequeña; la captura no permite apreciar todos los detalles finos. El inspector conserva acercamiento manual, no ejercitado por este revisor en esta ronda."
+    }
+  ],
+  "referencePhotos": [
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-01.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_01.jpg",
+      "bytes": 74751,
+      "sha256": "06814cddbc817ca7196adda92fd048bfbf957c256cd06f8815e21fde7eb21a9b",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Vista desde el acceso: torre, cuerpo marfil, puerta de madera, rejas y grúa temporal.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-02.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_02.jpg",
+      "bytes": 98760,
+      "sha256": "8651d95b2ee33fd239c7082f08dd08fc19119936a9e8b8c8d606d3865f86515a",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Oblicua de dos fachadas: marfil, zócalo taupe, marcos taupe anchos, rejas/carpintería; torre con grandes juntas horizontales y cubierta curva.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-03.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_03.jpg",
+      "bytes": 84573,
+      "sha256": "b1b5fb4cdf805396b02197bc31476c8bfd163d5992ccf053dbfe041220aef657",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Fachada con puerta y escalones: dos ventanas a cada lado visibles; cornisas finas y luminarias. Torre detrás y andamios temporales.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-04.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_04.jpg",
+      "bytes": 77496,
+      "sha256": "80fad77508aba161eea73f15105d36f3657565f43cc88afaf0e6ba436b4a4aef",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Espacio exterior y nuevo muro de contención; torre al fondo, grúa temporal.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-05.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_05.jpg",
+      "bytes": 131223,
+      "sha256": "b4d44a20c316adf6036d1a0a4abcd383ed2269fba18cbeaee21b48b5775b485a",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Detalle en altura: cúpula curva en pintura parcial blanca; paños acristalados de marcos blancos bajo su borde, hojas abiertas; no acabado final.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-06.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_06.jpg",
+      "bytes": 140059,
+      "sha256": "9be63c44467052a02072059b6d0bbc58c2cbdd3ea73a1c1de4bb15d5d545ee8a",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Vista aérea general: molino diferenciado del liceo vecino, torre y edificio bajo, entrada y contexto de barrio.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-07.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_07.jpg",
+      "bytes": 132100,
+      "sha256": "87d7dcf4e0be89001a8c79f957b95bf6b067bf2c1f64a1ebd4a40c271610bace",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Detalle claro de cúpula redondeada, banda vidriada y cuello/hombro; superficie rugosa, pintura parcial; sin aspas.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-08.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_08.jpg",
+      "bytes": 122292,
+      "sha256": "86e972ad9bebf4f6c5abd3dba7683375ed1c95039eb8a7352c407fed03538909",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Aérea de planta: azotea ocre, parapeto blanco, torre y vanos verticales; entorno y obra temporal.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-09.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_09.jpg",
+      "bytes": 129953,
+      "sha256": "ea0672b78f2ccc732fff7a98fc0763720264dead839d5458e19582617c3c3a8e",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Aérea oblicua: proporción del cuerpo bajo, dos fachadas, torre y edificio vecino separado.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/references/union-2026-10.jpg",
+      "url": "https://www.diariolaunion.com/wp-content/uploads/2026/07/Molino_Viejo_010.jpg",
+      "bytes": 63172,
+      "sha256": "13d9c2a6c128d8f4cac5e33d93a98c82910e01d649bd5411ef7a6793f2ffcde4",
+      "publicationDate": "2026-07-09",
+      "captureDate": null,
+      "reviewed": true,
+      "observation": "Retrato del entrevistado; edificio desenfocado al fondo, sin utilidad para detalle geométrico.",
+      "scope": "Referencia visual para estudio; no se incorporó la fotografía al sitio ni se presume permiso de reutilización.",
+      "captureDateNote": "Fecha de captura no acreditada; sólo consta la asociación con la publicación de julio de 2026.",
+      "article": "https://www.diariolaunion.com/2026/07/09/obras/"
+    }
+  ],
+  "referenceScope": "Se inspeccionaron diez archivos de la galería de julio. Nueve muestran edificio, obra o entorno; la imagen10 es un retrato con fondo desenfocado y no se cuenta como ángulo geométrico independiente. Se utilizaron para estudio, sin copiar fotografías como texturas de la app.",
+  "additionalSources": [
+    {
+      "url": "https://serrano.uy/avanzan-las-obras-de-recuperacion-del-museo-molino-viejo/",
+      "publicationDate": "2026-07-13",
+      "captureDate": null,
+      "use": "Noticia de obra en ejecución e imagen real adicional inspeccionada: hidrolavado, reparación de revoques, pintura y espacios exteriores. No acredita finalización posterior."
+    },
+    {
+      "url": "https://www.gub.uy/intendencia-lavalleja/comunicacion/noticias/rendicion-cuentas-ano-para-ordenar-estar-cerca-poner-futuro-marcha-lavalleja",
+      "publicationDate": "2026-08-08",
+      "use": "Fuente primaria que enumera restauración del Molino Viejo entre las obras en ejecución. Su imagen de rendición de cuentas no se usó como referencia arquitectónica."
+    },
+    {
+      "file": "reports/experience-review/next-quality/references/61-idl-original-0-X73.jpg",
+      "use": "Foto histórica embebida en el Plan Local Minas2024, contrastada; su oscuridad y deterioro no se impusieron sobre las fotos recientes de obra."
+    }
+  ],
+  "offlineRenders": [
+    {
+      "file": "reports/experience-review/molino-viejo/renders/front.png",
+      "sha256": "c066a204d497b5b2686805ad8e3b7643d23971f9fab3ae451c681d384ce28f1d",
+      "bytes": 1082190,
+      "width": 1100,
+      "height": 900,
+      "visuallyInspected": true,
+      "unchangedSinceIndependentOfflineReview": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/renders/oblique.png",
+      "sha256": "2d3ac7a1e01c312187cd963f56b00a88d8d9e1080a4fac0c4d1f1bfee408d25e",
+      "bytes": 1119966,
+      "width": 1100,
+      "height": 900,
+      "visuallyInspected": true,
+      "unchangedSinceIndependentOfflineReview": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/renders/side.png",
+      "sha256": "fbbaca717e490c56536c09b050bf22bcc9e17678f1dc5e11ab721cf48167f6c9",
+      "bytes": 1058655,
+      "width": 1100,
+      "height": 900,
+      "visuallyInspected": true,
+      "unchangedSinceIndependentOfflineReview": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/renders/rear.png",
+      "sha256": "34f7442ecf5ea2a0268cc71c3a887045f4d3aba8892362c409177aa40c02e9d0",
+      "bytes": 1113672,
+      "width": 1100,
+      "height": 900,
+      "visuallyInspected": true,
+      "unchangedSinceIndependentOfflineReview": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/renders/plan.png",
+      "sha256": "fa1f2cccc727eed9c34bb9b412e2c2e8a8de105686211b9174bede03d236f777",
+      "bytes": 1003549,
+      "width": 1100,
+      "height": 900,
+      "visuallyInspected": true,
+      "unchangedSinceIndependentOfflineReview": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/renders/crown-detail.png",
+      "sha256": "5b306d1eab34a5cd862a08ac18cb296d111591c755a6b3840d5123d3b6547e08",
+      "bytes": 1113344,
+      "width": 1100,
+      "height": 900,
+      "visuallyInspected": true,
+      "unchangedSinceIndependentOfflineReview": true
+    }
+  ],
+  "realExperienceCaptures": [
+    {
+      "file": "reports/experience-review/molino-viejo/game/gms-61-desktop.png",
+      "sha256": "b10e2219b75ee77a7d4d7d40c8af785a14abdcaee1a0f742a2dc0da513d02a8b",
+      "bytes": 163746,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/game/gms-61-oblique.png",
+      "sha256": "65b5d9192c5ef93f3007a82addca3670f6c0111febb6821630649c0f85293933",
+      "bytes": 173461,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/game/gms-61-low.png",
+      "sha256": "d2366988d89b59ae3be745cfa41d737693292de967fd0605107d1fb2f196dd52",
+      "bytes": 178096,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/game/gms-61-walking.png",
+      "sha256": "dff54d8670d70bb1ef07bdba77d3b14a764704a3d01a9f12ab7a00264db63002",
+      "bytes": 254973,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/game/gms-61-320x900.png",
+      "sha256": "c3e524f1272b314d9f20128706dff44698d3b15026f2bb31443f4a4539426f63",
+      "bytes": 60526,
+      "width": 320,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/game/gms-61-844x390.png",
+      "sha256": "1b39edea76e05c05aaf2b412e090e7691c8bfe6d545d2e95340b4fb2817f5b77",
+      "bytes": 62972,
+      "width": 844,
+      "height": 390,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/game/gms-61-640x450.png",
+      "sha256": "dd436135fca6f4d321ee742b961249be19363438cc940d2d3a178fcb6730d9bc",
+      "bytes": 56448,
+      "width": 640,
+      "height": 450,
+      "visuallyInspected": true
+    }
+  ],
+  "captureReport": {
+    "file": "reports/experience-review/molino-viejo/game/review.json",
+    "sha256": "0794abf16394cdb931d82f7207c9e1672ac9c7b49a1c1864dc2451a7af8ea458",
+    "bytes": 625,
+    "captureTimeUtc": "2026-11-09T03:53:42.012Z",
+    "ready": true,
+    "reportedPageConsoleErrors": [],
+    "reportedBadHttpResponses": [],
+    "evidenceObtainedBy": "captura del agente principal; imágenes inspeccionadas independientemente por visual_quality_gate"
+  },
+  "sourceArtifacts": [
+    {
+      "file": "scripts/models/molino_viejo.py",
+      "sha256": "181bcdd23498ba3c1efe875811ee5af875f679142e9aedb8140f86b07a5ebb1b",
+      "bytes": 20540
+    },
+    {
+      "file": "scripts/models/architecture_models.py",
+      "sha256": "b2683e2373599acc8e561919fcd4b7b33128d8e60873eef976dd274d7879f378",
+      "bytes": 49847
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/molino-viejo-master.blend",
+      "sha256": "2f2ee07775b85c275ed8faebcb32281fed1a7351722797113816b1d67937087b",
+      "bytes": 8337937
+    },
+    {
+      "file": "src/data/model-credits.ts",
+      "sha256": "2b9ebcd391b1d73f22ce9fe28436ca21812dbaf2d1de8e44ea11b9d228ad0db4",
+      "bytes": 6165
+    }
+  ],
+  "checksReadNotExecuted": [
+    {
+      "file": "reports/experience-review/molino-viejo/static-clock-e2e.log",
+      "result": "2 passed: Chromium y WebKit conservan materiales estáticos del molino al avanzar el reloj de la escena.",
+      "execution": "agente principal; log leído por el revisor"
+    },
+    {
+      "file": "reports/experience-review/molino-viejo/check.log",
+      "result": "Astro check: 162 archivos, 0 errores,0 advertencias,0 hints.",
+      "execution": "agente principal; log leído por el revisor"
+    }
+  ],
+  "limitations": [
+    "Reconstrucción escénica basada en fotos: no escaneo, fotogrametría ni levantamiento métrico.",
+    "La publicación de julio no establece la fecha exacta de captura de cada fotografía. No se certifica acabado final de noviembre de 2026 ni conclusión de las obras previstas.",
+    "Se omiten grúa, andamios y estado de pintura parcial por ser elementos del proceso de obra. La maqueta tampoco pretende reproducir todo el liceo vecino ni la parcela completa.",
+    "Detalles finos de la vista completa a 320 px requieren acercamiento. Se revisó el encuadre de esa captura; no una interacción táctil completa nueva.",
+    "Las capturas no miden FPS, consumo de GPU ni liberación de recursos. Los conteos del activo se obtuvieron del GLB y no se presentan como benchmark de rendimiento.",
+    "La geometría trasera y los cuatro grupos regulares de ventanas superiores incluyen simplificación; no se afirman detalles ocultos como mediciones documentadas."
+  ],
+  "browserLaunchedByReviewer": false,
+  "suitesExecutedByReviewer": false,
+  "independentOfflineRenderImagesUnchanged": true,
+  "approvalBoundary": "APROBADO para presentación visual del nuevo activo GMS-61 identificado por ce22c6c990794ef04ab85fa827ce5ac364d01a9e9223ed22fe47e30bca55d752 y las trece imágenes enumeradas. El antiguo dictamen/hash no se transfiere. El agente principal debe completar la verificación global antes de entregar; este informe no anticipa resultados pendientes."
+}

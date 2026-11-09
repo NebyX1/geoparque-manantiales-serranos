@@ -11,12 +11,17 @@ import Photo from '../brand/Photo.astro';
         merecen <em>caminarse.</em>
       </p>
       <nav aria-label="Navegación del pie" class="footer-nav">
-        <a href="/#explorar">Descubrir lugares</a>
-        <a href="/#historia">La Tierra cuenta</a>
-        <a href="/#territorio">Explorar el territorio</a>
-        <a href="/#cultura">Cultura y sabores</a>
-        <a href="/#circuitos">Ideas para tu escapada</a>
-        <a href="/#aprender">Aprender en el Geoparque</a>
+        <a href="/inicio/#explorar">Descubrir lugares</a>
+        <a href="/inicio/#historia">La Tierra cuenta</a>
+        <a href="/inicio/#territorio">Explorar el territorio</a>
+        <a href="/inicio/#cultura">Cultura y sabores</a>
+        <a href="/inicio/#circuitos">Ideas para tu escapada</a>
+        <a href="/inicio/#aprender">Aprender en el Geoparque</a>
+        <a href="/experiencia/" data-astro-reload data-astro-prefetch="false">
+          Entrar a la experiencia 3D
+        </a>
+        <a href="/">Elegir cómo explorar</a>
+        <a href="/creditos-fotograficos/">Fotografías y fuentes</a>
         <button data-action="privacy">Tu privacidad</button>
       </nav>
     </div>
@@ -66,7 +71,7 @@ import Photo from '../brand/Photo.astro';
       </span>
     </div>
   </div>
-  <a class="round back-top" id="back-top" href="/#inicio" aria-label="Volver al inicio">
+  <a class="round back-top" id="back-top" href="/inicio/#inicio" aria-label="Volver al inicio">
     <svg class="icon" aria-hidden="true">
       <use href="#i-up" />
     </svg>

@@ -1,0 +1,745 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.1",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.2210874, -34.3624811]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 49,
+        "nombre": "Parque Rodó",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.2",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.20503071, -34.47126321]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 19,
+        "nombre": "Mirador Ramallo",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.3",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.37259864, -34.50921785]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 24,
+        "nombre": "Camping Aguas Blancas",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.4",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.26542728, -34.45412338]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 18,
+        "nombre": "Cueva Amarilla",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.5",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.24544359, -34.37742118]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 36,
+        "nombre": "Museo Stelio Belloni",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.6",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.23762902, -34.37427264]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 45,
+        "nombre": "Teatro Lavalleja",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.7",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-54.71728336, -34.08607833]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 7,
+        "nombre": "Paso de la Arena",
+        "categoria": "Patrimonio Natural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.8",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-54.95444236, -34.15803445]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 6,
+        "nombre": "Reserva Artística KyKy-Ó",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.9",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.05469404, -34.18195048]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 5,
+        "nombre": "El Destacamento",
+        "categoria": "Patrimonio Natural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.10",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.45839586, -34.59941944]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 26,
+        "nombre": "Parque Mataojo",
+        "categoria": "Patrimonio Natural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.11",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.34723084, -34.53067783]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 22,
+        "nombre": "Templo Budista Chagdud Gonpa Sengue Dzong",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.12",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.22528772, -34.36668065]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 47,
+        "nombre": "Casa Curbelo Báez",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.13",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.24048406, -34.37687321]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 37,
+        "nombre": "Edificio Escuela 1 de Prácticas \"Artigas\"",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.14",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.23098499, -34.37631145]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 44,
+        "nombre": "Museo Alfajores de las Sierras de Minas",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.15",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.22355775, -34.36636036]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 48,
+        "nombre": "Iglesia Santa Teresita",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.16",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.23819406, -34.37764383]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 39,
+        "nombre": "Plaza Libertad",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.17",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.23665243, -34.37862828]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 41,
+        "nombre": "Catedral de la Inmaculada Concepción de Minas",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.18",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.24008516, -34.37213044]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 38,
+        "nombre": "Edificio Escuela 8 \"Guillermo Cuadri\"",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.19",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-54.99090912, -34.32315565]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 10,
+        "nombre": "Mesón de las Cañas",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.20",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-54.99099996, -34.32497775]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 11,
+        "nombre": "Ventorrillo de la Buena Vista",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.21",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.29177337, -34.37654316]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 33,
+        "nombre": "Cerro del Verdún",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.22",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.15, -34.4]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 15,
+        "nombre": "Cerro Campanero",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.23",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.07421111, -34.17817222]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 4,
+        "nombre": "Nacientes del Río Santa Lucía",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.24",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.17216365, -34.33642186]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 3,
+        "nombre": "Cerro del Ombú",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.25",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.32593709, -34.51877897]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 21,
+        "nombre": "Abra de Zabaleta",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.26",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.36978869, -34.58560648]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 25,
+        "nombre": "Cerro La Caperuza",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.27",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.23647327, -34.50823849]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 20,
+        "nombre": "Cantera Libro Gigante",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.28",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.21753133, -34.3753177]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 46,
+        "nombre": "Cerro Artigas",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.29",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.18489853, -34.31181647]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 2,
+        "nombre": "Cerro del Cura",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.30",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.26116692, -34.28829794]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 1,
+        "nombre": "Cerro Arequita",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.31",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.20511377, -34.42022544]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 17,
+        "nombre": "Parque de Minas",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.32",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.32179036, -34.40264941]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 31,
+        "nombre": "Reserva Natural Parque Salus",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.33",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.28836597, -34.40025661]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 32,
+        "nombre": "Mina ANCAP",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.34",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-54.97210666, -34.24748528]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 8,
+        "nombre": "Cerro Marmarajá",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.35",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-54.98299066, -34.43206364]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 13,
+        "nombre": "Cantera del Portugués",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.36",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-54.98897444, -34.32080794]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 9,
+        "nombre": "Represa Stewart Vargas",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.37",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.23821478, -34.37916336]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 42,
+        "nombre": "Casa de la Cultura",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.38",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.25215023, -34.35559789]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 35,
+        "nombre": "Centro Cultural Ángel Ugarte ( Ex Estación de AFE)",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.39",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.2277544, -34.37721515]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 43,
+        "nombre": "Cementerio Central",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.40",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.05322146, -34.37230556]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 14,
+        "nombre": "Salto del Penitente",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.41",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-54.99025689, -34.32590061]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 12,
+        "nombre": "Granito Villa Serrana",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.42",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.34947142, -34.51186307]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 23,
+        "nombre": "Campamento Aguas Blancas",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.43",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.46674718, -34.60127274]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 28,
+        "nombre": "Edificio \"Cuna de Fabini\"",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.44",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.217483, -34.39205488]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 16,
+        "nombre": "Parque Represa de OSE",
+        "categoria": "Patrimonio Natural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.45",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.23766576, -34.37739946]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 40,
+        "nombre": "Confitería Irisarri",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.46",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.4668937, -34.601597]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 27,
+        "nombre": "Casa de la Cultura - Solís",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.47",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.4667884, -34.5991851]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 29,
+        "nombre": "Plaza Lázaro Cortés",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.48",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.4667197, -34.5973965]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 30,
+        "nombre": "Plaza de Deportes",
+        "categoria": "Patrimonio Cultural",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uyla_geositios.49",
+      "geometry": { "type": "MultiPoint", "coordinates": [[-55.27755362, -34.37318523]] },
+      "geometry_name": "wkb_geometry",
+      "properties": {
+        "id": 34,
+        "nombre": "Mina Verdún",
+        "categoria": "Patrimonio Geológico",
+        "modified_by": null,
+        "last_modification": null,
+        "feat_date_gvol": "2026-05-15T14:50:43.287Z",
+        "feat_version_gvol": 1
+      }
+    }
+  ],
+  "totalFeatures": 49,
+  "numberMatched": 49,
+  "numberReturned": 49,
+  "timeStamp": "2026-11-08T08:50:56.469Z",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4326" } }
+}

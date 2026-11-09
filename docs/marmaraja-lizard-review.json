@@ -1,0 +1,272 @@
+{
+  "id": 8,
+  "reviewer": "/root/visual_quality_gate",
+  "reviewedAt": "2026-11-09T01:28:01.007875+00:00",
+  "verdict": "APROBADO",
+  "approvalType": "Revisión visual independiente de la forma, integración y segmentos capturados de la animación del compañero lagarto.",
+  "authorizationBasis": "Solicitud explícita del usuario de añadir un lagarto animado recorriendo el entorno de este cerro. El animal separado es ahora intencional, además de la alusión del relieve previamente aprobada.",
+  "requiredChanges": [],
+  "observations": {
+    "recognizableLizard": "Cabeza diferenciada con ojos, cuerpo alargado, cuatro patas articuladas con dedos y cola larga segmentada hacen reconocible un lagarto de estilo low poly. La asociación es clara en los acercamientos y permanece identificable en contexto; no depende sólo de la pareidolia del cerro.",
+    "surfaceMarkings": "En los cinco acercamientos inspeccionados, las manchas oscuras y líneas dorsales siguen la superficie del torso. No se observan marcas evidentemente flotantes o atravesando el cuerpo desde estos ángulos.",
+    "groundSupport": "Las poses0–3 muestran flexión de patas y pies próximos al terreno con sombra de contacto. No veo apoyos manifiestamente rotos, cuerpo hundido o animal suspendido en los instantes revisados. El levantamiento alternado de pies corresponde a la marcha; no se certifica cada apoyo en toda la vuelta.",
+    "motion": "Las series de inspector, acercamiento y caminar muestran avance de posición con cambios de patas/cola entre imágenes de cámara comparable. El tramo muestreado tiene progresión coherente; no demuestra por sí solo la continuidad del cierre de ruta ni todas las poses del ciclo.",
+    "desktopIntegration": "El compañero está integrado sobre la miniatura sin ocultar el cerro; el inspector completo conserva terreno/base y animal dentro del área útil. El acercamiento permite leer cabeza, piel, patas y cola sin que el HUD tape al animal.",
+    "mobileIntegration": "Las cuatro vistas de inspector móvil(390px de ancho) conservan modelo, base y compañero dentro de pantalla. A escala completa el animal es pequeño, pero silueta alargada y desplazamiento son perceptibles; las dos vistas caminando también lo muestran sobre la miniatura con avatar y controles utilizables.",
+    "pauseAndReducedMotion": "Los pares desktop-paused y stable-reduced inspeccionados son idénticos por SHA256, coherentes con parada y movimiento reducido en esas capturas. Las parejas caminando difieren y muestran desplazamiento del propio animal, no sólo un cambio de texto."
+  },
+  "coverage": {
+    "imagesVisuallyInspected": 21,
+    "fullRouteVisuallyReviewed": false,
+    "fullGaitCycleVisuallyReviewed": false,
+    "continuousVideoReviewed": false,
+    "statement": "Se revisaron fotogramas parciales, no un examen visual continuo de la vuelta completa. No se lanzaron navegadores ni suites propias."
+  },
+  "capturedPairChecks": [
+    {
+      "a": "desktop-paused-a.png",
+      "b": "desktop-paused-b.png",
+      "byteIdentical": true
+    },
+    {
+      "a": "stable-reduced-a.png",
+      "b": "stable-reduced-b.png",
+      "byteIdentical": true
+    },
+    {
+      "a": "desktop-walk-a.png",
+      "b": "desktop-walk-b.png",
+      "byteIdentical": false
+    },
+    {
+      "a": "mobile-walk-a.png",
+      "b": "mobile-walk-b.png",
+      "byteIdentical": false
+    }
+  ],
+  "runtimeIdentity": {
+    "baseTerrainGLB": {
+      "file": "public/models/geosites/rebuilt/gms-08.glb",
+      "bytes": 3361740,
+      "sha256": "5380c89d60bca34ae5d2833d311c72fd480893bc6e48126a4517b19fa910b4ca"
+    },
+    "companionModule": {
+      "file": "src/features/experience/miniatures/wildlife/marmaraja-lizard.ts",
+      "bytes": 13837,
+      "sha256": "d5ed69b210aa09f3fc331bce2a4018a804c87b204cdedeab3a922e242b0a31f2"
+    },
+    "attachmentModule": {
+      "file": "src/features/experience/miniatures/index.ts",
+      "bytes": 11720,
+      "sha256": "0062054077d89d3f0701c6c4e88d90fe13a8bc0b5943539070020bfc3e2e0e1b"
+    },
+    "approvalNotAttributedSolelyToGLB": "El lagarto se añade en runtime; el hash del GLB sólo identifica el cerro intacto y no basta para identificar el compañero. Por eso se registran también los módulos de runtime y las capturas."
+  },
+  "staticIntegrationRead": {
+    "scope": "Se leyó el bloque de incorporación y el muestreador de terreno, sin modificar código.",
+    "idGuard": "La incorporación está dentro de if(id===8) en createMiniature.",
+    "clock": "El update del compañero se encadena al update del modelo existente.",
+    "terrainSampling": "La cuadrícula se extrae al crear el compañero y las alturas se interpolan desde ese array; el código inspeccionado no hace raycasts por frame.",
+    "resourceLimit": "Este control visual no demuestra por sí solo ausencia universal de fugas ni FPS de producción."
+  },
+  "supplementaryTestEvidence": {
+    "file": {
+      "file": "reports/experience-review/marmaraja-lizard/motion-test.log",
+      "bytes": 856,
+      "sha256": "e08a977d12174d261d190831581593b82ed4de6d1880ee13d1d85740b6790534"
+    },
+    "observedResult": "2 passed(35.0s): prueba de caminar, pausa y movimiento reducido en Chromium y WebKit.",
+    "execution": "Log leído; pruebas ejecutadas por raíz, no por este revisor.",
+    "legacyMotionProofNotUsed": "motion-proof.json conserva un changedPixels no nulo para reduced; no se usa como prueba de reposo. La evidencia actual de reposo es stable-reduced-a/b idénticos y el test citado."
+  },
+  "reportedBudget": {
+    "source": "Cifras comunicadas por raíz; no benchmark propio.",
+    "companionTriangles": 3940,
+    "companionDrawCalls": 36,
+    "combinedTriangles": 61218,
+    "combinedDrawCalls": 43
+  },
+  "views": [
+    {
+      "file": "reports/experience-review/marmaraja-lizard/desktop-walk-a.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "cdc717a8eb7fe93917370b8db2413d5b773d2b9ab92a904c1f5df82b19d258cd",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/desktop-walk-b.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "4b06c26fc62aae038943be68d1597ce3d856800cd590bfa52d7a0871e9917f52",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/desktop-inspect-0.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e42e47c41507500fa46be6b961a34241abcce6b8ede4f3ff81108cbf42c8fb3f",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/desktop-inspect-1.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "7ffe3a2ed68f7223658685c5dcd14bc3bfb3d2ad8ea4660f13a9044cab58a651",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/desktop-inspect-2.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ece9490306828363ab9b3fd19b078d7dba6ce4dea9ea933389c9d1685dc8787c",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/desktop-inspect-3.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "414b2a68c15414f756775b8c44b384f64856c646dbd6005ef0bc944137e5b23e",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/lizard-closeup-0.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "8c3ef4d2ebf162b8e4356352795e126711e5fcde8c0f6536f6f9525e3e68bf62",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/lizard-closeup-1.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "65df3be6caef1e1dfbdd00c798a967e48507d52e974a239a901d765face6ef0c",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/lizard-closeup-2.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "4bdc66815da068d768e01e7d756192c08853ec2bff8dd9948ceeab74b44afe52",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/lizard-closeup-3.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "9ebb14916af05b3f7bfb1a08767a4aff39082af284afe072840f1c5b72464290",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/lizard-closeup-reduced.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f441bac786cdbff84c9131e6db6051bd37f425e242a0a412cc61123f205c6da0",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/stable-reduced-a.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ec70546e37da309b72710054488872f117dffef3baaaa4d82b3c345cdee56ef5",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/stable-reduced-b.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ec70546e37da309b72710054488872f117dffef3baaaa4d82b3c345cdee56ef5",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/desktop-paused-a.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "4466c75a652f7c415ceb8d31665bd7e33ffdccf899c34dfc9e0e3cea2ebfaa32",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/desktop-paused-b.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "4466c75a652f7c415ceb8d31665bd7e33ffdccf899c34dfc9e0e3cea2ebfaa32",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/mobile-inspect-0.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "1ef5aa9072c31e64d1caa106f2adddd66fbdbb8f02bbaa11fea57866392705bd",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/mobile-inspect-1.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "b0e61a789c15118d457ea5bdcf6d68fc68c04a14466d4362e28f1bdaf8919315",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/mobile-inspect-2.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "a8b04ecbc11fc5bd7540bea367bd768778937e00a000917d3669cb62d3c2f8dc",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/mobile-inspect-3.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "5e9fa3544926395539290ba7349981956a8418f842fe163c365bc839161674f4",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/mobile-walk-a.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "e4f4207ea601f05c729c25a6b2da58e7f845fdf2601536d3dff4d3cadb46afb7",
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/marmaraja-lizard/mobile-walk-b.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "46d003eb009f03208d4c6a810b287da6bb3ae31ece0fae73da8bcaef8697d8f3",
+      "visuallyInspected": true
+    }
+  ],
+  "filesModifiedByReviewer": ["reports/experience-review/marmaraja-lizard/visual-qa.json"],
+  "finalScope": "Aprobación de calidad visual suficiente para esta incorporación, sin ajustes bloqueantes. La verificación completa que raíz tiene en marcha sigue siendo un control separado.",
+  "budget": {
+    "companion": {
+      "triangles": 3940,
+      "drawCalls": 36
+    },
+    "withHill": {
+      "triangles": 61218,
+      "drawCalls": 43
+    },
+    "perMiniatureLimit": {
+      "triangles": 150000,
+      "drawCallsExclusive": 100
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "command": "npm run verify",
+    "node": "22.22.3",
+    "astroFiles": 157,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "unitTests": 53,
+    "seoTests": 3,
+    "browserTestsPassed": 69,
+    "browserTestsSkipped": 3,
+    "motionRepeatCasesPassed": 4,
+    "log": "reports/experience-review/marmaraja-lizard/verify.log",
+    "motionLog": "reports/experience-review/marmaraja-lizard/motion-repeat.log",
+    "previewVideo": "reports/experience-review/marmaraja-lizard/lagarto-marmaraja.mp4",
+    "reviewHashesChecked": 25
+  }
+}

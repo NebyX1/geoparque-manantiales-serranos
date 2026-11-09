@@ -1,8 +1,26 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import heroSources from '../../docs/asset-manifest.json' with { type: 'json' };
+import heroCrops from '../../docs/hero-crop-manifest.json' with { type: 'json' };
 test.beforeEach(async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/inicio/');
   await expect(page.locator('html')).toHaveClass(/js/);
+});
+
+test('el logo del navbar vuelve al selector desde la web y las fichas', async ({ page }) => {
+  for (const [route, width] of [
+    ['/inicio/', 1440],
+    ['/lugares/cerro-arequita/', 390],
+  ] as const) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(route);
+    await page.locator('.site-header .brand').focus();
+    await page.keyboard.press('Enter');
+    await expect(page).toHaveURL(new URL('/', page.url()).toString());
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Un viaje.');
+    await expect(page.locator('.entry-card-web')).toHaveAttribute('href', '/inicio/');
+    await expect(page.locator('.entry-card-world')).toHaveAttribute('href', '/experiencia/');
+  }
 });
 test('home, fotografías, controles del hero y capítulos por teclado', async ({ page }) => {
   await expect(page.locator('h1')).toContainText('MEMORIA.');
@@ -21,17 +39,26 @@ test('hero responsive: resolución suficiente para el recorte vertical', async (
   for (const width of [320, 390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.reload();
-    const resolution = await page.locator('.hero-image.active img').evaluate(async (image) => {
-      const img = image as HTMLImageElement;
-      await img.decode();
-      const bitmap = await createImageBitmap(await (await fetch(img.currentSrc)).blob());
-      const box = img.getBoundingClientRect();
-      const sourceWidth = innerWidth <= 620 ? 671 : 1500;
-      const required = Math.min(844, Math.max(box.height, (box.width * 844) / sourceWidth));
-      const actual = bitmap.height;
-      bitmap.close();
-      return { actual, required };
-    });
+    const original = heroSources['arequita-rio'];
+    const crop = heroCrops.find((entry) => entry.original.endsWith('/arequita-rio.webp'))!.crop;
+    const resolution = await page.locator('.hero-image.active img').evaluate(
+      async (image, source) => {
+        const img = image as HTMLImageElement;
+        await img.decode();
+        const bitmap = await createImageBitmap(await (await fetch(img.currentSrc)).blob());
+        const box = img.getBoundingClientRect();
+        const sourceWidth = innerWidth <= 620 ? source.crop.width : source.original.width;
+        const sourceHeight = source.original.height;
+        const required = Math.min(
+          sourceHeight,
+          Math.max(box.height, (box.width * sourceHeight) / sourceWidth),
+        );
+        const actual = bitmap.height;
+        bitmap.close();
+        return { actual, required };
+      },
+      { original, crop },
+    );
     expect(resolution.actual).toBeGreaterThanOrEqual(resolution.required * 0.98);
   }
 });
@@ -141,7 +168,7 @@ test('galería, captions, flechas, quiz y privacidad', async ({ page }) => {
   await page.locator('[data-action="gallery"]').click();
   await expect(page.locator('#lightbox-title')).toContainText('Aguas Blancas');
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('#lightbox-title')).toContainText('Reserva Salus');
+  await expect(page.locator('#lightbox-title')).toContainText('Fuente del Puma');
   await page.keyboard.press('ArrowLeft');
   await expect(page.locator('#lightbox-title')).toContainText('Aguas Blancas');
   await page.keyboard.press('Escape');
@@ -183,7 +210,8 @@ test('navegación repetida ClientRouter: sin listeners acumulados ni errores de 
   });
   await page.goto('/explorar/');
   for (let index = 0; index < 3; index++) {
-    await page.locator('.place-card[data-id="1"] h3 a').click();
+    // Keep this lifecycle check independent of the atlas's animated scroll position.
+    await page.locator('.place-card[data-id="1"] h3 a').press('Enter');
     await expect(page.locator('h1')).toHaveText('Cerro Arequita');
     await page.locator('[data-favorite="1"]').click();
     await expect(page.locator('.trip-button .count')).toHaveText(String(index % 2 === 0 ? 1 : 0));
@@ -194,7 +222,7 @@ test('navegación repetida ClientRouter: sin listeners acumulados ni errores de 
 });
 test('accesibilidad automática sin serious/critical en home, atlas y ficha', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  for (const route of ['/', '/explorar/', '/lugares/cerro-arequita/', '/planifica/']) {
+  for (const route of ['/inicio/', '/explorar/', '/lugares/cerro-arequita/', '/planifica/']) {
     await page.goto(route);
     await expect(page.locator('html')).toHaveClass(/js/);
     await page.evaluate(() => document.fonts.ready);
@@ -212,7 +240,7 @@ test('recursos sin 404, rutas directas y 404 real', async ({ page, request }) =>
     if (response.status() === 404) missing.push(response.url());
   });
   for (const route of [
-    '/',
+    '/inicio/',
     '/explorar/',
     '/historias/agua/',
     '/circuitos/arequita/',
@@ -239,7 +267,7 @@ test('sin JavaScript: 61 enlaces rastreables, capítulos y ficha íntegra', asyn
 }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
-  await page.goto(`${baseURL}/`);
+  await page.goto(`${baseURL}/inicio/`);
   await expect(page.locator('.place-card:visible')).toHaveCount(61);
   await expect(page.locator('.geo-scene:visible')).toHaveCount(4);
   await page.locator('.place-card[data-id="1"] h3 a').click();

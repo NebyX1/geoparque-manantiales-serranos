@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Photo from '../../components/brand/Photo.astro';
+import PhotoCredit from '../../components/brand/PhotoCredit.astro';
 import { FavoritesButton } from '../../components/islands/FavoritesButton';
 import { places } from '../../data/geosites';
 import { placeSchema, breadcrumbs } from '../../lib/seo';
@@ -18,7 +19,7 @@ const nearby = places
 const structuredData = [
   placeSchema(place),
   breadcrumbs([
-    { name: 'Inicio', path: '/' },
+    { name: 'Inicio', path: '/inicio/' },
     { name: 'Lugares', path: '/lugares/' },
     { name: place.name, path: `/lugares/${place.slug}/` },
   ]),
@@ -36,11 +37,12 @@ const structuredData = [
         sizes="100vw"
         transition:name={`place-${place.slug}`}
       />
-      <span class="detail-photo-caption">{place.images[0]?.alt}</span>
+      <span class="detail-photo-caption">{place.photoCaption}</span>
     </div>
     <div class="detail-main">
+      <PhotoCredit assetKey={place.image} />
       <nav class="breadcrumbs" aria-label="Ubicación">
-        <a href="/">Inicio</a>
+        <a href="/inicio/">Inicio</a>
         <span>/</span>
         <a href="/lugares/">Lugares</a>
         <span>/</span>

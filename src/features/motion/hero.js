@@ -9,10 +9,10 @@ export function initHero(c) {
     alive = false;
   });
   const captions = [
-    'Cerro Arequita y río Santa Lucía',
-    'Aguas Blancas · paisaje de embalse y sierras',
-    'Reserva Salus · luz entre el bosque',
-    'Parque de Minas · rocas, agua y encuentro',
+    'Cerro Arequita y río Santa Lucía · Bienflorencia · archivo 2012',
+    'Aguas Blancas · restauración con IA',
+    'Reserva Salus · Fuente del Puma',
+    'Parque de Minas · restauración con IA',
   ];
   function showHero(index, focus = false) {
     slide = (index + 4) % 4;

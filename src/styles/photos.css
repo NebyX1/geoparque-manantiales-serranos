@@ -1,0 +1,220 @@
+/* Preserve identifiable features and signatures in portrait source photographs. */
+:root {
+  --photo-density: 1;
+}
+@media (min-resolution: 1.01dppx) {
+  :root {
+    --photo-density: 1.5;
+  }
+}
+@media (min-resolution: 1.51dppx) {
+  :root {
+    --photo-density: 2;
+  }
+}
+@media (min-resolution: 2.01dppx) {
+  :root {
+    --photo-density: 3;
+  }
+}
+@media (min-resolution: 3.01dppx) {
+  :root {
+    --photo-density: 4;
+  }
+}
+@media (min-resolution: 4.01dppx) {
+  :root {
+    --photo-density: 5;
+  }
+}
+/* A larger frame must not turn a small source into an enlarged, blurry image. */
+img[data-photo-width] {
+  --photo-effective-width: var(--photo-width);
+  --photo-effective-height: var(--photo-height);
+  max-width: calc(var(--photo-effective-width) / var(--photo-density));
+  max-height: calc(var(--photo-effective-height) / var(--photo-density));
+  margin-inline: auto;
+  justify-self: center;
+  align-self: center;
+}
+@media (max-width: 620px) {
+  img[data-photo-mobile-width] {
+    --photo-effective-width: var(--photo-mobile-width);
+    --photo-effective-height: var(--photo-mobile-height);
+  }
+}
+.geo-photo > a,
+.place-visual > a,
+.nature-photo,
+.education-image,
+.culture-feature,
+.gallery-shot,
+.entry-card-visual,
+.detail-hero,
+.holo-photo,
+.hero-image {
+  display: grid;
+  place-items: center;
+}
+.detail-hero,
+.holo-photo,
+.education-image,
+.nature-photo,
+.geo-photo > a {
+  background-color: #132d24;
+}
+.hero-image {
+  justify-items: end;
+}
+.hero-image img[data-photo-width] {
+  margin-inline: auto 0;
+  justify-self: end;
+}
+.hero-image:has(img[data-photo-framed='true']) {
+  padding: var(--gutter);
+}
+.hero-image img[data-photo-framed='true'] {
+  border: 1px solid #fff4d666;
+  box-shadow: 0 20px 50px #081e1c55;
+}
+img[data-photo-limited='true'] {
+  transform: none !important;
+}
+img[data-photo-fit='contain'] {
+  object-fit: contain !important;
+  background: #132d24;
+}
+.photo-credit {
+  margin: 12px 0;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #476050;
+  overflow-wrap: anywhere;
+}
+.photo-credit a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.photo-credit strong {
+  font-weight: 650;
+}
+.photo-credit .photo-credit-label {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.photo-credit--compact {
+  font-size: 10px;
+  margin: 7px 0;
+}
+.photo-label {
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  padding: 0.2em 0.5em;
+  font-size: 10px;
+  line-height: 1.4;
+}
+.place-visual .photo-label {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  max-width: calc(100% - 72px);
+  color: #fff;
+  background: #18372ee8;
+  pointer-events: none;
+}
+.experience .photo-credit {
+  color: #b5e5df;
+}
+.experience .photo-credit a {
+  color: #b5fff0;
+}
+.experience .holo-photo img[data-photo-kind] {
+  filter: none;
+}
+.experience .holo-photo:has(img[data-photo-kind])::after {
+  background: linear-gradient(180deg, rgb(1 20 36 / 5%), transparent 70%, rgb(1 20 36 / 70%));
+}
+.gallery-shot .photo-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  bottom: auto;
+  background: #18372ee8;
+  color: #fff;
+}
+.education-image .education-photo-label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  bottom: auto;
+  max-width: calc(100% - 28px);
+  background: #18372ee8;
+  color: #fff;
+}
+.lightbox-source {
+  color: inherit;
+  font-size: 11px;
+  text-decoration: underline;
+}
+.map-photo-credit {
+  margin-top: 8px;
+}
+.photo-audit-list {
+  display: grid;
+  gap: 36px;
+  padding: 0;
+  list-style: none;
+}
+.photo-audit-item {
+  scroll-margin-top: 110px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 28px;
+  border-top: 1px solid #c1cdbd;
+  padding-top: 28px;
+}
+.photo-audit-item > div {
+  min-width: 0;
+}
+.photo-audit-image {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: #132d24;
+  border-radius: 4px;
+}
+.photo-audit-item h2 {
+  font-size: 23px;
+  margin: 0 0 12px;
+}
+.photo-audit-item p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.photo-audit-item a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.photo-audit-original {
+  margin-top: 12px;
+}
+.photo-audit-list .photo-audit-original img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: #132d24;
+  max-width: 100%;
+  max-height: 280px;
+  margin: 12px auto 0;
+}
+@media (max-width: 620px) {
+  .photo-audit-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 15px;
+  }
+  .photo-audit-image {
+    height: 240px;
+  }
+}

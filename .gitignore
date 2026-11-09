@@ -11,3 +11,6 @@ coverage/
 !reports/*.log
 reports/visual-comparison/
 reports/map-preview-check.png
+reports/experience-review/
+__pycache__/
+*.py[cod]

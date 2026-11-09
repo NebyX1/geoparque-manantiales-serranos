@@ -1,3 +1,5 @@
+import { applyPhotoMetadata } from '../site/photo-resolution.js';
+
 export function initMap(c) {
   if (!c.$('#territorio')) return;
   let selectedMap = 1,
@@ -29,6 +31,10 @@ export function initMap(c) {
       c.$('#map-preview-image').src = c.photo(p.image);
     }
     c.$('#map-preview-image').alt = c.imageCaption(p);
+    const photo = c.photoInfo(p.image);
+    applyPhotoMetadata(c.$('#map-preview-image'), photo);
+    c.$('#map-preview-caption').textContent = photo.caption;
+    c.$('#map-preview-source').href = photo.auditUrl;
     c.$('#map-preview-name').textContent = p.name;
     c.$('#map-preview-category').textContent = p.category;
     c.$('#map-preview-link').href = c.placeURL(p.id);

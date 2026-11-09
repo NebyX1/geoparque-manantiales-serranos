@@ -8,8 +8,9 @@ import IconSprite from '../components/decorative/IconSprite.astro';
 import SeoHead from '../components/seo/SeoHead.astro';
 import StructuredData from '../components/seo/StructuredData.astro';
 import { canonicalPlaces } from '../data/geosites';
+import { placePhotoPresentation, browserPhotoMetadata } from '../data/place-photos';
 import { geopark } from '../data/geopark';
-import { clientImages } from '../lib/images';
+import { clientImages, clientPhotoSources } from '../lib/images';
 import { heroImages } from '../lib/hero-images';
 import { absoluteUrl } from '../lib/urls';
 import '../styles/global.css';
@@ -22,8 +23,19 @@ interface Props {
 }
 const { title, description, structuredData = [] } = Astro.props;
 const images = await clientImages();
+const imageSources = await clientPhotoSources();
+const photoMetadata = Object.fromEntries(
+  Object.entries(browserPhotoMetadata).map(([key, info]) => [
+    key,
+    { ...info, srcset: imageSources[key] },
+  ]),
+);
+const browserPlaces = canonicalPlaces.map((place) => ({
+  ...place,
+  ...placePhotoPresentation(place.id),
+}));
 const json = (value: unknown) => JSON.stringify(value).replace(/</g, '\\u003c');
-const home = Astro.url.pathname === '/';
+const home = /^\/inicio\/?$/.test(Astro.url.pathname);
 const heroSources = home ? await heroImages('arequita-rio') : null;
 const common = [
   {
@@ -111,7 +123,7 @@ const common = [
     <script
       id="page-data"
       type="application/json"
-      set:html={json({ ...geopark, places: canonicalPlaces })}
+      set:html={json({ ...geopark, places: browserPlaces, photos: photoMetadata })}
     />
     <script id="client-assets" type="application/json" set:html={json(images)} />
     <noscript>

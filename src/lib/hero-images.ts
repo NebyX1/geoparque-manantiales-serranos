@@ -7,7 +7,7 @@ import { heroSizes, responsiveWidths } from './image-sizing';
 async function source(asset: ImageMetadata, format: 'avif' | 'webp') {
   const images = await Promise.all(
     responsiveWidths(asset.width).map(async (width) => {
-      const image = await getImage({ src: asset, width, format });
+      const image = await getImage({ src: asset, width, format, quality: 92 });
       return `${image.src} ${width}w`;
     }),
   );

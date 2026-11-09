@@ -1,36 +1,251 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/sections/Hero.astro';
-import Ticker from '../components/sections/Ticker.astro';
-import TrustStrip from '../components/sections/TrustStrip.astro';
-import Introduction from '../components/sections/Introduction.astro';
-import GeologicalIntroduction from '../components/sections/GeologicalIntroduction.astro';
-import GeologicalStory from '../components/sections/GeologicalStory.astro';
-import Atlas from '../components/sections/Atlas.astro';
-import TerritoryMap from '../components/sections/TerritoryMap.astro';
-import Nature from '../components/sections/Nature.astro';
-import Culture from '../components/sections/Culture.astro';
-import Circuits from '../components/sections/Circuits.astro';
-import Planner from '../components/sections/Planner.astro';
-import Education from '../components/sections/Education.astro';
-import Gallery from '../components/sections/Gallery.astro';
-import Visit from '../components/sections/Visit.astro';
+import PortalLayout from '../layouts/PortalLayout.astro';
+import Photo from '../components/brand/Photo.astro';
+import '../styles/entry.css';
 ---
 
-<BaseLayout>
-  <Hero />
-  <Ticker />
-  <TrustStrip />
-  <Introduction />
-  <GeologicalIntroduction />
-  <GeologicalStory />
-  <Atlas />
-  <TerritoryMap />
-  <Nature />
-  <Culture />
-  <Circuits />
-  <Planner />
-  <Education />
-  <Gallery />
-  <Visit />
-</BaseLayout>
+<PortalLayout
+  title="Elegí cómo explorar · Manantiales Serranos"
+  description="Dos formas de descubrir el Geoparque Manantiales Serranos: conocé sus lugares en el sitio web o recorré una experiencia inmersiva en 3D."
+  bodyClass="entry-body"
+>
+  <a class="entry-skip" href="#elegi">
+    Saltar a las opciones
+  </a>
+  <div class="entry-shell">
+    <header class="entry-header">
+      <img
+        class="entry-brand"
+        src="/brand/logo.svg"
+        alt="Manantiales Serranos · Geoparque Mundial de la UNESCO"
+        width="113"
+        height="96"
+      />
+      <p class="entry-location">
+        <span class="entry-location-dot"></span> LAVALLEJA, URUGUAY
+      </p>
+      <a class="entry-direct" href="/inicio/">
+        Ir al sitio web <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main class="entry-main" id="elegi">
+      <div class="entry-intro">
+        <div>
+          <p class="entry-eyebrow">UN TERRITORIO. MUCHAS FORMAS DE SENTIRLO.</p>
+          <h1>
+            Un viaje.
+            <br class="entry-mobile-break" /> <em>Otra mirada.</em>
+          </h1>
+        </div>
+        <p class="entry-intro-copy">
+          La Tierra tiene memoria.
+          <br /> Elegí cómo querés descubrirla.
+        </p>
+      </div>
+
+      <div class="entry-choices">
+        <a
+          class="entry-card entry-card-web"
+          href="/inicio/"
+          aria-labelledby="entry-web-title entry-web-action"
+        >
+          <div class="entry-card-visual">
+            <Photo
+              assetKey="arequita-rio"
+              alt="Cerro Arequita y río Santa Lucía, en las sierras de Lavalleja"
+              loading="eager"
+              fetchpriority="high"
+              sizes="(max-width: 720px) 92vw, (max-width: 1600px) 45vw, 720px"
+              avif
+            />
+            <span class="entry-visual-label">
+              <span></span> EL TERRITORIO TE ESPERA
+            </span>
+            <span class="entry-visual-number" aria-hidden="true">
+              01
+            </span>
+          </div>
+          <div class="entry-card-content">
+            <p class="entry-card-kicker">EL SITIO WEB</p>
+            <h2 id="entry-web-title">Descubrí tu próximo destino.</h2>
+            <p class="entry-card-copy">Conocé los lugares, leé sus historias y armá tu viaje.</p>
+            <div class="entry-card-action">
+              <span id="entry-web-action">Explorar el sitio</span>
+              <span class="entry-arrow" aria-hidden="true">
+                ↗
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="entry-card entry-card-world"
+          href="/experiencia/"
+          data-astro-reload
+          data-astro-prefetch="false"
+          aria-labelledby="entry-world-title entry-world-action"
+        >
+          <div class="entry-card-visual entry-world-visual" aria-hidden="true">
+            <div class="entry-orbit entry-orbit-one"></div>
+            <div class="entry-orbit entry-orbit-two"></div>
+            <svg class="entry-world-art" viewBox="0 0 800 350" fill="none">
+              <defs>
+                <linearGradient
+                  id="entry-island-top"
+                  x1="160"
+                  y1="110"
+                  x2="650"
+                  y2="310"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#a5b56f" />
+                  <stop offset="1" stop-color="#587e55" />
+                </linearGradient>
+                <linearGradient
+                  id="entry-river"
+                  x1="250"
+                  y1="210"
+                  x2="560"
+                  y2="180"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#82c2bb" />
+                  <stop offset="1" stop-color="#3a8a91" />
+                </linearGradient>
+                <filter id="entry-island-shadow" x="-30%" y="-30%" width="160%" height="200%">
+                  <feGaussianBlur stdDeviation="15" />
+                </filter>
+                <g id="entry-tree">
+                  <path d="M-2 0h4v-25h-4z" fill="#594f35" />
+                  <path d="m0-62 17 24-6 16H-8l-12-15z" fill="#3e6951" />
+                  <path d="m0-62 17 24-6 16-8-15z" fill="#2f5542" />
+                </g>
+                <g id="entry-beacon">
+                  <ellipse
+                    rx="16"
+                    ry="6"
+                    fill="#9de9d4"
+                    fill-opacity=".2"
+                    stroke="#baf7dc"
+                    stroke-opacity=".6"
+                  />
+                  <path d="M0-45V-5" stroke="#baf7dc" stroke-dasharray="3 4" />
+                  <circle cy="-50" r="6" fill="#d4e885" />
+                  <circle cy="-50" r="12" stroke="#c8f6d5" stroke-opacity=".5" />
+                </g>
+              </defs>
+              <ellipse
+                cx="410"
+                cy="303"
+                rx="230"
+                ry="20"
+                fill="#071b19"
+                opacity=".6"
+                filter="url(#entry-island-shadow)"
+              />
+              <path d="m115 203 214-92 348 88-12 50-267 83-262-76z" fill="#8a7756" />
+              <path d="m398 271 279-72-12 50-267 83z" fill="#594f3e" />
+              <path d="m115 203 214-107 348 103-279 91z" fill="url(#entry-island-top)" />
+              <path
+                d="m115 203 283 87 279-91"
+                stroke="#c0ce8a"
+                stroke-opacity=".6"
+                stroke-width="2"
+              />
+              <path
+                d="m304 112 30 21-2 22 64 26 8 24 69 20-19 13-77-22-12-24-76-27 7-24-26-18z"
+                fill="#c3c49b"
+              />
+              <path
+                d="m314 112 29 20-3 25 68 24 7 23 70 21-21 8-77-23-12-24-75-27 7-24-25-18z"
+                fill="url(#entry-river)"
+              />
+              <path d="m421 160 32-60 22 12 18-24 44 78-45 18z" fill="#6c7355" />
+              <path d="m453 100 22 12 18-24 44 78-48-19-13-25-15 12z" fill="#a39d7d" />
+              <path d="m456 102 19 10 17-22-3 57-13-25-15 12z" fill="#c7bc98" />
+              <path d="m503 183 37-48 21 21 16-11 34 49-45 12z" fill="#6d7855" />
+              <path d="m540 135 21 21 16-11 34 49-45-19z" fill="#adb18b" />
+              <path
+                d="m180 214 50-17 27 6 18-11 27 9 10-22 34-3"
+                stroke="#e0cb98"
+                stroke-width="7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="m391 250 21-15 40 13 40-8 39-12 28-2"
+                stroke="#d4c190"
+                stroke-width="6"
+                stroke-linecap="round"
+              />
+              <g opacity=".95">
+                <use href="#entry-tree" x="203" y="194" />
+                <use href="#entry-tree" x="235" y="179" transform="translate(35 40) scale(.85)" />
+                <use href="#entry-tree" x="251" y="168" />
+                <use href="#entry-tree" x="220" y="227" transform="translate(30 30) scale(.8)" />
+                <use href="#entry-tree" x="589" y="220" />
+                <use href="#entry-tree" x="620" y="209" transform="translate(125 35) scale(.8)" />
+                <use href="#entry-tree" x="545" y="253" transform="translate(180 90) scale(.65)" />
+              </g>
+              <g transform="translate(365 216)">
+                <ellipse cy="10" rx="13" ry="4" fill="#2f5140" opacity=".4" />
+                <path d="m-7-4 2 16h5l2-16M2-4l4 16h5L8-5" fill="#334a3e" />
+                <path d="m-9-22-2 23 21 1-2-23z" fill="#f2dfb5" />
+                <path d="m-8-20-5 17 4 1 8-15M6-20l7 14-4 2-9-13" fill="#e6cb9b" />
+                <rect x="-9" y="-21" width="15" height="17" rx="3" fill="#b88c42" />
+                <circle cy="-31" r="7" fill="#d4ad7e" />
+                <ellipse cy="-36" rx="13" ry="4" fill="#d5c389" />
+                <path d="M-8-36v-6q8-7 16 0v6" fill="#dfcf9c" />
+              </g>
+              <use href="#entry-beacon" x="268" y="211" />
+              <use href="#entry-beacon" x="501" y="190" />
+              <use href="#entry-beacon" x="422" y="266" />
+              <path
+                d="m92 111 29-14m552 185 28-13M157 281l15 6m401-208 18 5"
+                stroke="#a7d7b9"
+                stroke-opacity=".35"
+              />
+            </svg>
+            <span class="entry-visual-label">
+              <span></span> UNA NUEVA PERSPECTIVA
+            </span>
+            <span class="entry-visual-number" aria-hidden="true">
+              02
+            </span>
+            <span class="entry-world-tag">
+              EXPERIENCIA 3D <span>↗</span>
+            </span>
+          </div>
+          <div class="entry-card-content">
+            <p class="entry-card-kicker">LA EXPERIENCIA INMERSIVA</p>
+            <h2 id="entry-world-title">Ponete en marcha.</h2>
+            <p class="entry-card-copy">
+              Recorré un paisaje 3D e interactuá con los puntos del Geoparque.
+            </p>
+            <div class="entry-card-action">
+              <span id="entry-world-action">Entrar a la experiencia</span>
+              <span class="entry-arrow" aria-hidden="true">
+                ↗
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <footer class="entry-footer">
+      <p>
+        GEOLOGÍA <span>·</span> NATURALEZA <span>·</span> CULTURA
+      </p>
+      <p>
+        Vení con curiosidad. Volvé con otra mirada.
+        <br />
+        <a href="/creditos-fotograficos/#gms-01">Foto: Bienflorencia · CC BY-SA 4.0</a>
+      </p>
+      <span class="entry-footer-mark" aria-hidden="true">
+        MS / UY
+      </span>
+    </footer>
+  </div>
+</PortalLayout>

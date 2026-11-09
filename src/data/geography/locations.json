@@ -1,0 +1,614 @@
+[
+  {
+    "id": 1,
+    "latitude": -34.28829794,
+    "longitude": -55.26116692,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 1",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. El punto identifica el geositio en la capa oficial; no está documentado como puerta de entrada ni cumbre. Parque Nacional, parador privado, monte y gruta son sectores con accesos distintos.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 2,
+    "latitude": -34.31181647,
+    "longitude": -55.18489853,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 2",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 3,
+    "latitude": -34.33642186,
+    "longitude": -55.17216365,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 3",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 4,
+    "latitude": -34.17817222,
+    "longitude": -55.07421111,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 4",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Punto de las nacientes publicado como geositio; no equivale a un acceso turístico habilitado o una ruta caminable.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 5,
+    "latitude": -34.18195048,
+    "longitude": -55.05469404,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 5",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 6,
+    "latitude": -34.15803445,
+    "longitude": -54.95444236,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 6",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 7,
+    "latitude": -34.08607833,
+    "longitude": -54.71728336,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 7",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. La capa institucional resuelve el geositio homónimo por ID y nombre; la ficha canónica mantenía ubicación operativa pendiente. Confirmar punto de encuentro y condiciones de visita; no modificar textos canónicos.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 8,
+    "latitude": -34.24748528,
+    "longitude": -54.97210666,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 8",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 9,
+    "latitude": -34.32080794,
+    "longitude": -54.98897444,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 9",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. El punto identifica la represa; no acredita acceso al agua, baño o estacionamiento.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 10,
+    "latitude": -34.32315565,
+    "longitude": -54.99090912,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 10",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 11,
+    "latitude": -34.32497775,
+    "longitude": -54.99099996,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 11",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 12,
+    "latitude": -34.32590061,
+    "longitude": -54.99025689,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 12",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Afloramiento geológico, no puerta de un establecimiento. No inferir libre acceso sobre los predios próximos.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 13,
+    "latitude": -34.43206364,
+    "longitude": -54.98299066,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 13",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Cantera identificada por ID 13 en la capa oficial; la ficha canónica conserva ingreso sólo con autorización y ubicación operativa pendiente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 14,
+    "latitude": -34.37230556,
+    "longitude": -55.05322146,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 14",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 15,
+    "latitude": -34.4,
+    "longitude": -55.15,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 15",
+    "accuracy": "approximate",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coordenada oficial publicada sólo con dos decimales (-34.4,-55.15), con precisión insuficiente para indicar cumbre o acceso. Conservar como referencia aproximada y sin navegación precisa.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 16,
+    "latitude": -34.39205488,
+    "longitude": -55.217483,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 16",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Corresponde al Parque Represa de OSE de Minas, distinto de la represa/camping de Aguas Blancas. La capa no confirma modalidad recreativa actual.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 17,
+    "latitude": -34.42022544,
+    "longitude": -55.20511377,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 17",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Corresponde al Parque de Minas / antiguo parque de vacaciones UTE-ANTEL en Ruta12, al sur de Minas; no es un parque urbano del centro.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 18,
+    "latitude": -34.45412338,
+    "longitude": -55.26542728,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 18",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Sitio arqueológico sensible. La posición está publicada en la capa institucional abierta, pero no se verificó un acceso de visita pública. No convertirla en instrucciones de llegada ni habilitación de visita espontánea; conservar tratamiento de investigación de la ficha canónica.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 19,
+    "latitude": -34.47126321,
+    "longitude": -55.20503071,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 19",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 20,
+    "latitude": -34.50823849,
+    "longitude": -55.23647327,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 20",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Cantera y patrimonio minero con visita especializada autorizada; el punto cartográfico no confirma permiso de ingreso.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 21,
+    "latitude": -34.51877897,
+    "longitude": -55.32593709,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 21",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Referencia del abra y paisaje vial; no es estacionamiento ni autorización para detenerse en un punto de la calzada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 22,
+    "latitude": -34.53067783,
+    "longitude": -55.34723084,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 22",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. El punto localiza el templo; no confirma reapertura ni disponibilidad actual para visitas.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 23,
+    "latitude": -34.51186307,
+    "longitude": -55.34947142,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 23",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Campamento Aguas Blancas es ID 23 y conserva su punto propio. No fusionar con Camping Aguas Blancas ID 24; la capa los separa aproximadamente 2,1 km.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 24,
+    "latitude": -34.50921785,
+    "longitude": -55.37259864,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 24",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Camping Aguas Blancas es ID 24 y conserva su punto propio. No fusionar con Campamento Aguas Blancas ID 23 ni usarlo como coordenada del templo.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 25,
+    "latitude": -34.58560648,
+    "longitude": -55.36978869,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 25",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Referencia del cerro, sin puerta de acceso público confirmada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 26,
+    "latitude": -34.59941944,
+    "longitude": -55.45839586,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 26",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 27,
+    "latitude": -34.601597,
+    "longitude": -55.4668937,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 27",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Sede en Solís de Mataojo, distinta de Casa de la Cultura de Minas. El punto no confirma agenda ni horario.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 28,
+    "latitude": -34.60127274,
+    "longitude": -55.46674718,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 28",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Edificio de Solís de Mataojo; no sustituir por museo o monumento a Fabini en otra localidad.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 29,
+    "latitude": -34.5991851,
+    "longitude": -55.4667884,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 29",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Coinciden el ID y el nombre canónicos con la entidad institucional. La posición del geositio no acredita permisos, horarios ni una puerta de entrada.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 30,
+    "latitude": -34.5973965,
+    "longitude": -55.4667197,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 30",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Plaza de Deportes de Solís de Mataojo; no corresponde a la Plaza de Deportes de Minas.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 31,
+    "latitude": -34.40264941,
+    "longitude": -55.32179036,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 31",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Reserva amplia: el operador distingue Jardines/Fuente del Puma y Parque Familiar, separados 3,5 km por la ruta de acceso. El punto WFS del geositio no se verificó como una de sus puertas ni representa todos los sectores. Fuente complementaria: https://reservanaturalsalus.com.uy/que-hacer/ .",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 32,
+    "latitude": -34.40025661,
+    "longitude": -55.28836597,
+    "sourceUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/dca18d8e-d5cf-4f26-ab41-2ea393a4c358",
+    "sourceLabel": "Intendencia de Lavalleja / IDE Uruguay · Geoparque Manantiales Serranos: Geositios · ideuy:uyla_geositios · ID 32",
+    "accuracy": "verified_documented",
+    "notes": "Punto documentado en la capa oficial de 2026, escala de origen 1:55.000; no es un levantamiento de acceso. Ubicación de una mina/instalación industrial, sin permiso de visita confirmado. El marcador no habilita ingreso.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 33,
+    "latitude": -34.37654316,
+    "longitude": -55.29177337,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio Cerro del Verdún; no equivale al acceso de Mina Verdún.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 34,
+    "latitude": -34.37318523,
+    "longitude": -55.27755362,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial de la cantera geológica, diferenciado del cerro/santuario33. La cartografía no autoriza el acceso privado.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 35,
+    "latitude": -34.35559789,
+    "longitude": -55.25215023,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del antiguo complejo AFE; coincide con el nombre canónico. El punto no determina entrada accesible.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 36,
+    "latitude": -34.37742118,
+    "longitude": -55.24544359,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Geositio oficial Museo Stelio Belloni; conservar la diferencia entre museo, obras en Intendencia y monumento Cerro Artigas.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 37,
+    "latitude": -34.37687321,
+    "longitude": -55.24048406,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 38,
+    "latitude": -34.37213044,
+    "longitude": -55.24008516,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 39,
+    "latitude": -34.37764383,
+    "longitude": -55.23819406,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 40,
+    "latitude": -34.37739946,
+    "longitude": -55.23766576,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 41,
+    "latitude": -34.37862828,
+    "longitude": -55.23665243,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 42,
+    "latitude": -34.37916336,
+    "longitude": -55.23821478,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 43,
+    "latitude": -34.37721515,
+    "longitude": -55.2277544,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 44,
+    "latitude": -34.37631145,
+    "longitude": -55.23098499,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del museo/fábrica; no sustituir por un punto de venta de alfajores.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 45,
+    "latitude": -34.37427264,
+    "longitude": -55.23762902,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 46,
+    "latitude": -34.3753177,
+    "longitude": -55.21753133,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial Cerro Artigas; geositio distinto de Cerro del Verdún.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 47,
+    "latitude": -34.36668065,
+    "longitude": -55.22528772,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 48,
+    "latitude": -34.36636036,
+    "longitude": -55.22355775,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto oficial del geositio cuyo ID y nombre coinciden exactamente con el catálogo canónico. No certifica acceso ni horario vigente.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 49,
+    "latitude": -34.3624811,
+    "longitude": -55.2210874,
+    "sourceUrl": "https://mapas.ide.uy/geoserver-vectorial/ideuy/uyla_geositios/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy:uyla_geositios&outputFormat=application%2Fjson&srsName=EPSG:4326",
+    "sourceLabel": "IDE Uruguay — Geoparque Manantiales Serranos, Geositios (Intendencia de Lavalleja)",
+    "accuracy": "verified_documented",
+    "notes": "Punto representativo oficial del parque, no levantamiento de todos sus accesos.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 50,
+    "latitude": -34.2858,
+    "longitude": -55.2679,
+    "sourceUrl": "https://relcomlatinoamerica.net/sicoms/gruta-arequita/",
+    "sourceLabel": "RELCOM / Programa para la Conservación de los Murciélagos de Uruguay · SICOM S-UR-002 Gruta Arequita",
+    "accuracy": "verified_documented",
+    "notes": "El mapa público de la ficha SICOM publica un pin rotulado 34°17′08.9″ S 55°16′04.4″ O; las coordenadas WGS 84 (-34.2858,-55.2679) también constan en la propuesta de Botto 2017. Es referencia del refugio, no acceso libre. No extraer el centro de vista del iframe (-34.2857955,-55.2700887), que difiere del pin. La ficha documenta predio privado, acceso restringido y acompañado; no acredita disponibilidad turística actual. El Parador Arequita sirve de punto de acceso para coordinar; no se verificó su puerta exacta.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 51,
+    "latitude": -34.2915298,
+    "longitude": -55.2681444,
+    "sourceUrl": "https://www.openstreetmap.org/node/5274275321",
+    "sourceLabel": "OpenStreetMap · nodo 5274275321 monte de ombues · referencia comunitaria",
+    "accuracy": "approximate",
+    "notes": "Nodo OSM consultado por API 0.6, versión 1 de 2017-12-09. Es una referencia dentro del monte, no su entrada ni un sendero autorizado. La existencia y entorno al pie de Arequita se corroboran en el Ministerio de Ambiente: https://www.ambiente.gub.uy/oan/snap/parque-nacional-arequita/ . El organismo describe la unidad de 560 ha y acceso por Camino Valeriano Magri; no publica en la ficha coordenada propia del bosque. No confundir con el Monte de Ombúes de Valizas/Rocha.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 52,
+    "latitude": -34.2749586,
+    "longitude": -55.2570865,
+    "sourceUrl": "https://www.openstreetmap.org/node/6416153797",
+    "sourceLabel": "OpenStreetMap · nodo 6416153797 Laguna de los Cuervos · referencia del establecimiento",
+    "accuracy": "approximate",
+    "notes": "Nodo OSM tourism=chalet, versión 3 de 2025-01-26, con web lagunadeloscuervos.com.uy, correo y teléfonos que coinciden con el operador canónico. El operador https://www.lagunadeloscuervos.com.uy/ confirma base del Cerro de los Cuervos, Camino Valeriano Magri y 13 km de Minas. Su iframe busca por nombre y no publica coordenada. Se representa el establecimiento, no el centro del cauce o un ingreso al agua. El paisaje del Santa Lucía entre los cerros se corrobora en el proyecto SNAP del Ministerio de Ambiente. No confundir con Quebrada de los Cuervos (Treinta y Tres) ni lagunas chilenas.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 53,
+    "latitude": -34.280532926628,
+    "longitude": -55.277585402541,
+    "sourceUrl": "https://mapa.cnd.org.uy/es/node/9766",
+    "sourceLabel": "Corporación Nacional para el Desarrollo · Camping Arequita, Lavalleja · obra IDL 07/2023 · entidad 9766",
+    "accuracy": "verified_documented",
+    "notes": "Punto Leaflet geofield de la ficha primaria CND, entidad 9766, con obra de cabañas/piscina y cliente Intendencia de Lavalleja. Localiza el complejo/obra; no se afirma una puerta ni coordenada de cabaña. La ficha OAN confirma Camping Intendencia de Lavalleja y teléfono 4440 2503. Se descarta como ubicación verificada el JSON-LD de campingarequita.uy(-34.2936,-55.2754), pues contradice su iframe (-34.31,-55.28) y las direcciones internas(Ruta 12 km 10 vs Ruta 8 km 140).",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 54,
+    "latitude": -34.3223672,
+    "longitude": -54.9893614,
+    "sourceUrl": "https://www.openstreetmap.org/relation/2562628",
+    "sourceLabel": "OpenStreetMap / Nominatim · Villa Serrana · centro representativo de relación 2562628",
+    "accuracy": "approximate",
+    "notes": "La ficha canónica describe todo el conjunto urbano y paisajístico. Se usa explícitamente el centro representativo de localidad que devuelve Nominatim para la relación administrativa de Villa Serrana, no un POI, puerta ni Ventorrillo/Mesón. El ámbito urbano se corrobora en el Plan Local oficial IDL: https://www.gub.uy/intendencia-lavalleja/tematica/plan-local-villa-serrana . Límites de referencia OSM [-55.0119769,-34.3384685,-54.9689166,-34.3050784]. No atribuir exactitud de navegación al centro representativo.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 55,
+    "latitude": -34.32375555555556,
+    "longitude": -54.999091666666665,
+    "sourceUrl": "https://laguarida.com.uy/",
+    "sourceLabel": "Parque La Guarida · operador · sección Cómo llegar",
+    "accuracy": "verified_documented",
+    "notes": "El operador publica literalmente 34°19′25.52″ S 54°59′56.73″ O en Cómo llegar. Conversión aritmética a grados decimales; ubicación publicada de La Guarida, no centro de Villa Serrana. Confirma primera entrada Ruta 8 km 139.500 y falda del Cerro Guazubirá. Su publicación de coordenadas no sustituye reserva previa o condiciones de acceso.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 56,
+    "latitude": -34.3220583,
+    "longitude": -54.9859676,
+    "sourceUrl": "https://experienciasvillaserrana.com.uy/st_tour/mangas-de-piedra/",
+    "sourceLabel": "Experiencias Villa Serrana — Mangas de piedra, mapa de la actividad",
+    "accuracy": "approximate",
+    "notes": "Coordenadas publicadas en el mapa del operador, registro10580 denominado Mangas de piedra. El catálogo canónico agrupa caminata y cabalgata a La Leona, por lo que no debe presentarse como cumbre ni entrada confirmada. La excursión requiere contratación, guía e ingresos autorizados a campos privados.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 57,
+    "latitude": -34.514587,
+    "longitude": -55.340159,
+    "sourceUrl": "https://www.gub.uy/ministerio-turismo/sites/ministerio-turismo/files/documentos/noticias/Patrimonio2022.pdf",
+    "sourceLabel": "Ministerio de Turismo — Guía del Día del Patrimonio2022, El Abra",
+    "accuracy": "approximate",
+    "notes": "La guía imprime coordenadas con separadores no estándar y sin signos: latitud34.514.587, longitud55.340.159. Se normalizaron como decimales y hemisferios sur/oeste por la referencia explícita Aguas Blancas, Ruta81km124. La guía2023 repite el mismo dato. La fuente no identifica la entrada ni acredita disponibilidad turística actual; confirmar con responsables.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 58,
+    "latitude": -34.442158,
+    "longitude": -55.236637,
+    "sourceUrl": "https://www.portalesdeluruguay.com.uy/en/alojamientos/country-inn/valle-del-hilo-de-la-vida-eco-lodge",
+    "sourceLabel": "Portales del Uruguay · Valle del Hilo de la Vida Eco Lodge · referencia comercial de la posada, ID 25240",
+    "accuracy": "approximate",
+    "notes": "Referencia publicada de la posada turística Valle del Hilo de la Vida Eco Lodge: la ficha comercial de Portales del Uruguay, ID 25240, publica estas coordenadas en JSON-LD BedAndBreakfast/GeoCoordinates y en sus indicaciones. Fuente comercial no corroborada con el operador: su web respondió sin contenido durante la consulta. El punto representa únicamente la posada turística como referencia aproximada; no localiza las estructuras arqueológicas del valle, no identifica una entrada exacta ni acredita ingreso habilitado, disponibilidad actual o permiso de visita. Coordiná con los responsables antes de acercarte.",
+    "checkedAt": "2026-11-08",
+    "referenceLabel": "Referencia de la posada; no del conjunto arqueológico."
+  },
+  {
+    "id": 59,
+    "latitude": -34.4465405,
+    "longitude": -55.2332291,
+    "sourceUrl": "https://www.openstreetmap.org/node/7010044977",
+    "sourceLabel": "OpenStreetMap — nodo7010044977, Cerro Místico (cartografía comunitaria)",
+    "accuracy": "approximate",
+    "notes": "Nodo comunitario explícito name=Cerro Místico,tourism=hotel. El operador confirma el establecimiento en Ruta12km346. Se usa como referencia del hotel, sin afirmar recepción exacta, cumbre, accesibilidad ni autorización de ingreso. No se permiten visitas sin coordinación según el operador.",
+    "checkedAt": "2026-11-08"
+  },
+  {
+    "id": 60,
+    "latitude": -34.377108276779744,
+    "longitude": -55.22923863682804,
+    "sourceUrl": "https://direcciones.ide.uy/api/v1/geocode/find?type=CALLEyPORTAL&idcalle=18885&portal=322",
+    "sourceLabel": "IDE Uruguay / Sistema Único de Direcciones · domicilio 726988 · CORONEL M. CARBAJAL 322, Minas",
+    "accuracy": "approximate",
+    "notes": "Referencia geocodificada del domicilio publicado por el MEC para el Museo de Réplicas en Miniaturas: Carabajal 322, Minas. La API oficial SUDIR devuelve tipo CALLEyPORTAL, registro 726988, idCalle 18885, portalNumber 322, MINAS/LAVALLEJA, source ide_uy, state 1 y stateMsg vacío, con estas coordenadas. El nomenclátor devuelve la variante CORONEL M. CARBAJAL; la consulta libre de Carabajal 322 resuelve al mismo registro. Se usa como referencia aproximada del domicilio, no de una puerta del museo ni de un ingreso habilitado. No se realizó interpolación propia. Corroboración institucional de la dirección: https://www.museos.gub.uy/index.php/museos/museos-por-localidad/lavalleja/item/585-museo-de-replicas-en-miniaturas .",
+    "checkedAt": "2026-11-08",
+    "referenceLabel": "Referencia del domicilio publicado por el MEC."
+  },
+  {
+    "id": 61,
+    "latitude": -34.3776174,
+    "longitude": -55.2450919,
+    "sourceUrl": "https://www.openstreetmap.org/node/6693848991",
+    "sourceLabel": "OpenStreetMap — nodo6693848991, Molino viejo (cartografía comunitaria)",
+    "accuracy": "approximate",
+    "notes": "Nodo comunitario Molino viejo, tourism=museum, addr:street=Juan Farina, addr:city=Minas; corroborado por ficha oficial MEC: Juan Farina entre Enrique Lados y Miguel Barreiro. Es referencia del edificio histórico, no entrada habilitada. IDL documenta obras y depósito temporal de sus bienes en2026, por lo que se conserva el estado canónico de visita no confirmada.",
+    "checkedAt": "2026-11-08"
+  }
+]

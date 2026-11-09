@@ -1,24 +1,24 @@
 {
   "aguas": {
     "path": "src/assets/images/hero/aguas.webp",
-    "width": 2200,
-    "height": 1291,
-    "bytes": 206174,
-    "sha256": "b9acfd1b7e925af900d77656e06c4b0025c0a272ee73a98f97e05662030a45e4"
+    "width": 1672,
+    "height": 941,
+    "bytes": 513852,
+    "sha256": "43b29627ba85e71cfc09985f6816f8a247cc5f227b7351d62aca84674bb86e76"
   },
   "aprendiendo": {
-    "path": "src/assets/images/education/aprendiendo.webp",
-    "width": 505,
-    "height": 360,
-    "bytes": 88636,
-    "sha256": "65aa5f6120fc99386095b77a1182c0218aee2e30ea839425b819eceb7b70f749"
+    "path": "src/assets/images/places/gms-56-restored.webp",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 2109768,
+    "sha256": "63f91c04f50285dd460d365d37e909a50dcfa9cbb06419dc6d726389bcf89d60"
   },
   "arequita-rio": {
     "path": "src/assets/images/hero/arequita-rio.webp",
-    "width": 1500,
-    "height": 844,
-    "bytes": 300064,
-    "sha256": "02152bb27f74b1bb23749aac9db79cccc7b2176090818d7314cd6cb2fec3856a"
+    "width": 3840,
+    "height": 2162,
+    "bytes": 1863398,
+    "sha256": "8cc45367905b4d3a684ec7c0421d84a154731e97f7d9a5820b23d2c85a63c72d"
   },
   "arequita": {
     "path": "src/assets/images/geosites/arequita.webp",
@@ -91,11 +91,11 @@
     "sha256": "160c5610dbfab743f8b833e5ff0958cf8380c2536d829f4ccc3233dd9f0f759e"
   },
   "escuela": {
-    "path": "src/assets/images/education/escuela.webp",
-    "width": 404,
-    "height": 360,
-    "bytes": 76194,
-    "sha256": "b1e275b0d20a5f66f3574e4b181ef3f4dd251dfc1943837a740775901b1012fa"
+    "path": "src/assets/images/places/gms-56-restored.webp",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 2109768,
+    "sha256": "63f91c04f50285dd460d365d37e909a50dcfa9cbb06419dc6d726389bcf89d60"
   },
   "gastronomia": {
     "path": "src/assets/images/culture/gastronomia.webp",
@@ -162,10 +162,10 @@
   },
   "parque": {
     "path": "src/assets/images/hero/parque.webp",
-    "width": 2200,
-    "height": 1124,
-    "bytes": 363546,
-    "sha256": "e5e3aa37b6dd81f8c9009d9cd4349b10cafdb559d4fd0ad76ba16c2ae424518c"
+    "width": 1935,
+    "height": 813,
+    "bytes": 2626504,
+    "sha256": "061ba266ce8759d89a53cc47f381783e8234cda9fe0c95ce119355619c473227"
   },
   "pelado": {
     "path": "src/assets/images/geosites/pelado.webp",
@@ -204,10 +204,10 @@
   },
   "salus": {
     "path": "src/assets/images/hero/salus.webp",
-    "width": 2042,
-    "height": 1500,
-    "bytes": 473938,
-    "sha256": "602e6c6ff79c843b645423e43e9bc7885f270c664c32770aca4c8c311a2a9bb6"
+    "width": 3840,
+    "height": 2560,
+    "bytes": 1267326,
+    "sha256": "8c45e14319752873c346fae38e530fad9ab7e4e8d425ce1133d870b47837bc10"
   },
   "unesco": {
     "path": "public/partners/unesco.png",

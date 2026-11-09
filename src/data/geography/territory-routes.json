@@ -1,0 +1,4577 @@
+{
+  "waterways": [
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -94.860104, "z": 34.432692 },
+        { "x": -94.844834, "z": 34.4392 },
+        { "x": -94.740325, "z": 34.620125 },
+        { "x": -94.754988, "z": 34.658693 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -94.77395, "z": 34.708566 },
+        { "x": -94.935269, "z": 35.132873 },
+        { "x": -94.949847, "z": 35.144018 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -95.105201, "z": 35.26278 },
+        { "x": -95.414585, "z": 35.499294 },
+        { "x": -95.800883, "z": 36.692364 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -95.832793, "z": 36.887372 },
+        { "x": -95.813621, "z": 36.983373 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -94.894139, "z": 38.36464 },
+        { "x": -94.858431, "z": 38.387779 },
+        { "x": -94.856927, "z": 38.543989 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -94.8558, "z": 38.660943 },
+        { "x": -94.852538, "z": 38.999696 },
+        { "x": -94.931792, "z": 39.095304 },
+        { "x": -95.092675, "z": 39.059021 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -95.961406, "z": 38.569486 },
+        { "x": -95.990478, "z": 38.648361 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -94.611762, "z": 40.199406 },
+        { "x": -94.566083, "z": 40.197047 },
+        { "x": -94.496988, "z": 40.258335 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -94.247467, "z": 40.479664 },
+        { "x": -94.171896, "z": 40.546697 },
+        { "x": -94.14786, "z": 40.683258 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -93.067114, "z": 41.246303 },
+        { "x": -92.569175, "z": 41.027668 },
+        { "x": -92.528793, "z": 41.034569 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -92.30396, "z": 41.072991 },
+        { "x": -92.193463, "z": 41.091875 },
+        { "x": -92.118092, "z": 41.256585 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -91.556469, "z": 42.30559 },
+        { "x": -91.45197, "z": 42.308189 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -91.064046, "z": 42.139224 },
+        { "x": -90.976976, "z": 42.072587 },
+        { "x": -90.504762, "z": 42.173835 },
+        { "x": -90.430026, "z": 42.226662 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -90.41284, "z": 42.23881 },
+        { "x": -90.328372, "z": 42.298515 },
+        { "x": -90.337263, "z": 42.36632 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -90.284768, "z": 42.972999 },
+        { "x": -90.27653, "z": 43.018169 },
+        { "x": -90.363122, "z": 43.055628 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -90.700855, "z": 44.040049 },
+        { "x": -90.693278, "z": 44.050771 },
+        { "x": -90.698498, "z": 44.06894 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -88.789336, "z": 43.85492 },
+        { "x": -88.633337, "z": 44.006337 },
+        { "x": -88.668884, "z": 44.098135 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -88.609005, "z": 45.099846 },
+        { "x": -88.553514, "z": 45.143926 },
+        { "x": -88.563203, "z": 45.249249 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -87.143773, "z": 45.926183 },
+        { "x": -87.116985, "z": 45.921916 },
+        { "x": -87.047514, "z": 45.967167 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -86.423292, "z": 46.232943 },
+        { "x": -86.16349, "z": 46.310534 },
+        { "x": -86.152218, "z": 46.936411 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -85.192458, "z": 47.064269 },
+        { "x": -85.152528, "z": 47.056263 },
+        { "x": -84.987346, "z": 47.101767 },
+        { "x": -84.90568, "z": 47.28465 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -84.507558, "z": 47.720097 },
+        { "x": -84.470119, "z": 47.748627 },
+        { "x": -84.467574, "z": 47.794029 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -84.346275, "z": 48.217614 },
+        { "x": -84.327768, "z": 48.255646 },
+        { "x": -84.345884, "z": 48.348253 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -84.386576, "z": 48.556257 },
+        { "x": -84.463696, "z": 48.950478 },
+        { "x": -84.452335, "z": 49.151218 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -83.558256, "z": 49.653956 },
+        { "x": -83.4986, "z": 49.74669 },
+        { "x": -83.697052, "z": 49.894349 },
+        { "x": -83.680413, "z": 50.168656 },
+        { "x": -83.761659, "z": 50.311077 },
+        { "x": -83.862019, "z": 50.3303 },
+        { "x": -83.984566, "z": 50.485115 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -83.147128, "z": 51.612492 },
+        { "x": -83.068338, "z": 51.682648 },
+        { "x": -83.147332, "z": 51.958082 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -83.158389, "z": 51.996633 },
+        { "x": -83.204054, "z": 52.155858 },
+        { "x": -83.532549, "z": 52.40686 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -83.557177, "z": 52.433863 },
+        { "x": -83.586322, "z": 52.50762 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -83.526225, "z": 52.843743 },
+        { "x": -83.472198, "z": 52.957595 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -83.203542, "z": 53.247648 },
+        { "x": -82.873791, "z": 53.452364 },
+        { "x": -82.711402, "z": 53.863315 },
+        { "x": -82.799549, "z": 54.270414 },
+        { "x": -82.909533, "z": 54.517272 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -83.020398, "z": 54.766109 },
+        { "x": -83.042528, "z": 54.815778 },
+        { "x": -83.111234, "z": 54.869935 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -83.742337, "z": 55.491884 },
+        { "x": -83.78928, "z": 55.792937 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -82.116654, "z": 56.442252 },
+        { "x": -82.082915, "z": 56.47426 },
+        { "x": -82.101206, "z": 56.531366 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -82.040334, "z": 56.882533 },
+        { "x": -81.97716, "z": 57.032612 },
+        { "x": -82.210856, "z": 57.610748 },
+        { "x": -82.353029, "z": 57.748696 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -81.765022, "z": 58.492535 },
+        { "x": -81.700199, "z": 58.455772 },
+        { "x": -81.588257, "z": 58.658024 },
+        { "x": -81.668219, "z": 59.195596 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -81.797241, "z": 60.727261 },
+        { "x": -81.822722, "z": 60.867569 },
+        { "x": -82.820349, "z": 61.264379 },
+        { "x": -82.872595, "z": 61.255729 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -82.730896, "z": 61.822446 },
+        { "x": -82.670254, "z": 61.807598 },
+        { "x": -82.531112, "z": 61.942596 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -82.416332, "z": 62.053958 },
+        { "x": -82.300244, "z": 62.166588 },
+        { "x": -82.297162, "z": 62.176054 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -81.503168, "z": 62.716723 },
+        { "x": -81.436468, "z": 62.718871 },
+        { "x": -81.370523, "z": 62.779882 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -81.182233, "z": 63.541167 },
+        { "x": -81.179684, "z": 63.616407 },
+        { "x": -81.372144, "z": 63.819716 },
+        { "x": -81.499887, "z": 63.858845 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -81.353954, "z": 65.72425 },
+        { "x": -81.304683, "z": 65.906332 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -79.817012, "z": 66.428088 },
+        { "x": -79.771069, "z": 66.566363 },
+        { "x": -79.777069, "z": 66.758438 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -78.518646, "z": 68.09951 },
+        { "x": -78.46559, "z": 68.147458 },
+        { "x": -78.445462, "z": 68.200986 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -78.335153, "z": 68.494325 },
+        { "x": -78.307562, "z": 68.567698 },
+        { "x": -78.387929, "z": 68.694363 },
+        { "x": -79.029933, "z": 68.976564 },
+        { "x": -79.178702, "z": 68.920141 },
+        { "x": -79.519321, "z": 69.028893 },
+        { "x": -79.691829, "z": 69.198195 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94538",
+      "points": [
+        { "x": -80.120983, "z": 71.965212 },
+        { "x": -80.217367, "z": 72.269732 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94538"]
+    },
+    {
+      "name": "ARROYO SOLÍS GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94591",
+      "points": [
+        { "x": -44.130715, "z": 19.094888 },
+        { "x": -44.353018, "z": 18.763385 },
+        { "x": -45.05832, "z": 18.418094 },
+        { "x": -45.23529, "z": 18.185196 },
+        { "x": -45.808062, "z": 18.145171 },
+        { "x": -46.236435, "z": 18.42613 },
+        { "x": -46.36585, "z": 18.598402 },
+        { "x": -46.558581, "z": 18.635191 },
+        { "x": -47.10383, "z": 18.26897 },
+        { "x": -47.517604, "z": 18.142461 },
+        { "x": -47.857618, "z": 17.678286 },
+        { "x": -47.965512, "z": 17.395725 },
+        { "x": -48.447497, "z": 17.484901 },
+        { "x": -48.64519, "z": 17.072754 },
+        { "x": -49.20256, "z": 17.036171 },
+        { "x": -50.158176, "z": 16.727746 },
+        { "x": -50.017197, "z": 16.354659 },
+        { "x": -49.983094, "z": 15.975798 },
+        { "x": -50.050863, "z": 15.896828 },
+        { "x": -50.056278, "z": 15.545493 },
+        { "x": -49.934565, "z": 15.018732 },
+        { "x": -50.166825, "z": 14.376878 },
+        { "x": -49.838389, "z": 13.655787 },
+        { "x": -49.843802, "z": 13.428349 },
+        { "x": -50.047712, "z": 13.358446 },
+        { "x": -50.113991, "z": 13.033665 },
+        { "x": -50.268089, "z": 12.902413 },
+        { "x": -50.307867, "z": 12.784912 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94591"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -67.889137, "z": -27.711909 },
+        { "x": -67.848311, "z": -27.66261 },
+        { "x": -67.92956, "z": -27.368819 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -62.304408, "z": -27.096264 },
+        { "x": -62.267817, "z": -27.097664 },
+        { "x": -62.205074, "z": -27.658863 },
+        { "x": -62.3713, "z": -27.86305 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -62.257797, "z": -28.497938 },
+        { "x": -62.063561, "z": -28.764216 },
+        { "x": -61.608972, "z": -29.018838 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -61.554149, "z": -29.049546 },
+        { "x": -61.516485, "z": -29.070641 },
+        { "x": -61.311438, "z": -29.287822 },
+        { "x": -60.90572, "z": -29.421325 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -60.689181, "z": -29.337703 },
+        { "x": -60.541414, "z": -29.228274 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -60.381166, "z": -29.109603 },
+        { "x": -60.250634, "z": -29.012936 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -59.838251, "z": -27.329355 },
+        { "x": -59.912814, "z": -26.754093 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -59.962943, "z": -25.329455 },
+        { "x": -59.968572, "z": -25.539933 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -59.914597, "z": -25.717698 },
+        { "x": -59.883244, "z": -25.760552 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -56.395726, "z": -24.334919 },
+        { "x": -56.208282, "z": -24.038769 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -56.359816, "z": -23.862373 },
+        { "x": -56.228421, "z": -22.478463 },
+        { "x": -56.085228, "z": -22.243385 },
+        { "x": -56.06375, "z": -22.285709 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -56.049143, "z": -22.714704 },
+        { "x": -56.060956, "z": -22.874814 },
+        { "x": -55.94778, "z": -23.014442 },
+        { "x": -56.020723, "z": -23.194953 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -56.020381, "z": -23.226316 },
+        { "x": -56.439488, "z": -24.051716 },
+        { "x": -56.359167, "z": -24.779715 },
+        { "x": -56.877617, "z": -25.32734 },
+        { "x": -57.106269, "z": -25.327098 },
+        { "x": -57.169437, "z": -25.389378 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -59.604578, "z": -24.694536 },
+        { "x": -59.62513, "z": -24.69268 },
+        { "x": -59.643278, "z": -24.716046 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -59.960218, "z": -25.265696 },
+        { "x": -60.01825, "z": -25.467776 },
+        { "x": -60.021807, "z": -25.569064 },
+        { "x": -59.937739, "z": -25.541785 },
+        { "x": -59.910985, "z": -25.632795 },
+        { "x": -59.956768, "z": -26.044552 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -59.997007, "z": -26.406449 },
+        { "x": -60.000302, "z": -26.436084 },
+        { "x": -59.96899, "z": -26.522137 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -56.020381, "z": -23.226316 },
+        { "x": -56.051657, "z": -23.416174 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -56.060956, "z": -22.874814 },
+        { "x": -56.020723, "z": -23.194953 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -56.020381, "z": -23.226316 },
+        { "x": -56.020723, "z": -23.194953 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -48.749283, "z": -20.330695 },
+        { "x": -48.609525, "z": -20.472326 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -48.650552, "z": -21.232346 },
+        { "x": -48.703772, "z": -21.451453 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -49.527254, "z": -22.187932 },
+        { "x": -49.579057, "z": -22.202732 },
+        { "x": -49.775341, "z": -22.469499 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -48.694483, "z": -20.978364 },
+        { "x": -48.673425, "z": -20.631569 },
+        { "x": -48.798533, "z": -19.985401 },
+        { "x": -48.740572, "z": -19.28889 },
+        { "x": -48.818165, "z": -19.389427 },
+        { "x": -48.785801, "z": -19.512911 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -48.633374, "z": -21.064526 },
+        { "x": -48.694483, "z": -20.978364 },
+        { "x": -48.885745, "z": -21.400082 },
+        { "x": -49.151232, "z": -21.673883 },
+        { "x": -49.250029, "z": -21.70156 },
+        { "x": -49.418194, "z": -21.586465 },
+        { "x": -49.75186, "z": -21.720499 },
+        { "x": -49.952279, "z": -21.877509 },
+        { "x": -50.179022, "z": -22.291891 },
+        { "x": -51.161129, "z": -22.639954 },
+        { "x": -51.429916, "z": -22.812968 },
+        { "x": -52.596669, "z": -22.61501 },
+        { "x": -52.936625, "z": -22.664105 },
+        { "x": -53.0062, "z": -22.6461 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -36.949475, "z": -19.085398 },
+        { "x": -37.012763, "z": -18.972896 },
+        { "x": -37.241211, "z": -18.984969 },
+        { "x": -37.342282, "z": -18.73458 },
+        { "x": -37.52065, "z": -18.703598 },
+        { "x": -37.663618, "z": -18.78124 },
+        { "x": -37.921112, "z": -18.690663 },
+        { "x": -38.179399, "z": -18.853141 },
+        { "x": -38.424214, "z": -18.89209 },
+        { "x": -38.701006, "z": -19.243807 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -42.320104, "z": -19.266327 },
+        { "x": -42.350765, "z": -19.258456 },
+        { "x": -42.534166, "z": -19.34463 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -43.787998, "z": -19.238651 },
+        { "x": -43.79377, "z": -19.223173 },
+        { "x": -44.545843, "z": -18.829888 },
+        { "x": -44.626851, "z": -18.879508 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -45.932321, "z": -17.264644 },
+        { "x": -45.946047, "z": -17.240013 },
+        { "x": -46.289303, "z": -17.050682 },
+        { "x": -46.881223, "z": -17.148008 },
+        { "x": -47.325605, "z": -17.514473 },
+        { "x": -47.306916, "z": -17.745484 },
+        { "x": -47.767009, "z": -17.91331 },
+        { "x": -47.957567, "z": -17.831515 },
+        { "x": -48.032413, "z": -17.886065 },
+        { "x": -48.499064, "z": -18.501868 },
+        { "x": -48.533636, "z": -18.910109 },
+        { "x": -48.660863, "z": -19.013493 },
+        { "x": -48.740572, "z": -19.28889 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -27.629531, "z": -22.392487 },
+        { "x": -27.588293, "z": -22.186006 },
+        { "x": -27.654281, "z": -22.234979 },
+        { "x": -27.674654, "z": -22.593755 },
+        { "x": -27.989576, "z": -23.259004 },
+        { "x": -28.72976, "z": -23.788195 },
+        { "x": -29.363858, "z": -24.415947 },
+        { "x": -29.372962, "z": -24.439217 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -31.384292, "z": -23.791389 },
+        { "x": -31.402576, "z": -23.786394 },
+        { "x": -31.541881, "z": -23.813011 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -22.268519, "z": -22.988545 },
+        { "x": -22.758164, "z": -22.869035 },
+        { "x": -22.873634, "z": -22.811737 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -24.640196, "z": -21.247298 },
+        { "x": -24.908489, "z": -21.143394 },
+        { "x": -25.090891, "z": -21.168249 },
+        { "x": -25.16282, "z": -21.405289 },
+        { "x": -25.315184, "z": -21.531945 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -25.777857, "z": -21.678675 },
+        { "x": -25.992259, "z": -21.731208 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -26.257403, "z": -21.706868 },
+        { "x": -26.459542, "z": -21.665635 },
+        { "x": -27.198723, "z": -21.824861 },
+        { "x": -27.452763, "z": -21.917701 },
+        { "x": -27.588293, "z": -22.186006 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -22.268519, "z": -22.988545 },
+        { "x": -22.575037, "z": -22.88083 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -22.268519, "z": -22.988545 },
+        { "x": -22.092487, "z": -23.045688 },
+        { "x": -21.952171, "z": -23.184374 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -21.488457, "z": -23.325283 },
+        { "x": -21.435863, "z": -23.294323 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -22.092487, "z": -23.045688 },
+        { "x": -21.435863, "z": -23.294323 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -20.728519, "z": -23.778644 },
+        { "x": -21.027989, "z": -23.376637 },
+        { "x": -21.435863, "z": -23.294323 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -9.698608, "z": -41.408424 },
+        { "x": -9.710082, "z": -41.24472 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -8.186141, "z": -42.975226 },
+        { "x": -8.22093, "z": -42.84244 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": 14.826211, "z": -50.222491 },
+        { "x": 14.364473, "z": -49.508396 },
+        { "x": 14.174325, "z": -49.424411 },
+        { "x": 14.037615, "z": -49.152675 },
+        { "x": 13.586121, "z": -48.856555 },
+        { "x": 13.493174, "z": -48.648676 },
+        { "x": 13.579801, "z": -48.484185 },
+        { "x": 13.468396, "z": -48.153113 },
+        { "x": 13.230535, "z": -48.092545 },
+        { "x": 12.952337, "z": -47.656338 },
+        { "x": 12.794967, "z": -47.624395 },
+        { "x": 12.620234, "z": -47.282106 },
+        { "x": 12.28728, "z": -47.181038 },
+        { "x": 12.162377, "z": -46.847792 },
+        { "x": 11.988204, "z": -46.848509 },
+        { "x": 11.830202, "z": -46.714503 },
+        { "x": 11.64707, "z": -46.72215 },
+        { "x": 11.575024, "z": -46.513178 },
+        { "x": 11.071281, "z": -46.597581 },
+        { "x": 10.794679, "z": -46.2767 },
+        { "x": 10.606984, "z": -46.185693 },
+        { "x": 10.120692, "z": -46.225447 },
+        { "x": 9.970532, "z": -46.114489 },
+        { "x": 9.71931, "z": -46.31159 },
+        { "x": 9.599981, "z": -46.07224 },
+        { "x": 9.329861, "z": -46.070845 },
+        { "x": 9.21042, "z": -45.971753 },
+        { "x": 9.260468, "z": -45.594522 },
+        { "x": 8.556873, "z": -45.462313 },
+        { "x": 8.593611, "z": -45.238975 },
+        { "x": 7.867338, "z": -44.775459 },
+        { "x": 7.619526, "z": -44.743983 },
+        { "x": 7.574285, "z": -44.820594 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": 3.095121, "z": -46.125539 },
+        { "x": 2.921927, "z": -46.082073 },
+        { "x": 2.573145, "z": -46.289526 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": 0.303922, "z": -45.197336 },
+        { "x": 0.119843, "z": -45.117673 },
+        { "x": -0.019869, "z": -45.137146 },
+        { "x": -0.1061, "z": -45.268918 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -0.394295, "z": -45.344385 },
+        { "x": -0.618656, "z": -45.365382 },
+        { "x": -0.982614, "z": -45.73932 },
+        { "x": -1.260835, "z": -45.808455 },
+        { "x": -1.5041, "z": -46.084333 },
+        { "x": -1.671579, "z": -46.053676 },
+        { "x": -1.960826, "z": -46.35674 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -3.10492, "z": -45.693935 },
+        { "x": -3.150845, "z": -45.608977 },
+        { "x": -3.936519, "z": -44.850285 },
+        { "x": -4.034529, "z": -44.876527 },
+        { "x": -4.121565, "z": -45.03439 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -4.329934, "z": -45.058588 },
+        { "x": -4.652986, "z": -45.022735 },
+        { "x": -4.689641, "z": -45.100361 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -5.283443, "z": -45.368715 },
+        { "x": -5.362325, "z": -45.324393 },
+        { "x": -5.433485, "z": -45.407942 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -5.806919, "z": -45.611949 },
+        { "x": -5.90837, "z": -45.405918 },
+        { "x": -6.207898, "z": -45.17123 },
+        { "x": -5.945347, "z": -44.584173 },
+        { "x": -6.062606, "z": -44.475922 },
+        { "x": -6.112773, "z": -44.278326 },
+        { "x": -6.097949, "z": -44.252217 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -6.077732, "z": -44.216611 },
+        { "x": -5.971051, "z": -44.028724 },
+        { "x": -6.014795, "z": -43.870829 },
+        { "x": -6.408538, "z": -43.834007 },
+        { "x": -6.654626, "z": -43.563878 },
+        { "x": -6.781549, "z": -43.710097 },
+        { "x": -7.040325, "z": -43.657916 },
+        { "x": -7.428835, "z": -43.764616 },
+        { "x": -7.518187, "z": -43.361301 },
+        { "x": -8.052806, "z": -43.333154 },
+        { "x": -8.153983, "z": -42.892858 },
+        { "x": -8.314578, "z": -42.732482 },
+        { "x": -8.213135, "z": -42.556124 },
+        { "x": -8.361241, "z": -42.452932 },
+        { "x": -8.735927, "z": -42.5617 },
+        { "x": -9.170657, "z": -42.505908 },
+        { "x": -9.563408, "z": -42.229085 },
+        { "x": -9.586611, "z": -42.199431 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -9.676761, "z": -41.757592 },
+        { "x": -9.656858, "z": -41.284915 },
+        { "x": -9.789481, "z": -41.205135 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -10.754568, "z": -39.97781 },
+        { "x": -10.268589, "z": -39.92535 },
+        { "x": -9.827057, "z": -39.725256 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -9.813586, "z": -39.719151 },
+        { "x": -9.670047, "z": -39.654101 },
+        { "x": -9.713104, "z": -39.576771 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -10.643422, "z": -38.346418 },
+        { "x": -10.684775, "z": -37.992781 },
+        { "x": -10.593911, "z": -37.458211 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -10.411098, "z": -37.094621 },
+        { "x": -10.405923, "z": -37.09216 },
+        { "x": -10.355446, "z": -36.951954 },
+        { "x": -10.22932, "z": -36.922704 },
+        { "x": -10.272065, "z": -36.680649 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -10.561357, "z": -35.741288 },
+        { "x": -10.534963, "z": -35.70041 },
+        { "x": -10.656576, "z": -35.352761 },
+        { "x": -10.600251, "z": -35.038725 },
+        { "x": -10.861507, "z": -34.700158 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -10.912282, "z": -34.634357 },
+        { "x": -11.283165, "z": -34.153723 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "RÍO SANTA LUCÍA",
+      "sourceId": "hidro_cnsolidada_l.94592",
+      "points": [
+        { "x": -59.949478, "z": -28.600781 },
+        { "x": -59.983461, "z": -28.316598 },
+        { "x": -59.894823, "z": -27.765909 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94592"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 33.728925, "z": 5.572631 },
+        { "x": 33.852805, "z": 5.478885 },
+        { "x": 34.266838, "z": 5.444492 },
+        { "x": 34.575601, "z": 5.262308 },
+        { "x": 35.144858, "z": 5.237533 },
+        { "x": 35.231518, "z": 5.123208 },
+        { "x": 35.651116, "z": 5.166168 },
+        { "x": 35.958731, "z": 4.949221 },
+        { "x": 36.292937, "z": 4.97036 },
+        { "x": 36.449462, "z": 4.848629 },
+        { "x": 36.548698, "z": 4.169322 },
+        { "x": 36.394804, "z": 3.633481 },
+        { "x": 36.497688, "z": 3.093321 },
+        { "x": 36.46107, "z": 2.751944 },
+        { "x": 36.520237, "z": 2.532312 },
+        { "x": 36.845959, "z": 2.204926 },
+        { "x": 37.049427, "z": 1.764702 },
+        { "x": 36.983717, "z": 1.532738 },
+        { "x": 36.764917, "z": 1.315574 },
+        { "x": 36.717804, "z": 0.938398 },
+        { "x": 36.909434, "z": 0.442596 },
+        { "x": 36.750799, "z": 0.398427 },
+        { "x": 36.661062, "z": 0.046036 },
+        { "x": 36.779762, "z": -0.232382 },
+        { "x": 36.841715, "z": -0.960504 },
+        { "x": 37.116916, "z": -1.476807 },
+        { "x": 37.321009, "z": -1.65776 },
+        { "x": 37.232458, "z": -1.976501 },
+        { "x": 37.243012, "z": -2.339633 },
+        { "x": 37.347035, "z": -2.443359 },
+        { "x": 37.372154, "z": -2.671128 },
+        { "x": 37.680125, "z": -2.869997 },
+        { "x": 38.006528, "z": -2.746963 },
+        { "x": 38.405403, "z": -2.79767 },
+        { "x": 38.804734, "z": -2.498425 },
+        { "x": 39.103103, "z": -2.600719 },
+        { "x": 39.071953, "z": -2.860943 },
+        { "x": 39.230923, "z": -3.281244 },
+        { "x": 39.158661, "z": -3.482921 },
+        { "x": 39.269233, "z": -3.757225 },
+        { "x": 39.140022, "z": -4.106258 },
+        { "x": 39.12235, "z": -4.466132 },
+        { "x": 39.447651, "z": -5.108792 },
+        { "x": 39.772461, "z": -5.334473 },
+        { "x": 40.056676, "z": -5.730889 },
+        { "x": 40.236868, "z": -5.754218 },
+        { "x": 40.332469, "z": -5.86251 },
+        { "x": 40.280725, "z": -6.117928 },
+        { "x": 39.971226, "z": -6.163674 },
+        { "x": 39.817435, "z": -6.320898 },
+        { "x": 39.873243, "z": -6.692456 },
+        { "x": 40.545856, "z": -7.242068 },
+        { "x": 40.647188, "z": -7.516466 },
+        { "x": 40.804882, "z": -7.64977 },
+        { "x": 41.068719, "z": -8.655142 },
+        { "x": 41.071608, "z": -10.029265 },
+        { "x": 40.857273, "z": -10.979229 },
+        { "x": 41.145249, "z": -11.043953 },
+        { "x": 41.664452, "z": -11.390534 },
+        { "x": 41.495521, "z": -11.735797 },
+        { "x": 41.699974, "z": -11.988312 },
+        { "x": 41.720285, "z": -12.415385 },
+        { "x": 42.226658, "z": -12.886671 },
+        { "x": 42.244594, "z": -13.106506 },
+        { "x": 42.687072, "z": -13.705928 },
+        { "x": 42.896785, "z": -14.257313 },
+        { "x": 42.766625, "z": -14.658911 },
+        { "x": 42.404429, "z": -14.841946 },
+        { "x": 42.221811, "z": -15.14669 },
+        { "x": 41.972118, "z": -16.677175 },
+        { "x": 41.825519, "z": -16.811715 },
+        { "x": 41.920732, "z": -17.548727 },
+        { "x": 41.64543, "z": -17.828732 },
+        { "x": 41.569605, "z": -18.251354 },
+        { "x": 41.476822, "z": -18.357126 },
+        { "x": 41.534278, "z": -18.505621 },
+        { "x": 41.226399, "z": -18.568149 },
+        { "x": 41.300093, "z": -18.843092 },
+        { "x": 41.154816, "z": -19.14537 },
+        { "x": 40.826842, "z": -19.195636 },
+        { "x": 40.592223, "z": -19.346327 },
+        { "x": 40.409458, "z": -19.861602 },
+        { "x": 40.55873, "z": -20.053561 },
+        { "x": 40.409295, "z": -20.379371 },
+        { "x": 40.271093, "z": -20.455203 },
+        { "x": 40.210524, "z": -20.76152 },
+        { "x": 40.268725, "z": -20.835101 },
+        { "x": 40.202994, "z": -21.143033 },
+        { "x": 40.418924, "z": -21.223627 },
+        { "x": 40.551329, "z": -21.390622 },
+        { "x": 40.33628, "z": -22.37529 },
+        { "x": 40.206021, "z": -22.451926 },
+        { "x": 40.222923, "z": -22.668778 },
+        { "x": 40.435373, "z": -22.745383 },
+        { "x": 40.605097, "z": -22.95433 },
+        { "x": 40.726819, "z": -22.947883 },
+        { "x": 40.897169, "z": -23.170348 },
+        { "x": 41.271692, "z": -23.384627 },
+        { "x": 41.407154, "z": -24.04818 },
+        { "x": 41.052311, "z": -25.012402 },
+        { "x": 41.202686, "z": -25.153522 },
+        { "x": 41.457631, "z": -25.218285 },
+        { "x": 41.838965, "z": -25.860703 },
+        { "x": 42.020812, "z": -26.035507 },
+        { "x": 41.978759, "z": -27.001606 },
+        { "x": 41.891236, "z": -27.124001 },
+        { "x": 41.874539, "z": -27.473967 },
+        { "x": 41.781034, "z": -27.601906 },
+        { "x": 41.483034, "z": -27.750318 },
+        { "x": 41.536107, "z": -27.968599 },
+        { "x": 41.730435, "z": -28.046249 },
+        { "x": 41.775015, "z": -28.183939 },
+        { "x": 41.74618, "z": -28.298467 },
+        { "x": 41.586382, "z": -28.396575 },
+        { "x": 41.550941, "z": -28.867207 },
+        { "x": 41.181592, "z": -28.957984 },
+        { "x": 40.97582, "z": -28.916611 },
+        { "x": 40.818185, "z": -29.176166 },
+        { "x": 40.610182, "z": -29.332353 },
+        { "x": 40.558613, "z": -29.628949 },
+        { "x": 40.462751, "z": -29.707491 },
+        { "x": 40.575987, "z": -30.05604 },
+        { "x": 40.776626, "z": -30.227281 },
+        { "x": 40.813502, "z": -30.378053 },
+        { "x": 40.723395, "z": -30.510772 },
+        { "x": 40.878248, "z": -30.857843 },
+        { "x": 40.885612, "z": -31.21929 },
+        { "x": 41.16079, "z": -31.891903 },
+        { "x": 41.299228, "z": -32.066271 },
+        { "x": 41.477387, "z": -31.984837 },
+        { "x": 41.629812, "z": -32.015747 },
+        { "x": 41.725919, "z": -32.138573 },
+        { "x": 41.684961, "z": -32.308996 },
+        { "x": 41.778241, "z": -32.318219 },
+        { "x": 41.721196, "z": -32.45214 },
+        { "x": 41.614315, "z": -32.399061 },
+        { "x": 41.568436, "z": -32.456821 },
+        { "x": 41.724437, "z": -32.738347 },
+        { "x": 41.716327, "z": -33.007122 },
+        { "x": 41.584158, "z": -33.133042 },
+        { "x": 41.297667, "z": -33.19773 },
+        { "x": 41.192587, "z": -33.354201 },
+        { "x": 41.09854, "z": -33.329193 },
+        { "x": 40.914532, "z": -33.569586 },
+        { "x": 41.000181, "z": -33.997016 },
+        { "x": 41.1444, "z": -34.213499 },
+        { "x": 41.241194, "z": -34.239741 },
+        { "x": 41.354469, "z": -34.653553 },
+        { "x": 41.763674, "z": -35.346154 },
+        { "x": 41.416946, "z": -35.773276 },
+        { "x": 40.905288, "z": -35.964982 },
+        { "x": 40.409274, "z": -35.959939 },
+        { "x": 40.351768, "z": -36.064154 },
+        { "x": 40.007762, "z": -36.096528 },
+        { "x": 39.904058, "z": -36.262406 },
+        { "x": 39.933246, "z": -36.729347 },
+        { "x": 39.395997, "z": -37.060886 },
+        { "x": 38.7812, "z": -37.242159 },
+        { "x": 38.599539, "z": -37.083728 },
+        { "x": 38.289418, "z": -37.061189 },
+        { "x": 38.015326, "z": -37.165966 },
+        { "x": 37.847932, "z": -37.394741 },
+        { "x": 37.669759, "z": -37.451222 },
+        { "x": 37.654939, "z": -37.752097 },
+        { "x": 37.396977, "z": -37.941748 },
+        { "x": 36.77648, "z": -37.867278 },
+        { "x": 36.396436, "z": -38.07332 },
+        { "x": 36.186808, "z": -38.430592 },
+        { "x": 36.275748, "z": -38.762954 },
+        { "x": 36.194176, "z": -38.915574 },
+        { "x": 36.329707, "z": -39.014605 },
+        { "x": 36.425548, "z": -39.405733 },
+        { "x": 36.717962, "z": -39.511657 },
+        { "x": 36.987683, "z": -39.927493 },
+        { "x": 37.273981, "z": -39.989354 },
+        { "x": 37.409119, "z": -40.146517 },
+        { "x": 37.748008, "z": -40.30537 },
+        { "x": 38.329213, "z": -40.068108 },
+        { "x": 38.455178, "z": -39.762441 },
+        { "x": 38.646535, "z": -39.557022 },
+        { "x": 38.82522, "z": -39.568131 },
+        { "x": 38.879185, "z": -39.443809 },
+        { "x": 39.170208, "z": -39.321242 },
+        { "x": 39.247881, "z": -39.201507 },
+        { "x": 39.733899, "z": -39.508516 },
+        { "x": 40.094743, "z": -39.60386 },
+        { "x": 40.170605, "z": -40.036545 },
+        { "x": 39.617494, "z": -40.838436 },
+        { "x": 39.658296, "z": -41.491298 },
+        { "x": 39.517969, "z": -41.74934 },
+        { "x": 39.225355, "z": -41.954973 },
+        { "x": 39.374884, "z": -42.370728 },
+        { "x": 39.591709, "z": -42.390243 },
+        { "x": 39.793248, "z": -42.580778 },
+        { "x": 40.131923, "z": -42.419268 },
+        { "x": 40.63749, "z": -42.349551 },
+        { "x": 41.759885, "z": -42.503768 },
+        { "x": 42.207, "z": -42.331482 },
+        { "x": 42.557164, "z": -42.502186 },
+        { "x": 42.805836, "z": -43.587524 },
+        { "x": 42.656434, "z": -43.748059 },
+        { "x": 42.727307, "z": -44.057139 },
+        { "x": 42.531721, "z": -44.430832 },
+        { "x": 42.691127, "z": -45.087306 },
+        { "x": 43.014891, "z": -45.348202 },
+        { "x": 43.197167, "z": -45.298918 },
+        { "x": 43.303273, "z": -45.398902 },
+        { "x": 43.245684, "z": -45.571807 },
+        { "x": 43.851623, "z": -46.164118 },
+        { "x": 43.980151, "z": -46.201299 },
+        { "x": 43.733755, "z": -46.544527 },
+        { "x": 43.294534, "z": -46.919963 },
+        { "x": 42.915605, "z": -47.097102 },
+        { "x": 42.785231, "z": -47.301098 },
+        { "x": 42.249875, "z": -47.406633 },
+        { "x": 41.997182, "z": -47.243276 },
+        { "x": 41.607811, "z": -47.134375 },
+        { "x": 41.249464, "z": -47.198162 },
+        { "x": 40.981307, "z": -47.37653 },
+        { "x": 40.623061, "z": -47.855925 },
+        { "x": 40.623072, "z": -48.104521 },
+        { "x": 40.782476, "z": -48.290244 },
+        { "x": 41.01485, "z": -48.391726 },
+        { "x": 41.700754, "z": -48.286466 },
+        { "x": 42.244096, "z": -47.997951 },
+        { "x": 42.534787, "z": -48.046004 },
+        { "x": 43.020304, "z": -48.64321 },
+        { "x": 42.928302, "z": -48.831953 },
+        { "x": 42.926813, "z": -49.165924 },
+        { "x": 42.766179, "z": -49.193812 },
+        { "x": 42.535062, "z": -49.551034 },
+        { "x": 42.255727, "z": -49.425612 },
+        { "x": 41.853693, "z": -49.640015 },
+        { "x": 41.793669, "z": -50.526478 },
+        { "x": 41.46032, "z": -51.007792 },
+        { "x": 41.332865, "z": -51.524637 },
+        { "x": 41.686065, "z": -51.785626 },
+        { "x": 41.782615, "z": -52.009467 },
+        { "x": 41.904345, "z": -52.084534 },
+        { "x": 42.313513, "z": -51.724735 },
+        { "x": 42.963152, "z": -51.345824 },
+        { "x": 43.316363, "z": -51.309892 },
+        { "x": 43.418157, "z": -51.632694 },
+        { "x": 43.404645, "z": -51.870965 },
+        { "x": 43.268619, "z": -52.054826 },
+        { "x": 43.314873, "z": -52.200986 },
+        { "x": 43.167343, "z": -52.462372 },
+        { "x": 42.90968, "z": -52.652908 },
+        { "x": 42.858581, "z": -52.874186 },
+        { "x": 43.169188, "z": -53.028296 },
+        { "x": 43.400193, "z": -53.46422 },
+        { "x": 43.427047, "z": -53.828817 },
+        { "x": 43.626491, "z": -53.994492 },
+        { "x": 43.878093, "z": -54.020059 },
+        { "x": 44.117258, "z": -53.8578 },
+        { "x": 44.397202, "z": -53.325184 },
+        { "x": 44.305868, "z": -53.115056 },
+        { "x": 44.441878, "z": -53.030431 },
+        { "x": 44.565471, "z": -52.546308 },
+        { "x": 44.641058, "z": -51.578895 },
+        { "x": 45.075224, "z": -50.654697 },
+        { "x": 45.239159, "z": -50.680798 },
+        { "x": 45.53083, "z": -50.411005 },
+        { "x": 45.835728, "z": -50.41403 },
+        { "x": 46.075095, "z": -50.69398 },
+        { "x": 45.815745, "z": -51.092945 },
+        { "x": 45.883047, "z": -51.437302 },
+        { "x": 46.094548, "z": -51.601414 },
+        { "x": 46.464925, "z": -51.718803 },
+        { "x": 46.763491, "z": -51.408066 },
+        { "x": 47.286359, "z": -51.363671 },
+        { "x": 47.511535, "z": -51.48057 },
+        { "x": 47.566374, "z": -51.627587 },
+        { "x": 47.418103, "z": -51.960096 },
+        { "x": 47.50085, "z": -51.966532 },
+        { "x": 47.696358, "z": -52.4141 },
+        { "x": 47.889202, "z": -52.573973 },
+        { "x": 48.117858, "z": -52.596323 },
+        { "x": 48.110575, "z": -52.801033 },
+        { "x": 48.25779, "z": -52.930448 },
+        { "x": 48.717674, "z": -53.092998 },
+        { "x": 49.260491, "z": -54.240658 },
+        { "x": 49.16666, "z": -54.53734 },
+        { "x": 49.234319, "z": -54.761476 },
+        { "x": 49.322869, "z": -54.888533 },
+        { "x": 49.607121, "z": -54.915073 },
+        { "x": 49.727741, "z": -55.047856 },
+        { "x": 49.831371, "z": -55.307205 },
+        { "x": 49.721272, "z": -55.718287 },
+        { "x": 49.461397, "z": -55.656855 },
+        { "x": 48.536713, "z": -56.090874 },
+        { "x": 47.851869, "z": -56.08421 },
+        { "x": 47.706701, "z": -55.96164 },
+        { "x": 47.388591, "z": -56.172824 },
+        { "x": 47.39873, "z": -56.694251 },
+        { "x": 47.723609, "z": -57.306099 },
+        { "x": 48.09564, "z": -57.423621 },
+        { "x": 48.361384, "z": -57.346921 },
+        { "x": 48.391863, "z": -57.430996 },
+        { "x": 48.641862, "z": -57.430245 },
+        { "x": 48.7751, "z": -57.545271 },
+        { "x": 48.853016, "z": -58.067498 },
+        { "x": 49.050728, "z": -58.457367 },
+        { "x": 49.055441, "z": -58.749132 },
+        { "x": 49.277314, "z": -58.987862 },
+        { "x": 49.294377, "z": -59.349001 },
+        { "x": 49.506114, "z": -59.67756 },
+        { "x": 49.086061, "z": -59.978393 },
+        { "x": 48.816467, "z": -60.012276 },
+        { "x": 48.666899, "z": -59.927232 },
+        { "x": 48.333543, "z": -59.90663 },
+        { "x": 47.943013, "z": -59.946505 },
+        { "x": 47.437154, "z": -60.12308 },
+        { "x": 47.466941, "z": -60.309951 },
+        { "x": 47.171987, "z": -60.571735 },
+        { "x": 46.897018, "z": -61.041392 },
+        { "x": 46.839404, "z": -61.61662 },
+        { "x": 46.9902, "z": -62.260773 },
+        { "x": 47.021318, "z": -62.295884 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 47.469476, "z": -62.286968 },
+        { "x": 47.65473, "z": -62.171956 },
+        { "x": 47.896536, "z": -62.305822 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 48.473902, "z": -62.364786 },
+        { "x": 48.573206, "z": -62.266894 },
+        { "x": 48.729192, "z": -62.503929 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 50.852831, "z": -65.882667 },
+        { "x": 51.018138, "z": -65.698722 },
+        { "x": 51.406769, "z": -65.510422 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 51.71926, "z": -65.157186 },
+        { "x": 51.772623, "z": -64.896878 },
+        { "x": 52.049653, "z": -64.505477 },
+        { "x": 52.059976, "z": -64.496617 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 54.361256, "z": -67.083421 },
+        { "x": 54.361685, "z": -67.068884 },
+        { "x": 53.981131, "z": -66.447064 },
+        { "x": 54.123211, "z": -65.555386 },
+        { "x": 54.222744, "z": -65.432696 },
+        { "x": 54.525102, "z": -65.310488 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 56.091111, "z": -64.818064 },
+        { "x": 56.268872, "z": -64.636902 },
+        { "x": 56.60497, "z": -64.570789 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 57.053533, "z": -64.515075 },
+        { "x": 57.170864, "z": -64.5355 },
+        { "x": 57.175003, "z": -64.588194 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 59.279822, "z": -65.205784 },
+        { "x": 59.199696, "z": -65.09642 },
+        { "x": 59.158006, "z": -64.823478 },
+        { "x": 58.969068, "z": -64.530869 },
+        { "x": 58.496239, "z": -64.14162 },
+        { "x": 58.08655, "z": -63.418341 },
+        { "x": 58.024676, "z": -63.150291 },
+        { "x": 57.647875, "z": -62.747548 },
+        { "x": 57.373851, "z": -61.287525 },
+        { "x": 57.461204, "z": -61.273805 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 62.880657, "z": -63.538061 },
+        { "x": 62.841254, "z": -63.415016 },
+        { "x": 62.900294, "z": -63.293132 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 68.171418, "z": -64.758967 },
+        { "x": 68.601495, "z": -64.701081 },
+        { "x": 68.606116, "z": -64.703873 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 71.037079, "z": -66.776379 },
+        { "x": 71.789248, "z": -66.724666 },
+        { "x": 71.822195, "z": -66.739647 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 72.670676, "z": -66.484575 },
+        { "x": 72.709074, "z": -66.462762 },
+        { "x": 72.751481, "z": -66.514263 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 74.921136, "z": -69.442003 },
+        { "x": 74.982456, "z": -69.288566 },
+        { "x": 75.22465, "z": -69.144269 },
+        { "x": 75.296284, "z": -68.975806 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 75.288091, "z": -68.627874 },
+        { "x": 75.186735, "z": -68.556603 },
+        { "x": 75.208024, "z": -67.942701 },
+        { "x": 75.266402, "z": -67.683389 },
+        { "x": 75.490495, "z": -67.327973 },
+        { "x": 76.103999, "z": -67.517564 },
+        { "x": 76.861183, "z": -67.945297 },
+        { "x": 77.160753, "z": -67.939765 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 77.906606, "z": -66.902236 },
+        { "x": 77.890974, "z": -66.751808 },
+        { "x": 78.502181, "z": -66.305991 },
+        { "x": 79.147878, "z": -66.448207 },
+        { "x": 79.299107, "z": -66.67107 },
+        { "x": 80.677719, "z": -66.751783 },
+        { "x": 80.893068, "z": -66.580017 },
+        { "x": 80.916441, "z": -65.983284 },
+        { "x": 81.043543, "z": -65.69331 },
+        { "x": 81.324864, "z": -65.501673 },
+        { "x": 81.501492, "z": -65.716113 },
+        { "x": 81.647127, "z": -66.229689 },
+        { "x": 81.678788, "z": -66.537666 },
+        { "x": 81.482782, "z": -66.859423 },
+        { "x": 81.497426, "z": -66.980614 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 81.9384, "z": -67.236072 },
+        { "x": 82.17952, "z": -67.761359 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 82.219042, "z": -67.801223 },
+        { "x": 83.1812, "z": -68.014311 },
+        { "x": 83.437764, "z": -68.239394 },
+        { "x": 83.679862, "z": -68.097045 },
+        { "x": 84.245861, "z": -68.12873 },
+        { "x": 84.46096, "z": -67.992013 },
+        { "x": 84.632733, "z": -67.987424 },
+        { "x": 84.923674, "z": -67.642992 },
+        { "x": 85.241168, "z": -67.58683 },
+        { "x": 85.419543, "z": -67.294456 },
+        { "x": 85.554343, "z": -67.234283 },
+        { "x": 85.841856, "z": -67.393189 },
+        { "x": 86.231933, "z": -67.480116 },
+        { "x": 86.229023, "z": -67.649153 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 86.398017, "z": -67.866411 },
+        { "x": 86.851317, "z": -68.126823 },
+        { "x": 86.930974, "z": -68.471042 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 87.182695, "z": -68.677578 },
+        { "x": 87.195929, "z": -68.44893 },
+        { "x": 87.436788, "z": -68.354909 },
+        { "x": 87.797519, "z": -68.594126 },
+        { "x": 88.015431, "z": -68.066294 },
+        { "x": 88.373762, "z": -68.001665 },
+        { "x": 88.651352, "z": -68.141629 },
+        { "x": 88.740483, "z": -68.327464 },
+        { "x": 89.057378, "z": -68.573797 },
+        { "x": 89.085803, "z": -68.884152 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 88.754969, "z": -69.534611 },
+        { "x": 88.897697, "z": -69.575461 },
+        { "x": 89.039663, "z": -69.855599 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 89.104083, "z": -69.900635 },
+        { "x": 89.553432, "z": -70.213103 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 89.557301, "z": -70.215794 },
+        { "x": 89.68708, "z": -70.30604 },
+        { "x": 90.234399, "z": -70.274688 },
+        { "x": 90.421329, "z": -70.708363 },
+        { "x": 90.373491, "z": -71.005918 },
+        { "x": 90.448796, "z": -71.241707 },
+        { "x": 90.377002, "z": -71.754035 },
+        { "x": 90.274379, "z": -71.78702 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 90.260128, "z": -71.896447 },
+        { "x": 90.259801, "z": -71.969545 },
+        { "x": 90.412046, "z": -72.243804 },
+        { "x": 90.62159, "z": -72.315745 },
+        { "x": 91.02629, "z": -72.756883 },
+        { "x": 90.943405, "z": -72.921646 },
+        { "x": 91.018568, "z": -73.121731 },
+        { "x": 91.134739, "z": -73.132575 },
+        { "x": 91.221265, "z": -73.259509 },
+        { "x": 91.244537, "z": -73.581433 },
+        { "x": 91.63952, "z": -73.88196 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 91.775873, "z": -73.904303 },
+        { "x": 92.142881, "z": -73.931753 },
+        { "x": 92.245662, "z": -74.147827 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 92.254314, "z": -74.487917 },
+        { "x": 92.20245, "z": -74.896406 },
+        { "x": 92.357498, "z": -75.018581 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 92.375688, "z": -75.02467 },
+        { "x": 92.815532, "z": -75.012877 },
+        { "x": 92.967916, "z": -75.151868 },
+        { "x": 93.356391, "z": -75.156507 },
+        { "x": 93.598631, "z": -75.744203 },
+        { "x": 93.936359, "z": -75.988049 },
+        { "x": 94.33501, "z": -75.83545 },
+        { "x": 94.802254, "z": -76.009987 },
+        { "x": 95.318425, "z": -76.490533 },
+        { "x": 95.318924, "z": -76.506867 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 37.874933, "z": -37.33228 },
+        { "x": 37.79127, "z": -37.392801 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MARMARAJÁ",
+      "sourceId": "hidro_cnsolidada_l.94793",
+      "points": [
+        { "x": 45.134609, "z": -50.633295 },
+        { "x": 45.418035, "z": -50.505843 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94793"]
+    },
+    {
+      "name": "ARROYO MATAOJO",
+      "sourceId": "hidro_cnsolidada_l.94772",
+      "points": [
+        { "x": -18.905192, "z": 44.147102 },
+        { "x": -19.009743, "z": 43.609935 },
+        { "x": -19.332704, "z": 43.14109 },
+        { "x": -19.860271, "z": 43.028249 },
+        { "x": -20.071793, "z": 43.170451 },
+        { "x": -20.39647, "z": 42.975637 },
+        { "x": -20.650237, "z": 42.962133 },
+        { "x": -20.753998, "z": 42.830411 },
+        { "x": -21.470191, "z": 42.991647 },
+        { "x": -21.645238, "z": 43.134538 },
+        { "x": -22.506289, "z": 44.451556 },
+        { "x": -23.277127, "z": 44.682458 },
+        { "x": -23.913306, "z": 45.054606 },
+        { "x": -24.15693, "z": 45.299994 },
+        { "x": -24.147317, "z": 45.514469 },
+        { "x": -24.33997, "z": 45.585656 },
+        { "x": -24.571234, "z": 45.880554 },
+        { "x": -24.699648, "z": 46.114036 },
+        { "x": -24.726791, "z": 46.371002 },
+        { "x": -25.115788, "z": 46.418877 },
+        { "x": -25.481474, "z": 46.815451 },
+        { "x": -25.814408, "z": 46.756023 },
+        { "x": -25.799388, "z": 47.156575 },
+        { "x": -26.138454, "z": 47.911408 },
+        { "x": -26.252562, "z": 48.089573 },
+        { "x": -26.540868, "z": 48.156971 },
+        { "x": -26.894141, "z": 48.471751 },
+        { "x": -26.933658, "z": 48.701946 },
+        { "x": -27.467488, "z": 49.45991 },
+        { "x": -28.036764, "z": 49.788082 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94772"]
+    },
+    {
+      "name": "ARROYO MATAOJO",
+      "sourceId": "hidro_cnsolidada_l.94772",
+      "points": [
+        { "x": -28.110393, "z": 49.826776 },
+        { "x": -28.416263, "z": 49.818739 },
+        { "x": -28.559341, "z": 49.900073 },
+        { "x": -28.785455, "z": 50.188585 },
+        { "x": -28.88906, "z": 50.553021 },
+        { "x": -29.09908, "z": 50.75852 },
+        { "x": -29.201487, "z": 50.661983 },
+        { "x": -29.468002, "z": 50.71606 },
+        { "x": -29.681566, "z": 50.60774 },
+        { "x": -29.901452, "z": 50.604901 },
+        { "x": -30.099466, "z": 50.713039 },
+        { "x": -30.960493, "z": 50.402543 },
+        { "x": -30.954141, "z": 50.201191 },
+        { "x": -31.079071, "z": 50.153747 },
+        { "x": -31.267243, "z": 49.645322 },
+        { "x": -31.520317, "z": 49.672045 },
+        { "x": -31.824274, "z": 50.047167 },
+        { "x": -32.082555, "z": 50.116733 },
+        { "x": -32.271197, "z": 49.843191 },
+        { "x": -32.64918, "z": 49.676448 },
+        { "x": -32.892949, "z": 49.436389 },
+        { "x": -32.872277, "z": 49.335149 },
+        { "x": -33.020768, "z": 49.079334 },
+        { "x": -33.389116, "z": 48.640486 },
+        { "x": -33.64197, "z": 48.867727 },
+        { "x": -33.796442, "z": 49.27752 },
+        { "x": -33.986743, "z": 49.513061 },
+        { "x": -34.38504, "z": 49.57359 },
+        { "x": -34.637694, "z": 49.720051 },
+        { "x": -34.831561, "z": 49.368624 },
+        { "x": -35.352215, "z": 49.037544 },
+        { "x": -35.820415, "z": 49.263868 },
+        { "x": -35.946002, "z": 49.210263 },
+        { "x": -36.480415, "z": 49.266761 },
+        { "x": -36.829672, "z": 49.225136 },
+        { "x": -36.918617, "z": 49.084543 },
+        { "x": -37.10412, "z": 49.009098 },
+        { "x": -37.792601, "z": 48.943882 },
+        { "x": -38.060511, "z": 48.787172 },
+        { "x": -38.173632, "z": 48.62426 },
+        { "x": -38.323724, "z": 48.172689 },
+        { "x": -38.192122, "z": 47.657998 },
+        { "x": -38.319088, "z": 47.616961 },
+        { "x": -38.518311, "z": 47.236277 },
+        { "x": -39.129952, "z": 46.642662 },
+        { "x": -39.391552, "z": 46.551138 },
+        { "x": -39.428037, "z": 46.416255 },
+        { "x": -39.690017, "z": 46.24708 },
+        { "x": -40.105065, "z": 45.782869 },
+        { "x": -40.373351, "z": 45.641096 },
+        { "x": -40.630741, "z": 45.244113 },
+        { "x": -41.0427, "z": 45.031917 },
+        { "x": -41.244973, "z": 44.464522 },
+        { "x": -41.935552, "z": 44.334913 },
+        { "x": -42.418687, "z": 43.94826 },
+        { "x": -42.703751, "z": 43.894547 },
+        { "x": -43.257505, "z": 43.955466 },
+        { "x": -43.346762, "z": 44.065457 },
+        { "x": -43.339841, "z": 44.335611 },
+        { "x": -43.538, "z": 44.734606 },
+        { "x": -43.861532, "z": 44.834295 },
+        { "x": -44.393069, "z": 44.425348 },
+        { "x": -44.865026, "z": 43.157497 },
+        { "x": -45.181394, "z": 42.902741 },
+        { "x": -45.709675, "z": 42.807975 },
+        { "x": -46.894762, "z": 42.920304 },
+        { "x": -47.573841, "z": 42.867862 },
+        { "x": -48.107885, "z": 42.985089 },
+        { "x": -48.503289, "z": 43.277421 },
+        { "x": -49.14594, "z": 42.307128 },
+        { "x": -49.512551, "z": 42.13703 },
+        { "x": -49.682414, "z": 42.264765 },
+        { "x": -49.582775, "z": 42.479502 },
+        { "x": -49.71439, "z": 42.475151 },
+        { "x": -49.732198, "z": 42.615188 },
+        { "x": -50.008443, "z": 42.850115 },
+        { "x": -50.321976, "z": 42.90519 },
+        { "x": -51.907291, "z": 42.234109 },
+        { "x": -52.674803, "z": 42.045769 },
+        { "x": -53.080995, "z": 41.720996 },
+        { "x": -54.118336, "z": 41.261772 },
+        { "x": -54.726625, "z": 40.884729 },
+        { "x": -54.915053, "z": 40.897834 },
+        { "x": -55.35561, "z": 41.170425 },
+        { "x": -55.738119, "z": 41.264177 },
+        { "x": -56.497345, "z": 41.282085 },
+        { "x": -56.807829, "z": 41.044069 },
+        { "x": -57.575009, "z": 41.048186 },
+        { "x": -59.115336, "z": 41.316502 },
+        { "x": -59.134812, "z": 41.196731 },
+        { "x": -59.681369, "z": 41.069249 },
+        { "x": -60.308308, "z": 40.470534 },
+        { "x": -60.859707, "z": 40.456095 },
+        { "x": -61.507974, "z": 40.178441 },
+        { "x": -61.736851, "z": 39.863426 },
+        { "x": -62.333167, "z": 39.460541 },
+        { "x": -62.502014, "z": 39.426527 },
+        { "x": -62.786339, "z": 39.049929 },
+        { "x": -62.837708, "z": 38.854231 },
+        { "x": -62.777944, "z": 38.394295 },
+        { "x": -62.905073, "z": 38.165748 },
+        { "x": -63.355271, "z": 37.993757 },
+        { "x": -63.590495, "z": 38.017252 },
+        { "x": -63.702065, "z": 38.199937 },
+        { "x": -64.185533, "z": 38.431354 },
+        { "x": -64.274348, "z": 38.734546 },
+        { "x": -65.024532, "z": 38.898759 },
+        { "x": -65.229949, "z": 39.182684 },
+        { "x": -65.328531, "z": 39.465814 },
+        { "x": -65.065371, "z": 39.934713 },
+        { "x": -65.071868, "z": 40.676064 },
+        { "x": -65.766531, "z": 40.89551 },
+        { "x": -66.399705, "z": 40.864914 },
+        { "x": -66.60948, "z": 40.922741 },
+        { "x": -66.920718, "z": 41.349605 },
+        { "x": -66.97106, "z": 42.164028 },
+        { "x": -68.228585, "z": 42.520794 },
+        { "x": -68.342615, "z": 42.749748 },
+        { "x": -68.190413, "z": 42.873986 },
+        { "x": -67.975436, "z": 43.444196 },
+        { "x": -68.111079, "z": 43.449637 },
+        { "x": -68.127886, "z": 43.849213 },
+        { "x": -67.832142, "z": 44.441599 },
+        { "x": -67.66115, "z": 44.617401 },
+        { "x": -67.572874, "z": 45.085646 },
+        { "x": -67.62776, "z": 45.407397 },
+        { "x": -67.93171, "z": 45.535955 },
+        { "x": -68.037041, "z": 45.798537 },
+        { "x": -67.886486, "z": 45.960247 },
+        { "x": -67.691421, "z": 45.979668 },
+        { "x": -67.685629, "z": 46.103333 },
+        { "x": -67.819683, "z": 46.264624 },
+        { "x": -68.241652, "z": 46.388509 },
+        { "x": -68.469386, "z": 46.598173 },
+        { "x": -68.555622, "z": 46.906478 },
+        { "x": -68.503839, "z": 47.383766 },
+        { "x": -68.654618, "z": 47.884755 },
+        { "x": -68.903653, "z": 47.866141 },
+        { "x": -69.160415, "z": 48.006889 },
+        { "x": -69.388053, "z": 48.259115 },
+        { "x": -69.481934, "z": 48.528663 },
+        { "x": -69.788824, "z": 48.785626 },
+        { "x": -70.194692, "z": 48.571348 },
+        { "x": -70.28674, "z": 48.360986 },
+        { "x": -70.616014, "z": 48.307126 },
+        { "x": -70.922092, "z": 48.95087 },
+        { "x": -71.014243, "z": 49.43252 },
+        { "x": -70.928657, "z": 49.826528 },
+        { "x": -70.710084, "z": 49.940244 },
+        { "x": -70.491375, "z": 50.268128 },
+        { "x": -70.175276, "z": 50.546355 },
+        { "x": -70.191941, "z": 50.695706 },
+        { "x": -69.988871, "z": 50.965549 },
+        { "x": -69.959521, "z": 51.278543 },
+        { "x": -69.726219, "z": 51.804518 },
+        { "x": -69.698325, "z": 52.441684 },
+        { "x": -69.813569, "z": 52.558912 },
+        { "x": -69.697685, "z": 52.972282 },
+        { "x": -69.316826, "z": 53.506908 },
+        { "x": -68.986595, "z": 53.770095 },
+        { "x": -68.739649, "z": 54.347953 },
+        { "x": -67.549265, "z": 54.983736 },
+        { "x": -67.380609, "z": 55.306176 },
+        { "x": -67.496787, "z": 55.69845 },
+        { "x": -67.860726, "z": 55.664335 },
+        { "x": -68.229125, "z": 55.7796 },
+        { "x": -68.333315, "z": 55.746336 },
+        { "x": -68.68846, "z": 55.877251 },
+        { "x": -68.757837, "z": 55.98409 },
+        { "x": -68.90682, "z": 55.98908 },
+        { "x": -69.355269, "z": 56.432648 },
+        { "x": -69.889035, "z": 56.81661 },
+        { "x": -70.283982, "z": 57.275943 },
+        { "x": -70.473537, "z": 57.325958 },
+        { "x": -70.560454, "z": 57.604132 },
+        { "x": -70.515817, "z": 58.028077 },
+        { "x": -70.683214, "z": 58.637203 },
+        { "x": -71.058528, "z": 59.289542 },
+        { "x": -71.438532, "z": 59.674177 },
+        { "x": -71.450676, "z": 59.775884 },
+        { "x": -72.098438, "z": 60.022709 },
+        { "x": -72.263016, "z": 60.315805 },
+        { "x": -72.390503, "z": 60.328365 },
+        { "x": -72.542457, "z": 60.179867 },
+        { "x": -72.973273, "z": 60.42022 },
+        { "x": -73.159374, "z": 60.422561 },
+        { "x": -73.334959, "z": 60.663832 },
+        { "x": -73.411099, "z": 61.139571 },
+        { "x": -72.988678, "z": 61.920499 },
+        { "x": -72.809603, "z": 62.060024 },
+        { "x": -72.351378, "z": 62.041382 },
+        { "x": -71.956886, "z": 62.19519 },
+        { "x": -71.817312, "z": 62.513397 },
+        { "x": -71.079852, "z": 62.879106 },
+        { "x": -70.910907, "z": 63.103242 },
+        { "x": -70.91314, "z": 63.47336 },
+        { "x": -71.528746, "z": 64.000296 },
+        { "x": -71.535022, "z": 64.245748 },
+        { "x": -71.758817, "z": 64.69271 },
+        { "x": -71.836054, "z": 65.2313 },
+        { "x": -71.683743, "z": 65.648512 },
+        { "x": -72.031412, "z": 66.102332 },
+        { "x": -72.114556, "z": 66.377295 },
+        { "x": -72.452925, "z": 66.93374 },
+        { "x": -72.87571, "z": 66.954347 },
+        { "x": -73.10364, "z": 67.108233 },
+        { "x": -73.318048, "z": 67.082333 },
+        { "x": -73.47654, "z": 67.005627 },
+        { "x": -73.684457, "z": 66.621588 },
+        { "x": -73.932955, "z": 66.482399 },
+        { "x": -74.269205, "z": 66.496844 },
+        { "x": -74.566355, "z": 66.692141 },
+        { "x": -74.631843, "z": 66.86208 },
+        { "x": -75.107439, "z": 67.267772 },
+        { "x": -75.304921, "z": 67.578221 },
+        { "x": -75.141178, "z": 68.538581 },
+        { "x": -75.20826, "z": 68.897855 },
+        { "x": -75.43144, "z": 69.266277 },
+        { "x": -76.054133, "z": 69.742217 },
+        { "x": -76.240679, "z": 69.718141 },
+        { "x": -76.321643, "z": 69.597399 },
+        { "x": -76.609169, "z": 69.65586 },
+        { "x": -77.025412, "z": 69.933292 },
+        { "x": -76.988092, "z": 70.259785 },
+        { "x": -77.38107, "z": 70.34548 },
+        { "x": -77.672456, "z": 70.296824 },
+        { "x": -77.750618, "z": 70.394245 },
+        { "x": -78.124143, "z": 70.530893 },
+        { "x": -78.126493, "z": 70.713614 },
+        { "x": -78.328047, "z": 70.700801 },
+        { "x": -78.521759, "z": 70.820244 },
+        { "x": -78.594014, "z": 71.245579 },
+        { "x": -78.432671, "z": 71.658018 },
+        { "x": -78.283679, "z": 71.657932 },
+        { "x": -78.215844, "z": 71.819053 },
+        { "x": -78.241613, "z": 72.104766 },
+        { "x": -78.077606, "z": 72.283604 },
+        { "x": -77.827327, "z": 72.994262 },
+        { "x": -77.72249, "z": 73.482872 },
+        { "x": -77.756458, "z": 73.906689 },
+        { "x": -78.033187, "z": 74.318044 },
+        { "x": -78.365894, "z": 74.244466 },
+        { "x": -78.506535, "z": 74.29205 },
+        { "x": -78.661998, "z": 74.635681 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94772"]
+    },
+    {
+      "name": "ARROYO MATAOJO",
+      "sourceId": "hidro_cnsolidada_l.94772",
+      "points": [
+        { "x": -71.529609, "z": 64.053489 },
+        { "x": -71.511129, "z": 64.155689 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94772"]
+    },
+    {
+      "name": "ARROYO SAN FRANCISCO",
+      "sourceId": "hidro_cnsolidada_l.94774",
+      "points": [
+        { "x": -42.350765, "z": -19.258456 },
+        { "x": -42.183439, "z": -19.179174 },
+        { "x": -42.008709, "z": -18.715732 },
+        { "x": -41.878342, "z": -18.656585 },
+        { "x": -41.815172, "z": -18.460551 },
+        { "x": -41.57779, "z": -18.284212 },
+        { "x": -41.359953, "z": -18.310165 },
+        { "x": -40.909809, "z": -17.958542 },
+        { "x": -40.466231, "z": -17.969442 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94774"]
+    },
+    {
+      "name": "ARROYO SAN FRANCISCO",
+      "sourceId": "hidro_cnsolidada_l.94774",
+      "points": [
+        { "x": -40.374475, "z": -17.956708 },
+        { "x": -39.494924, "z": -17.652205 },
+        { "x": -39.055965, "z": -18.03893 },
+        { "x": -38.638241, "z": -18.050364 },
+        { "x": -38.191415, "z": -17.83884 },
+        { "x": -38.168988, "z": -17.708461 },
+        { "x": -37.899302, "z": -17.435616 },
+        { "x": -38.008127, "z": -17.669476 },
+        { "x": -38.173334, "z": -17.810505 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94774"]
+    },
+    {
+      "name": "ARROYO SAN FRANCISCO",
+      "sourceId": "hidro_cnsolidada_l.94774",
+      "points": [
+        { "x": -31.230067, "z": -12.478393 },
+        { "x": -31.248854, "z": -12.998308 },
+        { "x": -31.505191, "z": -13.276404 },
+        { "x": -31.761921, "z": -13.365688 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94774"]
+    },
+    {
+      "name": "ARROYO SAN FRANCISCO",
+      "sourceId": "hidro_cnsolidada_l.94774",
+      "points": [
+        { "x": -16.627739, "z": 21.061499 },
+        { "x": -17.224987, "z": 21.251365 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94774"]
+    },
+    {
+      "name": "ARROYO SAN FRANCISCO",
+      "sourceId": "hidro_cnsolidada_l.94774",
+      "points": [
+        { "x": 6.775052, "z": 42.090125 },
+        { "x": 6.569109, "z": 42.32004 },
+        { "x": 6.2163, "z": 42.238373 },
+        { "x": 5.932826, "z": 42.058985 },
+        { "x": 5.564366, "z": 41.658713 },
+        { "x": 4.931218, "z": 41.451196 },
+        { "x": 4.65481, "z": 41.117057 },
+        { "x": 4.488791, "z": 41.116429 },
+        { "x": 4.416595, "z": 40.959591 },
+        { "x": 4.107452, "z": 40.845211 },
+        { "x": 3.898735, "z": 40.608957 },
+        { "x": 3.896484, "z": 40.326583 },
+        { "x": 3.712259, "z": 40.043987 },
+        { "x": 3.757972, "z": 39.803247 },
+        { "x": 3.609322, "z": 39.484448 },
+        { "x": 3.724307, "z": 39.427944 },
+        { "x": 3.840442, "z": 39.094432 },
+        { "x": 3.748816, "z": 38.50052 },
+        { "x": 3.238349, "z": 38.195228 },
+        { "x": 3.023452, "z": 37.918528 },
+        { "x": 2.989911, "z": 37.748702 },
+        { "x": 3.056021, "z": 37.598889 },
+        { "x": 2.636149, "z": 37.268913 },
+        { "x": 2.570469, "z": 36.599477 },
+        { "x": 2.396457, "z": 36.508525 },
+        { "x": 2.243857, "z": 36.286113 },
+        { "x": 2.400553, "z": 35.775731 },
+        { "x": 1.898855, "z": 35.291307 },
+        { "x": 1.905099, "z": 34.692402 },
+        { "x": 1.376274, "z": 34.52802 },
+        { "x": 1.116864, "z": 34.340931 },
+        { "x": 1.061793, "z": 33.856499 },
+        { "x": 1.449181, "z": 33.550927 },
+        { "x": 1.480101, "z": 32.994371 },
+        { "x": 1.359384, "z": 32.727598 },
+        { "x": 1.17887, "z": 32.686797 },
+        { "x": 0.708848, "z": 32.242929 },
+        { "x": 0.908835, "z": 31.683493 },
+        { "x": 0.657028, "z": 31.268277 },
+        { "x": 0.476515, "z": 30.533615 },
+        { "x": 0.031249, "z": 30.466044 },
+        { "x": -0.116318, "z": 30.261343 },
+        { "x": -0.046934, "z": 29.692472 },
+        { "x": -0.493129, "z": 29.266689 },
+        { "x": -1.092711, "z": 29.168518 },
+        { "x": -1.161287, "z": 29.202644 },
+        { "x": -1.239103, "z": 29.838157 },
+        { "x": -1.646837, "z": 29.833139 },
+        { "x": -1.932653, "z": 29.669438 },
+        { "x": -1.923549, "z": 29.337215 },
+        { "x": -2.006368, "z": 29.253087 },
+        { "x": -1.971771, "z": 28.81769 },
+        { "x": -2.121293, "z": 28.731597 },
+        { "x": -2.363413, "z": 28.374716 },
+        { "x": -2.421319, "z": 27.948092 },
+        { "x": -2.024088, "z": 27.538477 },
+        { "x": -1.873235, "z": 27.54188 },
+        { "x": -1.809937, "z": 27.256528 },
+        { "x": -1.655676, "z": 27.149681 },
+        { "x": -1.608137, "z": 26.921751 },
+        { "x": -1.707237, "z": 26.641017 },
+        { "x": -1.462876, "z": 26.033467 },
+        { "x": -1.451976, "z": 25.768895 },
+        { "x": -2.002297, "z": 25.500629 },
+        { "x": -2.16519, "z": 25.297181 },
+        { "x": -2.196754, "z": 24.443298 },
+        { "x": -2.287764, "z": 24.061084 },
+        { "x": -2.391013, "z": 23.972846 },
+        { "x": -2.199971, "z": 23.677484 },
+        { "x": -3.046805, "z": 23.307363 },
+        { "x": -3.220863, "z": 23.016263 },
+        { "x": -2.98967, "z": 22.838626 },
+        { "x": -2.981471, "z": 22.664489 },
+        { "x": -2.809329, "z": 22.357102 },
+        { "x": -2.925227, "z": 21.397911 },
+        { "x": -2.835822, "z": 21.321954 },
+        { "x": -2.646533, "z": 21.393072 },
+        { "x": -2.267008, "z": 21.232559 },
+        { "x": -2.087338, "z": 20.808528 },
+        { "x": -2.032116, "z": 20.44641 },
+        { "x": -2.307553, "z": 20.442057 },
+        { "x": -2.681353, "z": 20.081538 },
+        { "x": -2.753785, "z": 20.124687 },
+        { "x": -2.852543, "z": 20.053005 },
+        { "x": -3.019397, "z": 20.137969 },
+        { "x": -3.404702, "z": 19.924992 },
+        { "x": -4.686006, "z": 19.956504 },
+        { "x": -5.369583, "z": 19.683579 },
+        { "x": -5.728277, "z": 19.696253 },
+        { "x": -6.102231, "z": 19.596202 },
+        { "x": -6.419399, "z": 19.619047 },
+        { "x": -6.604601, "z": 19.721788 },
+        { "x": -6.738422, "z": 19.953416 },
+        { "x": -7.309844, "z": 20.097297 },
+        { "x": -7.498206, "z": 20.015555 },
+        { "x": -8.072108, "z": 20.172276 },
+        { "x": -9.199659, "z": 20.276248 },
+        { "x": -9.973244, "z": 19.739135 },
+        { "x": -10.488358, "z": 19.657215 },
+        { "x": -11.241402, "z": 20.135512 },
+        { "x": -11.347221, "z": 20.868512 },
+        { "x": -11.797283, "z": 20.863289 },
+        { "x": -12.170815, "z": 21.178827 },
+        { "x": -12.681642, "z": 21.192145 },
+        { "x": -12.946302, "z": 21.589186 },
+        { "x": -14.008824, "z": 22.162641 },
+        { "x": -14.150514, "z": 22.461572 },
+        { "x": -14.026561, "z": 22.854332 },
+        { "x": -14.065828, "z": 23.053708 },
+        { "x": -14.416063, "z": 23.206078 },
+        { "x": -14.682772, "z": 23.078982 },
+        { "x": -14.944844, "z": 22.812417 },
+        { "x": -15.845145, "z": 22.348692 },
+        { "x": -16.401127, "z": 21.833279 },
+        { "x": -16.442315, "z": 21.651269 },
+        { "x": -16.311409, "z": 21.326213 },
+        { "x": -16.382078, "z": 20.96236 },
+        { "x": -17.033993, "z": 21.144125 },
+        { "x": -17.324668, "z": 21.362271 },
+        { "x": -17.613206, "z": 21.400808 },
+        { "x": -17.827229, "z": 21.298353 },
+        { "x": -18.062738, "z": 20.71511 },
+        { "x": -18.183783, "z": 20.637123 },
+        { "x": -18.2133, "z": 20.325558 },
+        { "x": -18.021667, "z": 20.179556 },
+        { "x": -17.476166, "z": 19.204857 },
+        { "x": -16.281496, "z": 18.544097 },
+        { "x": -16.282232, "z": 18.384129 },
+        { "x": -16.420548, "z": 18.245427 },
+        { "x": -16.503881, "z": 17.978084 },
+        { "x": -16.080987, "z": 17.480211 },
+        { "x": -16.134, "z": 17.035745 },
+        { "x": -16.833717, "z": 17.132938 },
+        { "x": -16.905203, "z": 16.923141 },
+        { "x": -17.375099, "z": 16.586281 },
+        { "x": -17.061605, "z": 15.795151 },
+        { "x": -16.970089, "z": 15.172504 },
+        { "x": -17.275256, "z": 14.305269 },
+        { "x": -17.585058, "z": 14.131935 },
+        { "x": -17.675972, "z": 13.701291 },
+        { "x": -18.010347, "z": 13.198161 },
+        { "x": -17.899016, "z": 12.039223 },
+        { "x": -16.759795, "z": 11.467778 },
+        { "x": -16.447809, "z": 11.101552 },
+        { "x": -16.56219, "z": 10.10416 },
+        { "x": -16.505567, "z": 9.623498 },
+        { "x": -16.576326, "z": 9.36274 },
+        { "x": -16.817942, "z": 9.200526 },
+        { "x": -17.435283, "z": 9.311982 },
+        { "x": -18.341434, "z": 9.303053 },
+        { "x": -19.060193, "z": 9.037742 },
+        { "x": -19.297028, "z": 8.862451 },
+        { "x": -19.861256, "z": 8.923959 },
+        { "x": -20.133753, "z": 8.877182 },
+        { "x": -20.388652, "z": 8.602661 },
+        { "x": -20.29798, "z": 7.99056 },
+        { "x": -20.367539, "z": 7.800194 },
+        { "x": -21.752143, "z": 7.17373 },
+        { "x": -21.872743, "z": 6.896413 },
+        { "x": -22.008056, "z": 6.782296 },
+        { "x": -22.173967, "z": 6.746016 },
+        { "x": -22.685432, "z": 6.860027 },
+        { "x": -24.069472, "z": 6.34193 },
+        { "x": -25.480322, "z": 6.22763 },
+        { "x": -25.776004, "z": 6.113914 },
+        { "x": -26.18777, "z": 5.737791 },
+        { "x": -26.633114, "z": 5.072014 },
+        { "x": -26.635626, "z": 4.589339 },
+        { "x": -26.947923, "z": 3.890158 },
+        { "x": -27.128716, "z": 3.711276 },
+        { "x": -27.350576, "z": 3.244491 },
+        { "x": -27.620069, "z": 1.952391 },
+        { "x": -27.968101, "z": 1.903007 },
+        { "x": -28.354261, "z": 1.174568 },
+        { "x": -28.526927, "z": 1.105435 },
+        { "x": -28.727717, "z": 1.231075 },
+        { "x": -28.853609, "z": 1.219332 },
+        { "x": -28.917789, "z": 1.117064 },
+        { "x": -29.184154, "z": 1.013519 },
+        { "x": -29.336556, "z": 0.705617 },
+        { "x": -29.331492, "z": 0.476344 },
+        { "x": -29.009752, "z": 0.115992 },
+        { "x": -28.981381, "z": -0.255144 },
+        { "x": -28.6764, "z": -0.550197 },
+        { "x": -28.738375, "z": -0.79802 },
+        { "x": -28.66541, "z": -1.18415 },
+        { "x": -28.311495, "z": -1.63672 },
+        { "x": -28.534495, "z": -2.173541 },
+        { "x": -28.92739, "z": -2.319674 },
+        { "x": -29.121368, "z": -2.518504 },
+        { "x": -29.539295, "z": -3.270574 },
+        { "x": -29.516815, "z": -3.556318 },
+        { "x": -29.387105, "z": -3.737652 },
+        { "x": -29.275952, "z": -3.809011 },
+        { "x": -28.92119, "z": -3.795203 },
+        { "x": -28.587746, "z": -3.932732 },
+        { "x": -28.50525, "z": -4.146416 },
+        { "x": -28.569255, "z": -4.3941 },
+        { "x": -28.889631, "z": -4.818114 },
+        { "x": -29.009041, "z": -5.118841 },
+        { "x": -28.998012, "z": -5.924449 },
+        { "x": -28.845952, "z": -6.320164 },
+        { "x": -29.335244, "z": -7.673643 },
+        { "x": -29.556874, "z": -8.041082 },
+        { "x": -29.955181, "z": -8.21163 },
+        { "x": -30.472132, "z": -8.100729 },
+        { "x": -31.981238, "z": -8.030832 },
+        { "x": -32.261609, "z": -8.479051 },
+        { "x": -32.352672, "z": -9.155945 },
+        { "x": -32.272851, "z": -9.388762 },
+        { "x": -32.321238, "z": -9.510007 },
+        { "x": -31.999385, "z": -9.62163 },
+        { "x": -31.600913, "z": -10.224562 },
+        { "x": -31.248432, "z": -10.509138 },
+        { "x": -31.131219, "z": -10.692807 },
+        { "x": -31.161056, "z": -10.854866 },
+        { "x": -30.990863, "z": -11.325112 },
+        { "x": -31.074475, "z": -11.757424 },
+        { "x": -31.249873, "z": -11.966393 },
+        { "x": -31.230067, "z": -12.478393 },
+        { "x": -31.422506, "z": -12.997313 },
+        { "x": -31.761921, "z": -13.365688 },
+        { "x": -32.068194, "z": -13.541126 },
+        { "x": -32.515775, "z": -14.059959 },
+        { "x": -32.599853, "z": -14.025585 },
+        { "x": -33.114097, "z": -14.535492 },
+        { "x": -34.144397, "z": -14.820688 },
+        { "x": -34.55494, "z": -15.081674 },
+        { "x": -35.724698, "z": -15.597038 },
+        { "x": -36.243366, "z": -15.947474 },
+        { "x": -36.39986, "z": -15.952898 },
+        { "x": -37.013699, "z": -16.446815 },
+        { "x": -37.472479, "z": -16.9128 },
+        { "x": -37.514977, "z": -17.132502 },
+        { "x": -37.899302, "z": -17.435616 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94774"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -12.834826, "z": -4.471222 },
+        { "x": -13.119869, "z": -4.635979 },
+        { "x": -13.534446, "z": -5.123967 },
+        { "x": -13.896958, "z": -5.206315 },
+        { "x": -14.56362, "z": -6.252835 },
+        { "x": -14.686662, "z": -6.575459 },
+        { "x": -16.131331, "z": -7.365147 },
+        { "x": -16.308127, "z": -7.343369 },
+        { "x": -17.017574, "z": -6.867583 },
+        { "x": -18.007857, "z": -6.808088 },
+        { "x": -18.438865, "z": -6.916795 },
+        { "x": -18.825943, "z": -6.897244 },
+        { "x": -18.968535, "z": -6.9863 },
+        { "x": -19.544792, "z": -6.921618 },
+        { "x": -20.384335, "z": -7.054913 },
+        { "x": -20.602202, "z": -7.3618 },
+        { "x": -21.309732, "z": -7.505355 },
+        { "x": -21.586532, "z": -7.409077 },
+        { "x": -21.747469, "z": -6.975739 },
+        { "x": -22.016872, "z": -6.842867 },
+        { "x": -23.063691, "z": -6.840743 },
+        { "x": -23.975315, "z": -7.084104 },
+        { "x": -24.692396, "z": -6.39134 },
+        { "x": -24.975737, "z": -6.243823 },
+        { "x": -25.241522, "z": -6.276709 },
+        { "x": -25.619689, "z": -6.500089 },
+        { "x": -25.701376, "z": -6.702555 },
+        { "x": -25.85778, "z": -6.811218 },
+        { "x": -25.893481, "z": -7.121435 },
+        { "x": -26.192173, "z": -7.55968 },
+        { "x": -26.267696, "z": -7.848033 },
+        { "x": -26.794704, "z": -8.028745 },
+        { "x": -27.44555, "z": -8.681215 },
+        { "x": -28.132209, "z": -8.71712 },
+        { "x": -28.62247, "z": -9.095052 },
+        { "x": -28.985679, "z": -9.224219 },
+        { "x": -29.238241, "z": -8.931473 },
+        { "x": -29.531135, "z": -8.318902 },
+        { "x": -29.705776, "z": -8.120661 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -12.834826, "z": -4.471222 },
+        { "x": -12.614392, "z": -4.507886 },
+        { "x": -12.433506, "z": -4.283767 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -12.834826, "z": -4.471222 },
+        { "x": -12.625388, "z": -4.472873 },
+        { "x": -12.433506, "z": -4.283767 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -12.420357, "z": -4.248429 },
+        { "x": -12.335657, "z": -3.983237 },
+        { "x": -11.172116, "z": -3.693902 },
+        { "x": -11.226577, "z": -3.784818 },
+        { "x": -11.602225, "z": -3.927934 },
+        { "x": -12.132413, "z": -4.04743 },
+        { "x": -12.433506, "z": -4.283767 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -11.198782, "z": -3.660505 },
+        { "x": -10.643667, "z": -3.279417 },
+        { "x": -9.886378, "z": -2.908929 },
+        { "x": -9.937096, "z": -3.033293 },
+        { "x": -10.619702, "z": -3.477556 },
+        { "x": -10.891197, "z": -3.508123 },
+        { "x": -11.172116, "z": -3.693902 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -8.403498, "z": -3.100844 },
+        { "x": -8.012103, "z": -3.250423 },
+        { "x": -8.094198, "z": -3.324676 },
+        { "x": -8.374342, "z": -3.259452 },
+        { "x": -8.536736, "z": -2.879955 },
+        { "x": -8.784924, "z": -2.6044 },
+        { "x": -8.998081, "z": -2.525754 },
+        { "x": -9.204988, "z": -2.557022 },
+        { "x": -9.886378, "z": -2.908929 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -6.786694, "z": -0.163364 },
+        { "x": -6.776275, "z": -0.339416 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -4.25386, "z": 2.517175 },
+        { "x": -4.096643, "z": 2.637783 },
+        { "x": -4.164052, "z": 2.529268 },
+        { "x": -4.48061, "z": 2.410798 },
+        { "x": -4.920625, "z": 1.920386 },
+        { "x": -4.948, "z": 1.737187 },
+        { "x": -4.794692, "z": 1.535354 },
+        { "x": -4.912644, "z": 1.232579 },
+        { "x": -5.983361, "z": 0.495403 },
+        { "x": -6.777854, "z": 0.115019 },
+        { "x": -6.775401, "z": -0.342682 },
+        { "x": -6.463813, "z": -0.597319 },
+        { "x": -6.305973, "z": -1.076972 },
+        { "x": -6.441737, "z": -1.152424 },
+        { "x": -6.625447, "z": -1.081779 },
+        { "x": -6.774152, "z": -1.1427 },
+        { "x": -7.105407, "z": -2.097592 },
+        { "x": -7.320457, "z": -2.35703 },
+        { "x": -7.563142, "z": -2.886393 },
+        { "x": -7.682219, "z": -2.965377 },
+        { "x": -7.667647, "z": -3.074871 },
+        { "x": -7.817568, "z": -3.235428 },
+        { "x": -8.012103, "z": -3.250423 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -3.821294, "z": 3.267311 },
+        { "x": -4.096643, "z": 2.637783 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -3.752059, "z": 3.432841 },
+        { "x": -3.931884, "z": 3.036342 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": -3.675537, "z": 3.814746 },
+        { "x": -3.708728, "z": 3.562311 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": 0.075039, "z": 6.051047 },
+        { "x": 0.162325, "z": 6.418416 },
+        { "x": 0.075039, "z": 6.051047 },
+        { "x": -0.304109, "z": 5.346485 },
+        { "x": -0.336085, "z": 5.154106 },
+        { "x": -0.249448, "z": 4.920005 },
+        { "x": -0.08836, "z": 4.701821 },
+        { "x": 0.322497, "z": 4.494623 },
+        { "x": 0.54717, "z": 4.281632 },
+        { "x": 0.869591, "z": 4.258261 },
+        { "x": 1.075541, "z": 4.116785 },
+        { "x": 1.201217, "z": 3.877507 },
+        { "x": 1.135753, "z": 3.496556 },
+        { "x": 0.610969, "z": 2.973675 },
+        { "x": 0.202395, "z": 2.836561 },
+        { "x": -0.487817, "z": 3.108847 },
+        { "x": -0.818194, "z": 3.050425 },
+        { "x": -1.062082, "z": 3.095923 },
+        { "x": -2.039411, "z": 3.782402 },
+        { "x": -2.143217, "z": 3.936977 },
+        { "x": -3.070313, "z": 4.146099 },
+        { "x": -3.557088, "z": 4.019389 },
+        { "x": -3.850681, "z": 3.270319 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO CAMPANERO GRANDE",
+      "sourceId": "hidro_cnsolidada_l.94776",
+      "points": [
+        { "x": 29.181614, "z": 13.808294 },
+        { "x": 28.926927, "z": 13.840223 },
+        { "x": 28.839184, "z": 14.000956 },
+        { "x": 28.315022, "z": 14.36897 },
+        { "x": 27.671588, "z": 15.566479 },
+        { "x": 27.48799, "z": 15.566845 },
+        { "x": 27.17034, "z": 15.730755 },
+        { "x": 27.059713, "z": 16.039152 },
+        { "x": 26.742639, "z": 16.088934 },
+        { "x": 26.494995, "z": 16.413734 },
+        { "x": 26.057191, "z": 16.361448 },
+        { "x": 25.479408, "z": 17.120084 },
+        { "x": 25.186767, "z": 17.155049 },
+        { "x": 24.932, "z": 17.430991 },
+        { "x": 24.651498, "z": 17.568962 },
+        { "x": 24.449232, "z": 17.854085 },
+        { "x": 24.245414, "z": 18.644918 },
+        { "x": 23.551579, "z": 18.586293 },
+        { "x": 23.125906, "z": 18.995593 },
+        { "x": 22.71261, "z": 19.142607 },
+        { "x": 22.702095, "z": 19.272335 },
+        { "x": 22.982457, "z": 19.775771 },
+        { "x": 22.977119, "z": 19.896142 },
+        { "x": 22.542483, "z": 19.853026 },
+        { "x": 21.993119, "z": 19.992287 },
+        { "x": 21.598892, "z": 20.528678 },
+        { "x": 20.87178, "z": 21.070603 },
+        { "x": 20.88612, "z": 21.19468 },
+        { "x": 20.497989, "z": 21.262395 },
+        { "x": 20.197357, "z": 21.12696 },
+        { "x": 19.868512, "z": 21.154895 },
+        { "x": 19.76499, "z": 20.837366 },
+        { "x": 19.213604, "z": 20.931181 },
+        { "x": 18.804544, "z": 20.757114 },
+        { "x": 18.616005, "z": 20.807127 },
+        { "x": 18.385006, "z": 21.093571 },
+        { "x": 18.185066, "z": 21.098939 },
+        { "x": 17.994687, "z": 20.998958 },
+        { "x": 17.814387, "z": 20.618015 },
+        { "x": 17.663727, "z": 20.495386 },
+        { "x": 17.136687, "z": 20.531669 },
+        { "x": 16.884042, "z": 20.871714 },
+        { "x": 16.302463, "z": 21.143795 },
+        { "x": 15.440172, "z": 20.455475 },
+        { "x": 15.102462, "z": 20.041124 },
+        { "x": 14.687486, "z": 20.162485 },
+        { "x": 14.26115, "z": 20.084142 },
+        { "x": 13.95284, "z": 20.125626 },
+        { "x": 13.772074, "z": 20.027383 },
+        { "x": 13.514864, "z": 20.130972 },
+        { "x": 13.301096, "z": 20.399514 },
+        { "x": 13.054969, "z": 20.482251 },
+        { "x": 12.507833, "z": 20.08092 },
+        { "x": 12.471371, "z": 19.589005 },
+        { "x": 12.336524, "z": 19.41757 },
+        { "x": 11.650889, "z": 18.856536 },
+        { "x": 11.013034, "z": 18.866385 },
+        { "x": 10.820195, "z": 18.738836 },
+        { "x": 10.645643, "z": 18.513046 },
+        { "x": 10.476571, "z": 18.028052 },
+        { "x": 10.039436, "z": 17.72618 },
+        { "x": 9.398694, "z": 17.033983 },
+        { "x": 8.417065, "z": 17.012139 },
+        { "x": 7.932564, "z": 17.27566 },
+        { "x": 7.729201, "z": 17.290729 },
+        { "x": 7.031249, "z": 16.365315 },
+        { "x": 6.891902, "z": 15.451264 },
+        { "x": 6.569598, "z": 14.981651 },
+        { "x": 6.557823, "z": 14.608889 },
+        { "x": 6.430013, "z": 14.3019 },
+        { "x": 5.959678, "z": 13.644601 },
+        { "x": 5.545911, "z": 13.546435 },
+        { "x": 5.156219, "z": 13.248916 },
+        { "x": 5.269097, "z": 12.88048 },
+        { "x": 5.336717, "z": 12.125324 },
+        { "x": 5.06849, "z": 11.486715 },
+        { "x": 5.049718, "z": 11.215988 },
+        { "x": 4.595278, "z": 10.490093 },
+        { "x": 4.407361, "z": 10.326789 },
+        { "x": 3.798646, "z": 10.118477 },
+        { "x": 3.488227, "z": 9.919107 },
+        { "x": 2.870807, "z": 9.826468 },
+        { "x": 2.621228, "z": 9.625274 },
+        { "x": 2.661165, "z": 9.330938 },
+        { "x": 3.089993, "z": 8.967714 },
+        { "x": 3.391688, "z": 8.925057 },
+        { "x": 3.507774, "z": 8.768758 },
+        { "x": 3.588797, "z": 8.524124 },
+        { "x": 3.541581, "z": 8.010737 },
+        { "x": 3.389581, "z": 7.983107 },
+        { "x": 3.277437, "z": 7.768982 },
+        { "x": 3.135064, "z": 7.68831 },
+        { "x": 2.755301, "z": 7.675609 },
+        { "x": 2.140058, "z": 8.091136 },
+        { "x": 1.411591, "z": 8.371917 },
+        { "x": 0.924908, "z": 8.426461 },
+        { "x": 0.719656, "z": 8.335832 },
+        { "x": 0.162325, "z": 6.418416 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.94776"]
+    },
+    {
+      "name": "ARROYO DEL PENITENTE",
+      "sourceId": "hidro_cnsolidada_l.95705",
+      "points": [
+        { "x": -0.581253, "z": -6.638371 },
+        { "x": -0.824438, "z": -6.481386 },
+        { "x": -1.155341, "z": -6.601676 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.95705"]
+    },
+    {
+      "name": "ARROYO DEL PENITENTE",
+      "sourceId": "hidro_cnsolidada_l.95705",
+      "points": [
+        { "x": 9.323357, "z": -6.397611 },
+        { "x": 9.086136, "z": -6.25435 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.95705"]
+    },
+    {
+      "name": "ARROYO DEL PENITENTE",
+      "sourceId": "hidro_cnsolidada_l.95705",
+      "points": [
+        { "x": 14.55671, "z": -2.395673 },
+        { "x": 14.551669, "z": -2.796709 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.95705"]
+    },
+    {
+      "name": "ARROYO DEL PENITENTE",
+      "sourceId": "hidro_cnsolidada_l.95705",
+      "points": [
+        { "x": 32.677586, "z": 17.430788 },
+        { "x": 32.717071, "z": 17.17827 },
+        { "x": 32.189014, "z": 16.382886 },
+        { "x": 32.183112, "z": 15.852011 },
+        { "x": 32.055409, "z": 15.647337 },
+        { "x": 32.076634, "z": 15.343736 },
+        { "x": 31.800853, "z": 15.22615 },
+        { "x": 31.725571, "z": 14.998141 },
+        { "x": 31.534786, "z": 14.860126 },
+        { "x": 31.589173, "z": 14.567803 },
+        { "x": 31.54629, "z": 14.416414 },
+        { "x": 31.450841, "z": 14.371341 },
+        { "x": 31.434109, "z": 13.716872 },
+        { "x": 31.522169, "z": 13.43417 },
+        { "x": 31.481043, "z": 13.089774 },
+        { "x": 31.584184, "z": 12.774936 },
+        { "x": 31.286669, "z": 12.420708 },
+        { "x": 31.334259, "z": 12.144308 },
+        { "x": 31.225302, "z": 12.057303 },
+        { "x": 30.98826, "z": 12.055424 },
+        { "x": 30.677235, "z": 11.697034 },
+        { "x": 30.733036, "z": 10.992002 },
+        { "x": 30.61027, "z": 10.717506 },
+        { "x": 30.7913, "z": 10.241825 },
+        { "x": 30.441067, "z": 9.710283 },
+        { "x": 30.437405, "z": 9.407123 },
+        { "x": 30.267312, "z": 8.88647 },
+        { "x": 29.790683, "z": 8.748029 },
+        { "x": 29.552137, "z": 8.515123 },
+        { "x": 29.258525, "z": 8.454633 },
+        { "x": 29.214095, "z": 8.330269 },
+        { "x": 29.323503, "z": 8.16229 },
+        { "x": 29.11511, "z": 7.890243 },
+        { "x": 28.785405, "z": 7.751711 },
+        { "x": 28.733711, "z": 7.616189 },
+        { "x": 28.419395, "z": 7.618507 },
+        { "x": 28.010351, "z": 7.342391 },
+        { "x": 27.785997, "z": 7.363687 },
+        { "x": 27.602062, "z": 7.201357 },
+        { "x": 27.152895, "z": 7.208909 },
+        { "x": 26.603565, "z": 6.913904 },
+        { "x": 26.234481, "z": 6.926499 },
+        { "x": 25.897614, "z": 7.11436 },
+        { "x": 25.279272, "z": 6.946695 },
+        { "x": 25.02539, "z": 7.016125 },
+        { "x": 24.737504, "z": 6.990481 },
+        { "x": 24.642872, "z": 6.900054 },
+        { "x": 24.21873, "z": 6.890047 },
+        { "x": 23.541216, "z": 7.089008 },
+        { "x": 22.943635, "z": 6.55803 },
+        { "x": 22.311577, "z": 6.564234 },
+        { "x": 22.177061, "z": 6.405359 },
+        { "x": 20.819862, "z": 5.976357 },
+        { "x": 20.502652, "z": 5.716011 },
+        { "x": 20.16665, "z": 5.058026 },
+        { "x": 20.113038, "z": 4.303329 },
+        { "x": 19.995166, "z": 4.127585 },
+        { "x": 19.559061, "z": 3.873968 },
+        { "x": 19.285761, "z": 3.86288 },
+        { "x": 18.827355, "z": 4.092789 },
+        { "x": 18.518241, "z": 3.981202 },
+        { "x": 18.239963, "z": 3.40795 },
+        { "x": 18.255873, "z": 2.224441 },
+        { "x": 17.979888, "z": 1.892993 },
+        { "x": 17.668886, "z": 1.648351 },
+        { "x": 16.942163, "z": 1.719023 },
+        { "x": 16.722989, "z": 1.371697 },
+        { "x": 16.723069, "z": 0.702782 },
+        { "x": 16.528775, "z": 0.756647 },
+        { "x": 16.161269, "z": 1.370724 },
+        { "x": 15.770074, "z": 1.24141 },
+        { "x": 15.493846, "z": 0.891844 },
+        { "x": 15.538955, "z": 0.743571 },
+        { "x": 15.700236, "z": 0.690937 },
+        { "x": 15.549236, "z": 0.07935 },
+        { "x": 14.774102, "z": -0.219856 },
+        { "x": 14.599924, "z": -0.184229 },
+        { "x": 14.1701, "z": -0.52013 },
+        { "x": 14.109063, "z": -0.747576 },
+        { "x": 14.241922, "z": -0.862908 },
+        { "x": 14.435667, "z": -1.497581 },
+        { "x": 14.293108, "z": -1.695986 },
+        { "x": 14.392465, "z": -1.732948 },
+        { "x": 14.592108, "z": -2.314937 },
+        { "x": 14.614485, "z": -2.664395 },
+        { "x": 14.532468, "z": -2.8927 },
+        { "x": 14.614526, "z": -3.068325 },
+        { "x": 14.493132, "z": -3.555061 },
+        { "x": 14.01268, "z": -3.900461 },
+        { "x": 13.44688, "z": -3.746939 },
+        { "x": 13.268613, "z": -3.796499 },
+        { "x": 13.06788, "z": -3.689265 },
+        { "x": 12.886813, "z": -3.737101 },
+        { "x": 12.420616, "z": -3.478501 },
+        { "x": 12.295488, "z": -3.812519 },
+        { "x": 11.973301, "z": -4.146302 },
+        { "x": 11.68233, "z": -4.3725 },
+        { "x": 11.233909, "z": -4.517637 },
+        { "x": 11.007354, "z": -4.819988 },
+        { "x": 10.813836, "z": -4.904421 },
+        { "x": 10.719856, "z": -5.234181 },
+        { "x": 11.321441, "z": -5.820757 },
+        { "x": 11.480254, "z": -6.168055 },
+        { "x": 11.475885, "z": -6.596803 },
+        { "x": 11.632684, "z": -6.774118 },
+        { "x": 11.705627, "z": -7.028985 },
+        { "x": 11.604083, "z": -7.260118 },
+        { "x": 11.489608, "z": -7.235352 },
+        { "x": 11.402572, "z": -7.331021 },
+        { "x": 11.248835, "z": -7.272799 },
+        { "x": 11.158987, "z": -7.02968 },
+        { "x": 10.643559, "z": -6.389433 },
+        { "x": 10.283801, "z": -6.302512 },
+        { "x": 10.071979, "z": -6.360639 },
+        { "x": 9.709697, "z": -6.753224 },
+        { "x": 9.467978, "z": -6.635605 },
+        { "x": 9.285938, "z": -6.279892 },
+        { "x": 8.823915, "z": -6.24943 },
+        { "x": 8.518193, "z": -6.355232 },
+        { "x": 8.468538, "z": -6.672327 },
+        { "x": 8.28539, "z": -6.754303 },
+        { "x": 8.032171, "z": -7.054151 },
+        { "x": 7.234158, "z": -7.505808 },
+        { "x": 6.518159, "z": -7.763203 },
+        { "x": 6.337935, "z": -7.69472 },
+        { "x": 6.18081, "z": -7.375738 },
+        { "x": 6.384199, "z": -7.218825 },
+        { "x": 6.615699, "z": -7.209301 },
+        { "x": 6.790101, "z": -7.028345 },
+        { "x": 6.81794, "z": -6.874213 },
+        { "x": 6.748762, "z": -6.761394 },
+        { "x": 6.2885, "z": -6.655325 },
+        { "x": 5.27262, "z": -6.744248 },
+        { "x": 4.746897, "z": -6.357203 },
+        { "x": 4.201962, "z": -6.112947 },
+        { "x": 3.82899, "z": -5.802618 },
+        { "x": 2.534527, "z": -5.606673 },
+        { "x": 1.893079, "z": -5.215011 },
+        { "x": 1.526927, "z": -5.153247 },
+        { "x": 1.143633, "z": -5.379418 },
+        { "x": 1.171885, "z": -5.860031 },
+        { "x": 1.067557, "z": -6.36239 },
+        { "x": 0.885306, "z": -6.500325 },
+        { "x": 0.613263, "z": -6.537798 },
+        { "x": 0.380129, "z": -6.692609 },
+        { "x": -0.124364, "z": -6.767863 },
+        { "x": -0.82724, "z": -6.586807 },
+        { "x": -1.172573, "z": -6.603147 },
+        { "x": -1.678051, "z": -6.715501 },
+        { "x": -1.800691, "z": -6.857022 },
+        { "x": -2.676015, "z": -7.116893 },
+        { "x": -2.7995, "z": -6.98871 },
+        { "x": -2.782672, "z": -6.447908 },
+        { "x": -2.994482, "z": -5.740196 },
+        { "x": -3.181327, "z": -5.642909 },
+        { "x": -3.33809, "z": -5.744852 },
+        { "x": -4.003088, "z": -5.563023 },
+        { "x": -4.175175, "z": -5.342624 },
+        { "x": -4.214265, "z": -4.889454 },
+        { "x": -4.759103, "z": -4.336426 },
+        { "x": -4.763537, "z": -4.083426 },
+        { "x": -4.474267, "z": -3.689727 },
+        { "x": -4.56341, "z": -3.451931 },
+        { "x": -4.519484, "z": -3.110487 },
+        { "x": -4.613928, "z": -2.889437 },
+        { "x": -5.077819, "z": -2.552299 },
+        { "x": -5.260868, "z": -2.502189 },
+        { "x": -5.396437, "z": -2.566282 },
+        { "x": -5.554661, "z": -2.443984 },
+        { "x": -5.522724, "z": -1.699664 },
+        { "x": -5.647786, "z": -1.663818 },
+        { "x": -6.014947, "z": -1.098235 },
+        { "x": -6.314243, "z": -1.088625 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.95705"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 66.113967, "z": 6.63175 },
+        { "x": 66.070757, "z": 6.530409 },
+        { "x": 66.398871, "z": 6.308406 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 66.49385, "z": 5.926927 },
+        { "x": 66.468362, "z": 5.740586 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 66.944006, "z": 3.938365 },
+        { "x": 66.826582, "z": 3.809648 },
+        { "x": 66.895626, "z": 3.585787 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 67.086111, "z": 3.191464 },
+        { "x": 67.022138, "z": 2.998969 },
+        { "x": 67.027401, "z": 2.9836 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 67.1274, "z": 2.520451 },
+        { "x": 67.111726, "z": 2.42887 },
+        { "x": 67.159138, "z": 2.37508 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 66.583619, "z": 1.497641 },
+        { "x": 66.563812, "z": 1.466383 },
+        { "x": 66.583121, "z": 1.444461 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 66.542832, "z": 1.131588 },
+        { "x": 66.519871, "z": 1.124005 },
+        { "x": 66.52472, "z": 1.070308 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 66.751557, "z": 0.391531 },
+        { "x": 66.750857, "z": 0.385 },
+        { "x": 66.989092, "z": 0.124239 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 67.332901, "z": -0.4899 },
+        { "x": 67.757956, "z": -1.316602 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 67.76098, "z": -1.639323 },
+        { "x": 67.751408, "z": -1.748357 },
+        { "x": 67.931499, "z": -2.05486 },
+        { "x": 68.016685, "z": -2.508007 },
+        { "x": 68.036193, "z": -2.526485 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 68.13563, "z": -2.620668 },
+        { "x": 68.522332, "z": -2.98694 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 68.207885, "z": -3.987319 },
+        { "x": 68.18382, "z": -4.105229 },
+        { "x": 68.195554, "z": -4.119255 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 68.285844, "z": -4.227177 },
+        { "x": 68.434397, "z": -4.404741 },
+        { "x": 68.512658, "z": -4.697153 },
+        { "x": 68.853284, "z": -5.10682 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 69.168629, "z": -5.881606 },
+        { "x": 69.203351, "z": -5.97102 },
+        { "x": 69.223821, "z": -5.976386 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 69.538129, "z": -6.516135 },
+        { "x": 69.588139, "z": -6.661638 },
+        { "x": 69.665626, "z": -6.73508 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 69.95535, "z": -7.683415 },
+        { "x": 69.928467, "z": -7.788847 },
+        { "x": 70.125351, "z": -8.12922 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 70.165214, "z": -8.280926 },
+        { "x": 70.168459, "z": -9.257598 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 70.169449, "z": -9.555723 },
+        { "x": 70.169573, "z": -9.593036 },
+        { "x": 70.318795, "z": -10.001903 },
+        { "x": 70.383869, "z": -10.078807 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 71.166502, "z": -10.702868 },
+        { "x": 71.136459, "z": -10.755165 },
+        { "x": 71.121619, "z": -10.928717 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 70.640147, "z": -12.007585 },
+        { "x": 70.587577, "z": -12.108295 },
+        { "x": 70.648747, "z": -12.145646 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 71.762989, "z": -13.430063 },
+        { "x": 71.652763, "z": -13.845583 },
+        { "x": 71.873039, "z": -14.084374 },
+        { "x": 72.103744, "z": -14.494035 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 71.932344, "z": -14.874141 },
+        { "x": 71.871247, "z": -14.795658 },
+        { "x": 71.713455, "z": -14.793704 },
+        { "x": 71.622715, "z": -15.052869 },
+        { "x": 71.682808, "z": -15.236549 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 71.742096, "z": -15.41777 },
+        { "x": 71.781829, "z": -15.539216 },
+        { "x": 71.849404, "z": -15.583325 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 72.198141, "z": -16.216254 },
+        { "x": 72.197753, "z": -16.228228 },
+        { "x": 72.205303, "z": -16.238992 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 72.353316, "z": -16.80626 },
+        { "x": 72.332444, "z": -17.260112 },
+        { "x": 72.263504, "z": -17.438833 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 72.16937, "z": -17.573446 },
+        { "x": 72.043417, "z": -17.622166 },
+        { "x": 72.033815, "z": -17.698251 },
+        { "x": 72.258928, "z": -18.207931 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 72.405834, "z": -18.540544 },
+        { "x": 72.788539, "z": -19.407031 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 72.8462, "z": -19.909234 },
+        { "x": 72.780716, "z": -20.085766 },
+        { "x": 72.892487, "z": -20.312383 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 72.907846, "z": -20.446151 },
+        { "x": 72.788986, "z": -20.65661 },
+        { "x": 72.784475, "z": -20.865785 },
+        { "x": 72.85162, "z": -20.887408 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 73.420145, "z": -21.74597 },
+        { "x": 73.57827, "z": -22.033502 },
+        { "x": 73.960515, "z": -22.003704 },
+        { "x": 74.004087, "z": -21.948359 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 74.19528, "z": -21.705502 },
+        { "x": 74.249758, "z": -21.636305 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 76.186946, "z": -20.217338 },
+        { "x": 76.206257, "z": -20.191779 },
+        { "x": 76.221669, "z": -20.084836 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 77.569264, "z": -19.245142 },
+        { "x": 77.714525, "z": -19.342306 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 78.069888, "z": -19.839143 },
+        { "x": 78.113153, "z": -20.05082 },
+        { "x": 78.18644, "z": -20.165252 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 78.387248, "z": -20.727105 },
+        { "x": 78.477138, "z": -21.139814 },
+        { "x": 78.506313, "z": -21.173418 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 78.56238, "z": -21.397797 },
+        { "x": 78.538839, "z": -21.469688 },
+        { "x": 78.569381, "z": -21.605555 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 78.612613, "z": -21.797878 },
+        { "x": 78.63555, "z": -21.899918 },
+        { "x": 78.818731, "z": -22.096664 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 79.007892, "z": -22.50413 },
+        { "x": 79.012873, "z": -22.562551 },
+        { "x": 79.075548, "z": -22.555717 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 80.075383, "z": -25.192154 },
+        { "x": 80.058365, "z": -25.218471 },
+        { "x": 80.07783, "z": -25.239642 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 80.584696, "z": -26.786078 },
+        { "x": 80.534813, "z": -26.906581 },
+        { "x": 80.130395, "z": -27.015772 },
+        { "x": 79.679237, "z": -27.511401 },
+        { "x": 79.731933, "z": -27.630333 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 80.333893, "z": -30.005662 },
+        { "x": 80.425733, "z": -30.148952 },
+        { "x": 80.644193, "z": -30.337272 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 81.063149, "z": -34.986927 },
+        { "x": 80.926746, "z": -35.015615 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 80.691715, "z": -34.961541 },
+        { "x": 80.648068, "z": -34.9438 },
+        { "x": 80.644083, "z": -34.959494 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 81.569096, "z": -39.543523 },
+        { "x": 81.570062, "z": -39.602779 },
+        { "x": 81.612951, "z": -39.616361 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 82.27524, "z": -40.472401 },
+        { "x": 82.281163, "z": -40.486735 },
+        { "x": 82.293867, "z": -40.490389 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 82.682384, "z": -41.630383 },
+        { "x": 82.659893, "z": -41.80921 },
+        { "x": 82.693959, "z": -41.837135 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 82.890684, "z": -42.860566 },
+        { "x": 82.802064, "z": -42.953109 },
+        { "x": 82.887767, "z": -42.990532 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 82.83003, "z": -43.644958 },
+        { "x": 82.769925, "z": -43.665566 },
+        { "x": 82.756551, "z": -43.74907 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 81.271219, "z": -45.248217 },
+        { "x": 81.229727, "z": -45.317966 },
+        { "x": 81.250126, "z": -45.351509 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 81.155613, "z": -46.706722 },
+        { "x": 81.140472, "z": -46.936676 },
+        { "x": 81.180218, "z": -47.630152 },
+        { "x": 81.343638, "z": -48.149443 },
+        { "x": 81.75089, "z": -48.354098 },
+        { "x": 82.173556, "z": -49.015608 },
+        { "x": 82.467834, "z": -49.193742 },
+        { "x": 82.514598, "z": -49.208709 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 83.318887, "z": -49.987377 },
+        { "x": 83.352566, "z": -50.056816 },
+        { "x": 83.402719, "z": -50.067325 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 85.011377, "z": -51.445556 },
+        { "x": 85.072917, "z": -51.551519 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 85.231683, "z": -52.014202 },
+        { "x": 85.396767, "z": -52.629676 },
+        { "x": 85.361435, "z": -53.025366 },
+        { "x": 85.542977, "z": -53.296732 },
+        { "x": 85.96188, "z": -53.337879 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 86.130924, "z": -53.354483 },
+        { "x": 86.213288, "z": -53.362574 },
+        { "x": 86.33619, "z": -53.199987 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 87.802353, "z": -53.406083 },
+        { "x": 87.758679, "z": -53.555233 },
+        { "x": 87.810279, "z": -53.635333 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 87.920365, "z": -55.148154 },
+        { "x": 87.719715, "z": -55.137026 },
+        { "x": 87.706981, "z": -55.242183 },
+        { "x": 87.083673, "z": -55.915019 },
+        { "x": 87.036856, "z": -56.182604 },
+        { "x": 87.238872, "z": -56.464839 },
+        { "x": 87.28311, "z": -56.666424 },
+        { "x": 87.283292, "z": -56.666576 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 87.677282, "z": -57.321101 },
+        { "x": 87.493406, "z": -57.779783 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 87.347329, "z": -58.328605 },
+        { "x": 87.317608, "z": -58.54527 },
+        { "x": 87.464688, "z": -59.110029 },
+        { "x": 87.637721, "z": -59.179782 },
+        { "x": 87.908373, "z": -59.451723 },
+        { "x": 87.979031, "z": -59.464691 },
+        { "x": 88.07943, "z": -59.349107 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 82.24842, "z": -42.419109 },
+        { "x": 82.200328, "z": -42.330551 },
+        { "x": 82.346852, "z": -42.517962 },
+        { "x": 82.3523, "z": -42.669743 },
+        { "x": 82.104105, "z": -43.204174 },
+        { "x": 82.209633, "z": -43.257517 },
+        { "x": 82.289624, "z": -43.467934 },
+        { "x": 82.088526, "z": -44.151575 },
+        { "x": 82.091489, "z": -44.161122 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 82.281163, "z": -40.486735 },
+        { "x": 82.361452, "z": -40.699951 },
+        { "x": 82.248455, "z": -40.94557 },
+        { "x": 82.315881, "z": -41.041181 },
+        { "x": 82.265122, "z": -41.320644 },
+        { "x": 82.430673, "z": -41.785515 },
+        { "x": 82.399227, "z": -41.938978 },
+        { "x": 82.196828, "z": -42.099702 },
+        { "x": 82.200328, "z": -42.330551 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 82.277163, "z": -43.50142 },
+        { "x": 82.403012, "z": -43.28067 },
+        { "x": 82.186788, "z": -43.098975 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 87.777405, "z": -55.186964 },
+        { "x": 87.706981, "z": -55.242183 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 92.589683, "z": -64.176222 },
+        { "x": 92.600855, "z": -64.352673 },
+        { "x": 92.672055, "z": -64.398842 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 93.075345, "z": -64.965436 },
+        { "x": 93.234563, "z": -65.135975 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 93.500099, "z": -65.738108 },
+        { "x": 93.502053, "z": -65.750241 },
+        { "x": 93.598868, "z": -65.86765 },
+        { "x": 94.118585, "z": -66.125897 },
+        { "x": 94.122357, "z": -66.12666 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 94.519583, "z": -66.374697 },
+        { "x": 94.59171, "z": -66.49296 },
+        { "x": 94.879194, "z": -66.600586 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.008814, "z": -66.709443 },
+        { "x": 95.037377, "z": -66.811776 },
+        { "x": 95.339292, "z": -66.986982 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.481315, "z": -67.223985 },
+        { "x": 95.515422, "z": -67.466541 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 94.932835, "z": -67.888246 },
+        { "x": 94.917314, "z": -67.885908 },
+        { "x": 94.648023, "z": -68.140011 },
+        { "x": 94.71307, "z": -68.410846 },
+        { "x": 94.812695, "z": -68.474808 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.167407, "z": -69.256149 },
+        { "x": 95.114307, "z": -69.302494 },
+        { "x": 95.130339, "z": -69.439161 },
+        { "x": 95.298724, "z": -69.60449 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.429291, "z": -70.66143 },
+        { "x": 95.263129, "z": -70.20135 },
+        { "x": 95.447693, "z": -69.967084 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.429291, "z": -70.66143 },
+        { "x": 95.299075, "z": -70.395616 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.400204, "z": -71.366017 },
+        { "x": 95.347652, "z": -71.277631 },
+        { "x": 95.428455, "z": -71.214917 },
+        { "x": 95.411891, "z": -71.412249 },
+        { "x": 95.624998, "z": -71.809087 },
+        { "x": 95.530238, "z": -72.224262 },
+        { "x": 95.610552, "z": -72.374932 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.87334, "z": -72.97059 },
+        { "x": 95.693332, "z": -73.263816 },
+        { "x": 95.69709, "z": -73.455702 },
+        { "x": 95.735127, "z": -73.490686 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.867431, "z": -73.780538 },
+        { "x": 95.713446, "z": -73.964628 },
+        { "x": 95.67824, "z": -74.35241 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.528472, "z": -74.346976 },
+        { "x": 95.495022, "z": -74.213346 },
+        { "x": 95.342131, "z": -74.197734 },
+        { "x": 95.264047, "z": -74.320629 },
+        { "x": 95.261864, "z": -74.610003 },
+        { "x": 95.306031, "z": -74.681054 },
+        { "x": 95.330729, "z": -74.683229 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.917449, "z": -75.60796 },
+        { "x": 95.931274, "z": -75.891689 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO DEL AIGUÁ",
+      "sourceId": "hidro_cnsolidada_l.98933",
+      "points": [
+        { "x": 95.429291, "z": -70.66143 },
+        { "x": 95.428455, "z": -71.214917 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98933"]
+    },
+    {
+      "name": "ARROYO CAMPANERO CHICO",
+      "sourceId": "hidro_cnsolidada_l.98036",
+      "points": [
+        { "x": -4.287429, "z": 11.593517 },
+        { "x": -5.123206, "z": 11.249755 },
+        { "x": -5.313952, "z": 11.037673 },
+        { "x": -5.627302, "z": 10.954463 },
+        { "x": -6.270573, "z": 10.361454 },
+        { "x": -6.548433, "z": 10.309098 },
+        { "x": -6.819909, "z": 10.381041 },
+        { "x": -6.980813, "z": 10.251291 },
+        { "x": -7.420012, "z": 10.291321 },
+        { "x": -7.578011, "z": 10.229422 },
+        { "x": -7.669827, "z": 9.956988 },
+        { "x": -7.920087, "z": 9.669816 },
+        { "x": -8.214544, "z": 9.649339 },
+        { "x": -8.5897, "z": 9.242363 },
+        { "x": -9.025385, "z": 8.996466 },
+        { "x": -9.113188, "z": 8.862315 },
+        { "x": -9.097737, "z": 8.413882 },
+        { "x": -9.645038, "z": 8.283598 },
+        { "x": -9.682739, "z": 7.900826 },
+        { "x": -10.087263, "z": 7.732688 },
+        { "x": -10.023359, "z": 7.377353 },
+        { "x": -10.268873, "z": 7.35527 },
+        { "x": -10.604033, "z": 7.081466 },
+        { "x": -10.88929, "z": 6.440685 },
+        { "x": -11.014941, "z": 6.475559 },
+        { "x": -11.261367, "z": 6.342114 },
+        { "x": -11.563401, "z": 5.863575 },
+        { "x": -11.848458, "z": 5.786181 },
+        { "x": -12.344022, "z": 5.232254 },
+        { "x": -12.490553, "z": 4.617752 },
+        { "x": -12.117972, "z": 3.942453 },
+        { "x": -11.7412, "z": 3.565177 },
+        { "x": -11.718742, "z": 3.373299 },
+        { "x": -11.398593, "z": 2.975877 },
+        { "x": -11.491552, "z": 2.680913 },
+        { "x": -11.233074, "z": 1.951229 },
+        { "x": -11.412435, "z": 1.625325 },
+        { "x": -11.766064, "z": 1.552392 },
+        { "x": -11.983405, "z": 1.322874 },
+        { "x": -12.042029, "z": 1.209939 },
+        { "x": -11.984589, "z": 1.128506 },
+        { "x": -12.161851, "z": 0.93797 },
+        { "x": -12.072947, "z": 0.374567 },
+        { "x": -11.714809, "z": -0.33546 },
+        { "x": -11.617341, "z": -0.955589 },
+        { "x": -11.733615, "z": -1.370296 },
+        { "x": -11.721673, "z": -1.659437 },
+        { "x": -11.869577, "z": -2.091499 },
+        { "x": -11.818203, "z": -2.357016 },
+        { "x": -11.652096, "z": -2.528195 },
+        { "x": -11.700799, "z": -3.151785 },
+        { "x": -11.636911, "z": -3.329313 },
+        { "x": -11.800516, "z": -3.550538 },
+        { "x": -12.137207, "z": -3.693496 },
+        { "x": -12.30587, "z": -3.979345 }
+      ],
+      "sourceIds": ["hidro_cnsolidada_l.98036"]
+    }
+  ],
+  "roads": [
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.207246",
+      "points": [
+        { "x": -31.776684, "z": 7.40039 },
+        { "x": -31.878542, "z": 7.534791 },
+        { "x": -31.776684, "z": 7.40039 }
+      ],
+      "ref": "8",
+      "sourceIds": ["ejes_viales_ide.207246"]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.207247",
+      "points": [
+        { "x": -31.074888, "z": 6.548695 },
+        { "x": -31.766228, "z": 7.416705 }
+      ],
+      "ref": "8",
+      "sourceIds": ["ejes_viales_ide.207247"]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.219286",
+      "points": [
+        { "x": 42.008392, "z": -29.176713 },
+        { "x": 41.944575, "z": -28.98593 },
+        { "x": 41.90244, "z": -28.891284 },
+        { "x": 41.733492, "z": -28.824386 }
+      ],
+      "ref": "8",
+      "sourceIds": ["ejes_viales_ide.219282", "ejes_viales_ide.219283", "ejes_viales_ide.219286"]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.220998",
+      "points": [
+        { "x": 41.733492, "z": -28.824386 },
+        { "x": 41.811216, "z": -28.951243 },
+        { "x": 41.859896, "z": -29.02161 },
+        { "x": 42.008392, "z": -29.176713 }
+      ],
+      "ref": "8",
+      "sourceIds": ["ejes_viales_ide.219295", "ejes_viales_ide.220980", "ejes_viales_ide.220998"]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.221204",
+      "points": [
+        { "x": -53.617933, "z": 15.432678 },
+        { "x": -53.711833, "z": 15.524928 },
+        { "x": -54.454444, "z": 16.050096 },
+        { "x": -55.445338, "z": 16.449539 },
+        { "x": -55.510014, "z": 16.472442 }
+      ],
+      "ref": "8",
+      "sourceIds": ["ejes_viales_ide.221031", "ejes_viales_ide.221138", "ejes_viales_ide.221204"]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.221205",
+      "points": [
+        { "x": -79.896058, "z": 71.109057 },
+        { "x": -79.416568, "z": 71.025407 },
+        { "x": -79.002062, "z": 70.769167 },
+        { "x": -78.533283, "z": 70.223967 },
+        { "x": -77.914023, "z": 69.705795 },
+        { "x": -77.718309, "z": 69.546169 },
+        { "x": -77.274824, "z": 69.184077 }
+      ],
+      "ref": "8",
+      "sourceIds": [
+        "ejes_viales_ide.14673",
+        "ejes_viales_ide.14674",
+        "ejes_viales_ide.221136",
+        "ejes_viales_ide.221205"
+      ]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.221284",
+      "points": [
+        { "x": 70.79862, "z": -66.678863 },
+        { "x": 70.882506, "z": -65.949925 },
+        { "x": 70.767858, "z": -65.540847 },
+        { "x": 70.460946, "z": -65.042316 },
+        { "x": 70.328795, "z": -64.845915 },
+        { "x": 69.889058, "z": -64.412521 },
+        { "x": 69.715573, "z": -64.289881 },
+        { "x": 66.499931, "z": -62.481979 },
+        { "x": 64.282673, "z": -61.903303 },
+        { "x": 63.08977, "z": -61.802313 },
+        { "x": 62.660194, "z": -61.676627 },
+        { "x": 60.720838, "z": -60.254198 },
+        { "x": 60.39256, "z": -60.091547 },
+        { "x": 59.862413, "z": -60.01057 },
+        { "x": 57.73069, "z": -60.107382 },
+        { "x": 56.444766, "z": -59.609256 },
+        { "x": 54.843028, "z": -57.956887 },
+        { "x": 53.669895, "z": -57.250726 },
+        { "x": 53.209148, "z": -56.854522 },
+        { "x": 52.271473, "z": -55.50566 },
+        { "x": 49.176142, "z": -51.519152 },
+        { "x": 46.923702, "z": -48.864789 },
+        { "x": 46.023693, "z": -47.737872 },
+        { "x": 45.829032, "z": -47.383952 },
+        { "x": 45.248034, "z": -45.114559 },
+        { "x": 44.834932, "z": -42.529854 },
+        { "x": 44.208058, "z": -39.405572 },
+        { "x": 42.295948, "z": -29.932742 },
+        { "x": 42.008392, "z": -29.176713 }
+      ],
+      "ref": "8",
+      "sourceIds": [
+        "ejes_viales_ide.220999",
+        "ejes_viales_ide.221276",
+        "ejes_viales_ide.221277",
+        "ejes_viales_ide.221279",
+        "ejes_viales_ide.221280",
+        "ejes_viales_ide.221283",
+        "ejes_viales_ide.221284"
+      ]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.207248",
+      "points": [
+        { "x": -39.930908, "z": 9.63216 },
+        { "x": -39.619467, "z": 9.774523 },
+        { "x": -38.703144, "z": 10.563877 },
+        { "x": -38.237573, "z": 10.759193 },
+        { "x": -37.897902, "z": 10.7783 },
+        { "x": -37.519363, "z": 10.685846 },
+        { "x": -36.522321, "z": 10.116003 },
+        { "x": -36.369595, "z": 9.99959 },
+        { "x": -36.180804, "z": 9.850536 },
+        { "x": -35.447312, "z": 9.108165 },
+        { "x": -34.983484, "z": 8.775516 },
+        { "x": -34.425824, "z": 8.545398 },
+        { "x": -32.394355, "z": 8.004957 },
+        { "x": -32.104367, "z": 7.812937 },
+        { "x": -31.796456, "z": 7.394316 }
+      ],
+      "ref": "8",
+      "sourceIds": [
+        "ejes_viales_ide.207245",
+        "ejes_viales_ide.207248",
+        "ejes_viales_ide.221048",
+        "ejes_viales_ide.221049",
+        "ejes_viales_ide.221050",
+        "ejes_viales_ide.221051"
+      ]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.14676",
+      "points": [
+        { "x": -76.211177, "z": 63.10216 },
+        { "x": -76.210865, "z": 62.722357 },
+        { "x": -76.211585, "z": 62.326178 },
+        { "x": -76.158579, "z": 61.621688 },
+        { "x": -76.069678, "z": 61.120218 },
+        { "x": -75.609073, "z": 58.540258 },
+        { "x": -74.647962, "z": 53.870707 },
+        { "x": -74.407943, "z": 51.749087 },
+        { "x": -74.381732, "z": 50.964011 },
+        { "x": -74.540908, "z": 48.803937 },
+        { "x": -74.599848, "z": 48.006544 },
+        { "x": -74.678286, "z": 46.864852 },
+        { "x": -74.620091, "z": 45.965679 },
+        { "x": -74.232909, "z": 42.844374 },
+        { "x": -73.774749, "z": 39.449666 },
+        { "x": -73.543375, "z": 38.016482 },
+        { "x": -73.406438, "z": 36.778904 },
+        { "x": -73.485061, "z": 33.575321 },
+        { "x": -73.48821, "z": 33.44483 },
+        { "x": -73.433152, "z": 32.608752 },
+        { "x": -72.836547, "z": 29.467196 },
+        { "x": -72.497919, "z": 28.832415 },
+        { "x": -71.932767, "z": 28.254757 },
+        { "x": -71.733516, "z": 28.08857 },
+        { "x": -69.44063, "z": 26.174976 },
+        { "x": -68.989289, "z": 25.695048 },
+        { "x": -68.386052, "z": 24.771209 },
+        { "x": -67.893896, "z": 23.554922 },
+        { "x": -67.36371, "z": 22.613081 },
+        { "x": -66.897747, "z": 22.160325 },
+        { "x": -66.615658, "z": 21.979913 }
+      ],
+      "ref": "8",
+      "sourceIds": [
+        "ejes_viales_ide.14675",
+        "ejes_viales_ide.14676",
+        "ejes_viales_ide.221004",
+        "ejes_viales_ide.221005",
+        "ejes_viales_ide.221008",
+        "ejes_viales_ide.221009",
+        "ejes_viales_ide.221137",
+        "ejes_viales_ide.221139",
+        "ejes_viales_ide.221140",
+        "ejes_viales_ide.221141",
+        "ejes_viales_ide.221142",
+        "ejes_viales_ide.221143",
+        "ejes_viales_ide.221151",
+        "ejes_viales_ide.221207",
+        "ejes_viales_ide.221208",
+        "ejes_viales_ide.221209",
+        "ejes_viales_ide.221210",
+        "ejes_viales_ide.221211",
+        "ejes_viales_ide.221269",
+        "ejes_viales_ide.221291",
+        "ejes_viales_ide.221292",
+        "ejes_viales_ide.221293"
+      ]
+    },
+    {
+      "name": "RUTA 8 - BRIGADIER GENERAL JUAN A. LAVALLEJA",
+      "sourceId": "ejes_viales_ide.219281",
+      "points": [
+        { "x": 41.733492, "z": -28.824386 },
+        { "x": 40.211715, "z": -27.101884 },
+        { "x": 37.547986, "z": -22.680682 },
+        { "x": 37.161638, "z": -22.043693 },
+        { "x": 36.801044, "z": -21.617341 },
+        { "x": 34.976468, "z": -20.254821 },
+        { "x": 33.391046, "z": -19.090812 },
+        { "x": 30.960461, "z": -17.255681 },
+        { "x": 28.242611, "z": -13.698022 },
+        { "x": 27.669925, "z": -13.148966 },
+        { "x": 27.147663, "z": -12.844817 },
+        { "x": 26.576307, "z": -12.652091 },
+        { "x": 24.23263, "z": -12.374337 },
+        { "x": 23.535104, "z": -12.296406 },
+        { "x": 22.746176, "z": -12.12096 },
+        { "x": 18.020832, "z": -10.308078 },
+        { "x": 14.074672, "z": -7.588132 },
+        { "x": 12.710201, "z": -6.96971 },
+        { "x": 10.802534, "z": -6.186321 },
+        { "x": 9.97841, "z": -6.070834 },
+        { "x": 7.141536, "z": -6.29569 },
+        { "x": 4.569546, "z": -5.705256 },
+        { "x": 4.116813, "z": -5.487055 },
+        { "x": 3.710107, "z": -5.176546 },
+        { "x": 1.42503, "z": -2.622118 },
+        { "x": 0.795686, "z": -2.138876 },
+        { "x": -1.450714, "z": -1.123685 },
+        { "x": -2.429169, "z": -0.980914 },
+        { "x": -3.268788, "z": -0.560822 },
+        { "x": -4.196026, "z": -0.551542 },
+        { "x": -5.14332, "z": -0.242996 },
+        { "x": -5.327769, "z": -0.154857 },
+        { "x": -6.839004, "z": 0.835037 },
+        { "x": -7.196068, "z": 0.993835 },
+        { "x": -8.133288, "z": 1.09386 },
+        { "x": -8.917267, "z": 1.166718 },
+        { "x": -14.268131, "z": 2.713902 },
+        { "x": -14.512838, "z": 2.730133 },
+        { "x": -16.494997, "z": 2.52452 }
+      ],
+      "ref": "8",
+      "sourceIds": [
+        "ejes_viales_ide.146160",
+        "ejes_viales_ide.146161",
+        "ejes_viales_ide.219281",
+        "ejes_viales_ide.221006",
+        "ejes_viales_ide.221007",
+        "ejes_viales_ide.221013",
+        "ejes_viales_ide.221014",
+        "ejes_viales_ide.221025",
+        "ejes_viales_ide.221026",
+        "ejes_viales_ide.221037",
+        "ejes_viales_ide.221038",
+        "ejes_viales_ide.221039",
+        "ejes_viales_ide.221270",
+        "ejes_viales_ide.221274",
+        "ejes_viales_ide.221290",
+        "ejes_viales_ide.221317"
+      ]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.83032",
+      "points": [
+        { "x": -49.060936, "z": -1.196812 },
+        { "x": -48.551959, "z": -1.124982 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.83032"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.175995",
+      "points": [
+        { "x": -28.978634, "z": 5.195168 },
+        { "x": -29.103604, "z": 5.120484 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.175995"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.176030",
+      "points": [
+        { "x": -29.103604, "z": 5.120484 },
+        { "x": -29.062444, "z": 5.209512 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.176030"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.205100",
+      "points": [
+        { "x": -16.308942, "z": 24.836417 },
+        { "x": -15.790051, "z": 25.103207 },
+        { "x": -14.242252, "z": 25.213042 },
+        { "x": -13.746296, "z": 26.024065 },
+        { "x": -12.882116, "z": 26.00191 },
+        { "x": -12.65739, "z": 26.065902 },
+        { "x": -10.903027, "z": 27.69171 },
+        { "x": -10.710043, "z": 27.68677 },
+        { "x": -10.052301, "z": 27.392979 },
+        { "x": -9.801306, "z": 27.445654 },
+        { "x": -8.917767, "z": 28.829182 },
+        { "x": -8.111474, "z": 29.197098 },
+        { "x": -7.662408, "z": 29.736722 },
+        { "x": -7.665811, "z": 30.310166 },
+        { "x": -6.250711, "z": 32.159185 },
+        { "x": -6.042522, "z": 32.877583 },
+        { "x": -5.657938, "z": 33.782271 },
+        { "x": -5.023562, "z": 34.752295 },
+        { "x": -4.48295, "z": 36.14996 },
+        { "x": -4.056796, "z": 36.894832 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.205100"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.72433",
+      "points": [
+        { "x": -20.163327, "z": 14.980742 },
+        { "x": -19.970061, "z": 15.546961 },
+        { "x": -19.819619, "z": 15.912648 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.72433", "ejes_viales_ide.72434"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.72566",
+      "points": [
+        { "x": -20.163327, "z": 14.980742 },
+        { "x": -19.950075, "z": 15.541129 },
+        { "x": -19.819619, "z": 15.912648 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.72566", "ejes_viales_ide.72567"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.83227",
+      "points": [
+        { "x": -44.382943, "z": -1.648352 },
+        { "x": -43.919175, "z": -1.793304 },
+        { "x": -43.725196, "z": -1.786805 },
+        { "x": -42.781534, "z": -1.467939 },
+        { "x": -40.143336, "z": -0.055087 },
+        { "x": -38.748492, "z": 0.441173 },
+        { "x": -37.838571, "z": 0.630157 },
+        { "x": -35.457049, "z": 2.014304 },
+        { "x": -34.830519, "z": 2.538764 },
+        { "x": -34.625362, "z": 2.803583 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.176098", "ejes_viales_ide.83227"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.83228",
+      "points": [
+        { "x": -16.481745, "z": 24.576904 },
+        { "x": -16.561421, "z": 24.014066 },
+        { "x": -16.539533, "z": 23.218126 },
+        { "x": -16.683318, "z": 22.199927 },
+        { "x": -16.783522, "z": 22.044132 },
+        { "x": -17.710936, "z": 22.043896 },
+        { "x": -18.155137, "z": 21.856076 },
+        { "x": -18.33239, "z": 21.670322 },
+        { "x": -18.6796, "z": 20.161996 },
+        { "x": -18.682712, "z": 19.195177 },
+        { "x": -18.772506, "z": 18.753842 },
+        { "x": -19.819619, "z": 15.912648 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.72448", "ejes_viales_ide.72565", "ejes_viales_ide.83228"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.83252",
+      "points": [
+        { "x": -16.308942, "z": 24.836417 },
+        { "x": -16.426823, "z": 24.76869 },
+        { "x": -16.48532, "z": 24.752339 },
+        { "x": -16.491456, "z": 24.670575 },
+        { "x": -16.481745, "z": 24.576904 }
+      ],
+      "ref": "12",
+      "sourceIds": [
+        "ejes_viales_ide.83229",
+        "ejes_viales_ide.83230",
+        "ejes_viales_ide.83251",
+        "ejes_viales_ide.83252"
+      ]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.83253",
+      "points": [
+        { "x": -16.308942, "z": 24.836417 },
+        { "x": -16.402277, "z": 24.677016 },
+        { "x": -16.481745, "z": 24.576904 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.83253", "ejes_viales_ide.83256"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.176001",
+      "points": [
+        { "x": -30.882432, "z": 4.517321 },
+        { "x": -30.856675, "z": 4.52265 },
+        { "x": -30.721149, "z": 4.550932 },
+        { "x": -29.822356, "z": 4.749354 },
+        { "x": -29.225211, "z": 5.037263 },
+        { "x": -29.144082, "z": 5.089527 },
+        { "x": -29.103604, "z": 5.120484 }
+      ],
+      "ref": "12",
+      "sourceIds": [
+        "ejes_viales_ide.175996",
+        "ejes_viales_ide.175997",
+        "ejes_viales_ide.175998",
+        "ejes_viales_ide.175999",
+        "ejes_viales_ide.176000",
+        "ejes_viales_ide.176001"
+      ]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.176009",
+      "points": [
+        { "x": -33.235677, "z": 3.725773 },
+        { "x": -32.373206, "z": 4.196681 },
+        { "x": -32.04721, "z": 4.29388 },
+        { "x": -31.886737, "z": 4.323966 },
+        { "x": -31.3473, "z": 4.423814 },
+        { "x": -31.153256, "z": 4.463163 },
+        { "x": -31.092703, "z": 4.474691 },
+        { "x": -30.987957, "z": 4.49512 },
+        { "x": -30.906684, "z": 4.512306 }
+      ],
+      "ref": "12",
+      "sourceIds": [
+        "ejes_viales_ide.176003",
+        "ejes_viales_ide.176004",
+        "ejes_viales_ide.176005",
+        "ejes_viales_ide.176006",
+        "ejes_viales_ide.176007",
+        "ejes_viales_ide.176008",
+        "ejes_viales_ide.176009"
+      ]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.176010",
+      "points": [
+        { "x": -34.277592, "z": 2.946722 },
+        { "x": -34.536256, "z": 2.877011 },
+        { "x": -34.621669, "z": 2.807536 }
+      ],
+      "ref": "12",
+      "sourceIds": ["ejes_viales_ide.176010", "ejes_viales_ide.176023"]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.176055",
+      "points": [
+        { "x": -23.098534, "z": 9.2366 },
+        { "x": -23.435548, "z": 8.793018 },
+        { "x": -23.96178, "z": 7.759892 },
+        { "x": -23.913191, "z": 7.30265 },
+        { "x": -23.538928, "z": 6.813439 },
+        { "x": -23.466216, "z": 6.722776 }
+      ],
+      "ref": "12",
+      "sourceIds": [
+        "ejes_viales_ide.176033",
+        "ejes_viales_ide.176044",
+        "ejes_viales_ide.176045",
+        "ejes_viales_ide.176055"
+      ]
+    },
+    {
+      "name": "RUTA 12 - DOCTOR LUIS ALBERTO DE HERRERA",
+      "sourceId": "ejes_viales_ide.72376",
+      "points": [
+        { "x": -20.163327, "z": 14.980742 },
+        { "x": -20.376457, "z": 14.469526 },
+        { "x": -21.177529, "z": 13.605507 },
+        { "x": -21.675266, "z": 12.779434 },
+        { "x": -21.899081, "z": 12.204553 },
+        { "x": -21.994989, "z": 11.671646 },
+        { "x": -22.088659, "z": 11.068291 },
+        { "x": -22.096241, "z": 11.019807 },
+        { "x": -22.201407, "z": 10.39118 },
+        { "x": -22.37149, "z": 10.089691 },
+        { "x": -22.629307, "z": 9.787747 },
+        { "x": -23.091991, "z": 9.244309 }
+      ],
+      "ref": "12",
+      "sourceIds": [
+        "ejes_viales_ide.176047",
+        "ejes_viales_ide.176048",
+        "ejes_viales_ide.176049",
+        "ejes_viales_ide.176050",
+        "ejes_viales_ide.72375",
+        "ejes_viales_ide.72376"
+      ]
+    },
+    {
+      "name": "RUTA 81",
+      "sourceId": "ejes_viales_ide.226961",
+      "points": [
+        { "x": -92.102966, "z": 32.52997 },
+        { "x": -93.916366, "z": 32.6696 }
+      ],
+      "ref": "81",
+      "sourceIds": ["ejes_viales_ide.226961"]
+    },
+    {
+      "name": "RUTA 81",
+      "sourceId": "ejes_viales_ide.226961",
+      "points": [
+        { "x": -94.728042, "z": 32.757214 },
+        { "x": -95.306067, "z": 33.561785 },
+        { "x": -95.511261, "z": 34.106075 }
+      ],
+      "ref": "81",
+      "sourceIds": ["ejes_viales_ide.226961"]
+    },
+    {
+      "name": "RUTA 81",
+      "sourceId": "ejes_viales_ide.226994",
+      "points": [
+        { "x": -31.914479, "z": 54.949796 },
+        { "x": -32.088822, "z": 54.703216 },
+        { "x": -32.222016, "z": 54.673799 },
+        { "x": -32.370866, "z": 54.769905 },
+        { "x": -32.718336, "z": 55.217188 }
+      ],
+      "ref": "81",
+      "sourceIds": ["ejes_viales_ide.226994"]
+    },
+    {
+      "name": "RUTA 81",
+      "sourceId": "ejes_viales_ide.226993",
+      "points": [
+        { "x": -34.483942, "z": 56.687799 },
+        { "x": -34.784586, "z": 56.534375 },
+        { "x": -35.029573, "z": 55.557571 },
+        { "x": -35.351095, "z": 55.395568 },
+        { "x": -35.629219, "z": 55.476808 },
+        { "x": -35.758223, "z": 55.420896 },
+        { "x": -36.116629, "z": 53.776244 },
+        { "x": -36.704836, "z": 53.218548 },
+        { "x": -37.579845, "z": 53.051764 },
+        { "x": -37.889135, "z": 53.081395 },
+        { "x": -38.926289, "z": 53.574097 },
+        { "x": -39.510942, "z": 53.555461 },
+        { "x": -39.66046, "z": 53.445066 },
+        { "x": -39.973695, "z": 52.792271 },
+        { "x": -40.239197, "z": 52.605419 },
+        { "x": -40.362678, "z": 51.747608 },
+        { "x": -40.637252, "z": 51.330891 },
+        { "x": -41.146952, "z": 49.852306 },
+        { "x": -41.172989, "z": 49.134995 },
+        { "x": -41.089354, "z": 48.475509 },
+        { "x": -41.205732, "z": 47.777315 },
+        { "x": -41.366689, "z": 47.430846 },
+        { "x": -41.842067, "z": 46.718314 },
+        { "x": -42.501283, "z": 46.176866 },
+        { "x": -42.909595, "z": 46.130034 },
+        { "x": -43.022422, "z": 46.044492 },
+        { "x": -43.066212, "z": 45.808894 },
+        { "x": -43.841413, "z": 45.527896 },
+        { "x": -44.675001, "z": 44.39339 },
+        { "x": -45.423769, "z": 43.636892 },
+        { "x": -45.734638, "z": 43.483968 },
+        { "x": -47.315416, "z": 43.17143 },
+        { "x": -48.528911, "z": 43.332479 },
+        { "x": -48.67527, "z": 43.219218 },
+        { "x": -48.93012, "z": 42.791985 },
+        { "x": -49.150254, "z": 42.685418 },
+        { "x": -50.218966, "z": 43.038098 },
+        { "x": -51.617878, "z": 42.5583 },
+        { "x": -53.121726, "z": 42.362364 },
+        { "x": -53.779668, "z": 42.389656 },
+        { "x": -54.195119, "z": 42.413825 },
+        { "x": -56.889034, "z": 42.557322 },
+        { "x": -60.471436, "z": 41.862853 },
+        { "x": -61.513814, "z": 41.609332 },
+        { "x": -62.927255, "z": 40.252733 },
+        { "x": -63.587326, "z": 40.006734 },
+        { "x": -63.947706, "z": 40.002194 },
+        { "x": -65.418417, "z": 40.290362 },
+        { "x": -67.601314, "z": 40.902957 },
+        { "x": -69.181686, "z": 40.841205 },
+        { "x": -70.365942, "z": 40.433356 },
+        { "x": -71.38771, "z": 39.773208 },
+        { "x": -71.874123, "z": 39.595343 },
+        { "x": -73.414933, "z": 39.468158 },
+        { "x": -73.774749, "z": 39.449666 },
+        { "x": -77.000367, "z": 39.234587 },
+        { "x": -80.227212, "z": 39.134231 },
+        { "x": -81.3119, "z": 38.891584 },
+        { "x": -83.778982, "z": 38.306482 },
+        { "x": -85.511437, "z": 38.154053 },
+        { "x": -85.873547, "z": 37.462156 },
+        { "x": -86.00732, "z": 36.808115 },
+        { "x": -87.314522, "z": 34.769869 },
+        { "x": -89.101389, "z": 32.7818 },
+        { "x": -89.48342, "z": 32.624831 },
+        { "x": -91.436224, "z": 32.529094 }
+      ],
+      "ref": "81",
+      "sourceIds": [
+        "ejes_viales_ide.226975",
+        "ejes_viales_ide.226980",
+        "ejes_viales_ide.226981",
+        "ejes_viales_ide.226984",
+        "ejes_viales_ide.226985",
+        "ejes_viales_ide.226986",
+        "ejes_viales_ide.226993",
+        "ejes_viales_ide.226995"
+      ]
+    },
+    {
+      "name": "RUTA 60 - CORONEL MANUEL FRANCISCO ARTIGAS",
+      "sourceId": "ejes_viales_ide.242688",
+      "points": [
+        { "x": -16.308942, "z": 24.836417 },
+        { "x": -16.403913, "z": 24.844509 },
+        { "x": -16.432755, "z": 24.934863 }
+      ],
+      "ref": "60",
+      "sourceIds": ["ejes_viales_ide.242688"]
+    },
+    {
+      "name": "RUTA 60 - CORONEL MANUEL FRANCISCO ARTIGAS",
+      "sourceId": "ejes_viales_ide.242689",
+      "points": [
+        { "x": -16.432755, "z": 24.934863 },
+        { "x": -16.48532, "z": 24.752339 }
+      ],
+      "ref": "60",
+      "sourceIds": ["ejes_viales_ide.242689"]
+    },
+    {
+      "name": "RUTA 60 - CORONEL MANUEL FRANCISCO ARTIGAS",
+      "sourceId": "ejes_viales_ide.242692",
+      "points": [
+        { "x": -16.432755, "z": 24.934863 },
+        { "x": -16.329008, "z": 25.676948 },
+        { "x": -16.717174, "z": 26.343962 },
+        { "x": -16.635581, "z": 27.214185 },
+        { "x": -17.095612, "z": 28.41053 },
+        { "x": -17.160987, "z": 29.379702 },
+        { "x": -17.061366, "z": 29.821867 },
+        { "x": -16.695577, "z": 30.396959 },
+        { "x": -16.664149, "z": 31.188631 },
+        { "x": -17.726029, "z": 33.461059 },
+        { "x": -18.401753, "z": 35.469336 },
+        { "x": -19.088779, "z": 37.871059 },
+        { "x": -20.448914, "z": 41.214323 },
+        { "x": -20.509814, "z": 41.413956 },
+        { "x": -20.601263, "z": 41.852818 },
+        { "x": -20.58966, "z": 42.377639 },
+        { "x": -20.889225, "z": 43.630896 },
+        { "x": -21.429933, "z": 44.886087 },
+        { "x": -22.035724, "z": 45.814485 },
+        { "x": -22.432549, "z": 46.877114 },
+        { "x": -23.286611, "z": 48.209964 },
+        { "x": -23.546748, "z": 49.065062 },
+        { "x": -23.531573, "z": 49.269644 },
+        { "x": -23.087468, "z": 50.116967 },
+        { "x": -22.96103, "z": 51.001443 }
+      ],
+      "ref": "60",
+      "sourceIds": ["ejes_viales_ide.242690", "ejes_viales_ide.242691", "ejes_viales_ide.242692"]
+    },
+    {
+      "name": "RUTA 60 - CORONEL MANUEL FRANCISCO ARTIGAS",
+      "sourceId": "ejes_viales_ide.242695",
+      "points": [
+        { "x": -16.491456, "z": 24.670575 },
+        { "x": -16.402277, "z": 24.677016 },
+        { "x": -16.426823, "z": 24.76869 },
+        { "x": -16.432755, "z": 24.934863 }
+      ],
+      "ref": "60",
+      "sourceIds": ["ejes_viales_ide.242693", "ejes_viales_ide.242694", "ejes_viales_ide.242695"]
+    }
+  ],
+  "source": {
+    "provider": "IDE Uruguay / AGESIC; ejes viales nacionales y cartografía de hidrografía",
+    "license": "Licencia de Datos Abiertos Uruguay",
+    "retrievedAt": "2026-11-08",
+    "horizontalMetersPerUnit": 400,
+    "simplificationMeters": 20,
+    "boundarySourceSha256": "729386259a316187f980fbd7d3663c6b3754c839c7112e74aa52ab5fd65e8d1d",
+    "layers": [
+      {
+        "kind": "waterways",
+        "url": "https://mapas.ide.uy/geoserver-vectorial/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy%3Ahidro_cnsolidada_l&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=BBOX%28wkb_geometry%2C-55.551%2C-34.636%2C-54.714%2C-34.082%2C%27EPSG%3A4326%27%29+AND+%28nombre+ILIKE+%27%25Santa+Luc%25%27+OR+nombre+ILIKE+%27%25Sol%25%27+OR+nombre+ILIKE+%27%25Campanero%25%27+OR+nombre+ILIKE+%27%25San+Francisco%25%27+OR+nombre+ILIKE+%27%25Penitente%25%27+OR+nombre+ILIKE+%27%25Mataojo%25%27+OR+nombre+ILIKE+%27%25Marmaraj%25%27+OR+nombre+ILIKE+%27%25Aigu%25%27%29&maxFeatures=5000",
+        "sha256": "79492351c2c468a4c84231ce3779a803b461cd0c87ed7817f0ea7049f5a1adb1",
+        "featuresDownloaded": 15,
+        "metadataUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/74408873-0bb7-4fde-8146-512493f0a11b"
+      },
+      {
+        "kind": "roads",
+        "url": "https://mapas.ide.uy/geoserver-vectorial/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ideuy%3Aejes_viales_ide&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=BBOX%28wkb_geometry%2C-55.551%2C-34.636%2C-54.714%2C-34.082%2C%27EPSG%3A4326%27%29+AND+%28ruta_num+IS+NOT+NULL+OR+via_nombre+ILIKE+%27%25RUTA+81%25%27%29&maxFeatures=5000",
+        "sha256": "fdeb8a0f07a11f2f27f1c1921b5f1a43caf0eb55cd82f44992a87752b25eb581",
+        "featuresDownloaded": 294,
+        "metadataUrl": "https://visualizador.ide.uy/geonetwork/static/api/records/529ae824-1b11-434d-92fd-7a6205a573c6"
+      }
+    ],
+    "note": "Centerline positions are geographic. Displayed widths and vertical offsets are scenic; not navigation or permission to travel."
+  },
+  "statistics": {
+    "originalVertices": 206211,
+    "simplifiedVertices": 6966,
+    "clippedVertices": 2516,
+    "selectedFeatures": { "waterways": 15, "roads": 209 }
+  }
+}

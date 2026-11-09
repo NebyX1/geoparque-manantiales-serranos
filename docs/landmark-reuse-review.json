@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-11-09T02:23:34.508598+00:00",
+  "reviewer": "visual_quality_gate",
+  "status": "APROBADO",
+  "scope": "Revisión independiente cualitativa de los cambios GMS-01, GMS-09, GMS-41 y GMS-52, más regresión visual GMS-39. Identifica fuentes actuales y 31 capturas finales. No certifica nuevamente los restantes lugares ni sustituye la verificación completa del proyecto.",
+  "blockingIssues": [],
+  "numericScoreAssigned": false,
+  "reviewMethod": {
+    "localPngsVisuallyInspected": 31,
+    "referencePhotosVisuallyInspected": [
+      "reports/experience-review/rebuild-reference/52-laguna2.jpg",
+      "reports/experience-review/rebuild-reference/52-laguna.jpg",
+      "reports/experience-review/next-quality/references/52-ortho.png"
+    ],
+    "beforeScreenshotsCompared": [
+      "reports/experience-review/model-reuse/before/gms-01-desktop.png",
+      "reports/experience-review/model-reuse/before/gms-09-desktop.png",
+      "reports/experience-review/model-reuse/before/gms-39-desktop.png",
+      "reports/experience-review/model-reuse/before/gms-41-desktop.png",
+      "reports/experience-review/model-reuse/before/gms-52-desktop.png"
+    ],
+    "nativeConstructorsRead": true,
+    "browserLaunchedByReviewer": false,
+    "testSuitesExecutedByReviewer": false,
+    "continuousVideoReviewed": false,
+    "afterV1Excluded": "La ronda after-v1 con paredón blanco es histórica y no sustenta este dictamen."
+  },
+  "criteria": [
+    "GMS-52: escarpe rocoso irregular bajo vegetación de cima, unido a la ladera y detrás del cauce; contorno de agua basado en la ortofoto, sin ensancharlo para imitar la perspectiva de una foto de orilla.",
+    "GMS-41: reutilizar la catedral de Plaza Libertad, con cinco arcadas, dos relojes y campanarios, remates grises curvos, nave, cúpula y linterna; preservar geometría y albedo, salvo transformación de presentación.",
+    "GMS-09: constructor nativo Stewart Vargas con dique largo y bajo, pasarela, embalse, canales y colector; materiales y reloj activos, conservando datos originales.",
+    "GMS-01: cauce y shader nativos del Santa Lucía, adaptando el relieve de normales a la escala mundial para evitar bandas exageradas; agua continua y contacto coherente con la ribera.",
+    "Todos: cuerpos completos, sin deformaciones graves ni piezas flotantes evidentes en las vistas revisadas; libres de oclusión por HUD en los tamaños entregados."
+  ],
+  "decisions": [
+    {
+      "id": 1,
+      "status": "APROBADO",
+      "representation": "constructor nativo con shader adaptado a la escala",
+      "evidence": [
+        "gms-01-desktop.png",
+        "gms-01-oblique.png",
+        "gms-01-low.png",
+        "gms-1-motion-a.png",
+        "gms-1-motion-b.png",
+        "gms-1-320x900.png",
+        "gms-1-844x390.png",
+        "gms-1-640x450.png"
+      ],
+      "observations": [
+        "El mismo cauce curvo acompaña al Arequita y permanece continuo en los tres ángulos.",
+        "El agua es verde oscura con destellos discretos; desaparece el patrón de franjas gruesas de la captura anterior.",
+        "El código conserva frecuencias y desplazamiento locales y multiplica el bump por length(modelMatrix[1].xyz), acorde a la normalización. Las muestras separadas 850 ms presentan variación sólo en el agua."
+      ],
+      "sourceFiles": [
+        "src/features/experience/miniatures/reference/arequita.ts",
+        "src/features/experience/miniatures/reference/arequitaRiver.ts"
+      ],
+      "limitations": [
+        "Es una interpretación escénica del río; no un levantamiento del cauce.",
+        "Dos fotogramas no acreditan todo el ciclo de peces, saltos ni efectos."
+      ]
+    },
+    {
+      "id": 9,
+      "status": "APROBADO",
+      "representation": "constructor nativo Stewart Vargas",
+      "evidence": [
+        "gms-09-desktop.png",
+        "gms-09-oblique.png",
+        "gms-09-low.png",
+        "gms-9-motion-a.png",
+        "gms-9-motion-b.png",
+        "gms-9-320x900.png",
+        "gms-9-844x390.png",
+        "gms-9-640x450.png"
+      ],
+      "observations": [
+        "Se conserva la composición de dique largo y bajo entre embalse y salida inferior, con margen arbolada diferenciada de la pradera.",
+        "El hormigón pierde el blanco plano anterior y el agua muestra modulación suave en lugar de una superficie de puntos uniformes.",
+        "El flujo nativo, las instancias y los peces se mantienen en el código. La imagen completa no permite contar visualmente seis peces ni inspeccionar el detalle fino de toda la pasarela."
+      ],
+      "sourceFiles": [
+        "src/features/experience/miniatures/reference/stewartVargas.ts",
+        "src/features/experience/miniatures/reference/stewartVargasFish.ts",
+        "src/features/experience/miniatures/reference/stewartVargasAsset.json"
+      ],
+      "identityEvidence": "Datos packed y conteo de seis peces contrastados por la prueba de reutilización ejecutada por el agente principal; fuente y log leídos por este revisor.",
+      "limitations": [
+        "Reconstrucción escénica estilizada, con proporciones y vegetación aproximadas; no escaneo ni simulación hidráulica.",
+        "La aprobación WebGL corresponde a estas capturas del geoparque; la antigua revisión del repo turismo sólo aceptaba el activo nativo offline."
+      ]
+    },
+    {
+      "id": 41,
+      "status": "APROBADO",
+      "representation": "misma función cathedral(group) de GMS-39, recentrada",
+      "evidence": [
+        "gms-41-desktop.png",
+        "gms-41-oblique.png",
+        "gms-41-low.png",
+        "gms-41-320x900.png",
+        "gms-41-844x390.png",
+        "gms-41-640x450.png",
+        "gms-39-desktop.png",
+        "gms-39-oblique.png",
+        "gms-39-low.png"
+      ],
+      "observations": [
+        "La cúpula con linterna, las cinco arcadas, las dos torres con relojes y remates grises curvos se corresponden con la catedral de Plaza Libertad.",
+        "El código llama a la misma función de construcción para ambos destinos. GMS-41 sólo recentra el edificio y agrupa sus piezas estáticas.",
+        "Las vistas baja y oblicua mantienen el edificio entero; no se aprecian cortes por HUD."
+      ],
+      "sourceFiles": ["src/features/experience/miniatures/reference/plazaLibertad.ts"],
+      "identityEvidence": {
+        "fixture": "tests/fixtures/tourism-model-reference.json",
+        "fingerprint": {
+          "sha256": "d77e67077efe802c68c8886f868f98c41d5409738bbdacad66e4a2e45749062a",
+          "vertices": 80805
+        },
+        "test": "tests/unit/landmark-reuse.test.ts",
+        "executionLog": "reports/experience-review/model-reuse/unit-reuse.log",
+        "executedBy": "agente principal; log de tres pruebas aprobado leído por este revisor"
+      },
+      "limitations": [
+        "Identidad exacta con el constructor original de turismo, no garantía de precisión fotogramétrica del edificio real.",
+        "No se transfiere el hash ni el dictamen del antiguo GLB independiente GMS-41."
+      ]
+    },
+    {
+      "id": 52,
+      "status": "APROBADO",
+      "representation": "relieve cartográfico con paredón escénico interpretado a partir de fotos",
+      "evidence": [
+        "gms-52-desktop.png",
+        "gms-52-oblique.png",
+        "gms-52-low.png",
+        "gms-52-320x900.png",
+        "gms-52-844x390.png",
+        "gms-52-640x450.png"
+      ],
+      "observations": [
+        "El paredón gris verdoso ahora es un rasgo visible y continuo de la ladera, coronado por vegetación; ya no se reduce el sitio a una pradera con río.",
+        "La cara rocosa, la cima y el faldón se unen sin una separación flotante evidente en los tres ángulos.",
+        "La ortofoto muestra un tramo alargado de agua rodeado de monte dentro del recorte grande; su aparente estrechez en la vista completa no justifica inventar un lago más ancho.",
+        "El agua permanece continua y encajada en la ribera; no se observan las rendijas negras ni pliegues de versiones históricas."
+      ],
+      "sourceFiles": [
+        "public/models/geosites/rebuilt/gms-52.glb",
+        "src/features/experience/miniatures/rebuilt/naturalWater.ts"
+      ],
+      "glbSha256": "d9b3f414e460c33ae9639f40272c6ee3592239be20715396b956b65903f705c8",
+      "limitations": [
+        "Escarpe interpretado y simplificado, no escaneo del Cerro de los Cuervos; estrías, colores y vegetación son aproximaciones visuales.",
+        "El cuerpo de agua está representado en contexto territorial de aproximadamente 1300 por 1200 m; la foto tomada en la orilla tiene una perspectiva distinta.",
+        "El aspecto es más claro y sintético que la foto del operador, sin reproducir la sombra o densidad botánica exactas."
+      ]
+    },
+    {
+      "id": 39,
+      "status": "APROBADO_COMO_REGRESION",
+      "observations": [
+        "Las tres vistas finales conservan la plaza, su composición y la catedral al fondo. Sirve como comparación directa para GMS-41; no se redefine aquí su fidelidad global."
+      ],
+      "evidence": ["gms-39-desktop.png", "gms-39-oblique.png", "gms-39-low.png"]
+    }
+  ],
+  "smallViewports": {
+    "reviewed": 12,
+    "sizes": ["320x900", "844x390", "640x450"],
+    "ids": [1, 9, 41, 52],
+    "status": "APROBADO",
+    "observation": "Los cuerpos de las miniaturas y sus bases permanecen completos y separados del HUD. En 320 px los paisajes ocupan una zona pequeña, con los detalles finos pendientes del acercamiento manual; no se presenta la vista completa como vista de detalle.",
+    "manualZoomOrDetailInteractionExecutedByReviewer": false
+  },
+  "motionEvidence": [
+    {
+      "id": 1,
+      "frames": ["gms-1-motion-a.png", "gms-1-motion-b.png"],
+      "captureIntervalMsReportedByScript": 850,
+      "differentPixelsAbove8Rgb": 159,
+      "differenceBounds": [498, 494, 689, 549],
+      "waterRegionChecked": [450, 470, 720, 560],
+      "waterPixelsAbove8Rgb": 159,
+      "observation": "Variación sutil confinada al agua y sus efectos en las dos muestras; sin bandas gruesas ni alteración del encuadre.",
+      "fullCycleVisuallyReviewed": false
+    },
+    {
+      "id": 9,
+      "frames": ["gms-9-motion-a.png", "gms-9-motion-b.png"],
+      "captureIntervalMsReportedByScript": 850,
+      "differentPixelsAbove8Rgb": 317,
+      "differenceBounds": [612, 450, 970, 533],
+      "waterRegionChecked": [700, 450, 980, 540],
+      "waterPixelsAbove8Rgb": 316,
+      "observation": "Variación sutil confinada al agua y sus efectos en las dos muestras; sin bandas gruesas ni alteración del encuadre.",
+      "fullCycleVisuallyReviewed": false
+    }
+  ],
+  "sourceRevision": {
+    "repository": "https://github.com/NebyX1/nueva-web-turismo-idl",
+    "commit": "08a03e8060cce0e90e4c3662feed377f4b9c4622",
+    "localCheckoutHeadRead": true,
+    "cathedralGeometryAndAlbedoFingerprint": {
+      "sha256": "d77e67077efe802c68c8886f868f98c41d5409738bbdacad66e4a2e45749062a",
+      "vertices": 80805
+    },
+    "stewartPackedCanonicalJsonSha256": "0aad35a349005c5ea15f976d7eebdc223e10ba9b5eab17c3707026eb1cd6c7ea"
+  },
+  "primaryReferences": [
+    {
+      "url": "https://www.lagunadeloscuervos.com.uy/entorno/",
+      "purpose": "Fotos del operador: paredón bajo copa verde y agua al pie; dos fotos locales observadas. Fotografías usadas para estudio, sin incorporarlas al modelo."
+    },
+    {
+      "url": "https://www.gub.uy/ministerio-ambiente/politicas-y-gestion/parque-nacional-arequita",
+      "purpose": "La ficha oficial describe los cerros Arequita y de los Cuervos como casi gemelos, con paredones de decenas de metros. Respalda la identidad y forma general, no medidas del modelo."
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "file": "src/features/experience/miniatures/index.ts",
+      "sha256": "9761f541f6b22aa3bbbcbafc5efacb427634a29ae886a7c8c9af87fe0dc6328f",
+      "bytes": 11958
+    },
+    {
+      "file": "src/features/experience/miniatures/reference/arequita.ts",
+      "sha256": "a9d83cecb0adc0d60bd0633be4b84888a8e9261555ad1b185e46c144d59c9804",
+      "bytes": 30009
+    },
+    {
+      "file": "src/features/experience/miniatures/reference/arequitaRiver.ts",
+      "sha256": "8fa67c9e85a725c4e9eb73233d96db0867eae0145e2f5fa782d67754aa8226c9",
+      "bytes": 14620
+    },
+    {
+      "file": "src/features/experience/miniatures/reference/stewartVargas.ts",
+      "sha256": "2f6560231c8781b71bb85527fc506f1c66f9e37cb964ac0aa534e235c2beb7b9",
+      "bytes": 12281
+    },
+    {
+      "file": "src/features/experience/miniatures/reference/stewartVargasFish.ts",
+      "sha256": "75351f2f1a3bd942745da2d281401dbae31afa4fede78abb1385c8b1574e3927",
+      "bytes": 1444
+    },
+    {
+      "file": "src/features/experience/miniatures/reference/stewartVargasAsset.json",
+      "sha256": "1d0b58632def4204f200396be999e095517d821073f559e45301b33298d4e76f",
+      "bytes": 3494212
+    },
+    {
+      "file": "src/features/experience/miniatures/reference/plazaLibertad.ts",
+      "sha256": "cfb81edf088534624b1c9d7c236f0a83cbb47ceaab7a8fefb5d23acfcc518009",
+      "bytes": 33837
+    },
+    {
+      "file": "src/features/experience/miniatures/rebuilt/naturalWater.ts",
+      "sha256": "6c243681db47fc47a0dcbd28e2e18db8c6f1264b47b87379ed00bd2fbd329333",
+      "bytes": 16158
+    },
+    {
+      "file": "public/models/geosites/rebuilt/gms-52.glb",
+      "sha256": "d9b3f414e460c33ae9639f40272c6ee3592239be20715396b956b65903f705c8",
+      "bytes": 2541056
+    }
+  ],
+  "captureManifest": [
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-01-desktop.png",
+      "sha256": "aa98c65486f04872ef59c553d4fd6f6277973cff1c615627f203542e8d00bb5b",
+      "bytes": 242870,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-01-oblique.png",
+      "sha256": "ce98f4ca575787a99c35304b57da1c6e61f381c0665b10e3aef5c8682e51ef00",
+      "bytes": 223791,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-01-low.png",
+      "sha256": "f6010baf0935fe9c168d9a42725e832061d9adf493e922e808cdcbe3ec6209c4",
+      "bytes": 166474,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-09-desktop.png",
+      "sha256": "9c50cfdfe54c45b90d9cfa4a70d839e07947b386ef72b8b9d2cabae15eddce4f",
+      "bytes": 319735,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-09-oblique.png",
+      "sha256": "541d88012d724841273102a42feaf786153e9ab5ed1cd76bcb53492497eb9c29",
+      "bytes": 299109,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-09-low.png",
+      "sha256": "ae3ce63b2264a94572a499e844fe1ba627d42a3791c0054e149700dc1a670443",
+      "bytes": 203225,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-39-desktop.png",
+      "sha256": "3b14adcc18dcb3a66686759d04b3bc6b4886dd4af8138cb6cb32d08dae9e045e",
+      "bytes": 236776,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-39-oblique.png",
+      "sha256": "c0207226354b25d4c7c8982fd286d2bf8b9654308e7c899965021ea3951c83ff",
+      "bytes": 242313,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-39-low.png",
+      "sha256": "378312bd8d42bc291d788d78af9756de1a8c949ddd832fc067f75d0749ccda4c",
+      "bytes": 190998,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-41-desktop.png",
+      "sha256": "49ecfebaa0ef6bcf15fe37299247345948efd7be766f92f26a05e31c1526a546",
+      "bytes": 213245,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-41-oblique.png",
+      "sha256": "ab623e3198d9c792d5de1f6eb8ccf062247879c29c17dffe423258d250e8eaee",
+      "bytes": 218504,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-41-low.png",
+      "sha256": "7ce0bdd82cbc3a1a6d97134a37b590ae729bc90c8179bdaea9789840242b6e81",
+      "bytes": 224072,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-52-desktop.png",
+      "sha256": "50188394405c6809863f6999d2dacea82b866269a0ff02257f932ea7441b1fe3",
+      "bytes": 261349,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-52-oblique.png",
+      "sha256": "47d4d4ca6b310fe5bb90ede53e3a1e79f9a10c3a69c83d32f7efdec22060c57b",
+      "bytes": 261666,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-52-low.png",
+      "sha256": "9fb95c0709ae65bb6f73fe684c50af0a42d0cf738d9818f3e2c8868dcefba2d4",
+      "bytes": 206724,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-1-320x900.png",
+      "sha256": "d061bd0c7115b67ae9ceec699ead81142004c15a3877076c95d6ccef00de6cff",
+      "bytes": 63986,
+      "width": 320,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-1-844x390.png",
+      "sha256": "a5d51e74e9c34c8f5058b87f9eff19f381c521f819dcd7be95cdf8a69d856355",
+      "bytes": 82488,
+      "width": 844,
+      "height": 390,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-1-640x450.png",
+      "sha256": "99a70e840f7764751edec52ede03dca895168ad916951b516e3bfe28531744b8",
+      "bytes": 62707,
+      "width": 640,
+      "height": 450,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-9-320x900.png",
+      "sha256": "8e1bff09a8014975274b8dac0a6d2729a6a4fab1edeb6391d67aded356549313",
+      "bytes": 71399,
+      "width": 320,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-9-844x390.png",
+      "sha256": "d682f56aef5243479976b4608b0a93f33f649e37e238473b2cc63f788863c17e",
+      "bytes": 101306,
+      "width": 844,
+      "height": 390,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-9-640x450.png",
+      "sha256": "91eea67032874a5e42f544334a69fd20ddcd525a765021de47a63fd7c85a493a",
+      "bytes": 71486,
+      "width": 640,
+      "height": 450,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-41-320x900.png",
+      "sha256": "d83876db8d0f858cf4f271f43518e3fa766fbd4015df90ad2b4bfcdebccbbb7f",
+      "bytes": 78072,
+      "width": 320,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-41-844x390.png",
+      "sha256": "915b6e54110693ae66406bf5632debb89d8167d41e082fcc3b74b83687cbb65d",
+      "bytes": 67910,
+      "width": 844,
+      "height": 390,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-41-640x450.png",
+      "sha256": "1d1b19a37a1800dca8bfe2a33f4b6b32387f3337eb30acc8a98de0fd915664ce",
+      "bytes": 66300,
+      "width": 640,
+      "height": 450,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-52-320x900.png",
+      "sha256": "a910dc8e27ffc171c6db0cbaa38b717eac07ee1aab0bdae83b5ba180e2aa965a",
+      "bytes": 72755,
+      "width": 320,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-52-844x390.png",
+      "sha256": "5f25ef2d4f8897d20f497d61bc7190b8f1faff907b0e6699eeba666dc1ec728d",
+      "bytes": 85120,
+      "width": 844,
+      "height": 390,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-52-640x450.png",
+      "sha256": "d9c06ca0c70bcddc7dcf7c42c36da61a93342e0333cb6294b5321db35c096de7",
+      "bytes": 67272,
+      "width": 640,
+      "height": 450,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-1-motion-a.png",
+      "sha256": "d415b5286e15573b2dba4f18a5266459c526f42c202f39ea234158de2722d1e5",
+      "bytes": 181732,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-1-motion-b.png",
+      "sha256": "580dd5f5359f4035fe112ee3895d183c7e8ed3b45f67a57701f1785ef37085a7",
+      "bytes": 181792,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-9-motion-a.png",
+      "sha256": "9b061bb2a875f26e0b40a92e349654fbbf1270bfca5f3d4c8efdc9e6a21cb796",
+      "bytes": 203253,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    },
+    {
+      "file": "reports/experience-review/model-reuse/final/gms-9-motion-b.png",
+      "sha256": "bfa842cae29e91f29f1708018dae87c1a82bfe11cfdb8024ce14a9eb18db4b7f",
+      "bytes": 203250,
+      "width": 1440,
+      "height": 900,
+      "visuallyInspected": true
+    }
+  ],
+  "captureReport": {
+    "file": "reports/experience-review/model-reuse/final/review.json",
+    "captureTimeUtc": "2026-11-09T02:18:55.861Z",
+    "modelsReady": [1, 9, 39, 41, 52],
+    "reportedPageOrConsoleErrors": [],
+    "reportedBadHttpResponses": [],
+    "glb52FetchedHashMatchesCurrent": true
+  },
+  "testEvidenceReadNotExecuted": [
+    {
+      "file": "reports/experience-review/model-reuse/unit-reuse.log",
+      "observation": "Tres pruebas de reutilización aprobadas: identidad de catedral, datos/relojes/propiedad/disposición Stewart, adaptación del shader Santa Lucía."
+    },
+    {
+      "file": "reports/experience-review/model-reuse/check-final-code.log",
+      "observation": "Astro check: 162 archivos, cero errores, advertencias o hints. La suite verify completa estaba en ejecución por el agente principal; este dictamen no anticipa su resultado."
+    }
+  ],
+  "approvalBoundary": "La aprobación cualitativa corresponde exclusivamente a los artefactos y hashes actuales enumerados. No atribuye una aprobación del activo nuevo al hash anterior, ni usa la ronda blanca after-v1, ni certifica pruebas, FPS o ciclos animados completos no observados."
+}

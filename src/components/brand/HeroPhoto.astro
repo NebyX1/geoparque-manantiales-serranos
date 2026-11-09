@@ -2,6 +2,7 @@
 import Photo from './Photo.astro';
 import { heroImages } from '../../lib/hero-images';
 import type { HeroAssetKey } from '../../data/hero-assets';
+import { mobileHeroAssets } from '../../data/hero-assets';
 interface Props {
   assetKey: HeroAssetKey;
   loading?: 'eager' | 'lazy';
@@ -26,5 +27,11 @@ const images = await heroImages(assetKey);
     sizes={images.mobileSizes}
   />
   <source type="image/avif" srcset={images.desktop} sizes={images.desktopSizes} />
-  <Photo {assetKey} alt="" sizes={images.desktopSizes} {...attributes} />
+  <Photo
+    {assetKey}
+    alt=""
+    sizes={images.desktopSizes}
+    mobileSource={mobileHeroAssets[assetKey]}
+    {...attributes}
+  />
 </picture>

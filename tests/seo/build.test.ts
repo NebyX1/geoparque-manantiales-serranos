@@ -6,7 +6,11 @@ import { articles } from '../../src/data/stories';
 const read = (path: string) => readFileSync(join('dist', path), 'utf8');
 describe('build estático y SEO', () => {
   it('publica home, 61 fichas completas y ocho historias como HTML', () => {
-    expect(read('index.html')).toContain('LA TIERRA');
+    expect(read('inicio/index.html')).toContain('LA TIERRA');
+    expect(read('experiencia/index.html')).not.toContain('astro-view-transitions-enabled');
+    expect(read('index.html')).toContain('href="/inicio/"');
+    expect(read('index.html')).toContain('href="/experiencia/"');
+    expect(existsSync('dist/experiencia/index.html')).toBe(true);
     for (const place of places) {
       const page = read(`lugares/${place.slug}/index.html`)
         .replaceAll('&quot;', '"')
@@ -28,11 +32,14 @@ describe('build estático y SEO', () => {
     const titles = new Set<string>();
     for (const route of [
       '',
+      'inicio/',
+      'experiencia/',
       'explorar/',
       'lugares/',
       'historias/',
       'circuitos/',
       'planifica/',
+      'creditos-fotograficos/',
       ...places.map((place) => `lugares/${place.slug}/`),
     ]) {
       const page = read(`${route}index.html`);
@@ -69,6 +76,8 @@ describe('build estático y SEO', () => {
     expect(read('health').trim()).toBe('ok');
     for (const place of places) expect(read('sitemap-0.xml')).toContain(`/lugares/${place.slug}/`);
     expect(read('sitemap-0.xml')).not.toContain('/404/');
+    expect(read('sitemap-0.xml')).toContain('/inicio/');
+    expect(read('sitemap-0.xml')).toContain('/experiencia/');
     expect(read('robots.txt')).toContain(
       process.env.SITE_INDEXABLE === 'true' ? 'Allow: /' : 'Disallow: /',
     );

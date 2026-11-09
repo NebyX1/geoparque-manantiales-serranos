@@ -1,4 +1,5 @@
 import type { GeoparkPlace } from '../types/geopark';
+import { photoForPlace, placePhotoPresentation } from './place-photos';
 
 type CanonicalPlace = Omit<
   GeoparkPlace,
@@ -2757,6 +2758,7 @@ export const canonicalPlaces: CanonicalPlace[] = [
 export const featuredIds = [1, 23, 31, 17, 14, 54];
 export const places: GeoparkPlace[] = canonicalPlaces.map((place) => ({
   ...place,
+  ...placePhotoPresentation(place.id),
   title: place.name,
   description: place.blocks.map((block) => block.text).join('\n\n'),
   tags: place.themes,
@@ -2765,8 +2767,9 @@ export const places: GeoparkPlace[] = canonicalPlaces.map((place) => ({
   contacts: place.channel ? [place.channel] : [],
   images: [
     {
-      key: place.image,
-      alt: place.imageContext ? 'Paisaje de las sierras de Lavalleja' : place.name,
+      key: photoForPlace(place.id).key,
+      alt: photoForPlace(place.id).alt,
+      caption: photoForPlace(place.id).caption,
     },
   ],
   featured: featuredIds.includes(place.id),
