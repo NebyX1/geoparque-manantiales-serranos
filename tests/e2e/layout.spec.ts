@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Locator } from '@playwright/test';
 
 test('el encabezado permanece fijo y deja espacio para las anclas y el menú', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
@@ -27,6 +27,36 @@ test('el encabezado permanece fijo y deja espacio para las anclas y el menú', a
     (await header.boundingBox())!.height,
     0,
   );
+});
+
+test('el encabezado muestra una sola línea activa al recargar o navegar', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  const nav = page.getByRole('navigation', { name: 'Navegación principal', exact: true });
+  const water = nav.getByRole('link', { name: 'Agua y vida' });
+  const education = nav.getByRole('link', { name: 'Educación' });
+
+  async function expectCurrentLink(link: Locator) {
+    await expect(link).toHaveAttribute('aria-current', 'location');
+    await expect(nav.locator('[aria-current="location"]')).toHaveCount(1);
+    await expect(link).toHaveCSS('text-decoration-line', 'none');
+    await expect
+      .poll(() =>
+        link.evaluate((node) => {
+          const line = getComputedStyle(node, '::after');
+          return [line.right, line.borderBottomWidth, line.borderBottomStyle];
+        }),
+      )
+      .toEqual(['0px', '1px', 'solid']);
+  }
+
+  await page.goto('/lugares/cerro-arequita/');
+  await water.click();
+  await expectCurrentLink(water);
+  await page.reload();
+  await expectCurrentLink(water);
+  await education.press('Enter');
+  await expectCurrentLink(education);
 });
 
 test('la descripción, el crédito y los capítulos de portada conservan su espacio', async ({

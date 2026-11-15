@@ -1437,9 +1437,6 @@
   width: 40px;
   height: 40px;
 }
-.desktop-nav a.active:after {
-  right: 0;
-}
 .detail-body p {
   overflow-wrap: anywhere;
 }

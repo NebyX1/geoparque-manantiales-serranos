@@ -297,17 +297,16 @@ summary:focus-visible,
   position: relative;
   padding: 14px 0;
 }
-.desktop-nav a:after {
+.desktop-nav a::after {
   content: '';
   position: absolute;
   bottom: 6px;
   left: 0;
   right: 100%;
-  height: 1px;
-  background: var(--forest);
+  border-bottom: 1px solid currentColor;
   transition: right 0.3s;
 }
-.desktop-nav a:hover:after {
+.desktop-nav a:is(:hover, [aria-current='location'])::after {
   right: 0;
 }
 .header-actions {

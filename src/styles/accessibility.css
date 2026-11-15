@@ -175,10 +175,6 @@ button.accessibility-trigger {
 .exp-header .accessibility-label {
   display: none;
 }
-.site-header .desktop-nav a.active {
-  text-decoration: underline;
-  text-underline-offset: 0.35em;
-}
 .site-header .desktop-nav a {
   font-size: var(--type-control);
 }
