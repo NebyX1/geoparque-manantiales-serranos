@@ -1,35 +1,27 @@
 @font-face {
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('../assets/fonts/barlow-500.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('../assets/fonts/barlow-600.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../assets/fonts/barlow-700.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url('../assets/fonts/barlow-800.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Montserrat Variable';
-  font-style: normal;
+  font-family: 'Acumin Variable Concept';
+  src: url('../assets/fonts/acumin-variable.woff2') format('woff2');
   font-weight: 100 900;
+  font-stretch: 50% 115%;
+  font-style: normal;
   font-display: swap;
-  src: url('../assets/fonts/montserrat-variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Acumin Variable Condensed';
+  src: url('../assets/fonts/acumin-variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-stretch: 67.5%;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --type-small: 0.875rem;
+  --type-control: 0.9375rem;
+  --type-body: 1rem;
+  --type-lead: 1.125rem;
+  --sans: 'Acumin Variable Concept', Arial, Helvetica, sans-serif;
+  --display:
+    'Acumin Variable Condensed', 'Arial Narrow', 'Liberation Sans Narrow', Arial, sans-serif;
 }

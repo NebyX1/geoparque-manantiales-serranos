@@ -9,6 +9,7 @@ export default [
       '.astro/**',
       'dist/**',
       'node_modules/**',
+      'dev-ops/**',
       'playwright-report/**',
       'test-results/**',
       'docs/reference/**',

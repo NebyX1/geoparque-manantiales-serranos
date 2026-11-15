@@ -1,14 +1,20 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Photo from '../../components/brand/Photo.astro';
+import { referenceImage } from '../../data/assets';
 import { placeById } from '../../data/geosites';
-import { placePhotoInventory, editorialPhotoInventory, photoLabel } from '../../data/place-photos';
+import {
+  placePhotoInventory,
+  editorialPhotoInventory,
+  photoLabel,
+  placeCoverKey,
+} from '../../data/place-photos';
 const photos = [...placePhotoInventory, ...editorialPhotoInventory];
 ---
 
 <BaseLayout
   title="Fotografías y fuentes · Manantiales Serranos"
-  description="Procedencia de las imágenes del Geoparque, fotografías aéreas y comparación de las restauraciones con sus originales."
+  description="Autores, fuentes, licencias e imágenes de referencia del Geoparque Manantiales Serranos."
 >
   <article class="editorial-page">
     <p class="eyebrow">El territorio, con referencias</p>
@@ -19,39 +25,33 @@ const photos = [...placePhotoInventory, ...editorialPhotoInventory];
     </p>
     <p>
       Cuando no contamos con una fotografía terrestre identificada, mostramos una fotografía aérea
-      de IDE de 2017–2018. Las restauraciones con IA están señaladas y conservan la imagen de
-      referencia para compararlas: interpretan textura fina y no documentan cambios actuales del
-      lugar.
+      de IDE de 2017–2018. Las versiones de publicación tienen su fuente y, cuando está disponible,
+      un enlace a la imagen de referencia.
     </p>
     <ul class="photo-audit-list">
       {photos.map((photo) => {
         const place = placeById.get(photo.id)!;
+        const cover = placeCoverKey(photo.key);
         return (
-          <li id={photo.key} class="photo-audit-item">
-            <div>
-              <Photo
-                assetKey={photo.key}
-                alt={photo.alt}
-                class="photo-audit-image"
-                sizes="(max-width: 620px) 90vw, 460px"
-              />
-              {'originalPhotoUrl' in photo && photo.originalPhotoUrl && (
-                <details class="photo-audit-original">
-                  <summary>Comparar con la fotografía original</summary>
-                  <a href={photo.originalPhotoUrl} target="_blank" rel="noopener noreferrer">
-                    <img
-                      src={photo.originalPhotoUrl}
-                      alt={`Fotografía original de referencia: ${place.name}`}
-                      loading="lazy"
-                    />
-                  </a>
-                </details>
-              )}
-            </div>
+          <li
+            id={photo.key}
+            class:list={['photo-audit-item', { 'photo-audit-source': cover !== photo.key }]}
+          >
+            {cover === photo.key && (
+              <div>
+                <Photo
+                  assetKey={photo.key}
+                  profile="editorial"
+                  alt={photo.alt}
+                  class="photo-audit-image"
+                  sizes="(max-width: 620px) 90vw, 460px"
+                />
+              </div>
+            )}
             <div>
               <p class="eyebrow">
                 GMS-{String(photo.id).padStart(2, '0')}
-                {photo.key === 'aguas' ? ' · portada' : ''}
+                {(photo.key === 'aguas' || photo.key.endsWith('-portada')) && ' · portada'}
               </p>
               <h2>
                 <a href={`/lugares/${place.slug}/`}>{place.name}</a>
@@ -77,6 +77,22 @@ const photos = [...placePhotoInventory, ...editorialPhotoInventory];
                   </>
                 )}
               </p>
+              {cover !== photo.key && (
+                <p>
+                  <a href={`#${cover}`}>Ver encuadre de publicación ↓</a>
+                </p>
+              )}
+              {'referenceFile' in photo && photo.referenceFile && (
+                <p class="photo-audit-original">
+                  <a
+                    href={referenceImage(photo.referenceFile).src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Abrir imagen de referencia ↗
+                  </a>
+                </p>
+              )}
             </div>
           </li>
         );

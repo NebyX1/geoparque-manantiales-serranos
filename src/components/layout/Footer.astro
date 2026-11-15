@@ -24,16 +24,14 @@ import Photo from '../brand/Photo.astro';
         </a>
         <a href="/">Elegir cómo explorar</a>
         <a href="/creditos-fotograficos/">Fotografías y fuentes</a>
+        <a href="/accesibilidad/">Accesibilidad</a>
         <button data-action="privacy">Tu privacidad</button>
       </nav>
     </div>
     <div class="footer-bottom">
       <div class="footer-logo-card">
-        <Photo
-          alt="Manantiales Serranos Geoparque Mundial de la UNESCO"
-          assetKey="brand-c66ec6c0da68"
-        />
-        <Photo alt="UNESCO Geoparque mundial" assetKey="unesco" />
+        <Photo alt="Manantiales Serranos Geoparque Mundial de la UNESCO" assetKey="site-brand" />
+        <Photo alt="UNESCO Geoparque mundial" assetKey="unesco" sizes="65px" />
       </div>
       <p class="footer-small">
         Lavalleja, Uruguay.
@@ -41,7 +39,13 @@ import Photo from '../brand/Photo.astro';
         Un territorio para comprender la Tierra y cuidar la vida.
         <br />
       </p>
-      <button aria-pressed="false" class="motion-btn" id="motion-toggle">
+      <button
+        type="button"
+        aria-pressed="false"
+        class="motion-btn"
+        id="motion-toggle"
+        data-motion-toggle
+      >
         <svg aria-hidden="true" class="icon">
           <use href="#i-pause"></use>
         </svg>

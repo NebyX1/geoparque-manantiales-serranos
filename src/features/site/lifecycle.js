@@ -13,6 +13,7 @@ import { initPreferences } from '../motion/preferences.js';
 import { initHero } from '../motion/hero.js';
 import { initMotion } from '../motion/controller.js';
 import { initPhotoResolution } from './photo-resolution.js';
+import { initAccessibility } from './accessibility.js';
 let cleanupPage;
 function reset() {
   cleanupPage?.();
@@ -83,6 +84,7 @@ function init() {
     c.cleanups.forEach((fn) => fn());
     document.querySelectorAll('dialog[open]').forEach((dialog) => dialog.close());
   };
+  initAccessibility(c);
   initPhotoResolution(c);
   if (document.querySelector('[data-experience]')) {
     import('../experience/controller')
@@ -92,14 +94,17 @@ function init() {
       .catch((error) => {
         if (controller.signal.aborted) return;
         console.warn('[Geoparque/experiencia] No se pudo iniciar el controlador', error);
+        const fallback = document.getElementById('experience-fallback');
+        const directory = document.getElementById('experience-directory');
         document.querySelector('[data-experience]').dataset.state = 'fallback';
         document.getElementById('experience-loading').hidden = true;
-        document.getElementById('experience-fallback').hidden = false;
-        document.getElementById('experience-directory').hidden = false;
+        document.getElementById('experience-canvas').tabIndex = -1;
+        document.querySelector('.exp-tools').hidden = true;
+        fallback.hidden = false;
+        directory.prepend(fallback);
+        directory.hidden = false;
         document.getElementById('experience-place-search').disabled = true;
-        document
-          .querySelectorAll('.exp-tools button, #experience-directory button')
-          .forEach((button) => (button.hidden = true));
+        directory.querySelectorAll('button').forEach((button) => (button.hidden = true));
       });
     return;
   }
@@ -153,7 +158,7 @@ function restorePage(event) {
 function startNativePage() {
   if (
     !cleanupPage &&
-    document.querySelector('[data-experience]') &&
+    document.getElementById('accessibility-dialog') &&
     !document.querySelector('[name="astro-view-transitions-enabled"]')
   ) {
     document.dispatchEvent(new Event('astro:page-load'));

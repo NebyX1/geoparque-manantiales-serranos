@@ -36,10 +36,11 @@ describe('archivos de las 48 miniaturas reconstruidas', () => {
           expect(material.normalTexture.index).toBeTypeOf('number');
         }
         expect(gltf.images).toHaveLength(4);
-        for (const image of gltf.images) {
-          expect(image.uri).toBeUndefined();
-          expect(image.bufferView).toBeTypeOf('number');
-          expect(image.mimeType).toBe('image/png');
+        expect(gltf.extensionsRequired).toContain('EXT_texture_webp');
+        for (const texture of gltf.textures) {
+          const image = gltf.images[texture.extensions.EXT_texture_webp.source];
+          expect(image.uri).toMatch(/^\.\.\/texturas\/molino-viejo\/[a-z-]+\.webp$/);
+          expect(image.bufferView).toBeUndefined();
         }
       }
       let triangles = 0,

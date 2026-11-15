@@ -25,6 +25,10 @@ export function initGeologicalStory(c) {
     const title = c.$('.hero h1');
     if (!title) return;
     title.style.removeProperty('font-size');
+    if (document.documentElement.dataset.textSize || innerWidth <= 360) {
+      c.$$('.geo-title').forEach((heading) => heading.style.removeProperty('font-size'));
+      return;
+    }
     let max = 0;
     c.$$('.hero-word>span', title).forEach((line) => (max = Math.max(max, line.scrollWidth)));
     if (max > title.clientWidth && title.clientWidth > 0) {
@@ -76,43 +80,29 @@ export function initGeologicalStory(c) {
     const remembered = Math.max(0, geoActive);
     geoMode = c.reduced
       ? 'static'
-      : innerWidth >= 1000 && innerHeight >= 720
+      : innerWidth >= 1000 && innerHeight >= 720 && !document.documentElement.dataset.textSize
         ? 'pinned'
         : 'carousel';
     geoStory.classList.toggle('is-pinned', geoMode === 'pinned');
     geoStory.classList.toggle('is-carousel', geoMode === 'carousel');
     geoStory.classList.toggle('is-static', geoMode === 'static');
     geoScenes.forEach((scene, i) => {
-      [
-        scene,
-        ...c.$$(
-          '.geo-polaroid,.geo-digit,.geo-title>span,.geo-description,.geo-halo,.geo-strata',
-          scene,
-        ),
-      ].forEach((node) => {
+      [scene, ...c.$$('.geo-polaroid,.geo-halo,.geo-strata', scene)].forEach((node) => {
         node.style.removeProperty('transform');
         node.style.removeProperty('opacity');
         node.style.removeProperty('visibility');
       });
-      if (geoMode !== 'pinned')
-        c.$('.geo-polaroid', scene).style.transform =
-          `rotate(${c.reduced ? 0 : geoRotations[i]}deg)`;
+      c.$('.geo-polaroid', scene).style.transform = `rotate(${c.reduced ? 0 : geoRotations[i]}deg)`;
     });
     geoActive = -1;
     activeGeo(remembered);
     measureGeo();
     updateGeoMotion();
-    if (c.reduced) {
-      c.$('.hero-copy').style.transform = '';
-      c.$$('.hero-hill').forEach((node) => (node.style.transform = ''));
-      c.$('.hero-seal').style.transform = '';
-    }
+    if (c.reduced) c.$$('.hero-hill').forEach((node) => (node.style.transform = ''));
   }
   function updateGeoMotion() {
     const y = scrollY;
     if (!c.reduced && y < geoMetrics.heroHeight + 100) {
-      c.$('.hero-copy').style.transform = `translate3d(0,${(y * 0.075).toFixed(1)}px,0)`;
-      c.$('.hero-seal').style.transform = `translate3d(0,${(y * 0.14).toFixed(1)}px,0)`;
       c.$$('.hero-hill').forEach(
         (node, i) =>
           (node.style.transform = `translate3d(0,${(y * [0.1, 0.05, 0.012][i]).toFixed(1)}px,0)`),
@@ -134,16 +124,6 @@ export function initGeologicalStory(c) {
         scene.style.visibility = opacity < 0.001 ? 'hidden' : 'visible';
         scene.style.opacity = opacity.toFixed(4);
         if (opacity < 0.001) return;
-        scene.style.transform = `translate3d(0,${((1 - enter) * 18 - exit * 10).toFixed(2)}%,0)`;
-        c.$('.geo-polaroid', scene).style.transform =
-          `translate3d(${((1 - enter) * 90 - exit * 32).toFixed(1)}px,${((1 - enter) * 60 - exit * 30).toFixed(1)}px,0) rotate(${(geoRotations[i] + (1 - enter) * 9 - exit * 4).toFixed(2)}deg)`;
-        c.$('.geo-digit', scene).style.transform =
-          `translate3d(0,${((1 - enter) * 125 - exit * 100).toFixed(1)}px,0)`;
-        c.$$('.geo-title>span', scene).forEach((line, j) => {
-          const rise = i === 0 ? 1 : smoothGeo((logical - (i - 0.3 + j * 0.025)) / 0.24);
-          line.style.transform = `translate3d(${((1 - rise) * 25).toFixed(1)}px,${((1 - rise) * 30).toFixed(1)}px,0)`;
-          line.style.opacity = rise.toFixed(4);
-        });
         const drift = clampGeo(logical - i, -0.3, 1);
         c.$('.geo-halo', scene).style.transform =
           `translate3d(${drift * 60}px,calc(-50% + ${drift * 30}px),0)`;

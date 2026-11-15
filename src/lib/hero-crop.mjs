@@ -1,3 +1,10 @@
+export const heroFiles = {
+  'arequita-rio': 'arequita-cover',
+  aguas: 'aguas-cover',
+  salus: 'salus',
+  parque: 'parque-cover',
+};
+
 // CSS uses object-position: 68% 50% at widths <= 620px, with a minimum
 // hero height of 780px (745px only below 359px). This full-height crop
 // includes every pixel visible in that range and preserves that position.

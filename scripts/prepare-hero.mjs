@@ -2,13 +2,13 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import sharp from 'sharp';
-import { heroCrop } from '../src/lib/hero-crop.mjs';
+import { heroCrop, heroFiles } from '../src/lib/hero-crop.mjs';
 
 const directory = 'src/assets/images/hero';
 const manifest = [];
 await fs.mkdir(`${directory}/mobile`, { recursive: true });
-for (const key of ['arequita-rio', 'aguas', 'salus', 'parque']) {
-  const original = path.join(directory, `${key}.webp`);
+for (const [key, source] of Object.entries(heroFiles)) {
+  const original = path.join(directory, `${source}.webp`);
   const target = path.join(directory, 'mobile', `${key}.webp`);
   const metadata = await sharp(original).metadata();
   const crop = heroCrop(metadata.width, metadata.height);

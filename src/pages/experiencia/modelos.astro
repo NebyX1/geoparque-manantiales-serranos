@@ -1,5 +1,6 @@
 ---
 import PortalLayout from '../../layouts/PortalLayout.astro';
+import AccessibilityTrigger from '../../components/layout/AccessibilityTrigger.astro';
 import { places } from '../../data/geosites';
 import { modelNote, modelSources } from '../../data/model-credits';
 ---
@@ -10,9 +11,12 @@ import { modelNote, modelSources } from '../../data/model-credits';
   clientNavigation={false}
 >
   <main>
-    <a href="/experiencia/" data-astro-reload>
-      ← Volver a la experiencia
-    </a>
+    <nav aria-label="Navegación de las fuentes" class="sources-nav">
+      <a href="/experiencia/" data-astro-reload>
+        ← Volver a la experiencia
+      </a>
+      <AccessibilityTrigger />
+    </nav>
     <p class="eyebrow">MANANTIALES SERRANOS</p>
     <h1>El territorio y sus referencias.</h1>
     <p>
@@ -76,31 +80,36 @@ import { modelNote, modelSources } from '../../data/model-credits';
     max-width: 1000px;
     margin: auto;
     padding: 50px 24px 100px;
+    overflow-wrap: anywhere;
   }
   a {
     color: #b9e8cb;
     text-underline-offset: 4px;
   }
+  .sources-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 24px;
+  }
   h1 {
-    font:
-      800 clamp(40px, 7vw, 75px)/1.05 'Barlow Condensed',
-      sans-serif;
+    font: 800 clamp(2.5rem, calc(7vw * var(--text-scale)), 4.6875rem)/1.05 var(--display);
     max-width: 780px;
   }
   h2 {
     margin-top: 45px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   p,
   li {
-    font-size: 14px;
+    font-size: var(--type-small);
     line-height: 1.9;
   }
   li {
     margin: 10px 0;
   }
   .eyebrow {
-    font-size: 11px;
+    font-size: var(--type-small);
     letter-spacing: 0.15em;
     color: #a6c7a4;
     margin-top: 35px;
@@ -119,9 +128,9 @@ import { modelNote, modelSources } from '../../data/model-credits';
     margin-top: 0;
   }
   h3 {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
   section > a {
-    font-size: 12px;
+    font-size: var(--type-small);
   }
 </style>

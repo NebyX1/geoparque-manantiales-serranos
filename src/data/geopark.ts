@@ -7,7 +7,7 @@ export const gallery = [
   'salus',
   'arequita',
   'penitente',
-  'arequita-rio',
+  'gms-52-portada',
   'rio',
   'artigas',
   'parque',

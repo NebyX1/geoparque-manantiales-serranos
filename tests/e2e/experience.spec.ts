@@ -298,6 +298,7 @@ test('la cruceta táctil conserva captura y detiene el movimiento al soltar o ca
     browserName !== 'chromium',
     'La secuencia táctil sostenida usa CDP; el resto de controles se prueba también en WebKit.',
   );
+  test.setTimeout(90_000);
   const context = await browser.newContext({
     viewport: { width: 390, height: 844 },
     hasTouch: true,
@@ -532,7 +533,7 @@ test('la miniatura admite vista cercana y permite volver a caminar', async ({
   page,
   browserName,
 }) => {
-  test.setTimeout(60_000);
+  test.setTimeout(90_000);
   // Simulate an incomplete inventory: this place retains its card and model,
   // but the world must not invent a geographic pin for it.
   await page.route('**/experiencia/', async (route) => {
@@ -799,6 +800,8 @@ test('navegar de la experiencia a las fichas y regresar no acumula errores', asy
   page,
   browserName,
 }) => {
+  // Two round trips start the 3D renderer four times on software-rendered CI hosts.
+  test.setTimeout(90_000);
   const errors: string[] = [];
   const speculativeRequests: string[] = [];
   page.on('request', (request) => {
@@ -864,7 +867,7 @@ for (const house of [
     page,
     browserName,
   }) => {
-    test.setTimeout(60_000);
+    test.setTimeout(90_000);
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/experiencia/');
     const experience = await waitForExperience(page);

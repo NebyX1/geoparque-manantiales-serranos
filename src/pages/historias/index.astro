@@ -20,7 +20,7 @@ const stories = Object.entries(articles);
       {stories.map(([slug, story], index) => (
         <article class="story-card reveal">
           <a class="story-image" href={`/historias/${slug}/`} aria-label={`Leer ${story.title}`}>
-            <Photo assetKey={story.image} alt={story.title} />
+            <Photo assetKey={story.image} profile="place-card" alt={story.title} />
           </a>
           <div class="story-card-content">
             <h2>

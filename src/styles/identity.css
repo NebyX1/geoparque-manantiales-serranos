@@ -13,10 +13,6 @@
   --nav: 94px;
   --radius: 8px;
   --gutter: clamp(22px, 5.2vw, 100px);
-  --display:
-    'Barlow Condensed', Impact, 'Arial Narrow', 'Nimbus Sans Narrow', 'Liberation Sans Narrow',
-    sans-serif;
-  --sans: 'Montserrat', Arial, Helvetica, sans-serif;
   --serif: var(--display);
   --ease: cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -50,7 +46,7 @@ select {
   line-height: 0.94;
 }
 .display {
-  font-size: clamp(62px, 7.5vw, 122px);
+  font-size: clamp(3.875rem, calc(7.5vw * var(--text-scale)), 7.625rem);
 }
 .display em,
 .footer-title em,
@@ -62,16 +58,16 @@ select {
   color: #66824a;
 }
 .chapter {
-  font: 700 15px var(--display);
+  font: 700 var(--type-small) var(--display);
   font-style: normal;
   letter-spacing: 0.08em;
 }
 .eyebrow {
-  font-size: 10px;
+  font-size: var(--type-small);
   letter-spacing: 0.15em;
 }
 .section-lead {
-  font-size: 14px;
+  font-size: var(--type-lead);
   line-height: 1.95;
   max-width: 340px;
 }
@@ -83,7 +79,7 @@ select {
   margin: 32px 0 48px;
 }
 .btn {
-  font-size: 11px;
+  font-size: var(--type-control);
   letter-spacing: 0.015em;
   min-height: 54px;
   padding: 17px 25px;
@@ -102,14 +98,14 @@ select {
   background: var(--lime);
 }
 .text-link {
-  font-size: 12px;
+  font-size: var(--type-control);
 }
 .round {
   min-width: 44px;
   min-height: 44px;
 }
 .visit-note {
-  font-size: 11px;
+  font-size: var(--type-small);
   color: var(--muted);
   line-height: 1.75;
 }
@@ -132,20 +128,20 @@ select {
   gap: clamp(15px, 1.9vw, 34px);
 }
 .desktop-nav a {
-  font-size: 11px;
+  font-size: var(--type-small);
   white-space: nowrap;
 }
 .desktop-nav a .nav-number {
   font-family: var(--display);
   color: #7b895b;
-  font-size: 13px;
+  font-size: var(--type-small);
   margin-right: 6px;
 }
 .trip-button {
   border: 1px solid var(--line);
   background: transparent;
   color: var(--forest);
-  font-size: 11px;
+  font-size: var(--type-control);
   height: 44px;
 }
 .trip-button .count {
@@ -156,7 +152,7 @@ select {
   background: var(--ochre);
 }
 .mobile-menu a {
-  font: 700 clamp(30px, 6vw, 48px)/1 var(--display);
+  font: 700 clamp(1.875rem, calc(6vw * var(--text-scale)), 3rem)/1 var(--display);
   text-transform: uppercase;
   letter-spacing: -0.02em;
   min-height: 69px;

@@ -50,6 +50,7 @@ const { story, slug } = Astro.props;
     <p class="lead">{story.lead}</p>
     <Photo
       assetKey={story.image}
+      profile="reading"
       alt={story.title}
       class="reading-image"
       sizes="100vw"

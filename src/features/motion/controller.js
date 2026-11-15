@@ -1,10 +1,27 @@
 export function initMotion(c) {
+  const header = c.$('#site-header');
+  const root = document.documentElement;
+  function syncHeaderHeight() {
+    const height = `${header.offsetHeight}px`;
+    if (root.style.getPropertyValue('--site-header-height') !== height) {
+      root.style.setProperty('--site-header-height', height);
+      c.measureGeo();
+    }
+  }
+  syncHeaderHeight();
+  const headerObserver = new ResizeObserver(() => c.raf(syncHeaderHeight));
+  headerObserver.observe(header, { box: 'border-box' });
+  c.cleanups.push(() => {
+    headerObserver.disconnect();
+    root.style.removeProperty('--site-header-height');
+  });
+
   let scrollPending = false;
   function updateScroll() {
     scrollPending = false;
     c.updateGeoMotion();
     const y = window.scrollY;
-    c.$('#site-header').classList.toggle('scrolled', y > 30);
+    header.classList.toggle('scrolled', y > 30);
     const max = document.documentElement.scrollHeight - innerHeight;
     c.$('#page-progress').style.transform = `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`;
     c.$('#back-top').classList.toggle('show', y > innerHeight);
@@ -43,15 +60,19 @@ export function initMotion(c) {
     const navObserver = c.observer(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting)
-            c.$$('.desktop-nav a').forEach((a) =>
-              a.classList.toggle('active', a.hash === `#${entry.target.id}`),
-            );
+          if (entry.isIntersecting) {
+            for (const link of c.$$('.desktop-nav a, #mobile-menu a')) {
+              const current = link.hash === `#${entry.target.id}`;
+              link.classList.toggle('active', current);
+              if (current) link.setAttribute('aria-current', 'location');
+              else link.removeAttribute('aria-current');
+            }
+          }
         });
       },
       { rootMargin: '-10% 0px -70% 0px' },
     );
-    ['explorar', 'historia', 'territorio', 'naturaleza', 'visita'].forEach(
+    ['explorar', 'historia', 'naturaleza', 'aprender', 'visita'].forEach(
       (id) => document.getElementById(id) && navObserver.observe(document.getElementById(id)),
     );
   } else {
@@ -61,7 +82,10 @@ export function initMotion(c) {
     window,
     'resize',
     () => {
-      if (innerWidth > 900 && !c.$('#mobile-menu').hidden) c.toggleMenu(false);
+      c.raf(() => {
+        if (!c.$('#mobile-toggle').getClientRects().length && !c.$('#mobile-menu').hidden)
+          c.toggleMenu(false);
+      });
     },
     { passive: true },
   );

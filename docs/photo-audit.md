@@ -1,6 +1,6 @@
 # Auditoría fotográfica del Geoparque
 
-La revisión posterior del 9 de noviembre de 2026 actualiza Arequita y Parque de Minas, añade su recorte editorial y corrige la entrega responsive. El estado actual se documenta en [photo-definition.md](photo-definition.md), con originales y prompts conservados. La tabla de esta auditoría registra la revisión anterior.
+La política y el resultado vigentes se documentan en [Política de calidad visual](photo-editorial-policy.md) y en el [registro por imagen](../src/data/visual-review.json). Esta página conserva la auditoría del 8 de noviembre de 2026.
 
 Revisión: 8 de noviembre de 2026. Alcance: sitio editorial, portada de entrada, hero, atlas, fichas, mapa, historias, circuitos, galería, buscador, favoritos y paneles del recorrido inmersivo. No modifica los textos canónicos, coordenadas ni modelos 3D.
 
@@ -22,7 +22,7 @@ Las nueve fichas restauradas son GMS-28, 42, 43, 50, 51, 55, 59, 60 y 61. El her
 
 Se rechazaron dos resultados: la primera versión de Cuna de Fabini añadió números/rótulos no comprobables; la de Parque Rodó añadió una placa y marcas viales. No se publican. Parque Rodó conserva la fotografía municipal de 2017.
 
-Los originales de las restauraciones están en `public/photo-originals/`; las derivadas aceptadas, en `src/assets/images/places/` y `src/assets/images/hero/aguas.webp`. Los candidatos de autoría y planchas de comparación quedan en el directorio local ignorado `reports/experience-review/photo-audit/`.
+Las imágenes de referencia se consultan desde la página de créditos. Las rutas vigentes están en los inventarios descritos en [Assets](assets.md). Los candidatos de autoría y las planchas de comparación quedan en `reports/experience-review/photo-audit/`.
 
 ## Límites documentados
 
@@ -35,7 +35,7 @@ Los originales de las restauraciones están en `public/photo-originals/`; las de
 
 `src/data/place-photos.json` es el inventario fotográfico; `src/data/geosites.ts` conserva una sola colección canónica de lugares y deriva la presentación auditada. `src/data/place-photos.ts` resuelve también las antiguas claves editoriales. Astro y los controladores nativos comparten imágenes, pies, tipo y créditos. Una clave inexistente produce error en lugar de mostrar un paisaje de otro lugar.
 
-`scripts/prepare-place-photos.mjs` convierte la selección curada de investigación a WebP; `scripts/prepare-editorial-photos.mjs` actualiza las fuentes del hero y el original adicional. Son herramientas de curación con entradas locales, no pasos de un build limpio. Fuentes, evidencia, recortes WMS y hashes quedan versionados en el inventario; no hay consultas externas en ejecución. `npm run assets:hero` regenera los cuatro recortes móviles y verifica igualdad de píxeles decodificados.
+Las herramientas de aquella curación están en `docs/reference/migration-tools/photo-audit/`. La estructura vigente se describe en [Assets](assets.md). `npm run assets:hero` regenera los cuatro recortes móviles y verifica sus píxeles.
 
 Las fotos verticales y las que incluyen firmas usan `contain`; las restantes conservan recortes adaptativos. Las variantes de Astro nunca amplían la fuente. El original histórico de extracción queda en `asset-manifest.original.json`.
 

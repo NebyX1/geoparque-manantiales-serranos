@@ -1,5 +1,5 @@
 import type { GeoparkPlace } from '../types/geopark';
-import { photoForPlace, placePhotoPresentation } from './place-photos';
+import { placePhotoPresentation } from './place-photos';
 
 type CanonicalPlace = Omit<
   GeoparkPlace,
@@ -2799,13 +2799,6 @@ export const places: GeoparkPlace[] = canonicalPlaces.map((place) => ({
   visitStatus: place.status,
   access: place.statusRaw,
   contacts: place.channel ? [place.channel] : [],
-  images: [
-    {
-      key: photoForPlace(place.id).key,
-      alt: photoForPlace(place.id).alt,
-      caption: photoForPlace(place.id).caption,
-    },
-  ],
   featured: featuredIds.includes(place.id),
   internationalValue: place.international,
   seo: { title: `${place.name} · Manantiales Serranos`, description: place.summary },

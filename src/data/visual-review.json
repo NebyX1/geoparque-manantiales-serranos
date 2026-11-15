@@ -1,0 +1,1030 @@
+{
+  "reviewedAt": "2026-11-14",
+  "photos": {
+    "gms-02": {
+      "decision": "detalle de archivo",
+      "observation": "Campo, laderas y atmósfera conservan transiciones; el fortín distante carece de detalle original al 100 % incluso en el JPEG de 4000×3000. El encuadre amplio sí documenta su emplazamiento.",
+      "treatment": "Gradación selectiva sobre el JPEG original y encuadre de cima. Mantener el límite abierto hasta obtener toma más cercana de fortín y ladera.",
+      "limitacion": "Límite óptico y de distancia.",
+      "sourceWidth": 4000,
+      "sourceHeight": 3000,
+      "cardFocus": 0.518,
+      "coverPosition": [50, 46],
+      "sha256": "ae961ff5bac30a5e9e917769a4c5b8bd83b2bb49c46051892204921db0d56032"
+    },
+    "gms-03": {
+      "decision": "editada",
+      "observation": "Pasto, arbolado y pequeños hitos del Cerro del Ombú quedan separados al tamaño real de la ficha; geometría y límite de detalle propios de la ortofoto.",
+      "treatment": "Curva que amplía gama de terreno, apertura discreta y control de oliva. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "sha256": "f5cd98aef3771757f69d0fbd21eb9222b3dba9cff20192979efddd9ee161741d"
+    },
+    "gms-06": {
+      "decision": "editada",
+      "observation": "La lectura de la vía y los límites del arbolado mejora, incluido el perfil 4:5. La ortofoto conserva sus sombras de relieve.",
+      "treatment": "Balance moderado, gama de medios más amplia y punto focal hacia la vía. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.62,
+      "sha256": "bb6f211249102ac01a1fbfd3463bb523d15afa06b9d34544b0c1f5bfcac25b1b"
+    },
+    "gms-07": {
+      "decision": "editada",
+      "observation": "Cambios graduales en pastizal y bosque permiten leer curso y vereda; la temperatura de las copas se mantiene natural.",
+      "treatment": "Levantar medios, revisar veredas en retrato y mantener capturas cenitales IDE. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.535,
+      "sha256": "27346cc31a52b4bf42d3fe1f7c0e438b4388b4ccb96ab7f038d26298db37cf03"
+    },
+    "gms-08": {
+      "decision": "editada",
+      "observation": "Grietas y piedra conservan contraste real. Se distingue el borde sombreado y la transición hacia el monte sin crear bordes dobles.",
+      "treatment": "Calentar apenas roca gris, abrir medios y fijar foco en fracturas. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.53,
+      "sha256": "92e784f2f22a3832635d4433b8aa3843a03c90759c6f521d7d02b168b5a11481"
+    },
+    "gms-09": {
+      "decision": "detalle de archivo",
+      "observation": "Menos cian y agua/pilas más definidas en la franja. Persisten desenfoque óptico lateral, detalle pobre en sombras originales y algo de posterización, especialmente ampliada. El original incluye la marca del fotógrafo.",
+      "treatment": "Aplicar ajuste local conservando marca y crédito. Nueva captura panorámica de 3200 px reales o más, con hito, cauce y pilas en la profundidad útil.",
+      "limitacion": "El enfoque parcial y la compresión del archivo limitan la definición real.",
+      "sourceWidth": 2048,
+      "sourceHeight": 1150,
+      "cardFocus": 0.48,
+      "coverPosition": [50, 53],
+      "sha256": "631adbe7a3ec487a1b42b2f0384df048d7f5fe5e92fe77618dc1d2b6ea7246dc"
+    },
+    "gms-10": {
+      "decision": "editada",
+      "observation": "La arquitectura vuelve a estar en la parte útil de la franja, con separaciones naturales en fachada y piscina. Blancos de carpintería y baranda controlados.",
+      "treatment": "Curva suave con recuperación de medios y luces; desplazar ficha hacia el techo.",
+      "sourceWidth": 2786,
+      "sourceHeight": 1392,
+      "cardFocus": 0.47,
+      "coverPosition": [50, 24],
+      "sha256": "2f161a8e8d198f9a409815ab3be0ec19b055d354121c7b8094bf7e1f2e686078"
+    },
+    "gms-11": {
+      "decision": "editada",
+      "observation": "Recuperada textura discreta bajo el techo y con visibilidad del encuentro de ventanas, paja y madera. La sombra conserva su función.",
+      "treatment": "Bajar el contraste de luz dura sin borrar grano, y centrar tarjeta y ficha hacia el pilar y el techo.",
+      "sourceWidth": 4320,
+      "sourceHeight": 3240,
+      "cardFocus": 0.55,
+      "coverPosition": [50, 34],
+      "sha256": "15ae599d8710c3513d2f6180056582be1ff65466cc6ec881c11f2a5d44a1ee4f"
+    },
+    "gms-12": {
+      "decision": "editada",
+      "observation": "La selección vertical conserva huella y construcciones. Mejor separación entre suelos y bosque con lectura verificable del terreno.",
+      "treatment": "Elevar medios de la geometría original de IDE. Cambiar foco hacia vía central. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.45,
+      "sha256": "01787f2545ecd94869d422bff70b3b72b5cea879ce3b25318d6401f509b635db"
+    },
+    "gms-13": {
+      "decision": "editada",
+      "observation": "Cantera, canal y sombra siguen distinguiéndose. Mejora el tono mineral sin convertir pastura en verde artificial.",
+      "treatment": "Curva leve de medios y luces, foco en el corte de terreno. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.47,
+      "sha256": "d5be4b7e55d81d2afe6167a5ea8b9401a93388ffdd3d7b20dde6d695f7d8e7c5"
+    },
+    "gms-14": {
+      "decision": "conservada",
+      "observation": "Salto y hendiduras se leen en foto panorámica y tarjeta, con blanco de agua moderado y detalle real de vetas.",
+      "treatment": "Mantener montaje y crédito.",
+      "sourceWidth": 3024,
+      "sourceHeight": 2201,
+      "sha256": "ae49f57ef568242cfa11ad22c07cbbf0d81707fb9c27c0e83b9c2ed9c750ac2e"
+    },
+    "gms-15": {
+      "decision": "conservada",
+      "observation": "Afloramiento y vegetación tienen textura real, y el atardecer separa planos con tonos naturales en la foto y la tarjeta.",
+      "treatment": "Mantener hora, geometría y crédito.",
+      "sourceWidth": 2048,
+      "sourceHeight": 1365,
+      "sha256": "aacf83e6f630a319d0de6df4e9fe596a01c1854faba14288c0e50cb4ffac7b59"
+    },
+    "gms-16": {
+      "decision": "detalle de archivo",
+      "observation": "El agua y su caída contrastan con el hormigón, y la baranda mantiene su color. Mampostería, caudal fino y placa pierden textura ampliados. La toma CURE de 1328×747 y la de Trotamundo de 530×398 tienen menor resolución y peor encuadre.",
+      "treatment": "Mantener ajuste suave del archivo URSEA mientras se consigue otra toma directa. Levantar sombras del hormigón y moderar los rojos en tierra sin cambiar los elementos.",
+      "limitacion": "Compresión y dimensiones del archivo institucional.",
+      "sourceWidth": 1600,
+      "sourceHeight": 900,
+      "cardFocus": 0.451,
+      "coverPosition": [50, 51],
+      "sha256": "515bac370f07b69167753c0648a34cc014a3722b4d6ab90fec7c691a128102b6"
+    },
+    "gms-18": {
+      "decision": "editada",
+      "observation": "Rocas, sombra y vegetación conservan geometría, y la cavidad se entiende mejor sin teñir de azul las rocas.",
+      "treatment": "JPEG confirmado 5120 × 2880 con luz selectiva y tonos naturales en bloque y cavidad. Foco del abrigo de roca, no del cielo.",
+      "sourceWidth": 5120,
+      "sourceHeight": 2880,
+      "cardFocus": 0.48,
+      "coverPosition": [50, 64],
+      "sha256": "42b93a7e9b697bc4aa66e286af2db66c89588d2520c55c2af2baca83b0dc1b63"
+    },
+    "gms-19": {
+      "decision": "editada",
+      "observation": "La huella vial y la pastura se distinguen tras abrir medios. No se alteran pavimento, vehículos ni parcela.",
+      "treatment": "Expandir discretamente medios y conservar geometría cenital. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.48,
+      "sha256": "34fa9a75713a955a8fc4a4a60520c9ac7d9ba459e48b7e440f6858bdb09978f5"
+    },
+    "gms-20": {
+      "decision": "editada",
+      "observation": "Los límites de cantera, roca y camino siguen verificables y se conservan a la altura de exposición de la tarjeta.",
+      "treatment": "Aumentar contraste percibido en roca sin halos ni brillo artificial. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.57,
+      "sha256": "32feacdf6ffb794a3aba8b3f34710faded85b92a9f8c65e1e3c5b5139eb14208"
+    },
+    "gms-21": {
+      "decision": "editada",
+      "observation": "Se lee mejor la separación de camino, pastizal y la curva de vegetación sobre el terreno. Orientación, límites y sombras naturales conservados.",
+      "treatment": "Curva tonal para distinguir calzada y bosques de claros. Segunda curva de medios, confirmada en franja 2145×650 y 4:5; preservar geometría de IDE.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.5,
+      "sha256": "286467af0434e614fa45e825d94936b664c60c792c643f07029edc449db202c0"
+    },
+    "gms-22": {
+      "decision": "sustituida",
+      "observation": "Las sombras proyectadas separan fachada y sierra. Molduras, aleros y roca conservan bordes, y cubierta dorada no pierde textura. Encadre completo con escala, sin halo.",
+      "treatment": "Fotografía de 2999 × 2246 px con ajustes controlados de contraste y balance. La tarjeta conserva los tejados y el volumen principal.",
+      "sourceWidth": 2999,
+      "sourceHeight": 2246,
+      "cardFocus": 0.52,
+      "coverPosition": [50, 48],
+      "sha256": "229ef488ad2b12687eca400fdcc8d5bc439e2321833d7abfff0e7759e8e6dfdf"
+    },
+    "gms-24": {
+      "decision": "editada",
+      "observation": "Madera, reflejo dorado y vidrio se diferencian. El baño/cabaña se entiende en portada pero el interior y el pequeño rótulo quedan suaves al 100%.",
+      "treatment": "Templar los naranjas, abrir el interior y encuadrar la cabaña con su entorno.",
+      "sourceWidth": 1600,
+      "sourceHeight": 1067,
+      "cardFocus": 0.61,
+      "sha256": "2d8aea1dac5cfad97bc391fb4789a9d8e6346f915588eaa633fa8dc845ca40ef"
+    },
+    "gms-25": {
+      "decision": "editada",
+      "observation": "Ortofoto de referencia. Afloramientos y límite de monte nítidos. Tono moderado con lectura de luces y sombras, geometría y escala constantes.",
+      "treatment": "Expandir medios tonos para revelar trazas y distancia, conservando orientación.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "sha256": "b0bbcb27e200b311452601d4f7d715fe9eaa9f56b58572ac05ef02a2f954fac4"
+    },
+    "gms-27": {
+      "decision": "detalle de archivo",
+      "observation": "Se distinguen los retratos documentados de Fabini, Capagorry y Espínola Gómez. Los trazos negros pierden detalle en el marco más ancho.",
+      "treatment": "Usar la reproducción directa de 1000 × 664 px y un ajuste suave de medios y contraste que conserva la pincelada.",
+      "limitacion": "La fuente de 1000 × 664 px deja una ampliación visible en la pincelada y los perfiles. Es el registro identificado más grande del mural.",
+      "sourceWidth": 1000,
+      "sourceHeight": 664,
+      "cardFocus": 0.52,
+      "coverPosition": [50, 16],
+      "sha256": "b4ca49370e4fdff32f8614d0a74b55ad1f1e8076bea9587425616929d9331f27"
+    },
+    "gms-28-restored": {
+      "decision": "sustituida",
+      "observation": "Piedra, revoque y carpintería se leen con contraste natural. La fachada y el árbol conservan sus relaciones en el encuadre.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 503,
+      "sourceHeight": 379,
+      "cardFocus": 0.52,
+      "coverPosition": [50, 48],
+      "sha256": "23d02f3281d0e6b6ccab2d2be459adc0e108be18c38612ab3c70a25d934e377b"
+    },
+    "gms-29": {
+      "decision": "editada",
+      "observation": "Banco, árboles y troncos de la plaza tienen detalle. Cielo saturado de origen pero con transición de color y buen contraste local, sin clipping.",
+      "treatment": "Moderar el azul y recuperar detalle en las zonas de sombra. Conservar los árboles del primer plano.",
+      "sourceWidth": 2048,
+      "sourceHeight": 1536,
+      "sha256": "0c1b5e4932986cb8ee36c2690b65057dd468bc0fd087379b5be41eaa80940b60"
+    },
+    "gms-30": {
+      "decision": "sustituida",
+      "observation": "La fotografía de la cancha conserva reja, árboles y líneas de piso, y mejora la lectura del predio respecto de la imagen de inauguración.",
+      "treatment": "Usar la vista del predio de la misma galería institucional y subir el foco de la ficha para mostrar los arcos.",
+      "limitacion": "El archivo de 1320 px conserva reja, arcos y líneas, con menor detalle visible en pantalla grande.",
+      "sourceWidth": 1320,
+      "sourceHeight": 854,
+      "cardFocus": 0.5,
+      "coverPosition": [50, 0],
+      "sha256": "195353662002137f462daf465e714674b0ff002db6e73c4b1ab73c3e1cb18f0b"
+    },
+    "gms-31": {
+      "decision": "editada",
+      "observation": "El puma mantiene oreja, ojo y hocico. El detalle del agua y la piedra se distingue mejor al abrir los tonos oscuros bajo la figura.",
+      "treatment": "Usar el original de Presidencia de 5472 × 3648 px, con luz selectiva en sombras y un encuadre que conserva la base de la escultura.",
+      "sourceWidth": 5472,
+      "sourceHeight": 3648,
+      "cardFocus": 0.61,
+      "coverPosition": [50, 43],
+      "sha256": "9166512afd5830aa15f39cb3eecccea486d45608e4d6e44ff5c9a0e8346b8b42"
+    },
+    "gms-32": {
+      "decision": "editada",
+      "observation": "Ortofoto bien resuelta. Material de cantera y construcciones se distinguen en grande, límites de sombras consistentes con geometría de origen.",
+      "treatment": "Ajustar medios tonos y situar la instalación en el recorte 4:5.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.67,
+      "sha256": "531ed56701172bcb11737cad2d638302480caab41d331a4eb1b2470f73f3186a"
+    },
+    "gms-34": {
+      "decision": "editada",
+      "observation": "Ortofoto. Cortes de la cantera, loma, vegetación y caminos bien separados. Detalle suficiente y tono discreto.",
+      "treatment": "Mover el recorte hacia la cantera y reforzar la separación de roca y vegetación.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "cardFocus": 0.34,
+      "sha256": "daf297b19f274c59bd3a06b7718f72fe7838d57d7ff5823625c4ee1266d6681d"
+    },
+    "gms-35": {
+      "decision": "editada",
+      "observation": "Se reconocen las ventanas, las dos banderas y la fachada de la estación, con sombra lateral fría propia de la captura.",
+      "treatment": "Contener altas luces, mantener la textura de la madera y equilibrar la lectura entre la fachada y el cielo.",
+      "sourceWidth": 2128,
+      "sourceHeight": 1416,
+      "cardFocus": 0.51,
+      "sha256": "bb9d2c900704da354fd03662bddf962dc029748b14dba56fe20321ab7363d1cc"
+    },
+    "gms-36": {
+      "decision": "editada",
+      "observation": "Los participantes en la inauguración se veían sin cabeza en portada. Con recorte más alto conservan situación y las banderas mantienen rojo y azul sin sobresaturar.",
+      "treatment": "Aplicar coverPosition [50,24]. Mencionar 2024 en el pie como en el catálogo.",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coverPosition": [50, 24],
+      "sha256": "ae3f444c01f4539f688d39f380714debb7965bdf7b4d5beecd050c5de6c177a5"
+    },
+    "gms-37": {
+      "decision": "editada",
+      "observation": "Superficie, moldura, bandera y placa de identificación definidos. El marco muestra la entrada y la placa se puede leer. Cromas equilibrados, contraste natural.",
+      "treatment": "Equilibrar color, medios y altas luces. Bajar el encuadre de ficha para que el letrero quede completo.",
+      "sourceWidth": 4032,
+      "sourceHeight": 3024,
+      "coverPosition": [50, 66],
+      "sha256": "1a09e706dd44b824eabc9f5a96bff66f573e4caba563748a349f6f002b503037"
+    },
+    "gms-38": {
+      "decision": "editada",
+      "observation": "Ventanas, pintura y grietas se siguen leyendo en sombra. Abertura de fachada correcta, con luz dura localizada pero balanceada.",
+      "treatment": "Comprimir las altas luces y recuperar la entrada y las ramas en sombra sin perder contraste.",
+      "sourceWidth": 4032,
+      "sourceHeight": 3024,
+      "cardFocus": 0.47,
+      "sha256": "7ee5258d3c1559493ea03b645b74b8b0563811e42d3723c2f790394e7fdec63e"
+    },
+    "gms-39": {
+      "decision": "editada",
+      "observation": "Pátina y desgaste de la escultura ecuestre visibles; fondo más suave de origen con gradación. Cielo no neutralizado en exceso.",
+      "treatment": "Dar microcontraste moderado y desplazar la ficha hacia arriba para dar margen a la cabeza.",
+      "limitacion": "La fuente de archivo conserva su suavidad óptica.",
+      "sourceWidth": 2200,
+      "sourceHeight": 1650,
+      "coverPosition": [50, 25],
+      "sha256": "5be6c4a8254b44f0fcf970ce9d0cf521fbfb59cc0ccdad72aa1ce9c8248fff2e"
+    },
+    "gms-40": {
+      "decision": "editada",
+      "observation": "Nombres del comercio y detalle de las molduras legibles. El corte presenta la situación en la calle y preserva el letrero.",
+      "treatment": "Volver a la toma de El País de 2048 × 1367 px, abrir sombra y encuadrar el área de la placa.",
+      "sourceWidth": 2048,
+      "sourceHeight": 1367,
+      "cardFocus": 0.38,
+      "coverPosition": [50, 57],
+      "sha256": "9204e43453cc0a9d1ce59f058a288622a04b664addf916191dafe8d30a9cd8c1"
+    },
+    "gms-42-restored": {
+      "decision": "sustituida",
+      "observation": "La fachada se distingue por el balance entre el revoque claro, ladrillo y macetas. El ángulo conserva el patio y sus accesos.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 757,
+      "sourceHeight": 503,
+      "cardFocus": 0.56,
+      "coverPosition": [54, 47],
+      "sha256": "6e56e1dbdd5deb66ad05e4ea1988502bdbf5b257e6e249acd4ab9a68c66e023f"
+    },
+    "gms-43-restored": {
+      "decision": "editada",
+      "observation": "Sujeto reconocible y junta de piedra más nítida a tamaño normal. Suavidad al 100 % heredada de referencia 700 × 526; la cubierta panorámica previa cortaba la cruz del pórtico.",
+      "treatment": "Priorizar la cruz y arco superior en portada ancha con eje vertical al 0 %. Mantener tarjeta centrada y luz gris original.",
+      "limitacion": "La textura al ampliar depende de la foto de 700 × 526 px. Las alternativas municipales de mayor tamaño muestran otras partes del cementerio.",
+      "sourceWidth": 700,
+      "sourceHeight": 526,
+      "coverPosition": [50, 0],
+      "sha256": "bf384024b61790bf5ad1abc25b2c2f1d1c685abc2b81399181b4ad3a251a724c"
+    },
+    "gms-45": {
+      "decision": "editada",
+      "observation": "Ladrillo, relieve de arcos y carpintería conservan color y textura naturales; el cielo cian es contenido y hay pequeñas porciones sin detalle en la fuente.",
+      "treatment": "Contuve luces y cian del cielo y realcé ventanas, arcos y ladrillo con enfoque moderado.",
+      "limitacion": "Altas luces del cielo ya recortadas en el original.",
+      "sourceWidth": 3072,
+      "sourceHeight": 2304,
+      "sha256": "c45030ffabb91a6b8ef230052a6701eaa9e6b907213bfd09c23a2e0633923838"
+    },
+    "gms-46": {
+      "decision": "conservada",
+      "observation": "La silueta del monumento conserva forma y borde contra nubes cálidas. Se distingue el caballo entero en tarjeta.",
+      "treatment": "Mantener sombras oscuras de contraluz y dirección de foco.",
+      "sourceWidth": 2200,
+      "sourceHeight": 1291,
+      "cardFocus": 0.31,
+      "sha256": "51743aa8bc3de4e1ba625a73ed12bc205efe43327bbfdf614bbc1b98a9280f45"
+    },
+    "gms-47": {
+      "decision": "editada",
+      "observation": "La cubierta de la torre octogonal y la mampostería quedan legibles. Geometría al 100 % coincide con la fuente, sin halos perceptibles.",
+      "treatment": "Separé tejas, muros y vegetación con luces y blancos más moderados. Encuadre conserva la torre octogonal.",
+      "sourceWidth": 4000,
+      "sourceHeight": 2250,
+      "sha256": "0e622076d46aefad5c87b997928c26a5cbf4afa699c40c4ee8eefcf331043c40"
+    },
+    "gms-50-restored": {
+      "decision": "detalle de archivo",
+      "observation": "La luz entre las paredes de la gruta identifica la fisura, la escalera y la escala humana. La roca conserva la textura de la versión editorial en su tamaño de uso.",
+      "treatment": "Abrir sombras y priorizar la fisura en la portada y en la tarjeta. Conservar el resplandor que corresponde al punto de entrada.",
+      "limitacion": "La referencia de 600 × 450 px limita la textura. Las tomas de El Observador, el Museo Nacional de Historia Natural y la Biblioteca Nacional muestran otros ambientes, están trepidadas o pierden la relación entre escalones y fisura en el marco de ficha.",
+      "sourceWidth": 600,
+      "sourceHeight": 450,
+      "sha256": "c36d29fa3764e8aef512c74ce0a13e06c25a710ee84ca4923ae3f0385e51e928"
+    },
+    "gms-51-restored": {
+      "decision": "sustituida",
+      "observation": "La luz entre las copas ilumina las raíces sin empastar el suelo. El recorte conserva el contacto entre el tronco y los bloques.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 533,
+      "sourceHeight": 400,
+      "cardFocus": 0.52,
+      "coverPosition": [50, 56],
+      "cardPositionY": 56,
+      "sha256": "cfa42b93fca7f73005811359744dc87bb688571b9d35f4f761f3d17eb86355cb"
+    },
+    "gms-53": {
+      "decision": "sustituida",
+      "observation": "La foto documental del Ministerio muestra monte, cartel completo y quincho del complejo. El foco de tarjeta conserva letras y la portada mantiene el arbolado.",
+      "treatment": "Mantener luz natural. La resolución original es 1200 × 798.",
+      "limitacion": "Fuente oficial de 1200 × 798 px.",
+      "sourceWidth": 1200,
+      "sourceHeight": 798,
+      "cardFocus": 0.3,
+      "sha256": "ea17ec089c65c82b8b760af9e973db07a107fa818cfae55584a49c1c6fb6bb83"
+    },
+    "gms-54": {
+      "decision": "editada",
+      "observation": "La cañada, el embalse y las casas mantienen su luz y encuadre. El monte por encima del embalse se ve sin la columna de humo ni su estela.",
+      "treatment": "Integrar el retoque localizado en el WebP de Villa Serrana. El color y los píxeles del encuadre fuera del área retocada se conservan.",
+      "sourceWidth": 2560,
+      "sourceHeight": 1438,
+      "cardFocus": 0.755,
+      "coverPosition": [50, 20],
+      "cardPositionY": 39,
+      "sha256": "b76a7d2af2fc0fee5c7f33dc727a3d50487f72db962d493b44970caa670b5e5e"
+    },
+    "gms-57": {
+      "decision": "editada",
+      "observation": "Camino y rodales se distinguen a escala de ficha y de tarjeta, con rango de medios más amplio. Color y resolución son los de una ortofoto histórica.",
+      "treatment": "Aumenté contraste en medios para separar caminos, vegetación y terreno en la ortofoto. Se conserva la geometría IDE.",
+      "limitacion": "Ortofoto documental 2017–2018.",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "sha256": "84dc3278b81efbf0e2aead74a124f735fceb83190e4cc0a97ef968ab070972ba"
+    },
+    "aguas": {
+      "decision": "sustituida",
+      "observation": "La toma desde la orilla conserva el horizonte, los juncos y el ritmo del agua con reflejos claros y nubes diferenciadas.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 790,
+      "sourceHeight": 445,
+      "cardFocus": 0.59,
+      "coverPosition": [58, 48],
+      "sha256": "bbba940742796049423eb9de6346ed893428f0b0265a9007d31e15937ebf2b79"
+    },
+    "parque-story": {
+      "decision": "sustituida",
+      "observation": "El encuadre cercano mantiene presentes cubiertas, jardines y piscinas en la ilustración de capítulo.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 908,
+      "sourceHeight": 672,
+      "cardFocus": 0.51,
+      "coverPosition": [50, 50],
+      "sha256": "5c4df8d06b5fa532ecb25559a1ce3690ae6f09095b432d3d17ec128c4c6f5f30"
+    },
+    "gms-05-portada": {
+      "decision": "sustituida",
+      "observation": "La puerta, los tonos de piedra y el follaje se distinguen con luz abierta. La toma horizontal conserva la composición en el marco de ficha.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 849,
+      "sourceHeight": 1200,
+      "cardFocus": 0.39,
+      "coverPosition": [50, 56],
+      "sha256": "a4d3b945f30eab88127475b8a86b09647fb06b6fba2a10f89faaf49a928fbc4b"
+    },
+    "gms-23-portada": {
+      "decision": "conservada",
+      "observation": "Agua, textura de la roca, cauce y planos del monte se leen con claridad. A 100% se percibe un contorno de alta frecuencia alrededor de algunas ramas. El acabado ya venía en el archivo y las dimensiones de referencia real deben acompañar a las de render.",
+      "treatment": "Conservar el encuadre al peñasco y evitar enfoque adicional. Validar el original de la represa si se renueva la fuente.",
+      "sourceWidth": 676,
+      "sourceHeight": 1200,
+      "cardFocus": 0.72,
+      "coverPosition": [100, 50],
+      "sha256": "9bf52757defd7acff9742fa249da60b30e59734449351fb5cd002051fbe0a845"
+    },
+    "gms-26-portada": {
+      "decision": "editada",
+      "observation": "El encuadre amplio cortaba la cabeza de la persona. El puente y la sombra conservan geometría visible, semitonos del follaje adecuados. La malla suaviza al 100%, con trama todavía legible.",
+      "treatment": "Cambiar coverPosition a [50,28] para que entren la persona completa y el punto de fuga. Mantener la tarjeta.",
+      "limitacion": "La referencia vertical limita el detalle fino.",
+      "sourceWidth": 900,
+      "sourceHeight": 1200,
+      "coverPosition": [50, 28],
+      "sha256": "78daf9c9e28c7fe75e32febf3cac019e5299138d9a6db617e5de9c2f5aecf79f"
+    },
+    "gms-52-portada": {
+      "decision": "sustituida",
+      "observation": "La selección Arequita 1 recupera el reflejo y el volumen de las copas. El recorte deja el paredón en el tercio superior sin desdibujar la ribera.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 884,
+      "sourceHeight": 663,
+      "cardFocus": 0.7,
+      "coverPosition": [50, 72],
+      "cardPositionY": 74,
+      "sha256": "81c213f42886f152c631163758167af171d0be90fac04f6aeb60491cc15063f9"
+    },
+    "gms-01-portada": {
+      "decision": "sustituida",
+      "observation": "La selección Arequita 2 distingue las capas del monte, las fracturas claras del paredón y las nubes, con detalle visible también en el recorte estrecho.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 4320,
+      "sourceHeight": 2432,
+      "cardFocus": 0.62,
+      "coverPosition": [50, 30],
+      "sha256": "27a7aca4e815e9713764bfe5f52c91d89af390e73a4708f9ef32fe6d7168b6f1"
+    },
+    "arequita-ribera": {
+      "decision": "editada",
+      "observation": "La ribera y el cauce son visibles, el paredón conserva fisuras reales. La fotografía presenta partes de nube claras de origen con color y detalle más limitado.",
+      "treatment": "Usar arequita-mineral.webp como alternativa de ribera con crédito, enlace CC BY-SA 4.0 e indicación de recorte y ajuste de color. Mantener Kolosov para portada y ficha principal.",
+      "sourceWidth": 4320,
+      "sourceHeight": 2432,
+      "cardFocus": 0.66,
+      "coverPosition": [50, 39],
+      "sha256": "d77057c43257a2efd3549a5cd54c7fdc4b727dc8d774959d9a316100216f4347"
+    },
+    "gms-44-portada": {
+      "decision": "sustituida",
+      "observation": "Se lee el rótulo principal sobre la fachada y queda un fondo limpio de cielo. El emblema y el acceso comparten foco en formato estrecho.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 720,
+      "sourceHeight": 1280,
+      "cardFocus": 0.65,
+      "coverPosition": [60, 55],
+      "sha256": "6ff09664e3677b3a8821dbb6b375685fc688251e18542ef39c210557e04bdb6a"
+    },
+    "gms-55-restored-portada": {
+      "decision": "sustituida",
+      "observation": "El gesto de la participante, el casco y el puente se distinguen frente al monte en sombra, con luz natural y lectura clara en tarjeta.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 480,
+      "sourceHeight": 520,
+      "cardFocus": 0.34,
+      "coverPosition": [34, 35],
+      "sha256": "83055340f04f042fb42866f93496d95b255a442af98da6d0e0eebbf8498bb8eb"
+    },
+    "gms-58-portada": {
+      "decision": "sustituida",
+      "observation": "La vista amplia muestra la base de la estructura y la relación con el paisaje. Piedra, pastizal y sombra tienen separación suficiente en ficha y tarjeta.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 1350,
+      "sourceHeight": 2400,
+      "cardFocus": 0.51,
+      "coverPosition": [50, 54],
+      "sha256": "b81c17d91370f323f0befb7e2b77d452dc8436910bf2ebdb55118f3a1879f43d"
+    },
+    "gms-60-restored-portada": {
+      "decision": "sustituida",
+      "observation": "La figura roja y el rótulo se leen en contexto con la verja y la fachada. El cielo y el pavimento conservan un rango tonal natural.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 1165,
+      "sourceHeight": 1990,
+      "cardFocus": 0.52,
+      "coverPosition": [51, 19],
+      "cardPositionY": 48,
+      "sha256": "6263be0eb88f35d98f25a48aa7e3ec26b2a1376276f5d59f94e8710d2964e039"
+    },
+    "gms-56-restored-portada": {
+      "decision": "sustituida",
+      "observation": "La escena se lee desde el primer plano de muros hasta el horizonte. El grupo y los rasgos del terreno destacan con luz diurna y verdes naturales.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 870,
+      "sourceHeight": 555,
+      "cardFocus": 0.62,
+      "coverPosition": [54, 56],
+      "sha256": "66a0d8c465bf4dc5f56e4ca05b0458962a485caf378c5abd8304d511bae3d063"
+    },
+    "gms-59-restored-portada": {
+      "decision": "sustituida",
+      "observation": "La piedra, la madera y el cielo mantienen color y textura diferenciados. El edificio completo se reconoce en el encuadre ancho.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 768,
+      "sourceHeight": 768,
+      "cardFocus": 0.57,
+      "coverPosition": [55, 56],
+      "sha256": "956630bae77f07651a2f23ab092bcba113ab478fb838c00cd8d52a9868811d40"
+    },
+    "gms-17-restored-portada": {
+      "decision": "sustituida",
+      "observation": "La vista panorámica separa las cubiertas de teja, las piscinas y la textura del monte; el horizonte aporta profundidad a la portada.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 1600,
+      "sourceHeight": 672,
+      "cardFocus": 0.49,
+      "coverPosition": [52, 61],
+      "sha256": "c7d6b04a918890d8052ce0900b8dff8964818a4918236d0272891ca9d4990b38"
+    },
+    "gms-04-portada": {
+      "decision": "sustituida",
+      "observation": "El hilo de agua sigue visible entre las diferencias de luz del pastizal y conduce desde el primer plano al fondo.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 1192,
+      "sourceHeight": 795,
+      "cardFocus": 0.49,
+      "coverPosition": [50, 30],
+      "sha256": "7f7f3bbf8a61f1aa3b40539d11ca6621f727a65a6a7c1bd9e19842d6b47e1bc7"
+    },
+    "gms-33-portada": {
+      "decision": "editada",
+      "observation": "El remate de la capilla y la figura azul desaparecían en el marco de ficha. El camino tiene suficiente cobertura si la vista se desplaza hacia arriba. Preservar posición de las personas.",
+      "treatment": "Mover coverPosition a [50,8]. La tarjeta muestra el edificio y el sendero completos.",
+      "limitacion": "Detalle fino condicionado por la fuente de archivo.",
+      "sourceWidth": 1024,
+      "sourceHeight": 736,
+      "coverPosition": [50, 8],
+      "sha256": "15aec0b86a97560fc4904643fcb2d5395bfec9b48d9112f2d932040ab96ca863"
+    },
+    "gms-49-portada": {
+      "decision": "conservada",
+      "observation": "El letrero y ambas columnas están claros en la banda y tarjeta. Hay detalle limitado en hojas, coherente con la fuente documental 916 × 611.",
+      "treatment": "Preservar rótulo, pilares y relaciones del original.",
+      "limitacion": "La referencia documental de 916 × 611 px permite leer el rótulo principal, con detalle limitado en follaje.",
+      "sourceWidth": 916,
+      "sourceHeight": 611,
+      "sha256": "20a72e55647fde8422b17c4a9fc242c0409f3b6608721159d45bff411aae88e0"
+    },
+    "gms-61-restored-portada": {
+      "decision": "sustituida",
+      "observation": "Los reflejos de las ventanas, el bronce y el metal negro conservan volumen. La rueda roja sigue siendo reconocible en formatos estrechos.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 1024,
+      "sourceHeight": 768,
+      "cardFocus": 0.67,
+      "coverPosition": [55, 67],
+      "cardPositionY": 58,
+      "sha256": "17a1bdc77bfe8a0c12127083aa33b70e079a851373064b90d88f55d36ac5048e"
+    },
+    "gms-41-portada": {
+      "decision": "editada",
+      "observation": "El vivo nocturno conserva ambiente. El encuadre por defecto corta campanarios. Los bordes de luz y motivos de ventanas siguen visibles a 100% con alguna suavidad.",
+      "treatment": "Subir el encuadre a [50,8]. En 2145×650 se priorizan las torres; la tarjeta muestra ambas torres y portal. Conservar índigo nocturno y temperatura de iluminación.",
+      "limitacion": "La referencia nocturna define el detalle de aristas y letras.",
+      "sourceWidth": 850,
+      "sourceHeight": 540,
+      "coverPosition": [50, 8],
+      "sha256": "4c949375a5cd4e505729125dc4877c93076eff7be9a06b8ccd39f95fd875c93b"
+    },
+    "gms-48-portada": {
+      "decision": "editada",
+      "observation": "La torre, fachada y jardín dan profundidad a la vista. La banda centrada de alto reducido cortaba el techo del campanario.",
+      "treatment": "Subir el eje vertical al 12 % en ficha, manteniendo la iglesia de eje y textura de sendero y pastizal.",
+      "limitacion": "Referencia de 1200 × 675 px.",
+      "sourceWidth": 1200,
+      "sourceHeight": 675,
+      "coverPosition": [50, 12],
+      "sha256": "bd7de7cf815ee054f30c973a35816097aaf962f2c435e01c424bdc12c00d1aa0"
+    },
+    "rio": {
+      "decision": "sustituida",
+      "observation": "El azul del agua, los reflejos y la orilla boscosa se leen en la tarjeta sobre cuencas y en la ampliación de galería.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "sourceWidth": 720,
+      "sourceHeight": 960,
+      "cardFocus": 0.56,
+      "coverPosition": [55, 54],
+      "sha256": "102d987649ff7b5ca66679d872a37eed41af5ea719bfa5189db219bff508d9c1"
+    },
+    "aprendiendo": {
+      "decision": "sustituida",
+      "observation": "La toma institucional de 1600 × 900 px documenta una actividad de educación ambiental en Arequita. La camisa, el gesto y los materiales son legibles en el perfil editorial.",
+      "treatment": "Usar el archivo del Geoparque. Abrir la sombra bajo los árboles y controlar la luz de fondo, conservando tonos de piel.",
+      "sourceWidth": 1600,
+      "sourceHeight": 900,
+      "cardFocus": 0.55,
+      "coverPosition": [50, 55],
+      "sha256": "6e5419f1b14c0fdaaed95bf2e01636daa0dfe5ce196dfc44554749e8f7bb21b6"
+    }
+  },
+  "components": {
+    "entry/territorio-3d.webp": {
+      "decision": "conservada",
+      "observation": "La ilustración de entrada tiene capas definidas y un foco reconocible con su interfaz.",
+      "treatment": "Conservar el encuadre de 2400 × 1050 px de la entrada al recorrido.",
+      "width": 2400,
+      "height": 1050,
+      "sha256": "1ccfce49a444702ee01cb6414c23a3d35976aa6dad6307ed2cc04d95e95127bb"
+    },
+    "experience-miniature/molino-viejo/albedo-cubierta.webp": {
+      "decision": "conservada",
+      "observation": "La superficie de cubierta se diferencia de la torre con el albedo actual.",
+      "treatment": "Mantener 512 × 512 px y la gama de la cubierta.",
+      "width": 512,
+      "height": 512,
+      "sha256": "9a405cd6e478d3ecc85cdd064264cd0be0cf041f451751a5e3b4bbf871cd32fd"
+    },
+    "experience-miniature/molino-viejo/albedo-torre.webp": {
+      "decision": "conservada",
+      "observation": "El albedo muestra el gris cálido y las variaciones de la piedra de la torre.",
+      "treatment": "Mantener 512 × 512 px y la textura mineral sin introducir dominantes.",
+      "width": 512,
+      "height": 512,
+      "sha256": "76e0c20437b35352e92c64a3aae582e498f258c47dffe85e7d18e8620e66d089"
+    },
+    "experience-miniature/molino-viejo/normal-cubierta.webp": {
+      "decision": "conservada",
+      "observation": "El mapa de normales produce el relieve de la cubierta sin ruido dominante.",
+      "treatment": "Preservar canales y 512 × 512 px al montar la textura de cubierta.",
+      "width": 512,
+      "height": 512,
+      "sha256": "6da4fa4386939b66ba8a4916763a90b92eb6f22c79c721aa5a885840a47ab99f"
+    },
+    "experience-miniature/molino-viejo/normal-torre.webp": {
+      "decision": "conservada",
+      "observation": "El mapa de normales conserva microrrelieve y dirección de las juntas.",
+      "treatment": "Preservar canales y 512 × 512 px al montar la textura de la torre.",
+      "width": 512,
+      "height": 512,
+      "sha256": "6da4fa4386939b66ba8a4916763a90b92eb6f22c79c721aa5a885840a47ab99f"
+    },
+    "experience-miniature/stewart-vargas/malla.webp": {
+      "decision": "conservada",
+      "observation": "El canal alfa de la malla marca los huecos de la baranda.",
+      "treatment": "Mantener el patrón de 16 × 16 px y comprobar la transparencia en el modelo.",
+      "width": 16,
+      "height": 16,
+      "sha256": "dfb85e438770a8100b7ab6260779ea1458f7cfa978fe5419e705419eb92573ef"
+    },
+    "footer/unesco.webp": {
+      "decision": "sustituida",
+      "observation": "El distintivo de 77 × 59 px perdía legibilidad en pantallas de densidad doble.",
+      "treatment": "Usar el WebP oficial en español de 610 × 461 px, con su color, proporción y transparencia.",
+      "width": 610,
+      "height": 461,
+      "sha256": "43091b50e18210e33ee6bc89078b35a6084543b940eb1b87a2459c852dc44d17"
+    },
+    "hero/aguas-cover.webp": {
+      "decision": "sustituida",
+      "observation": "La toma desde la orilla conserva el horizonte, los juncos y el ritmo del agua con reflejos claros y nubes diferenciadas.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "37403182b2c9c2d144a2be12da33f642b300a6dde8f05cd69262a992e5e99ac2"
+    },
+    "hero/arequita-cover.webp": {
+      "decision": "sustituida",
+      "observation": "La selección Arequita 2 distingue las capas del monte, las fracturas claras del paredón y las nubes, con detalle visible también en el recorte estrecho.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "e08c8334808ef2f7d941e494dd45d2a4f2cef9c9e772987a9dae5d186c387173"
+    },
+    "hero/mobile/aguas.webp": {
+      "decision": "sustituida",
+      "observation": "La toma desde la orilla conserva el horizonte, los juncos y el ritmo del agua con reflejos claros y nubes diferenciadas.",
+      "treatment": "Conservar el recorte móvil de píxeles exactos a partir de la nueva portada de escritorio.",
+      "width": 1717,
+      "height": 2160,
+      "sha256": "1e6d1e70bcaaf9f29c6054aad5654ede28077aa38d79c8e4d2e08b19414becc8"
+    },
+    "hero/mobile/arequita-rio.webp": {
+      "decision": "sustituida",
+      "observation": "La selección Arequita 2 distingue las capas del monte, las fracturas claras del paredón y las nubes, con detalle visible también en el recorte estrecho.",
+      "treatment": "Conservar el recorte móvil de píxeles exactos a partir de la nueva portada de escritorio.",
+      "width": 1717,
+      "height": 2160,
+      "sha256": "6f536c3b6dc7287cb0c5beabed9c956ea48bbc08fb7f5b70740e350199b07bf7"
+    },
+    "hero/mobile/parque.webp": {
+      "decision": "sustituida",
+      "observation": "La vista panorámica separa las cubiertas de teja, las piscinas y la textura del monte; el horizonte aporta profundidad a la portada.",
+      "treatment": "Conservar el recorte móvil de píxeles exactos a partir de la nueva portada de escritorio.",
+      "limitacion": "Fuente de video comprimido de 1920×1080, con artefactos visibles al ampliar.",
+      "width": 1717,
+      "height": 2160,
+      "sha256": "ab0bbf9b063a903f789c8020f5784f1eea43857d635f4cb7901842b8047c6ed4"
+    },
+    "hero/mobile/salus.webp": {
+      "decision": "editada",
+      "observation": "En móvil estrecho se reconoce el hocico, ojo y agua. La oreja puede entrar parcialmente según ancho: es el límite del recorte común a las cuatro escenas.",
+      "treatment": "Mantener la figura reconocible y regenerar del máster en perfil exacto. Si se exige ver la figura entera a 320 px, buscar una toma menos cerrada.",
+      "width": 1717,
+      "height": 2160,
+      "sha256": "d7bbaf1eb0776d09c8c0bca56a6128f14b9ffd03d3292df3986cff06ad77db9e"
+    },
+    "hero/parque-cover.webp": {
+      "decision": "sustituida",
+      "observation": "La vista panorámica separa las cubiertas de teja, las piscinas y la textura del monte; el horizonte aporta profundidad a la portada.",
+      "treatment": "Publicar la variante seleccionada en WebP con recorte proporcional y el color de la entrega original. Mantener la referencia en créditos.",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "cf6506da025dc2dada8ab749cf78c00454570ba47d105c2da610bd9ba69e1925"
+    },
+    "hero/salus.webp": {
+      "decision": "editada",
+      "observation": "La iluminación de la piedra mantiene volumen en la cara del puma y el agua junto a vegetación. El hocico dispone de aire a la derecha en móvil.",
+      "treatment": "Original de Presidencia 5472 × 3648; encuadre y máscaras selectivas, color del monte y zonas muy negras sin ruido añadido.",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "037855718768573556b2a60ba960d67eeb147dd95b84957247df584f8cfea9a8"
+    },
+    "photo-credit/gms-17.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de Parque de Minas entre las sierras.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 1600,
+      "height": 672,
+      "sha256": "96e25c7da58dc4f4e682c5f678ddf0ea3b46bb0c58d00c9aaa6513b347c89bce"
+    },
+    "photo-credit/gms-33-portada.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de santuario de la virgen del verdún desde el aire con su geometría original.",
+      "treatment": "Conservar 1024 × 736 px junto al enlace de procedencia.",
+      "width": 1024,
+      "height": 736,
+      "sha256": "aa5c469a0b6d857c967e7297e328877bc323a74b35ea6ad4e22ddec963974495"
+    },
+    "photo-credit/gms-41-portada.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de fachada nocturna de la catedral de minas con su geometría original.",
+      "treatment": "Conservar 850 × 540 px junto al enlace de procedencia.",
+      "width": 850,
+      "height": 540,
+      "sha256": "0b3289cdb2db2534333f81702b85fbb775da65900b780231dba5955a58f578f1"
+    },
+    "photo-credit/gms-43.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de cementerio central con su geometría original.",
+      "treatment": "Conservar 700 × 526 px junto al enlace de procedencia.",
+      "width": 700,
+      "height": 526,
+      "sha256": "8e382a0079201f69c91798c55a08eead7c8b7e895e2b4cf152c7303fa4f37cdc"
+    },
+    "photo-credit/gms-48-portada.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de iglesia santa teresita desde el barrio las delicias con su geometría original.",
+      "treatment": "Conservar 1200 × 675 px junto al enlace de procedencia.",
+      "width": 1200,
+      "height": 675,
+      "sha256": "8bd0fea1e9bb920081a890b31e6b89346a2ef9caec91400dc8b67903a37cff4a"
+    },
+    "photo-credit/gms-49-portada.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de entrada del parque rodó de minas · archivo 2017 con su geometría original.",
+      "treatment": "Conservar 916 × 611 px junto al enlace de procedencia.",
+      "width": 916,
+      "height": 611,
+      "sha256": "0d90c717bd5aa487a8d135747d516664325d27b8087a20fdc8aa6d277d8b33bf"
+    },
+    "photo-credit/gms-50.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de gruta colón y conservación de murciélagos con su geometría original.",
+      "treatment": "Conservar 600 × 450 px junto al enlace de procedencia.",
+      "width": 600,
+      "height": 450,
+      "sha256": "15488ff383f6feeecba556566caa22d9143072b1f562d4be8a5d281af57e8462"
+    },
+    "photo-credit/gms-55.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de La Guarida · circuito aéreo en el monte.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 480,
+      "height": 520,
+      "sha256": "3849fec754c74108c6c1b182468002e995a163d401099afe7442739e263fe911"
+    },
+    "photo-credit/gms-56.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de mangas de piedra con su geometría original.",
+      "treatment": "Conservar 740 × 555 px junto al enlace de procedencia.",
+      "width": 740,
+      "height": 555,
+      "sha256": "1e14770a16bb02f85b19b754829ce4823653ba22559dafc022c1e3009adaf336"
+    },
+    "photo-credit/gms-59.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de Cerro Místico · arquitectura en las sierras.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 768,
+      "height": 768,
+      "sha256": "765ccd5f56baeebec1edf1863222b8839b34c9f3a7edac412d33490fd9484cfc"
+    },
+    "photo-credit/gms-60.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de Entrada del Museo de Réplicas en Miniaturas.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 1165,
+      "height": 1990,
+      "sha256": "7aa401ad3d992b8111c57fb009f9add1c8da355d47c8ef6a75ace7df203401aa"
+    },
+    "photo-credit/gms-61.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de interior del museo del molino viejo · archivo mec con su geometría original.",
+      "treatment": "Conservar 600 × 450 px junto al enlace de procedencia.",
+      "width": 600,
+      "height": 450,
+      "sha256": "1da04982243e1d22f1c7a6e48bf4ef55b94e9d38291025e6e9196574d1c6817f"
+    },
+    "place-photo/catalog/gms-01.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de Cerro Arequita y río Santa Lucía.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 4320,
+      "height": 2432,
+      "sha256": "4846e39b91ef8352be324a1e0eacb82dd289b5bd1873f486dfb9bc64b955cd50"
+    },
+    "place-photo/catalog/gms-23.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de represa vieja de aguas blancas con su geometría original.",
+      "treatment": "Conservar 676 × 1200 px junto al enlace de procedencia.",
+      "width": 676,
+      "height": 1200,
+      "sha256": "d60ca878721da4d13f89fa0ea522901517b9007f371f2ef85bc06ae8756c3b9c"
+    },
+    "place-photo/catalog/gms-26.webp": {
+      "decision": "conservada",
+      "observation": "Referencia documental de parque mataojo con su geometría original.",
+      "treatment": "Conservar 900 × 1200 px junto al enlace de procedencia.",
+      "width": 900,
+      "height": 1200,
+      "sha256": "cfd9c60f5b04000989d15e1ef07d8fc9bcece7a714501f6755439247adfa3c66"
+    },
+    "place-photo/catalog/gms-44.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de Fachada de la fábrica que alberga el Museo del Alfajor.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 720,
+      "height": 1280,
+      "sha256": "121fe93d9cff040ba50bd67c6571484bb942dec3e1c07eb42574ff4157cc18c5"
+    },
+    "place-photo/catalog/gms-52.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de El Santa Lucía en la Laguna de los Cuervos.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 720,
+      "height": 960,
+      "sha256": "d9a7d2050a56b7547ca262126bd34db16b48be9269ce8487ffa48523e9220f31"
+    },
+    "place-photo/catalog/gms-58.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de Estructura de piedra del Valle del Hilo de la Vida.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 1350,
+      "height": 2400,
+      "sha256": "bdff0fb7e50a99d5797eaab7687b5d45aec305d6ab3d6524199b1732b9fde431"
+    },
+    "seo-head/favicon.webp": {
+      "decision": "sustituida",
+      "observation": "El favicon publicado por el sitio oficial presenta el símbolo de la marca sobre fondo transparente.",
+      "treatment": "Publicar los 256 × 256 px del icono oficial en WebP sin pérdida de píxeles visibles ni de transparencia.",
+      "width": 256,
+      "height": 256,
+      "sha256": "beb0bd315220fd480a0492e0e989a1b89def6cb3d8a6c50fc2c5e04e7553d930"
+    },
+    "seo-head/social.webp": {
+      "decision": "sustituida",
+      "observation": "El recorte de Arequita 2 conserva el paredón y las capas de monte en la portada social.",
+      "treatment": "Derivar el recorte de la portada compartida y atribuir su referencia a Bienflorencia.",
+      "width": 1200,
+      "height": 630,
+      "sha256": "2da6c531f99db1b44c8596bb87dbcda960f3715e447cf406a0704a974aea62c6"
+    },
+    "site-brand/manantiales-serranos.webp": {
+      "decision": "conservada",
+      "observation": "Formas y letras de Manantiales Serranos legibles en navegación.",
+      "treatment": "Mantener bordes, transparencia y colores institucionales.",
+      "width": 900,
+      "height": 767,
+      "sha256": "80fd8919a6d150882cd70d15e476a39185b9ac426b8e12779ea14790f5c72b9d"
+    },
+    "territory-map/mapa-original.webp": {
+      "decision": "conservada",
+      "observation": "El archivo de referencia permite leer símbolos y etiquetas con su escala de origen.",
+      "treatment": "Conservar geometría, proporción y contenido cartográfico originales.",
+      "width": 1224,
+      "height": 1584,
+      "sha256": "3130669606d57632c3d9ada382c6e51748c040bdce9ec018726213eae30df90b"
+    },
+    "photo-credit/laguna-cuervos-laguna-08.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de Laguna de los Cuervos · río Santa Lucía.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 884,
+      "height": 663,
+      "sha256": "f008b23ad203bb18d5e1a10eca11a6f3a715f2c8c2b24c8bd734ab05dfee7146"
+    },
+    "photo-credit/villa-serrana-campi.webp": {
+      "decision": "sustituida",
+      "observation": "Referencia identificada para la versión editorial de Villa Serrana · paisaje serrano y conjunto urbano.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 2560,
+      "height": 1438,
+      "sha256": "630f3a76694ea0d4800c5043bbbc36e1f7939fd99b5a667f5350a8f09ced5c2e"
+    },
+    "photo-credit/hero-aguas.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de Embalse y sierras de Aguas Blancas.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 790,
+      "height": 445,
+      "sha256": "b76481dabeea756e0f84530cf7046831d8152332cb515634e114b6e72b7d20d0"
+    },
+    "photo-credit/parque-story.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de Parque de Minas · edificios y monte.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 908,
+      "height": 672,
+      "sha256": "630fe0dec355ee093ec92ef53ec716967639acbd89d4a0aaf8e02f40069b9d2a"
+    },
+    "photo-credit/mangas-source.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de Mangas de Piedra · interpretación del paisaje.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 870,
+      "height": 555,
+      "sha256": "a37232a3b1464b848b0bc11e1a7e0efee7bd23b49879eab986c6d392a922c652"
+    },
+    "place-photo/catalog/gms-05.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de El Destacamento · casa de piedra y jardín.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 849,
+      "height": 1200,
+      "sha256": "2972a7f2600791f28334c7973715cffc14c576081127142c878cac2a9d5abd22"
+    },
+    "photo-credit/gms-61-restored-portada.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de Locomóvil del Molino Viejo de Minas.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 1024,
+      "height": 768,
+      "sha256": "7c2f6773de38bbed60888d2bb1c2b55ce9f99cca6214ec1e97654243a211d455"
+    },
+    "photo-credit/gms-04-portada.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de Nacientes del río Santa Lucía.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 1192,
+      "height": 795,
+      "sha256": "2eae928303b9998328a7c55a4b497a9d46538101d48ee4f545550c4febbd1c1f"
+    },
+    "photo-credit/gms-28.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de Edificio Cuna de Fabini · fachada.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 503,
+      "height": 379,
+      "sha256": "878b4b2a7543b5ae4320b41def7e7b01515edb886872ec61ccfec17069cc15d0"
+    },
+    "photo-credit/gms-42.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de Casa natal de Lavalleja · patio de la Casa de la Cultura.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 757,
+      "height": 503,
+      "sha256": "5270996800a712382a31e1a86ca1cc40706ad4b468ab15e01ad6db72074a53f5"
+    },
+    "photo-credit/gms-51.webp": {
+      "decision": "conservada",
+      "observation": "Referencia identificada para la versión editorial de Monte de Ombúes del entorno de Arequita.",
+      "treatment": "Conservar la composición y resolución del archivo de referencia enlazado en créditos.",
+      "width": 533,
+      "height": 400,
+      "sha256": "43fa092ac5c205cb87c8ee4ce8376c6e07d8541504dc678d34d5376962b961ad"
+    }
+  }
+}

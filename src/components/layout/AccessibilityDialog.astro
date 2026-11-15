@@ -1,0 +1,42 @@
+---
+const { motion = false } = Astro.props;
+---
+
+<dialog
+  class="accessibility-dialog"
+  id="accessibility-dialog"
+  aria-labelledby="accessibility-title"
+>
+  <form method="dialog" class="accessibility-heading">
+    <h2 id="accessibility-title">Accesibilidad</h2>
+    <button type="submit" aria-label="Cerrar accesibilidad" class="accessibility-close">
+      ×
+    </button>
+  </form>
+  <fieldset>
+    <legend>Tamaño del texto</legend>
+    <p role="status" class="text-size-status" id="text-size-status">
+      Tamaño actual <strong>100 %</strong>
+    </p>
+    <div class="text-size-options">
+      <button type="button" data-text-size-step="-1" aria-label="A− Reducir tamaño del texto">
+        A−
+      </button>
+      <button type="button" data-text-size-step="1" aria-label="A+ Aumentar tamaño del texto">
+        A+
+      </button>
+      <button type="button" data-text-size-reset>
+        Restablecer
+      </button>
+    </div>
+  </fieldset>
+  {motion && (
+    <button class="accessibility-motion" type="button" aria-pressed="false" data-motion-toggle>
+      Reducir movimiento
+      <span data-motion-state aria-hidden="true" hidden>
+        ✓
+      </span>
+    </button>
+  )}
+  <a href="/accesibilidad/">Información de accesibilidad y contacto</a>
+</dialog>

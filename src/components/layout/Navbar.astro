@@ -1,40 +1,68 @@
 ---
 import Photo from '../brand/Photo.astro';
 import TripTrigger from '../trip/TripTrigger.astro';
+import AccessibilityTrigger from './AccessibilityTrigger.astro';
 ---
 
 <header class="site-header" id="site-header">
   <a aria-label="Manantiales Serranos, elegir experiencia" class="brand" href="/" data-astro-reload>
     <Photo
       alt="Geoparque Mundial de la UNESCO Manantiales Serranos"
-      assetKey="brand-c66ec6c0da68"
+      assetKey="site-brand"
+      sizes="95px"
+      loading="eager"
     />
   </a>
   <nav aria-label="Navegación principal" class="desktop-nav">
     <a href="/inicio/#historia">
-      <span class="nav-number">01</span>La Tierra
+      <span class="nav-number" aria-hidden="true">
+        01
+      </span>
+      La Tierra
     </a>
     <a href="/inicio/#naturaleza">
-      <span class="nav-number">02</span>Agua y vida
+      <span class="nav-number" aria-hidden="true">
+        02
+      </span>
+      Agua y vida
     </a>
     <a href="/inicio/#aprender">
-      <span class="nav-number">03</span>Educación
+      <span class="nav-number" aria-hidden="true">
+        03
+      </span>
+      Educación
     </a>
     <a href="/inicio/#explorar">
-      <span class="nav-number">04</span>Atlas
+      <span class="nav-number" aria-hidden="true">
+        04
+      </span>
+      Atlas
     </a>
     <a href="/inicio/#visita">
-      <span class="nav-number">05</span>Conservar
+      <span class="nav-number" aria-hidden="true">
+        05
+      </span>
+      Conservar
     </a>
   </nav>
   <div class="header-actions">
-    <button aria-label="Buscar temas y fichas" class="round" data-action="search">
+    <AccessibilityTrigger />
+    <button
+      type="button"
+      aria-label="Buscar temas y fichas"
+      aria-haspopup="dialog"
+      aria-controls="search-dialog"
+      aria-keyshortcuts="Control+/ Meta+/"
+      class="round"
+      data-action="search"
+    >
       <svg aria-hidden="true" class="icon">
         <use href="#i-search"></use>
       </svg>
     </button>
     <TripTrigger />
     <button
+      type="button"
       aria-controls="mobile-menu"
       aria-expanded="false"
       aria-label="Abrir menú"

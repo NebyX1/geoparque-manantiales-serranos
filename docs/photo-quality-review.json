@@ -839,8 +839,9 @@
     }
   ],
   "latestRevision": {
-    "date": "2026-11-09",
-    "scope": "Full-site resolution audit, recovered native originals, Mangas restoration and density-aware rendering",
-    "review": "docs/photo-resolution.md"
+    "date": "2026-11-14",
+    "scope": "All 61 places and editorial photography, new primary sources, common WebP profiles and browser verification",
+    "review": "docs/photo-standards.md",
+    "publicationInventory": "src/data/photo-publication.json"
   }
 }

@@ -76,6 +76,8 @@ function nameplate(
   canvas.height = 192;
   const context = canvas.getContext('2d');
   if (!context) return;
+  const font =
+    getComputedStyle(document.documentElement).getPropertyValue('--sans') || 'sans-serif';
   context.fillStyle = '#0b292ce8';
   context.fillRect(0, 0, 768, 192);
   context.strokeStyle = '#a4e2d1';
@@ -83,7 +85,7 @@ function nameplate(
   context.strokeRect(5, 5, 758, 182);
   context.textAlign = 'center';
   context.fillStyle = '#e5f6e7';
-  context.font = '600 37px "Montserrat Variable", sans-serif';
+  context.font = `600 43px ${font}`;
   const words = title.split(' ');
   const lines: string[] = [];
   let current = '';
@@ -98,7 +100,7 @@ function nameplate(
   lines
     .slice(0, 2)
     .forEach((line, index) => context.fillText(line, 384, lines.length > 1 ? 53 + index * 44 : 77));
-  context.font = '500 24px "Montserrat Variable", sans-serif';
+  context.font = `500 30px ${font}`;
   context.fillStyle = '#a3d9d0';
   context.fillText(subtitle, 384, 159, 710);
   const texture = new THREE.CanvasTexture(canvas);

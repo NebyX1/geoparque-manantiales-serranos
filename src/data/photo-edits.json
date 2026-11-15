@@ -1,0 +1,383 @@
+{
+  "gms-01-portada": {
+    "cardFocus": 0.62,
+    "coverPosition": [50, 30]
+  },
+  "gms-02": {
+    "cardFocus": 0.518,
+    "coverPosition": [50, 46],
+    "position": "centre"
+  },
+  "gms-03": {
+    "tone": [2, 38, 18],
+    "balance": [1.031, 0.992, 1.017],
+    "saturation": 0.98
+  },
+  "gms-04-portada": {
+    "cardFocus": 0.49,
+    "coverPosition": [50, 30]
+  },
+  "gms-05-portada": {
+    "cardFocus": 0.39,
+    "coverPosition": [50, 56]
+  },
+  "gms-06": {
+    "tone": [5, 35, 14],
+    "balance": [1.027, 1, 1.016],
+    "saturation": 0.98,
+    "cardFocus": 0.62
+  },
+  "gms-07": {
+    "tone": [6, 39, 16],
+    "balance": [1.022, 1.002, 1.021],
+    "saturation": 1,
+    "cardFocus": 0.535
+  },
+  "gms-08": {
+    "tone": [14, 26, 13],
+    "balance": [1.045, 1.002, 0.992],
+    "cardFocus": 0.53,
+    "saturation": 0.95
+  },
+  "gms-09": {
+    "cardFocus": 0.48,
+    "coverPosition": [50, 53]
+  },
+  "gms-10": {
+    "tone": [13, 6, -14],
+    "balance": [1.007, 0.996, 0.969],
+    "saturation": 0.95,
+    "sharpness": 0.54,
+    "cardFocus": 0.47,
+    "coverPosition": [50, 24]
+  },
+  "gms-11": {
+    "tone": [18, 5, -12],
+    "balance": [1.011, 1, 0.983],
+    "saturation": 0.96,
+    "sharpness": 0.53,
+    "cardFocus": 0.55,
+    "coverPosition": [50, 34]
+  },
+  "gms-12": {
+    "tone": [5, 29, 12],
+    "balance": [1.031, 0.995, 1.013],
+    "cardFocus": 0.45,
+    "saturation": 1
+  },
+  "gms-13": {
+    "tone": [4, 20, 16],
+    "balance": [1.028, 0.998, 1.005],
+    "saturation": 0.97,
+    "cardFocus": 0.47
+  },
+  "gms-14": {
+    "position": "south",
+    "saturation": 0.95,
+    "sharpness": 0.62
+  },
+  "gms-15": {
+    "position": "south",
+    "sharpness": 0.7
+  },
+  "gms-16": {
+    "cardFocus": 0.451,
+    "coverPosition": [50, 51]
+  },
+  "gms-18": {
+    "sharpness": 0.38,
+    "cardFocus": 0.48,
+    "coverPosition": [50, 64]
+  },
+  "gms-19": {
+    "tone": [3, 30, 17],
+    "balance": [1.031, 0.992, 1.012],
+    "saturation": 0.975,
+    "cardFocus": 0.48
+  },
+  "gms-20": {
+    "tone": [7, 30, 20],
+    "balance": [1.035, 0.999, 0.994],
+    "cardFocus": 0.57,
+    "saturation": 0.95
+  },
+  "gms-21": {
+    "tone": [5, 39, 16],
+    "balance": [1.028, 0.996, 1.016],
+    "cardFocus": 0.5,
+    "saturation": 1.01
+  },
+  "gms-22": {
+    "tone": [11, 15, -6],
+    "balance": [1.005, 1.005, 1.025],
+    "saturation": 1.035,
+    "sharpness": 0.52,
+    "cardFocus": 0.52,
+    "coverPosition": [50, 48]
+  },
+  "gms-23-portada": {
+    "cardFocus": 0.72,
+    "coverPosition": [100, 50]
+  },
+  "gms-24": {
+    "tone": [13, 8, -10],
+    "balance": [0.983, 1, 1.017],
+    "saturation": 0.943,
+    "sharpness": 0.5,
+    "cardFocus": 0.61
+  },
+  "gms-25": {
+    "tone": [1, 13, 13],
+    "balance": [1.015, 1, 1.012],
+    "lift": 1.07,
+    "saturation": 0.97,
+    "sharpness": 0.54
+  },
+  "gms-26-portada": {
+    "lift": 1.14,
+    "saturation": 0.9,
+    "coverPosition": [50, 28]
+  },
+  "gms-27": {
+    "tone": [8, 8, -6],
+    "balance": [1.018, 1.006, 0.99],
+    "saturation": 1.015,
+    "sharpness": 0.56,
+    "cardFocus": 0.52,
+    "coverPosition": [50, 16]
+  },
+  "gms-28-restored": {
+    "cardFocus": 0.52,
+    "coverPosition": [50, 48]
+  },
+  "gms-29": {
+    "tone": [13, 8, -6],
+    "balance": [1.008, 1, 0.985],
+    "saturation": 0.946,
+    "sharpness": 0.58
+  },
+  "gms-30": {
+    "tone": [7, 9, -9],
+    "balance": [1.016, 1, 1.011],
+    "saturation": 0.94,
+    "sharpness": 0.55,
+    "cardFocus": 0.5,
+    "coverPosition": [50, 0]
+  },
+  "gms-31": {
+    "position": "south",
+    "tone": [21, 12, -12],
+    "balance": [1.017, 1, 1.038],
+    "saturation": 0.95,
+    "sharpness": 0.55,
+    "cardFocus": 0.61,
+    "coverPosition": [50, 43],
+    "lift": 1.21,
+    "selective": {
+      "shadowLift": 0.62
+    }
+  },
+  "gms-32": {
+    "cardFocus": 0.67,
+    "tone": [6, 10, -3],
+    "lift": 1.08,
+    "balance": [1.006, 1, 1.018],
+    "saturation": 0.963,
+    "sharpness": 0.53
+  },
+  "gms-34": {
+    "cardFocus": 0.34,
+    "tone": [2, 11, 3],
+    "lift": 1.12,
+    "balance": [1.009, 1, 1.014],
+    "saturation": 0.969,
+    "sharpness": 0.55
+  },
+  "gms-35": {
+    "tone": [12, 7, -13],
+    "balance": [1.008, 1.005, 1.013],
+    "saturation": 0.951,
+    "sharpness": 0.54,
+    "cardFocus": 0.51
+  },
+  "gms-37": {
+    "tone": [9, 4, -12],
+    "balance": [0.994, 1, 1.015],
+    "saturation": 0.963,
+    "sharpness": 0.59,
+    "coverPosition": [50, 66]
+  },
+  "gms-38": {
+    "tone": [15, 10, -11],
+    "balance": [0.992, 1, 1.013],
+    "saturation": 0.961,
+    "sharpness": 0.57,
+    "cardFocus": 0.47
+  },
+  "gms-39": {
+    "tone": [9, 8, -7],
+    "balance": [1.012, 1, 0.995],
+    "saturation": 0.974,
+    "sharpness": 0.56,
+    "coverPosition": [50, 25]
+  },
+  "gms-40": {
+    "cardFocus": 0.38,
+    "tone": [15, 9, -10],
+    "balance": [1.008, 1, 1.012],
+    "saturation": 0.943,
+    "sharpness": 0.54,
+    "coverPosition": [50, 57]
+  },
+  "gms-42-restored": {
+    "cardFocus": 0.56,
+    "coverPosition": [54, 47]
+  },
+  "gms-43-restored": {
+    "position": "north",
+    "lift": 1.073,
+    "saturation": 0.94,
+    "tone": [-3, 8, -8],
+    "balance": [1.035, 1.005, 0.978],
+    "sharpness": 0.54,
+    "coverPosition": [50, 0]
+  },
+  "gms-44-portada": {
+    "cardFocus": 0.65,
+    "coverPosition": [60, 55]
+  },
+  "gms-45": {
+    "tone": [6, 5, -12],
+    "balance": [1.005, 0.982, 0.987],
+    "saturation": 0.89,
+    "sharpness": 0.52
+  },
+  "gms-46": {
+    "position": "north",
+    "sharpness": 0.6,
+    "cardFocus": 0.31
+  },
+  "gms-47": {
+    "tone": [9, 6, -5],
+    "balance": [1.025, 1, 0.98],
+    "saturation": 0.95,
+    "sharpness": 0.55
+  },
+  "gms-50-restored": {
+    "position": "south",
+    "lift": 1.1,
+    "saturation": 0.88,
+    "tone": [10, 3, -9],
+    "balance": [1.02, 1.012, 0.995],
+    "selective": {
+      "shadowLift": 0.44
+    },
+    "sharpness": 0.49
+  },
+  "gms-51-restored": {
+    "cardFocus": 0.52,
+    "coverPosition": [50, 56],
+    "cardPositionY": 56
+  },
+  "gms-52-portada": {
+    "cardFocus": 0.7,
+    "coverPosition": [50, 72],
+    "cardPositionY": 74
+  },
+  "gms-53": {
+    "position": "south",
+    "saturation": 0.91,
+    "tone": [11, 5, -8],
+    "balance": [1.017, 1.008, 0.98],
+    "selective": {
+      "shadowLift": 0.4,
+      "fadeFromTop": [0.29, 0.52]
+    },
+    "sharpness": 0.55,
+    "cardFocus": 0.3
+  },
+  "gms-54": {
+    "cardFocus": 0.755,
+    "coverPosition": [50, 20],
+    "cardPositionY": 39
+  },
+  "gms-55-restored-portada": {
+    "cardFocus": 0.34,
+    "coverPosition": [34, 35]
+  },
+  "gms-56-restored-portada": {
+    "cardFocus": 0.62,
+    "coverPosition": [54, 56]
+  },
+  "gms-57": {
+    "lift": 1.1,
+    "saturation": 0.98,
+    "tone": [9, 21, 9],
+    "balance": [1.025, 1.006, 0.98],
+    "selective": {
+      "shadowLift": 0.38
+    },
+    "sharpness": 0.55
+  },
+  "gms-58-portada": {
+    "cardFocus": 0.51,
+    "coverPosition": [50, 54]
+  },
+  "gms-59-restored-portada": {
+    "cardFocus": 0.57,
+    "coverPosition": [55, 56]
+  },
+  "gms-60-restored-portada": {
+    "cardFocus": 0.52,
+    "coverPosition": [51, 19],
+    "cardPositionY": 48
+  },
+  "gms-61-restored-portada": {
+    "cardFocus": 0.67,
+    "coverPosition": [55, 67],
+    "cardPositionY": 58
+  },
+  "parque-story": {
+    "cardFocus": 0.51,
+    "coverPosition": [50, 50]
+  },
+  "gms-17-restored-portada": {
+    "cardFocus": 0.49,
+    "coverPosition": [52, 61]
+  },
+  "arequita-ribera": {
+    "cardFocus": 0.66,
+    "coverPosition": [50, 39]
+  },
+  "aguas": {
+    "cardFocus": 0.59,
+    "coverPosition": [58, 48]
+  },
+  "gms-48-portada": {
+    "coverPosition": [50, 12]
+  },
+  "gms-33-portada": {
+    "coverPosition": [50, 8]
+  },
+  "gms-36": {
+    "coverPosition": [50, 24]
+  },
+  "gms-41-portada": {
+    "coverPosition": [50, 8]
+  },
+  "rio": {
+    "cardFocus": 0.56,
+    "coverPosition": [55, 54]
+  },
+  "aprendiendo": {
+    "tone": [11, 6, -12],
+    "balance": [1.011, 1.002, 0.989],
+    "saturation": 0.96,
+    "selective": {
+      "shadowLift": 0.43
+    },
+    "sharpness": 0.45,
+    "cardFocus": 0.55,
+    "coverPosition": [50, 55]
+  }
+}

@@ -20,7 +20,7 @@ import { environmentalAxes, environmentalPurpose } from '../../data/environment'
       {environmentalAxes.map((axis) => (
         <article class="knowledge-card" id={`eje-${axis.id}`}>
           <div class="knowledge-image">
-            <Photo assetKey={axis.image} alt="" sizes="(max-width: 700px) 90vw, 45vw" />
+            <Photo assetKey={axis.image} profile="editorial" alt="" />
           </div>
           <div class="knowledge-copy">
             <p class="eyebrow">{axis.label}</p>

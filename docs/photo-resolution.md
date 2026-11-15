@@ -1,5 +1,7 @@
 # Calidad fotográfica en todo el sitio
 
+Registro de la revisión del 9 de noviembre. El catálogo, los perfiles y las comprobaciones vigentes están en [Estándar fotográfico](photo-standards.md).
+
 La revisión del 9 de noviembre de 2026 amplía la corrección anterior de dos fotos. Se revisan los archivos publicados y los bitmaps realmente descargados en cada marco, tanto en la web como en las ventanas del recorrido 3D.
 
 ## Qué fallaba

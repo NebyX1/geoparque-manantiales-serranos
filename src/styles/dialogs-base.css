@@ -32,7 +32,7 @@ dialog[open] {
   z-index: 9;
 }
 .dialog-head h2 {
-  font-size: 23px;
+  font-size: 1.4375rem;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
@@ -44,14 +44,14 @@ dialog[open] {
   padding: 30px;
 }
 .dialog-eyebrow {
-  font-size: 10px;
+  font-size: var(--type-small);
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 7px;
 }
 .dialog-subtitle {
-  font-size: 13px;
+  font-size: var(--type-body);
   color: var(--muted);
   line-height: 1.8;
   margin-bottom: 25px;
@@ -59,16 +59,15 @@ dialog[open] {
 .detail-hero {
   height: 310px;
   position: relative;
-  background: var(--sage);
+  overflow: hidden;
+  background: var(--deep);
 }
-.detail-hero img {
-  object-position: center;
-}
-.detail-hero:after {
-  content: '';
+.detail-hero > img {
   position: absolute;
-  inset: 50% 0 0;
-  background: linear-gradient(transparent, #0d251b9c);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .detail-photo-caption {
   position: absolute;
@@ -76,14 +75,14 @@ dialog[open] {
   left: 30px;
   right: 30px;
   color: white;
-  font-size: 10px;
+  font-size: var(--type-small);
   z-index: 1;
 }
 .detail-main {
   padding: 32px;
 }
 .detail-title {
-  font-size: 45px;
+  font-size: 2.8125rem;
   font-weight: 500;
   letter-spacing: -0.055em;
   line-height: 1.02;
@@ -91,7 +90,7 @@ dialog[open] {
   margin: 15px 0;
 }
 .detail-tagline {
-  font: italic 25px/1.25 var(--serif);
+  font: italic 1.5625rem/1.25 var(--serif);
   color: var(--green);
   margin-bottom: 22px;
 }
@@ -102,7 +101,7 @@ dialog[open] {
   align-items: start;
 }
 .detail-description {
-  font-size: 14px;
+  font-size: var(--type-body);
   line-height: 1.9;
   color: var(--muted);
 }
@@ -111,17 +110,17 @@ dialog[open] {
   border: 1px solid var(--line);
   padding: 22px;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: var(--type-small);
   position: sticky;
   top: 102px;
 }
 .detail-side h3 {
-  font-size: 15px;
+  font-size: var(--type-small);
   line-height: 1.3;
   font-weight: 600;
 }
 .detail-side p {
-  font-size: 11px;
+  font-size: var(--type-small);
   color: var(--muted);
   line-height: 1.8;
   margin-top: 13px;
@@ -129,25 +128,25 @@ dialog[open] {
 .detail-side .btn {
   width: 100%;
   margin-top: 17px;
-  font-size: 11px;
+  font-size: var(--type-control);
   min-height: 44px;
 }
 .detail-side .status {
   display: inline-block;
   margin: 12px 0 0;
   padding: 5px 8px;
-  font-size: 9px;
+  font-size: var(--type-small);
   background: var(--sage);
   border-radius: 4px;
 }
 .detail-body h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: -0.03em;
   margin: 30px 0 14px;
 }
 .detail-body p {
-  font-size: 13px;
+  font-size: var(--type-body);
   line-height: 1.9;
   margin: 14px 0;
   color: var(--muted);
@@ -161,7 +160,7 @@ dialog[open] {
   padding: 8px 12px;
   border: 1px solid var(--line);
   border-radius: 20px;
-  font-size: 10px;
+  font-size: var(--type-control);
 }
 .search-dialog {
   width: 750px;
@@ -170,41 +169,48 @@ dialog[open] {
   margin-bottom: 22px;
 }
 .search-results {
+  --search-thumbnail-width: clamp(52px, 9vw, 65px);
   list-style: none;
 }
 .search-results a {
-  display: flex;
+  display: grid;
+  grid-template-columns: var(--search-thumbnail-width) minmax(0, 1fr) 18px;
   align-items: center;
-  gap: 14px;
+  gap: clamp(10px, 2vw, 14px);
   padding: 13px 0;
   border-bottom: 1px solid var(--line);
 }
-.search-results img {
-  width: 65px;
-  height: 51px;
+.search-results a > img {
+  justify-self: start;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  margin: 0;
   border-radius: 6px;
 }
+.search-results a > span {
+  overflow-wrap: anywhere;
+}
 .search-results strong {
-  font-size: 14px;
+  font-size: var(--type-control);
   display: block;
   font-weight: 500;
   line-height: 1.3;
 }
 .search-results small {
-  font-size: 10px;
+  font-size: var(--type-small);
   color: var(--muted);
   display: block;
   margin-top: 5px;
 }
 .search-results .icon {
-  margin-left: auto;
   width: 18px;
 }
 .search-empty {
   padding: 40px 0;
   color: var(--muted);
   text-align: center;
-  font-size: 13px;
+  font-size: var(--type-small);
 }
 .dialog-actions {
   display: flex;
@@ -227,11 +233,11 @@ dialog[open] {
   color: var(--green);
 }
 .trip-empty h3 {
-  font: italic 31px var(--serif);
+  font: italic 1.9375rem var(--serif);
   margin-bottom: 12px;
 }
 .trip-empty p {
-  font-size: 13px;
+  font-size: var(--type-body);
   color: var(--muted);
   max-width: 390px;
   margin: 0 auto 22px;
@@ -242,24 +248,26 @@ dialog[open] {
 }
 .saved-item {
   display: grid;
-  grid-template-columns: 82px 1fr auto;
+  grid-template-columns: 82px minmax(0, 1fr) auto;
   gap: 18px;
   align-items: center;
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
 .saved-item img {
-  height: 75px;
+  height: auto;
+  aspect-ratio: 4 / 3;
   border-radius: 9px;
 }
 .saved-item h3 {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
 }
 .saved-item small {
-  font-size: 10px;
+  font-size: var(--type-small);
   color: var(--muted);
   display: block;
   margin-top: 5px;
@@ -271,14 +279,14 @@ dialog[open] {
   margin-top: 9px;
 }
 .saved-controls label {
-  font-size: 10px;
+  font-size: var(--type-control);
   color: var(--muted);
   display: flex;
   gap: 8px;
   align-items: center;
 }
 .saved-controls select {
-  font-size: 10px;
+  font-size: var(--type-body);
   border: 1px solid var(--line);
   background: var(--white);
   border-radius: 4px;
@@ -303,11 +311,11 @@ dialog[open] {
   margin-top: 24px;
 }
 .trip-export h3 {
-  font-size: 15px;
+  font-size: var(--type-small);
   font-weight: 500;
 }
 .trip-export p {
-  font-size: 11px;
+  font-size: var(--type-body);
   color: var(--muted);
   margin-top: 9px;
   line-height: 1.7;
@@ -320,7 +328,7 @@ dialog[open] {
   margin-top: 15px;
 }
 .trip-date-row label {
-  font-size: 11px;
+  font-size: var(--type-small);
 }
 .trip-date-row input {
   border: 1px solid var(--line);
@@ -328,10 +336,10 @@ dialog[open] {
   background: var(--white);
   padding: 9px;
   min-height: 43px;
-  font-size: 12px;
+  font-size: var(--type-body);
 }
 .quiz-card h3 {
-  font: italic 31px/1.2 var(--serif);
+  font: italic 1.9375rem/1.2 var(--serif);
   margin: 20px 0 25px;
 }
 .quiz-options {
@@ -344,7 +352,7 @@ dialog[open] {
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 8px;
-  font-size: 13px;
+  font-size: var(--type-control);
 }
 .quiz-options button.correct {
   background: #e3efd0;
@@ -359,7 +367,7 @@ dialog[open] {
   background: var(--sage);
   border-radius: 8px;
   margin-top: 18px;
-  font-size: 13px;
+  font-size: var(--type-body);
   line-height: 1.8;
 }
 .quiz-progress {
@@ -392,17 +400,26 @@ dialog[open] {
   object-fit: contain;
   background: #0a1a13;
 }
+.lightbox:has(.lightbox-image[data-photo-profile='gallery']) {
+  width: min(1200px, 110svh);
+}
+.lightbox .lightbox-image[data-photo-profile='gallery'] {
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
 .lightbox-caption {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   padding: 20px 28px;
-  font-size: 12px;
+  font-size: var(--type-small);
 }
 .lightbox-caption small {
   display: block;
-  font-size: 10px;
+  font-size: var(--type-small);
   color: #b7c5af;
   margin-top: 6px;
 }
@@ -411,14 +428,14 @@ dialog[open] {
   color: var(--white);
 }
 .sources-body h3 {
-  font-size: 23px;
+  font-size: 1.4375rem;
   font-weight: 500;
   letter-spacing: -0.035em;
   margin: 25px 0 14px;
 }
 .sources-body p,
 .sources-body li {
-  font-size: 12px;
+  font-size: var(--type-body);
   line-height: 1.9;
   color: var(--muted);
 }
@@ -431,7 +448,7 @@ dialog[open] {
   overflow-wrap: anywhere;
 }
 .sources-body .ref-entry {
-  font-size: 11px;
+  font-size: var(--type-small);
   line-height: 1.75;
   padding: 10px 0;
   border-bottom: 1px solid var(--line);
@@ -442,18 +459,18 @@ dialog[open] {
   margin: 25px 0;
 }
 .article-reading h3 {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 500;
   letter-spacing: -0.04em;
   margin: 27px 0 14px;
 }
 .article-reading p {
-  font-size: 14px;
+  font-size: var(--type-body);
   color: var(--muted);
   line-height: 1.9;
 }
 .article-reading .article-title {
-  font-size: 43px;
+  font-size: 2.6875rem;
   line-height: 1.1;
   font-weight: 500;
   letter-spacing: -0.045em;
@@ -463,19 +480,22 @@ dialog[open] {
   margin-top: 25px;
 }
 .article-reading .lead {
-  font: italic 26px/1.45 var(--serif);
+  font: italic 1.625rem/1.45 var(--serif);
   color: var(--forest);
   margin-bottom: 24px;
 }
 .reading-image {
-  height: 270px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 12px;
   margin-bottom: 30px;
 }
 .storage-alert {
   background: #fff1ce;
   color: #655423;
-  font-size: 11px;
+  font-size: var(--type-small);
   padding: 14px;
   border-radius: 7px;
   margin-bottom: 20px;

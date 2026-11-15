@@ -24,7 +24,7 @@
   color: var(--white);
 }
 .geo-toolbar-label {
-  font-size: 8px;
+  font-size: var(--type-small);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   display: flex;
@@ -48,7 +48,7 @@
   color: inherit;
   background: none;
   padding: 6px 15px;
-  font-size: 9px;
+  font-size: var(--type-control);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   transition:
@@ -57,7 +57,7 @@
     color 0.3s;
 }
 .geo-tab b {
-  font: 700 25px/1 var(--display);
+  font: 700 1.5625rem/1 var(--display);
 }
 .geo-tab:hover {
   transform: translateY(-3px);
@@ -69,7 +69,7 @@
   border-color: var(--paper);
 }
 .geo-skip {
-  font-size: 9px;
+  font-size: var(--type-control);
   border-bottom: 1px solid #ffffff85;
   padding-block: 8px;
   white-space: nowrap;
@@ -127,7 +127,7 @@
   min-width: 0;
 }
 .geo-eyebrow {
-  font-size: 9px;
+  font-size: var(--type-small);
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -143,7 +143,7 @@
   opacity: 0.4;
 }
 .geo-number {
-  font: 800 clamp(92px, 10.8vw, 175px)/0.82 var(--display);
+  font: 800 clamp(5.75rem, calc(10.8vw * var(--text-scale)), 10.9375rem)/0.95 var(--display);
   letter-spacing: -0.05em;
   color: var(--scene-accent);
   margin: 20px 0 12px;
@@ -152,7 +152,7 @@
   gap: 23px;
 }
 .geo-number .geo-time {
-  font: 500 10px/1.7 var(--sans);
+  font: 500 var(--type-small)/1.7 var(--sans);
   letter-spacing: 0.03em;
   max-width: 140px;
   color: var(--scene-ink);
@@ -162,7 +162,7 @@
   transform-origin: 50% 100%;
 }
 .geo-title {
-  font: 800 clamp(52px, 5.5vw, 90px)/0.88 var(--display);
+  font: 800 clamp(3.25rem, calc(5.5vw * var(--text-scale)), 5.625rem)/1 var(--display);
   letter-spacing: -0.018em;
   text-transform: uppercase;
   max-width: 560px;
@@ -171,13 +171,13 @@
   display: block;
 }
 .geo-description {
-  font-size: 12px;
+  font-size: var(--type-small);
   line-height: 1.9;
   max-width: 405px;
   margin-top: 20px;
 }
 .geo-identity .text-link {
-  font-size: 10px;
+  font-size: var(--type-control);
   margin-top: 15px;
   color: var(--scene-ink);
   border-color: currentColor;
@@ -205,6 +205,7 @@
 }
 .geo-photo {
   aspect-ratio: 1.35;
+  max-height: 520px;
   overflow: hidden;
   position: relative;
   background: var(--deep);
@@ -228,10 +229,11 @@
   bottom: 16px;
   padding: 7px 10px;
   background: var(--paper);
-  font: 600 8px/1.4 var(--sans);
+  font: 600 var(--type-small)/1.4 var(--sans);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 78%;
+  overflow-wrap: anywhere;
 }
 .geo-photo-caption {
   padding: 18px 13px 10px;
@@ -242,15 +244,18 @@
 }
 .geo-photo-caption small {
   display: block;
-  font-size: 8px;
+  font-size: var(--type-small);
   letter-spacing: 0.13em;
   margin-bottom: 7px;
   text-transform: uppercase;
 }
 .geo-photo-caption strong {
   display: block;
-  font: 700 clamp(26px, 3vw, 43px)/0.95 var(--display);
+  font: 700 clamp(1.625rem, calc(3vw * var(--text-scale)), 2.6875rem)/1.05 var(--display);
   text-transform: uppercase;
+}
+.geo-photo-caption strong + small {
+  margin: 6px 0 0;
 }
 .geo-photo-caption .save-btn {
   position: static;
@@ -300,6 +305,7 @@
 .geo-footer {
   min-height: 57px;
   padding: 12px var(--gutter);
+  padding-inline-end: max(var(--gutter), 82px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -307,13 +313,13 @@
   position: relative;
   z-index: 5;
   border-top: 1px solid #fff3;
-  font-size: 8px;
+  font-size: var(--type-small);
   letter-spacing: 0.12em;
   background: #12271d26;
   color: var(--white);
 }
 .geo-footer b {
-  font: 700 22px var(--display);
+  font: 700 1.375rem var(--display);
 }
 .geo-footer-control {
   display: flex;
@@ -352,8 +358,8 @@
 }
 .is-pinned .geo-stage {
   position: sticky;
-  top: var(--nav);
-  height: calc(100svh - var(--nav));
+  top: var(--site-header-height, var(--nav));
+  height: calc(100svh - var(--site-header-height, var(--nav)));
 }
 .is-pinned .geo-scene {
   position: absolute;
@@ -363,13 +369,26 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  will-change: transform, opacity;
+  will-change: opacity;
 }
 .is-pinned .geo-scene.is-active {
   pointer-events: auto;
 }
-.is-pinned .geo-polaroid,
-.is-pinned .geo-number,
+.is-pinned .geo-scene-inner {
+  grid-template-rows: minmax(0, 1fr);
+}
+.is-pinned .geo-polaroid {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  max-height: calc(100% - 14px);
+}
+.is-pinned .geo-photo {
+  aspect-ratio: auto;
+  min-height: 0;
+}
+.is-pinned .geo-scene:not(.is-active) .geo-scene-inner {
+  visibility: hidden;
+}
 .is-pinned .geo-halo {
   will-change: transform;
 }

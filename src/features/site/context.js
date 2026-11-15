@@ -1,8 +1,8 @@
 import { applyPhotoMetadata } from './photo-resolution.js';
+import { photoProfiles } from '../../lib/photo-profiles.mjs';
 
 export function initCore(c) {
   const DATA = JSON.parse(document.getElementById('page-data').textContent);
-  const ASSETS = JSON.parse(document.getElementById('client-assets').textContent);
   const places = DATA.places;
   const byId = new Map(places.map((p) => [p.id, p]));
   const $ = (selector, root = document) => root.querySelector(selector);
@@ -19,37 +19,32 @@ export function initCore(c) {
       .toLowerCase();
   const icon = (name) => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
   const placeURL = (id) => `/lugares/${byId.get(Number(id)).slug}/`;
-  const photo = (key) => {
-    if (!ASSETS[key]) throw new Error(`Fotografía desconocida: ${key}`);
-    return ASSETS[key];
-  };
   const documented =
     'El estudio de una ficha no habilita el acceso al sitio. Confirmá autorización y condiciones con sus responsables antes de una salida de campo.';
   const refText = (text) => esc(text);
   const imageCaption = (p) => p.photoCaption || p.name;
   const photoInfo = (key) => DATA.photos[key];
-  const photoAttributes = (key) => {
+  const photo = (key, profile) => {
     const info = photoInfo(key);
-    return info
-      ? `data-photo-fit="${esc(info.fit)}" data-photo-kind="${esc(info.kind)}" data-photo-key="${esc(info.key)}" data-photo-width="${info.width}" data-photo-height="${info.height}" style="--photo-width:${info.width}px;--photo-height:${info.height}px" ${info.srcset ? `srcset="${esc(info.srcset)}" sizes="320px"` : ''}`
-      : '';
+    const variant = DATA.photoVariants[profile]?.[info?.key];
+    if (!variant) throw new Error(`Fotografía sin perfil ${profile}: ${key}`);
+    const [src, srcset] = variant;
+    const { width, height, sizes } = photoProfiles[profile];
+    return { src, srcset, sizes, width, height, profile, kind: info.kind, key: info.key };
+  };
+  const photoAttributes = (key, profile) => {
+    const p = photo(key, profile);
+    return `data-photo-fit="cover" data-photo-kind="${esc(p.kind)}" data-photo-key="${esc(p.key)}" data-photo-profile="${esc(profile)}" data-photo-width="${p.width}" data-photo-height="${p.height}" width="${p.width}" height="${p.height}" decoding="async" sizes="${esc(p.sizes)}" srcset="${esc(p.srcset)}" src="${esc(p.src)}"`;
+  };
+  const setPhoto = (image, key, profile) => {
+    applyPhotoMetadata(image, photo(key, profile));
   };
   const photoCredit = (key) => {
     const info = photoInfo(key);
     return info
-      ? `<p class="photo-credit">${info.label ? `<strong>${esc(info.label)}.</strong> ` : ''}${esc(info.credit)}. <a href="${esc(info.auditUrl)}">Ver fuente${info.kind === 'restored' ? ' y foto original' : ''} ↗</a></p>`
+      ? `<p class="photo-credit">${info.label ? `<strong>${esc(info.label)}.</strong> ` : ''}${esc(info.credit)}. <a href="${esc(info.auditUrl)}">Ver fuente${info.hasOriginal ? ' e imagen de referencia' : ''} ↗</a></p>`
       : '';
   };
-  function hydratePhotos(root = document) {
-    $$('img[data-photo]', root).forEach((img) => {
-      img.src = photo(img.dataset.photo);
-      const info = photoInfo(img.dataset.photo);
-      applyPhotoMetadata(img, info);
-      img.removeAttribute('data-photo');
-      img.decoding = 'async';
-    });
-  }
-  hydratePhotos();
   $$('svg.icon').forEach((node) => node.setAttribute('aria-hidden', 'true'));
   let toastTimer;
   function toast(message) {
@@ -74,7 +69,6 @@ export function initCore(c) {
 
   Object.defineProperties(c, {
     DATA: { configurable: true, get: () => DATA },
-    ASSETS: { configurable: true, get: () => ASSETS },
     places: { configurable: true, get: () => places },
     byId: { configurable: true, get: () => byId },
     $: { configurable: true, get: () => $ },
@@ -83,14 +77,13 @@ export function initCore(c) {
     normalized: { configurable: true, get: () => normalized },
     icon: { configurable: true, get: () => icon },
     placeURL: { configurable: true, get: () => placeURL },
-    photo: { configurable: true, get: () => photo },
+    setPhoto: { configurable: true, get: () => setPhoto },
     documented: { configurable: true, get: () => documented },
     refText: { configurable: true, get: () => refText },
     imageCaption: { configurable: true, get: () => imageCaption },
     photoInfo: { configurable: true, get: () => photoInfo },
     photoAttributes: { configurable: true, get: () => photoAttributes },
     photoCredit: { configurable: true, get: () => photoCredit },
-    hydratePhotos: { configurable: true, get: () => hydratePhotos },
     toastTimer: {
       configurable: true,
       get: () => toastTimer,

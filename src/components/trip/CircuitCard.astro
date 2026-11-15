@@ -11,6 +11,7 @@ const href = `/circuitos/${circuit.id}/`;
 <article class="route-card reveal">
   <a aria-label={`Leer itinerario de aprendizaje ${circuit.name}`} class="route-image" href={href}>
     <Photo
+      profile="place-card"
       alt={
         circuit.imageContext ? 'Imagen del paisaje serrano, utilizada como contexto' : circuit.name
       }

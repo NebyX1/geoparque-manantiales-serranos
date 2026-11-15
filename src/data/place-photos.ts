@@ -46,25 +46,21 @@ export function photoForPlace(id: number): PlacePhoto {
 
 export function photoForAsset(key: string): VerifiedPhoto | undefined {
   const id = editorialPhotoPlaces[key];
-  return id === undefined ? byAsset.get(key) : photoForPlace(id);
+  return byAsset.get(key) ?? (id === undefined ? undefined : photoForDisplay(id));
+}
+
+export function placeCoverKey(photoKey: string): string {
+  const cover = `${photoKey}-portada`;
+  return byAsset.has(cover) ? cover : photoKey;
+}
+
+export function photoForDisplay(id: number): VerifiedPhoto {
+  const source = photoForPlace(id);
+  return byAsset.get(placeCoverKey(source.key)) ?? source;
 }
 
 export function photoLabel(photo: Pick<PlacePhoto, 'kind'>) {
-  return photo.kind === 'restored'
-    ? 'Restauración con IA'
-    : photo.kind === 'aerial'
-      ? 'Foto aérea · IDE 2017–2018'
-      : photo.kind === 'video-frame'
-        ? 'Fotograma del museo'
-        : '';
-}
-
-export function photoFit(photo: VerifiedPhoto) {
-  return 'fit' in photo && photo.fit === 'contain'
-    ? 'contain'
-    : photo.height > photo.width * 1.1
-      ? 'contain'
-      : 'cover';
+  return photo.kind === 'aerial' ? 'Foto aérea · IDE 2017–2018' : '';
 }
 
 export function photoAuditUrl(photo: Pick<VerifiedPhoto, 'key'>) {
@@ -85,26 +81,24 @@ export const browserPhotoMetadata = Object.fromEntries(
         alt: photo.alt,
         kind: photo.kind,
         credit: photo.credit,
+        hasOriginal: 'referenceFile' in photo && Boolean(photo.referenceFile),
         label: photoLabel(photo),
-        fit: photoFit(photo),
         auditUrl: photoAuditUrl(photo),
         key: photo.key,
-        width: photo.width,
-        height: photo.height,
       },
     ];
   }),
 );
 
 export function placePhotoPresentation(id: number) {
-  const photo = photoForPlace(id);
+  const photo = photoForDisplay(id);
   return {
     image: photo.key,
+    images: [{ key: photo.key, alt: photo.alt, caption: photo.caption }],
     imageContext: false,
     photoCaption: photo.caption,
     photoKind: photo.kind,
     photoCredit: photo.credit,
     photoSource: photo.sourcePage,
-    photoFit: photoFit(photo),
   };
 }

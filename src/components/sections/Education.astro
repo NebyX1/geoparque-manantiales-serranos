@@ -1,6 +1,8 @@
 ---
 import Photo from '../brand/Photo.astro';
 import { learningActivities } from '../../data/environment';
+import { photoForAsset } from '../../data/place-photos';
+const landscape = photoForAsset('escuela')!;
 ---
 
 <section aria-labelledby="education-title" class="section education" id="aprender">
@@ -36,12 +38,7 @@ import { learningActivities } from '../../data/environment';
       </div>
     </div>
     <div class="education-image reveal">
-      <Photo
-        alt="Actividad educativa en un entorno natural del Geoparque, fotografía del material institucional"
-        assetKey="aprendiendo"
-        loading="lazy"
-      />
-      <span class="photo-label education-photo-label">Restauración con IA · Mangas de Piedra</span>
+      <Photo profile="editorial" alt={landscape.alt} assetKey={landscape.key} loading="lazy" />
       <div class="education-sticker">
         <svg aria-hidden="true" class="icon">
           <use href="#i-book"></use>

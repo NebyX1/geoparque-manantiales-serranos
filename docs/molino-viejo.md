@@ -27,6 +27,8 @@ Sólo se sustituye GMS-61; los otros 47 GLB reconstruidos conservan sus hashes. 
 
 ## Validación y evidencia
 
+La versión WebP conserva la geometría y los píxeles de los cuatro mapas del GLB evaluado. Los archivos se editan en `src/assets/images/experience-miniature/molino-viejo/` y la correspondencia de hashes está en `landmark-asset-approvals.json`.
+
 El dictamen nuevo está en `molino-viejo-review.json`. Los renders y las siete capturas del juego incluyen inspector, vista baja, recorrido, 320 px, horizontal 844 × 390 y reflow equivalente a 200 % en 640 × 450. Se inspeccionan silueta, materiales, contacto entre piezas y separación del HUD. El manifiesto `game/review.json` registra respuestas y errores del navegador, además del hash del GLB servido.
 
 Los tests comprueban que albedo y normales permanecen incrustados tras exportar y que la maqueta sigue estática mientras avanza el reloj en Chromium y WebKit. La validación general es `npm run verify`; su salida se conserva en `reports/experience-review/molino-viejo/verify.log`.

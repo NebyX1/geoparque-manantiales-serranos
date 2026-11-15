@@ -13,9 +13,14 @@ export function initGallery(c) {
           caption: 'Manantiales Serranos · Lugares de interés',
         }
       : c.DATA.gallery[galleryIndex];
-    c.$('#lightbox-image').src = c.photo(item.key);
-    c.$('#lightbox-image').alt = item.title;
-    applyPhotoMetadata(c.$('#lightbox-image'), map ? undefined : c.photoInfo(item.key));
+    const image = c.$('#lightbox-image');
+    if (map) {
+      applyPhotoMetadata(image);
+      image.src = c.DATA.mapOriginal;
+    } else {
+      c.setPhoto(image, item.key, 'gallery');
+    }
+    image.alt = item.title;
     c.$('#lightbox-title').textContent = item.title;
     c.$('#lightbox-credit').textContent = map
       ? 'Mapa del Geoparque · Lugares de interés'

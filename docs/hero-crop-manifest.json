@@ -1,54 +1,54 @@
 [
   {
-    "original": "src/assets/images/hero/arequita-rio.webp",
+    "original": "src/assets/images/hero/arequita-cover.webp",
     "path": "src/assets/images/hero/mobile/arequita-rio.webp",
     "crop": {
-      "left": 1442,
+      "left": 1444,
       "top": 0,
-      "width": 1719,
-      "height": 2162
+      "width": 1717,
+      "height": 2160
     },
-    "bytes": 3417556,
-    "sha256": "9a7aac214c8c8217c4381f55240776a1c12c695ed5cc45131fe64fb9d4bdf846",
+    "bytes": 4295798,
+    "sha256": "6f536c3b6dc7287cb0c5beabed9c956ea48bbc08fb7f5b70740e350199b07bf7",
     "pixelsPreserved": true
   },
   {
-    "original": "src/assets/images/hero/aguas.webp",
+    "original": "src/assets/images/hero/aguas-cover.webp",
     "path": "src/assets/images/hero/mobile/aguas.webp",
     "crop": {
-      "left": 628,
+      "left": 1444,
       "top": 0,
-      "width": 748,
-      "height": 941
+      "width": 1717,
+      "height": 2160
     },
-    "bytes": 798986,
-    "sha256": "c49d2bfe8ac7b2e3f81ac19a2a654efea6aaa8598f068a1ab55fd5a91a1d05af",
+    "bytes": 3585636,
+    "sha256": "1e6d1e70bcaaf9f29c6054aad5654ede28077aa38d79c8e4d2e08b19414becc8",
     "pixelsPreserved": true
   },
   {
     "original": "src/assets/images/hero/salus.webp",
     "path": "src/assets/images/hero/mobile/salus.webp",
     "crop": {
-      "left": 1227,
+      "left": 1444,
       "top": 0,
-      "width": 2035,
-      "height": 2560
+      "width": 1717,
+      "height": 2160
     },
-    "bytes": 3980076,
-    "sha256": "177ca4d2ccbe4a09fc6c5853607c5b92fa279640c295a533ab0b201901f004bd",
+    "bytes": 3373252,
+    "sha256": "d7bbaf1eb0776d09c8c0bca56a6128f14b9ffd03d3292df3986cff06ad77db9e",
     "pixelsPreserved": true
   },
   {
-    "original": "src/assets/images/hero/parque.webp",
+    "original": "src/assets/images/hero/parque-cover.webp",
     "path": "src/assets/images/hero/mobile/parque.webp",
     "crop": {
-      "left": 876,
+      "left": 1444,
       "top": 0,
-      "width": 647,
-      "height": 813
+      "width": 1717,
+      "height": 2160
     },
-    "bytes": 865166,
-    "sha256": "15795d6041f1c134844f4f8e26a1f603388e7bdf2886cf317f66f8a8b3739995",
+    "bytes": 4242604,
+    "sha256": "ab0bbf9b063a903f789c8020f5784f1eea43857d635f4cb7901842b8047c6ed4",
     "pixelsPreserved": true
   }
 ]

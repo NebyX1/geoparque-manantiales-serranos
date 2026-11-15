@@ -13,6 +13,7 @@ export default defineConfig({
   site: buildSite.url,
   trailingSlash: 'ignore',
   devToolbar: { enabled: false },
+  image: { service: { entrypoint: './src/integrations/photoImageService.ts' } },
   integrations: [
     react(),
     sitemap({

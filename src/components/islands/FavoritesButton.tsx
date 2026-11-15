@@ -22,6 +22,7 @@ export function FavoritesButton({
       aria-pressed={saved}
       aria-label={`${saved ? 'Quitar' : 'Guardar'} ${name} ${saved ? 'de' : 'en'} mi cuaderno`}
       data-favorite={id}
+      disabled={!hydrated}
       onClick={() => {
         toggleFavorite(id);
         window.dispatchEvent(

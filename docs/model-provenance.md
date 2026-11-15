@@ -50,8 +50,10 @@ Los avisos originales se conservan en `public/models/geosites/HORSE-CC0.txt` y `
 | ---------------------------- | --------: | ------------------------------------------------------------------ |
 | `cerro-artigas.glb`          | 3.934.348 | `112c805995ff0ffd75f752960d38730848ac1fb3a05be9c38e1f546d3592d32f` |
 | `parque-rodo.glb`            | 6.184.188 | `28df17cc7087e09b7a907c679b1a524726b5c08fc3693b60f033887e293a970e` |
-| `represa-stewart-vargas.glb` | 5.031.412 | `eb97158a95a284f92f56a7dcd3f0dd926b9426dc8c4ac3c518cd1c48bd88f2df` |
+| `represa-stewart-vargas.glb` | 5.026.160 | `30290606426bc428836f258063689f2e483f40d4890c31284caf4c11d8c8559d` |
 | `salto-del-penitente.glb`    | 3.074.548 | `21808837be32892d793695a843798e159ddc730955a31b040fe9da46331ce17d` |
+
+La represa conserva la geometría del archivo original `eb97158a95a284f92f56a7dcd3f0dd926b9426dc8c4ac3c518cd1c48bd88f2df`. La textura de malla se publica como WebP sin pérdida desde `src/assets/images/experience-miniature/stewart-vargas/malla.webp`.
 
 ## Contrato de ciclo de vida
 

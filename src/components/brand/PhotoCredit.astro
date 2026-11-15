@@ -19,7 +19,8 @@ const label = photo && photoLabel(photo);
       target={newWindow ? '_blank' : undefined}
       rel={newWindow ? 'noopener noreferrer' : undefined}
     >
-      Ver fuente{photo.kind === 'restored' ? ' y foto original' : ''} ↗
+      Ver fuente
+      {'referenceFile' in photo && photo.referenceFile ? ' e imagen de referencia' : ''} ↗
     </a>
   </p>
 )}

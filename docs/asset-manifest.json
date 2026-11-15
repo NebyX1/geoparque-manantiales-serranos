@@ -1,240 +1,276 @@
 {
   "aguas": {
-    "path": "src/assets/images/hero/aguas.webp",
-    "width": 1672,
-    "height": 941,
-    "bytes": 513852,
-    "sha256": "43b29627ba85e71cfc09985f6816f8a247cc5f227b7351d62aca84674bb86e76"
+    "path": "src/assets/images/hero/aguas-cover.webp",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 1969584,
+    "sha256": "37403182b2c9c2d144a2be12da33f642b300a6dde8f05cd69262a992e5e99ac2"
   },
   "aprendiendo": {
-    "path": "src/assets/images/places/gms-56-restored.webp",
-    "width": 1448,
-    "height": 1086,
-    "bytes": 2109768,
-    "sha256": "63f91c04f50285dd460d365d37e909a50dcfa9cbb06419dc6d726389bcf89d60"
+    "path": "src/assets/images/education/guardianes-arequita.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 881512,
+    "sha256": "269b0990e4271f99f8192d4501ba2dae9181b7e52cbe9ee70ebf3ea66e7eb31d"
   },
   "arequita-rio": {
-    "path": "src/assets/images/hero/arequita-rio.webp",
+    "path": "src/assets/images/hero/arequita-cover.webp",
     "width": 3840,
-    "height": 2162,
-    "bytes": 1863398,
-    "sha256": "8cc45367905b4d3a684ec7c0421d84a154731e97f7d9a5820b23d2c85a63c72d"
+    "height": 2160,
+    "bytes": 2594006,
+    "sha256": "e08c8334808ef2f7d941e494dd45d2a4f2cef9c9e772987a9dae5d186c387173",
+    "credit": "Nikolai Kolosov / Unsplash",
+    "license": "Licencia Unsplash",
+    "licenseUrl": "https://unsplash.com/license",
+    "sourcePage": "https://unsplash.com/photos/rocky-cliff-face-above-lush-green-forest-65HCHI8OsoY"
   },
   "arequita": {
-    "path": "src/assets/images/geosites/arequita.webp",
-    "width": 2200,
-    "height": 1165,
-    "bytes": 453760,
-    "sha256": "0f37204991599a2f0895be998faab2726805b2e06f71d690868bbb347c6cf1d6"
+    "path": "src/assets/images/hero/arequita-cover.webp",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 2594006,
+    "sha256": "e08c8334808ef2f7d941e494dd45d2a4f2cef9c9e772987a9dae5d186c387173",
+    "credit": "Nikolai Kolosov / Unsplash",
+    "license": "Licencia Unsplash",
+    "licenseUrl": "https://unsplash.com/license",
+    "sourcePage": "https://unsplash.com/photos/rocky-cliff-face-above-lush-green-forest-65HCHI8OsoY"
   },
   "arroyo": {
-    "path": "src/assets/images/landscapes/arroyo.webp",
-    "width": 1815,
-    "height": 1368,
-    "bytes": 750292,
-    "sha256": "cee403ddaaa2f14ca7772de9be1b1148cafbad11c4173d6a5298a408c033da4d"
+    "path": "src/assets/images/environment/laguna-cuervos.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2237782,
+    "sha256": "81c16ff28decd2cbc213a7510f667f8f973ea4c21b895e3cbbf4c0b7710aefef"
   },
   "artesania": {
-    "path": "src/assets/images/culture/artesania.webp",
+    "path": "src/assets/images/culture/archive/artesania.webp",
     "width": 206,
     "height": 181,
     "bytes": 8720,
     "sha256": "62c78048007694099987d3eba031072a1a6070213363aa6d9076fa3b659bb2df"
   },
   "artigas": {
-    "path": "src/assets/images/culture/artigas.webp",
+    "path": "src/assets/images/culture/archive/artigas.webp",
     "width": 2200,
     "height": 1291,
     "bytes": 426290,
     "sha256": "c2bc8139f555955bc0491a795ab57ff8e2f7d2efac39dac3cc996fe21f145ddf"
   },
   "aves": {
-    "path": "src/assets/images/nature/aves.webp",
+    "path": "src/assets/images/nature/archive/aves.webp",
     "width": 223,
     "height": 335,
     "bytes": 21178,
     "sha256": "bd0dfba49081d19fbb54c61302b97bddb96ebdcd61bbfb43e92738f03c3693ce"
   },
   "bosque": {
-    "path": "src/assets/images/nature/bosque.webp",
+    "path": "src/assets/images/nature/archive/bosque.webp",
     "width": 332,
     "height": 323,
     "bytes": 49454,
     "sha256": "3f1a4f221e8c68a6b660e7edd544e8e6be998493183c460cf81a176624870ca7"
   },
   "campo": {
-    "path": "src/assets/images/landscapes/campo.webp",
+    "path": "src/assets/images/territory-map/archive/campo.webp",
     "width": 816,
     "height": 240,
     "bytes": 84490,
     "sha256": "7a05d62972b10d0a321d4fd6c03b83ab823d4f5037eb7d0d773596aa21ad5452"
   },
   "cantera": {
-    "path": "src/assets/images/geosites/cantera.webp",
+    "path": "src/assets/images/place-photo/archive/cantera.webp",
     "width": 2049,
     "height": 1484,
     "bytes": 811798,
     "sha256": "2268f4313ad271cf9202608f7e6b81bd3c72508897a5338adefcb9a3c3cc2cea"
   },
   "carpincho": {
-    "path": "src/assets/images/nature/carpincho.webp",
+    "path": "src/assets/images/nature/archive/carpincho.webp",
     "width": 267,
     "height": 173,
     "bytes": 6266,
     "sha256": "4e6ee7eb12981ba874e5cbb928597a9de8285e90b247a6c8d68973601762ff8e"
   },
   "cielo": {
-    "path": "src/assets/images/landscapes/cielo.webp",
+    "path": "src/assets/images/territory-map/archive/cielo.webp",
     "width": 2200,
     "height": 1291,
     "bytes": 125180,
     "sha256": "160c5610dbfab743f8b833e5ff0958cf8380c2536d829f4ccc3233dd9f0f759e"
   },
   "escuela": {
-    "path": "src/assets/images/places/gms-56-restored.webp",
-    "width": 1448,
-    "height": 1086,
-    "bytes": 2109768,
-    "sha256": "63f91c04f50285dd460d365d37e909a50dcfa9cbb06419dc6d726389bcf89d60"
+    "path": "src/assets/images/education/mangas-de-piedra.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "b1b47cd7832c4e171df0289a1d3b25c914e10ae771b24d589c1fcb1d9626c392",
+    "bytes": 2422484
   },
   "gastronomia": {
-    "path": "src/assets/images/culture/gastronomia.webp",
+    "path": "src/assets/images/culture/archive/gastronomia.webp",
     "width": 248,
     "height": 195,
     "bytes": 6826,
     "sha256": "2b49284c57c5b9e27a746ddcc6f3dc52c16c50012d5c6c973470624778a48411"
   },
   "gauchos": {
-    "path": "src/assets/images/culture/gauchos.webp",
+    "path": "src/assets/images/culture/archive/gauchos.webp",
     "width": 400,
     "height": 371,
     "bytes": 53924,
     "sha256": "6be7fd89bea8c347734f00bd1fc66ba10be4a9445944be99cb57576a71cd7e41"
   },
   "gruta": {
-    "path": "src/assets/images/geosites/gruta.webp",
+    "path": "src/assets/images/place-photo/archive/gruta.webp",
     "width": 243,
     "height": 386,
     "bytes": 30458,
     "sha256": "361c1229a797ade6fd87ba0cfca5df8d545b1fcb345b7cd387479a5c94e5cfbf"
   },
   "map-original": {
-    "path": "public/downloads/map-original.webp",
+    "path": "src/assets/images/territory-map/mapa-original.webp",
     "width": 1224,
     "height": 1584,
     "bytes": 190176,
     "sha256": "3130669606d57632c3d9ada382c6e51748c040bdce9ec018726213eae30df90b"
   },
   "martin": {
-    "path": "src/assets/images/culture/martin.webp",
+    "path": "src/assets/images/culture/archive/martin.webp",
     "width": 267,
     "height": 181,
     "bytes": 10110,
     "sha256": "43e4d739894c03915cedff24833193f8e5b4c35da0f4d3cab88ba52cce7dd88e"
   },
   "ombues": {
-    "path": "src/assets/images/nature/ombues.webp",
+    "path": "src/assets/images/nature/archive/ombues.webp",
     "width": 246,
     "height": 192,
     "bytes": 25410,
     "sha256": "f855d914209c79596643fcc00b196ada9a9843693135b3aa8a6e1d157030513b"
   },
   "paisaje": {
-    "path": "src/assets/images/landscapes/paisaje.webp",
+    "path": "src/assets/images/territory-map/archive/paisaje.webp",
     "width": 555,
     "height": 323,
     "bytes": 43862,
     "sha256": "df3fabe2f9c853b68ed121c47017757ee602a2b7eafeceb7234d9f29829079c3"
   },
   "panorama": {
-    "path": "src/assets/images/landscapes/panorama.webp",
+    "path": "src/assets/images/culture/archive/panorama.webp",
     "width": 816,
     "height": 467,
     "bytes": 112216,
     "sha256": "e7bb4540ccfdb9ec448de2a6abd824f3d85e563cdde2bfb7dfec3e3d1e243f27"
   },
   "parque-puente": {
-    "path": "src/assets/images/landscapes/parque-puente.webp",
+    "path": "src/assets/images/geological-story/archive/parque-puente.webp",
     "width": 817,
     "height": 812,
     "bytes": 152676,
     "sha256": "41c2b610571dfd1cc89d1867c5946b87b931a0785a8e918aa4a3beaf7ff246c4"
   },
   "parque": {
-    "path": "src/assets/images/hero/parque.webp",
-    "width": 1935,
-    "height": 813,
-    "bytes": 2626504,
-    "sha256": "061ba266ce8759d89a53cc47f381783e8234cda9fe0c95ce119355619c473227"
+    "path": "src/assets/images/hero/parque-cover.webp",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 2694386,
+    "sha256": "cf6506da025dc2dada8ab749cf78c00454570ba47d105c2da610bd9ba69e1925"
   },
   "pelado": {
-    "path": "src/assets/images/geosites/pelado.webp",
+    "path": "src/assets/images/place-photo/archive/pelado.webp",
     "width": 817,
     "height": 904,
     "bytes": 248446,
     "sha256": "ce1b0542e9405fcbd35cc52401c2f9b2f5cc60b1591b5d28f44241ff445ea654"
   },
   "penitente-poza": {
-    "path": "src/assets/images/landscapes/penitente-poza.webp",
+    "path": "src/assets/images/gallery/archive/penitente-poza.webp",
     "width": 484,
     "height": 195,
     "bytes": 51286,
     "sha256": "ad0ed1a1e4fe4eda83214df046abe3643c92b1283aaeb561c3ba4ea0f6011b2c"
   },
   "penitente": {
-    "path": "src/assets/images/landscapes/penitente.webp",
+    "path": "src/assets/images/gallery/archive/penitente.webp",
     "width": 803,
     "height": 741,
     "bytes": 201098,
     "sha256": "90272824919b4d9e1794aceffc7b38e7d61c18334ab9fa5629e0e8e7a9e1d9ac"
   },
   "puma": {
-    "path": "src/assets/images/nature/puma.webp",
+    "path": "src/assets/images/nature/archive/puma.webp",
     "width": 245,
     "height": 196,
     "bytes": 17610,
     "sha256": "7f47a7e897ac0e8c17c986e914c37c22b48f85ee90b7ceb39ed660298de3132f"
   },
   "rio": {
-    "path": "src/assets/images/landscapes/rio.webp",
-    "width": 2200,
-    "height": 1287,
-    "bytes": 248918,
-    "sha256": "63fa3209a07a3972a2ae0de89e42be70b4d1c87b6a90c969088feaf34061927e"
+    "path": "src/assets/images/environment/santa-lucia-laguna.webp",
+    "width": 1672,
+    "height": 941,
+    "sha256": "2fc28794b0873e37969ec76d1c0a76fd556438d7452fea5b806b3f8d103265a5",
+    "bytes": 2680906
   },
   "salus": {
     "path": "src/assets/images/hero/salus.webp",
     "width": 3840,
-    "height": 2560,
-    "bytes": 1267326,
-    "sha256": "8c45e14319752873c346fae38e530fad9ab7e4e8d425ce1133d870b47837bc10"
+    "height": 2160,
+    "bytes": 1377362,
+    "sha256": "037855718768573556b2a60ba960d67eeb147dd95b84957247df584f8cfea9a8"
   },
   "unesco": {
-    "path": "public/partners/unesco.png",
-    "width": 77,
-    "height": 59,
-    "bytes": 7536,
-    "sha256": "f420fb2c24002e1a4684a3a4d9ebc54b700790aeceb5c47daa80479177c2da56"
+    "path": "src/assets/images/footer/unesco.webp",
+    "width": 610,
+    "height": 461,
+    "bytes": 22096,
+    "sha256": "43091b50e18210e33ee6bc89078b35a6084543b940eb1b87a2459c852dc44d17"
   },
   "instituciones": {
-    "path": "public/partners/instituciones.png",
+    "path": "src/assets/images/footer/instituciones.webp",
     "width": 270,
     "height": 79,
-    "bytes": 24194,
-    "sha256": "dcfd329152aeff3aaa909a49dc1955b3a67bde8a443c8e4f659a60b130df04cc"
+    "bytes": 22220,
+    "sha256": "387b8502f387c1b4636e8bcf5e3812afd919163a00ee94cb028d978d81d1c629"
   },
   "lavalleja": {
-    "path": "public/partners/lavalleja.png",
+    "path": "src/assets/images/footer/lavalleja.webp",
     "width": 124,
     "height": 60,
-    "bytes": 12536,
-    "sha256": "d980fcedb0a13f8f2133eef67df7c4921b4f293dfb8a0522f4eebd174314883e"
+    "bytes": 12668,
+    "sha256": "cd391e4c3adefceef3fae5d70de9db8f242239b607d9d5d7c9fd6b907b306ff4"
   },
   "brand-c66ec6c0da68": {
-    "path": "public/brand/brand-c66ec6c0da68.svg",
-    "width": 225,
-    "height": 191,
-    "bytes": 136752,
-    "sha256": "c66ec6c0da68fcdb961b988926c2bf66bdde75b9a074ef0f1fe843c951e22551"
+    "path": "src/assets/images/site-brand/manantiales-serranos.webp",
+    "width": 900,
+    "height": 767,
+    "bytes": 70526,
+    "sha256": "80fd8919a6d150882cd70d15e476a39185b9ac426b8e12779ea14790f5c72b9d"
+  },
+  "favicon": {
+    "path": "src/assets/images/seo-head/favicon.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 22064,
+    "sha256": "beb0bd315220fd480a0492e0e989a1b89def6cb3d8a6c50fc2c5e04e7553d930",
+    "sourcePage": "https://manantialesserranos.uy/",
+    "sourceImage": "https://manantialesserranos.uy/favicon.ico",
+    "sourceSha256": "3ebca96e4b6d94aacaff62e5033d6a59a3e7319716ebf94be6e17a493f180482"
+  },
+  "social": {
+    "path": "src/assets/images/seo-head/social.webp",
+    "width": 1200,
+    "height": 630,
+    "bytes": 399108,
+    "sha256": "2da6c531f99db1b44c8596bb87dbcda960f3715e447cf406a0704a974aea62c6",
+    "credit": "Nikolai Kolosov / Unsplash",
+    "license": "Licencia Unsplash",
+    "licenseUrl": "https://unsplash.com/license",
+    "sourcePage": "https://unsplash.com/photos/rocky-cliff-face-above-lush-green-forest-65HCHI8OsoY"
+  },
+  "arequita-ribera": {
+    "path": "src/assets/images/gallery/arequita-ribera.webp",
+    "width": 3840,
+    "height": 2160,
+    "bytes": 2561632,
+    "sha256": "b9f91fa62192fe0139f784764d383f375250f2a85c4f6edbabd6e1d6dc78faa5"
   }
 }

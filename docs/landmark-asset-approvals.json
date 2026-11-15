@@ -463,8 +463,8 @@
       "name": "Molino Viejo de Minas",
       "file": "public/models/geosites/rebuilt/gms-61.glb",
       "status": "APROBADO",
-      "sha256": "ce22c6c990794ef04ab85fa827ce5ac364d01a9e9223ed22fe47e30bca55d752",
-      "bytes": 3041576,
+      "sha256": "cbb18a47272e8e666609e465ca3402dfb554a6bfd2ede5e9e24910a0a17d05d8",
+      "bytes": 1612636,
       "previousApproval": {
         "id": 61,
         "name": "Molino Viejo de Minas",
@@ -480,6 +480,34 @@
         "review": "docs/molino-viejo-review.json",
         "triangles": 45260,
         "drawCalls": 16
+      },
+      "textureMigration": {
+        "originalSha256": "ce22c6c990794ef04ab85fa827ce5ac364d01a9e9223ed22fe47e30bca55d752",
+        "originalBytes": 3041576,
+        "encoding": "WebP lossless",
+        "geometryPreserved": true,
+        "textures": [
+          {
+            "file": "src/assets/images/experience-miniature/molino-viejo/normal-torre.webp",
+            "sha256": "6da4fa4386939b66ba8a4916763a90b92eb6f22c79c721aa5a885840a47ab99f",
+            "originalSha256": "b999895c80bcf20f8d33a3fa057130765d9324be402032023d6f9fc2cf9d3694"
+          },
+          {
+            "file": "src/assets/images/experience-miniature/molino-viejo/albedo-torre.webp",
+            "sha256": "76e0c20437b35352e92c64a3aae582e498f258c47dffe85e7d18e8620e66d089",
+            "originalSha256": "5ba6a97cee6097046fa434d56f6de71e386a7b3cc2f692924a530db7c0871987"
+          },
+          {
+            "file": "src/assets/images/experience-miniature/molino-viejo/normal-cubierta.webp",
+            "sha256": "6da4fa4386939b66ba8a4916763a90b92eb6f22c79c721aa5a885840a47ab99f",
+            "originalSha256": "b999895c80bcf20f8d33a3fa057130765d9324be402032023d6f9fc2cf9d3694"
+          },
+          {
+            "file": "src/assets/images/experience-miniature/molino-viejo/albedo-cubierta.webp",
+            "sha256": "9a405cd6e478d3ecc85cdd064264cd0be0cf041f451751a5e3b4bbf871cd32fd",
+            "originalSha256": "7ba281f3190f08ae09ec0704095604f34dda2add1c4aed55bb8a59dc9b51471a"
+          }
+        ]
       }
     }
   ],

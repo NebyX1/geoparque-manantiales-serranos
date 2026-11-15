@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import heroSources from '../../docs/asset-manifest.json' with { type: 'json' };
 import heroCrops from '../../docs/hero-crop-manifest.json' with { type: 'json' };
 test.beforeEach(async ({ page }) => {
   await page.goto('/inicio/');
@@ -56,32 +55,110 @@ test('home, fotografías, controles del hero y capítulos por teclado', async ({
 });
 test('hero responsive: resolución suficiente para el recorte vertical', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  for (const width of [320, 390, 1440]) {
-    await page.setViewportSize({ width, height: 900 });
+  for (const [width, height] of [
+    [320, 540],
+    [390, 900],
+    [620, 800],
+    [640, 450],
+    [844, 390],
+    [1440, 900],
+    [1920, 900],
+  ] as const) {
+    await page.setViewportSize({ width, height });
     await page.reload();
-    const original = heroSources['arequita-rio'];
-    const crop = heroCrops.find((entry) => entry.original.endsWith('/arequita-rio.webp'))!.crop;
-    const resolution = await page.locator('.hero-image.active img').evaluate(
-      async (image, source) => {
+    const crop = heroCrops.find((entry) => entry.path.endsWith('/arequita-rio.webp'))!.crop;
+    const resolution = await page
+      .locator('.hero-image.active img')
+      .evaluate(async (image, mobileWidth) => {
         const img = image as HTMLImageElement;
         await img.decode();
         const bitmap = await createImageBitmap(await (await fetch(img.currentSrc)).blob());
         const box = img.getBoundingClientRect();
-        const sourceWidth = innerWidth <= 620 ? source.crop.width : source.original.width;
-        const sourceHeight = source.original.height;
+        const hero = img.closest('.hero')!.getBoundingClientRect();
+        const sourceWidth = innerWidth <= 620 ? mobileWidth : Number(img.dataset.photoWidth);
+        const sourceHeight = Number(img.dataset.photoHeight);
         const required = Math.min(
           sourceHeight,
           Math.max(box.height, (box.width * sourceHeight) / sourceWidth),
         );
         const actual = bitmap.height;
+        const coversHero =
+          Math.abs(box.top - hero.top) < 1 &&
+          Math.abs(box.width - hero.width) < 1 &&
+          Math.abs(box.height - hero.height) < 1;
         bitmap.close();
-        return { actual, required };
-      },
-      { original, crop },
+        return { actual, required, coversHero };
+      }, crop.width);
+    expect(resolution.coversHero, `${width}×${height}`).toBe(true);
+    expect(resolution.actual, `${width}×${height}`).toBeGreaterThanOrEqual(
+      resolution.required * 0.98,
     );
-    expect(resolution.actual).toBeGreaterThanOrEqual(resolution.required * 0.98);
   }
 });
+test('el carrusel conserva la foto visible al cambiar mientras se decodifica', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.addInitScript(() => {
+    const decode = HTMLImageElement.prototype.decode;
+    HTMLImageElement.prototype.decode = async function () {
+      await decode.call(this);
+      if (this.closest('.hero-image[data-slide="3"]'))
+        await new Promise((resolve) => window.setTimeout(resolve, 1500));
+    };
+  });
+  await page.goto('/inicio/');
+  const hero = page.locator('.hero');
+  await hero.locator('[data-hero="1"]').click();
+  await expect(hero.locator('.hero-image[data-slide="1"].active')).toBeVisible();
+  await hero.locator('[data-hero="3"]').click();
+  await expect(hero.locator('.hero-image[data-slide="3"].active')).toBeVisible();
+  await hero.locator('[data-hero="0"]').click();
+  await expect(hero.locator('.hero-image[data-slide="0"].active')).toBeVisible();
+  await expect(hero.locator('#hero-caption a')).toHaveAttribute(
+    'href',
+    '/creditos-fotograficos/#gms-01-portada',
+  );
+});
+for (const viewport of [
+  { width: 1920, height: 920 },
+  { width: 390, height: 844 },
+]) {
+  test(`cada paisaje cubre toda la portada a ${viewport.width}px`, async ({ browser, baseURL }) => {
+    test.setTimeout(75_000);
+    const context = await browser.newContext({
+      ...(baseURL ? { baseURL } : {}),
+      viewport,
+      deviceScaleFactor: 3,
+      reducedMotion: 'reduce',
+    });
+    try {
+      const page = await context.newPage();
+      await page.goto('/inicio/');
+      await expect(page.locator('html')).toHaveClass(/\bjs\b/);
+      for (let slide = 0; slide < 4; slide++) {
+        if (slide > 0) await page.locator(`[data-hero="${slide}"]`).click();
+        const image = page.locator(`.hero-image[data-slide="${slide}"].active img`);
+        await expect(image).toBeVisible();
+        const frame = await image.evaluate((img) => {
+          const box = img.getBoundingClientRect();
+          const hero = img.closest('.hero')!.getBoundingClientRect();
+          return {
+            edges: [
+              box.left - hero.left,
+              box.top - hero.top,
+              box.right - hero.right,
+              box.bottom - hero.bottom,
+            ],
+            fit: getComputedStyle(img).objectFit,
+          };
+        });
+        expect(frame.edges.every((difference) => Math.abs(difference) < 1)).toBe(true);
+        expect(frame.fit).toBe('cover');
+      }
+    } finally {
+      await context.close();
+    }
+  });
+}
 test('atlas, categorías, búsqueda sin acentos, zonas, modalidades y fichas reales', async ({
   page,
 }) => {
@@ -182,7 +259,30 @@ test('buscador global, shortcut, resultados, Escape y retorno de foco', async ({
   await page.keyboard.press('Escape');
   await expect(page.locator('[data-action="search"]')).toBeFocused();
   await page.keyboard.press('/');
+  await expect(page.locator('#search-dialog')).toBeHidden();
+  await page.keyboard.press('Control+/');
   await expect(page.locator('#search-dialog')).toBeVisible();
+});
+test('descarga la ficha en PDF con JavaScript deshabilitado', async ({ browser, baseURL }) => {
+  const context = await browser.newContext({
+    ...(baseURL ? { baseURL } : {}),
+    javaScriptEnabled: false,
+  });
+  try {
+    const page = await context.newPage();
+    const pdf = await context.request.get('/lugares/el-destacamento.pdf');
+    expect(pdf.ok()).toBe(true);
+    expect(pdf.headers()['content-type']).toContain('application/pdf');
+    expect((await pdf.body()).subarray(0, 5).toString()).toBe('%PDF-');
+    await page.goto('/lugares/el-destacamento/');
+    const download = page.waitForEvent('download');
+    await page.getByRole('link', { name: /Descargar ficha en PDF/ }).click();
+    const file = await download;
+    expect(file.suggestedFilename()).toBe('el-destacamento.pdf');
+    expect(await file.failure()).toBeNull();
+  } finally {
+    await context.close();
+  }
 });
 test('galería, captions, flechas, quiz y privacidad', async ({ page }) => {
   await page.locator('[data-action="gallery"]').click();

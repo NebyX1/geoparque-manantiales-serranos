@@ -1,23 +1,31 @@
 ---
 import type { GeoparkPlace } from '../../types/geopark';
 import Photo from '../brand/Photo.astro';
-import { photoForPlace, photoLabel } from '../../data/place-photos';
+import { photoForDisplay, photoLabel } from '../../data/place-photos';
+import { cardPhotoPosition } from '../../lib/images';
 import { FavoritesButton } from '../islands/FavoritesButton';
 interface Props {
   place: GeoparkPlace;
 }
 const { place } = Astro.props;
 const href = `/lugares/${place.slug}/`;
-const label = photoLabel(photoForPlace(place.id));
+const label = photoLabel(photoForDisplay(place.id));
+const position = cardPhotoPosition(place.image);
 ---
 
 <article class="place-card reveal" data-id={place.id}>
-  <a class="place-visual" href={href} aria-label={`Conocer ${place.name}`}>
+  <a
+    class:list={['place-visual', { 'place-visual--framed': position }]}
+    href={href}
+    aria-label={`Conocer ${place.name}`}
+  >
     <Photo
       assetKey={place.image}
+      profile="place-card"
       alt={place.images[0]?.alt || place.name}
       transition:name={`place-${place.slug}`}
       sizes="(max-width: 620px) 90vw, (max-width: 1000px) 45vw, 30vw"
+      style={position && `object-position: ${position}`}
     />
   </a>
   <FavoritesButton id={place.id} name={place.name} client:visible />

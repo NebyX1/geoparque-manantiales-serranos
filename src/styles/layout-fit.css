@@ -36,15 +36,15 @@
 }
 @media (max-width: 359px) {
   .nature-words .display {
-    font-size: 47px;
+    font-size: 2.9375rem;
   }
   .nature-topic summary {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
 }
 
 @media (max-width: 620px) {
   .nature-words .display {
-    font-size: clamp(39px, 11.3vw, 54px);
+    font-size: clamp(2.4375rem, calc(11.3vw * var(--text-scale)), 3.375rem);
   }
 }

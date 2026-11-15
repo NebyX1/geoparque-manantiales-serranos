@@ -2,8 +2,13 @@
 import Photo from '../brand/Photo.astro';
 ---
 
-<div aria-label="El Geoparque en cifras" class="trust-strip">
-  <Photo alt="UNESCO Geoparque mundial" assetKey="unesco" class="unesco-lock" />
+<section aria-label="El Geoparque en cifras" class="trust-strip">
+  <Photo
+    alt="UNESCO Geoparque mundial"
+    assetKey="unesco"
+    class="unesco-lock"
+    sizes="(max-width: 620px) 63px, 80px"
+  />
   <p>
     Un patrimonio que conecta
     <br />
@@ -13,7 +18,7 @@ import Photo from '../brand/Photo.astro';
   <div class="trust-item">
     <div>
       <strong>
-        2.010<span style="display:inline;font-size:13px;color:inherit">km²</span>
+        2.010 <span class="trust-unit">km²</span>
       </strong>
       <span>de patrimonio interconectado</span>
     </div>
@@ -32,4 +37,4 @@ import Photo from '../brand/Photo.astro';
       <span>designación UNESCO</span>
     </div>
   </div>
-</div>
+</section>

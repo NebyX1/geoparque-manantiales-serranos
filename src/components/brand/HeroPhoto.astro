@@ -1,37 +1,38 @@
 ---
-import Photo from './Photo.astro';
 import { heroImages } from '../../lib/hero-images';
 import type { HeroAssetKey } from '../../data/hero-assets';
-import { mobileHeroAssets } from '../../data/hero-assets';
+import { photoMetadata } from '../../lib/images';
+import '../../styles/photos.css';
 interface Props {
   assetKey: HeroAssetKey;
   loading?: 'eager' | 'lazy';
   fetchpriority?: 'high' | 'low' | 'auto';
   decoding?: 'async' | 'sync' | 'auto';
 }
-const { assetKey, ...attributes } = Astro.props;
+const { assetKey, loading = 'lazy', decoding = 'async', ...attributes } = Astro.props;
 const images = await heroImages(assetKey);
+const { width, height } = images.desktopAsset;
 ---
 
 <picture>
   <source
     media="(max-width: 620px)"
-    type="image/avif"
+    type="image/webp"
     srcset={images.mobile}
     sizes={images.mobileSizes}
   />
-  <source
-    media="(max-width: 620px)"
-    type="image/webp"
-    srcset={images.mobileFallback}
-    sizes={images.mobileSizes}
-  />
-  <source type="image/avif" srcset={images.desktop} sizes={images.desktopSizes} />
-  <Photo
-    {assetKey}
+  <img
+    src={images.fallback}
+    srcset={images.desktop}
+    {width}
+    {height}
     alt=""
     sizes={images.desktopSizes}
-    mobileSource={mobileHeroAssets[assetKey]}
+    {loading}
+    {decoding}
+    data-photo-mobile-width={images.mobileAsset.width}
+    data-photo-mobile-height={images.mobileAsset.height}
+    {...photoMetadata(assetKey, 'hero', width, height)}
     {...attributes}
   />
 </picture>

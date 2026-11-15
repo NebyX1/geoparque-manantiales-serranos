@@ -3,7 +3,7 @@ export const articles: Record<string, GeologicalStory> = {
   geoparque: {
     title: 'Conocer el territorio para cuidarlo',
     eyebrow: 'Geoparque · conocimiento y comunidad',
-    image: 'arequita-rio',
+    image: 'arequita-ribera',
     lead: 'La geología, el agua, la biodiversidad y la cultura forman un sistema. Comprender sus relaciones es el primer paso para conservarlo.',
     sections: [
       [

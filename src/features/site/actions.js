@@ -1,4 +1,6 @@
 export function initActions(c) {
+  const menu = c.$('#mobile-menu');
+  const menuToggle = c.$('#mobile-toggle');
   c.listen(document, 'click', (event) => {
     const trigger = event.target instanceof Element ? event.target.closest('button,a') : null;
     if (!trigger) return;
@@ -125,10 +127,14 @@ export function initActions(c) {
   c.listen(document, 'keydown', (event) => {
     if (
       event.key === '/' &&
-      !/INPUT|TEXTAREA|SELECT/.test(event.target.tagName) &&
-      !c.currentDialog
+      (event.ctrlKey || event.metaKey) &&
+      !event.altKey &&
+      !event.repeat &&
+      !document.querySelector('dialog[open]') &&
+      c.$('#mobile-menu').hidden
     ) {
       event.preventDefault();
+      c.lastTrigger = c.$('[data-action="search"]');
       c.renderSearch();
       c.openDialog('search-dialog', '#global-search');
     }
@@ -150,16 +156,23 @@ export function initActions(c) {
     }
   });
   function toggleMenu(open) {
-    c.$('#mobile-menu').hidden = !open;
+    menu.hidden = !open;
     document.querySelector('main').inert = open;
     document.querySelector('footer').inert = open;
-    c.$('#mobile-toggle').setAttribute('aria-expanded', String(open));
-    c.$('#mobile-toggle').setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
-    c.$('#mobile-toggle').innerHTML = c.icon(open ? 'close' : 'menu');
+    c.$('.skip').inert = open;
+    c.$('.site-header .brand').inert = open;
+    for (const control of c.$$('.header-actions > button:not(#mobile-toggle)'))
+      control.inert = open;
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    menuToggle.innerHTML = c.icon(open ? 'close' : 'menu');
     c.syncScrollLock();
     if (open) c.$('#mobile-menu a').focus();
   }
-  c.listen(c.$('#mobile-toggle'), 'click', () => toggleMenu(c.$('#mobile-menu').hidden));
+  c.listen(menu, 'click', (event) => {
+    if (event.target.closest('a')) toggleMenu(false);
+  });
+  c.listen(menuToggle, 'click', () => toggleMenu(menu.hidden));
 
   Object.defineProperties(c, { toggleMenu: { configurable: true, get: () => toggleMenu } });
 }

@@ -1,10 +1,17 @@
 import type { ImageMetadata } from 'astro';
 
-export function responsiveWidths(width: number): number[] {
-  const maximum = Math.min(3840, width);
+export function responsiveWidths(width: number, limit = 3840): number[] {
+  const maximum = Math.min(limit, width);
   return [...new Set([320, 640, 960, 1280, 1600, 1920, 2560, 3200, maximum])]
     .filter((candidate) => candidate <= maximum)
     .sort((a, b) => a - b);
+}
+
+/** Use the source width required by the frame defined in pages.css. */
+export function placePhotoSizes(width: number, height: number): string {
+  const ratio = width / height;
+  const heightWidth = `clamp(${(260 * ratio).toFixed(2)}px, ${(45 * ratio).toFixed(2)}vw, ${(650 * ratio).toFixed(2)}px)`;
+  return `max(100vw, ${heightWidth})`;
 }
 
 /** Cover consumes the entire scaled image, including the pixels cropped off-screen. */
@@ -29,13 +36,19 @@ export function storyPhotoSizes(asset: Pick<ImageMetadata, 'width' | 'height'>):
 export function heroSizes(asset: Pick<ImageMetadata, 'width' | 'height'>): string {
   const ratio = asset.width / asset.height;
   const px = (value: number) => `${(value * ratio).toFixed(3)}px`;
-  const size = (minimum: number, maximum: number, nav: number) =>
-    `max(100vw, clamp(${px(minimum)}, calc(${(100 * ratio).toFixed(3)}svh - ${px(nav)}), ${px(maximum)}))`;
+  const size = (minimum: number, maximum: number, nav: number) => {
+    const height = `clamp(${px(minimum)}, calc(${(100 * ratio).toFixed(3)}svh - ${px(nav)}), ${px(maximum)})`;
+    // The editorial cover fills the whole hero, which can grow past its CSS minimum
+    // when the title and footer take more space. Keep the source at native width
+    // when the viewport makes the layout taller than the raster.
+    const content = `min(${px(maximum)}, calc(${(90 * ratio).toFixed(3)}svh + ${px(350)}))`;
+    return `max(100vw, ${height}, ${content})`;
+  };
   return [
-    `(max-width: 359px) ${size(745, 960, 84)}`,
-    `(max-width: 620px) ${size(780, 960, 84)}`,
-    `(max-width: 900px) ${size(810, 1050, 94)}`,
-    `(max-width: 1100px) ${size(770, 1160, 94)}`,
-    size(820, 1160, 94),
+    `(max-width: 359px) ${size(915, 1060, 84)}`,
+    `(max-width: 620px) ${size(900, 1060, 84)}`,
+    `(max-width: 900px) ${size(830, 1050, 94)}`,
+    `(max-width: 1100px) ${size(840, 1160, 94)}`,
+    size(820, 1240, 94),
   ].join(', ');
 }

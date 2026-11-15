@@ -1,0 +1,464 @@
+{
+  "gms-02": {
+    "source": "src/assets/images/place-photo/catalog/gms-02.webp",
+    "sourceWidth": 4000,
+    "sourceHeight": 3000,
+    "fingerprint": "3bce25722cf7fcc17c0da8b3fd891ba1dfc2df0d48b23f79dd8f01c32c1eeb4b",
+    "sha256": "ae961ff5bac30a5e9e917769a4c5b8bd83b2bb49c46051892204921db0d56032"
+  },
+  "gms-03": {
+    "source": "src/assets/images/place-photo/catalog/gms-03.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "f3a8cff7df6b0a1bd22a8ec37cd38734ad6479ab7c5f5c9982f7d6255e8d686d",
+    "sha256": "f5cd98aef3771757f69d0fbd21eb9222b3dba9cff20192979efddd9ee161741d"
+  },
+  "gms-06": {
+    "source": "src/assets/images/place-photo/catalog/gms-06.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "c5d3d72cc5c1d764b003f8b9c5b03a4769914367b1c1136837d55307e66203ad",
+    "sha256": "bb6f211249102ac01a1fbfd3463bb523d15afa06b9d34544b0c1f5bfcac25b1b"
+  },
+  "gms-07": {
+    "source": "src/assets/images/place-photo/catalog/gms-07.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "e279f8149c49e995bafded4727b89c1364ac5e122cfd5884fae3b429d18156e1",
+    "sha256": "27346cc31a52b4bf42d3fe1f7c0e438b4388b4ccb96ab7f038d26298db37cf03"
+  },
+  "gms-08": {
+    "source": "src/assets/images/place-photo/catalog/gms-08.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "1e891b70d11cecd7e7b4a93eef41ce655dfb699d9da6bb1a980783e1db2dcc2a",
+    "sha256": "92e784f2f22a3832635d4433b8aa3843a03c90759c6f521d7d02b168b5a11481"
+  },
+  "gms-09": {
+    "source": "src/assets/images/place-photo/catalog/gms-09.webp",
+    "sourceWidth": 2048,
+    "sourceHeight": 1150,
+    "fingerprint": "db0ae06991c72a4102d3001efd80353966563dde2de611c851b2b3dc544e8cac",
+    "sha256": "631adbe7a3ec487a1b42b2f0384df048d7f5fe5e92fe77618dc1d2b6ea7246dc"
+  },
+  "gms-10": {
+    "source": "src/assets/images/place-photo/catalog/gms-10.webp",
+    "sourceWidth": 2786,
+    "sourceHeight": 1392,
+    "fingerprint": "fbbbb4a327c05bf69d7026fc941faceddce2d6f6d630d7341bef7363731eeea6",
+    "sha256": "2f161a8e8d198f9a409815ab3be0ec19b055d354121c7b8094bf7e1f2e686078"
+  },
+  "gms-11": {
+    "source": "src/assets/images/place-photo/catalog/gms-11.webp",
+    "sourceWidth": 4320,
+    "sourceHeight": 3240,
+    "fingerprint": "5d8798cd15cf081610a22888c6d245592ba5e0d350cdd78f6aed0a1c0b53f76c",
+    "sha256": "15ae599d8710c3513d2f6180056582be1ff65466cc6ec881c11f2a5d44a1ee4f"
+  },
+  "gms-12": {
+    "source": "src/assets/images/place-photo/catalog/gms-12.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "26bebab4ff2ae0f771b6ef6010603ecf8f91869d6a9b6b5af4d96c965f9a3632",
+    "sha256": "01787f2545ecd94869d422bff70b3b72b5cea879ce3b25318d6401f509b635db"
+  },
+  "gms-13": {
+    "source": "src/assets/images/place-photo/catalog/gms-13.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "b14b1a9820de3e16d65c71751139378928eb64a0ba17c21c27eef7041a08a7c3",
+    "sha256": "d5be4b7e55d81d2afe6167a5ea8b9401a93388ffdd3d7b20dde6d695f7d8e7c5"
+  },
+  "gms-14": {
+    "source": "src/assets/images/place-photo/catalog/gms-14.webp",
+    "sourceWidth": 3024,
+    "sourceHeight": 2201,
+    "fingerprint": "a4dce644a1f7cbe09bcd35c116311e6dcb37b2b4136c9dc165d344967ae1d98e",
+    "sha256": "ae49f57ef568242cfa11ad22c07cbbf0d81707fb9c27c0e83b9c2ed9c750ac2e"
+  },
+  "gms-15": {
+    "source": "src/assets/images/place-photo/catalog/gms-15.webp",
+    "sourceWidth": 2048,
+    "sourceHeight": 1365,
+    "fingerprint": "f1ac99c7dfeef49f9bf203ed3b5fd94d96bd3f34e2b3cfb1c01c10876cd33d08",
+    "sha256": "aacf83e6f630a319d0de6df4e9fe596a01c1854faba14288c0e50cb4ffac7b59"
+  },
+  "gms-16": {
+    "source": "src/assets/images/place-photo/catalog/gms-16.webp",
+    "sourceWidth": 1600,
+    "sourceHeight": 900,
+    "fingerprint": "207c0298ee6d85626fba1ede4ddd18783d09ac55b70c450a53db387d64709cd8",
+    "sha256": "515bac370f07b69167753c0648a34cc014a3722b4d6ab90fec7c691a128102b6"
+  },
+  "gms-18": {
+    "source": "src/assets/images/place-photo/catalog/gms-18.webp",
+    "sourceWidth": 5120,
+    "sourceHeight": 2880,
+    "fingerprint": "6c6cdf25aa3e53385f71596c4104cb68a0bcf3ceeb3ecf702ba25b459919500d",
+    "sha256": "42b93a7e9b697bc4aa66e286af2db66c89588d2520c55c2af2baca83b0dc1b63"
+  },
+  "gms-19": {
+    "source": "src/assets/images/place-photo/catalog/gms-19.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "bc2d2c9e19583ca22452de8eb98d1d529deb41a02cadd45b02630414e4c4b332",
+    "sha256": "34fa9a75713a955a8fc4a4a60520c9ac7d9ba459e48b7e440f6858bdb09978f5"
+  },
+  "gms-20": {
+    "source": "src/assets/images/place-photo/catalog/gms-20.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "9f515af7f254afc5d8bb1fcd41c01b24b732c2d41c0b196669ca553c3c4b2f1f",
+    "sha256": "32feacdf6ffb794a3aba8b3f34710faded85b92a9f8c65e1e3c5b5139eb14208"
+  },
+  "gms-21": {
+    "source": "src/assets/images/place-photo/catalog/gms-21.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "ac6fecc7be8483adfe05b35fabd8671b2e915250af45ac6d87b075d778bae250",
+    "sha256": "286467af0434e614fa45e825d94936b664c60c792c643f07029edc449db202c0"
+  },
+  "gms-22": {
+    "source": "src/assets/images/place-photo/catalog/gms-22.webp",
+    "sourceWidth": 2999,
+    "sourceHeight": 2246,
+    "fingerprint": "6395dd36288ca21e268d9a4ca839cc8932cb7e7526c6e3730f39f8184fbc5f94",
+    "sha256": "229ef488ad2b12687eca400fdcc8d5bc439e2321833d7abfff0e7759e8e6dfdf"
+  },
+  "gms-24": {
+    "source": "src/assets/images/place-photo/catalog/gms-24.webp",
+    "sourceWidth": 1600,
+    "sourceHeight": 1067,
+    "fingerprint": "f50629a64fd282529c54a39e0df36a49505d749dde1d66e82709cbe344c1d9a1",
+    "sha256": "2d8aea1dac5cfad97bc391fb4789a9d8e6346f915588eaa633fa8dc845ca40ef"
+  },
+  "gms-25": {
+    "source": "src/assets/images/place-photo/catalog/gms-25.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "561b792800beec008b9234e2cfc003df0ce886ea3738c517e01026982976aa06",
+    "sha256": "b0bbcb27e200b311452601d4f7d715fe9eaa9f56b58572ac05ef02a2f954fac4"
+  },
+  "gms-27": {
+    "source": "src/assets/images/place-photo/catalog/gms-27.webp",
+    "sourceWidth": 1000,
+    "sourceHeight": 664,
+    "fingerprint": "5a03b2c8db74950152cee2b9fb670ae52877b30bb7a8a4ab9e953d6fc450c2a7",
+    "sha256": "b4ca49370e4fdff32f8614d0a74b55ad1f1e8076bea9587425616929d9331f27"
+  },
+  "gms-28-restored": {
+    "source": "src/assets/images/place-photo/catalog/gms-28-restored.webp",
+    "sourceWidth": 1445,
+    "sourceHeight": 1089,
+    "fingerprint": "6ab1e4421b9fa040368a579a18e658747b1edbdacf2ec09b4c9c38844a59e966",
+    "sha256": "23d02f3281d0e6b6ccab2d2be459adc0e108be18c38612ab3c70a25d934e377b"
+  },
+  "gms-29": {
+    "source": "src/assets/images/place-photo/catalog/gms-29.webp",
+    "sourceWidth": 2048,
+    "sourceHeight": 1536,
+    "fingerprint": "a299def9cfa16c29417c2a5f44bd87a49eaaa13cfb1fbf2f96c6c8ec59144daf",
+    "sha256": "0c1b5e4932986cb8ee36c2690b65057dd468bc0fd087379b5be41eaa80940b60"
+  },
+  "gms-30": {
+    "source": "src/assets/images/place-photo/catalog/gms-30.webp",
+    "sourceWidth": 1320,
+    "sourceHeight": 854,
+    "fingerprint": "a58c5320643a9fe07c348221c450fa755aa1a09d3465493b7eefafa43eab809b",
+    "sha256": "195353662002137f462daf465e714674b0ff002db6e73c4b1ab73c3e1cb18f0b"
+  },
+  "gms-31": {
+    "source": "src/assets/images/place-photo/catalog/gms-31.webp",
+    "sourceWidth": 5472,
+    "sourceHeight": 3648,
+    "fingerprint": "14f2389c200559b76642fde7502e586691c8b63bab303fdee1fac6c500bf83dc",
+    "sha256": "9166512afd5830aa15f39cb3eecccea486d45608e4d6e44ff5c9a0e8346b8b42"
+  },
+  "gms-32": {
+    "source": "src/assets/images/place-photo/catalog/gms-32.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "6b3629c25fdd07ec09cf9655dc5ea2c1cda459cb0bd1f309aba919d7795bef28",
+    "sha256": "531ed56701172bcb11737cad2d638302480caab41d331a4eb1b2470f73f3186a"
+  },
+  "gms-34": {
+    "source": "src/assets/images/place-photo/catalog/gms-34.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "64f5b6c722fb72e159591572b34f5a8bbf4180c0d2761590b3211191a4ebf034",
+    "sha256": "daf297b19f274c59bd3a06b7718f72fe7838d57d7ff5823625c4ee1266d6681d"
+  },
+  "gms-35": {
+    "source": "src/assets/images/place-photo/catalog/gms-35.webp",
+    "sourceWidth": 2128,
+    "sourceHeight": 1416,
+    "fingerprint": "b93d1f738fb0a8ce6a9b9e9ae6d0b70753801d34f627a35aba0bb8d1e3601aeb",
+    "sha256": "bb9d2c900704da354fd03662bddf962dc029748b14dba56fe20321ab7363d1cc"
+  },
+  "gms-36": {
+    "source": "src/assets/images/place-photo/catalog/gms-36.webp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "fingerprint": "f789b4e8e3f4db6090ba1a36fdd6f3fd8c05edad50f6c042232a89ddcb872a9f",
+    "sha256": "ae3f444c01f4539f688d39f380714debb7965bdf7b4d5beecd050c5de6c177a5"
+  },
+  "gms-37": {
+    "source": "src/assets/images/place-photo/catalog/gms-37.webp",
+    "sourceWidth": 4032,
+    "sourceHeight": 3024,
+    "fingerprint": "c7993e6f89ec9699d40eea0ea1c4c98347c5d1609cf549197474bd30ca1ab6b5",
+    "sha256": "1a09e706dd44b824eabc9f5a96bff66f573e4caba563748a349f6f002b503037"
+  },
+  "gms-38": {
+    "source": "src/assets/images/place-photo/catalog/gms-38.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2880,
+    "fingerprint": "b899c3b21222230ba3629eb7394c4f832ef9ba43a0499868e91db13aab3eba5b",
+    "sha256": "7ee5258d3c1559493ea03b645b74b8b0563811e42d3723c2f790394e7fdec63e"
+  },
+  "gms-39": {
+    "source": "src/assets/images/place-photo/catalog/gms-39.webp",
+    "sourceWidth": 2200,
+    "sourceHeight": 1650,
+    "fingerprint": "ff4a5e68612410db31f74f1c2e2cc3688bd8184f51d741df70fea3cec947b4f7",
+    "sha256": "5be6c4a8254b44f0fcf970ce9d0cf521fbfb59cc0ccdad72aa1ce9c8248fff2e"
+  },
+  "gms-40": {
+    "source": "src/assets/images/place-photo/catalog/gms-40.webp",
+    "sourceWidth": 2048,
+    "sourceHeight": 1367,
+    "fingerprint": "99525042db21c4c6c5dc974dc87227931104e02fa14e5c5e96a35a5d8c24112a",
+    "sha256": "9204e43453cc0a9d1ce59f058a288622a04b664addf916191dafe8d30a9cd8c1"
+  },
+  "gms-42-restored": {
+    "source": "src/assets/images/place-photo/catalog/gms-42-restored.webp",
+    "sourceWidth": 1539,
+    "sourceHeight": 1022,
+    "fingerprint": "7f0d7b4158acd39122c81be0201b0b24ee12283609f80faa3480323077ee6231",
+    "sha256": "6e56e1dbdd5deb66ad05e4ea1988502bdbf5b257e6e249acd4ab9a68c66e023f"
+  },
+  "gms-43-restored": {
+    "source": "src/assets/images/place-photo/catalog/gms-43-restored.webp",
+    "sourceWidth": 1447,
+    "sourceHeight": 1087,
+    "fingerprint": "56f08776fb973abc8776430d86f9e3e2914edfb08426bc9b8420ca89d3722ebd",
+    "sha256": "bf384024b61790bf5ad1abc25b2c2f1d1c685abc2b81399181b4ad3a251a724c"
+  },
+  "gms-45": {
+    "source": "src/assets/images/place-photo/catalog/gms-45.webp",
+    "sourceWidth": 3072,
+    "sourceHeight": 2304,
+    "fingerprint": "0a6ad5715f92ebcaa2aa8f40a1d74d7fe5bc20008c0b28f419723549355d71e4",
+    "sha256": "c45030ffabb91a6b8ef230052a6701eaa9e6b907213bfd09c23a2e0633923838"
+  },
+  "gms-46": {
+    "source": "src/assets/images/place-photo/catalog/gms-46.webp",
+    "sourceWidth": 2200,
+    "sourceHeight": 1291,
+    "fingerprint": "54bb8824673e60888105651500b4008619f934942ad7917a17d16105fa8ffafc",
+    "sha256": "51743aa8bc3de4e1ba625a73ed12bc205efe43327bbfdf614bbc1b98a9280f45"
+  },
+  "gms-47": {
+    "source": "src/assets/images/place-photo/catalog/gms-47.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "838489cef6cae12d1a8226bd7c575f8017e30108a15244e2bdfb7991ba3d0aa1",
+    "sha256": "0e622076d46aefad5c87b997928c26a5cbf4afa699c40c4ee8eefcf331043c40"
+  },
+  "gms-50-restored": {
+    "source": "src/assets/images/place-photo/catalog/gms-50-restored.webp",
+    "sourceWidth": 1448,
+    "sourceHeight": 1086,
+    "fingerprint": "b8b76e180a3ff0c5af3f35b4600abe769a808c59458def6604ffed3e94490df9",
+    "sha256": "c36d29fa3764e8aef512c74ce0a13e06c25a710ee84ca4923ae3f0385e51e928"
+  },
+  "gms-51-restored": {
+    "source": "src/assets/images/place-photo/catalog/gms-51-restored.webp",
+    "sourceWidth": 1448,
+    "sourceHeight": 1086,
+    "fingerprint": "07e03c450836cd029ac4b7f7e70a3ef31d21e6f91fd4a3cc4c3f990106915503",
+    "sha256": "cfa42b93fca7f73005811359744dc87bb688571b9d35f4f761f3d17eb86355cb"
+  },
+  "gms-53": {
+    "source": "src/assets/images/place-photo/catalog/gms-53.webp",
+    "sourceWidth": 1200,
+    "sourceHeight": 798,
+    "fingerprint": "20a3fb61ef3e6c0cbf2ccb27a6b956d31c541d0105e582faae45f3ad393731b6",
+    "sha256": "ea17ec089c65c82b8b760af9e973db07a107fa818cfae55584a49c1c6fb6bb83"
+  },
+  "gms-54": {
+    "source": "src/assets/images/place-photo/catalog/gms-54.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "b766f1573ee169f13ca1fb163e04d1e51b5be42f379394e0d1f8df4c017a89a6",
+    "sha256": "b76a7d2af2fc0fee5c7f33dc727a3d50487f72db962d493b44970caa670b5e5e"
+  },
+  "gms-57": {
+    "source": "src/assets/images/place-photo/catalog/gms-57.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "aa887ba6133ca5ebb95ea2bbf6f8c1945b6e42d00d7784f851fb7063bd50798f",
+    "sha256": "84dc3278b81efbf0e2aead74a124f735fceb83190e4cc0a97ef968ab070972ba"
+  },
+  "aguas": {
+    "source": "src/assets/images/hero/aguas-cover.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "038f8a2c6c4da39148cdefd69ea9b602694c649ea35cbfa99a7b1b18e3ac5503",
+    "sha256": "bbba940742796049423eb9de6346ed893428f0b0265a9007d31e15937ebf2b79"
+  },
+  "parque-story": {
+    "source": "src/assets/images/geological-story/parque-de-minas.webp",
+    "sourceWidth": 1459,
+    "sourceHeight": 1078,
+    "fingerprint": "0d04141dfbdcc81e367829d81bf77c5db5e84e4c2e1d9d6331533615840eca79",
+    "sha256": "5c4df8d06b5fa532ecb25559a1ce3690ae6f09095b432d3d17ec128c4c6f5f30"
+  },
+  "gms-05-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-05-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "b911a115f017092623393961b6c3543f6066f0dba237efc975912a93fdc61d06",
+    "sha256": "a4d3b945f30eab88127475b8a86b09647fb06b6fba2a10f89faaf49a928fbc4b"
+  },
+  "gms-23-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-23-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "b6f16841bb4023b1a00bee204a5c1260c92f3b019ecaa750232dbad91b905ee4",
+    "sha256": "9bf52757defd7acff9742fa249da60b30e59734449351fb5cd002051fbe0a845"
+  },
+  "gms-26-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-26-portada.webp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "fingerprint": "ae019fc5e898d4beb6752b78f3e50aa9d933f663595d8f92b6ff058600a56c81",
+    "sha256": "78daf9c9e28c7fe75e32febf3cac019e5299138d9a6db617e5de9c2f5aecf79f"
+  },
+  "gms-52-portada": {
+    "source": "src/assets/images/environment/laguna-cuervos.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "37500489126fcbf2e66f7efbe91104fed48e657652ce0b1fae76c49830eb3341",
+    "sha256": "81c213f42886f152c631163758167af171d0be90fac04f6aeb60491cc15063f9"
+  },
+  "gms-01-portada": {
+    "source": "src/assets/images/hero/arequita-cover.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "db29797ede0ed008f1b7ebc1e53ed1bee4b9c1edf6f859291364b80e5e656509",
+    "sha256": "27a7aca4e815e9713764bfe5f52c91d89af390e73a4708f9ef32fe6d7168b6f1"
+  },
+  "arequita-ribera": {
+    "source": "src/assets/images/gallery/arequita-ribera.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "f5a82d5c8b05a8b37dc4ebf373c520486b21177a76c0c30ab644f29f7363a8e2",
+    "sha256": "d77057c43257a2efd3549a5cd54c7fdc4b727dc8d774959d9a316100216f4347"
+  },
+  "gms-44-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-44-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "95d18f7726eba83dd0bd1d3f4ac27ad13062a7f43032f2afc42d21f77c771c5d",
+    "sha256": "6ff09664e3677b3a8821dbb6b375685fc688251e18542ef39c210557e04bdb6a"
+  },
+  "gms-55-restored-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-55-restored-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "f6ec271bd404b09b1679276c90fb2763c6de3a7bd6c100530ef9ef551af76228",
+    "sha256": "83055340f04f042fb42866f93496d95b255a442af98da6d0e0eebbf8498bb8eb"
+  },
+  "gms-58-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-58-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "c985d34e58fa6e54b7afa5e59f12440089e8ae0e5e0e81f2e82c8c0c3fb6d4e4",
+    "sha256": "b81c17d91370f323f0befb7e2b77d452dc8436910bf2ebdb55118f3a1879f43d"
+  },
+  "gms-60-restored-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-60-restored-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "cf8dd529991788a0aeaab5642ac315da72f4e5ae71486ad91112d5285e7f1a85",
+    "sha256": "6263be0eb88f35d98f25a48aa7e3ec26b2a1376276f5d59f94e8710d2964e039"
+  },
+  "gms-56-restored-portada": {
+    "source": "src/assets/images/education/mangas-de-piedra.webp",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "fingerprint": "e68c942142fee83a6fffb772bde6e13b7eb700c0b3e085b8d0aabc839bff807c",
+    "sha256": "66a0d8c465bf4dc5f56e4ca05b0458962a485caf378c5abd8304d511bae3d063"
+  },
+  "gms-59-restored-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-59-restored-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "5a6f73cdab0ac1355f13e7c29c2888350ed466ff342fb353ee458c5d4cdc735e",
+    "sha256": "956630bae77f07651a2f23ab092bcba113ab478fb838c00cd8d52a9868811d40"
+  },
+  "gms-17-restored-portada": {
+    "source": "src/assets/images/hero/parque-cover.webp",
+    "sourceWidth": 3840,
+    "sourceHeight": 2160,
+    "fingerprint": "e52b41228e869ac5c6614bfcf1d44de55580ddb404946818a6839bfdc699f8cf",
+    "sha256": "c7d6b04a918890d8052ce0900b8dff8964818a4918236d0272891ca9d4990b38"
+  },
+  "gms-04-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-04-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "36420c2be6dda766e9758129df4126197f4e3c5279f2f6675b6708992804a997",
+    "sha256": "7f7f3bbf8a61f1aa3b40539d11ca6621f727a65a6a7c1bd9e19842d6b47e1bc7"
+  },
+  "gms-33-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-33-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "268478cc8017c044667ce5aeb983aa6e523c738f498e732f3566a25756583c8b",
+    "sha256": "15aec0b86a97560fc4904643fcb2d5395bfec9b48d9112f2d932040ab96ca863"
+  },
+  "gms-49-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-49-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "edb9ea2456098bf67c69f921a476b9d346dd60e81a1b85e7daa53d4a561700e1",
+    "sha256": "20a72e55647fde8422b17c4a9fc242c0409f3b6608721159d45bff411aae88e0"
+  },
+  "gms-61-restored-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-61-restored-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "b356d7fb9f6db036592dd3fc0509ec6e09fbac6b02db41b61568b2a661d49368",
+    "sha256": "17a1bdc77bfe8a0c12127083aa33b70e079a851373064b90d88f55d36ac5048e"
+  },
+  "gms-41-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-41-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "1b29b0cc9b9b067b7e4e11e82a58548709d510c0eca7b9d3272568663ddd0da0",
+    "sha256": "4c949375a5cd4e505729125dc4877c93076eff7be9a06b8ccd39f95fd875c93b"
+  },
+  "gms-48-portada": {
+    "source": "src/assets/images/place-photo/catalog/covers/gms-48-portada.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "9f770c632a3d77abdc0ea25dbb4e559cb0f9abcfb8122f7cc2eec549e3609875",
+    "sha256": "bd7de7cf815ee054f30c973a35816097aaf962f2c435e01c424bdc12c00d1aa0"
+  },
+  "rio": {
+    "source": "src/assets/images/environment/santa-lucia-laguna.webp",
+    "sourceWidth": 1672,
+    "sourceHeight": 941,
+    "fingerprint": "5acfc8c97a2ff0dd1745e7b82370bbb9ac6da6d191b01fc489398577d65c69ac",
+    "sha256": "102d987649ff7b5ca66679d872a37eed41af5ea719bfa5189db219bff508d9c1"
+  },
+  "aprendiendo": {
+    "source": "src/assets/images/education/guardianes-arequita.webp",
+    "sourceWidth": 1600,
+    "sourceHeight": 900,
+    "fingerprint": "0da007adf351a6ade174c9354fe9f529c425d2e35545aa2d390a8133d78f3c65",
+    "sha256": "6e5419f1b14c0fdaaed95bf2e01636daa0dfe5ce196dfc44554749e8f7bb21b6"
+  }
+}

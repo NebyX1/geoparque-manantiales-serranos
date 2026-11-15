@@ -1,6 +1,8 @@
 ---
 import { siteConfig } from '../../config/site';
 import { absoluteUrl, getBuildSite } from '../../lib/urls';
+import favicon from '../../assets/images/seo-head/favicon.webp';
+import social from '../../assets/images/seo-head/social.webp';
 
 interface Props {
   title?: string | undefined;
@@ -12,14 +14,20 @@ const {
   title = `${siteConfig.name} · Patrimonio y educación ambiental`,
   description = siteConfig.description,
   pathname = Astro.url.pathname,
-  imageAlt = 'Sierras y río Santa Lucía en Manantiales Serranos',
+  imageAlt = 'Paredón del Cerro Arequita sobre el monte serrano de Manantiales Serranos',
 } = Astro.props;
 const build = getBuildSite();
 const canonical = absoluteUrl(pathname, build.url);
-const image = absoluteUrl(siteConfig.image, build.url);
+const image = absoluteUrl(social.src, build.url);
 ---
 
 <title>{title}</title>
+<link
+  rel="icon"
+  href={favicon.src}
+  type="image/webp"
+  sizes={`${favicon.width}x${favicon.height}`}
+/>
 <meta name="description" content={description} />
 <meta
   name="robots"
@@ -32,8 +40,9 @@ const image = absoluteUrl(siteConfig.image, build.url);
 <meta property="og:locale" content={siteConfig.ogLocale} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={image} />
-<meta property="og:image:width" content={String(siteConfig.imageWidth)} />
-<meta property="og:image:height" content={String(siteConfig.imageHeight)} />
+<meta property="og:image:type" content="image/webp" />
+<meta property="og:image:width" content={String(social.width)} />
+<meta property="og:image:height" content={String(social.height)} />
 <meta property="og:image:alt" content={imageAlt} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />

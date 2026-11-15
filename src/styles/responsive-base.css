@@ -3,7 +3,7 @@
     padding-top: 100px;
   }
   .hero-description {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .hero h1 {
     margin-top: 50px;
@@ -15,7 +15,7 @@
     padding-block: 120px;
   }
   .hero-tab strong {
-    font-size: 15px;
+    font-size: var(--type-small);
   }
 }
 @media (max-width: 1200px) {
@@ -29,7 +29,7 @@
     gap: 7px;
   }
   .desktop-nav a {
-    font-size: 11px;
+    font-size: var(--type-small);
   }
   .story-grid {
     gap: 5vw;
@@ -38,7 +38,7 @@
     padding-top: 54px;
   }
   .hero h1 {
-    font-size: clamp(80px, 9.1vw, 118px);
+    font-size: clamp(5rem, calc(9.1vw * var(--text-scale)), 7.375rem);
   }
   .hero-tab {
     gap: 9px;
@@ -66,7 +66,7 @@
     padding: 42px;
   }
   .trust-item strong {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 1000px) {
@@ -81,16 +81,13 @@
     gap: 17px;
   }
   .desktop-nav a {
-    font-size: 10px;
-  }
-  .header-actions > .round {
-    display: none;
+    font-size: var(--type-small);
   }
   .site-header {
     gap: 16px;
   }
   .trip-button {
-    font-size: 11px;
+    font-size: var(--type-control);
     padding: 0 13px;
   }
   .hero {
@@ -100,16 +97,16 @@
     max-width: 760px;
   }
   .hero h1 {
-    font-size: 91px;
+    font-size: 5.6875rem;
   }
   .hero-description {
-    font-size: 15px;
+    font-size: var(--type-body);
   }
   .hero-side {
     display: none;
   }
   .hero-caption {
-    font-size: 10px;
+    font-size: var(--type-small);
   }
   .intro-grid {
     grid-template-columns: 0.6fr 1.7fr;
@@ -128,10 +125,10 @@
     padding-top: 10px;
   }
   .place-card h3 {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
   .place-tag {
-    font-size: 8px;
+    font-size: var(--type-small);
     padding: 5px 8px;
     top: 12px;
     left: 12px;
@@ -151,9 +148,8 @@
   .map-sidebar {
     padding: 20px;
   }
-  .map-canvas,
-  .map-svg {
-    min-height: 510px;
+  .map-canvas {
+    --map-min-height: 455px;
   }
   .map-preview {
     max-width: 255px;
@@ -162,7 +158,7 @@
     gap: 40px;
   }
   .nature-words .display {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .culture-grid {
     gap: 35px;
@@ -175,7 +171,7 @@
     bottom: 27px;
   }
   .culture-feature-copy h3 {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
   .route-image {
     height: 195px;
@@ -184,7 +180,7 @@
     padding: 22px;
   }
   .route-content h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .gallery-grid {
     grid-template-rows: 185px;
@@ -217,9 +213,6 @@
   .desktop-nav {
     display: none;
   }
-  .header-actions > .round {
-    display: grid;
-  }
   .mobile-toggle {
     display: grid;
   }
@@ -237,11 +230,11 @@
     max-width: 620px;
   }
   .hero h1 {
-    font-size: clamp(72px, 11.8vw, 100px);
+    font-size: clamp(4.5rem, calc(11.8vw * var(--text-scale)), 6.25rem);
     margin-top: 37px;
   }
   .hero-description {
-    font-size: 14px;
+    font-size: var(--type-body);
     max-width: 350px;
   }
   .hero-shade {
@@ -268,11 +261,11 @@
     padding: 0 8px 0 0;
   }
   .hero-tab strong {
-    font-size: 11px;
+    font-size: var(--type-small);
     line-height: 1.3;
   }
   .hero-tab small {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .hero-caption {
     bottom: 162px;
@@ -284,7 +277,7 @@
     padding-bottom: 13px;
   }
   .hero-footer-top .eyebrow {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .trust-strip {
     gap: 18px;
@@ -295,10 +288,10 @@
     display: none;
   }
   .trust-item strong {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .trust-item span {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .trust-strip .unesco-lock {
     height: 46px;
@@ -315,21 +308,21 @@
     display: none;
   }
   .intro-copy .display {
-    font-size: 46px;
+    font-size: 2.875rem;
   }
   .intro-bottom {
     display: flex;
     gap: 30px;
   }
   .intro-bottom p {
-    font-size: 13px;
+    font-size: var(--type-lead);
     max-width: 65%;
   }
   .intro-bottom .round-link {
     margin: 0;
     max-width: 140px;
     line-height: 1.6;
-    font-size: 11px;
+    font-size: var(--type-control);
   }
   .intro-bottom .round {
     width: 44px;
@@ -339,11 +332,11 @@
     gap: 24px;
   }
   .section-heading .section-lead {
-    font-size: 13px;
+    font-size: var(--type-lead);
     max-width: 250px;
   }
   .display {
-    font-size: 55px;
+    font-size: 3.4375rem;
   }
   .places-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -376,13 +369,13 @@
     gap: 27px;
   }
   .era-number {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
   .story-copy h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .story-copy > p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .story-visual {
     aspect-ratio: 0.8;
@@ -390,20 +383,20 @@
   .story-caption {
     left: 17px;
     bottom: 18px;
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .story-micro {
-    font-size: 8px;
+    font-size: var(--type-small);
     left: 12px;
   }
   .story-graphic {
     height: 33px;
   }
   .era-button strong {
-    font-size: 12px;
+    font-size: var(--type-small);
   }
   .era-button span {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .map-grid {
     grid-template-columns: 1fr;
@@ -419,12 +412,14 @@
   }
   .map-list {
     display: flex;
+    flex-wrap: wrap;
     overflow: auto;
     gap: 7px;
     padding-bottom: 5px;
   }
   .map-list li {
     flex: none;
+    max-width: 100%;
   }
   .map-list button {
     width: auto;
@@ -432,7 +427,7 @@
     border-radius: 20px;
     padding: 8px 14px;
     min-height: 37px;
-    font-size: 11px;
+    font-size: var(--type-control);
   }
   .map-list .map-index,
   .map-list .icon {
@@ -443,24 +438,18 @@
     background: var(--forest);
     color: var(--white);
   }
-  .map-canvas,
-  .map-svg {
-    min-height: 460px;
+  .map-canvas {
+    --map-min-height: 380px;
   }
   .map-preview {
-    bottom: 50px;
     max-width: 260px;
-    left: 18px;
   }
   .nature-layout {
     grid-template-columns: 1fr;
     gap: 37px;
   }
-  .nature-photo {
-    aspect-ratio: 1.5;
-  }
   .nature-words .display {
-    font-size: 55px;
+    font-size: 3.4375rem;
     max-width: 580px;
   }
   .nature-words > p {
@@ -488,11 +477,11 @@
     padding: 18px;
   }
   .route-content h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .route-content p,
   .route-path {
-    font-size: 11px;
+    font-size: var(--type-body);
   }
   .route-image {
     height: 170px;
@@ -503,7 +492,7 @@
     padding: 35px;
   }
   .planner-intro h2 {
-    font-size: 53px;
+    font-size: 3.3125rem;
   }
   .planner-intro p {
     max-width: 460px;
@@ -518,15 +507,12 @@
   .education-text > p {
     max-width: 540px;
   }
-  .education-image {
-    aspect-ratio: 1.5;
-  }
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 215px 215px;
   }
   .visit-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 43px;
   }
   .visit-copy > p {
@@ -540,7 +526,7 @@
   }
   .footer-title {
     max-width: 590px;
-    font-size: 66px;
+    font-size: 4.125rem;
   }
   .footer-nav {
     margin-top: 35px;
@@ -558,7 +544,7 @@
     gap: 25px;
   }
   .detail-title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .detail-main {
     padding: 26px;
@@ -590,7 +576,7 @@
   .trip-button {
     height: 41px;
     padding: 0 12px;
-    font-size: 10px;
+    font-size: var(--type-control);
     gap: 7px;
   }
   .trip-button .icon {
@@ -600,7 +586,7 @@
   .trip-button .count {
     height: 17px;
     min-width: 17px;
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .mobile-toggle {
     width: 39px;
@@ -618,12 +604,12 @@
     padding-right: 20px;
   }
   .hero-kicker {
-    font-size: 8px;
+    font-size: var(--type-small);
     letter-spacing: 0.1em;
     gap: 9px;
   }
   .hero h1 {
-    font-size: clamp(62px, 14.4vw, 82px);
+    font-size: clamp(3.875rem, calc(14.4vw * var(--text-scale)), 5.125rem);
     line-height: 0.99;
     letter-spacing: -0.065em;
     margin-top: 36px;
@@ -632,7 +618,7 @@
     letter-spacing: -0.065em;
   }
   .hero-description {
-    font-size: 13px;
+    font-size: var(--type-body);
     max-width: 300px;
     line-height: 1.8;
     margin-top: 23px;
@@ -643,13 +629,13 @@
     margin-top: 26px;
   }
   .hero-ctas .btn {
-    font-size: 11px;
+    font-size: var(--type-control);
     padding: 14px 18px;
     min-height: 49px;
     gap: 11px;
   }
   .hero-secondary {
-    font-size: 10px;
+    font-size: var(--type-small);
     gap: 7px;
   }
   .hero-images .hero-image img {
@@ -662,31 +648,31 @@
   .hero-caption {
     left: 22px;
     bottom: 158px;
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .hero-caption .icon {
     width: 15px;
     height: 15px;
   }
   .hero-tab strong {
-    font-size: 10px;
+    font-size: var(--type-small);
     line-height: 1.35;
     display: block;
     max-width: 65px;
   }
   .hero-tab small {
-    font-size: 7px;
+    font-size: var(--type-small);
     margin-bottom: 5px;
   }
   .hero-tabs {
     gap: 11px;
   }
   .hero-footer-top .eyebrow {
-    font-size: 7px;
+    font-size: var(--type-small);
     letter-spacing: 0.12em;
   }
   .slide-counter {
-    font-size: 9px;
+    font-size: var(--type-small);
     gap: 8px;
   }
   .slide-counter .round {
@@ -706,10 +692,10 @@
     gap: 7px;
   }
   .trust-item strong {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .trust-item span {
-    font-size: 8px;
+    font-size: var(--type-small);
     max-width: 98px;
     line-height: 1.5;
   }
@@ -727,7 +713,7 @@
     gap: 22px;
   }
   .intro-copy .display {
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 1.17;
   }
   .intro-bottom {
@@ -736,7 +722,7 @@
   }
   .intro-bottom p {
     max-width: none;
-    font-size: 13px;
+    font-size: var(--type-lead);
   }
   .intro-bottom .round-link {
     max-width: 100%;
@@ -749,7 +735,7 @@
     height: 41px;
   }
   .display {
-    font-size: 43px;
+    font-size: 2.6875rem;
   }
   .section-heading {
     display: block;
@@ -757,7 +743,7 @@
   }
   .section-heading .section-lead {
     max-width: 100%;
-    font-size: 13px;
+    font-size: var(--type-lead);
     margin-top: 19px;
   }
   .section-heading > .text-link {
@@ -772,22 +758,16 @@
     margin-bottom: 24px;
   }
   .pills {
-    flex-wrap: nowrap;
-    overflow: auto;
     max-width: 100%;
     padding: 3px 0 7px;
-    scrollbar-width: none;
-  }
-  .pills::-webkit-scrollbar {
-    display: none;
   }
   .pill {
-    font-size: 11px;
+    font-size: var(--type-control);
     min-height: 38px;
     padding: 8px 14px;
   }
   .result-count {
-    font-size: 10px;
+    font-size: var(--type-small);
   }
   .places-grid {
     gap: 28px 13px;
@@ -801,7 +781,7 @@
     left: 9px;
     right: 8px;
     max-width: calc(100% - 17px);
-    font-size: 7px;
+    font-size: var(--type-small);
     width: max-content;
     padding: 5px 7px;
   }
@@ -818,7 +798,7 @@
     width: 16px;
   }
   .place-meta {
-    font-size: 8px;
+    font-size: var(--type-small);
     align-items: flex-start;
     line-height: 1.5;
     gap: 6px;
@@ -828,7 +808,7 @@
     display: none;
   }
   .place-card h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 5px;
   }
   .place-card h3 a {
@@ -840,12 +820,12 @@
     flex: none;
   }
   .place-summary {
-    font-size: 11px;
+    font-size: var(--type-body);
     line-height: 1.75;
     margin-top: 9px;
   }
   .context-badge {
-    font-size: 7px;
+    font-size: var(--type-small);
     max-width: calc(100% - 48px);
     left: 9px;
     bottom: 12px;
@@ -858,13 +838,13 @@
   }
   .explore-bottom .btn {
     width: 100%;
-    font-size: 12px;
+    font-size: var(--type-control);
   }
   .atlas-toolbar {
     gap: 9px;
   }
   .select {
-    font-size: 10px;
+    font-size: var(--type-body);
     padding-right: 20px;
     min-width: 0;
   }
@@ -874,13 +854,13 @@
     margin: 0 9px;
   }
   .deep-time .display {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
   .deep-time .section-heading {
     margin-bottom: 25px;
   }
   .deep-time .section-lead {
-    font-size: 12px;
+    font-size: var(--type-lead);
   }
   .story-grid {
     display: flex;
@@ -895,21 +875,21 @@
     gap: 18px;
   }
   .era-number {
-    font-size: 87px;
+    font-size: 5.4375rem;
   }
   .era-unit {
-    font-size: 11px;
+    font-size: var(--type-small);
     max-width: 100px;
   }
   .story-copy h3 {
-    font-size: 31px;
+    font-size: 1.9375rem;
     margin: 18px 0 15px;
   }
   .story-copy > p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .story-copy .text-link {
-    font-size: 11px;
+    font-size: var(--type-control);
     margin-top: 17px;
   }
   .story-visual {
@@ -927,10 +907,10 @@
     padding: 25px 3px 0 0;
   }
   .era-button strong {
-    font-size: 10px;
+    font-size: var(--type-small);
   }
   .era-button span {
-    font-size: 8px;
+    font-size: var(--type-small);
     line-height: 1.6;
   }
   .map-section .section-heading {
@@ -943,35 +923,30 @@
     padding: 19px 16px;
   }
   .map-sidebar h3 {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
   .map-sidebar > p {
-    font-size: 11px;
+    font-size: var(--type-small);
   }
-  .map-canvas,
-  .map-svg {
-    min-height: 430px;
+  .map-canvas {
+    --map-min-height: 320px;
   }
   .map-preview {
-    left: 13px;
-    bottom: 55px;
-    right: 13px;
     max-width: 230px;
     padding: 8px;
     gap: 10px;
   }
   .map-preview img {
     width: 62px;
-    height: 55px;
   }
   .map-preview strong {
-    font-size: 11px;
+    font-size: var(--type-small);
   }
   .map-preview small {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .map-preview button {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .map-controls {
     top: 13px;
@@ -986,33 +961,30 @@
     top: 20px;
   }
   .map-caption {
-    font-size: 8px;
-    bottom: 14px;
-    left: 16px;
+    font-size: var(--type-small);
     max-width: 230px;
     line-height: 1.6;
   }
   .map-open-source {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .nature {
     padding-top: 5px;
   }
   .nature-photo {
-    aspect-ratio: 1.08;
     border-radius: 15px;
   }
   .nature-words .display {
-    font-size: 43px;
+    font-size: 2.6875rem;
   }
   .nature-words > p {
-    font-size: 13px;
+    font-size: var(--type-body);
   }
   .nature-topic summary {
-    font-size: 14px;
+    font-size: var(--type-small);
   }
   .nature-topic p {
-    font-size: 12px;
+    font-size: var(--type-body);
     margin-right: 18px;
   }
   .nature-bottom {
@@ -1020,7 +992,7 @@
     flex-wrap: wrap;
   }
   .eco-pill {
-    font-size: 9px;
+    font-size: var(--type-small);
     padding: 7px 10px;
   }
   .care-strip {
@@ -1034,7 +1006,7 @@
     height: 23px;
   }
   .care-strip p {
-    font-size: 11px;
+    font-size: var(--type-body);
   }
   .culture-feature {
     aspect-ratio: 0.95;
@@ -1046,10 +1018,10 @@
     bottom: 26px;
   }
   .culture-feature-copy h3 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   .culture-feature-copy p {
-    font-size: 11px;
+    font-size: var(--type-body);
   }
   .culture-grid {
     gap: 30px;
@@ -1060,10 +1032,10 @@
     gap: 10px;
   }
   .culture-story h3 {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
   .culture-story p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .routes-grid {
     grid-template-columns: 1fr;
@@ -1076,16 +1048,16 @@
     padding: 25px;
   }
   .route-content h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .route-content p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .route-path {
-    font-size: 11px;
+    font-size: var(--type-small);
   }
   .route-note {
-    font-size: 10px;
+    font-size: var(--type-small);
   }
   .planner {
     padding: 0 var(--gutter) 65px;
@@ -1096,42 +1068,41 @@
     gap: 27px;
   }
   .planner-intro h2 {
-    font-size: 44px;
+    font-size: 2.75rem;
   }
   .planner-intro p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .plan-choice span {
-    font-size: 11px;
+    font-size: var(--type-control);
     min-height: 45px;
   }
   .planner-form .btn {
     width: 100%;
-    font-size: 12px;
+    font-size: var(--type-control);
   }
   .planner-privacy {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .education {
     padding-top: 0;
   }
   .education-text .display {
-    font-size: 43px;
+    font-size: 2.6875rem;
   }
   .education-text > p {
-    font-size: 13px;
+    font-size: var(--type-body);
   }
   .education-buttons {
     gap: 15px;
   }
   .education-buttons .btn {
-    font-size: 12px;
+    font-size: var(--type-control);
   }
   .education-buttons .text-link {
-    font-size: 11px;
+    font-size: var(--type-control);
   }
   .education-image {
-    aspect-ratio: 1.02;
     border-radius: 15px;
   }
   .education-sticker {
@@ -1139,10 +1110,10 @@
     right: 15px;
     bottom: 15px;
     padding: 16px;
-    font-size: 12px;
+    font-size: var(--type-small);
   }
   .education-sticker small {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .gallery {
     padding-top: 0;
@@ -1152,7 +1123,7 @@
     grid-template-rows: 185px 185px;
   }
   .gallery-shot span {
-    font-size: 9px;
+    font-size: var(--type-small);
     bottom: 12px;
     left: 12px;
   }
@@ -1160,16 +1131,16 @@
     gap: 35px;
   }
   .visit-copy .display {
-    font-size: 44px;
+    font-size: 2.75rem;
   }
   .visit-copy > p {
-    font-size: 13px;
+    font-size: var(--type-body);
   }
   .visit-faq summary {
-    font-size: 14px;
+    font-size: var(--type-small);
   }
   .visit-faq p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .visit-contact {
     display: block;
@@ -1177,14 +1148,14 @@
     padding-top: 25px;
   }
   .visit-contact p {
-    font-size: 11px;
+    font-size: var(--type-body);
     margin-bottom: 17px;
   }
   .footer {
     padding: 57px var(--gutter) 22px;
   }
   .footer-title {
-    font-size: 51px;
+    font-size: 3.1875rem;
   }
   .footer-nav {
     gap: 5px 30px;
@@ -1201,10 +1172,10 @@
   }
   .footer-small {
     max-width: 100%;
-    font-size: 10px;
+    font-size: var(--type-small);
   }
   .footer-tail {
-    font-size: 8px;
+    font-size: var(--type-small);
     line-height: 1.8;
     align-items: flex-start;
     gap: 20px;
@@ -1228,7 +1199,7 @@
     gap: 15px;
   }
   .dialog-head h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .dialog-head .round {
     width: 35px;
@@ -1238,7 +1209,7 @@
     padding: 22px 20px;
   }
   .dialog-head .dialog-eyebrow {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .detail-hero {
     height: 230px;
@@ -1247,10 +1218,10 @@
     padding: 23px 20px;
   }
   .detail-title {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
   .detail-tagline {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
   .detail-grid {
     display: flex;
@@ -1258,7 +1229,7 @@
     gap: 24px;
   }
   .detail-description {
-    font-size: 13px;
+    font-size: var(--type-body);
   }
   .detail-side {
     position: static;
@@ -1269,7 +1240,7 @@
   .detail-side .btn {
     width: auto;
     margin-top: 13px;
-    font-size: 11px;
+    font-size: var(--type-control);
     padding: 12px 16px;
     margin-right: 6px;
   }
@@ -1277,29 +1248,26 @@
     margin-top: 9px;
   }
   .detail-body p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .detail-photo-caption {
     left: 20px;
     right: 20px;
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .dialog-subtitle {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .saved-item {
-    grid-template-columns: 64px 1fr auto;
+    grid-template-columns: 64px minmax(0, 1fr) auto;
     gap: 12px;
     align-items: start;
   }
-  .saved-item img {
-    height: 64px;
-  }
   .saved-item h3 {
-    font-size: 15px;
+    font-size: var(--type-small);
   }
   .saved-item small {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .saved-item > .round {
     height: 30px;
@@ -1310,7 +1278,7 @@
     flex-wrap: wrap;
   }
   .saved-controls label {
-    font-size: 9px;
+    font-size: var(--type-control);
   }
   .trip-export {
     padding: 17px;
@@ -1319,62 +1287,56 @@
     gap: 10px;
   }
   .trip-date-row .btn {
-    font-size: 10px;
+    font-size: var(--type-control);
   }
   .dialog-actions .btn {
-    font-size: 11px;
+    font-size: var(--type-control);
     gap: 9px;
     padding: 12px 16px;
   }
   .article-reading .article-title {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
   .article-reading .lead {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .article-reading p {
-    font-size: 13px;
+    font-size: var(--type-body);
   }
   .article-reading h3 {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
   .lightbox-caption {
     padding: 17px;
     gap: 13px;
     align-items: flex-start;
-    font-size: 11px;
+    font-size: var(--type-small);
   }
   .lightbox-caption small {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .lightbox-caption .round {
     height: 32px;
     width: 32px;
   }
-  .lightbox .lightbox-image {
+  .lightbox .lightbox-image:not([data-photo-profile='gallery']) {
     height: 58svh;
   }
-  .reading-image {
-    height: 210px;
-  }
   .quiz-card h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .quiz-options button {
-    font-size: 12px;
+    font-size: var(--type-control);
   }
   .toast {
-    font-size: 11px;
+    font-size: var(--type-small);
     padding: 12px 18px;
     width: max-content;
   }
 }
 @media (max-width: 359px) {
-  .header-actions > .round {
-    display: none;
-  }
   .hero h1 {
-    font-size: 57px;
+    font-size: 3.5625rem;
   }
   .hero {
     min-height: 720px;
@@ -1383,34 +1345,34 @@
     gap: 10px;
   }
   .hero-secondary {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .trust-strip {
     gap: 13px;
   }
   .trust-item strong {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .hero-tab strong {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .display {
-    font-size: 39px;
+    font-size: 2.4375rem;
   }
   .place-card h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .intro-copy .display {
-    font-size: 33px;
+    font-size: 2.0625rem;
   }
   .deep-time .display {
-    font-size: 38px;
+    font-size: 2.375rem;
   }
   .planner-intro h2 {
-    font-size: 39px;
+    font-size: 2.4375rem;
   }
   .footer-title {
-    font-size: 46px;
+    font-size: 2.875rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1438,20 +1400,20 @@
   .print-only {
     display: block !important;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: var(--sans);
     color: #111;
   }
   .print-only h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 12px;
   }
   .print-only h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 25px 0 12px;
   }
   .print-only p,
   .print-only li {
-    font-size: 12px;
+    font-size: var(--type-small);
     line-height: 1.7;
   }
   .print-only ol {
@@ -1492,15 +1454,15 @@
   }
   .hero-tab small[data-number]:before {
     content: attr(data-number);
-    font-size: 9px;
+    font-size: var(--type-small);
     letter-spacing: 0.15em;
   }
   .hero-tab strong {
-    font-size: 11px;
+    font-size: var(--type-small);
     max-width: 75px;
   }
   .hero-footer-top .eyebrow {
-    font-size: 8px;
+    font-size: var(--type-small);
     max-width: 220px;
   }
   .hero-footer-top .round {

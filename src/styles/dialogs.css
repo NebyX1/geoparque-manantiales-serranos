@@ -26,50 +26,71 @@ dialog::backdrop {
   padding: 22px 30px;
 }
 .dialog-head h2 {
-  font-size: 34px;
+  font-size: 2.125rem;
   line-height: 1.04;
+  overflow-wrap: anywhere;
+}
+.dialog-head > div {
+  min-width: 0;
 }
 .dialog-head .round {
   background: transparent;
   min-width: 40px;
   min-height: 40px;
+  flex: none;
+}
+.lightbox-caption {
+  flex-wrap: wrap;
+  overflow-wrap: anywhere;
+}
+.lightbox-caption > div:first-child {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+.lightbox-caption > div:last-child {
+  flex: none;
+}
+#place-dialog {
+  width: 960px;
 }
 .detail-hero {
   height: clamp(220px, 35vh, 390px);
 }
 .detail-photo-caption {
-  font-size: 10px;
-  background: #163524b0;
+  font-size: var(--type-small);
+  background: rgb(16 43 33 / 88%);
   left: 24px;
   bottom: 18px;
   width: max-content;
+  max-width: calc(100% - 48px);
   padding: 4px 10px;
+  overflow-wrap: anywhere;
 }
 .detail-title {
-  font-size: clamp(41px, 5vw, 68px);
+  font-size: clamp(2.5625rem, calc(5vw * var(--text-scale)), 4.25rem);
   line-height: 0.95;
   margin-top: 12px;
 }
 .detail-tagline {
-  font: 500 23px/1.4 var(--sans);
+  font: 500 1.4375rem/1.4 var(--sans);
   letter-spacing: -0.02em;
   max-width: 700px;
   margin-top: 14px;
   color: var(--muted);
 }
 .detail-description {
-  font-size: 16px !important;
+  font-size: 1rem !important;
   line-height: 1.8 !important;
   color: var(--forest);
 }
 .detail-body h3 {
-  font: 700 30px/1.1 var(--display);
+  font: 700 1.875rem/1.1 var(--display);
   text-transform: uppercase;
   letter-spacing: 0;
   margin: 30px 0 13px;
 }
 .detail-body p {
-  font-size: 13px;
+  font-size: var(--type-body);
   line-height: 1.95;
   overflow-wrap: anywhere;
 }
@@ -87,23 +108,23 @@ dialog::backdrop {
   top: 0;
 }
 .detail-side h3 {
-  font: 700 30px/1 var(--display);
+  font: 700 1.875rem/1 var(--display);
   text-transform: uppercase;
 }
 .detail-side p {
-  font-size: 12px;
+  font-size: var(--type-small);
 }
 .detail-side .status {
   border-radius: 2px;
-  font-size: 10px;
+  font-size: var(--type-small);
 }
 .detail-side .btn {
-  font-size: 10px;
+  font-size: var(--type-control);
   padding: 14px;
 }
 .related-items a {
   border-radius: 3px;
-  font-size: 11px;
+  font-size: var(--type-control);
 }
 .detail-more {
   border-block: 1px solid var(--line);
@@ -111,12 +132,12 @@ dialog::backdrop {
   padding-block: 17px;
 }
 .detail-more summary {
-  font: 700 25px/1.15 var(--display);
+  font: 700 1.5625rem/1.15 var(--display);
   cursor: pointer;
   text-transform: uppercase;
 }
 .detail-more h4 {
-  font: 700 25px/1.2 var(--display);
+  font: 700 1.5625rem/1.2 var(--display);
   margin-top: 23px;
   text-transform: uppercase;
 }
@@ -124,56 +145,55 @@ dialog::backdrop {
   margin-top: 14px;
 }
 .reading-image {
-  height: 300px;
   border-radius: 2px;
 }
 .article-reading .article-title {
-  font-size: clamp(43px, 5vw, 70px);
+  font-size: clamp(2.6875rem, calc(5vw * var(--text-scale)), 4.375rem);
   line-height: 0.94;
 }
 .article-reading .lead {
-  font: 500 19px/1.6 var(--sans);
+  font: 500 1.1875rem/1.6 var(--sans);
   color: var(--muted);
 }
 .article-reading h3:not(.article-title) {
-  font: 700 32px/1.1 var(--display);
+  font: 700 2rem/1.1 var(--display);
   text-transform: uppercase;
 }
 .article-reading p {
-  font-size: 14px;
+  font-size: var(--type-body);
   line-height: 1.95;
 }
 .dialog-subtitle {
-  font-size: 13px;
+  font-size: var(--type-body);
   line-height: 1.85;
 }
 .trip-empty h3 {
-  font-size: 44px;
+  font-size: 2.75rem;
 }
 .saved-item h3 {
-  font: 700 26px/1 var(--display);
+  font: 700 1.625rem/1 var(--display);
   text-transform: uppercase;
 }
 .saved-item img {
   border-radius: 1px;
 }
 .saved-item small {
-  font-size: 10px;
+  font-size: var(--type-small);
 }
 .trip-export {
   border-radius: 2px;
 }
 .lightbox-caption small {
-  font-size: 10px;
+  font-size: var(--type-small);
 }
 .quiz-options button {
   border-radius: 2px;
 }
 .quiz-card h3 {
-  font-size: 42px;
+  font-size: 2.625rem;
 }
 .quiz-feedback {
-  font-size: 13px;
+  font-size: var(--type-body);
 }
 .js.motion .reveal {
   transition:

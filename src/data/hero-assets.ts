@@ -1,3 +1,8 @@
+import type { ImageMetadata } from 'astro';
+import arequitaCover from '../assets/images/hero/arequita-cover.webp';
+import aguasCover from '../assets/images/hero/aguas-cover.webp';
+import parqueCover from '../assets/images/hero/parque-cover.webp';
+import salusCover from '../assets/images/hero/salus.webp';
 import arequita from '../assets/images/hero/mobile/arequita-rio.webp';
 import aguas from '../assets/images/hero/mobile/aguas.webp';
 import salus from '../assets/images/hero/mobile/salus.webp';
@@ -10,3 +15,9 @@ export const mobileHeroAssets = {
   parque,
 };
 export type HeroAssetKey = keyof typeof mobileHeroAssets;
+export const heroCoverAssets: Record<HeroAssetKey, ImageMetadata> = {
+  'arequita-rio': arequitaCover,
+  aguas: aguasCover,
+  salus: salusCover,
+  parque: parqueCover,
+};

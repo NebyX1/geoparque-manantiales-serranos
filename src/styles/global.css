@@ -9,7 +9,6 @@
   logs: false;
 }
 :root {
-  --sans: 'Montserrat Variable', Arial, Helvetica, sans-serif;
   --forest-deep: var(--deep);
   --moss: var(--green);
   --water: #24535b;
@@ -90,7 +89,7 @@ html.reduce-motion *::after {
   color: var(--deep);
 }
 .map-preview a {
-  font-size: 10px;
+  font-size: var(--type-small);
   text-decoration: underline;
   display: inline-block;
   margin-top: 6px;

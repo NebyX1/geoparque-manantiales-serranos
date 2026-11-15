@@ -1,7 +1,11 @@
 ---
 import Photo from '../brand/Photo.astro';
-import { assets } from '../../data/assets';
+import { photoForAsset } from '../../data/place-photos';
 import { storyPhotoSizes } from '../../lib/image-sizing';
+import { photoProfiles } from '../../lib/photo-profiles.mjs';
+const photoSizes = storyPhotoSizes(photoProfiles.editorial);
+const arequita = photoForAsset('arequita')!;
+const aguas = photoForAsset('aguas')!;
 ---
 
 <section aria-label="La historia de la Tierra en cuatro geositios" class="geo-story" id="historia">
@@ -104,12 +108,13 @@ import { storyPhotoSizes } from '../../lib/image-sizing';
               <a aria-label="Conocer Cerro Arequita" href="/lugares/cerro-arequita/">
                 <Photo
                   alt="Cerro Arequita"
-                  assetKey="arequita-rio"
+                  assetKey="arequita"
+                  profile="editorial"
                   loading="lazy"
-                  sizes={storyPhotoSizes(assets['arequita-rio']!)}
+                  sizes={photoSizes}
                 />
               </a>
-              <span class="geo-photo-stamp">Cerro Arequita · Bienflorencia · archivo 2012</span>
+              <span class="geo-photo-stamp">{arequita.caption}</span>
             </div>
             <figcaption class="geo-photo-caption">
               <div>
@@ -179,8 +184,9 @@ import { storyPhotoSizes } from '../../lib/image-sizing';
                 <Photo
                   alt="Aguas Blancas"
                   assetKey="aguas"
+                  profile="editorial"
                   loading="lazy"
-                  sizes={storyPhotoSizes(assets.aguas!)}
+                  sizes={photoSizes}
                 />
               </a>
               <span class="geo-photo-stamp">Zona de Cizalla Sarandí del Yi–Piriápolis</span>
@@ -189,7 +195,7 @@ import { storyPhotoSizes } from '../../lib/image-sizing';
               <div>
                 <small>Geositio de valor internacional</small>
                 <strong>Aguas Blancas</strong>
-                <small>Restauración con IA · foto de archivo</small>
+                <small>{aguas.credit}</small>
               </div>
               <button
                 aria-label="Guardar Aguas Blancas en mi cuaderno"
@@ -254,11 +260,11 @@ import { storyPhotoSizes } from '../../lib/image-sizing';
                 <Photo
                   alt="Parque de Minas"
                   assetKey="parque-story"
+                  profile="editorial"
                   loading="lazy"
-                  sizes={storyPhotoSizes(assets['parque-story']!)}
+                  sizes={photoSizes}
                 />
               </a>
-              <span class="geo-photo-stamp">Parque de Minas · restauración con IA</span>
             </div>
             <figcaption class="geo-photo-caption">
               <div>
@@ -327,8 +333,9 @@ import { storyPhotoSizes } from '../../lib/image-sizing';
                 <Photo
                   alt="Reserva Salus"
                   assetKey="salus"
+                  profile="editorial"
                   loading="lazy"
-                  sizes={storyPhotoSizes(assets.salus!)}
+                  sizes={photoSizes}
                 />
               </a>
               <span class="geo-photo-stamp">Grupo Arroyo del Soldado</span>

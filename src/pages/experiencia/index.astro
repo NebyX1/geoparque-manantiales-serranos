@@ -1,5 +1,6 @@
 ---
 import PortalLayout from '../../layouts/PortalLayout.astro';
+import AccessibilityTrigger from '../../components/layout/AccessibilityTrigger.astro';
 import Photo from '../../components/brand/Photo.astro';
 import PhotoCredit from '../../components/brand/PhotoCredit.astro';
 import GeographicMap from '../../components/experience/GeographicMap.astro';
@@ -38,21 +39,15 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
         data-astro-reload
         aria-label="Manantiales Serranos: elegir experiencia"
       >
-        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" aria-hidden="true">
-          <path
-            d="M2 33 13 10l7 13L28 4l11 29M5 38h31M16 33l5-10 5 10"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linejoin="round"
-          ></path>
-          <circle cx="7" cy="7" r="3" fill="currentColor"></circle>
-        </svg>
-        <span>
-          MANANTIALES<strong>SERRANOS</strong>
-          <small>GEOPARQUE · LAVALLEJA, URUGUAY</small>
-        </span>
+        <Photo
+          assetKey="site-brand"
+          alt=""
+          loading="eager"
+          sizes="(max-height: 440px) 54px, (max-width: 760px) 66px, 88px"
+        />
       </a>
       <nav class="exp-top-nav" aria-label="Navegación de la experiencia">
+        <AccessibilityTrigger />
         <a href="/inicio/" data-astro-reload>
           Ir al sitio web <span aria-hidden="true">↗</span>
         </a>
@@ -60,6 +55,20 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
           Salir <span aria-hidden="true">×</span>
         </a>
       </nav>
+      <div class="exp-area-bar">
+        <span id="experience-area">Geoparque · territorio real</span>
+        <button
+          id="experience-area-info"
+          aria-controls="experience-cluster-info"
+          aria-expanded="false"
+          hidden
+        >
+          Sobre esta zona
+        </button>
+        <button id="experience-area-exit" hidden>
+          Salir de la casa ↗
+        </button>
+      </div>
     </header>
 
     <section class="exp-intro" aria-labelledby="experience-title">
@@ -147,20 +156,6 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
       </section>
     </aside>
 
-    <div class="exp-area-bar">
-      <span id="experience-area">Geoparque · territorio real</span>
-      <button
-        id="experience-area-info"
-        aria-controls="experience-cluster-info"
-        aria-expanded="false"
-        hidden
-      >
-        Sobre esta zona
-      </button>
-      <button id="experience-area-exit" hidden>
-        Salir de la casa ↗
-      </button>
-    </div>
     <aside
       id="experience-cluster-info"
       class="exp-cluster-info exp-glass"
@@ -369,22 +364,21 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
         </span>
         <span>ARRASTRAR PARA MIRAR</span>
       </div>
+      <div class="exp-touch-controls" role="group" aria-label="Controles táctiles de movimiento">
+        <button data-move="forward" aria-label="Caminar hacia adelante">
+          ↑
+        </button>
+        <button data-move="left" aria-label="Caminar hacia la izquierda">
+          ←
+        </button>
+        <button data-move="back" aria-label="Caminar hacia atrás">
+          ↓
+        </button>
+        <button data-move="right" aria-label="Caminar hacia la derecha">
+          →
+        </button>
+      </div>
     </footer>
-
-    <div class="exp-touch-controls" role="group" aria-label="Controles táctiles de movimiento">
-      <button data-move="forward" aria-label="Caminar hacia adelante">
-        ↑
-      </button>
-      <button data-move="left" aria-label="Caminar hacia la izquierda">
-        ←
-      </button>
-      <button data-move="back" aria-label="Caminar hacia atrás">
-        ↓
-      </button>
-      <button data-move="right" aria-label="Caminar hacia la derecha">
-        →
-      </button>
-    </div>
 
     <div class="exp-model-status" id="experience-miniature-status" role="status" aria-live="polite">
       <span>MINIATURAS DEL TERRITORIO</span>
@@ -431,12 +425,19 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
         .exp-loading {
           display: none !important;
         }
+        .experience {
+          grid-template-columns: minmax(0, 1fr);
+          grid-template-rows: auto auto minmax(0, 1fr);
+          grid-template-areas: 'header' 'notice' 'scene';
+        }
         .exp-directory[hidden] {
           display: flex !important;
+          width: 100%;
+          justify-self: stretch;
         }
         .exp-tools,
-        .exp-nearby,
-        .exp-touch-controls,
+        .exp-bottom,
+        .exp-intro,
         .exp-house-directory,
         .exp-area-bar {
           display: none !important;
@@ -512,7 +513,11 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
           </header>
           <div class="holo-content">
             <div class="holo-photo">
-              <Photo assetKey={place.image} alt={place.photoCaption || place.name} sizes="420px" />
+              <Photo
+                assetKey={place.image}
+                profile="immersive"
+                alt={place.photoCaption || place.name}
+              />
               <div class="holo-visor" aria-hidden="true">
                 <span class="holo-visor-label">VISOR TERRITORIAL</span>
                 <svg class="holo-reticle" viewBox="0 0 120 120" fill="none">
@@ -523,23 +528,19 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
                   <circle cx="60" cy="60" r="2" />
                 </svg>
                 <svg
-                  class="holo-photo-grid"
+                  class="holo-photo-brackets"
                   viewBox="0 0 360 160"
                   preserveAspectRatio="none"
                   fill="none"
                 >
-                  <path d="M0 40h360M0 80h360M0 120h360M60 0v160M120 0v160M180 0v160M240 0v160M300 0v160" />
-                  <path
-                    class="holo-photo-brackets"
-                    d="M12 32V12h26M322 12h26v20M348 128v20h-26M38 148H12v-20"
-                  />
+                  <path d="M12 32V12h26M322 12h26v20M348 128v20h-26M38 148H12v-20" />
                 </svg>
                 <span class="holo-visor-id">
                   GMS <b>{String(place.id).padStart(2, '0')}</b>
                 </span>
               </div>
-              <span class="holo-photo-label">{place.photoCaption}</span>
             </div>
+            <p class="holo-photo-label">{place.photoCaption}</p>
             <PhotoCredit assetKey={place.image} compact newWindow />
             <p class="holo-eyebrow">ARCHIVO TERRITORIAL / {place.category.toUpperCase()}</p>
             <h2 id={`holo-title-${place.id}`}>{place.name}</h2>

@@ -66,7 +66,7 @@
 .entry-visual-label,
 .entry-world-tag,
 .entry-footer {
-  font-size: 10px;
+  font-size: var(--type-control);
   font-weight: 600;
   letter-spacing: 0.12em;
   line-height: 1.6;
@@ -89,13 +89,13 @@
   margin-left: 32px;
   padding: 10px 0;
   letter-spacing: 0;
-  font-size: 11px;
+  font-size: var(--type-control);
   display: flex;
   align-items: center;
   gap: 20px;
 }
 .entry-direct > span {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 .entry-main {
@@ -113,20 +113,21 @@
   padding-bottom: clamp(26px, 3.5vh, 42px);
 }
 .entry-eyebrow {
-  font-size: 9px;
+  font-size: var(--type-small);
   letter-spacing: 0.17em;
   color: var(--entry-muted);
   margin-bottom: 13px !important;
 }
 .entry-intro h1 {
-  font-family: 'Barlow Condensed', Impact, sans-serif;
-  font-size: clamp(55px, 6.7vw, 110px);
+  font-family: var(--display);
+  font-size: clamp(3.4375rem, calc(6.7vw * var(--text-scale)), 6.875rem);
   font-weight: 600;
   line-height: 0.95;
   letter-spacing: -0.02em;
 }
 .entry-intro h1 em {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-variation-settings: 'slnt' 12;
+  font-style: normal;
   font-weight: 400;
   font-size: 0.82em;
   letter-spacing: -0.065em;
@@ -135,8 +136,8 @@
   display: none;
 }
 .entry-intro-copy {
-  font-size: 12px;
-  line-height: 1.9;
+  font-size: var(--type-lead);
+  line-height: 1.6;
   color: var(--entry-muted);
   flex-shrink: 0;
   padding-bottom: 3px;
@@ -167,17 +168,7 @@
   overflow: hidden;
   background: #61734e;
 }
-.entry-card-web .entry-card-visual::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, #071d2445, transparent 46%, #09281c25);
-  pointer-events: none;
-}
-.entry-card-visual picture {
-  display: contents;
-}
-.entry-card-visual img {
+.entry-card-web .entry-card-visual img {
   display: block;
   width: 100%;
   height: 100%;
@@ -186,8 +177,16 @@
   transform: scale(1.005);
   transition: transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-.entry-card:hover .entry-card-visual img {
+.entry-card-web:hover .entry-card-visual img {
   transform: scale(1.045);
+}
+.entry-card-web .entry-visual-label {
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+  background: #16241ff2;
+}
+.entry-card-web .entry-visual-number {
+  text-shadow: 0 2px 8px #0c1514;
 }
 .entry-visual-label {
   position: absolute;
@@ -195,7 +194,7 @@
   top: 22px;
   left: 25px;
   max-width: calc(100% - 104px);
-  font-size: 8px;
+  font-size: var(--type-small);
   letter-spacing: 0.15em;
   line-height: 1.5;
   display: flex;
@@ -207,8 +206,8 @@
   position: absolute;
   top: 10px;
   right: 24px;
-  font-family: 'Barlow Condensed', Impact, sans-serif;
-  font-size: 50px;
+  font-family: var(--display);
+  font-size: 3.125rem;
   font-weight: 500;
   color: #fffdf0;
   z-index: 1;
@@ -219,19 +218,19 @@
 }
 .entry-card-kicker {
   color: var(--entry-muted);
-  font-size: 8px;
+  font-size: var(--type-small);
   letter-spacing: 0.16em;
   margin-bottom: 9px !important;
 }
 .entry-card h2 {
-  font-family: 'Barlow Condensed', Impact, sans-serif;
-  font-size: clamp(29px, 2.8vw, 42px);
+  font-family: var(--display);
+  font-size: clamp(1.8125rem, calc(2.8vw * var(--text-scale)), 2.625rem);
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
 .entry-card-copy {
-  font-size: 11px;
+  font-size: var(--type-body);
   line-height: 1.75;
   color: var(--entry-muted);
   margin-top: 10px !important;
@@ -244,7 +243,7 @@
   border-top: 1px solid var(--entry-line);
   padding-top: 15px;
   margin-top: 21px;
-  font-size: 11px;
+  font-size: var(--type-control);
   font-weight: 650;
 }
 .entry-arrow {
@@ -254,7 +253,7 @@
   place-items: center;
   border-radius: 50%;
   border: 1px solid var(--entry-line);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1;
   font-weight: 400;
   transition:
@@ -296,9 +295,10 @@
 }
 .entry-world-art {
   position: absolute;
-  inset: -4% 0;
+  inset: 0;
   width: 100%;
-  height: 108%;
+  height: 100%;
+  object-fit: contain;
   filter: drop-shadow(0 10px 12px #061a1b33);
   transition: transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
@@ -309,7 +309,7 @@
   position: absolute;
   bottom: 16px;
   right: 25px;
-  font-size: 7px;
+  font-size: var(--type-small);
   letter-spacing: 0.11em;
   border: 1px solid #bddec33d;
   color: #d4e5c9;
@@ -340,23 +340,26 @@
   align-items: center;
   gap: 22px;
   color: var(--entry-muted);
-  font-size: 8px;
+  font-size: var(--type-small);
   letter-spacing: 0.09em;
 }
 .entry-footer p:nth-child(2) {
   letter-spacing: 0;
-  font-size: 10px;
+  font-size: var(--type-small);
   font-weight: 400;
 }
 .entry-footer p > span {
   margin-inline: 8px;
 }
 .entry-footer-mark {
-  font-size: 9px;
+  font-size: var(--type-small);
   color: var(--entry-ink);
   font-weight: 700;
 }
 .entry-footer a {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -370,10 +373,6 @@
   .entry-card-content {
     padding: 30px 35px 25px;
   }
-  .entry-card-copy,
-  .entry-card-action {
-    font-size: 13px;
-  }
 }
 @media (max-width: 1000px) {
   .entry-shell {
@@ -383,7 +382,7 @@
     align-items: flex-start;
   }
   .entry-intro-copy {
-    font-size: 10px;
+    font-size: var(--type-lead);
     padding-top: 29px;
   }
   .entry-card-content {
@@ -416,7 +415,7 @@
   }
   .entry-direct {
     margin-left: auto;
-    font-size: 10px;
+    font-size: var(--type-control);
     gap: 15px;
   }
   .entry-main {
@@ -427,15 +426,15 @@
     padding-bottom: 25px;
   }
   .entry-eyebrow {
-    font-size: 7px;
+    font-size: var(--type-small);
     letter-spacing: 0.12em;
   }
   .entry-intro h1 {
-    font-size: clamp(50px, 10vw, 72px);
+    font-size: clamp(3.125rem, calc(10vw * var(--text-scale)), 4.5rem);
   }
   .entry-intro-copy {
     padding-top: 17px;
-    font-size: 11px;
+    font-size: var(--type-lead);
   }
   .entry-intro-copy br {
     display: none;
@@ -451,7 +450,7 @@
     padding: 22px;
   }
   .entry-card h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   .entry-card-copy {
     min-height: 0;
@@ -466,7 +465,7 @@
     padding-block: 20px;
   }
   .entry-footer p:nth-child(2) {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
 }
 @media (max-width: 380px) {
@@ -474,14 +473,14 @@
     display: initial;
   }
   .entry-intro h1 {
-    font-size: 62px;
+    font-size: 3.875rem;
     line-height: 0.98;
   }
   .entry-intro h1 em {
     font-size: 0.8em;
   }
   .entry-card h2 {
-    font-size: 31px;
+    font-size: 1.9375rem;
   }
   .entry-card-content {
     padding-inline: 19px;

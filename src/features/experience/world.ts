@@ -330,6 +330,8 @@ function makeAvatar() {
   return { root, body, limbs };
 }
 
+const beaconLabel = { width: 220, height: 41, clearance: 8 };
+
 function labelTexture(name: string) {
   const canvas = document.createElement('canvas');
   canvas.width = 512;
@@ -344,7 +346,7 @@ function labelTexture(name: string) {
     context.lineWidth = 2;
     context.stroke();
     context.fillStyle = '#f4f1d9';
-    context.font = '600 28px sans-serif';
+    context.font = '600 36px sans-serif';
     context.textAlign = 'center';
     context.textBaseline = 'middle';
     const label = name.length > 32 ? `${name.slice(0, 30)}…` : name;
@@ -1086,9 +1088,10 @@ export function createWorld(options: {
           if (
             labelProjection.z > -1 &&
             labelProjection.z < 1 &&
-            Math.abs(labelProjection.x) < 1 - 190 / viewportWidth &&
-            labelProjection.y > -0.7 &&
-            labelProjection.y < 0.72
+            Math.abs(labelProjection.x) <
+              1 - (beaconLabel.width + beaconLabel.clearance) / viewportWidth &&
+            Math.abs(labelProjection.y) <
+              Math.min(0.7, 1 - (beaconLabel.height + beaconLabel.clearance) / viewportHeight)
           ) {
             labelCandidates.push({
               label,
@@ -1128,14 +1131,18 @@ export function createWorld(options: {
       if (
         shownLabels.some(
           (shown) =>
-            Math.abs(shown.x - candidate.screenX) < 190 &&
-            Math.abs(shown.y - candidate.screenY) < 42,
+            Math.abs(shown.x - candidate.screenX) < beaconLabel.width + beaconLabel.clearance &&
+            Math.abs(shown.y - candidate.screenY) < beaconLabel.height + beaconLabel.clearance,
         )
       )
         continue;
       const unitsPerPixel =
         (2 * candidate.depth * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))) / viewportHeight;
-      candidate.label.scale.set(180 * unitsPerPixel, 33.75 * unitsPerPixel, 1);
+      candidate.label.scale.set(
+        beaconLabel.width * unitsPerPixel,
+        beaconLabel.height * unitsPerPixel,
+        1,
+      );
       candidate.label.material.opacity = THREE.MathUtils.clamp((29 - candidate.distance) / 7, 0, 1);
       candidate.label.visible = true;
       shownLabels.push({ x: candidate.screenX, y: candidate.screenY });

@@ -42,7 +42,6 @@ export interface GeoparkPlace {
   photoKind?: string;
   photoCredit?: string;
   photoSource?: string;
-  photoFit?: string;
   images: PlaceImage[];
   channel?: PlaceContact;
   contacts: PlaceContact[];

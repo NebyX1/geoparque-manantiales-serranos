@@ -6,8 +6,5 @@ export const siteConfig = {
   ogLocale: 'es_UY',
   country: 'Uruguay',
   region: 'Lavalleja',
-  image: '/brand/social.webp',
-  imageWidth: 1200,
-  imageHeight: 630,
   lastModified: '2026-11-04',
 } as const;

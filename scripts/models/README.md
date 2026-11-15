@@ -11,7 +11,9 @@ blender -b -t 4 --python scripts/models/architecture_models.py -- 41 --render
 blender -b -t 4 --python scripts/models/architecture_models.py -- 32 34 --render
 ```
 
-Sin IDs genera las 20 maquetas. Cada GLB se exporta bajo `public/models/geosites/rebuilt/gms-XX.glb`. `--render` produce frente y oblicua para revisión. Los caracteres y objetos estáticos se convierten a mallas y se agrupan por material. Las maquetas industriales usan la planta visible en ortofotos IDE y fotografías de MIEM/operador; las profundidades no son mediciones topográficas.
+Sin IDs genera las 20 maquetas. Cada GLB se exporta bajo `public/models/geosites/rebuilt/gms-XX.glb`. `--render` produce frente y oblicua para revisión. Los caracteres y objetos estáticos se convierten a mallas y se agrupan por material. Las maquetas industriales usan la planta visible en ortofotos IDE y fotografías de MIEM y del operador.
+
+Los modelos con texturas publican los archivos WebP en `src/assets/images/experience-miniature/<modelo>/`. Al volver a exportar el Molino Viejo, actualizá las referencias de sus texturas y verificá su carga desde el visor. El contrato de publicación se comprueba en `tests/unit/model-assets.test.ts` y `tests/seo/build.test.ts`.
 
 ## Entornos naturales
 

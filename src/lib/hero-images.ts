@@ -1,31 +1,34 @@
 import { getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
-import { assets } from '../data/assets';
-import { mobileHeroAssets, type HeroAssetKey } from '../data/hero-assets';
+import { heroCoverAssets, mobileHeroAssets, type HeroAssetKey } from '../data/hero-assets';
 import { heroSizes, responsiveWidths } from './image-sizing';
 
-async function source(asset: ImageMetadata, format: 'avif' | 'webp') {
+async function source(asset: ImageMetadata) {
   const images = await Promise.all(
-    responsiveWidths(asset.width).map(async (width) => {
-      const image = await getImage({ src: asset, width, format, quality: 92 });
-      return `${image.src} ${width}w`;
+    responsiveWidths(asset.width, asset.width).map(async (width) => {
+      const image =
+        width === asset.width
+          ? asset
+          : await getImage({ src: asset, width, format: 'webp', quality: 92 });
+      return [width, image.src] as const;
     }),
   );
-  return images.join(', ');
+  return {
+    fallback: images.find(([width]) => width === 1280)?.[1] ?? asset.src,
+    srcset: images.map(([width, src]) => `${src} ${width}w`).join(', '),
+  };
 }
 
 export async function heroImages(key: HeroAssetKey) {
-  const desktop = assets[key] as ImageMetadata;
+  const desktop = heroCoverAssets[key];
   const mobile = mobileHeroAssets[key];
-  const [desktopAvif, mobileAvif, mobileWebp] = await Promise.all([
-    source(desktop, 'avif'),
-    source(mobile, 'avif'),
-    source(mobile, 'webp'),
-  ]);
+  const [desktopSrcset, mobileSrcset] = await Promise.all([source(desktop), source(mobile)]);
   return {
-    desktop: desktopAvif,
-    mobile: mobileAvif,
-    mobileFallback: mobileWebp,
+    desktopAsset: desktop,
+    mobileAsset: mobile,
+    desktop: desktopSrcset.srcset,
+    mobile: mobileSrcset.srcset,
+    fallback: desktopSrcset.fallback,
     desktopSizes: heroSizes(desktop),
     mobileSizes: heroSizes(mobile),
   };

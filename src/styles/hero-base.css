@@ -51,7 +51,7 @@
   box-shadow: 0 0 0 5px #d4e88518;
 }
 .hero h1 {
-  font-size: clamp(72px, 8.3vw, 143px);
+  font-size: clamp(4.5rem, calc(8.3vw * var(--text-scale)), 8.9375rem);
   font-weight: 500;
   line-height: 0.95;
   letter-spacing: -0.066em;
@@ -64,7 +64,7 @@
   letter-spacing: -0.06em;
 }
 .hero-description {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.85;
   max-width: 405px;
   margin-top: 27px;
@@ -77,7 +77,7 @@
   margin-top: 30px;
 }
 .hero-secondary {
-  font-size: 12px;
+  font-size: var(--type-small);
   display: flex;
   align-items: center;
   gap: 9px;
@@ -95,7 +95,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 10px;
+  font-size: var(--type-small);
   letter-spacing: 0.13em;
   writing-mode: vertical-rl;
 }
@@ -111,7 +111,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 12px;
+  font-size: var(--type-small);
   color: #fff;
 }
 .hero-caption .icon {
@@ -132,14 +132,14 @@
   margin-bottom: 14px;
 }
 .hero-footer-top .eyebrow {
-  font-size: 9px;
+  font-size: var(--type-small);
   color: #d9e2ce;
 }
 .slide-counter {
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 11px;
+  font-size: var(--type-small);
 }
 .slide-counter .round {
   color: var(--white);
@@ -203,12 +203,12 @@
 }
 .hero-tab small {
   display: block;
-  font-size: 9px;
+  font-size: var(--type-small);
   color: #e1e8d1a6;
   margin-bottom: 5px;
 }
 .hero-tab strong {
-  font-size: 13px;
+  font-size: var(--type-small);
   font-weight: 500;
 }
 .hero-tab .icon {
@@ -225,7 +225,7 @@
   border-bottom: 1px solid var(--line);
 }
 .trust-strip p {
-  font-size: 11px;
+  font-size: var(--type-small);
   line-height: 1.6;
   max-width: 250px;
   color: var(--muted);
@@ -243,14 +243,14 @@
 }
 .trust-item strong {
   display: block;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.05em;
 }
 .trust-item span {
   display: block;
-  font-size: 10px;
+  font-size: var(--type-small);
   margin-top: 5px;
   color: var(--muted);
 }
@@ -269,7 +269,7 @@
   padding-top: 12px;
 }
 .intro-copy .display {
-  font-size: clamp(36px, 4.2vw, 68px);
+  font-size: clamp(2.25rem, calc(4.2vw * var(--text-scale)), 4.25rem);
   line-height: 1.12;
   max-width: 990px;
 }
@@ -284,7 +284,7 @@
 }
 .intro-bottom p {
   max-width: 535px;
-  font-size: 15px;
+  font-size: var(--type-lead);
   color: var(--muted);
   line-height: 1.9;
 }
@@ -292,7 +292,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 12px;
+  font-size: var(--type-control);
   font-weight: 600;
   flex: none;
   align-self: flex-start;

@@ -7,18 +7,22 @@ export function initPreferences(c) {
     /* The native enhancement is optional. */
   }
   let reduced = manualMotion === null ? media.matches : manualMotion === 'reduce';
+  const toggles = c.$$('[data-motion-toggle]');
+  const footerToggle = c.$('#motion-toggle');
   function applyMotion() {
     document.documentElement.classList.add('js');
     document.documentElement.classList.toggle('motion', !reduced);
     document.documentElement.classList.toggle('reduce-motion', reduced);
-    c.$('#motion-toggle').setAttribute('aria-pressed', String(reduced));
-    c.$('#motion-toggle').innerHTML =
-      c.icon(reduced ? 'play' : 'pause') +
-      `<span>${reduced ? 'Activar movimiento' : 'Reducir movimiento'}</span>`;
+    for (const toggle of toggles) {
+      toggle.setAttribute('aria-pressed', String(reduced));
+      const indicator = toggle.querySelector('[data-motion-state]');
+      if (indicator) indicator.hidden = !reduced;
+    }
+    footerToggle.querySelector('use').setAttribute('href', reduced ? '#i-play' : '#i-pause');
     c.scheduleHero();
     c.configureGeoMotion();
   }
-  c.listen(c.$('#motion-toggle'), 'click', () => {
+  function toggleMotion() {
     reduced = !reduced;
     manualMotion = reduced ? 'reduce' : 'full';
     try {
@@ -27,7 +31,8 @@ export function initPreferences(c) {
       /* The native enhancement is optional. */
     }
     applyMotion();
-  });
+  }
+  for (const toggle of toggles) c.listen(toggle, 'click', toggleMotion);
   c.listen(media, 'change', () => {
     if (manualMotion === null) {
       reduced = media.matches;

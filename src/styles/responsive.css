@@ -8,23 +8,20 @@
   .hero-bottom {
     margin-top: 42px;
   }
-  .hero-caption {
-    bottom: 205px;
-  }
   .geo-scene {
     padding-block: 42px;
   }
 }
 @media (max-height: 850px) and (min-width: 1000px) {
   .geo-number {
-    font-size: 104px;
+    font-size: 6.5rem;
     margin-block: 10px;
   }
   .geo-title {
-    font-size: clamp(48px, 4.5vw, 73px);
+    font-size: clamp(3rem, calc(4.5vw * var(--text-scale)), 4.5625rem);
   }
   .geo-description {
-    font-size: 11px;
+    font-size: var(--type-small);
     margin-top: 14px;
     line-height: 1.85;
   }
@@ -38,7 +35,7 @@
     padding-block: 13px 8px;
   }
   .geo-photo-caption strong {
-    font-size: 32px;
+    font-size: 2rem;
   }
   .geo-polaroid {
     max-width: 580px;
@@ -57,7 +54,7 @@
     gap: 16px;
   }
   .desktop-nav a {
-    font-size: 10px;
+    font-size: var(--type-small);
   }
   .desktop-nav a .nav-number {
     display: none;
@@ -66,32 +63,28 @@
     gap: 20px;
   }
   .hero {
-    min-height: 770px;
+    --hero-min-height: 770px;
   }
   .hero h1 {
-    font-size: clamp(105px, 12.8vw, 153px);
-    width: 72%;
+    --hero-title-size: clamp(6.5625rem, calc(12.8vw * var(--text-scale)), 9.5625rem);
     margin-top: 43px;
   }
   .hero-bottom {
-    width: 82%;
     gap: 27px;
   }
   .hero-caption {
-    max-width: 42%;
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .hero-seal {
-    right: var(--gutter);
-    top: 165px;
+    margin-top: 48px;
     width: 108px;
     height: 108px;
   }
   .hero-tab strong {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
   .hero-tab .hero-tab-number {
-    font-size: 33px;
+    font-size: 2.0625rem;
   }
   .geo-toolbar-label {
     display: none;
@@ -104,25 +97,25 @@
     grid-template-columns: 1fr 1.1fr;
   }
   .geo-title {
-    font-size: 55px;
+    font-size: 3.4375rem;
   }
   .geo-description {
-    font-size: 12px;
+    font-size: var(--type-small);
   }
   .geo-number {
-    font-size: 115px;
+    font-size: 7.1875rem;
   }
   .geo-photo {
     aspect-ratio: 1.1;
   }
   .geo-photo-caption strong {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .section-heading {
     gap: 36px;
   }
   .display {
-    font-size: clamp(58px, 8vw, 84px);
+    font-size: clamp(3.625rem, calc(8vw * var(--text-scale)), 5.25rem);
   }
   .planner-box {
     padding: 40px;
@@ -140,49 +133,43 @@
     display: grid;
   }
   .hero {
-    min-height: 810px;
-    max-height: 1050px;
+    --hero-min-height: 810px;
+    --hero-viewport-limit: 1050px;
   }
   .hero-copy {
     padding-top: 35px;
   }
   .hero h1 {
-    font-size: clamp(110px, 15vw, 142px);
-    width: 80%;
+    --hero-title-size: clamp(6.875rem, calc(15vw * var(--text-scale)), 8.875rem);
   }
   .hero-description {
-    font-size: 12px;
+    font-size: var(--type-body);
     max-width: 260px;
   }
-  .hero-bottom {
-    width: 100%;
-  }
   .hero-seal {
-    top: 142px;
+    margin-top: 36px;
     width: 96px;
     height: 96px;
-    right: 30px;
   }
   .hero-caption {
-    bottom: 184px;
+    align-self: flex-start;
+    justify-content: flex-start;
+    text-align: left;
   }
   .hero-tabs {
     gap: 17px;
   }
   .hero-tab strong {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
   .hero-tab small {
-    font-size: 7px;
+    font-size: var(--type-small);
   }
   .hero-tab .icon {
     display: none;
   }
   .hero-hills {
     height: 195px;
-  }
-  .hero-footer {
-    bottom: 17px;
   }
   .geo-intro .section-heading {
     display: block;
@@ -192,7 +179,7 @@
     max-width: 550px;
   }
   .geo-intro .display {
-    font-size: clamp(66px, 9.2vw, 96px);
+    font-size: clamp(4.125rem, calc(9.2vw * var(--text-scale)), 6rem);
   }
   .geo-scene {
     padding-block: 38px;
@@ -202,41 +189,41 @@
     gap: 34px;
   }
   .geo-title {
-    font-size: 54px;
+    font-size: 3.375rem;
   }
   .geo-number {
-    font-size: 115px;
+    font-size: 7.1875rem;
   }
   .geo-description {
-    font-size: 12px;
+    font-size: var(--type-small);
   }
   .geo-photo-caption strong {
-    font-size: 27px;
+    font-size: 1.6875rem;
   }
   .geo-photo {
     aspect-ratio: 0.85;
   }
   .geo-number .geo-time {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .geo-toolbar {
     padding-block: 17px;
   }
   .geo-footer {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .intro-grid {
     gap: 35px;
     grid-template-columns: 0.5fr 1.5fr;
   }
   .intro-copy .display {
-    font-size: 59px;
+    font-size: 3.6875rem;
   }
   .territory-mark {
     width: 145px;
   }
   .nature-words .display {
-    font-size: 62px;
+    font-size: 3.875rem;
   }
   .detail-grid {
     display: block;
@@ -265,13 +252,13 @@
     aspect-ratio: 0.95;
   }
   .place-card h3 {
-    font-size: 31px;
+    font-size: 1.9375rem;
   }
   .education-text .display {
-    font-size: 65px;
+    font-size: 4.0625rem;
   }
   .footer-title {
-    font-size: 85px;
+    font-size: 5.3125rem;
   }
 }
 @media (max-width: 620px) {
@@ -298,7 +285,7 @@
     min-height: 39px;
   }
   .trip-button {
-    font-size: 10px;
+    font-size: var(--type-control);
     padding: 0 12px;
     gap: 7px;
     min-height: 42px;
@@ -308,16 +295,19 @@
     height: 17px;
   }
   .hero {
-    min-height: 780px;
-    height: calc(100svh - var(--nav));
-    max-height: 960px;
+    --hero-min-height: 840px;
+    --hero-viewport-limit: 960px;
   }
   .hero-copy {
-    padding: 29px 22px 210px;
+    grid-template-areas:
+      'kicker kicker'
+      'title title'
+      'actions seal';
+    padding-block: 29px 26px;
   }
   .hero-kicker {
     padding-bottom: 16px;
-    font-size: 7px;
+    font-size: var(--type-small);
     letter-spacing: 0.11em;
     gap: 12px;
   }
@@ -325,21 +315,16 @@
     display: none;
   }
   .hero h1 {
-    font-size: clamp(90px, 18.9vw, 118px);
-    width: 100%;
+    --hero-title-size: clamp(4.5rem, calc(22vw * var(--text-scale)), 7.375rem);
     margin-top: 44px;
-    line-height: 0.85;
     letter-spacing: -0.015em;
-  }
-  .hero h1 .outline-word {
-    -webkit-text-stroke: 1.1px var(--lime);
   }
   .hero-bottom {
     display: block;
     margin-top: 25px;
   }
   .hero-description {
-    font-size: 12px;
+    font-size: var(--type-body);
     line-height: 1.85;
     max-width: 260px;
   }
@@ -347,7 +332,7 @@
     margin-top: 21px;
   }
   .hero-ctas .btn {
-    font-size: 10px;
+    font-size: var(--type-control);
     min-height: 48px;
     gap: 20px;
     padding: 15px 23px;
@@ -355,9 +340,8 @@
   .hero-seal {
     width: 78px;
     height: 78px;
-    right: 22px;
-    top: auto;
-    bottom: 233px;
+    align-self: end;
+    margin: 0;
     color: #fff8df;
   }
   .hero-image img {
@@ -365,26 +349,27 @@
   }
   .hero-shade {
     background:
-      linear-gradient(90deg, #123725d9, #17392868),
-      linear-gradient(0deg, #152d2500 0%, #122d2300 50%, #12372554 100%);
+      linear-gradient(90deg, #101a19cc 0%, #101a1948 80%),
+      linear-gradient(0deg, #0c15149c 0%, transparent 49%, #0c151470 100%);
+  }
+  .hero[data-landscape='0'] .hero-shade {
+    background:
+      linear-gradient(90deg, #0f1a1970, transparent 90%),
+      linear-gradient(180deg, #0c1514d8 0%, #0c15149c 26%, transparent 55%),
+      linear-gradient(0deg, #0c1514da 6%, #0c151455 36%, transparent 61%);
   }
   .hero-hills {
     height: 167px;
   }
   .hero-caption {
-    bottom: 184px;
-    left: 22px;
-    right: auto;
-    max-width: 82%;
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .hero-caption .icon {
     width: 14px;
     height: 14px;
   }
   .hero-footer {
-    bottom: 15px;
-    inset-inline: 22px;
+    padding-bottom: 15px;
   }
   .hero-tabs {
     gap: 8px;
@@ -396,7 +381,7 @@
     padding: 3px 0;
   }
   .hero-tab .hero-tab-number {
-    font-size: 29px;
+    font-size: 1.8125rem;
     line-height: 1;
     display: block;
     margin-bottom: 5px;
@@ -408,7 +393,7 @@
     display: none !important;
   }
   .hero-tab strong {
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 700;
     line-height: 1;
     max-width: 75px;
@@ -421,12 +406,12 @@
     margin-bottom: 7px;
   }
   .hero-footer-top .eyebrow {
-    font-size: 7px;
+    font-size: var(--type-small);
     letter-spacing: 0.1em;
     max-width: 205px;
   }
   .slide-counter {
-    font-size: 15px;
+    font-size: var(--type-small);
     gap: 9px;
   }
   .hero-footer .round {
@@ -443,7 +428,7 @@
     padding-right: 26px;
   }
   .ticker-unit span {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
   .ticker-unit svg {
     width: 19px;
@@ -458,10 +443,10 @@
     height: 48px;
   }
   .trust-item strong {
-    font-size: 33px;
+    font-size: 2.0625rem;
   }
   .trust-item span {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .section {
     padding-block: 65px;
@@ -484,21 +469,21 @@
     margin: 0;
   }
   .intro-copy .display {
-    font-size: clamp(43px, 8.7vw, 57px);
+    font-size: clamp(2.6875rem, calc(8.7vw * var(--text-scale)), 3.5625rem);
     line-height: 1;
   }
   .intro-bottom {
     margin-top: 22px;
   }
   .intro-bottom p {
-    font-size: 12px;
+    font-size: var(--type-lead);
     line-height: 1.95;
   }
   .intro-bottom .round-link {
-    font-size: 11px;
+    font-size: var(--type-control);
   }
   .display {
-    font-size: clamp(48px, 10.3vw, 65px);
+    font-size: clamp(3rem, calc(10.3vw * var(--text-scale)), 4.0625rem);
     line-height: 0.95;
     letter-spacing: -0.02em;
   }
@@ -507,7 +492,7 @@
     display: block;
   }
   .section-heading .section-lead {
-    font-size: 12px;
+    font-size: var(--type-lead);
     line-height: 1.85;
     margin-top: 20px;
     max-width: 100%;
@@ -516,15 +501,15 @@
     padding: 49px 22px 39px;
   }
   .geo-intro .display {
-    font-size: clamp(55px, 12.2vw, 77px);
+    font-size: clamp(3.4375rem, calc(12.2vw * var(--text-scale)), 4.8125rem);
     line-height: 0.92;
   }
   .geo-intro .section-lead {
-    font-size: 12px;
+    font-size: var(--type-lead);
     max-width: 100%;
   }
   .geo-intro .eyebrow {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .geo-toolbar {
     padding: 16px 17px;
@@ -532,19 +517,22 @@
     min-height: 74px;
   }
   .geo-tabs {
-    gap: 6px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
   }
   .geo-tab {
-    flex: 1;
-    justify-content: center;
+    min-width: 0;
+    justify-content: start;
+    text-align: left;
+    overflow-wrap: anywhere;
     gap: 7px;
     min-height: 42px;
     padding: 6px 8px;
-    font-size: 7px;
+    font-size: var(--type-control);
   }
   .geo-tab b {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .geo-skip {
     display: none;
@@ -562,30 +550,29 @@
     width: 100%;
   }
   .geo-eyebrow {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .geo-number {
-    font-size: 80px;
+    font-size: 5rem;
     margin: 17px 0 10px;
     gap: 20px;
   }
   .geo-number .geo-time {
-    font-size: 9px;
+    font-size: var(--type-small);
     max-width: 170px;
   }
   .geo-title {
-    font-size: clamp(45px, 10.5vw, 64px);
-    line-height: 0.9;
+    font-size: clamp(2.8125rem, calc(10.5vw * var(--text-scale)), 4rem);
     max-width: 100%;
   }
   .geo-description {
-    font-size: 12px;
+    font-size: var(--type-small);
     line-height: 1.85;
     margin-top: 16px;
     max-width: 100%;
   }
   .geo-identity .text-link {
-    font-size: 10px;
+    font-size: var(--type-control);
     margin-top: 12px;
   }
   .geo-polaroid {
@@ -602,13 +589,13 @@
     gap: 10px;
   }
   .geo-photo-caption strong {
-    font-size: 29px;
+    font-size: 1.8125rem;
   }
   .geo-photo-caption small {
-    font-size: 7px;
+    font-size: var(--type-small);
   }
   .geo-photo-stamp {
-    font-size: 7px;
+    font-size: var(--type-small);
     left: 11px;
     bottom: 12px;
     padding: 6px 8px;
@@ -625,13 +612,14 @@
     top: 26%;
   }
   .geo-footer {
-    padding: 13px 22px;
-    font-size: 7px;
+    padding-block: 13px;
+    padding-inline-start: 22px;
+    font-size: var(--type-small);
     gap: 9px;
     min-height: 54px;
   }
   .geo-footer b {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .geo-footer-control {
     gap: 7px;
@@ -656,7 +644,7 @@
     border-radius: 2px;
   }
   .place-card h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 1;
     letter-spacing: -0.01em;
   }
@@ -665,18 +653,18 @@
     height: 14px;
   }
   .place-meta {
-    font-size: 8px;
+    font-size: var(--type-small);
     margin-top: 13px;
   }
   .place-summary {
-    font-size: 10px;
+    font-size: var(--type-body);
     line-height: 1.8;
   }
   .place-tag {
     top: 10px;
     left: 9px;
     right: 9px;
-    font-size: 7px;
+    font-size: var(--type-small);
     letter-spacing: 0.015em;
     padding: 6px 7px;
     max-width: calc(100% - 18px);
@@ -689,13 +677,13 @@
     height: 36px;
   }
   .context-badge {
-    font-size: 7px;
+    font-size: var(--type-small);
     left: 9px;
     max-width: calc(100% - 58px);
     padding: 3px 5px;
   }
   .pill {
-    font-size: 10px;
+    font-size: var(--type-control);
     padding: 9px 12px;
     min-height: 40px;
   }
@@ -707,42 +695,41 @@
     border-radius: 2px;
   }
   .map-sidebar h3 {
-    font-size: 27px;
+    font-size: 1.6875rem;
   }
   .map-sidebar > p {
-    font-size: 11px;
+    font-size: var(--type-small);
   }
   .map-preview strong {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
   .map-caption {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .nature {
     padding-block: 60px;
   }
   .nature-photo {
-    aspect-ratio: 1.1;
     box-shadow: 8px 10px 0 #c9cfb3;
   }
   .nature-words .display {
-    font-size: 54px;
+    font-size: 3.375rem;
   }
   .nature-words > p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .nature-topic summary {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .nature-topic p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .care-strip {
     margin-top: 30px;
     padding: 17px;
   }
   .care-strip p {
-    font-size: 11px;
+    font-size: var(--type-body);
   }
   .culture-feature {
     aspect-ratio: 1;
@@ -751,20 +738,20 @@
     inset: auto 22px 25px;
   }
   .culture-feature-copy h3 {
-    font-size: 46px;
+    font-size: 2.875rem;
     line-height: 0.95;
   }
   .culture-story h3 {
-    font-size: 29px;
+    font-size: 1.8125rem;
   }
   .culture-story p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .route-content h3 {
-    font-size: 34px;
+    font-size: 2.125rem;
   }
   .route-content p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .route-card:hover {
     transform: none;
@@ -778,62 +765,61 @@
     border-radius: 3px;
   }
   .planner-intro h2 {
-    font-size: 55px;
+    font-size: 3.4375rem;
   }
   .planner-intro p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .plan-choice span {
-    font-size: 10px;
+    font-size: var(--type-control);
   }
   .planner-privacy {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
   .education-text .display {
-    font-size: 55px;
+    font-size: 3.4375rem;
   }
   .education-text > p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .education-image {
     box-shadow: 7px 9px 0 #cbd2b8;
-    aspect-ratio: 1.1;
   }
   .education-sticker {
     padding: 16px;
   }
   .education-sticker strong {
-    font-size: 27px;
+    font-size: 1.6875rem;
   }
   .gallery-grid {
     gap: 10px;
   }
   .visit-copy .display {
-    font-size: 57px;
+    font-size: 3.5625rem;
   }
   .visit-copy > p {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .visit-faq summary {
-    font-size: 27px;
+    font-size: 1.6875rem;
     line-height: 1.1;
   }
   .footer {
     padding-block: 58px 24px;
   }
   .footer-title {
-    font-size: 61px;
+    font-size: 3.8125rem;
     line-height: 0.93;
   }
   .footer-nav a,
   .footer-nav button {
-    font-size: 11px;
+    font-size: var(--type-control);
   }
   .footer-tail {
-    font-size: 8px;
+    font-size: var(--type-small);
   }
   .footer-small {
-    font-size: 10px;
+    font-size: var(--type-small);
   }
   .footer-ridges {
     height: 63px;
@@ -845,7 +831,7 @@
     padding: 19px 20px;
   }
   .dialog-head h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .dialog-head .round {
     min-width: 36px;
@@ -860,23 +846,23 @@
     height: 230px;
   }
   .detail-title {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 0.98;
   }
   .detail-tagline {
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: 1.5;
   }
   .detail-description {
-    font-size: 14px !important;
+    font-size: var(--type-body) !important;
     line-height: 1.8 !important;
   }
   .detail-body p {
-    font-size: 12px;
+    font-size: var(--type-body);
     line-height: 1.95;
   }
   .detail-body h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .detail-side {
     margin-top: 26px;
@@ -884,78 +870,72 @@
     display: block;
   }
   .detail-side h3 {
-    font-size: 27px;
+    font-size: 1.6875rem;
   }
   .detail-side .btn {
-    font-size: 10px;
+    font-size: var(--type-control);
     width: auto;
   }
   .article-reading .article-title {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
   .article-reading .lead {
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: 1.65;
   }
   .article-reading h3:not(.article-title) {
-    font-size: 29px;
+    font-size: 1.8125rem;
   }
   .article-reading p {
-    font-size: 12px;
+    font-size: var(--type-body);
     line-height: 1.95;
   }
-  .reading-image {
-    height: 220px;
-  }
   .saved-item h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .trip-empty h3 {
-    font-size: 38px;
+    font-size: 2.375rem;
   }
   .quiz-card h3 {
-    font-size: 34px;
+    font-size: 2.125rem;
   }
   .quiz-feedback {
-    font-size: 12px;
+    font-size: var(--type-body);
   }
   .lightbox-caption small {
-    font-size: 9px;
+    font-size: var(--type-small);
   }
 }
 @media (max-width: 359px) {
   .hero {
-    min-height: 745px;
+    --hero-min-height: 745px;
   }
   .hero h1 {
-    font-size: 83px;
     margin-top: 38px;
   }
   .hero-description {
-    font-size: 11px;
+    font-size: var(--type-body);
     max-width: 235px;
   }
   .hero-seal {
     width: 61px;
     height: 61px;
-    bottom: 229px;
-    right: 20px;
   }
   .hero-tab strong {
-    font-size: 15px;
+    font-size: var(--type-small);
   }
   .hero-tab .hero-tab-number {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   .hero-footer-top .eyebrow {
     max-width: 170px;
-    font-size: 6px;
+    font-size: var(--type-small);
   }
   .hero-kicker {
-    font-size: 6px;
+    font-size: var(--type-small);
   }
   .hero-caption {
-    font-size: 7px;
+    font-size: var(--type-small);
   }
   .header-actions {
     gap: 7px;
@@ -964,34 +944,34 @@
     padding-inline: 18px;
   }
   .trip-button {
-    font-size: 9px;
+    font-size: var(--type-control);
     padding: 0 10px;
   }
   .geo-tab {
     padding: 6px;
     gap: 5px;
-    font-size: 6px;
+    font-size: var(--type-control);
   }
   .geo-tab b {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .geo-title {
-    font-size: 43px;
+    font-size: 2.6875rem;
   }
   .geo-number {
-    font-size: 75px;
+    font-size: 4.6875rem;
   }
   .geo-intro .display {
-    font-size: 52px;
+    font-size: 3.25rem;
   }
   .display {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
   .place-card h3 {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
   .footer-title {
-    font-size: 54px;
+    font-size: 3.375rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1006,7 +986,7 @@
   }
 }
 
-.geo-title > span {
+.js .geo-title > span {
   white-space: nowrap;
 }
 .geo-control-label {
@@ -1021,10 +1001,10 @@
     flex-direction: column;
   }
   .intro-bottom .round-link {
-    font-size: 10px;
+    font-size: var(--type-control);
   }
   .visit-contact .btn {
-    font-size: 10px;
+    font-size: var(--type-control);
     padding-inline: 18px;
   }
 }

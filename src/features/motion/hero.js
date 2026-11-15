@@ -1,5 +1,8 @@
 export function initHero(c) {
-  if (!c.$('#inicio')) return;
+  const hero = c.$('#inicio');
+  if (!hero) return;
+  const caption = c.$('#hero-caption a');
+  const slides = c.$$('.hero-image', hero);
   let slide = 0,
     heroPaused = false,
     heroVisible = true,
@@ -8,41 +11,41 @@ export function initHero(c) {
   c.cleanups.push(() => {
     alive = false;
   });
-  const captions = [
-    'Cerro Arequita y río Santa Lucía · Bienflorencia · archivo 2012',
-    'Aguas Blancas · restauración con IA',
-    'Reserva Salus · Fuente del Puma',
-    'Parque de Minas · restauración con IA',
-  ];
   function showHero(index, focus = false) {
     slide = (index + 4) % 4;
     const requested = slide;
-    const incoming = c.$$('.hero-image')[requested];
+    const incoming = slides[requested];
+    const image = incoming.querySelector('img');
+    image.loading = 'eager';
     incoming.hidden = false;
-    incoming.getBoundingClientRect();
     const commit = () => {
       if (!alive || slide !== requested) return;
-      c.$$('.hero-image').forEach((node, i) => {
+      incoming.hidden = false;
+      slides.forEach((node, i) => {
         node.classList.toggle('active', i === requested);
         if (i !== requested)
           c.timeout(() => {
-            if (!node.classList.contains('active')) node.hidden = true;
+            if (i !== slide && !node.classList.contains('active')) node.hidden = true;
           }, 1200);
       });
+      hero.dataset.landscape = String(requested);
+      const photo = c.photoInfo(image.dataset.photoKey);
+      caption.textContent = photo.caption;
+      caption.href = photo.auditUrl;
     };
     // Keep the previous landscape visible until the next photo is ready.
-    incoming
-      .querySelector('img')
-      .decode()
-      .then(commit, () => {
+    // Let the browser select the lazy picture's source before asking it to decode.
+    c.raf(() => {
+      if (slide !== requested) return;
+      image.decode().then(commit, () => {
         if (alive && slide === requested)
           c.toast('No pudimos cargar ese paisaje. Probá nuevamente.');
       });
+    });
     c.$$('[data-hero]').forEach((btn, i) => {
       btn.setAttribute('aria-selected', String(i === slide));
       btn.tabIndex = i === slide ? 0 : -1;
     });
-    c.$('#hero-caption').textContent = captions[slide];
     c.$('#hero-counter').textContent = `0${slide + 1} / 04`;
     if (focus) c.$$('[data-hero]')[slide].focus();
   }
@@ -121,7 +124,6 @@ export function initHero(c) {
         heroTimer = value;
       },
     },
-    captions: { configurable: true, get: () => captions },
     showHero: { configurable: true, get: () => showHero },
     scheduleHero: { configurable: true, get: () => scheduleHero },
   });

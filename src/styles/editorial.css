@@ -6,25 +6,25 @@
   aspect-ratio: 1.12;
 }
 .place-card h3 {
-  font-size: clamp(27px, 2.55vw, 41px);
+  font-size: clamp(1.6875rem, calc(2.55vw * var(--text-scale)), 2.5625rem);
   letter-spacing: -0.015em;
 }
 .place-card h3 a {
   align-items: start;
 }
 .place-summary {
-  font-size: 12px;
+  font-size: var(--type-body);
   line-height: 1.85;
 }
 .place-meta {
-  font-size: 9px;
+  font-size: var(--type-small);
   margin-top: 18px;
 }
 .place-tag {
   border-radius: 2px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: var(--type-small);
   top: 17px;
   left: 16px;
   padding: 7px 10px;
@@ -47,20 +47,20 @@
 }
 .place-id {
   font-family: var(--display);
-  font-size: 14px;
+  font-size: var(--type-small);
   letter-spacing: 0.07em;
 }
 .context-badge {
   background: #10291fba;
   padding: 4px 8px;
   border-radius: 2px;
-  font-size: 8px;
+  font-size: var(--type-small);
 }
 .pills {
   gap: 8px;
 }
 .pill {
-  font-size: 11px;
+  font-size: var(--type-control);
   border-radius: 3px;
   min-height: 43px;
   padding: 10px 17px;
@@ -82,12 +82,12 @@
   background: #e8e7d7;
 }
 .map-sidebar h3 {
-  font: 700 31px/1 var(--display);
+  font: 700 1.9375rem/1 var(--display);
   text-transform: uppercase;
 }
 .map-index {
   font-family: var(--display);
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .map-preview {
   border-radius: 2px;
@@ -98,14 +98,14 @@
 }
 .map-preview strong {
   font-family: var(--display);
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 1;
 }
 .map-preview small {
-  font-size: 8px;
+  font-size: var(--type-small);
 }
 .map-caption {
-  font-size: 9px;
+  font-size: var(--type-small);
 }
 .nature {
   background: #e7e9da;
@@ -118,21 +118,21 @@
   overflow: hidden;
 }
 .nature-words .display {
-  font-size: clamp(55px, 6vw, 98px);
+  font-size: clamp(3.4375rem, calc(6vw * var(--text-scale)), 6.125rem);
 }
 .nature-words > p {
-  font-size: 13px;
+  font-size: var(--type-body);
   line-height: 1.95;
 }
 .nature-topic summary {
   font-family: var(--display);
-  font-size: 27px;
+  font-size: 1.6875rem;
   letter-spacing: 0;
   line-height: 1.1;
   min-height: 66px;
 }
 .nature-topic p {
-  font-size: 12px;
+  font-size: var(--type-body);
   line-height: 1.9;
 }
 .care-strip {
@@ -142,28 +142,28 @@
   margin-top: 48px;
 }
 .care-strip p {
-  font-size: 11px;
+  font-size: var(--type-body);
 }
 .culture-feature {
   border-radius: 2px;
 }
 .culture-feature-copy h3 {
-  font-size: clamp(43px, 4vw, 72px);
+  font-size: clamp(2.6875rem, calc(4vw * var(--text-scale)), 4.5rem);
   line-height: 0.95;
 }
 .culture-feature-copy p {
-  font-size: 12px;
+  font-size: var(--type-body);
 }
 .culture-story h3 {
-  font-size: 34px;
+  font-size: 2.125rem;
 }
 .culture-story p {
-  font-size: 12px;
+  font-size: var(--type-body);
   line-height: 1.85;
 }
 .culture-story > span {
   font-family: var(--display);
-  font-size: 29px;
+  font-size: 1.8125rem;
 }
 .route-card {
   border-radius: 3px;
@@ -183,16 +183,16 @@
   padding: 29px 27px;
 }
 .route-content h3 {
-  font-size: 35px;
+  font-size: 2.1875rem;
 }
 .route-content p,
 .route-path {
-  font-size: 12px;
+  font-size: var(--type-body);
 }
 .route-days {
   border-radius: 1px;
   font-family: var(--display);
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 .planner-box {
   border-radius: 3px;
@@ -204,31 +204,30 @@
   overflow: hidden;
 }
 .planner-intro h2 {
-  font-size: clamp(54px, 5.8vw, 94px);
+  font-size: clamp(3.375rem, calc(5.8vw * var(--text-scale)), 5.875rem);
   line-height: 0.9;
 }
 .planner-intro p {
-  font-size: 13px;
+  font-size: var(--type-body);
   max-width: 370px;
   line-height: 1.9;
 }
 .planner-privacy {
-  font-size: 10px;
+  font-size: var(--type-small);
 }
 .plan-choice span {
   border-radius: 3px;
 }
 .education-image {
-  aspect-ratio: 4 / 3;
   border-radius: 2px;
   transform: rotate(1.4deg);
   box-shadow: 13px 15px 0 #cbd2b8;
 }
 .education-text .display {
-  font-size: clamp(57px, 6.2vw, 100px);
+  font-size: clamp(3.5625rem, calc(6.2vw * var(--text-scale)), 6.25rem);
 }
 .education-text > p {
-  font-size: 13px;
+  font-size: var(--type-body);
   line-height: 1.9;
 }
 .education-sticker {
@@ -239,7 +238,7 @@
 }
 .education-sticker strong {
   font-family: var(--display);
-  font-size: 30px;
+  font-size: 1.875rem;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -259,40 +258,40 @@
   background: #e7e9da;
 }
 .visit-copy .display {
-  font-size: clamp(62px, 6.8vw, 109px);
+  font-size: clamp(3.875rem, calc(6.8vw * var(--text-scale)), 6.8125rem);
 }
 .visit-copy > p {
-  font-size: 13px;
+  font-size: var(--type-body);
 }
 .visit-faq summary {
-  font: 700 29px/1.15 var(--display);
+  font: 700 1.8125rem/1.15 var(--display);
   letter-spacing: 0;
   padding-block: 21px;
 }
 .visit-faq p {
-  font-size: 12px;
+  font-size: var(--type-body);
   line-height: 1.9;
 }
 .visit-contact p {
-  font-size: 12px;
+  font-size: var(--type-body);
 }
 .footer {
   background: #162e25;
   padding-block: 85px 24px;
 }
 .footer-title {
-  font-size: clamp(65px, 7.6vw, 123px);
+  font-size: clamp(4.0625rem, calc(7.6vw * var(--text-scale)), 7.6875rem);
   line-height: 0.89;
 }
 .footer-title em {
   color: var(--lime);
 }
 .footer-nav {
-  font-size: 12px;
+  font-size: var(--type-small);
 }
 .footer-nav a,
 .footer-nav button {
-  font-size: 12px;
+  font-size: var(--type-control);
   line-height: 1.8;
 }
 .footer-logo-card {
@@ -303,13 +302,13 @@
   height: 98px;
 }
 .footer-small {
-  font-size: 11px;
+  font-size: var(--type-small);
 }
 .footer-tail {
-  font-size: 9px;
+  font-size: var(--type-small);
 }
 .motion-btn {
-  font-size: 10px;
+  font-size: var(--type-control);
 }
 .back-top {
   background: var(--lime);

@@ -243,14 +243,13 @@ export async function initExperience(c: PageContext) {
     }
   }
   function placePanel(panel: HTMLElement, x: number, y: number) {
-    const desiredY = root!.clientWidth <= 500 ? Math.max(146, y) : y;
     const position = clampPanel(
       x,
-      desiredY,
+      y,
       panel.offsetWidth,
       panel.offsetHeight,
-      root!.clientWidth,
-      root!.clientHeight,
+      panelsRoot.clientWidth,
+      panelsRoot.clientHeight,
     );
     panel.style.left = `${position.x}px`;
     panel.style.top = `${position.y}px`;
@@ -330,8 +329,10 @@ export async function initExperience(c: PageContext) {
     const offset = ((panels.size - 1) % 5) * 26;
     placePanel(
       node,
-      (root!.clientWidth - node.offsetWidth) / 2 + (root!.clientWidth > 1000 ? 120 : 0) + offset,
-      (root!.clientWidth <= 500 ? 146 : 112) + offset,
+      (panelsRoot.clientWidth - node.offsetWidth) / 2 +
+        (panelsRoot.clientWidth > 900 ? 120 : 0) +
+        offset,
+      8 + offset,
     );
     discovered.add(id);
     get('experience-discovered').textContent = String(discovered.size).padStart(2, '0');
@@ -417,14 +418,14 @@ export async function initExperience(c: PageContext) {
   }
   const panelObserver =
     typeof ResizeObserver !== 'undefined'
-      ? new ResizeObserver((entries) => {
-          for (const entry of entries) {
-            const node = entry.target as HTMLElement;
+      ? new ResizeObserver(() => {
+          for (const { node } of panels.values()) {
             if (!node.hidden)
               placePanel(node, parseFloat(node.style.left), parseFloat(node.style.top));
           }
         })
       : null;
+  panelObserver?.observe(panelsRoot);
   let resizePending = false;
   on(window, 'resize', () => {
     if (resizePending) return;
@@ -613,7 +614,7 @@ export async function initExperience(c: PageContext) {
         ? 16
         : x + (event.key === 'ArrowRight' ? step : event.key === 'ArrowLeft' ? -step : 0),
       event.key === 'Home'
-        ? 96
+        ? 16
         : y + (event.key === 'ArrowDown' ? step : event.key === 'ArrowUp' ? -step : 0),
     );
   });
@@ -633,6 +634,10 @@ export async function initExperience(c: PageContext) {
     'KeyR',
   ]);
   on<KeyboardEvent>(window, 'keydown', (event) => {
+    if (document.querySelector('#accessibility-dialog[open]')) {
+      clearInput();
+      return;
+    }
     if (event.key === 'Escape') {
       if (!clusterInfo.hidden) {
         setClusterInfo(false);

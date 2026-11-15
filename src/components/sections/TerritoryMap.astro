@@ -327,28 +327,36 @@ import Photo from '../brand/Photo.astro';
             </svg>
           </button>
         </div>
-        <div class="map-preview" id="map-preview">
-          <Photo alt="Cerro Arequita" assetKey="arequita-rio" id="map-preview-image" />
-          <div>
-            <small id="map-preview-category">Patrimonio geológico</small>
-            <strong id="map-preview-name">Cerro Arequita</strong>
-            <a href="/lugares/cerro-arequita/" id="map-preview-link">
-              Abrir la ficha ↗
-            </a>
+        <div class="map-details">
+          <div class="map-preview" id="map-preview">
+            <Photo
+              alt="Cerro Arequita"
+              assetKey="arequita-rio"
+              profile="thumbnail"
+              id="map-preview-image"
+              sizes="(max-width: 620px) 88vw, 320px"
+            />
+            <div>
+              <small id="map-preview-category">Patrimonio geológico</small>
+              <strong id="map-preview-name">Cerro Arequita</strong>
+              <a href="/lugares/cerro-arequita/" id="map-preview-link">
+                Abrir la ficha ↗
+              </a>
+            </div>
           </div>
+          <p class="photo-credit map-photo-credit" id="map-preview-credit">
+            <span id="map-preview-caption">Cerro Arequita.</span>{' '}
+            <a href="/creditos-fotograficos/#gms-01-portada" id="map-preview-source">
+              Ver fuente de la foto ↗
+            </a>
+          </p>
+          <p class="map-caption">Mapa ilustrativo del Geoparque.</p>
         </div>
-        <p class="photo-credit map-photo-credit" id="map-preview-credit">
-          <span id="map-preview-caption">Cerro Arequita.</span>{' '}
-          <a href="/creditos-fotograficos/#gms-01" id="map-preview-source">
-            Ver fuente de la foto ↗
-          </a>
-        </p>
-        <p class="map-caption">Mapa ilustrativo del Geoparque.</p>
       </div>
     </div>
     <p class="map-open-source">
       Seguí descubriendo los 61 lugares del Geoparque.
-      <button class="text-link" data-action="original-map" style="font-size:10px">
+      <button class="text-link" type="button" data-action="original-map">
         Ampliar el mapa
         <svg aria-hidden="true" class="icon">
           <use href="#i-arrow"></use>

@@ -34,6 +34,6 @@ El hero conserva sus cuatro imágenes y temporizador de 8,5 segundos, teclado, p
 
 ## CSS, assets e infraestructura
 
-La cascada original se divide en módulos temáticos conservando su orden. Tailwind proporciona utilidades; DaisyUI se limita a `loading`, sin tema. Las fuentes están empaquetadas y las fotografías tienen dimensiones, srcset, sizes y variantes WebP. El hero usa AVIF/WebP y derivados móviles con píxeles y encuadre preservados. Sólo el hero inicial tiene prioridad alta.
+La cascada original se divide en módulos temáticos conservando su orden. Tailwind proporciona utilidades y DaisyUI se limita a `loading`. Los tamaños de texto usan una escala en `rem` que responde a la preferencia de accesibilidad. Las imágenes WebP se organizan por componente bajo `src/assets/images/`. Las fotografías tienen dimensiones, `srcset` y `sizes`. La primera portada usa precarga con las variantes de escritorio y móvil. La organización de fotos compartidas y texturas del 3D se describe en [Assets](assets.md).
 
 Docker compila con Node 22.22.3 y sirve únicamente dist mediante Nginx 1.29.4 sin root en 8080. El dominio y la política de indexación se fijan durante build. La validación cubre unidades, HTML generado, navegadores, accesibilidad, screenshots, Lighthouse y respuesta del contenedor.

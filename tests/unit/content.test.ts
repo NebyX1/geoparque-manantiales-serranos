@@ -81,21 +81,28 @@ describe('contenido canónico', () => {
     }
   });
   it('conserva exactamente los píxeles y el encuadre de los cuatro recortes móviles', async () => {
-    const manifest = JSON.parse(readFileSync('docs/asset-manifest.json', 'utf8'));
-    for (const key of ['arequita-rio', 'aguas', 'salus', 'parque']) {
-      const asset = manifest[key];
-      const crop = heroCrop(asset.width, asset.height);
-      const original = await sharp(asset.path).extract(crop).raw().toBuffer();
-      const derived = await sharp(`src/assets/images/hero/mobile/${key}.webp`).raw().toBuffer();
+    const manifest = JSON.parse(readFileSync('docs/hero-crop-manifest.json', 'utf8')) as {
+      original: string;
+      path: string;
+      crop: ReturnType<typeof heroCrop>;
+    }[];
+    expect(manifest).toHaveLength(4);
+    for (const entry of manifest) {
+      const source = sharp(entry.original);
+      const { width, height } = await source.metadata();
+      const crop = heroCrop(width, height);
+      expect(entry.crop).toEqual(crop);
+      const original = await source.extract(crop).raw().toBuffer();
+      const derived = await sharp(entry.path).raw().toBuffer();
       expect(derived.equals(original)).toBe(true);
-      for (const [width, height] of [
+      for (const [frameWidth, frameHeight] of [
         [320, 816],
         [390, 780],
         [620, 780],
-      ]) {
-        const visibleWidth = (width! * asset.height) / height!;
+      ] as const) {
+        const visibleWidth = (frameWidth * height) / frameHeight;
         expect(visibleWidth).toBeLessThanOrEqual(crop.width);
-        const originalLeft = (asset.width - visibleWidth) * 0.68;
+        const originalLeft = (width - visibleWidth) * 0.68;
         const croppedLeft = crop.left + (crop.width - visibleWidth) * 0.68;
         expect(Math.abs(originalLeft - croppedLeft)).toBeLessThanOrEqual(0.5);
       }
