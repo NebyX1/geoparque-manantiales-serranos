@@ -40,6 +40,6 @@ Docker compila con Node 22.22.3 y sirve únicamente dist mediante Nginx 1.29.4 s
 
 ## API de Serrana
 
-El sitio mantiene la interfaz del chat y la guía pública. `backend/` contiene el servidor Node, la conexión a Ollama, la búsqueda y la orientación de visitas. En instalaciones separadas, `PUBLIC_SERRANA_API_BASE` configura la conexión y la CSP del frontend, mientras que `CORS_ORIGINS` permite los orígenes del sitio desde la API. En Compose, Nginx reenvía la consulta al servicio interno.
+El sitio mantiene la interfaz del chat y la guía pública. `backend/` contiene el backend institucional de Gianna adaptado a Serrana. Flask y Waitress sirven la API. SQLite FTS5, Qdrant embebido, Granite y el reranker mMARCO componen la búsqueda. `PUBLIC_SERRANA_API_BASE` configura la conexión y la CSP del frontend. `CORS_ORIGINS` declara en la API los orígenes web permitidos.
 
-La API se construye con su propio contexto Docker. `data/knowledge.json` deriva de las fichas y fuentes canónicas y queda versionado con la API. El build verifica el archivo y la construcción del índice. Cada proceso reconstruye el índice al arrancar y expone en `/api/ready` la huella del catálogo cargado, junto con sus cantidades. [Despliegue en Coolify](deployment-coolify.md)
+La API se construye con su propio contexto Docker. `data/knowledge.json` deriva de las fichas y fuentes canónicas y queda versionado con la API. El build genera SQLite y los fragmentos de recuperación. Al arrancar, la API comprueba el índice de Qdrant y lo reconstruye si está ausente o desactualizado. `/api/ready` informa la huella del catálogo. [Despliegue en Coolify](deployment-coolify.md)

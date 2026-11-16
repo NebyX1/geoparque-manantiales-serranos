@@ -11,4 +11,7 @@ playwright-report
 reports
 package-lock.json
 backend/data/knowledge.json
+backend/data/generated
+backend/data/source/Guia_Geoparque_Manantiales_Serranos.md
+backend/.venv
 *.py

@@ -1,62 +1,32 @@
-# API de Serrana
+# Serrana · API del Geoparque
 
-Servicio de orientación del Geoparque Manantiales Serranos. Recibe el mensaje, el historial reciente y, opcionalmente, el ID de una ficha por `POST /api/serrana/chat`. Devuelve respuestas y fuentes en NDJSON. Este directorio contiene todo lo necesario para instalar, probar y construir la API como repositorio independiente.
-
-## Desarrollo
-
-Usá Node 22.22.3 o posterior de la rama 22. Desde la raíz de la API, copiá `.env.example` a `.env`. Cargá `OLLAMA_API_KEY` para Ollama Cloud y agregá en `CORS_ORIGINS` el origen exacto del frontend.
-
-```sh
-npm ci
-npm run dev
-```
-
-En local, la API escucha en `127.0.0.1:4319`. `npm run verify` compila, valida el catálogo y ejecuta las pruebas unitarias con respuestas controladas del proveedor. `node scripts/evaluate-serrana.mjs --list` enumera los casos de evaluación. Ejecutá ese script contra el servidor local iniciado para evaluar respuestas reales con el proveedor configurado.
+Serrana es una adaptación del backend institucional de Gianna Turismo, revisión [b60895f](https://github.com/IntendenciaDeLavalleja/demo-pagina-turismo-idl-backend/tree/b60895f6f1421c9f57f29db6fcb0c9c1d211a106). Usa Python 3.12, Flask y Waitress. La búsqueda combina SQLite FTS5 con Qdrant embebido y embeddings Granite multilingües. mMARCO reordena la evidencia. Ambos modelos de recuperación se ejecutan con ONNX Runtime en CPU x86-64 con AVX2.
 
 ## Docker y Coolify
 
-Construí con esta carpeta como contexto de Docker. El siguiente ejemplo usa el `.env` local y expone la API en loopback del host.
+Construí esta carpeta con su Dockerfile. En Coolify elegí Base Directory `/backend` si compartís repositorio con la web, o `/` si publicás esta carpeta como repositorio propio. Usá el puerto `5000` y `GET /api/ready`. El contenedor ejecuta como UID 10001.
+
+- Configurá `CORS_ORIGINS` con el origen HTTPS exacto de la web, sin barra final. Separá varios orígenes con comas.
+- Configurá `OLLAMA_HOST`, `OLLAMA_MODEL` y el secreto `OLLAMA_API_KEY` en runtime de la API. La plantilla de producción es [.env.example](.env.example).
+- Montá un volumen dedicado en `/app/storage` para reutilizar el índice Qdrant entre deploys. Un volumen nuevo se inicializa al arrancar. Para un bind mount, el directorio debe ser escribible por UID y GID 10001. Usá un volumen por instancia de Qdrant embebido.
+
+El build genera SQLite y los fragmentos a partir de `data/knowledge.json`. También prepara los modelos ONNX fijados por revisión y SHA-256. Al arrancar, el backend comprueba las firmas del índice y lo reconstruye si cambia el corpus o la configuración de embeddings. `/api/ready` informa el catálogo cargado y sólo está listo cuando el índice coincide y los modelos están calentados. El chequeo no hace consultas a Ollama.
+
+## Desarrollo y verificación
+
+Desde esta carpeta, con Python 3.12 y las variables de [.env.local.example](.env.local.example) en `.env`:
 
 ```sh
-docker build -t serrana-backend .
-docker run --rm --env-file .env -e HOST=0.0.0.0 -p 127.0.0.1:4319:4319 serrana-backend
+python -m pip install -r backend/requirements-lock.txt
+python scripts/ingest.py
+python scripts/prepare_models.py
+python -m backend.app.main
 ```
 
-En Coolify creá una aplicación con **Dockerfile**, puerto interno `4319` y healthcheck `GET /api/ready`. Usá Base Directory `/` para el repositorio independiente, o `/backend` si la API está dentro del repositorio web. La ubicación del Dockerfile es `/Dockerfile` relativa a ese contexto. La imagen ejecuta Node como usuario sin privilegios y escucha en `0.0.0.0:4319`.
+La API usa `127.0.0.1:5000` en local. `python -m unittest discover -s scripts -p 'test_serrana_*.py'` ejecuta las pruebas del adaptador y del router con proveedor simulado. `node scripts/evaluate-serrana.mjs --list` enumera los casos de diálogo.
 
-| Variable de runtime           | Valor o formato                                                                                        |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `CORS_ORIGINS`                | Orígenes HTTPS exactos del frontend, separados por comas y sin barra final. Requerida en producción.   |
-| `OLLAMA_API_KEY`              | Secreto requerido por Ollama Cloud. Activá Runtime y desactivá Buildtime para esta variable.           |
-| `OLLAMA_HOST`                 | `https://ollama.com` por defecto. `OLLAMA_BASE_URL` funciona como alias si `OLLAMA_HOST` está vacío.   |
-| `OLLAMA_MODEL`                | `deepseek-v4.1-flash` por defecto.                                                                     |
-| `SERRANA_REQUESTS_PER_MINUTE` | `30` por defecto por instancia, ajustable hasta `300`. Hay cuatro consultas simultáneas por instancia. |
-| `NODE_ENV`, `HOST`, `PORT`    | La imagen ya configura `production`, `0.0.0.0` y `4319`.                                               |
+## Conexión con el Geoparque
 
-Asigná un dominio HTTPS a la API. Configurá ese origen como `PUBLIC_SERRANA_API_BASE` de build en el recurso web y desplegá el frontend. Para desplegar con cada push de la rama configurada, conectá el repositorio con la GitHub App y seleccioná **Deploy on push (webhooks)**. [Auto Deploy en Coolify](https://coolify.io/docs/applications/sources/github/auto-deploy)
+El contrato nativo `POST /api/ask-text` usa `question`. El adaptador `POST /api/serrana/chat` admite `message`, `history` y `context.placeId`. Llama al mismo motor y devuelve NDJSON con eventos `delta` y `done`, que la interfaz Astro usa para mostrar la respuesta y las fuentes. Cada consulta del adaptador usa el historial reciente de su pestaña.
 
-## Catálogo en cada despliegue
-
-`data/knowledge.json` forma parte del repositorio. Contiene los documentos de búsqueda, las fuentes y las fichas de visita de Serrana. `npm run build` valida el manifiesto, las referencias, la unicidad de las fichas y la construcción del índice. Docker copia ese mismo catálogo a la imagen y el índice se crea en memoria en cada arranque. Un redeploy carga la base incluida en el commit, incluso en un servidor nuevo.
-
-Al editar los datos canónicos, desde el repositorio web ejecutá `npm run serrana:knowledge -- --backend ../serrana-backend` con la ruta real a esta API. Verificá con `npm run serrana:knowledge:check -- --backend ../serrana-backend` y versioná aquí el resultado. Si ambas carpetas comparten repositorio, ejecutá los comandos desde la raíz web y omití `--backend`. Las reglas de orientación de visitas viven en `src/visit-catalog.ts`.
-
-## Comprobación de la API
-
-`GET /api/ready` devuelve `200` con `status: ready` y `catalog`. Ese objeto incluye la versión de esquema, la fecha de revisión, las cantidades de documentos, fichas y fuentes, y la huella SHA-256 del archivo cargado. Comparala con la huella impresa en el build. Si responde `503 PROVIDER_NOT_CONFIGURED`, revisá las variables de Ollama en el entorno de la API.
-
-El chequeo de salud comprueba configuración local y catálogo. Para verificar la autorización de la clave y la disponibilidad del modelo, hacé una consulta real desde el frontend. Los errores de consulta se registran por código, estado HTTP y duración.
-
-## Contrato del chat
-
-Enviá un `POST /api/serrana/chat` con `Content-Type: application/json`. `history` es opcional y contiene turnos con `role` igual a `user` o `assistant` y un `content` de texto. `context.placeId` permite asociar la pregunta a una ficha. El frontend envía el origen automáticamente y puede cancelar la consulta al cerrar el diálogo.
-
-```json
-{
-  "message": "¿Qué rocas puedo observar acá?",
-  "history": [],
-  "context": { "placeId": 1 }
-}
-```
-
-Cada línea de la respuesta exitosa es un objeto JSON. Los eventos `delta` llevan `text` y `done` lleva `sources`, una lista de pares `title` y `url`. Las rutas de fichas que empiezan con `/` se abren en el frontend. Si se interrumpe una respuesta ya iniciada, el evento `error` contiene el mensaje visible. Un error antes de iniciar la transmisión devuelve un estado HTTP y un objeto JSON con `error`.
+El router de Gianna evalúa el alcance y la seguridad antes de recuperar evidencia. Serrana opera con el catálogo documental del Geoparque. Para actualizarlo, exportá `data/knowledge.json` desde la web con `npm run serrana:knowledge`. En checkouts separados, usá `npm run serrana:knowledge -- --backend ../serrana-backend` con la ruta real de la API. Incorporá el archivo exportado al commit de la API.

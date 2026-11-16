@@ -27,9 +27,9 @@ if (serranaApiBase) {
 }
 const serranaProxy = {
   '/api/serrana/chat': {
-    target: env.SERRANA_BACKEND_URL || 'http://127.0.0.1:4319',
+    target: env.SERRANA_BACKEND_URL || 'http://127.0.0.1:5000',
     changeOrigin: false,
-    proxyTimeout: 75_000,
+    proxyTimeout: 120_000,
   },
 };
 

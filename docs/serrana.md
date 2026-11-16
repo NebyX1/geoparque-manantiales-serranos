@@ -4,7 +4,7 @@ Serrana es la guía conversacional de Manantiales Serranos. Está disponible en 
 
 El catálogo de consulta reúne las 61 fichas del atlas, historias, recorridos, propuestas didácticas y referencias normativas. La ruta `/serrana/guia.md` publica los mismos documentos y fuentes. Los títulos, alias y temas permiten buscar evidencia antes de generar una respuesta. El servidor envía al modelo sólo los pasajes seleccionados, la consulta y el historial reciente. Valida los marcadores de cita y genera los enlaces desde el catálogo.
 
-La estructura de catálogo, evidencias, alias y referencias se adaptó de [Gianna Turismo](https://github.com/NebyX1/nueva-web-turismo-idl/tree/346a8a770d68120af7263f962a42399930e93b7c/gianna-backend). El índice se construye en memoria con el corpus exclusivo del Geoparque. El repositorio de Turismo también aporta el [retrato que anima Serrana](https://github.com/NebyX1/nueva-web-turismo-idl/blob/346a8a770d68120af7263f962a42399930e93b7c/public/media/137ff3d8d4cde96e.png).
+La API parte del código institucional de Gianna Turismo. Usa Python, Flask, Waitress, SQLite FTS5, Qdrant y los modelos ONNX Granite y mMARCO. El [código institucional](https://github.com/IntendenciaDeLavalleja/demo-pagina-turismo-idl-backend/tree/b60895f6f1421c9f57f29db6fcb0c9c1d211a106) fija la revisión de origen. El repositorio de Turismo aporta el [retrato que anima Serrana](https://github.com/NebyX1/nueva-web-turismo-idl/blob/346a8a770d68120af7263f962a42399930e93b7c/public/media/137ff3d8d4cde96e.png).
 
 Las referencias normativas identifican la autoridad, la actividad y el ámbito de cada instrumento. El bloque explica las directrices UNESCO, los convenios internacionales, las leyes nacionales y las medidas específicas de Lavalleja y del Parque Nacional Arequita. Los permisos y las excepciones de un sitio se consultan en la fuente oficial que corresponde a ese sitio.
 
@@ -12,20 +12,21 @@ Para orientar visitas, Serrana selecciona fichas del atlas por zona, interés y 
 
 ## Desarrollo
 
-Copiá la plantilla `.env.example` de la API a `.env` dentro del directorio de la API y configurá allí `OLLAMA_API_KEY`. El modelo por defecto es [`deepseek-v4.1-flash`](https://ollama.com/library/deepseek-v4.1-flash) con `https://ollama.com` como base. Si ambos proyectos están en el mismo repositorio, iniciá la API desde la raíz web.
+En la API, copiá `.env.local.example` a `.env` y seguí las instrucciones de instalación para Python 3.12. Para Ollama Cloud usá `https://ollama.com` y la clave en la API. [Instalación del backend](../backend/README.md)
 
 ```sh
-npm --prefix backend ci
-npm --prefix backend run dev
+cd backend
+python scripts/ingest.py
+python -m backend.app.main
 ```
 
-Si la API tiene su propio repositorio, ejecutá `npm ci` y `npm run dev` allí. En otra terminal, ejecutá `npm run dev` en la raíz web. Astro reenvía el chat a `http://127.0.0.1:4319` en desarrollo y preview. Para una conexión directa desde el navegador, configurá `PUBLIC_SERRANA_API_BASE` en el `.env` de la web con el origen de la API. Agregá el origen exacto de la web a `CORS_ORIGINS` en el entorno del backend.
+En otra terminal, ejecutá `npm run dev` en la raíz web. Astro reenvía el chat a `http://127.0.0.1:5000` en desarrollo y preview. Para una conexión directa desde el navegador, configurá `PUBLIC_SERRANA_API_BASE` con el origen de la API y agregá el origen de la web a `CORS_ORIGINS` en el backend.
 
 El historial permanece en memoria de la pestaña y se puede borrar desde el panel. El avatar anima la boca durante la escritura del texto.
 
 ## Operación
 
-La ruta `POST /api/serrana/chat` transmite JSON delimitado por líneas y admite cancelar la consulta. El servidor revisa la respuesta completa del modelo antes de enviar los párrafos validados. Un rechazo del modelo prevalece aunque llegue después de texto con citas. El servicio tiene un límite de cuatro solicitudes simultáneas y 30 por minuto en cada instancia. `SERRANA_REQUESTS_PER_MINUTE` permite ajustar el segundo límite hasta 300. Los errores del proveedor se registran con su categoría y duración. Las credenciales, preguntas y respuestas quedan fuera de esos registros.
+La ruta `POST /api/serrana/chat` adapta el contrato nativo `/api/ask-text` a JSON delimitado por líneas. Gianna evalúa seguridad y alcance antes de buscar evidencia. La interfaz puede interrumpir la espera de la respuesta. Waitress usa cuatro hilos y ambos endpoints del chat comparten el límite `SERRANA_REQUESTS_PER_MINUTE`, con 30 consultas por minuto por defecto.
 
 En producción, el sitio y la API se despliegan por separado. El backend valida el origen de las solicitudes del navegador con `CORS_ORIGINS` y mantiene sus límites por instancia para todos los clientes. `GET /api/ready` informa el catálogo cargado y si está presente la configuración del proveedor. [Despliegue y diagnóstico en Coolify](deployment-coolify.md)
 
@@ -38,9 +39,9 @@ npm run serrana:knowledge
 npm run serrana:knowledge:check
 ```
 
-Cuando cambien las fichas, los relatos o las fuentes, exportá y versioná el resultado con la API. Con repositorios separados, pasá `-- --backend ../serrana-backend` a ambos comandos desde la raíz web y usá la ruta real al checkout del backend. Las reglas y perfiles de orientación de visitas se editan en `src/visit-catalog.ts` del backend.
+Cuando cambien las fichas, los relatos o las fuentes, exportá y versioná el resultado con la API. Con repositorios separados, pasá `-- --backend ../serrana-backend` a ambos comandos desde la raíz web y usá la ruta real al checkout del backend.
 
-En cada deploy, el Dockerfile de la API lee el catálogo versionado, valida sus documentos, IDs y referencias, y lo incluye en la imagen. Al iniciar un contenedor se construye el índice en memoria. La huella SHA-256 de `/api/ready` se puede comparar con la del build o con `npm run check:coolify` usando `--catalog`.
+En cada deploy, la ingesta de Gianna genera SQLite FTS5 y los fragmentos a partir del catálogo versionado. Al arrancar se carga el índice Qdrant o se reconstruye si cambia su firma. La huella SHA-256 de `/api/ready` se puede comparar con la del archivo mediante `npm run check:coolify` y `--catalog`.
 
 ## Evaluación
 
@@ -50,7 +51,7 @@ Con el proveedor configurado en el entorno del backend, iniciá la API y ejecut�
 
 ```sh
 node scripts/evaluate-serrana.mjs --list
-node scripts/evaluate-serrana.mjs --endpoint http://127.0.0.1:4319/api/serrana/chat --jobs 3 --rpm 24
+node scripts/evaluate-serrana.mjs --endpoint http://127.0.0.1:5000/api/serrana/chat --jobs 3 --rpm 24
 ```
 
 Los resultados se guardan en `reports/experience-review/serrana-qa/responses`. `--resume` continúa con los casos pendientes y repite errores técnicos. Para evaluar una revisión nueva del motor, elegir un directorio distinto con `--out`.

@@ -18,7 +18,7 @@ RUN npm run build \
 
 FROM nginxinc/nginx-unprivileged:1.29.4-alpine3.23 AS runtime
 
-ENV SERRANA_BACKEND_URL=http://127.0.0.1:4319
+ENV SERRANA_BACKEND_URL=http://127.0.0.1:5000
 ENV NGINX_ENVSUBST_FILTER="^SERRANA_BACKEND_URL$"
 COPY --from=build /tmp/default.conf.template /etc/nginx/templates/default.conf.template
 COPY --from=build /app/dist /usr/share/nginx/html

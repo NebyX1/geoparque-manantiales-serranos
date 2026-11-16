@@ -83,4 +83,4 @@ Las 28 pruebas funcionales y las cinco auditorías de diálogos se repitieron co
 
 ## Verificación de la arquitectura actual
 
-La infraestructura actual tiene una imagen web y otra para la API. `npm run verify` comprueba el frontend y la sincronización del catálogo cuando ambos están en el mismo checkout. `npm run verify` desde el directorio de la API comprueba su build, el catálogo y las pruebas unitarias. `node scripts/check-container.mjs` realiza la auditoría de un contenedor web local indexable. Para ambos dominios desplegados, el verificador actual es `npm run check:coolify` con `--web`, `--api` y, opcionalmente, `--catalog`. [Procedimiento de despliegue y verificación](deployment-coolify.md)
+La infraestructura actual tiene una imagen web y otra para la API Python. `npm run verify` comprueba el frontend y la sincronización del catálogo cuando ambos están en el mismo checkout. Las pruebas y requisitos de la API están en su [README](../backend/README.md). Para ambos dominios desplegados, usá `npm run check:coolify` con `--web`, `--api` y, opcionalmente, `--catalog`. [Procedimiento de despliegue y verificación](deployment-coolify.md)

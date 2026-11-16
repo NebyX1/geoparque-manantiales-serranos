@@ -13,7 +13,7 @@ const {
 });
 const backendDir = backend ?? fileURLToPath(new URL('../backend/', import.meta.url));
 
-if (!existsSync(join(backendDir, 'src', 'knowledge.ts'))) {
+if (!existsSync(join(backendDir, 'backend', 'app', 'model_policy.py'))) {
   if (!check || backend) throw new Error('Indicá la carpeta del backend de Serrana con --backend.');
   process.exit(0);
 }

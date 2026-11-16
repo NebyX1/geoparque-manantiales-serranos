@@ -7,7 +7,7 @@ import { pathToFileURL } from 'node:url';
 const help = `Evaluación de Serrana contra una instancia local ya iniciada.
 
   node scripts/evaluate-serrana.mjs [opciones]
-  --endpoint http://127.0.0.1:4319/api/serrana/chat
+  --endpoint http://127.0.0.1:5000/api/serrana/chat
   --input tests/evaluation/serrana-cases.mjs     Corpus JS (serranaCases) o JSON
   --out reports/experience-review/serrana-qa/responses
   --jobs 3                                    Concurrencia entre 1 y 3
@@ -26,7 +26,7 @@ Escribe results.jsonl, summary.json y summary.md. Códigos de salida: 0 sin fall
 `;
 
 const defaults = {
-  endpoint: 'http://127.0.0.1:4319/api/serrana/chat',
+  endpoint: 'http://127.0.0.1:5000/api/serrana/chat',
   input: 'tests/evaluation/serrana-cases.mjs',
   out: 'reports/experience-review/serrana-qa/responses',
   jobs: '3',

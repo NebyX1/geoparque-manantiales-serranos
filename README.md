@@ -14,7 +14,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Abrí `http://localhost:4321/`. Los comandos de Astro leen `.env` para el dominio canónico, la indexación y la conexión a la API. Para usar el chat en local, iniciá Serrana en otra terminal. Por defecto, Astro reenvía `/api/serrana/chat` a `127.0.0.1:4319`. [Instalación y configuración de Serrana](docs/serrana.md)
+Abrí `http://localhost:4321/`. Los comandos de Astro leen `.env` para el dominio canónico, la indexación y la conexión a la API. Para usar el chat en local, iniciá Serrana en otra terminal. Por defecto, Astro reenvía `/api/serrana/chat` a `127.0.0.1:5000`. [Instalación y configuración de Serrana](docs/serrana.md)
 
 La entrada ofrece dos recorridos: el sitio editorial en `/inicio/` y la experiencia 3D en `/experiencia/`. Las fichas, historias, circuitos y el planificador conservan sus rutas. Consultar [la experiencia inmersiva](docs/experience.md) para controles, datos y mantenimiento. La [geografía y su precisión](docs/geography.md) y la [procedencia de las miniaturas](docs/model-provenance.md) documentan las fuentes utilizadas.
 
@@ -39,7 +39,7 @@ npm run test:lighthouse
 
 `npm run preview` sirve el build del sitio. Para pruebas se usan los puertos 4321 y 4323. Ejecutar una sola suite Playwright a la vez.
 
-Para comprobar la API por separado, ejecutá `npm --prefix backend ci` y `npm --prefix backend run verify` desde la raíz web, o `npm ci` y `npm run verify` desde su propio repositorio.
+La API usa el código institucional de Gianna en Python 3.12, Flask y Waitress. Desde `backend/`, `python -m unittest discover -s scripts -p 'test_serrana_*.py'` ejecuta las pruebas del router y del adaptador. [Preparación del backend](backend/README.md)
 
 ## Arquitectura
 
@@ -56,7 +56,7 @@ Consultar [arquitectura](docs/architecture.md), [migración](docs/migration.md),
 
 ## Docker y Coolify
 
-El frontend es una aplicación Dockerfile con Nginx sin root en `8080`, healthcheck `/health` y `404` real para rutas inexistentes. El backend es una segunda aplicación Dockerfile en `4319`, con healthcheck `/api/ready`. En un repositorio compartido, sus contextos son `/` y `/backend`. Con repositorios separados, ambos usan `/`. [Configuración completa de Coolify y Auto Deploy](docs/deployment-coolify.md)
+El frontend es una aplicación Dockerfile con Nginx sin root en `8080`, healthcheck `/health` y `404` real para rutas inexistentes. El backend es una segunda aplicación Dockerfile en `5000`, con healthcheck `/api/ready`. En un repositorio compartido, sus contextos son `/` y `/backend`. Con repositorios separados, ambos usan `/`. [Configuración completa de Coolify y Auto Deploy](docs/deployment-coolify.md)
 
 Para construir la imagen del frontend, usá los dominios reales de ambos servicios. La configuración de preview usa `SITE_INDEXABLE=false`.
 
@@ -77,4 +77,4 @@ Con ambas aplicaciones desplegadas, comprobá los dominios y el catálogo desde 
 npm run check:coolify -- --web https://manantialesserranos.uy --api https://serrana-api.example
 ```
 
-Para iniciar ambos servicios en local, creá `.env` y `backend/.env` desde las plantillas y ejecutá `docker compose --env-file .env --env-file backend/.env up --build -d`. Para Lighthouse, usá `LIGHTHOUSE_URL` con la URL del frontend local. [Compose y verificación HTTP](docs/deployment-coolify.md#ambos-servicios-con-compose)
+Para iniciar ambos servicios en local, creá `.env` y `backend/.env` desde las plantillas locales y ejecutá `docker compose --env-file .env --env-file backend/.env up --build -d`. Para Lighthouse, usá `LIGHTHOUSE_URL` con la URL del frontend local. [Compose y verificación HTTP](docs/deployment-coolify.md#compose-local)

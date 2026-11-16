@@ -1,10 +1,11 @@
 **
-!package.json
-!package-lock.json
-!tsconfig.json
-!src/
-!src/**
+!backend/
+!backend/requirements-lock.txt
+!backend/app/
+!backend/app/*.py
+!backend/app/runtime_config.json
 !scripts/
-!scripts/check-knowledge.mjs
+!scripts/*.py
 !data/
 !data/knowledge.json
+!data/visit-profiles.json
