@@ -1,0 +1,265 @@
+export type VisitInterest =
+  | 'geologia'
+  | 'naturaleza'
+  | 'cultura'
+  | 'arquitectura'
+  | 'interior'
+  | 'aire-libre'
+  | 'familia'
+  | 'sendero'
+  | 'alojamiento'
+  | 'gastronomia';
+
+interface VisitProfile {
+  interests: readonly VisitInterest[];
+  reason?: string;
+  access?: string;
+  exterior?: string;
+  stayOnly?: boolean;
+}
+
+interface VisitArea {
+  id: string;
+  label: string;
+  aliases: readonly string[];
+  placeIds: readonly number[];
+  surroundings?: readonly number[];
+}
+
+// An editorial selection of canonical atlas IDs. Interest tags help order visits.
+// They do not establish opening, accessibility, booking or permission.
+export const visitProfiles: Readonly<Partial<Record<number, VisitProfile>>> = {
+  1: {
+    interests: ['geologia', 'naturaleza', 'aire-libre', 'familia', 'sendero'],
+    reason:
+      'Los paredones de riolita y el entorno del Santa Lucía muestran cómo se formó el paisaje volcánico.',
+    access:
+      'Consultá al Parque Nacional por los accesos del sector y usá los recorridos habilitados.',
+  },
+  9: {
+    interests: ['naturaleza', 'cultura', 'aire-libre', 'familia'],
+    reason:
+      'El lago de Villa Serrana permite observar el agua, la vegetación y las laderas del arroyo Miraflores.',
+    access:
+      'Disfrutá el paisaje desde los sectores habilitados. Consultá aparte las condiciones de baño.',
+  },
+  10: {
+    interests: ['arquitectura', 'cultura', 'interior', 'alojamiento', 'gastronomia'],
+    reason:
+      'La obra de Julio Vilamajó integra galerías y balcones con las vistas de Villa Serrana.',
+    access:
+      'Coordiná con el establecimiento los sectores de visita, la mesa o el alojamiento que te interese.',
+  },
+  11: {
+    interests: ['arquitectura', 'cultura', 'interior', 'alojamiento', 'gastronomia'],
+    reason:
+      'El edificio de Vilamajó acompaña la pendiente y alberga una sala dedicada al arquitecto.',
+    access:
+      'Consultá por separado la sala, el restaurante y la modalidad de alojamiento con el establecimiento.',
+  },
+  14: {
+    interests: ['geologia', 'naturaleza', 'arquitectura', 'aire-libre', 'familia', 'sendero'],
+    reason:
+      'La cascada y el parador permiten mirar cómo el agua y la arquitectura se relacionan con la ladera.',
+    access:
+      'Confirmá con el operador el ingreso y las condiciones de la actividad que te interese.',
+  },
+  17: {
+    interests: ['geologia', 'naturaleza', 'aire-libre', 'familia', 'sendero', 'alojamiento'],
+    reason:
+      'El complejo serrano reúne bosque y caminos en un geositio vinculado a la historia de Rodinia.',
+    access: 'Consultá con el complejo por la visita diurna, los sectores habilitados o la estadía.',
+  },
+  21: {
+    interests: ['geologia', 'naturaleza', 'aire-libre'],
+    reason: 'Desde el entorno de Ruta 81 se puede observar el relieve serrano de Aguas Blancas.',
+    access: 'Observá el paisaje desde puntos de detención seguros y accesos habilitados.',
+  },
+  23: {
+    interests: ['geologia', 'naturaleza', 'aire-libre'],
+    reason:
+      'El geositio permite interpretar la deformación de las rocas en la Zona de Cizalla Sarandí del Yi–Piriápolis.',
+    access:
+      'Coordiná el recorrido geológico y el punto de encuentro. El camping tiene su propia modalidad.',
+  },
+  24: {
+    stayOnly: true,
+    interests: ['naturaleza', 'aire-libre', 'familia', 'alojamiento'],
+    reason:
+      'El camping municipal ofrece opciones de acampe y cabañas en el entorno del embalse de Aguas Blancas.',
+    access:
+      'Confirmá la modalidad con la administración. Baño, pesca y navegación tienen condiciones propias.',
+  },
+  26: {
+    interests: ['naturaleza', 'aire-libre', 'familia'],
+    reason:
+      'El parque acompaña el arroyo de Solís de Mataojo y cuenta con áreas recreativas, bancos y mesas.',
+    access:
+      'Usá las áreas recreativas habilitadas y seguí las indicaciones del lugar para las actividades junto al agua.',
+  },
+  27: {
+    interests: ['cultura', 'interior'],
+    reason:
+      'La institución forma parte del patrimonio cultural y la memoria comunitaria de Solís de Mataojo.',
+    access: 'Confirmá la sede, la agenda y si hay salas abiertas a visitas antes de ir.',
+  },
+  29: {
+    interests: ['cultura', 'aire-libre', 'familia'],
+    reason:
+      'La plaza es un punto de encuentro para conocer la historia y el centro de Solís de Mataojo.',
+  },
+  31: {
+    interests: ['geologia', 'naturaleza', 'aire-libre', 'familia', 'sendero'],
+    reason:
+      'La Fuente del Puma, el bosque y los senderos permiten relacionar el agua con el pasado marino de las rocas.',
+    access:
+      'Elegí entre Jardines del Puma y Parque Familiar y confirmá la entrada y los senderos de ese sector.',
+  },
+  33: {
+    interests: ['cultura', 'naturaleza', 'aire-libre', 'sendero'],
+    reason:
+      'El santuario y las estaciones del Vía Crucis cuentan la historia de la peregrinación en las sierras de Minas.',
+    access:
+      'La subida es un recorrido distinto de la capilla de la base. Consultá el acceso con el santuario.',
+  },
+  39: {
+    interests: ['cultura', 'arquitectura', 'aire-libre', 'familia'],
+    reason:
+      'La plaza reúne el monumento a Lavalleja y los edificios del centro histórico de Minas.',
+  },
+  40: {
+    interests: ['cultura', 'interior', 'familia', 'gastronomia'],
+    reason:
+      'La casa central, frente a Plaza Libertad, reúne cafetería y tradición confitera de Minas.',
+    access: 'Confirmá el horario de la casa central antes de ir.',
+  },
+  41: {
+    interests: ['cultura', 'arquitectura', 'interior'],
+    reason:
+      'La fachada y las torres de la Catedral ayudan a leer el conjunto histórico del centro de Minas.',
+    access:
+      'Podés apreciar la fachada desde el espacio público. Consultá la posibilidad de entrar en función del culto.',
+    exterior:
+      'Mirá desde el espacio público la simetría de la fachada neoclásica y sus dos torres.',
+  },
+  42: {
+    interests: ['cultura', 'arquitectura', 'interior'],
+    reason: 'Reúne la casa natal de Juan Antonio Lavalleja y colecciones sobre Eduardo Fabini.',
+    access: 'Consultá las salas disponibles y coordiná con la Casa de la Cultura si vas en grupo.',
+  },
+  44: {
+    interests: ['cultura', 'interior', 'familia'],
+    reason:
+      'Los objetos y documentos del museo muestran cómo se desarrolló la producción familiar de alfajores en Minas.',
+    access: 'Confirmá el acceso a la colección de la fábrica con sus responsables.',
+  },
+  45: {
+    interests: ['cultura', 'arquitectura', 'interior'],
+    reason:
+      'El Teatro Lavalleja reúne arquitectura histórica y el Museo del Humor y la Historieta.',
+    access: 'Consultá la agenda y las condiciones específicas para la sala o el museo.',
+    exterior: 'Observá la fachada del teatro histórico desde la calle José Batlle y Ordóñez.',
+  },
+  46: {
+    interests: ['cultura', 'naturaleza', 'aire-libre'],
+    reason:
+      'En el este de Minas, el cerro reúne el monumento ecuestre a Artigas y una vista panorámica de la ciudad.',
+    access: 'Confirmá el acceso al cerro antes de planificar la subida.',
+  },
+  49: {
+    interests: ['naturaleza', 'aire-libre', 'familia'],
+    reason:
+      'El parque urbano tiene juegos, un rosal, zonas de descanso y un lago artificial de uso paisajístico.',
+    access: 'Consultá los sectores habilitados cuando haya festivales o eventos.',
+  },
+  52: {
+    interests: ['naturaleza', 'aire-libre', 'alojamiento'],
+    reason: 'El entorno reúne bosque ribereño, valle, laguna y restos de un molino harinero.',
+    access: 'Consultá al operador por la visita diurna o las cabañas y sus condiciones vigentes.',
+  },
+  53: {
+    stayOnly: true,
+    interests: ['naturaleza', 'aire-libre', 'familia', 'alojamiento'],
+    reason: 'El camping ofrece servicios recreativos y de estadía junto al río Santa Lucía.',
+    access:
+      'Consultá con la administración por la modalidad diurna, parcela o cabaña y coordiná por separado otros accesos del parque.',
+  },
+  54: {
+    interests: ['cultura', 'arquitectura', 'naturaleza', 'aire-libre', 'familia'],
+    reason:
+      'Las calles, pendientes y construcciones muestran cómo Julio Vilamajó pensó la villa en relación con la sierra.',
+    access:
+      'Recorré sus espacios públicos y coordiná por separado las visitas o servicios en predios privados.',
+  },
+  55: {
+    interests: ['geologia', 'naturaleza', 'aire-libre', 'sendero'],
+    reason:
+      'Los senderos interpretativos del Cerro Guazubirá permiten observar monte nativo y rocas.',
+    access:
+      'Coordiná la reserva. La ficha documenta que el operador exige caminar sin ayuda y suspende las actividades con lluvia.',
+  },
+  56: {
+    interests: ['cultura', 'naturaleza', 'aire-libre', 'sendero'],
+    reason:
+      'La caminata guiada relaciona las construcciones de piedra, los pastizales y el paisaje del Cerro de la Leona.',
+    access: 'Coordiná la excursión con guía y los permisos para atravesar campos privados.',
+  },
+  59: {
+    stayOnly: true,
+    interests: ['alojamiento'],
+    reason:
+      'El apart hotel ofrece habitaciones y casas en sectores distintos de las sierras del sur de Minas.',
+    access:
+      'Confirmá disponibilidad, edades admitidas y las condiciones de la unidad con el establecimiento.',
+  },
+  60: {
+    interests: ['cultura', 'interior', 'familia'],
+    reason:
+      'Las miniaturas de Horacio Chocho muestran mecanismos de maquinaria y escenas de oficios.',
+    access: 'Coordiná la visita y, si te interesa, la demostración de los mecanismos con el museo.',
+  },
+};
+
+export const visitAreas: readonly VisitArea[] = [
+  {
+    id: 'minas',
+    label: 'Minas',
+    aliases: ['Minas', 'ciudad de Minas', 'centro de Minas', 'Minas y entorno'],
+    placeIds: [39, 41, 40, 42, 49, 45, 44, 60, 46],
+    surroundings: [39, 49, 1, 14, 31, 17, 41, 40, 42, 45, 44, 60, 33, 46, 52, 53, 59],
+  },
+  {
+    id: 'villa-serrana',
+    label: 'Villa Serrana',
+    aliases: ['Villa Serrana', 'la villa'],
+    placeIds: [54, 9, 11, 10, 55],
+    surroundings: [54, 9, 11, 10, 55, 56],
+  },
+  {
+    id: 'solis',
+    label: 'Solís de Mataojo',
+    aliases: ['Solís de Mataojo', 'Solís', 'Mataojo'],
+    placeIds: [29, 26, 27],
+    surroundings: [29, 26, 27, 23, 24, 21],
+  },
+  {
+    id: 'aguas-blancas',
+    label: 'Aguas Blancas',
+    aliases: ['Aguas Blancas', 'Abra de Zabaleta', 'Ruta 81'],
+    placeIds: [23, 24, 21],
+  },
+  {
+    id: 'arequita',
+    label: 'Arequita',
+    aliases: ['Arequita', 'Parque Nacional Arequita', 'Cerro Arequita', 'Arequita y Santa Lucía'],
+    placeIds: [1, 52, 53],
+  },
+  {
+    id: 'penitente',
+    label: 'Salto del Penitente',
+    aliases: ['Penitente', 'Salto del Penitente', 'Parque Salto del Penitente'],
+    placeIds: [14],
+  },
+];
+
+export const defaultVisitIds: readonly number[] = [1, 14, 39, 54, 31, 17, 26, 9, 23, 49, 41, 45];

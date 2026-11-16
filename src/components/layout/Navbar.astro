@@ -1,7 +1,14 @@
 ---
 import Photo from '../brand/Photo.astro';
+import SerranaTrigger from '../serrana/SerranaTrigger.astro';
 import TripTrigger from '../trip/TripTrigger.astro';
 import AccessibilityTrigger from './AccessibilityTrigger.astro';
+
+interface Props {
+  serranaPlace?: { id: number; name: string };
+}
+
+const { serranaPlace } = Astro.props;
 ---
 
 <header class="site-header" id="site-header">
@@ -61,6 +68,7 @@ import AccessibilityTrigger from './AccessibilityTrigger.astro';
       </svg>
     </button>
     <TripTrigger />
+    <SerranaTrigger variant="navigation" {...(serranaPlace ? { place: serranaPlace } : {})} />
     <button
       type="button"
       aria-controls="mobile-menu"

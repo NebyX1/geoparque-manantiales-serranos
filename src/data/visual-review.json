@@ -922,6 +922,15 @@
       "height": 630,
       "sha256": "2da6c531f99db1b44c8596bb87dbcda960f3715e447cf406a0704a974aea62c6"
     },
+    "serrana/gianna.webp": {
+      "decision": "conservada",
+      "observation": "Retrato de personaje virtual reutilizado de Gianna Turismo. Comparado al 100 % con el PNG original, conserva todos sus píxeles RGB. El rostro se reconoce en el diálogo de escritorio, móvil y recorrido 3D y en el botón de apertura circular.",
+      "treatment": "Conservar el original de 512 × 512 en WebP sin pérdida. La variante WebP del botón se deriva a 92 × 92 del mismo archivo. Los gestos del personaje son efectos temporales en canvas.",
+      "width": 512,
+      "height": 512,
+      "sha256": "1f4356489d7e1a3e7afabc9ff199050e609b7ddd87820cb6b595642cb1d21821",
+      "source": "https://github.com/NebyX1/nueva-web-turismo-idl/blob/346a8a770d68120af7263f962a42399930e93b7c/public/media/137ff3d8d4cde96e.png"
+    },
     "site-brand/manantiales-serranos.webp": {
       "decision": "conservada",
       "observation": "Formas y letras de Manantiales Serranos legibles en navegación.",

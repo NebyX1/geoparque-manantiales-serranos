@@ -7,11 +7,14 @@
     "node": ">=22.22.3 <23"
   },
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0 --port 4321",
+    "dev": "node --env-file-if-exists=.env ./node_modules/astro/bin/astro.mjs dev --host 0.0.0.0 --port 4321",
     "prebuild": "node scripts/prepare-photos.mjs --check",
-    "build": "astro build",
-    "preview": "astro preview --host 0.0.0.0 --port 4321",
-    "check": "astro check",
+    "build": "node --env-file-if-exists=.env ./node_modules/astro/bin/astro.mjs build",
+    "preview": "node --env-file-if-exists=.env ./node_modules/astro/bin/astro.mjs preview --host 0.0.0.0 --port 4321",
+    "serrana:knowledge": "node scripts/export-serrana-knowledge.mjs",
+    "serrana:knowledge:check": "node scripts/export-serrana-knowledge.mjs --check",
+    "check": "node --env-file-if-exists=.env ./node_modules/astro/bin/astro.mjs check",
+    "check:coolify": "node scripts/check-coolify.mjs",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -20,7 +23,7 @@
     "test": "vitest run tests/unit",
     "test:e2e": "playwright test",
     "test:seo": "vitest run tests/seo",
-    "verify": "npm run check && npm run lint && npm run format:check && npm run test && npm run build && npm run test:seo && npm run test:e2e",
+    "verify": "npm run check && npm run lint && npm run format:check && npm run test && npm run serrana:knowledge:check && npm run build && npm run test:seo && npm run test:e2e",
     "test:visual": "playwright test tests/e2e/visual.spec.ts --project chromium",
     "test:lighthouse": "node scripts/lighthouse.mjs"
   },
@@ -63,6 +66,7 @@
     "svgo": "4.1.0",
     "typescript": "5.9.3",
     "typescript-eslint": "8.70.1",
+    "vite": "8.3.1",
     "vitest": "5.0.1"
   }
 }

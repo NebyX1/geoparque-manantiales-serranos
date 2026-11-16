@@ -11,6 +11,8 @@
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": [
     "dist",
+    ".serrana",
+    "backend",
     "dev-ops",
     "docs/reference",
     "scripts",

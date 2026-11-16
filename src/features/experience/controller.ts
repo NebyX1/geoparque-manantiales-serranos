@@ -107,6 +107,7 @@ export async function initExperience(c: PageContext) {
   let world: ReturnType<Awaited<ReturnType<typeof worldModule>>['createWorld']> | null = null;
   let disposed = false;
   let paused = false;
+  let serranaOpen = document.querySelector('#serrana-dialog[open]') !== null;
   let loading = true;
   let zIndex = 20;
   let frameId = 0;
@@ -218,7 +219,7 @@ export async function initExperience(c: PageContext) {
     syncAudio();
   };
   function syncAudio() {
-    audio?.setActive(!paused && !document.hidden);
+    audio?.setActive(!paused && !serranaOpen && !document.hidden);
   }
   function setDirectory(open: boolean, restoreFocus = false) {
     needsRender = true;
@@ -634,7 +635,7 @@ export async function initExperience(c: PageContext) {
     'KeyR',
   ]);
   on<KeyboardEvent>(window, 'keydown', (event) => {
-    if (document.querySelector('#accessibility-dialog[open]')) {
+    if (serranaOpen || document.querySelector('#accessibility-dialog[open]')) {
       clearInput();
       return;
     }
@@ -698,6 +699,12 @@ export async function initExperience(c: PageContext) {
     keys.delete(event.code);
   });
   on(window, 'blur', clearInput);
+  on<CustomEvent<boolean>>(document, 'serrana:visibility', (event) => {
+    serranaOpen = event.detail;
+    clearInput();
+    needsRender = true;
+    syncAudio();
+  });
   on<FocusEvent>(root, 'focusin', (event) => {
     if (event.target !== canvas) clearInput();
   });
@@ -882,6 +889,7 @@ export async function initExperience(c: PageContext) {
     if (
       document.hidden ||
       navigating ||
+      serranaOpen ||
       ((paused || reading) && !needsRender) ||
       time - lastDraw < (paused ? 200 : reading ? 100 : 0)
     ) {

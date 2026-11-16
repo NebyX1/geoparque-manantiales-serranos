@@ -1,0 +1,597 @@
+.serrana-dialog,
+.serrana-trigger {
+  --serrana-ink: #173b2e;
+  --serrana-paper: #f6f3e8;
+  --serrana-green: #285440;
+  --serrana-line: #cad3c1;
+  --serrana-gold: #ebcd87;
+  font-family: var(--sans, Arial, sans-serif);
+  box-sizing: border-box;
+}
+
+.serrana-trigger[hidden],
+.serrana-dialog [hidden] {
+  display: none !important;
+}
+
+.serrana-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 4px 12px 4px 4px;
+  border: 1px solid #577967;
+  border-radius: 100px;
+  background: var(--serrana-green);
+  color: #fffdf6;
+  cursor: pointer;
+  font-size: var(--type-control);
+  font-weight: 680;
+  line-height: 1.15;
+}
+
+.serrana-trigger img {
+  display: block;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d1dfa7;
+  border-radius: 50%;
+  background: #d8e8c5;
+  object-fit: cover;
+}
+
+.serrana-trigger--navigation {
+  flex: none;
+  white-space: nowrap;
+}
+
+.serrana-trigger--place {
+  width: fit-content;
+  border-radius: 6px;
+  padding-right: 12px;
+  text-align: start;
+}
+
+.experience .serrana-trigger--place {
+  margin-block: 0.5rem;
+}
+
+.serrana-trigger:hover {
+  background: #376c51;
+}
+
+.serrana-trigger:focus-visible,
+.serrana-dialog :focus-visible {
+  outline: 3px solid #946022;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 2px #fffbec;
+}
+
+.serrana-dialog {
+  position: fixed;
+  inset: 0;
+  width: min(calc(100% - 24px), 52rem);
+  height: min(calc(100dvh - 24px), 43rem);
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  margin: auto;
+  overflow: auto;
+  overscroll-behavior: contain;
+  color: var(--serrana-ink);
+  background: var(--serrana-paper);
+  border: 1px solid #829582;
+  border-radius: 16px;
+  box-shadow: 0 24px 85px #071c18a8;
+  font-size: var(--type-body);
+  line-height: 1.5;
+}
+
+.serrana-dialog::backdrop {
+  background: #0b211ad4;
+}
+
+.serrana-dialog :where(h2, h3, p, ul) {
+  margin: 0;
+}
+
+.serrana-interior {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.3fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-areas: 'head head' 'avatar chat';
+  min-height: 100%;
+  height: 100%;
+}
+
+.serrana-header {
+  grid-area: head;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 0.85rem 1.15rem;
+  border-bottom: 1px solid #bfcdbb;
+  background: #f9f6ed;
+}
+
+.serrana-header p {
+  color: #425f4d;
+  font-size: var(--type-small);
+  line-height: 1.2;
+}
+
+.serrana-header h2 {
+  font-size: calc(var(--type-lead) * 1.25);
+  font-weight: 780;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+}
+
+.serrana-header > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.serrana-close,
+.serrana-context button {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--serrana-line);
+  border-radius: 50%;
+  background: #fffdf7;
+  cursor: pointer;
+  color: var(--serrana-ink);
+}
+
+.serrana-close svg,
+.serrana-context svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.serrana-avatar {
+  grid-area: avatar;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: center;
+  justify-items: center;
+  gap: 24px;
+  min-height: 0;
+  margin: 0;
+  padding: clamp(12px, 3.5vw, 44px);
+  background: radial-gradient(ellipse at 52% 39%, #356a4d 0%, #173b2e 68%, #102b22 100%);
+}
+
+.serrana-stage {
+  width: min(100%, 19rem, 39dvh);
+  aspect-ratio: 1;
+  padding: 9px;
+  border: 1px solid #b4d8b07d;
+  border-radius: 50%;
+  background: #b4d8b016;
+  box-shadow:
+    0 0 0 8px #d6e8ba16,
+    0 14px 52px #091e19b0;
+}
+
+.serrana-portrait {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid #d3e1c1;
+  border-radius: 50%;
+  background: #adcfaf;
+  isolation: isolate;
+}
+
+.serrana-portrait > :is(img, canvas) {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.serrana-avatar > p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #eef8dc;
+  font-size: var(--type-small);
+  font-weight: 600;
+  text-align: center;
+}
+
+.serrana-avatar > p > span {
+  display: inline-block;
+  flex: 0 0 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b6db8d;
+  box-shadow: 0 0 0 4px #b6db8d23;
+}
+
+.serrana-avatar[data-state='thinking'] > p > span {
+  background: var(--serrana-gold);
+  box-shadow: 0 0 0 4px #ebcd872b;
+}
+
+.serrana-chat {
+  grid-area: chat;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-width: 0;
+  min-height: 0;
+  padding: 1rem 1.1rem;
+  overflow: auto;
+}
+
+.serrana-log {
+  flex: 1 1 auto;
+  min-height: 5rem;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scroll-padding-block: 12px;
+  overflow-wrap: anywhere;
+}
+
+.serrana-welcome {
+  padding: 0.45rem 0.1rem;
+}
+
+.serrana-welcome h3 {
+  margin-bottom: 0.35rem;
+  font-size: var(--type-lead);
+  line-height: 1.25;
+}
+
+.serrana-welcome p {
+  color: #4a6354;
+}
+
+.serrana-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block: 0.9rem;
+}
+
+.serrana-suggestions button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #a2b69d;
+  border-radius: 7px;
+  background: #ecf0e1;
+  color: var(--serrana-ink);
+  font: 600 var(--type-small)/1.25 var(--sans);
+  cursor: pointer;
+  text-align: start;
+}
+
+.serrana-suggestions button:hover,
+.serrana-close:hover,
+.serrana-context button:hover {
+  background: #e0e8d5;
+}
+
+.serrana-context {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+  padding: 4px 4px 4px 10px;
+  border: 1px solid var(--serrana-line);
+  border-radius: 8px;
+  background: #e6eddb;
+  color: var(--serrana-ink);
+  font-size: var(--type-small);
+  overflow-wrap: anywhere;
+}
+
+.serrana-context button {
+  background: #f8faef;
+}
+
+.serrana-message {
+  margin-block: 0.55rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #d7ded0;
+  border-radius: 10px 10px 10px 3px;
+  background: #fffdf6;
+}
+
+.serrana-message[data-role='user'] {
+  margin-inline-start: min(2rem, 8%);
+  border: 0;
+  border-radius: 10px 10px 3px 10px;
+  background: #deead6;
+}
+
+.serrana-message-name {
+  color: #3d5f4b;
+  font-size: var(--type-small);
+  font-weight: 760;
+}
+
+.serrana-message-text {
+  white-space: pre-wrap;
+}
+
+.serrana-message-text > :is(p, ul, ol) {
+  margin: 0;
+}
+
+.serrana-message-text > :is(ul, ol) {
+  padding-inline-start: 1.4em;
+}
+
+.serrana-message-text > * + * {
+  margin-top: 0.5em;
+}
+
+.serrana-sources {
+  margin-top: 0.7em;
+  padding-top: 0.55em;
+  border-top: 1px solid #d4e0cb;
+  font-size: var(--type-small);
+}
+
+.serrana-sources ul {
+  display: grid;
+  gap: 0.35em;
+  padding-inline-start: 1.2em;
+}
+
+.serrana-sources a {
+  color: #225840;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.serrana-error {
+  padding: 0.55rem;
+  border: 1px solid #ce9f80;
+  border-radius: 6px;
+  background: #fcf0e5;
+  color: #793421;
+  font-size: var(--type-small);
+}
+
+.serrana-form {
+  display: flex;
+  flex: none;
+  align-items: stretch;
+  gap: 8px;
+  min-width: 0;
+}
+
+.serrana-form textarea {
+  box-sizing: border-box;
+  flex: 1 1 8rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  max-height: 7rem;
+  padding: 9px 12px;
+  border: 1px solid #8c9e89;
+  border-radius: 8px;
+  background: #fffdf8;
+  color: var(--serrana-ink);
+  font: 400 var(--type-body)/1.35 var(--sans);
+  resize: vertical;
+}
+
+.serrana-send {
+  flex: none;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid #2c503d;
+  border-radius: 8px;
+  color: #fffdf7;
+  background: var(--serrana-green);
+  font: 680 var(--type-control)/1.2 var(--sans);
+  cursor: pointer;
+}
+
+.serrana-send:hover {
+  background: #376c51;
+}
+
+.serrana-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 12px;
+  color: #4c6553;
+  font-size: var(--type-small);
+  line-height: 1.35;
+}
+
+.serrana-privacy[open] {
+  flex-basis: 100%;
+}
+
+.serrana-privacy p {
+  margin-block: 0 8px;
+}
+
+.serrana-foot :is(button, a, summary) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: #225840;
+  text-align: start;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  font: inherit;
+  font-weight: 620;
+  cursor: pointer;
+}
+
+.serrana-privacy summary::before {
+  content: '+';
+  margin-inline-end: 0.35em;
+  text-decoration: none;
+}
+
+.serrana-privacy[open] summary::before {
+  content: '−';
+}
+
+.serrana-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 760px), (max-height: 440px) {
+  .serrana-trigger--experience {
+    width: 44px;
+    padding-inline: 3px;
+  }
+  .serrana-trigger--experience span {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .serrana-interior {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-areas: 'avatar head' 'chat chat';
+  }
+  .serrana-header {
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  .serrana-header h2 {
+    font-size: var(--type-lead);
+  }
+  .serrana-avatar {
+    padding: 10px;
+    border-bottom: 1px solid #bfcdbb;
+    background: #f9f6ed;
+  }
+  .serrana-stage {
+    width: 60px;
+    padding: 3px;
+    box-shadow: none;
+    border-color: #93aa88;
+  }
+  .serrana-avatar > p {
+    display: none;
+  }
+  .serrana-chat {
+    gap: 8px;
+    padding: 12px;
+  }
+  .serrana-log {
+    min-height: 64px;
+  }
+}
+
+@media (max-width: 620px), (min-width: 901px) and (max-width: 1320px) {
+  .serrana-trigger--navigation {
+    width: 44px;
+    justify-content: center;
+    padding-inline: 0;
+  }
+  .serrana-trigger--navigation span {
+    display: none;
+  }
+}
+
+@media (max-width: 399px) {
+  #site-header {
+    gap: 4px;
+    padding-inline: 8px;
+  }
+  #site-header .brand {
+    width: 54px;
+  }
+  #site-header .header-actions {
+    gap: 2px;
+  }
+  #site-header .accessibility-trigger {
+    width: 44px;
+    padding-inline: 0;
+  }
+  #site-header .trip-button {
+    justify-content: center;
+    gap: 3px;
+    padding-inline: 0;
+  }
+}
+
+@media (max-height: 440px) {
+  html[data-text-size] .site-header {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .serrana-header p {
+    display: none;
+  }
+}
+
+@media (max-height: 430px) and (min-width: 621px) {
+  .serrana-header,
+  .serrana-chat {
+    padding-block: 0.55rem;
+  }
+  .serrana-avatar {
+    gap: 12px;
+  }
+}
+
+@media (max-height: 520px) and (min-width: 621px) {
+  html[data-text-size] .serrana-avatar {
+    grid-template-rows: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+  }
+  html[data-text-size] .serrana-stage {
+    width: auto;
+    height: min(100%, 31dvh);
+  }
+}
+
+@media (min-width: 621px) and (max-width: 900px) {
+  html[data-text-size='200'] .serrana-interior {
+    grid-template-columns: 0.65fr minmax(0, 1.35fr);
+  }
+}
+
+@media (forced-colors: active) {
+  .serrana-trigger:focus-visible,
+  .serrana-dialog :focus-visible {
+    outline-color: Highlight;
+  }
+}

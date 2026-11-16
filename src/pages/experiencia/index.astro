@@ -1,6 +1,7 @@
 ---
 import PortalLayout from '../../layouts/PortalLayout.astro';
 import AccessibilityTrigger from '../../components/layout/AccessibilityTrigger.astro';
+import SerranaTrigger from '../../components/serrana/SerranaTrigger.astro';
 import Photo from '../../components/brand/Photo.astro';
 import PhotoCredit from '../../components/brand/PhotoCredit.astro';
 import GeographicMap from '../../components/experience/GeographicMap.astro';
@@ -48,8 +49,13 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
       </a>
       <nav class="exp-top-nav" aria-label="Navegación de la experiencia">
         <AccessibilityTrigger />
-        <a href="/inicio/" data-astro-reload>
-          Ir al sitio web <span aria-hidden="true">↗</span>
+        <SerranaTrigger variant="experience" />
+        <a href="/inicio/" class="exp-web-link" data-astro-reload aria-label="Ir al sitio web">
+          <span class="exp-web-label">Ir al sitio web</span>
+          <span class="exp-web-compact">Web</span>
+          <span class="exp-web-arrow" aria-hidden="true">
+            ↗
+          </span>
         </a>
         <a href="/" class="exp-exit" data-astro-reload aria-label="Salir y elegir experiencia">
           Salir <span aria-hidden="true">×</span>
@@ -553,6 +559,7 @@ const json = JSON.stringify({ points: experiencePoints, clusters: experienceClus
             <button class="holo-model-button" data-view-miniature={place.id}>
               Ver miniatura 3D ↗
             </button>
+            <SerranaTrigger variant="place" {place} />
             <details class="holo-model-note" open={[29, 36, 42].includes(place.id)}>
               <summary>Acerca de esta miniatura</summary>
               <p>{modelNote(place.id)}</p>

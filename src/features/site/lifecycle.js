@@ -14,6 +14,7 @@ import { initHero } from '../motion/hero.js';
 import { initMotion } from '../motion/controller.js';
 import { initPhotoResolution } from './photo-resolution.js';
 import { initAccessibility } from './accessibility.js';
+import { initSerrana } from '../serrana/controller';
 let cleanupPage;
 function reset() {
   cleanupPage?.();
@@ -85,6 +86,7 @@ function init() {
     document.querySelectorAll('dialog[open]').forEach((dialog) => dialog.close());
   };
   initAccessibility(c);
+  initSerrana(c);
   initPhotoResolution(c);
   if (document.querySelector('[data-experience]')) {
     import('../experience/controller')

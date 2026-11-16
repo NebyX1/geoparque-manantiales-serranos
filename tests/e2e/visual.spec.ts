@@ -34,7 +34,7 @@ test('capturas del prototipo y migración en todos los tamaños y pantallas baja
         ['naturaleza', '#naturaleza'],
         ['cultura', '#cultura'],
         ['planner', '#planificador'],
-        ['footer', 'footer'],
+        ['footer', 'footer.footer'],
         ...(label === 'astro'
           ? [
               ['ambiente', '#ambiente'],

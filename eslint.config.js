@@ -7,7 +7,10 @@ export default [
   {
     ignores: [
       '.astro/**',
+      '.serrana/**',
       'dist/**',
+      'backend/dist/**',
+      'backend/reports/**',
       'node_modules/**',
       'dev-ops/**',
       'playwright-report/**',

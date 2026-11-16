@@ -5,6 +5,7 @@ import MobileNavigation from '../components/layout/MobileNavigation.astro';
 import Footer from '../components/layout/Footer.astro';
 import Dialogs from '../components/layout/Dialogs.astro';
 import AccessibilityDialog from '../components/layout/AccessibilityDialog.astro';
+import SerranaDialog from '../components/serrana/SerranaDialog.astro';
 import IconSprite from '../components/decorative/IconSprite.astro';
 import SeoHead from '../components/seo/SeoHead.astro';
 import StructuredData from '../components/seo/StructuredData.astro';
@@ -24,8 +25,9 @@ interface Props {
   title?: string;
   description?: string;
   structuredData?: Record<string, unknown>[];
+  serranaPlace?: { id: number; name: string };
 }
-const { title, description, structuredData = [] } = Astro.props;
+const { title, description, structuredData = [], serranaPlace } = Astro.props;
 const browserPlaces = canonicalPlaces.map((place) => ({
   ...place,
   ...placePhotoPresentation(place.id),
@@ -108,7 +110,7 @@ const common = [
       Saltar al contenido
     </a>
     <IconSprite />
-    <Navbar />
+    <Navbar {...(serranaPlace ? { serranaPlace } : {})} />
     <MobileNavigation />
     <main id="contenido" tabindex="-1">
       <slot />
@@ -117,6 +119,7 @@ const common = [
     <div class="toast" id="toast" popover="manual" role="status" aria-live="polite"></div>
     <Dialogs />
     <AccessibilityDialog motion />
+    <SerranaDialog />
     <script
       id="page-data"
       type="application/json"

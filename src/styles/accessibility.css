@@ -260,7 +260,7 @@ html:not(.js) .site-header #mobile-toggle {
   max-width: 100%;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
   .site-header .accessibility-label {
     display: none;
   }
@@ -276,7 +276,7 @@ html:not(.js) .site-header #mobile-toggle {
     gap: 6px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 520px) {
   .site-header .trip-button {
     position: relative;
     padding: 0 10px;

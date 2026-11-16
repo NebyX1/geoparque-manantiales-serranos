@@ -3,6 +3,7 @@ import { ClientRouter } from 'astro:transitions';
 import SeoHead from '../components/seo/SeoHead.astro';
 import StructuredData from '../components/seo/StructuredData.astro';
 import AccessibilityDialog from '../components/layout/AccessibilityDialog.astro';
+import SerranaDialog from '../components/serrana/SerranaDialog.astro';
 import { absoluteUrl } from '../lib/urls';
 import '../styles/fonts.css';
 import '../styles/accessibility.css';
@@ -41,6 +42,7 @@ const { title, description, bodyClass = '', clientNavigation = true } = Astro.pr
   <body class:list={['portal-body', bodyClass]}>
     <slot />
     <AccessibilityDialog />
+    {bodyClass === 'experience-body' && <SerranaDialog />}
     <script>
       import '../features/site/lifecycle.js';
     </script>

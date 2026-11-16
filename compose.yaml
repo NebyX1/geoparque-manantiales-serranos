@@ -8,10 +8,26 @@ services:
         SITE_INDEXABLE: ${SITE_INDEXABLE:-false}
     ports:
       - '${HOST_PORT:-8080}:8080'
+    environment:
+      SERRANA_BACKEND_URL: http://backend:4319
+    depends_on:
+      - backend
     healthcheck:
       test: ['CMD', 'wget', '-q', '-O', '/dev/null', 'http://127.0.0.1:8080/health']
       interval: 30s
       timeout: 3s
       retries: 3
       start_period: 5s
+    restart: unless-stopped
+  backend:
+    build: ./backend
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:${HOST_PORT:-8080},http://127.0.0.1:${HOST_PORT:-8080}}
+      OLLAMA_HOST: ${OLLAMA_HOST:-${OLLAMA_BASE_URL:-https://ollama.com}}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-deepseek-v4.1-flash}
+      OLLAMA_API_KEY: ${OLLAMA_API_KEY:-}
+      SERRANA_REQUESTS_PER_MINUTE: ${SERRANA_REQUESTS_PER_MINUTE:-30}
+    expose:
+      - '4319'
     restart: unless-stopped

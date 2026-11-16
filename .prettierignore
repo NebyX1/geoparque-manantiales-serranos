@@ -2,6 +2,7 @@ node_modules
 dev-ops
 dist
 .astro
+.serrana
 Manantiales_Serranos_v2.html
 docs/reference
 scripts/reference-runtime.txt
@@ -9,4 +10,5 @@ test-results
 playwright-report
 reports
 package-lock.json
+backend/data/knowledge.json
 *.py

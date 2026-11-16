@@ -1,0 +1,122 @@
+---
+import portrait from '../../assets/images/serrana/gianna.webp';
+import '../../styles/serrana.css';
+
+const suggestions = [
+  [
+    'Qué es un geoparque',
+    '¿Qué es un geoparque mundial UNESCO y por qué Manantiales Serranos lleva ese nombre?',
+  ],
+  [
+    'Rocas e historia',
+    '¿Qué edades geológicas podemos reconocer en las rocas de Manantiales Serranos?',
+  ],
+  [
+    'Agua y biodiversidad',
+    '¿Cómo se relacionan los manantiales, el suelo, la flora y la fauna del Geoparque?',
+  ],
+];
+---
+
+<dialog class="serrana-dialog" id="serrana-dialog" aria-labelledby="serrana-title">
+  <div class="serrana-interior">
+    <header class="serrana-header">
+      <div>
+        <p>Guía del Geoparque</p>
+        <h2 id="serrana-title">Serrana</h2>
+      </div>
+      <button type="button" class="serrana-close" data-serrana-close aria-label="Cerrar Serrana">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6"></path>
+        </svg>
+      </button>
+    </header>
+
+    <aside class="serrana-avatar" aria-hidden="true" data-serrana-avatar data-state="ready">
+      <div class="serrana-stage">
+        <div class="serrana-portrait">
+          <img data-serrana-image={portrait.src} alt="" width="512" height="512" decoding="async" />
+          <canvas width="512" height="512" hidden></canvas>
+        </div>
+      </div>
+      <p data-serrana-avatar-label>
+        <span></span>Lista para conversar
+      </p>
+    </aside>
+
+    <section class="serrana-chat" aria-label="Chat de Serrana">
+      <div class="serrana-context" data-serrana-context hidden>
+        <span data-serrana-context-name></span>
+        <button
+          type="button"
+          data-serrana-clear-context
+          aria-label="Quitar el lugar de la consulta"
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m6 6 12 12M6 18 18 6"></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="serrana-log"
+        data-serrana-log
+        role="log"
+        aria-label="Conversación"
+        aria-live="off"
+        tabindex="0"
+      >
+        <div class="serrana-welcome" data-serrana-welcome>
+          <h3>¿Qué querés descubrir?</h3>
+          <p>
+            Preguntame sobre los lugares, las rocas, la vida y las historias de Manantiales
+            Serranos.
+          </p>
+          <div class="serrana-suggestions">
+            {suggestions.map(([label, prompt]) => (
+              <button type="button" data-serrana-prompt={prompt}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+      <p class="serrana-error" data-serrana-error role="alert" hidden></p>
+      <form class="serrana-form" data-serrana-form>
+        <label for="serrana-question" class="serrana-sr-only">
+          Tu pregunta para Serrana
+        </label>
+        <textarea
+          id="serrana-question"
+          name="message"
+          rows="2"
+          maxlength="1200"
+          required
+          placeholder="Escribí tu pregunta…"
+          aria-describedby="serrana-privacy"
+        ></textarea>
+        <button type="submit" class="serrana-send" data-serrana-send>
+          Enviar
+        </button>
+        <button type="button" class="serrana-send" data-serrana-stop hidden>
+          Detener
+        </button>
+      </form>
+      <footer class="serrana-foot">
+        <details class="serrana-privacy">
+          <summary>Privacidad</summary>
+          <p id="serrana-privacy">
+            Tu consulta y los mensajes recientes se envían a Ollama Cloud. Evitá compartir datos
+            personales.
+          </p>
+        </details>
+        <a href="/serrana/guia.md" target="_blank" rel="noopener noreferrer">
+          Guía y fuentes ↗
+        </a>
+        <button type="button" data-serrana-reset hidden>
+          Nueva conversación
+        </button>
+      </footer>
+      <p role="status" class="serrana-sr-only" data-serrana-status></p>
+    </section>
+  </div>
+</dialog>

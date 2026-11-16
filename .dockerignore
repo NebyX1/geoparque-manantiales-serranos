@@ -1,10 +1,13 @@
 node_modules
+backend
 dev-ops
 dist
 .astro
+.serrana
 .git
 .gitignore
 .env
+.env.*
 reference
 tests
 test-results

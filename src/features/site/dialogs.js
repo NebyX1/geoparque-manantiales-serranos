@@ -36,7 +36,7 @@ export function initDialogs(c) {
     if (dialogTrigger?.isConnected && !dialogTrigger.closest('dialog'))
       c.raf(() => dialogTrigger?.isConnected && dialogTrigger.focus({ preventScroll: true }));
   }
-  c.$$('dialog:not(#accessibility-dialog)').forEach((dialog) => {
+  c.$$('dialog:not(#accessibility-dialog, #serrana-dialog)').forEach((dialog) => {
     c.listen(dialog, 'cancel', (event) => {
       event.preventDefault();
       closeDialog();

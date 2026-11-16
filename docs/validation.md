@@ -73,7 +73,7 @@ Sus informes son `mobile-preview.json` y `desktop-preview.json`. El SEO 69 corre
 
 Las optimizaciones conservan contenido y controles: hero AVIF con fallback WebP y preload responsive, paisajes secundarios lazy, marca SVG optimizada conservando su original, fuentes locales con todos los caracteres del sitio y subconjuntos reproducibles. El contador del viaje usa Astro/Nano Stores y React se carga cuando hace falta una isla.
 
-## Docker y despliegue
+## Docker y despliegue en la revisión de octubre
 
 La imagen `manantiales-serranos:validation` se construyó mediante el Dockerfile multietapa con `npm ci`. El contenedor `geoparque-validation` escucha en el puerto interno 8080, publicado localmente en 8088, funciona con **UID 101** y su healthcheck está **healthy**. `/health` devuelve 200 con cuerpo `ok`.
 
@@ -81,6 +81,6 @@ Se comprobaron rutas de fichas, relatos, circuitos, planner, Markdown, llms, rob
 
 Las 28 pruebas funcionales y las cinco auditorías de diálogos se repitieron contra el contenedor, con su CSP activa. `reports/docker-validation.json`, `axe-dialogs.json`, `production-e2e.log` y `docker-build.log` conservan los resultados. `reports/npm-audit.json` registra la auditoría de dependencias.
 
-Reproducir infraestructura con los comandos de `deployment-coolify.md`; repetir la auditoría HTTP con `node scripts/check-container.mjs`. Para E2E de producción en PowerShell, configurar `$env:PLAYWRIGHT_BASE_URL='http://127.0.0.1:8088'` y ejecutar `npm run test:e2e -- --grep-invert capturas`. Para Lighthouse, configurar `$env:LIGHTHOUSE_URL='http://127.0.0.1:8088/'` y ejecutar `npm run test:lighthouse`.
+## Verificación de la arquitectura actual
 
-No se realizó publicación remota, conexión de un repositorio a Coolify ni modificación DNS. El proyecto y el contenedor están preparados y probados; esas acciones requieren la instancia y el repositorio del propietario. El npm del sistema de este equipo necesita repararse o actualizarse a Node 22.22.3; la distribución portátil utilizada y su comando están documentados en README.
+La infraestructura actual tiene una imagen web y otra para la API. `npm run verify` comprueba el frontend y la sincronización del catálogo cuando ambos están en el mismo checkout. `npm run verify` desde el directorio de la API comprueba su build, el catálogo y las pruebas unitarias. `node scripts/check-container.mjs` realiza la auditoría de un contenedor web local indexable. Para ambos dominios desplegados, el verificador actual es `npm run check:coolify` con `--web`, `--api` y, opcionalmente, `--catalog`. [Procedimiento de despliegue y verificación](deployment-coolify.md)

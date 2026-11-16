@@ -36,7 +36,12 @@ const structuredData = [
 ];
 ---
 
-<BaseLayout title={place.seo.title} description={place.seo.description} {structuredData}>
+<BaseLayout
+  title={place.seo.title}
+  description={place.seo.description}
+  {structuredData}
+  serranaPlace={place}
+>
   <article class="place-page">
     <div class="detail-hero">
       <Photo

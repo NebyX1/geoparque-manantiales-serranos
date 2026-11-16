@@ -1,10 +1,10 @@
 # Arquitectura
 
-La referencia de ingeniería fue [Semana de Lavalleja](https://github.com/NebyX1/semana-de-lavalleja): se inspeccionaron configuración, componentes, layouts, datos, stores, motion, lifecycle, SEO, pruebas y despliegue antes de crear el proyecto. Los textos, composición y fotografías proceden exclusivamente del prototipo del Geoparque.
+Semana de Lavalleja es la referencia de arquitectura del sitio, y el prototipo del Geoparque define su identidad visual y su comportamiento base. Los datos editoriales y sus fuentes se mantienen según el [enfoque de conservación y educación ambiental](editorial-environment.md).
 
 ## Render y rutas
 
-Astro genera el contenido completo en build. Hay 81 documentos HTML: entrada de dos opciones, sitio editorial en `/inicio/`, experiencia en `/experiencia/`, explorar, índice de lugares, 61 lugares, índice de historias y ocho relatos, índice de circuitos y tres circuitos, planifica y 404. `/health` es un recurso estático de texto y una respuesta explícita Nginx. Hay 63 documentos Markdown: guía, colección y 61 fichas individuales.
+Astro genera 84 documentos HTML durante el build, con 83 rutas en el sitemap. `/health` es un recurso estático de texto y una respuesta explícita de Nginx. Los 64 documentos Markdown incluyen la guía editorial, la guía de Serrana, la colección de lugares y las 61 fichas individuales.
 
 `BaseLayout` centraliza head, SEO, ClientRouter, sprite SVG, navegación, footer y diálogos. Las quince secciones editoriales se mantienen en componentes Astro. Todas las fichas y bloques están presentes sin JavaScript. En ese caso, el atlas expone los 61 lugares y las cuatro escenas geológicas aparecen en flujo.
 
@@ -37,3 +37,9 @@ El hero conserva sus cuatro imágenes y temporizador de 8,5 segundos, teclado, p
 La cascada original se divide en módulos temáticos conservando su orden. Tailwind proporciona utilidades y DaisyUI se limita a `loading`. Los tamaños de texto usan una escala en `rem` que responde a la preferencia de accesibilidad. Las imágenes WebP se organizan por componente bajo `src/assets/images/`. Las fotografías tienen dimensiones, `srcset` y `sizes`. La primera portada usa precarga con las variantes de escritorio y móvil. La organización de fotos compartidas y texturas del 3D se describe en [Assets](assets.md).
 
 Docker compila con Node 22.22.3 y sirve únicamente dist mediante Nginx 1.29.4 sin root en 8080. El dominio y la política de indexación se fijan durante build. La validación cubre unidades, HTML generado, navegadores, accesibilidad, screenshots, Lighthouse y respuesta del contenedor.
+
+## API de Serrana
+
+El sitio mantiene la interfaz del chat y la guía pública. `backend/` contiene el servidor Node, la conexión a Ollama, la búsqueda y la orientación de visitas. En instalaciones separadas, `PUBLIC_SERRANA_API_BASE` configura la conexión y la CSP del frontend, mientras que `CORS_ORIGINS` permite los orígenes del sitio desde la API. En Compose, Nginx reenvía la consulta al servicio interno.
+
+La API se construye con su propio contexto Docker. `data/knowledge.json` deriva de las fichas y fuentes canónicas y queda versionado con la API. El build verifica el archivo y la construcción del índice. Cada proceso reconstruye el índice al arrancar y expone en `/api/ready` la huella del catálogo cargado, junto con sus cantidades. [Despliegue en Coolify](deployment-coolify.md)

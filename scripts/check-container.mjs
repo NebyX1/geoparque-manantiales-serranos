@@ -56,7 +56,9 @@ const sitemap = await (await fetch(`${url}/sitemap-0.xml`)).text();
 const editorialUrls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)]
   .map((match) => match[1])
   .filter((location) => new URL(location).pathname.endsWith('/'));
-if (editorialUrls.length !== 78) throw new Error('Production sitemap HTML count');
+if (editorialUrls.length !== 83) {
+  throw new Error(`Production sitemap: expected 83 HTML routes, found ${editorialUrls.length}`);
+}
 const canonicals = new Set();
 const titles = new Set();
 const documents = await Promise.all(

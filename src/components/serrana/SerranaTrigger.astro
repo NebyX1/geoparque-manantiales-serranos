@@ -1,0 +1,31 @@
+---
+import { getImage } from 'astro:assets';
+import portrait from '../../assets/images/serrana/gianna.webp';
+
+interface Props {
+  variant: 'navigation' | 'experience' | 'place';
+  place?: { id: number; name: string };
+}
+
+const { variant, place } = Astro.props;
+const thumbnail = await getImage({ src: portrait, width: 92, height: 92, format: 'webp' });
+---
+
+<button
+  type="button"
+  class:list={['serrana-trigger', `serrana-trigger--${variant}`]}
+  aria-label={
+    variant === 'place' && place
+      ? `Preguntarle a Serrana sobre ${place.name}`
+      : 'Conversar con Serrana'
+  }
+  aria-haspopup="dialog"
+  aria-controls="serrana-dialog"
+  data-serrana-open
+  data-serrana-place-id={place?.id}
+  data-serrana-place-name={place?.name}
+  hidden
+>
+  <img src={thumbnail.src} alt="" width="36" height="36" loading="lazy" decoding="async" />
+  <span>{variant === 'place' ? 'Preguntale a Serrana' : 'Serrana'}</span>
+</button>
